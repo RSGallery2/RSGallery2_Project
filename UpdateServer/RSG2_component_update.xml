@@ -7,7 +7,7 @@
 		<type>component</type>
 		<version>4.0.9</version>
 		<downloads>
-			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_Component/archive/Version_4_0_9.zip</downloadurl>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_Component/releases/download/Version_4_0_9/RSGallery2_Component-Version_4_0_9.zip</downloadurl>
 		</downloads>
 		<maintainer>team@rsgallery2.nl</maintainer>
 		<maintainerurl>rsgallery2.nl</maintainerurl>
