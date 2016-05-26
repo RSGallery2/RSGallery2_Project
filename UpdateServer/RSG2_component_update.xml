@@ -15,4 +15,49 @@
 		<client>1</client>
 		<infourl>rsgallery2.nl</infourl> 		
 	</update>
+	<update>
+		<name>RSGallery2 component update</name>
+		<description>Update for component rsgallery2 v4.0.9</description>
+		<element>com_rsgallery2</element>
+		<type>component</type>
+		<version>4.1.0</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_Component/releases/download/Version_4.1.0/RSGallery2_Component-Version_4_1_0.zip</downloadurl>
+		</downloads>
+		<maintainer>team@rsgallery2.nl</maintainer>
+		<maintainerurl>rsgallery2.nl</maintainerurl>
+		<targetplatform name="joomla" version="3.*"/>
+		<client>1</client>
+		<infourl>rsgallery2.nl</infourl> 		
+	</update>
+	<update>
+		<name>RSGallery2 component update</name>
+		<description>Update for component rsgallery2 v4.1.0</description>
+		<element>com_rsgallery2</element>
+		<type>component</type>
+		<version>4.1.1</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_Component/releases/download/Version_4.1.1/RSGallery2_Component_4_1_1.zip</downloadurl>
+		</downloads>
+		<maintainer>team@rsgallery2.nl</maintainer>
+		<maintainerurl>rsgallery2.nl</maintainerurl>
+		<targetplatform name="joomla" version="3.*"/>
+		<client>1</client>
+		<infourl>rsgallery2.nl</infourl> 		
+	</update>
+	<update>
+		<name>RSGallery2 component update</name>
+		<description>Update for component rsgallery2 v4.1.0</description>
+		<element>com_rsgallery2</element>
+		<type>component</type>
+		<version>4.2.0</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_Component/releases/download/Version_4.2.0/RSGallery2_Component_4_2_0.zip</downloadurl>
+		</downloads>
+		<maintainer>team@rsgallery2.nl</maintainer>
+		<maintainerurl>rsgallery2.nl</maintainerurl>
+		<targetplatform name="joomla" version="3.*"/>
+		<client>1</client>
+		<infourl>rsgallery2.nl</infourl> 		
+	</update>
 </updates>
