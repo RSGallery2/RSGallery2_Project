@@ -1,0 +1,5 @@
+Change: 
+
+Admin > Features and Options > Section "Simple Portal" > Blocks > Top Blocks > welcome ...
+    RSGallery2 Forum Portal » Administration Center » Blocks » Block List » Top blocks » Welcome
+
