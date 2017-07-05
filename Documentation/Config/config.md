@@ -35,58 +35,77 @@ All gallery names and item titles must be unique
 
 ## Images
 
-### Images.Image Manipulation
-Display Picture Width
-Thumbnail Width
-Thumbnail Style
-JPEG Quality Percentage
-Allowed file types
-### Images.Image upload
-FTP Path:
-Use IPTC information
-Yes No
-Default state for uploaded images
-Preselect 'One gallery for all images'
-Default Yes No
-Preselect latest gallery
-Yes No
-### Images.Graphics Library
-Graphics Library
-ImageMagick Path
-Netpbm Path
-Video converter path
-Video converter parameters
-Thumbnail extraction parameters
-Video output type
-### Images.Image Storage
-Keep original image
-Yes No
-Original Image Path
-Display Image Path
-Thumb Path
-### Images.Comments
-Use CAPTCHA check, in comment form
-Yes No
-CAPTCHA type
-CAPTCHA image height in px
-(width is 2.7*height)
-CAPTCHA perturbation
-(1.0 is high, the higher the more distorted; 0.75 is fine)
-Number of lines to distort the CAPTCHA image with
-CAPTCHA background color
-(hexadecimal code, e.g. #0099CC)
-Textcolor
-(hexadecimal code, e.g. #EAEAEA)
-Color of lines
-(hexadecimal code, e.g. #0000CC)
-Alfanumeric CAPTCHA is case sensitive
-recommended setting: No)
-Yes No
-Characters to use for alfanumeric CAPTCHA
-Length of code for alfanumerc CAPTCHA
-### Images.Voting
-User can only vote once (cookie based)
+#### Images.Image Manipulation
 
+link:
+
+(1) Display Picture Width
+
+(2) Thumbnail Width
+
+(3) Thumbnail Style
+
+(4) JPEG Quality Percentage
+
+(5) Allowed file types
+
+#### Images.Image upload
+
+link:
+
+(1) FTP Path:
+
+(2) Use IPTC information Yes No
+
+(3) Default state for uploaded images
+
+(4) Preselect 'One gallery for all images', Default Yes No
+
+(5) Preselect latest gallery Yes No
+
+#### Images.Graphics Library
+
+link:
+
+(1) Graphics Library
+(2) ImageMagick Path
+(3) Netpbm Path
+(4) Video converter path
+(5) Video converter parameters
+(6) Thumbnail extraction parameters
+(7) Video output type
+
+#### Images.Image Storage
+
+link:
+
+(1) Keep original image Yes No
+(2) Original Image Path
+(3) Display Image Path
+(4) Thumb Path
+
+#### Images.Comments
+
+link:
+
+(1) Use CAPTCHA check, in comment form Yes No
+(2) CAPTCHA type
+(3) CAPTCHA image height in px (width is 2.7*height)
+(4) CAPTCHA perturbation (1.0 is high, the higher the more distorted; 0.75 is fine)
+(5) Number of lines to distort the CAPTCHA image with
+(6) CAPTCHA background color (hexadecimal code, e.g. #0099CC)
+(7) Textcolor (hexadecimal code, e.g. #EAEAEA)
+(8) Color of lines (hexadecimal code, e.g. #0000CC)
+(9) Alfanumeric CAPTCHA is case sensitive recommended setting: No) Yes No
+(10) Characters to use for alfanumeric CAPTCHA
+(11) Length of code for alfanumerc CAPTCHA
+
+#### Images.Voting
+
+link:
+
+(1) User can only vote once (cookie based) Yes No
+(2) Cookie prefix rsgvoting_
 
 (1) .
 
@@ -106,64 +125,67 @@ User can only vote once (cookie based)
 
 ## Display
 
-### Front Page
-Display Search
-Yes No
-Display Random
-Yes No
-Display Latest
-Yes No
-Display Branding
-Yes No
-Display Downloadlink
-Yes No
-Display Status Icons
-Yes No
-Display gallery limitbox
-Default number of galleries on frontpage
-Display Slideshow
-Yes No
-Select slideshow
-Display Owner Information
-Yes No
-Display number of items in gallery
-Yes No
-Include items in child galleries when displaying number of items in a gallery
-Yes No
-Display creation date
-Yes No
-### Image Display
-Display Slideshow in item view
-Yes No
-Popup style
-Display Description
-Yes No
-Display Hits
-Yes No
-Display Voting
-Yes No
-Display Comments
-Yes No
-### Image order
-Order images by
-Order direction
-### EXIF settings
-Display EXIF Data
-Yes No
-Select EXIF tags to display
+#### Front Page
 
-### Gallery View
-Thumbnail Style:
-Use float for variable width templates.
-Direction (only works for float)
-Number of Thumbnail Columns (only for table)
-Thumbnails per Page
-Show image name below thumbnail
-Yes No
-Navigation bar display
-Display Slideshow in gallery view
-Yes No
-### Image Watermark
+link:
+
+(1) Display Search Yes No
+(2) Display Random Yes No
+(3) Display Latest Yes No
+(4) Display Branding Yes No
+(5) Display Downloadlink Yes No
+(6) Display Status Icons Yes No
+(7) Display gallery limitbox
+(8) Default number of galleries on frontpage
+(9) Display Slideshow Yes No
+(10) Select slideshow
+(11) Display Owner Information Yes No
+(12) Display number of items in gallery Yes No
+(13) Include items in child galleries when displaying number of items in a gallery Yes No
+(14) Display creation date Yes No
+
+#### Image Display
+
+link:
+
+(1) Display Slideshow in item view Yes No
+(2) Popup style
+(3) Display Description Yes No
+(4) Display Hits Yes No
+(5) Display Voting Yes No
+(6) Display Comments Yes No
+
+#### Image order
+
+link:
+
+(1) Order images by
+(2) Order direction
+
+#### EXIF settings
+
+link:
+
+(1) Display EXIF Data Yes No
+(2) Select EXIF tags to display
+
+#### Gallery View
+
+link:
+
+(1) Thumbnail Style:
+(2) Use float for variable width templates.
+(3) Direction (only works for float)
+(4) Number of Thumbnail Columns (only for table)
+(5) Thumbnails per Page
+(6) Show image name below thumbnail Yes No
+(7) Navigation bar display
+(8) Display Slideshow in gallery view Yes No
+
+#### Image Watermark
+
+link:
+
 Display Watermark
 
 (1) .
@@ -184,17 +206,16 @@ Display Watermark
 
 ## My Galleries
 
+link:
 
-### Settings My Galleries
-Show My Galleries
-Yes No
-Show only items owned by the logged in user in My Galleries
-Yes No
-Show only galleries owned by the logged in user in My Galleries
-Yes No
-### Image upload
-Maximum number of galleries a user can have
-Max numbers of pictures a user can have
+#### Settings My Galleries
+(1) Show My Galleries Yes No
+(2) Show only items owned by the logged in user in My Galleries Yes No
+(3) Show only galleries owned by the logged in user in My Galleries Yes No
+
+#### Image upload
+(1) Maximum number of galleries a user can have
+(2) Max numbers of pictures a user can have
 
 (1) .
 
