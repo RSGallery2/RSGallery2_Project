@@ -34,6 +34,60 @@ Activates debug functions. Additional 'info' will appear in html pages and more 
 All gallery names and item titles must be unique
 
 ## Images
+
+### Images.Image Manipulation
+Display Picture Width
+Thumbnail Width
+Thumbnail Style
+JPEG Quality Percentage
+Allowed file types
+### Images.Image upload
+FTP Path:
+Use IPTC information
+Yes No
+Default state for uploaded images
+Preselect 'One gallery for all images'
+Default Yes No
+Preselect latest gallery
+Yes No
+### Images.Graphics Library
+Graphics Library
+ImageMagick Path
+Netpbm Path
+Video converter path
+Video converter parameters
+Thumbnail extraction parameters
+Video output type
+### Images.Image Storage
+Keep original image
+Yes No
+Original Image Path
+Display Image Path
+Thumb Path
+### Images.Comments
+Use CAPTCHA check, in comment form
+Yes No
+CAPTCHA type
+CAPTCHA image height in px
+(width is 2.7*height)
+CAPTCHA perturbation
+(1.0 is high, the higher the more distorted; 0.75 is fine)
+Number of lines to distort the CAPTCHA image with
+CAPTCHA background color
+(hexadecimal code, e.g. #0099CC)
+Textcolor
+(hexadecimal code, e.g. #EAEAEA)
+Color of lines
+(hexadecimal code, e.g. #0000CC)
+Alfanumeric CAPTCHA is case sensitive
+recommended setting: No)
+Yes No
+Characters to use for alfanumeric CAPTCHA
+Length of code for alfanumerc CAPTCHA
+### Images.Voting
+User can only vote once (cookie based)
+
+
 (1) .
 
 (2) .
@@ -51,6 +105,67 @@ All gallery names and item titles must be unique
 (8) .
 
 ## Display
+
+### Front Page
+Display Search
+Yes No
+Display Random
+Yes No
+Display Latest
+Yes No
+Display Branding
+Yes No
+Display Downloadlink
+Yes No
+Display Status Icons
+Yes No
+Display gallery limitbox
+Default number of galleries on frontpage
+Display Slideshow
+Yes No
+Select slideshow
+Display Owner Information
+Yes No
+Display number of items in gallery
+Yes No
+Include items in child galleries when displaying number of items in a gallery
+Yes No
+Display creation date
+Yes No
+### Image Display
+Display Slideshow in item view
+Yes No
+Popup style
+Display Description
+Yes No
+Display Hits
+Yes No
+Display Voting
+Yes No
+Display Comments
+Yes No
+### Image order
+Order images by
+Order direction
+### EXIF settings
+Display EXIF Data
+Yes No
+Select EXIF tags to display
+
+### Gallery View
+Thumbnail Style:
+Use float for variable width templates.
+Direction (only works for float)
+Number of Thumbnail Columns (only for table)
+Thumbnails per Page
+Show image name below thumbnail
+Yes No
+Navigation bar display
+Display Slideshow in gallery view
+Yes No
+### Image Watermark
+Display Watermark
+
 (1) .
 
 (2) .
@@ -68,6 +183,19 @@ All gallery names and item titles must be unique
 (8) .
 
 ## My Galleries
+
+
+### Settings My Galleries
+Show My Galleries
+Yes No
+Show only items owned by the logged in user in My Galleries
+Yes No
+Show only galleries owned by the logged in user in My Galleries
+Yes No
+### Image upload
+Maximum number of galleries a user can have
+Max numbers of pictures a user can have
+
 (1) .
 
 (2) .
