@@ -21,16 +21,20 @@ link:
 (1) Version: Actual uploaded RSG2 version.
 
 (2) Introduction Text
+
 This text is used as a broad header description of the "root gallery" view. The root gallery (with sub galleries and more) will be displayed when the menu type "RSGallery2 -> View of galleries" is activated and the root gallery is chosen for display
 
 (3) Debug
+
 Activates debug functionality. This does write calling parameters and logs some of the used files / classes in a log file.
 "Attention: On Yes to Debug a log file per day will be created in folder 'joomlaBase\\log' and notices may appear on top of a form. Please delete log files regularly". In Maintenance will (may be in near future) be a button to achieve this
 
 (4) Develop
+
 Activates debug functions. Additional 'info' will appear in html pages and more functions appear in maintenance view. The additional function may not work or destroy parts of RSGallery2 ....
 
 (5) Advanced SEF
+
 All gallery names and item titles must be unique
 
 ## Images
@@ -41,7 +45,11 @@ link:
 
 (1) Display Picture Width
 
+Standard display size of image. User is able to download the image with this size
+
 (2) Thumbnail Width
+
+Small image size in gallery view
 
 (3) Thumbnail Style
 
