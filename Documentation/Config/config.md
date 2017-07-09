@@ -1,8 +1,7 @@
 
 # Configuration
 
-link: config.StartView.png
-![config.StartView.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.StartView.png)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.StartView.png)
 
 Above is the start view when selecting configuration
 
@@ -17,7 +16,7 @@ Each Tab contains sections. A click on a section will open or hide the settings 
 
 ## General
 
-link:
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.GeneralSettings.png)
 
 (1) Version: Actual uploaded RSG2 version.
 
@@ -42,7 +41,7 @@ All gallery names and item titles must be unique
 
 #### Images.Image Manipulation
 
-link:
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.manipulation.png)
 
 (1) Display Picture Width
 
