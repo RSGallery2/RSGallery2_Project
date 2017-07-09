@@ -2,6 +2,7 @@
 # Configuration
 
 link: config.StartView.png
+![config.StartView.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.StartView.png)
 
 Above is the start view when selecting configuration
 
