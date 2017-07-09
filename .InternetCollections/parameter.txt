@@ -1,0 +1,10 @@
+
+
+
+
+
+schon erledigt. ich hab mir die Daten mit: 
+$moduleParams = new JRegistry($module->params); 
+importiert.
+
+
