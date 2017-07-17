@@ -1,8 +1,6 @@
-
 # Configuration
 
 ![Config startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.StartView.png?raw=true)
-
 Above is the start view when selecting configuration
 
 (1) There are four tabs to choose
