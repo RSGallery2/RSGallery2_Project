@@ -12,22 +12,30 @@ There are three tabs to choose
 
 ![Single images](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.singleImages.png?raw=true)
 
-(1) 
+(1)
 
 
 ## Upload from Zip file (PC)
 
 ![Upload from Zip file (PC)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.fromZip.png?raw=true)
 
-(1) Version: Actual uploaded RSG2 version.
+(1)
 
-(2) Introduction Text
+(2)
 
-(1) Version: Actual uploaded RSG2 version.
+(3)
 
-(2) Introduction Text
+(4)
 
 
 ## Upload from folder (server)
 
 ![Upload from folder (server)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.fromFtpPath.png?raw=true)
+
+(1)
+
+(2)
+
+(3)
+
+(4)
