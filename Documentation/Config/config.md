@@ -211,30 +211,21 @@ Display Watermark
 (8) .
 
 ## My Galleries
-
-link:
+My galleries supports the creation of user galleries
+![My Galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
 
 #### Settings My Galleries
-(1) Show My Galleries Yes No
-(2) Show only items owned by the logged in user in My Galleries Yes No
+(1) Show My Galleries
+On yes it avtivates this functions
+
+(2) Show only items owned by the logged in user in My Galleries
+Restricts the shown images on front end to users who own the image and who are logged in.
+??? The images of the user may be in several galleries owned by other people. ???
+
 (3) Show only galleries owned by the logged in user in My Galleries Yes No
+Restricts the shown galleries on front end to user who own the gallery and who are logged in .
 
 #### Image upload
-(1) Maximum number of galleries a user can have
-(2) Max numbers of pictures a user can have
+(4) Maximum number of galleries a user can have
 
-(1) .
-
-(2) .
-
-(3) .
-
-(4) .
-
-(5) .
-
-(6) .
-
-(7) .
-
-(8) .
+(5) Max numbers of pictures a user can have
