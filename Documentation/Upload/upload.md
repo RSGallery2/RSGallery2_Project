@@ -86,7 +86,7 @@ It supports an overview of uploaded images as pictures and enables to set image 
 
 (5) Description: Add a description which is displayed with the image
 
-(6) Button to finish the upload. The attributes will be assinged to the images ...
+(6) Button to finish the upload. The attributes will be assigned to the images ...
 
 ## Form "Single images upload"
 
@@ -100,9 +100,9 @@ It supports an overview of uploaded images as pictures and enables to set image 
 
 (4) File: Select image to upload
 
-(5) More Files: A click on this item will add inputs for the next image. The area marked green wil be duplicated for input of the next images. This may be repeated as often as needed. (Attention: Limit may be the server time for the upload itself)
+(5) More Files: A click on this item will add inputs for the next image. The area marked green will be duplicated for input of the next images. This may be repeated as often as needed. (Attention: Limit may be the server time for the upload itself)
 
-(6) Button to finish the upload. The attributes will be assinged to the images ...
+(6) Button to finish the upload. The attributes will be assigned to the images ...
 
 (7) Cancel the process
 
