@@ -2,22 +2,27 @@
 
 
 ## My Galleries
-A site administrator can enable My Galleries (setting Show My Galleries, 'no' by default). A extra element will appear on the gallery view when a user has logged in on the front end. 
+A site administrator can enable My Galleries for users to upload and view their own galleries (setting Show My Galleries, 'no' by default). A extra element will appear on the gallery view when a user has logged in on the front end.
 
-Link to image
+![My Galleries]()    // Add image of filled gallery
 
-(1) Extra link: My galleries, right above the search-box. 
 
-Clicking on that link will show a page like in 
+(1) Extra link: My galleries, right above the search-box.
+
+Clicking on that link will show a page like in
 Figure 2.8, “My Galleries page for a user without any
 permissions”
- [11] or in 
+ [11] or in
 Figure 2.9, “My Galleries page for a user with all permissions”
  [12]
 
- 
+### Config of My galleries
+ ![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
+ More in section configuration
+
+
 Figure 2.8. My Galleries page for a user without any permissions
-The differences in these two figures arise from the different permissions a user can have (see 
+The differences in these two figures arise from the different permissions a user can have (see
 Section 3.5, “Permissions”
 
 
@@ -41,17 +46,20 @@ Frontend
 We will assume for the following sections that the user has all permissions for all galleries and items
 and that My Galleries are enabled.
 Figure 2.9. My Galleries page for a user with all permissions
+
 ### 2.5.1. Galleries
+
 Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries
 page.
+
 #### 2.5.1.1. Create a gallery
+
 On the My galleries page click the Create Gallery tab. This tab only shows when the user that is
 logged in has Create permission. To create a new gallery, first choose its parent (choose Top gallery
 when you want the gallery to be on the same 'level' as e.g. the gallery Cakes, or choose an existing
 gallery, like gallery Cakes, for that to be the parent. Then give the a name and a description and click
-the little disk button at the top right of the Create Gallery tab. See 
-Figure 2.10, “My Galleries: tab Cre-
-ate Gallery”
+the little disk button at the top right of the Create Gallery tab. See
+Figure 2.10, “My Galleries: tab Create Gallery”
  [13]. Next to the disk button is a red round button with a white cross inside: this is the
 cancel button that will clear all fields.
 Saving the gallery details returns you to this page and this tab, but with the extra gallery created (note:
@@ -60,10 +68,11 @@ galleries, then the gallery will not be created.
 Frontend
 13
 Figure 2.10. My Galleries: tab Create Gallery
+
 #### 2.5.1.2. Change the state of a gallery: published or unpublished
+
 On the My galleries page click the My galleries tab (
-Figure 2.11, “My galleries: tab My gal-
-leries”
+Figure 2.11, “My galleries: tab My galleries”
  [13
 ]). This shows a list of galleries. In the Published column the user can tell by the icon if
 the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot in-
@@ -71,10 +80,12 @@ side). When the user is not allowed to change the state, the icons are grey, but
 mark or the dot.
 A click on the icon toggles the state from unpublished to published and vice versa.
 Figure 2.11. My galleries: tab My galleries
+
 #### 2.5.1.3. Edit a gallery
+
 The details like the name and description of the gallery can be edited and a different parent gallery
 can be chosen. The gallery can be edited by either clicking on the gallery name or on its Edit icon
-(see 
+(see
 Figure 2.11, “My galleries: tab My galleries”
  [13
 ]). Doing this shows a new window with the
@@ -82,28 +93,29 @@ Frontend
 14
 gallery details (
 Figure 2.12, “My galleries: Edit gallery”
- [14]). You can save your changes by click-
-ing the disk-icon on the top right, or you can cancel your changes by clicking the red round icon with
-the wtithe cross inside. Both save and cancel will take you back to the My Galleries page.
+ [14]). You can save your changes by clicking the disk-icon on the top right, or you can cancel your changes by clicking the red round icon with
+the with the cross inside. Both save and cancel will take you back to the My Galleries page.
 Figure 2.12. My galleries: Edit gallery
+
 #### 2.5.1.4. Delete a gallery
-A gallery can be deleted by clicking on the Delete icon (see 
-Figure 2.11, “My galleries: tab My gal-
-leries”
+
+A gallery can be deleted by clicking on the Delete icon (see
+Figure 2.11, “My galleries: tab My galleries”
  [13
 ]). You will be asked to confirm the deletion of the gallery. Images still in the gallery will
 be deleted as well.
+
 #### 2.5.2. Items (images)
+
 Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries
 page.
+
 #### 2.5.2.1. Create an item (e.g. upload one or more images)
+
 On the My galleries page click the Add Image tab. This tab only shows when the user that is logged
-in has Create permission for one or more galleries. You can either add a single image, or a set of im-
-ages in a zipfile.
+in has Create permission for one or more galleries. You can either add a single image, or a set of images in a zipfile.
 To add your image(s), first choose the gallery that will hold the image(s). Browse to the file to select it
-and give the item a title and a description. In case of multiple images in a zipfile, this title and descrip-
-tion will be used for each image. To upload your image(s) and save the details, click the disk button
-at the top right of the Create Gallery tab. See 
+and give the item a title and a description. In case of multiple images in a zipfile, this title and description will be used for each image. To upload your image(s) and save the details, click the disk button at the top right of the Create Gallery tab. See
 Figure 2.13, “My galleries: Add images”
  [15]. Next to
 the disk button is a red round button with a white cross inside: this is the cancel button that will clear
@@ -114,18 +126,21 @@ mum allowed item, then the items will not be created.
 Frontend
 15
 Figure 2.13. My galleries: Add images
+
 #### 2.5.2.2. Change the state of a item: published or unpublished
+
 On the My galleries page click the My Images tab (
 Figure 2.14, “My galleries: My Images”
  [15]).
-This shows a list of galleries. In the Published column the user can tell by the icon if the gallery is pub-
-lished (green icon with white checkmark) or unpublished (red icon with white dot inside). When the
+This shows a list of galleries. In the Published column the user can tell by the icon if the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot inside). When the
 user is not allowed to change the state, the icons are grey, but with either the checkmark or the dot.
 A click on the icon toggles the state from unpublished to published and vice versa.
 Figure 2.14. My galleries: My Images
+
 #### 2.5.2.3. Edit an item
+
 The details like the title and description of the image can be edited and a different gallery to which the
-item belongs to can be chosen. The item can be edited by clicking on its Edit icon (see 
+item belongs to can be chosen. The item can be edited by clicking on its Edit icon (see
 Figure 2.14,
 “My galleries: My Images”
  [15
@@ -135,13 +150,13 @@ Figure 2.15,
  [16]). You can save your changes by clicking the disk-icon on the top
 Frontend
 16
-right, or you can cancel your changes by clicking the red round icon with the wtithe cross inside. Both
+right, or you can cancel your changes by clicking the red round icon with the whit the cross inside. Both
 save and cancel will take you back to the My Galleries page.
 Figure 2.15. My galleries: edit image
+
 #### 2.5.2.4. Delete an item
-An item can be deleted by clicking on the Delete icon (see 
+
+An item can be deleted by clicking on the Delete icon (see
 Figure 2.14, “My galleries: My
 Images”
- [15]). You will be asked to confirm the deletion of the item. 
- 
- 
+ [15]). You will be asked to confirm the deletion of the item.
