@@ -1,0 +1,82 @@
+
+
+https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+
+Git Submodules: Adding, Using, Removing, Updating
+
+Adding Submodules to a Git Repository
+
+Fortunately, adding a submodule to a git repository is actually quite simple. For example, if I’m in the repository working directory of a new theme called SampleTheme and need to add the billboard repository to the path lib/billboard, I can do so with the following command:
+[user@office SampleTheme]$ git submodule add git@mygithost:billboard lib/billboard
+Initialized empty Git repository in ~/git_dev/SampleTheme/lib/billboard/.git/
+remote: Counting objects: 1006, done.
+remote: Compressing objects: 100% (978/978), done.
+remote: Total 1006 (delta 631), reused 0 (delta 0)
+Receiving objects: 100% (1006/1006), 408.22 KiB, done.
+Resolving deltas: 100% (631/631), done.
+
+There are three main parts to this command:
+◦git submodule add – This simply tells Git that we are adding a submodule. This syntax will always remain the same.
+◦git@mygithost:billboard – This is the external repository that is to be added as a submodule. The exact syntax will vary depending on the setup of the Git repository you are connecting to. You need to ensure that you have the ability to clone the given repository.
+◦lib/billboard – This is the path where the submodule repository will be added to the main repository.
+
+Let’s check to see how the repository is doing.
+[user@office SampleTheme]$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   .gitmodules
+#       new file:   lib/billboard
+#
+
+Notice how the supplied path was created and added to the changes to be committed. In addition, a new file called .gitmodules was created. This new file contains the details we supplied about the new submodule. Out of curiosity, let’s check out the contents of that new file:
+[user@office SampleTheme]$ cat .gitmodules
+[submodule "lib/billboard"]
+path = lib/billboard
+url = git@mygithost:billboard
+
+Being able to modify this file later will come in handy later.
+
+All that is left to do now is to commit the changes and then push the commit to a remote system if necessary.
+
+Using Submodules
+
+Having submodules in a repository is great and all, but if I look in my repository, all I have is an empty folder rather than the actual contents of the submodule’s repository. In order to fill in the submodule’s path with the files from the external repository, you must first initialize the submodules and then update them.
+ 
+ 
+ .....
+
+
+
+https://stackoverflow.com/questions/7629822/is-it-possible-to-make-git-aware-of-an-existing-gitmodules-file?lq=1
+
+#Add submodule manually by hand 
+
+If you check what git submodule add does, you'd notice that it does three things:
+1.Adds the lines to the .gitmodules file,
+2.Clones the repo in the 'path' you determined in the command, and
+3.Adds the module to the .git/config file.
+
+So, basically the only difference between a repo with a submodule added by hand and the one added via the git submodule command is the contents of the repo itself.
+
+Answering with the same example, you should:
+$ git clone git://github.com/jgarber/redcloth.git plugins/redcloth
+
+
+Add the following to the .git/config file*:
+[submodule "redcloth"]
+url = git://github.com/jgarber/redcloth.git
+
+
+Make sure at least you add them to the git repo:
+$ git add plugins/redcloth
+
+
+And then check if git actually is "aware":
+$ git submodule status
+0766810ab46f1ed12817c48746e867775609bde8 plugins/redcloth (v4.2.8)
+30fb044db6ba5ea874ebc44a43bbd80a42676405 rack (1.3.0-64-g30fb044)
+
+
+*note that the "path" variable you use in the .gitmodules file isn't needed in that file
