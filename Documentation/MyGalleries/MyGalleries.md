@@ -6,7 +6,8 @@ A site administrator can enable My Galleries for users to upload and view their 
 
 ![My Galleries]()    // Add image of filled gallery
 
-
+The "my galleries" are viewed on the modul where the menu with type RSGallery2 is displyed.
+Above the RSGallery2 search box the user can click on "My galleries" which will ...
 (1) Extra link: My galleries, right above the search-box.
 
 Clicking on that link will show a page like in
@@ -160,3 +161,21 @@ An item can be deleted by clicking on the Delete icon (see
 Figure 2.14, “My galleries: My
 Images”
  [15]). You will be asked to confirm the deletion of the item.
+
+
+## User view of my galleries
+
+![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
+
+(1) Select menu where galleries are displayed in web site
+
+(2) Login with your username given by owner of website
+
+(3) Click on "My Gallery" link
+
+![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+
+(1) Create gallery tab
+This is where the fun begins ....
+
+If this tab does not appear the the user has not enough rights
