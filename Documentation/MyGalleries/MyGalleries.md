@@ -1,4 +1,5 @@
 
+## -> In processing, parts present (2)
 
 
 ## My Galleries
@@ -6,30 +7,29 @@ A site administrator can enable My Galleries for users to upload and view their 
 
 ![My Galleries]()    // Add image of filled gallery
 
-The "my galleries" are viewed on the modul where the menu with type RSGallery2 is displyed.
+The "my galleries" are viewed on the modul where the menu with type RSGallery2 is displayed.
 Above the RSGallery2 search box the user can click on "My galleries" which will ...
-(1) Extra link: My galleries, right above the search-box.
+(1) Extra link: My galleries, right above the search box.
 
-Clicking on that link will show a page like in
+~~Clicking on that link will show a page like in
 Figure 2.8, “My Galleries page for a user without any
 permissions”
  [11] or in
 Figure 2.9, “My Galleries page for a user with all permissions”
- [12]
+ [12]~~
 
-### Config of My galleries
+### Config of My Galleries
  ![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
  More in section configuration
 
 
-Figure 2.8. My Galleries page for a user without any permissions
+~~Figure 2.8. My Galleries page for a user without any permissions
 The differences in these two figures arise from the different permissions a user can have (see
-Section 3.5, “Permissions”
+Section 3.5, “Permissions”~~
 
 
- [29
-]), e.g. Edit Permission, Edit State Permission (to publish or unpublish an
-item or gallery), Delete Permission and Create Permission for items and galleries.
+~~[29
+]), e.g. Edit Permission, Edit State Permission (to publish or unpublish an item or gallery), Delete Permission and Create Permission for items and galleries.
 A user with none of these permissions can only see the items and galleries, but cannot publish,
 delete, edit or create items or galleries. That is reflected on the tabs My Images and My galleries
 by the grey icons for the items and galleries. That user will also not see the Add Image and Create
@@ -38,53 +38,43 @@ However, when a user has all permissions, the icons are no longer greyed out, an
 more tabs: Add Image and Create Gallery.
 A site administrator can choose to give only specific permissions to a user group, e.g. only Edit permission, and only give that permission for a specific gallery. Then the user will see from the icons being
 grey (and non-functional) or not if they have that permission.
-At the top of the page there is a box with User information: the user name of the user who is current-
-ly logged in, the number of galleries this user has already created and its allowed maximum (setting
-Maximum number of galleries a user can have) and the number of items for which the user is the own-
-er and its allowed maximum (setting Max numbers of pictures a user can have).
+At the top of the page there is a box with User information: the user name of the user who is currently logged in, the number of galleries this user has already created and its allowed maximum (setting
+Maximum number of galleries a user can have) and the number of items for which the user is the owner and its allowed maximum (setting Max numbers of pictures a user can have).
 Frontend
 12
 We will assume for the following sections that the user has all permissions for all galleries and items
 and that My Galleries are enabled.
-Figure 2.9. My Galleries page for a user with all permissions
+Figure 2.9. My Galleries page for a user with all permissions~~
 
 ### 2.5.1. Galleries
 
-Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries
-page.
+~~Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries
+page.~~
 
 #### 2.5.1.1. Create a gallery
 
-On the My galleries page click the Create Gallery tab. This tab only shows when the user that is
+~~On the My galleries page click the Create Gallery tab. This tab only shows when the user that is
 logged in has Create permission. To create a new gallery, first choose its parent (choose Top gallery
 when you want the gallery to be on the same 'level' as e.g. the gallery Cakes, or choose an existing
 gallery, like gallery Cakes, for that to be the parent. Then give the a name and a description and click
-the little disk button at the top right of the Create Gallery tab. See
-Figure 2.10, “My Galleries: tab Create Gallery”
- [13]. Next to the disk button is a red round button with a white cross inside: this is the
+the little disk button at the top right of the Create Gallery tab. See Figure 2.10, “My Galleries: tab Create Gallery”~~
+~~[13]. Next to the disk button is a red round button with a white cross inside: this is the
 cancel button that will clear all fields.
 Saving the gallery details returns you to this page and this tab, but with the extra gallery created (note:
 this gallery is unpublished by default). Unless of course the user already is at its maximum allowed
 galleries, then the gallery will not be created.
-Frontend
-13
-Figure 2.10. My Galleries: tab Create Gallery
-
+Frontend 13 Figure 2.10. My Galleries: tab Create Gallery~~
 #### 2.5.1.2. Change the state of a gallery: published or unpublished
-
-On the My galleries page click the My galleries tab (
+~~On the My galleries page click the My galleries tab (
 Figure 2.11, “My galleries: tab My galleries”
  [13
 ]). This shows a list of galleries. In the Published column the user can tell by the icon if
-the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot in-
-side). When the user is not allowed to change the state, the icons are grey, but with either the check-
-mark or the dot.
+the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot inside). When the user is not allowed to change the state, the icons are grey, but with either the checkmark or the dot.
 A click on the icon toggles the state from unpublished to published and vice versa.
-Figure 2.11. My galleries: tab My galleries
-
+Figure 2.11. My galleries: tab My galleries~~
 #### 2.5.1.3. Edit a gallery
 
-The details like the name and description of the gallery can be edited and a different parent gallery
+~~The details like the name and description of the gallery can be edited and a different parent gallery
 can be chosen. The gallery can be edited by either clicking on the gallery name or on its Edit icon
 (see
 Figure 2.11, “My galleries: tab My galleries”
@@ -94,26 +84,26 @@ Frontend
 14
 gallery details (
 Figure 2.12, “My galleries: Edit gallery”
- [14]). You can save your changes by clicking the disk-icon on the top right, or you can cancel your changes by clicking the red round icon with
+ [14]). You can save your changes by clicking the disk icon on the top right, or you can cancel your changes by clicking the red round icon with
 the with the cross inside. Both save and cancel will take you back to the My Galleries page.
-Figure 2.12. My galleries: Edit gallery
+Figure 2.12. My galleries: Edit gallery~~
 
 #### 2.5.1.4. Delete a gallery
 
-A gallery can be deleted by clicking on the Delete icon (see
+~~A gallery can be deleted by clicking on the Delete icon (see
 Figure 2.11, “My galleries: tab My galleries”
  [13
 ]). You will be asked to confirm the deletion of the gallery. Images still in the gallery will
-be deleted as well.
+be deleted as well.~~
 
 #### 2.5.2. Items (images)
 
-Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries
-page.
+~~Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries
+page.~~
 
 #### 2.5.2.1. Create an item (e.g. upload one or more images)
 
-On the My galleries page click the Add Image tab. This tab only shows when the user that is logged
+~~On the My galleries page click the Add Image tab. This tab only shows when the user that is logged
 in has Create permission for one or more galleries. You can either add a single image, or a set of images in a zipfile.
 To add your image(s), first choose the gallery that will hold the image(s). Browse to the file to select it
 and give the item a title and a description. In case of multiple images in a zipfile, this title and description will be used for each image. To upload your image(s) and save the details, click the disk button at the top right of the Create Gallery tab. See
@@ -122,25 +112,24 @@ Figure 2.13, “My galleries: Add images”
 the disk button is a red round button with a white cross inside: this is the cancel button that will clear
 all fields.
 Saving the item returns you to this page and this tab, but with the extra image(s) created (note: the
-newly uploaded image will be unpublished by default). Unless of course the user already is at its maxi-
-mum allowed item, then the items will not be created.
+newly uploaded image will be unpublished by default). Unless of course the user already is at its maximum allowed item, then the items will not be created.
 Frontend
 15
-Figure 2.13. My galleries: Add images
+Figure 2.13. My galleries: Add images~~
 
 #### 2.5.2.2. Change the state of a item: published or unpublished
 
-On the My galleries page click the My Images tab (
+~~On the My galleries page click the My Images tab (
 Figure 2.14, “My galleries: My Images”
  [15]).
 This shows a list of galleries. In the Published column the user can tell by the icon if the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot inside). When the
 user is not allowed to change the state, the icons are grey, but with either the checkmark or the dot.
 A click on the icon toggles the state from unpublished to published and vice versa.
-Figure 2.14. My galleries: My Images
+Figure 2.14. My galleries: My Images~~
 
 #### 2.5.2.3. Edit an item
 
-The details like the title and description of the image can be edited and a different gallery to which the
+~~The details like the title and description of the image can be edited and a different gallery to which the
 item belongs to can be chosen. The item can be edited by clicking on its Edit icon (see
 Figure 2.14,
 “My galleries: My Images”
@@ -148,22 +137,22 @@ Figure 2.14,
 ]). Doing this shows a new window with the item details (
 Figure 2.15,
 “My galleries: edit image”
- [16]). You can save your changes by clicking the disk-icon on the top
+ [16]). You can save your changes by clicking the disk icon on the top
 Frontend
 16
 right, or you can cancel your changes by clicking the red round icon with the whit the cross inside. Both
 save and cancel will take you back to the My Galleries page.
-Figure 2.15. My galleries: edit image
+Figure 2.15. My galleries: edit image~~
 
 #### 2.5.2.4. Delete an item
 
-An item can be deleted by clicking on the Delete icon (see
+~~An item can be deleted by clicking on the Delete icon (see
 Figure 2.14, “My galleries: My
 Images”
- [15]). You will be asked to confirm the deletion of the item.
+ [15]). You will be asked to confirm the deletion of the item.~~
 
 
-## User view of my galleries
+## User view of My Galleries
 
 ![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
 
@@ -176,6 +165,7 @@ Images”
 ![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
 
 (1) Create gallery tab
+
 This is where the fun begins ....
 
-If this tab does not appear the the user has not enough rights
+If this tab does not appear the user has not enough rights
