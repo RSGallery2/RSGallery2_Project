@@ -8,24 +8,46 @@ A site administrator can enable My Galleries for users to upload and view their 
 ![My Galleries]()    // Add image of filled gallery
 
 The "my galleries" are viewed on the modul where the menu with type RSGallery2 is displayed.
-Above the RSGallery2 search box the user can click on "My galleries" which will ...
-(1) Extra link: My galleries, right above the search box.
+Above the RSGallery2 search box the user can click on "My galleries" (3)
+![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
 
-~~Clicking on that link will show a page like in
+(Link must be activated in configuration of RSG2)
+
+Clicking on that link will show a page like
+
+![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+If tab (1) does not appear the user has not enough rights
+
 Figure 2.8, “My Galleries page for a user without any
 permissions”
  [11] or in
 Figure 2.9, “My Galleries page for a user with all permissions”
  [12]~~
 
-### Config of My Galleries
+### Getting Started
+1. Enable "My Galleries" in RSG2 configuration
+1. Create a usergroup with rights to handle their own galleries and Images
+1. Assign user rights for this group on
+1. Assign the standard RSGallery2 view to a menu
+
+#### Config of My Galleries
  ![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
- More in section configuration
+
+ More description in section configuration
+
+#### Create a usergroup for "My Galleries" users
+
+![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.png?raw=true)
 
 
-~~Figure 2.8. My Galleries page for a user without any permissions
-The differences in these two figures arise from the different permissions a user can have (see
-Section 3.5, “Permissions”~~
+#### Assign user rights for this "My Galleries" users group
+
+
+
+#### Assign the standard RSGallery2 view to a menu
+This may be done already as it nis as simple as assinging the standard view to a menu
+
+
 
 
 ~~[29
