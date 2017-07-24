@@ -26,26 +26,37 @@ Figure 2.9, “My Galleries page for a user with all permissions”
 
 ### Getting Started
 1. Enable "My Galleries" in RSG2 configuration
-1. Create a usergroup with rights to handle their own galleries and Images
+1. Create a user group with rights to handle their own galleries and Images
 1. Assign user rights for this group on
 1. Assign the standard RSGallery2 view to a menu
 
-#### Config of My Galleries
+#### Configuration of My Galleries
  ![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
 
- More description in section configuration
+More description in section configuration
 
-#### Create a usergroup for "My Galleries" users
+#### Create a user group for "My Galleries" users
 
 ![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.png?raw=true)
 
+A separate user groups helps to assign special rights for "My Gallery" users.
 
 #### Assign user rights for this "My Galleries" users group
 
+![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.License.png?raw=true)
 
+Especially the "Create own", "Delete own", "Edit own", "Edit state own" permissions are needed. The "vote" or "comment" permissions enable actions on the images itself. They are not needed for the handling of galleries and images.
 
 #### Assign the standard RSGallery2 view to a menu
-This may be done already as it nis as simple as assinging the standard view to a menu
+This may be done already as it is as simple as assigning the standard view to a menu
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
 
 
 
