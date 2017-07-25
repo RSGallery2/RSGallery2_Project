@@ -45,7 +45,24 @@ A separate user groups helps to assign special rights for "My Gallery" users.
 
 ![My Galleries config](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.License.png?raw=true)
 
-Especially the "Create own", "Delete own", "Edit own", "Edit state own" permissions are needed. The "vote" or "comment" permissions enable actions on the images itself. They are not needed for the handling of galleries and images.
+(1) Search for RSGallery2 in System->Global configuration
+
+(2) Select Permissions
+
+(3)-(6) Activate the "Create own", "Delete own", "Edit own", "Edit state own" permissions. The "vote" or "comment" permissions enable actions on the images itself. They are not needed for the handling of galleries and images.
+
+Edit Permission, Edit State Permission (to publish or unpublish an item or gallery), Delete Permission and Create Permission for items and galleries.
+
+A user with none of these permissions can only see the items and galleries, but cannot publish,
+delete, edit or create items or galleries. That is reflected on the tabs My Images and My galleries
+by the grey icons for the items and galleries. That user will also not see the Add Image and Create
+Gallery tabs.
+
+However, when a user has all permissions, the icons are no longer greyed out, and there are two
+more tabs: Add Image and Create Gallery.
+A site administrator can choose to give only specific permissions to a user group, e.g. only Edit permission, and only give that permission for a specific gallery. Then the user will see from the icons being
+grey (and non-functional) or not if they have that permission.
+
 
 #### Assign the standard RSGallery2 view to a menu
 This may be done already as it is as simple as assigning the standard view to a menu
@@ -59,20 +76,6 @@ This may be done already as it is as simple as assigning the standard view to a 
 -------------------------------------------------------------------------------------------------------------------
 
 
-
-
-~~[29
-]), e.g. Edit Permission, Edit State Permission (to publish or unpublish an item or gallery), Delete Permission and Create Permission for items and galleries.
-A user with none of these permissions can only see the items and galleries, but cannot publish,
-delete, edit or create items or galleries. That is reflected on the tabs My Images and My galleries
-by the grey icons for the items and galleries. That user will also not see the Add Image and Create
-Gallery tabs.
-However, when a user has all permissions, the icons are no longer greyed out, and there are two
-more tabs: Add Image and Create Gallery.
-A site administrator can choose to give only specific permissions to a user group, e.g. only Edit permission, and only give that permission for a specific gallery. Then the user will see from the icons being
-grey (and non-functional) or not if they have that permission.
-At the top of the page there is a box with User information: the user name of the user who is currently logged in, the number of galleries this user has already created and its allowed maximum (setting
-Maximum number of galleries a user can have) and the number of items for which the user is the owner and its allowed maximum (setting Max numbers of pictures a user can have).
 Frontend
 12
 We will assume for the following sections that the user has all permissions for all galleries and items
@@ -202,3 +205,20 @@ Images”
 This is where the fun begins ....
 
 If this tab does not appear the user has not enough rights
+
+At the top of the page there is a box with User information: the user name of the user who is currently logged in, the number of galleries this user has already created and its allowed maximum (setting
+Maximum number of galleries a user can have) and the number of items for which the user is the owner and its allowed maximum (setting Max numbers of pictures a user can have).
+
+![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.png?raw=true)
+
+(1) Select parent gallery
+
+Top Gallery is a virtual gallery which means no parent
+
+(2) Assign a name
+
+(3) Fill out a description (May be empty)
+
+(4) Save (create) gallery with entered settings
+
+(5) Cancel creation
