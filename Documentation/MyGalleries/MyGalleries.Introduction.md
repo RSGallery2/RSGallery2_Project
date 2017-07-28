@@ -15,4 +15,5 @@ Above the RSGallery2 "Search box" the user can click on "My galleries" link (3)
 Clicking on that link will show a page like
 
 ![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+
 If tab (1) does not appear the user has not enough rights
