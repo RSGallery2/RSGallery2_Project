@@ -15,18 +15,13 @@ Clicking on that link will show a page like
 ![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
 If tab (1) does not appear the user has not enough rights
 
-Figure 2.8, “My Galleries page for a user without any
-permissions”
- [11] or in
-Figure 2.9, “My Galleries page for a user with all permissions”
- [12]~~
 
  =================================================================
  ==============================================================
 
  ??? setting it up
 
-### My Gallery Getting Started
+### My Gallery: Set it up, get it started
 1. Enable "My Galleries" in RSG2 configuration
 1. Create a user group with rights to handle their own galleries and Images
 1. Assign user rights for this group on
