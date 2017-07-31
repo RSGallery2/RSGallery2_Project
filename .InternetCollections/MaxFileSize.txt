@@ -1,0 +1,130 @@
+
+
+https://stackoverflow.com/questions/13076480/php-get-actual-maximum-upload-size
+
+When using
+ini_get("upload_max_filesize");
+it actually gives you the string specified in the php.ini file.
+It is not good to use this value as a reference for the maximum upload size because
+it is possible to use so-called shorthandbytes like 1M and so on which needs alot of additional parsing
+when upload_max_filesize is for example 0.25M, it actually is ZERO, making the parsing of the value much harder once again
+also, if the value contains any spaces like it is interpreted as ZERO by php, while it shows the value without spaces when using ini_get
+So, is there any way to get the value actually being used by PHP, besides the one reported by ini_get, or what is the best way to determinate it?
+
+---------------------------------------------------------------
+Ok but joomla has helper see below
+
+Here is the full solution. It takes care of all traps like the shorthand byte notation and also considers post_max_size:
+//This function transforms the php.ini notation for numbers (like '2M') to an integer (2*1024*1024 in this case)  
+function convertPHPSizeToBytes($sSize)  
+{  
+    if ( is_numeric( $sSize) ) {
+       return $sSize;
+    }
+    $sSuffix = substr($sSize, -1);  
+    $iValue = substr($sSize, 0, -1);  
+    switch(strtoupper($sSuffix)){  
+    case 'P':  
+        $iValue *= 1024;  
+    case 'T':  
+        $iValue *= 1024;  
+    case 'G':  
+        $iValue *= 1024;  
+    case 'M':  
+        $iValue *= 1024;  
+    case 'K':  
+        $iValue *= 1024;  
+        break;  
+    }  
+    return $iValue;  
+}  
+
+function getMaximumFileUploadSize()  
+{  
+    return min(convertPHPSizeToBytes(ini_get('post_max_size')), convertPHPSizeToBytes(ini_get('upload_max_filesize')));  
+}  s
+
+------------------------
+
+filesystem/helper.php
+
+* fileUploadMaxSize (minimum of 
+
+*uses self::parseSizeUnit($max_size); 
+
+	/**
+	 * Calculates the maximum upload file size and returns string with unit or the size in bytes
+	 *
+	 * Call it with JFilesystemHelper::fileUploadMaxSize();
+	 *
+	 * @param   bool  $unit_output  This parameter determines whether the return value should be a string with a unit
+	 *
+	 * @return  float|string The maximum upload size of files with the appropriate unit or in bytes
+	 *
+	 * @since   3.4
+	 */
+	public static function fileUploadMaxSize($unit_output = true)
+	{
+		static $max_size = false;
+		static $output_type = true;
+
+		if ($max_size === false || $output_type != $unit_output)
+		{
+			$max_size   = self::parseSize(ini_get('post_max_size'));
+			$upload_max = self::parseSize(ini_get('upload_max_filesize'));
+
+			if ($upload_max > 0 && ($upload_max < $max_size || $max_size == 0))
+			{
+				$max_size = $upload_max;
+			}
+
+			if ($unit_output == true)
+			{
+				$max_size = self::parseSizeUnit($max_size);
+			}
+
+			$output_type = $unit_output;
+		}
+
+		return $max_size;
+	}
+
+	/**
+	 * Returns the size in bytes without the unit for the comparison
+	 *
+	 * @param   string  $size  The size which is received from the PHP settings
+	 *
+	 * @return  float The size in bytes without the unit
+	 *
+	 * @since   3.4
+	 */
+	private static function parseSize($size)
+	{
+		$unit = preg_replace('/[^bkmgtpezy]/i', '', $size);
+		$size = preg_replace('/[^0-9\.]/', '', $size);
+
+		$return = round($size);
+
+		if ($unit)
+		{
+			$return = round($size * pow(1024, stripos('bkmgtpezy', $unit[0])));
+		}
+
+		return $return;
+	}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
