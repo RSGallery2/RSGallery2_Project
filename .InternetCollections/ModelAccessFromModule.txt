@@ -1,0 +1,12 @@
+ call a model from anywhere inside Joomla you can use this method
+//Load the Joomla Model framework
+jimport('joomla.application.component.model');
+
+//Load com_foo's foobar model. Remember the file name should be foobar.php inside the models folder
+JModelLegacy::addIncludePath(JPATH_SITE.'/components/com_foo/models', 'FooModelBar');
+
+//Get Instance of Model Object
+$foobarInstance = JModelLegacy::getInstance('foobar', 'FooModelBar');
+
+//Now you can call the methods inside the model
+$baz = $foobarInstance->getFoobar();
