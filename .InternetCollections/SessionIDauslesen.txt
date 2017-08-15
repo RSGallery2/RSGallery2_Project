@@ -1,0 +1,8 @@
+Session ID auslesen 
+
+1.echo JFactory::getSession()->getID();
+
+$session = JFactory::getSession();
+
+How to use user sessions
+https://www.ostraining.com/blog/how-tos/development/how-to-use-sessions-in-joomla/
