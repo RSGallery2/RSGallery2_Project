@@ -1,7 +1,9 @@
 
 
 
-2016.09.01 Facebool joomla group
+
+
+2016.09.01 Facebook joomla group
 Was ist aktuell die beste Option für Fotogalerien in Joomla wenn man viel Content hat? Macht ihr das noch mit Plugins wie Phoca oder bindet ihr einfach die Fotos über den "Google Fotos" Dienst ein? Womit kann man gut Kategorien anlegen und Fotos reinsortieren und das an beliebiger Stelle auf einer responsive Joomla Seite einbinden? Z.B. Kategorie1 unter einem Beitrag oder in einer bestimmten Modulposition. Was wird von Google gerne gesehen was das Bildermanagement angeht?
 Gefällt mir
 KommentierenTeilen
