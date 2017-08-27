@@ -4,17 +4,10 @@ Examples:
 $document->addStyleSheet(JURI::base(true).'/components/.../stylesheet.css');
 $document->addScript(JURI::base(true).'/components/.../script.js');
 
-
-
+-------------------------------------------------------
 // ToDo: Explain when site, when admin ? rename "JURI_SITE" as it is confusing
 define('JURI_SITE', $app->isSite() ? JUri::base() : JUri::root());
-
-// 
-
-
-
-
-
+    -> similar to $app->isSite() ?  JUri::root() : JUri::root() ???
 -------------------------------------------------------
 
 http://www.escope.cz/en/blog/106-joomla-juri-explained-with-examples
@@ -23,9 +16,10 @@ JURI::base()
 JURI::base() returns string 'http://escope.cz/' at frontend and 'http://escope.cz/administrator/' at backend.
 JURI::base(true) returns empty string '' at frontend and string '/administrator' at backend.
 
-JURI::root()
-This is the right answer to often asked question "how to get the domain?".
+JURI::root() This is the right answer to often asked question "how to get the domain?".
 JURI::root() returns string 'http://escope.cz/' at frontend and 'http://escope.cz/' at backend as well.
+
+real current URL... JURI::getInstance()->toString();
 
 
 -------------------------------------------------------
