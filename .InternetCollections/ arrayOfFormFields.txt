@@ -1,0 +1,66 @@
+ array of form fields 
+ 
+----------------------------------------------------
+https://joomla.stackexchange.com/questions/9389/array-of-form-fields
+
+<field  name="gralev_code][]" 
+  type="text" 
+  class="width20"
+  label="JSCH_GRALEV_CODE"
+/>
+
+???
+default.php
+$this->form->getInput('gralev_code[]')
+$this->form->getInput('gralev_code[]')
+$this->form->getInput('gralev_code[]')
+
+
+in model.php
+$formdata = $this->_jinput->get('jform', '', 'array');
+$vals = $formdata['gralev_code'];
+
+-----------------
+<field name="team[]" type="text" label="COM_ETMFT_PLAYER_TEAM_LABEL" description="COM_ETMFT_PLAYER_TEAM_DESC" />
+
+
+----------------------------------
+
+Attention "s1img][]" first ] is needed see example below
+
+Proper escaping must be done in order to do this, so, for example, you should replace:
+<field name="s1img[]" label="Image 1" type="media" directory="Images" />
+With:
+<field name="s1img][]" label="Image 1" type="media" directory="Images" />
+You should do this for all your "array" fields.
+
+----------------------------------------------
+for($i = 1; $i <= $count; $i++)
+ echo '<input type="text" name="fields[]" class="class_fields">';
+ 
+ 
+ -----------------------------------------
+( no: $items = JRequest::getVar('item', array());)
+If you just want all the items, the Joomla way would be:
+$items = JRequest::getVar('item', array());
+where the second parameter would be your default value if 'item' is not set. But note that this fetches the params via the name, just as usual. 
+The same using the Joomla Platform 11.1 and above would be:
+$items = $app->input->get('item', array(), 'ARRAY');
+Here the third parameter is necessary since the default filter is 'cmd' which does not allow arrays. 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
