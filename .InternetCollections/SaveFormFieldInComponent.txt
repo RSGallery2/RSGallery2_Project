@@ -1,0 +1,347 @@
+
+https://stackoverflow.com/questions/23359075/save-form-field-in-component-params-joomla
+
+ i want to save the post data of form in  params row of that component
+
+ have come up with a solution . it works for me . By using this method you can control save () functions i.e. you can run your custom php scripts on save, apply toolbar buttons.
+
+I copied save(),save($data), store($updateNulls = false) functions from com_config component , I have copied the layout from component view . Removed the buttons. Added toolbar buttons in .html.php file.
+
+controllers/mycomponent.php
+
+<?php
+
+
+defined('_JEXEC') or die;
+
+
+
+class componentControllermycomponent extends JControllerLegacy {
+
+
+
+
+    function __construct($config = array())
+    {
+        parent::__construct($config);
+
+        // Map the apply task to the save method.
+        $this->registerTask('apply', 'save');
+    }
+
+
+    function save()
+    {
+
+
+        // Check for request forgeries.
+        JSession::checkToken() or jexit(JText::_('JINVALID_TOKEN'));
+
+        // Set FTP credentials, if given.
+        JClientHelper::setCredentialsFromRequest('ftp');
+
+        // Initialise variables.
+        $app    = JFactory::getApplication();
+        $model  = $this->getModel('mymodel');
+        $form   = $model->getForm();
+        $data   = JRequest::getVar('jform', array(), 'post', 'array');
+        $id     = JRequest::getInt('id');
+        $option = 'com_mycomponent';
+
+
+        // Check if the user is authorized to do this.
+        if (!JFactory::getUser()->authorise('core.admin', $option))
+        {
+            JFactory::getApplication()->redirect('index.php', JText::_('JERROR_ALERTNOAUTHOR'));
+            return;
+        }
+
+        // Validate the posted data.
+        $return = $model->validate($form, $data);
+
+        // Check for validation errors.
+        if ($return === false) {
+            // Get the validation messages.
+            $errors = $model->getErrors();
+
+            // Push up to three validation messages out to the user.
+            for ($i = 0, $n = count($errors); $i < $n && $i < 3; $i++) {
+                if ($errors[$i] instanceof Exception) {
+                    $app->enqueueMessage($errors[$i]->getMessage(), 'warning');
+                } else {
+                    $app->enqueueMessage($errors[$i], 'warning');
+                }
+            }
+
+            // Save the data in the session.
+            $app->setUserState('com_iflychat.config.global.data', $data);
+
+            // Redirect back to the edit screen.
+            $this->setRedirect(JRoute::_('index.php?option=com_mycomponent&view=component&component='.$option.'&tmpl=component', false));
+            return false;
+        }
+
+        // Attempt to save the configuration.
+        $data   = array(
+            'params'    => $return,
+            'id'        => $id,
+            'option'    => $option
+        );
+       // print_r($data);
+        $return = $model->save($data);
+
+        // Check the return value.
+        if ($return === false)
+        {
+            // Save the data in the session.
+            $app->setUserState('com_config.config.global.data', $data);
+
+            // Save failed, go back to the screen and display a notice.
+            $message = JText::sprintf('JERROR_SAVE_FAILED', $model->getError());
+            $this->setRedirect('index.php?option=com_mycomponent&view=component&component='.$option.'&tmpl=component', $message, 'error');
+            return false;
+        }
+
+        // Set the redirect based on the task.
+        switch ($this->getTask())
+        {
+            case 'apply':
+                $message = JText::_('COM_MYCOMPONENT_SAVE_SUCCESS');
+print_r($data);
+                $this->setRedirect('index.php?option=com_mycomponent&view=myview&layout=edit', $message);
+                break;
+
+            case 'save':
+            default:
+                $this->setRedirect('index.php');
+                break;
+        }
+
+        return true;
+    }
+
+
+
+
+
+    function cancel()
+    {
+        $this->setRedirect('index.php');
+    }
+
+
+
+}
+models/mymodel.php
+
+<?php
+
+
+defined('_JEXEC') or die;
+
+jimport('joomla.application.component.modelform');
+
+
+class componentModelmymodel extends JModelForm  {
+
+
+    protected $event_before_save = 'onConfigurationBeforeSave';
+
+    protected $event_after_save = 'onConfigurationAfterSave';
+
+
+    public function getForm($data = array(), $loadData = true){
+        // Get the form.
+        $form = $this->loadForm('com_mycomponent.form', 'config',
+            array('control' => 'jform', 'load_data' => $loadData));
+
+        if (empty($form)){
+            return false;
+        }
+        return $form;
+    }
+
+
+    public function save($data)
+    {
+        $dispatcher = JDispatcher::getInstance();
+        $table  = JTable::getInstance('extension');
+        $isNew = true;
+
+        // Save the rules.
+        if (isset($data['params']) && isset($data['params']['rules']))
+        {
+            $rules  = new JAccessRules($data['params']['rules']);
+            $asset  = JTable::getInstance('asset');
+
+            if (!$asset->loadByName($data['option']))
+            {
+                $root   = JTable::getInstance('asset');
+                $root->loadByName('root.1');
+                $asset->name = $data['option'];
+                $asset->title = $data['option'];
+                $asset->setLocation($root->id, 'last-child');
+            }
+            $asset->rules = (string) $rules;
+
+            if (!$asset->check() || !$asset->store())
+            {
+                $this->setError($asset->getError());
+                return false;
+            }
+
+            // We don't need this anymore
+            unset($data['option']);
+            unset($data['params']['rules']);
+        }
+
+        // Load the previous Data
+        if (!$table->load($data['id']))
+        {
+            $this->setError($table->getError());
+            return false;
+        }
+
+        unset($data['id']);
+
+        // Bind the data.
+        if (!$table->bind($data))
+        {
+            $this->setError($table->getError());
+            return false;
+        }
+
+        // Check the data.
+        if (!$table->check())
+        {
+            $this->setError($table->getError());
+            return false;
+        }
+
+        // Trigger the oonConfigurationBeforeSave event.
+        $result = $dispatcher->trigger($this->event_before_save, array($this->option . '.' . $this->name, $table, $isNew));
+
+        if (in_array(false, $result, true))
+        {
+            $this->setError($table->getError());
+            return false;
+        }
+
+        // Store the data.
+        if (!$table->store())
+        {
+            $this->setError($table->getError());
+            return false;
+        }
+
+        // Clean the component cache.
+        $this->cleanCache('_system');
+
+        // Trigger the onConfigurationAfterSave event.
+        $dispatcher->trigger($this->event_after_save, array($this->option . '.' . $this->name, $table, $isNew));
+
+
+        return true;
+    }
+
+    function getComponent()
+    {
+
+
+        $result = JComponentHelper::getComponent('com_mycomponent');
+
+        return $result;
+    }
+
+
+
+
+}
+tables/mycomponent.php
+
+<?php
+// No direct access
+defined('_JEXEC') or die('Restricted access');
+
+// import Joomla table library
+jimport('joomla.database.table');
+
+/**
+ * Hello Table class
+ */
+class componentTableMycomponent extends JTable
+{
+
+    function __construct(&$db)
+    {
+        parent::__construct('#__extensions', 'extension_id', $db);
+    }
+
+    public function bind($array, $ignore = '')
+    {
+        if (isset($array['params']) && is_array($array['params']))
+        {
+            // Convert the params field to a string.
+            $parameter = new JRegistry;
+            $parameter->loadArray($array['params']);
+            $array['params'] = (string)$parameter;
+        }
+        return parent::bind($array, $ignore);
+    }
+
+
+
+    public function load($pk = null, $reset = true)
+    {
+        if (parent::load($pk, $reset))
+        {
+            // Convert the params field to a registry.
+            $params = new JRegistry;
+            $params->loadJSON($this->params);
+            $this->params = $params;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public function store($updateNulls = false)
+    {
+        // Transform the params field
+        if (is_array($this->params)) {
+            $registry = new JRegistry();
+            $registry->loadArray($this->params);
+            $this->params = (string)$registry;
+        }
+
+        $date   = JFactory::getDate();
+        $user   = JFactory::getUser();
+        if ($this->id) {
+            // Existing item
+            $this->modified     = $date->toSql();
+            $this->modified_by  = $user->get('id');
+        } else {
+            // New newsfeed. A feed created and created_by field can be set by the user,
+            // so we don't touch either of these if they are set.
+            if (!intval($this->created)) {
+                $this->created = $date->toSql();
+            }
+            if (empty($this->created_by)) {
+                $this->created_by = $user->get('id');
+            }
+        }
+        // Verify that the alias is unique
+        $table = JTable::getInstance('Yourinstance', 'mycomponentTable');
+        if ($table->load(array('alias'=>$this->alias, 'catid'=>$this->catid)) && ($table->id != $this->id || $this->id==0)) {
+            $this->setError(JText::_('COM_CONTACT_ERROR_UNIQUE_ALIAS'));
+            return false;
+        }
+
+        // Attempt to store the data.
+        return parent::store($updateNulls);
+    }
+
+}
+
+

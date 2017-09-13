@@ -1,0 +1,37 @@
+
+Adaptive Images
+Deliver small images to small devices
+
+
+http://adaptive-images.com/details.htm#how-it-works
+
+-----------------------------------
+
+plg_kickimageresize ....
+
+
+
+Benjamin Trenkle
+spontan würde mir da com_ajax + plugin einfallen 
+
+
+
+Niels Nübel
+jhtml image wäre auch ganz nett sowas
+<noscript><img src="bild.jpg"></noscript>
+<img class="lazyload" data-sizes="auto" src="bild.jpg" data-srcset="bild_w1900.jpg 1900w, /bild_w1200.jpg 1200w, bild_w800.jpg 800w" role="img" alt="" itemprop="thumbnail">
+
+images/bild.jpg|450|300
+
+:-)
+man ruft bild.jpg|5000|5000 auf
+dann +1
+
+
+
+
+
+
+
+
+
