@@ -1,0 +1,147 @@
+
+
+fields->fieldsets->field ==> name="jform[fields][field]" 
+
+https://joomla.stackexchange.com/questions/9185/3-x-form-array
+
+<fields name="attribs" label="COM_CONTENT_ATTRIBS_FIELDSET_LABEL">
+  <fieldset name="basic" label="COM_CONTENT_ATTRIBS_FIELDSET_LABEL">
+    <field
+      name="show_title"
+      type="list"
+      class="chzn-color"
+      label="JGLOBAL_SHOW_TITLE_LABEL"
+      description="JGLOBAL_SHOW_TITLE_DESC">
+      <option value="">JGLOBAL_USE_GLOBAL</option>
+      <option value="1">JSHOW</option>
+      <option value="0">JHIDE</option>
+    </field>
+</fields>
+
+==> outputs
+
+<select id="jform_attribs_show_title" name="jform[attribs][show_title]" class="chzn-color chzn-done" style="display: none;">
+  <option value="" selected="selected">Use Global</option>
+  <option value="1">Show</option>
+  <option value="0">Hide</option>
+</select>
+
+------------------------------------------------------------------
+
+Trying to use JFrom with mulitple <fields> tags in xml
+
+
+I am posting the solution here in the hopes that it helps somebody else out down the road.
+
+ Here is the JForms XML Descriptor:
+
+----------
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="control">
+        <fieldset name="controlinfo" label="Control Info">
+             <field name="id" type="text" ... />
+        </fieldset>
+    </fields>
+    <fields name="mainline">
+        <fieldset name="companyinfo" label="Company Info">
+             <field name="name" type="text" ... />
+            <field name="alias" type="text" ... />
+        </fieldset>
+        <fieldset name="addressinfo" label="Address Info">
+             <field name="address" type="text" ... />
+            <field name="city" type="text" ... />
+        </fieldset>
+    </fields>
+    <fields name="publishing">
+         <fieldset name="publishinfo" label="Publishing Info">    
+            <field name="state" type="list" label="JSTATUS" ... />
+                <option value="1">JPUBLISHED</option>
+                 <option value="0">JUNPUBLISHED</option>
+                <option value="-2">JTRASHED</option>
+            </field>
+            <field name="publish_up" type="calendar"  ... />
+             <field name="publish_down" type="calendar"  ... />
+        </fieldset>
+    </fields>
+</form>
+----------
+
+In my View Template, I list the fields as follows specifying the name of the Field Group in the "getFieldSets" function call:
+
+----------
+<?php foreach ($form->getFieldSets ('mainline') as $fieldset) : ?>
+    <fieldset class="adminform">
+        <legend><?php echo JText::_($fieldset->label); ?></legend>
+             <ul class="adminformlist">
+            <?php foreach ($form->getFieldSet ($fieldset->name) as $field) : ?>
+                <?php if ($fieldset->name == 'descriptioninfo' || $field->hidden) : ?>
+                     <li><?php echo $field->input; ?>
+                <?php else: ?>
+                    <li><?php echo $field->label; echo $field->input; ?></li>
+                <?php endif; ?>
+             <?php endforeach; ?>
+            </ul>
+    </fieldset>
+<?php endforeach; ?>
+
+<?php echo JHtml::_('sliders.start', 'company-sliders-' . $this->item->id, array ('useCookie' => 1)); ?>
+
+<?php foreach ($form->getFieldSets ('publishing') as $fieldset) : ?>
+    <?php echo JHtml::_('sliders.panel', JText::_($fieldset->label), $fieldset->name . '-details'); ?>
+     <fieldset class="panelform">
+        <ul class="adminformlist">
+            <?php foreach ($form->getFieldSet ($fieldset->name) as $field) : ?>
+                <li><?php echo $field->label; echo $field->input; ?></li>
+             <?php endforeach; ?>
+        </ul>
+    </fieldset>
+<?php endforeach; ?>
+
+<?php echo JHtml::_('sliders.end'); ?>
+
+----------
+
+Now, assuming that we are not using multiple <fields> tags, everything would work as it should. However, if you want to use Field Grouping to auto-populate your View with fieldset breaks, then you need to do the following:
+
+1) In your JTable extension class for your table, you need to ensure that you dump all the fields from the JForm to a single level associative array to allow proper binding:
+
+----------
+public function bind ($array, $ignore = '') {
+     $postArray = array ();
+    foreach ($array as $form => $fields) {
+        foreach ($fields as $key => $val) {
+            $postArray[$key] = $val;
+        }
+    }
+    return parent::bind ($postArray, $ignore);
+ }
+----------
+
+2) In your JModelAdmin extension class, modify your loadFormData function to translate the single level associative array of fields into a multi-level associative array:
+
+----------
+protected function loadFormData () {
+     $jformData = array ();
+    $controlForm = array (); // Fields section named "control"
+    $mainlineForm = array (); // Fields section named "mainline"
+    $publishingForm = array (); // Fields section named "publishing"
+     
+    $data = $this->getItem ();
+    foreach ($data as $key => $value) {
+        if (in_array ($key, array('id'))) { $controlForm[$key] = $val; continue; }
+        if (in_array ($key, array('state','publish_up','publish_down'))) { $publishingForm[$key] = $val; continue; }
+         $mainlineForm[$key] = $val;
+    }
+    
+    $jformData['control'] = $controlForm;
+    $jformData['mainline'] = $mainlineData;
+    $jformData['publishing'] = $publishingForm;
+     
+    return $jformData;
+}
+----------
+
+And that is it. Now you can drive the order your fields appear in the view and automatically section off each group of fields without doing any special coding, just grouping within your JForms XML fields file.
+
+
