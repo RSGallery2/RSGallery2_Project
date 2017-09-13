@@ -9,20 +9,28 @@ https://joomla.stackexchange.com/questions/9389/array-of-form-fields
   label="JSCH_GRALEV_CODE"
 />
 
+in model.php
+$formdata = $this->_jinput->get('jform', '', 'array');
+$vals = $formdata['gralev_code'];
+
 ???
 default.php
 $this->form->getInput('gralev_code[]')
 $this->form->getInput('gralev_code[]')
 $this->form->getInput('gralev_code[]')
 
-
-in model.php
-$formdata = $this->_jinput->get('jform', '', 'array');
-$vals = $formdata['gralev_code'];
-
 -----------------
 <field name="team[]" type="text" label="COM_ETMFT_PLAYER_TEAM_LABEL" description="COM_ETMFT_PLAYER_TEAM_DESC" />
 
+Re: How to create in XML file a field like array
+
+Postby 3dgtech » Wed Dec 18, 2013 4:55 am 
+
+due to xml parsing all fields into the jform array, you have to escape the second array correctly.
+so instead of using
+arrayname[arrayindex]
+you have to use
+arrayname][arrayindex]
 
 ----------------------------------
 
@@ -48,7 +56,9 @@ The same using the Joomla Platform 11.1 and above would be:
 $items = $app->input->get('item', array(), 'ARRAY');
 Here the third parameter is necessary since the default filter is 'cmd' which does not allow arrays. 
 
+===================================================================
 
+https://joomla.stackexchange.com/questions/9185/3-x-form-array
 
  
  
