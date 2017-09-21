@@ -1,0 +1,112 @@
+
+
+https://wiki.selfhtml.org/wiki/HTML/Multimedia_und_Grafiken/picture
+
+
+
+
+Das picture-Elements ist ein Container, mit dem Sie mehrere Bildquellen referenzieren können. Dadurch können Sie mehrere Bildversionen für verschiedene Pixeldichten, Auflösungen und Bildschirmformate zur Verfügung stellen, aus denen der Browser dann die passende Grafik auswählt und lädt. Anwendungsbeispiele und eine Abgrenzung zu img mit srcset finden Sie unter HTML/Tutorials/responsive Bilder. 
+Hauptartikel: HTML/Tutorials/responsive Bilder
+
+
+
+
+
+
+Details: caniuse.com
+
+Beachten Sie: Das picture-Element selbst ist nur ein Container für das darin enthaltene img-Element und eventuelle vorhandene source-Elemente.
+Inhaltsverzeichnis [Verbergen] 
+1
+mehrere Bildquellen mit source referenzieren
+2
+mehrere Bildquellen mit srcset
+3
+Gestaltung mit sizes
+4
+siehe auch
+5
+Weblinks
+mehrere Bildquellen mit source referenzieren
+[Bearbeiten]
+Das picture-Element ermöglicht die Angabe mehrerer Bildquellen mittels des Kindelements source, sodass nur das passende Bild geladen wird. Sie sollten sich nicht nur darauf beschränken, dasselbe Motiv in verschiedenen Größen auszuliefern, was Übertragungsvolumen und Übertragungszeit spart, sondern für kleinere Ausgabemedien ggf. auch einen anderen Bildausschnitt liefern. Als Fallback wird am Ende ein img zur Verfügung gestellt. 
+
+
+
+
+
+
+Details: caniuse.com
+
+Beispiel ansehen …Quelltext …
+<picture> 
+   <source media="(min-width: 80em)" srcset="Blume-1200.jpg">
+   <source media="(min-width: 60em)" srcset="Blume-600.jpg">
+   <!---Fallback--->
+   <img src="Blume-400.jpg" alt="wilde Blume vor einem Gebirgssee">
+</picture>
+ansehen …
+Folgende Attribute sind für source möglich: 
+media: ermöglicht mit media queries der zu ladenden Medienquellen (nur im picture-Element) Breakpoints zu erstellen
+sizes: eine kommagetrennte Liste mit einem Medienmerkmal (media condition) und einer Größenangabe 
+Beachten Sie: Der letzte Wert darf kein Medienmerkmal haben.
+srcset: durch Komma getrennte Liste der möglichen Medienquellen. Jeder String besteht aus: 
+URL: 
+Breite: positive Zahl gefolgt von einem w. (Defaultwert ist unendlich) 
+Pixeldichte: positive Zahl gefolgt von einem x. (Defaultwert ist 1x) 
+type: MIME-Typ der zu ladenden Medienquellen.
+(Falls der Medientyp nicht angegeben ist, wird er vom Server geladen und überprüft, ob der Browser das rendern kann. Falls nicht wird die nächste Medienquelle überprüft.
+Durch die Angabe des Medientyps wird nur das source-Element überprüft und, falls der Typ nicht verarbeitet werden kann, gleich die (erste)passende Quelle geladen.)
+mehrere Bildquellen mit srcset
+[Bearbeiten]
+Mit dem Attribut srcset können Sie Bilder in verschiedenen Größen referenzieren, die dann entsprechend geladen werden. 
+
+
+
+
+
+
+Details: caniuse.com
+
+Beispiel: Einbinden von Bildateien mit picture und scrset 
+<picture> 
+   <source srcset="feuerwehr-1600.jpg, feuerwehr-1600hd.jpg 2x" media="(min-width: 1024px)">
+   <source srcset="feuerwehr-480.jpg, feuerwehr-480hd.jpg 2x" media="(min-width: 480px)">
+   <!---Fallback--->
+   <img src="feuerwehr-480.jpg" alt="Feuerwehrfest 2014"
+        srcset="feuerwehr-320.jpg, feuerwehr-320hd.jpg 2x">
+</picture>
+In diesem Beispiel werden im srcset mehrere URL angeboten. Browser ohne srcset-Support zeigen das mit img referenzierte Bild an, für hochauflösende Displays werden alternative hochauflösende Bilder zur Verfügung gestellt. 
+Gestaltung mit sizes
+[Bearbeiten]
+Das sizes-Attribut kann in Verbindung mit srcset nicht nur auflösungsabhängig verschiedene Grafiken laden, sondern diese nach Medienmerkmalen (media condition) unterschiedlich anzeigen. 
+
+
+
+
+
+Details: caniuse.com
+
+Das Attribut: 
+sizes besteht aus einer durch Komma getrennten Liste von 
+Medienmerkmalen (media condition), 
+vorgeschlagenen Breitenangaben
+Beachten Sie: Die letzte Breitenangabe darf kein Medienmerkmal besitzen.
+Diese Information nutzt der Browser um zu entscheiden, welches der in srcset definierten Bildquellen geladen werden soll. 
+Beachten Sie: Wenn das srcset-Attribut fehlt oder keine gültigen Angaben eines w-Werts hat, hat das sizes-Attribut keine Auswirkungen.
+Beispiel: Gestaltung mit sizes-Attribut 
+<img src="Monumentvalley-gross.jpg"
+     alt="Panorama Monument Valley - Quelle Wikipedia"
+     srcset="Monumentvalley-klein.jpg 600w, 
+             Monumentvalley-mittel.jpg 1200w, 
+             Monumentvalley-gross.jpg 1920w"
+     sizes="(min-width: 50em) 33%,
+            (min-width: 25em) 50%,
+            100%">
+Für das Panoramabild werden drei verschiedene Versionen zur Verfügung gestellt. Die Breiten der einzelnen Versionen werden dem Browser über den w-Wert mitgeteilt. 
+Zusätzlich wird nun mit dem sizes-Attribut die je nach Medien-Merkmal unterschiedliche Breite angegeben. 
+Auf schmalen Bildschirmen nimmt die Grafik die gesamte Breite ein.
+Ab einer Viewport-Breite von 25em wird die Grafik in einem 2-spaltigen Layout auf 50% der Breite begrenzt.
+Bei großen Bildschirmen ab 50em nimmt sie nur noch ein Drittel der Breite ein.
+Beachten Sie: Das sizes-Attribut regelt nicht die Größe der Darstellung, sondern hilft dem Browser zu entscheiden, welche Versionen er laden soll.
+Die Größe der Darstellung wird über media queries geregelt.
