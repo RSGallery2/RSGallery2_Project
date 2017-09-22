@@ -1,0 +1,250 @@
+responsive Bilder
+
+HTML/Tutorials/responsive Bilder
+Frage im SELFHTML-
+Forum stellen‽
+nach oben
+letzte Änderungen
+anmelden
+HTML
+Tutorials
+Wechseln zu: Navigation, Suche 
+Ethan Marcotte stellte Responsive Webdesign ursprünglich als fluid grids, flexible images, and media queries vor[1]. Bei Grafiken, die Teil des Inhalts sind, beschränkte sich diese Flexibilität auf prozentuale Breitenangaben. Immer größere Monitore erforderten größere Bilder, die von mobilen Geräten trotz ihres geringeren Viewports genauso geladen werden mussten. Dabei haben gerade mobile Geräte niedrige Datenübertragungsraten oder sogar noch Volumensbegrenzungen. Hier müssen Webdesigner eine Balance finden zwischen dem optimalen Bild in HD-Qualität und einer benutzerfreundlichen Seite, die ihre Inhalte schnell und unkompliziert zur Verfügung stellt. 
+Mit dem picture-Element, bzw. den srcset- und sizes-Attributen für picture und auch img ist es nun auch möglich, dass auflösungsabhängig mehrere Bildquellen vorgehalten werden und der Browser nur das passende Bild lädt und anzeigt. 
+Inhaltsverzeichnis [Verbergen] 
+1
+bisherige Ansätze
+1.1
+prozentuale Breitenangaben
+1.2
+Hintergrundbilder und media queries
+2
+Anwendungsbeispiele
+2.1
+hochauflösende Versionen mit srcset
+2.2
+Resolution Switching mit srcset
+2.3
+Gestaltung mit sizes
+2.4
+Art Direction
+3
+Fazit
+4
+Quellen
+4.1
+Weblinks
+4.2
+responsive Bilder in CMS-Systemen
+4.3
+Polyfills
+bisherige Ansätze
+[Bearbeiten]
+prozentuale Breitenangaben
+[Bearbeiten]
+Bisher konnten Sie die Größe des img-Elements mithilfe von CSS an die Größe des Viewports anpassen. Allerdings wurden die hochauflösenden Bilder auch für mobile Geräte eingebunden, die, obwohl nicht benötigt, trotzdem geladen werden mussten, was bei geringen Übertragungsraten lange dauern konnte. 
+
+Beispiel: prozentuale Breitenangaben ansehen …Quelltext …
+header {
+  height: 150px;	  
+  background: url(Monumentvalley-gross.jpg) center;	  
+  background-size: 100%; 
+  margin: 10px 0;
+}
+
+@media all and (max-width: 45em) {
+  header {
+    height: 120px;
+  }
+}	
+ 
+ 
+@media all and (max-width: 30em) {
+  header {
+    height: 90px;
+  }
+}
+	
+
+article .panorama {
+  width: 100%;
+}
+In diesem Beispiel sind sowohl das Hintergrundbild im header als auch das untere Panoramabild im Inhaltsteil responsiv, d.h. sie erstrecken sich über die gesamte Breite des je nach Viewport verfügbaren Platzes.
+Allerdings wird auch bei schmalen Viewports das großformatige Bild geladen, was zu längeren Ladezeiten führen kann. Dies ist insbesondere für mobile Geräte von Bedeutung, da auch noch ein Bild übertragen wird, was in dieser hohen Auflösung gar nicht benötigt wird.
+ansehen …
+Hintergrundbilder und media queries
+[Bearbeiten]
+Bei Hintergrundbildern könnte man durch media queries mehrere Versionen einer Grafik referenzieren, von denen dann die passende geladen würde: 
+Beispiel: Einbinden mehrerer Bildquellen mit media queries 
+header {
+  background: url(Monumentvalley-klein.jpg) center;	  
+}
+
+@media all and (min-width: 30em) {
+  header {
+    background: url(Monumentvalley-mittel.jpg) center;	 
+  }
+}	
+
+
+@media all and (min-width: 60em) {
+  header {
+    background: url(Monumentvalley-gross.jpg) center;	 
+  }
+}
+Sie sollten sich nicht nur darauf beschränken, dasselbe Motiv in verschiedenen Größen auszuliefern, was Übertragungsvolumen und Übertragungszeit spart, sondern für kleinere Ausgabemedien ggf. auch einen anderen Bildausschnitt liefern. 
+Anwendungsbeispiele
+[Bearbeiten]
+hochauflösende Versionen mit srcset
+[Bearbeiten]
+Früher galt die Grundregel, dass Bilder in ihren Abmessungen genauso viele Pixel wie der auf der Seite dafür vorgesehene Platz haben sollten. Durch das Aufkommen von Retina-Displays, 4K-Monitoren und Ultra-HD haben sich Pixel weg von physischen Pixel hin zu einer relativen Maßeinheit entwickelt. 
+Herkömmliche Bilder sehen auf solchen Monitoren mit einer höheren Pixeldichte oft verpixelt aus. 
+Empfehlung: Verwenden Sie große Bilder. 
+Auf Bildschirmen mit einer hohen Pixeldichte sehen Grafiken besser aus, wenn Sie größere Abmessungen haben. Damit die Dateigröße nicht ins Unermeßliche steigt, ist es möglich und völlig unproblematisch, die Kompression eines .jpgs auf 25% zu reduzieren.[2] [3]
+
+Mittels des srcset-Attribut können Sie dem Browser mehrere Versionen Ihrer Grafik zur Verfügung stellen. 
+
+
+
+
+
+Details: caniuse.com
+
+Beispiel: hochauflösende Versionen ansehen …Quelltext …
+<img src="Monumentvalley-gross.jpg"
+     alt="Panorama Monument Valley - Quelle Wikipedia"
+     srcset="Monumentvalley-mittel.jpg 1x, 
+             Monumentvalley-gross.jpg  2x" >
+Für das Panoramabild werden im srcset-Attribut zwei verschiedene Versionen zur Verfügung gestellt:
+Da der Browser die referenzierten Grafiken nur im Bedarfsfall laden soll, wird mit dem dazugehörigen x-Wert übermittelt, welches Bild für hochauflösende Bildschirme verwendet werden soll. Der Browser kann dann selbst entscheiden, welche Bilder geladen werden sollen.
+Falls der Browser das srcset-Attribut noch nicht kennt, wird es ignoriert und stattdessen die im herkömmlichen src-Attribut referenzierte Bildquelle geladen.
+Alle Bilder teilen sich ein alt-Attribut, mit dem die Zugänglichkeit gewahrt wird.
+ansehen …
+Resolution Switching mit srcset
+[Bearbeiten]
+Seinen wahren Nutzen erreicht das srcset-Attribut aber, wenn dem Browser mehrere Grafikversionen für verschiedene Auflösungen vom kleinen Mobilgerät bis zum übergroßen 4k-Monitore zur Verfügung gestellt werden und mit dem dazugehörigen w-Wert die Breite der Bilder übermittelt wird. 
+Der Browser kann dann selbst entscheiden, welches der referenzierten Bilder am Besten zur vorhandenen Bildschirm-Auflösung (screen resolution) passt und geladen werden soll. Die Pixeldichte wird automatisch berücksichtigt; Retina-Displays entscheiden sich entsprechend für größere Bilder. 
+
+
+
+
+
+Details: caniuse.com
+
+Beispiel: Resolution Switching ansehen …Quelltext …
+<img src="Monumentvalley-gross.jpg"
+     alt="Panorama Monument Valley - Quelle Wikipedia"
+     srcset="Monumentvalley-klein.jpg 600w, 
+             Monumentvalley-mittel.jpg 1200w, 
+             Monumentvalley-gross.jpg 1920w" >
+Für das Panoramabild werden drei verschiedene Versionen zur Verfügung gestellt. Die Breiten der einzelnen Versionen werden dem Browser über den w-Wert mitgeteilt. So kann der Browser selbst entscheiden, welches der referenzierten Bilder er laden will.
+ansehen …
+
+Beachten Sie, dass bei einer Änderung des Viewports die Grafik nicht neu geladen wird. Sie müssen dazu die Seite neu laden. Was wie ein Nachteil klingt, ist bei mobilen Geräten, die evtl. nur über eine leistungsschwache Datenverbindung verfügen, jedoch ein Vorteil, da nicht bei jeder auch unbeabsichtigten Bewegung grafische Inhalte nachgeladen werden, und so der traffic nicht übermäßig belastet wird.
+Eine Drehung des Bildschirms z.B. bei einem Tablet benötigt diese Vorgehensweise mit dem picture-Element.
+Gestaltung mit sizes
+[Bearbeiten]
+Das sizes-Attribut kann in Verbindung mit srcset nicht nur auflösungsabhängig verschiedene Grafiken laden, sondern diese nach Medienmerkmalen (media condition) auch unterschiedlich anzeigen. 
+
+
+
+
+
+Details: caniuse.com
+
+Beispiel: Gestaltung mit sizes 
+<img src="bild.jpg"
+     alt="Alternativtext"
+     srcset="bild.jpg 800w, 
+             bild-gross.jpg 1920w" 
+     sizes="(min-width: 60em) 50vw, 
+            100vw"
+>
+Wenn das Browser-Fenster breiter als 60em ist, wird dieses Bild wahrscheinlich in der halben Breite dargestellt; bei kleineren Viewports aber über die gesamte verfügbare Breite.
+In der praktischen Umsetzung ergeben sich einige Probleme, die im folgenden Beispiel erklärt werden. 
+Beispiel: responsive Gestaltung mit sizes ansehen …Quelltext …
+      <img src="Antelope-1-klein.jpg"
+           alt="Lower Antelope Canyon - Quelle Wikipedia"
+           srcset="Antelope-1-klein.jpg 600w, 
+                   Antelope-1-mittel.jpg 1200w, 
+                   Antelope-1-gross.jpg 1920w"
+           sizes="(min-width: 35em) 50vw,
+                  (min-width: 50m) 33vw,
+                  100vw"> 
+      <img src="Antelope-2-klein.jpg"
+           alt="Lower Antelope Canyon - Quelle Wikipedia"
+           srcset="Antelope-2-klein.jpg 600w, 
+                   Antelope-2-mittel.jpg 1200w, 
+                   Antelope-2-gross.jpg 1920w"
+           sizes="(min-width: 35em) 50vw,
+                  (min-width: 50em) 33vw,
+                  100vw">
+Für das Panoramabild werden drei verschiedene Versionen zur Verfügung gestellt. Die Breiten der einzelnen Versionen werden dem Browser über den w-Wert mitgeteilt. 
+Zusätzlich wird nun mit dem sizes-Attribut die je nach Medien-Merkmal unterschiedliche Breite angegeben. 
+Auf schmalen Bildschirmen nimmt die Grafik die gesamte Breite ein.
+Ab einer Viewport-Breite von 25em wird die Grafik in einem 2-spaltigen Layout auf 50vw der Breite begrenzt (Die Einheit vw bezieht sich auf die Breite des Viewports).
+Bei großen Bildschirmen ab 50em nimmt sie nur noch ein Drittel der Breite ein.
+ansehen …
+
+Beachten Sie: Anders als vielleicht erwartet, regelt das sizes-Attribut nicht die Größe der Darstellung, sondern hilft dem Browser zu entscheiden, welche Versionen er laden soll.
+Die Größe der Darstellung wird über media queries geregelt.
+Beispiel: Gestaltung mit sizes ansehen …Quelltext …
+article img {
+  width: 100%;
+}	
+
+@media all and (min-width: 35em) {
+  article img {
+    width: 49%;
+  }	  
+} 
+
+@media all and (min-width: 50em) {
+  article img {
+    width: 32.5%;
+  }	  
+}
+Nach dem Grundsatz mobile first! erhalten Bilder die volle Breite der article-Elements.
+Wenn der Viewport breiter als 35em ist, nimmt das Bild die Hälfte, bei einer Breite von mehr als 50em ein Drittel des Viewports ein.
+ansehen …
+Art Direction
+[Bearbeiten]
+Panoramabilder von weiträumigen Landschaften und Gebirgsketten entfalten ihre volle Wirkung nur bei großen Abmessungen. Auf kleineren Bildschirmen lässt eine skalierte Miniansicht aber nur wenig Einzelheiten erkennen. Ein einzelner Gipfel sieht hier besser aus. 
+Diese Veränderung des Seitenverhältnisses oder Bildausschnitts, in der Fachliteratur art direction genannt, erfordert das Anlegen verschiedener Bilder und eine sofortige Anpassung bei einer Veränderung der Auflösung. 
+Mit dem picture-Element können Sie mehrere Bilder für verschiedene Viewports referenzieren. Seit der Version 9.1 unterstützt auch der Safari das picture-Element, für ältere Versionen gibt es aber einen Polyfill. 
+
+
+
+
+
+
+Details: caniuse.com
+
+Beispiel: Art Direction 
+<picture>
+    <source srcset="bild1x.jpg 1x, bild2x.jpg 2x, bild4x.jpg 4x">
+    <!--- Fallback --->
+    <img  src="bild1x.jpg" alt="">
+</picture>
+Das picture-Element ist ein Container für ein img-Element als Fallback und eins oder mehrere source-Elemente, die mit dem srcset-Attribut ein oder mehrere Bilder referenzieren können.
+Hier werden je nach Pixeldichte über den x-Wert Bilder vorgeschlagen.
+Beispiel: Art Direction ansehen …Quelltext …
+<picture>
+  <source media="(min-width: 50em)" 
+          srcset="TotemPole.jpg">
+  <source media="(min-width: 30em)" 
+          srcset="TotemPole-mittel.jpg">
+  <source srcset="TotemPole-klein.jpg">
+  <img src="TotemPole.jpg" alt="Monument Valley - Totem Pole">
+</picture>
+Die vorhandene Grafik wird in drei Versionen mit jeweils unterschiedlichen Seitenverhältnissen abgespeichert. 
+Bei einer Viewport-Breite von mehr als 50em wird die Panorama-Version (Verhältnis 2:5) geladen. 
+Sobald der Viewport kleiner wird, erscheint eine schmalere Version ( Verhältnis von 2:4). 
+Bei kleinen Viewports unterhalb von 30em erscheint eine quadratische Version.
+ansehen …
+Fazit
+[Bearbeiten]
+Die Browser-Unterstützung für die srcset- und sizes-Attribute ist so gut, dass Sie sie problemlos einsetzen können; ältere Versionen des Internet Explorers erhalten einfach die im src-Attribut referenzierte Standardversion. 
+Bei normalen Bildern werden sich mehrere Versionen einer Grafik nicht lohnen, bei großflächigen Panorama- und Hero-Bildern dagegen schon. Hierfür eignet sich das img-Element in Verbindung mit srcset, um mehrere optimierte Versionen anbieten zu können. 
+Für Art Direction empfiehlt sich das picture-Element. 
+Eine Einbindung mehrerer Bildquellen in Content Management Systeme ist nicht trivial, mittlerweile gibt es aber Plugins für die gängigsten Systeme
