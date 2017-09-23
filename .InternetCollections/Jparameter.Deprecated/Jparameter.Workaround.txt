@@ -1,0 +1,25 @@
+https://stackoverflow.com/questions/12596630/getting-error-while-using-new-jparameterplugin-params-in-joomla-3-0
+
+As JParameter was using JRegistry, here is a work around:
+
+$params = new JRegistry();
+$params->loadString($module->params);
+
+$params->get('param_name');
+
+
+------------------------------------------------
+A little late, but for everyone else who stumbles upon this:
+
+Use:
+
+json_decode($plugin->params);
+I found this along with lots of other useful informations about the changes in Joomla 3.0 here: 
+
+----------------------------------------------------
+Removed classes
+
+JParameter (use JForm instead or, in most circumstances, JRegistry - for example to retrieve in a component a plugin parameter)
+
+
+
