@@ -1,6 +1,49 @@
 google: php check if file is an image
 
+----------------------------------------------------------
+https://stackoverflow.com/questions/10456113/php-check-file-extension-in-upload-form
+Checking file extension is not considered best practice, preferred method of accomplishing this task is by checking the files mime type.
 
+From PHP:
+
+<?php
+$finfo = finfo_open(FILEINFO_MIME_TYPE); // return mime type
+foreach (glob("*") as $filename) {
+    echo finfo_file($finfo, $filename) . "\n";
+}
+finfo_close($finfo);
+?>
+The above example will output something similar to which you should be checking.
+
+text/html
+image/gif
+application/vnd.ms-excel
+Although mime-types can also be tricked (edit the first few bytes of a file and modify the magic numbers) but it's harder than editing a filename. So you can never be 100% sure what that file type actually is, and care should be taken about handling files uploaded/emailed by your users.
+
+-----------------------------------------------------
+
+or better use exif_imagetype -> avoid beeing executable
+chmod 0x455  ?
+
+---------------------------------------------------------
+In PHP 5.5 I use this function for getting file type and check if image:
+
+function getFileType( $file ) {
+    return image_type_to_mime_type( exif_imagetype( $file ) );
+}
+
+// Get file type
+$file_type = getFileType( 'path/to/images/test.png' );
+echo $file_type;
+// Prints image/png
+// 1. All images have mime type starting with "image"
+// 2. No other non-image mime types contain string "image" in it 
+Then you could do:
+
+if ( strpos( $filetype, 'image' ) !== false ) {
+    // This is an image 
+}
+Complete list of mime types: http://www.sitepoint.com/web-foundations/mime-types-complete-list/
 --------------------------------------------------
 The getimagesize() should be the most definite way of working out whether the file is an image:
 
