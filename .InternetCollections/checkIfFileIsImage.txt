@@ -1,0 +1,107 @@
+google: php check if file is an image
+
+
+--------------------------------------------------
+The getimagesize() should be the most definite way of working out whether the file is an image:
+
+if(@is_array(getimagesize($mediapath))){
+    $image = true;
+} else {
+    $image = false;
+}
+because this is a sample getimagesize() output:
+
+Array (
+[0] => 800
+[1] => 450
+[2] => 2
+[3] => width="800" height="450"
+[bits] => 8
+[channels] => 3
+[mime] => image/jpeg)
+
+
+---------------------------------------------------------------
+
+So the checking file type by name or extension is not good, because you can easily change it by plain remane function. You can check if uploaded file is an image using e.g. mime type. In php you have function mime_content_type(). Example of usage:
+
+$imageMimeTypes = array(
+    'image/png',
+    'image/gif',
+    'image/jpeg');
+
+$fileMimeType = mime_content_type($_FILES['UPLFILE2']['tmp_name']);
+
+if (in_array($fileMimeType, $imageMimeTypes)) {
+    //passed validation 
+}
+Of course you can define more mime types of images.
+
+
+
+
+----------------------------------------------------------------------------
+Secure Image Upload, or Bypassing PHP mime-type Check
+
+
+
+up vote
+1
+down vote
+favorite
+When securing image uploads there are basically three approaches I know of (of course, ideally, all three are used):
+
+check file extension
+store uploaded files in non-executable directory outside the webroot
+check content/mime type of the file
+For the third point, there are various PHP functions which are suggested, most of which can be bypassed by encoding the code in IDAT chunks. Here are the results I get:
+
+<?php $image = 'imageshell.png';
+
+echo exif_imagetype($image);
+// -> 3 (IMAGETYPE_PNG)
+
+echo "<br>" . getimagesize($image)[2];
+// -> 3 (IMAGETYPE_PNG)
+
+echo "<br>" . mime_content_type($image);
+// -> image/png
+
+echo "<br>" . finfo_file(finfo_open(FILEINFO_MIME_TYPE), $image);
+// -> image/png
+
+echo "<br>" . finfo_file(finfo_open(FILEINFO_MIME_TYPE, "/usr/share/misc/magic"), $image);
+// -> application/octet-stream
+I basically have these questions now:
+
+Why is the result different if I pass a magic file (shouldn't it still accept the file as an image file, as that is what it actually is?), what exactly is a magic file, and what does PHPs inbuilt magic file look like?
+Can I check beforehand if the system has a magic file that will result in correctly identifying a non-image or an image which contains PHP code?
+If I can't, is there a better approach to check if an image file contains PHP code?
+Is it possibly to bypass the last check - the one resulting in application/octet-stream - as well?
+php file-upload mime-type
+shareimprove this question
+asked Feb 21 '16 at 20:29
+
+tim
+19.2k45276
+add a comment
+1 Answer
+active oldest votes
+up vote
+2
+down vote
+Why is the result different if I pass a magic file (shouldn't it still accept the file as an image file, as that is what it actually is?), what exactly is a magic file, and what does PHPs inbuilt magic file look like?
+A magic file is the description of some heuristics to determine the file type. Different results can be caused by different magic files but also different implementations of the heuristic engine.
+
+Can I check beforehand if the system has a magic file that will result in correctly identifying a non-image or an image which contains PHP code?
+The various file magic functions are designed to detect the file type only by looking at a few bytes at the beginning. They are not designed to find out if there is PHP code hidden inside the file. It should be possible to create a polyglot document which is both valid PHP and a valid image.
+
+Which means checking the content/mime is not a sufficient validation.
+
+If I can't, is there a better approach to check if an image file contains PHP code?
+It's better not to just check but instead to make sure. This can be done by converting the image into a different format and stripping all meta information.
+
+store uploaded files in non-executable directory outside the webroot
+That's actually the best way. But make also sure that you cannot be tricked to include the file in another PHP script, i.e. Local File Inclusion.
+
+
