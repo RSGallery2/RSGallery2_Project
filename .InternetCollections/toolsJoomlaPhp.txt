@@ -1,0 +1,71 @@
+
+
+Project management
+
+* google spreadsheet
+
+
+workflow
+
+Develop
+Test  (backup kickstart) deployment in PHP storm
+Acceptance same as destinatioin but .htaccess 
+Production
+
+other tools 
+* deevop develop->demo ->Production
+* Vagrant virtual box + environment (prepared)
+* Docker -> each app in own box ->
+
+
+hosting
+Proactive, communication, 
+	ssh access, ssl, 
+	
+Joomla
+
+-> options manager
+
+
+Usability
+
+Book: Steve krug don't make me think
+
+* Disable unused backend component 
+* disable unused templates
+
+* -create own backend menues
+* Access control list
+   > Limited Admin under parent Public 
+   --> acl manager -> +  repairs _assets table
+   
+Edit
+JCE editor profile
+-> profile per component ? size ? limit folder access 
+   
+
+
+Maintenance
+Backup, updte joomla, Update joomla extensions, security checks
+-> monitor your sites: myjoomla, perfect dashboard, watchful.li
+
+Continous integration
+
+  PHPStorm 
+    -> folder source  -> deploy to test site, 
+	-> commit and push to remote
+	-> deploy to acceptance / live site
+	
+	
+   automatic git synchronisation 
+   
+   
+Payments:
+   Prepaid  support 10h
+   
+   
+>>>> joomla staging manager
+
+
+
+

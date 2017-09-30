@@ -1,0 +1,42 @@
+JD17
+https://www.youtube.com/watch?v=wvUT5ua2gyo&index=3&list=PLSwFVRVZ3joTNuAKGDClKuGWuLXp5nijK
+
+
+PHP  Code Sniffer
+SquizLabs
+
+-> notepad++ Plugin
+
+
+pear download + install
+
+joomla codeing standard -> In verzeichniss Joomla 
+Anleitung joomla org/Joomla_codeSniffer ...
+
+PHP Storm13:50
+
+---------------------------------------
+
+php mess detector
+
+
+
+
+
+
+-----------------------------------------
+
+
+
+php coding standard fixer
+
+
+------------------------------------------
+
+
+continous integration
+
+
+--------------------------------------------
+
+

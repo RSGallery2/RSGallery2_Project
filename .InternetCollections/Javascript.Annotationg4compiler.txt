@@ -1,0 +1,18 @@
+
+
+https://github.com/google/closure-compiler/wiki/Annotating-JavaScript-for-the-Closure-Compiler
+
+Annotating JavaScript for the Closure Compiler
+
+Overview
+
+(copied from https://developers.google.com/closure/compiler/docs/js-for-compiler, included in the GitHub wiki to permit community editing)
+The Closure Compiler can use data type information about JavaScript variables to provide enhanced optimization and warnings. JavaScript, however, has no way to declare types.
+
+Because JavaScript has no syntax for declaring the type of a variable, you must use comments in the code to specify the data type.
+
+The Closure Compiler's type language derives from the annotations used by the JSDoc document-generation tool. This document describes the set of annotations and type expressions that the Closure Compiler understands.
+
+...
+
+

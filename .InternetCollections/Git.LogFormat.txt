@@ -1,0 +1,30 @@
+
+
+https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date
+git log containing author and date
+
+I use these two .gitconfig settings:
+[log]
+  date = relative
+[format]
+  pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset
+%ad is the author date, which can be overidden by --date or the option specified in the [log] stanza in .gitconfig. I like the relative date because it gives an immediate feeling of when stuff was comitted. Output looks like this:
+6c3e1a2 2 hours ago you@me.com lsof is a dependency now.
+0754f18 11 hours ago you@me.com Properly unmount, so detaching works.
+336a3ac 13 hours ago you@me.com Show ami registration command if auto register fails
+be2ad45 17 hours ago you@me.com Fixes #6. Sao Paolo region is included as well.
+5aed68e 17 hours ago you@me.com Shorten while loops
+This is all of course in color, so it is easy to distinguish the various parts of a log line. Also it is the default when typing git log because of the [format] section.
+2014 UPDATE: Since git now supports padding I have a nice amendment to the version above:
+pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
+This right aligns the relative dates and left aligns committer names, meaning you get a column-like look that is easy on the eyes.
+
+---------------------------------
+git log --pretty=format:"%H %an %ad"
+use --date= to set a date format
+git log --pretty=format:"%H %an %ad" --date=short
+
+
+
+
+
