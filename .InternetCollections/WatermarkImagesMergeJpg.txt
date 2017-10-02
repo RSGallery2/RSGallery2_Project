@@ -1,0 +1,31 @@
+
+http://php.net/manual/de/image.examples-watermark.php
+
+Wasserzeichen mit Hilfe von Alpha-Kanälen zufügen ¶
+
+Beispiel #1 Wasserzeichen mit Hilfe von Alpha-Kanälen zufügen
+
+<?php
+// Wasserzeichen und Foto laden
+$stamp = imagecreatefrompng('stamp.png');
+$im = imagecreatefromjpeg('photo.jpeg');
+
+// Ränder für Wasserzeichen festlegen, dessen Höhe und Breite bestimmen 
+$marge_right = 10;
+$marge_bottom = 10;
+$sx = imagesx($stamp);
+$sy = imagesy($stamp);
+ 
+// Wasserzeichen auf das Foto kopieren, die Position berechnet sich dabei aus
+// den Rändern und der Bildbreite
+imagecopy($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
+
+// Ausgeben und aufräumen
+header('Content-type: image/png');
+imagepng($im);
+imagedestroy($im);
+?>
+Wasserzeichen mit Hilfe von Alpha-Kanälen zufügen
+Dieses Beispiel zeigt eine übliche Vorgehensweise um ein Wasserzeichen auf Fotos oder urheberrechtlich geschützten Bildern anzubringen. Beachten Sie, daß die Wasserzeichen-Grafik einen Alphakanal enthält. Dieser wird beim Kopiervorgang beibehalten.
+
+
