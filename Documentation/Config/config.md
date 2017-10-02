@@ -28,7 +28,7 @@ This text is used as a broad header description of the "root gallery" view. The 
 (3) Debug
 
 Activates debug functionality. This does write calling parameters and logs some of the used files / classes in a log file.
-"Attention: On Yes to Debug a log file per day will be created in folder 'joomlaBase\\log' and notices may appear on top of a form. Please delete log files regularly". In Maintenance will (may be in near future) be a button to achieve this
+"Attention: On Yes to Debug a log file per day will be created in folder '...//joomla root/administrator/log' and notices may appear on top of a form. Please delete log files regularly". In Maintenance will (may be in near future) be a button to achieve this
 
 (4) Develop
 
@@ -77,11 +77,17 @@ link:
 link:
 
 (1) Graphics Library
+
 (2) ImageMagick Path
+
 (3) Netpbm Path
+
 (4) Video converter path
+
 (5) Video converter parameters
+
 (6) Thumbnail extraction parameters
+
 (7) Video output type
 
 #### Images.Image Storage
@@ -89,8 +95,14 @@ link:
 link:
 
 (1) Keep original image Yes No
+
+The original image may be deleted after the upload process for server space or hiding purposes.<br>
+With an additional created watermarked image (See below) a user may  see the an image in a good resolution but can't retrieve the original without the watermark
+
 (2) Original Image Path
+
 (3) Display Image Path
+
 (4) Thumb Path
 
 #### Images.Comments
@@ -98,15 +110,25 @@ link:
 link:
 
 (1) Use CAPTCHA check, in comment form Yes No
+
 (2) CAPTCHA type
+
 (3) CAPTCHA image height in px (width is 2.7*height)
+
 (4) CAPTCHA perturbation (1.0 is high, the higher the more distorted; 0.75 is fine)
+
 (5) Number of lines to distort the CAPTCHA image with
+
 (6) CAPTCHA background color (hexadecimal code, e.g. #0099CC)
+
 (7) Textcolor (hexadecimal code, e.g. #EAEAEA)
+
 (8) Color of lines (hexadecimal code, e.g. #0000CC)
+
 (9) Alfanumeric CAPTCHA is case sensitive recommended setting: No) Yes No
+
 (10) Characters to use for alfanumeric CAPTCHA
+
 (11) Length of code for alfanumerc CAPTCHA
 
 #### Images.Voting
@@ -114,11 +136,8 @@ link:
 link:
 
 (1) User can only vote once (cookie based) Yes No
+
 (2) Cookie prefix rsgvoting_
-
-(1) .
-
-(2) .
 
 (3) .
 
@@ -139,18 +158,32 @@ link:
 link:
 
 (1) Display Search Yes No
+
 (2) Display Random Yes No
+
 (3) Display Latest Yes No
+
 (4) Display Branding Yes No
+
 (5) Display Downloadlink Yes No
+
 (6) Display Status Icons Yes No
+
 (7) Display gallery limitbox
+
 (8) Default number of galleries on frontpage
+
 (9) Display Slideshow Yes No
+
 (10) Select slideshow
+
 (11) Display Owner Information Yes No
+
 (12) Display number of items in gallery Yes No
-(13) Include items in child galleries when displaying number of items in a gallery Yes No
+
+(13) Include items in child galleries when displaying number of items in a
+gallery Yes No
+
 (14) Display creation date Yes No
 
 #### Image Display
@@ -158,10 +191,15 @@ link:
 link:
 
 (1) Display Slideshow in item view Yes No
+
 (2) Popup style
+
 (3) Display Description Yes No
+
 (4) Display Hits Yes No
+
 (5) Display Voting Yes No
+
 (6) Display Comments Yes No
 
 #### Image order
@@ -169,6 +207,7 @@ link:
 link:
 
 (1) Order images by
+
 (2) Order direction
 
 #### EXIF settings
@@ -176,6 +215,7 @@ link:
 link:
 
 (1) Display EXIF Data Yes No
+
 (2) Select EXIF tags to display
 
 #### Gallery View
@@ -183,12 +223,19 @@ link:
 link:
 
 (1) Thumbnail Style:
+
 (2) Use float for variable width templates.
+
 (3) Direction (only works for float)
+
 (4) Number of Thumbnail Columns (only for table)
+
 (5) Thumbnails per Page
+
 (6) Show image name below thumbnail Yes No
+
 (7) Navigation bar display
+
 (8) Display Slideshow in gallery view Yes No
 
 #### Image Watermark
