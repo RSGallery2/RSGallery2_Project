@@ -1,0 +1,6 @@
+
+
+
+
+
+wenn Du etwas vertikal zentrieren willst. dann geht das leicht, in dem Du dem Elternelement ein "display:flex; align-item:center;" verpasst.
