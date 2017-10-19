@@ -96,8 +96,8 @@ link:
 
 (1) Keep original image Yes No
 
-The original image may be deleted after the upload process for server space or hiding purposes.<br>
-With an additional created watermarked image (See below) a user may  see the an image in a good resolution but can't retrieve the original without the watermark
+The original image may be deleted after the upload process for server space or hiding purposes.  
+With an additional created watermarked image (See below) a user may  see the "display" image in a valid quality (resolution) but can't retrieve the original without the watermark
 
 (2) Original Image Path
 
@@ -240,25 +240,31 @@ link:
 
 #### Image Watermark
 
-link:
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.display.watermark.png?raw=true)
 
-Display Watermark
+If you consider using watermarked files see also description "How to hide the original image from the user"  
 
-(1) .
+* (1) Display watermark  
+   Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.  
+   A watermarked replacement file will be created once when uploading or when viewed the first time.
+   The watermarking will be a text defined in the configuration.   
+   Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
-(2) .
+* (2) Font  
+    Select the font type of the watermark text  
+* (3) Watermark text  
+    Define the text to be displayed in the image  
+* (4) Watermark font size  
+    Select the font size of the watermark text  
+* (5) Watermark text angle  
+    Define the angle of the watermark text  
+* (6) Watermark position  
+    Select the position of the watermark text  
+* (7) Watermark transparency  
+    Define transparency of the text to be displayed in the image  
+* (8) Watermark image path  
+    Define the destination path of the created watermarked files  
 
-(3) .
-
-(4) .
-
-(5) .
-
-(6) .
-
-(7) .
-
-(8) .
 
 ## My Galleries
 My galleries supports the creation of user galleries
