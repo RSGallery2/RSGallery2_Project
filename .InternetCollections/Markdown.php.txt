@@ -1,0 +1,19 @@
+
+
+google: PHP-markdown
+
+
+https://github.com/michelf/php-markdown/
+https://github.com/erusev/parsedown ++
+https://github.com/cebe/markdown
+https://github.com/e-picas/markdown-extended
+
+
+--------------------------
+
+doc your source 
+
+https://github.com/victorjonsson/PHP-Markdown-Documentation-Generator
+
+https://css-tricks.com/choosing-right-markdown-parser/
+
