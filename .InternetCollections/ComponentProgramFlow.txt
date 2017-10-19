@@ -1,0 +1,5 @@
+
+
+Component Program Flow
+https://docs.joomla.org/Component_Program_Flow
+
