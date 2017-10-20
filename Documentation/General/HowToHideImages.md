@@ -37,36 +37,36 @@ So users can't immediately guess the URL of the next or previous image. So it is
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.storage.png?raw=true)
 
  In configuration->images->section "Image storage"  
-(1) activate the "no" selection  
+ * (1) activate the "no" selection  
 
-1. Check "display" resolution
+2. Check "display" resolution
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.manipulation.png?raw=true)
 
  In configuration->images->section "Image manipulation"  
-(1) Display picture width defines the maximum size of the displayed image.  
-(2) You can reduce the quality of the displayed image to your needs
+ * (1) Display picture width defines the maximum size of the displayed image.  
+ * (2) You can reduce the quality of the displayed image to your needs
 
 3. Check watermark settings
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.display.watermark.png?raw=true)
 
  In configuration->display->section "Image watermark"  
- (1) Display watermark  
+ * (1) Display watermark  
     Activate if watermarked files should be used on "big size" display  
- (2) Font  
+ * (2) Font  
      Select the font type of the watermark text  
- (3) Watermark text  
+ * (3) Watermark text  
      Define the text to be displayed in the image  
- (4) Watermark font size  
+ * (4) Watermark font size  
      Select the font size of the watermark text  
- (5) Watermark text angle  
+ * (5) Watermark text angle  
      Define the angle of the watermark text  
- (6) Watermark position  
+ * (6) Watermark position  
      Select the position of the watermark text  
- (7) Watermark transparency  
+ * (7) Watermark transparency  
      Define transparency of the text to be displayed in the image  
- (8) Watermark image path  
+ * (8) Watermark image path  
      Define the destination path of the created watermarked files  
 
 ### Drawbacks
