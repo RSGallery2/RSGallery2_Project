@@ -19,6 +19,8 @@ http://wowslider.com/de/
 Video
 https://extensions.joomla.org/extension/vina-youtube-video-carousel/
 
+http://unitecms.net/   -> slides ...
+http://unitecms.net/premium-extensions/unite-gallery-main
 
 
 https://extensions.joomla.org/extension/schuweb-gallery/
@@ -26,6 +28,14 @@ https://extensions.joomla.org/extension/schuweb-gallery/
 https://github.com/Bakual/CustomFieldGallery -> https://github.com/joomla/joomla-cms/pull/14238
 https://github.com/coolcat-creations/jugnbg_uikitgalleryfield
 https://github.com/Digital-Peak/DPFields/tree/master/plg_fields_dpfgallery
+
+---------------------------------------
+
+Not joomla
+
+www.piwigo.org
+
+
 
 
 
