@@ -1,0 +1,11 @@
+
+Nanu:
+
+https://www.google.de/search?dcr=0&biw=1914&bih=945&q=ext%3Atxt+%7C+ext%3Aconf+%7C+ext%3Ainc+%7C+ext%3Adoc+intext%3Aphp+class+JConfig&oq=ext%3Atxt+%7C+ext%3Aconf+%7C+ext%3Ainc+%7C+ext%3Adoc+intext%3Aphp+class+JConfig&gs_l=psy-ab.3...0.0.0.2966.0.0.0.0.0.0.0.0..0.0....0...1..64.psy-ab..0.0.0....0.gcDmGx14fmU
+ext:txt | ext:conf | ext:inc | ext:doc intext:php class JConfig
+
+https://www.google.de/search?q=intitle:%22Index+Of%22+intext:.ftpconfig&gws_rd=cr&dcr=0&ei=SObpWf2zDIGsabeKjZAE
+
+ToDO: check my web sites ...
+
+
