@@ -249,19 +249,40 @@ link:
    The watermarking will be a text defined in the configuration.   
    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
-* (2) Font  
-    Select the font type of the watermark text  
+* (2) Watermark type  
+   A text or an image can be merged into the original image as a watermark
+
 * (3) Watermark text  
-    Define the text to be displayed in the image  
-* (4) Watermark font size  
+   Define the text to be displayed in the image  
+
+* (4) Font  
+    Select the font type of the watermark text  
+
+* (5) Watermark font size  
     Select the font size of the watermark text  
-* (5) Watermark text angle  
+
+* (6) Watermark text angle  
     Define the angle of the watermark text  
-* (6) Watermark position  
-    Select the position of the watermark text  
-* (7) Watermark transparency  
+
+* (7) Watermark image  
+     Will be merged into the big display image. Watermark image should be smaller then display image"
+
+* (8) Scale watermark image  
+    Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
+
+* (9) Watermark position  
+    Select the position of the watermark text
+
+* (10) Margin from top  
+* (11) Margin from right  
+* (12) Margin from bottom  
+* (13) Margin from left  
+    Border from the border of the original image. Watermark is placed with distance to the border, if it is not centrally located
+
+* (14) Watermark transparency  
     Define transparency of the text to be displayed in the image  
-* (8) Watermark image path  
+
+* (15) Watermark image path  
     Define the destination path of the created watermarked files  
 
 
