@@ -1,0 +1,15 @@
+
+<?php echo '<img src="'.json_decode($child->params)->image . '" />'; ?>
+
+https://www.ostraining.com/blog/joomla/subcategories/
+
+
+
+
+
+Summary
+With a simple override, a very nice and useful feature of Joomla, you can change the appearance of your pages. In many cases, you don’t need to install third party extensions to achieve what you want.
+If you want to learn more about overrides, you can check the Joomla! Documentation and also visit the website of the Community Project j!-over (www.j-over.de/en). Here you will find some interesting overrides for your next project.
+
+
+

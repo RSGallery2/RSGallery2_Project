@@ -1,0 +1,12 @@
+
+
+Secure coding guidelines
+https://docs.joomla.org/Secure_coding_guidelines
+
+Securing Joomla extensions
+https://docs.joomla.org/Securing_Joomla_extensions
+
+https://www.owasp.org/index.php/PHP_Top_5#How_to_Determine_if_you_are_Vulnerable
+
+
+

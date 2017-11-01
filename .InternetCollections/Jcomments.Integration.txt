@@ -1,0 +1,37 @@
+
+J1.5
+
+http://www.joomlatune.com/jcomments-rsgallery2.html
+
+
+Integration of JComments to RSGallery2
+RSGallery2 — is quite good image gallery component for Joomla. However, the possibilities of built-in comment system are very limited as in others galleries. The offered to your attention integration is inteneded to replace the built-in comment system by JComments.
+Open file/components/com_rsgallery2/templates/tables/display.class.php
+Find the line: 
+                $this->_showComments();
+and replace with: 
+ 
+      global $mosConfig_absolute_path;
+      $comments = $mosConfig_absolute_path . '/components/com_jcomments/jcomments.php';
+      if (file_exists($comments)) {
+        require_once($comments);
+        $obj_id = $this->item['id'];
+        $obj_title = $this->item['title'];
+        echo JComments::showComments($obj_id, 'com_rsgallery2', $obj_title);
+      }
+Open file /administrator/components/com_rsgallery2/admin.rsgallery2.php
+Find the line: 
+        require_once( $rsgOptions_path . 'comments.php' );
+and replace with: 
+      global $mosConfig_absolute_path;
+      $comments = $mosConfig_absolute_path . '/components/com_jcomments/jcomments.php';
+      if (file_exists($comments)) {
+        require_once($comments);
+        mosRedirect( 'index2.php?option=com_jcomments&task=view&fog=com_rsgallery2' );
+      } else { require_once( $rsgOptions_path . 'comments.php' ); }
+	  
+	  
+	  
+	  
+
+
