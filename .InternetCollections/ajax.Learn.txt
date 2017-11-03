@@ -1,0 +1,25 @@
+
+
+Themes
+
+Kindle book but no hardcover
+
+https://www.amazon.de/Ajax-Tutorial-Beginners-Process-English-ebook/dp/B075HH421M/ref=sr_1_8?s=books-intl-de&ie=UTF8&qid=1509628936&sr=1-8&keywords=ajax&refinements=p_n_feature_three_browse-bin%3A4192709031
+
+Ajax: The Complete Reference explains how to create and test Ajax-enabled Web applications using the XMLHttpRequest object as well as alternative JavaScript-based communication mechanisms. You'll explore a variety of sample applications featuring emerging user-interface conventions and build applications that address real-world networking and security issues. A robust communication library is developed throughout the book that enables you to architect flexible Ajax applications. The latest technologies such as Web services, Flash-Ajax integration, client-side templates, Comet, and Offline Access are also covered. Discover the future of Web development today!
+
+Work with traditional JavaScript communication approaches like iframes
+Explore all the quirks and details in the XMLHttpRequest object
+Handle disparate data formats, including XML, JSON, CSV, YAML, and more
+Deal with networking issues, including timeouts, retries, response ordering, and a variety of server and content errors
+Simplify JavaScript programming using open-source Ajax libraries like YUI
+Secure Ajax applications using authentication, obfuscation, and encryption
+Implement common Ajax UI patterns such as auto suggest, click-to-edit, and drag-and-drop
+Solve troubling Ajax architecture problems, including back button, history, and bookmarking issues
+Learn Ajax's role in Web 2.0 and Web services
+Explore push style communication using Comet and Flash
+Discover the future of offline Web application access and operation 
+
+With AJAX, when you hit submit, JavaScript will
+
+

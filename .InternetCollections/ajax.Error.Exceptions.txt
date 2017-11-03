@@ -1,0 +1,35 @@
+
+https://stackoverflow.com/questions/6792878/jquery-ajax-error-function
+
+/**
+// Assign handlers immediately after making the request,
+// and remember the jqXHR object for this request
+        var jqxhr = $.ajax("some_unknown_page.html")
+            .done(function (response) {
+                // success logic here
+                $('#post').html(response.responseText);
+            })
+            .fail(function (jqXHR, exception) {
+                // Our error logic here
+                var msg = '';
+                if (jqXHR.status === 0) {
+                    msg = 'Not connect.\n Verify Network.';
+                } else if (jqXHR.status == 404) {
+                    msg = 'Requested page not found. [404]';
+                } else if (jqXHR.status == 500) {
+                    msg = 'Internal Server Error [500].';
+                } else if (exception === 'parsererror') {
+                    msg = 'Requested JSON parse failed.';
+                } else if (exception === 'timeout') {
+                    msg = 'Time out error.';
+                } else if (exception === 'abort') {
+                    msg = 'Ajax request aborted.';
+                } else {
+                    msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                }
+                $('#post').html(msg);
+            })
+            .always(function () {
+                alert("complete");
+            });
+/**/
