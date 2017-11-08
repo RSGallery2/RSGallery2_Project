@@ -1,0 +1,11 @@
+
+
+Ich habe ein Bild und auf Klick soll sich eine Slideshow als Lightbox öffnen.
+
+Wenn du es kompliziert, aber ohne zusätzliches Tool machen möchtest, könntest du versuchen das http://getbootstrap.com/2.3.2/javascript.html#modals und das http://getbootstrap.com/2.3.2/javascript.html#carousel zu kombinieren. Ansonsten das von Viviana. 
+
+
+Elisa hat doch ein custom_field mit carousel gemacht?
+
+
+
