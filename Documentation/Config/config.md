@@ -20,7 +20,9 @@
 
  ![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.GeneralSettings.png?raw=true)
 
-* (1) Version: Actual uploaded RSG2 version.
+* (1) Version:
+
+ Tells the actual uploaded RSG2 version.
 
 * (2) Introduction Text
 
@@ -46,17 +48,23 @@
 
 * (1) Display Picture Width
 
- Standard display size of image. User is able to download the image with this size
+ Standard size of displayed image. The downloaded file will be resized to this width for the standard display of the image. The original image is still kept for modal display when clicking on a gallery imaage
 
 * (2) Thumbnail Width
 
- Small image size in gallery view
+  Defines the whith of the small images (thumbs) in gallery tile view
 
 * (3) Thumbnail Style
 
+ The thumbnail may be sized (styled) for "Square" or "Proportional" dimensions. In "Square" Style the hight of the thumbnail is the same as the width. In "Proportional" Style the height is calculated according the width/height proportions of the original image.
+
 * (4) JPEG Quality Percentage
 
+ Defines the qualtity factor will be used by the resizing from originmal image to the displayed image
+
 * (5) Allowed file types
+
+ This information tells which file types are supported. The types are defined by the component and therefore can't be changed
 
 #### Images.Image upload
 
@@ -249,40 +257,19 @@ link:
    The watermarking will be a text defined in the configuration.   
    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
-* (2) Watermark type  
-   A text or an image can be merged into the original image as a watermark
-
-* (3) Watermark text  
-   Define the text to be displayed in the image  
-
-* (4) Font  
+* (2) Font  
     Select the font type of the watermark text  
-
-* (5) Watermark font size  
+* (3) Watermark text  
+    Define the text to be displayed in the image  
+* (4) Watermark font size  
     Select the font size of the watermark text  
-
-* (6) Watermark text angle  
+* (5) Watermark text angle  
     Define the angle of the watermark text  
-
-* (7) Watermark image  
-     Will be merged into the big display image. Watermark image should be smaller then display image"
-
-* (8) Scale watermark image  
-    Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
-
-* (9) Watermark position  
-    Select the position of the watermark text
-
-* (10) Margin from top  
-* (11) Margin from right  
-* (12) Margin from bottom  
-* (13) Margin from left  
-    Border from the border of the original image. Watermark is placed with distance to the border, if it is not centrally located
-
-* (14) Watermark transparency  
+* (6) Watermark position  
+    Select the position of the watermark text  
+* (7) Watermark transparency  
     Define transparency of the text to be displayed in the image  
-
-* (15) Watermark image path  
+* (8) Watermark image path  
     Define the destination path of the created watermarked files  
 
 
