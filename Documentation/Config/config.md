@@ -105,17 +105,31 @@
 
 * (1) Graphics Library
 
+  .
+
 * (2) ImageMagick Path
+
+  .
 
 * (3) Netpbm Path
 
+  .
+
 * (4) Video converter path
+
+  .
 
 * (5) Video converter parameters
 
+  .
+
 * (6) Thumbnail extraction parameters
 
+  .
+
 * (7) Video output type
+
+  .
 
 #### Images: Image Storage
 
@@ -128,9 +142,15 @@
 
 * (2) Original Image Path
 
+  .
+
 * (3) Display Image Path
 
+  .
+
 * (4) Thumb Path
+
+  .
 
 #### Images: Comments
 
@@ -138,23 +158,43 @@
 
 * (1) Use CAPTCHA check, in comment form Yes No
 
+  .
+
 * (2) CAPTCHA type
+
+  .
 
 * (3) CAPTCHA image height in px (width is 2.7*height)
 
+  .
+
 * (4) CAPTCHA perturbation (1.0 is high, the higher the more distorted; 0.75 is fine)
+
+  .
 
 * (5) Number of lines to distort the CAPTCHA image with
 
+  .
+
 * (6) CAPTCHA background color (hexadecimal code, e.g. #0099CC)
+
+  .
 
 * (7) Textcolor (hexadecimal code, e.g. #EAEAEA)
 
+  .
+
 * (8) Color of lines (hexadecimal code, e.g. #0000CC)
+
+  .
 
 * (9) Alfanumeric CAPTCHA is case sensitive recommended setting: No) Yes No
 
+  .
+
 * (10) Characters to use for alfanumeric CAPTCHA
+
+  .
 
 * (11) Length of code for alfanumerc CAPTCHA
 
@@ -163,6 +203,8 @@
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.voting.png?raw=true)
 
 * (1) User can only vote once (cookie based) Yes No
+
+  .
 
 * (2) Cookie prefix
 
@@ -176,29 +218,55 @@
 
 * (1) Display Search Yes No
 
+  .
+
 * (2) Display Random Yes No
+
+  .
 
 * (3) Display Latest Yes No
 
+  .
+
 * (4) Display Branding Yes No
+
+  .
 
 * (5) Display Downloadlink Yes No
 
+  .
+
 * (6) Display Status Icons Yes No
+
+  .
 
 * (7) Display gallery limitbox
 
+  .
+
 * (8) Default number of galleries on frontpage
+
+  .
 
 * (9) Display Slideshow Yes No
 
+  .
+
 * (10) Select slideshow
+
+  .
 
 * (11) Display Owner Information Yes No
 
+  .
+
 * (12) Display number of items in gallery Yes No
 
+  .
+
 * (13) Include items in child galleries when displaying number of items in a gallery Yes No
+
+  .
 
 * (14) Display creation date Yes No
 
@@ -208,15 +276,27 @@
 
 * (1) Display Slideshow in item view Yes No
 
+  .
+
 * (2) Popup style
+
+  .
 
 * (3) Display Description Yes No
 
+  .
+
 * (4) Display Hits Yes No
+
+  .
 
 * (5) Display Voting Yes No
 
+  .
+
 * (6) Display Comments Yes No
+
+  .
 
 #### Display: Image order
 
@@ -224,7 +304,11 @@
 
 * (1) Order images by
 
+  .
+
 * (2) Order direction
+
+  .
 
 #### Display: EXIF settings
 
@@ -232,7 +316,11 @@
 
 * (1) Display EXIF Data Yes No
 
+  .
+
 * (2) Select EXIF tags to display
+
+  .
 
 * (3) Selected items box
 
@@ -241,7 +329,6 @@
 * (4) Possible properties list
 
   Shows a list of selectable exif properties. Inverted items are selected
-
 
 #### Display: Gallery View
 
@@ -255,16 +342,28 @@
 
 * (2) Direction (only works for float)
 
+  .
+
 * (3) Number of Thumbnail Columns (only for table)
+
+  .
 
 * (4) Thumbnails per Page
 
+  .
+
 * (5) Show image name below thumbnail Yes No
+
+  .
 
 * (6) Navigation bar display
 
+  .
+
 * (7) Display Slideshow in gallery view Yes No
-*
+
+  .
+
 
 #### Display: Image Watermark
 
@@ -344,16 +443,24 @@
 
 #### Settings My Galleries
 * (1) Show My Galleries
- On yes it avtivates this functions
+
+  On yes it avtivates this functions
 
 * (2) Show only items owned by the logged in user in My Galleries
- Restricts the shown images on front end to users who own the image and who are logged in.
-??? The images of the user may be in several galleries owned by other people. ???
+
+  Restricts the shown images on front end to users who own the image and who are logged in.
+
+  ??? The images of the user may be in several galleries owned by other people. ???
 
 * (3) Show only galleries owned by the logged in user in My Galleries Yes No
-Restricts the shown galleries on front end to user who own the gallery and who are logged in .
+
+  Restricts the shown galleries on front end to user who own the gallery and who are logged in.
 
 #### Image upload
 * (4) Maximum number of galleries a user can have
 
+  .
+
 * (5) Max numbers of pictures a user can have
+
+  .
