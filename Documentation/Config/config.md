@@ -105,31 +105,31 @@
 
 * (1) Graphics Library
 
-  .
+  Three graphics libraries, GD2, ImageMagick and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images   
 
 * (2) ImageMagick Path
 
-  .
+  Path to the ImageMagick library on the server
 
 * (3) Netpbm Path
 
-  .
+  Path to the Netpbm library on the server
 
 * (4) Video converter path
 
-  .
+  Videos are actually not supported
 
 * (5) Video converter parameters
 
-  .
+  Videos are actually not supported
 
 * (6) Thumbnail extraction parameters
 
-  .
+  Video Thumbnail are actually not supported
 
 * (7) Video output type
 
-  .
+  Videos are actually not supported
 
 #### Images: Image Storage
 
