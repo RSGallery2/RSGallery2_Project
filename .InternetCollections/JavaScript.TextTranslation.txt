@@ -1,0 +1,15 @@
+
+
+Joomla has a certain method for this. First, in view.html.php 
+add all strings, what needs to be translated with this:
+JText::script('VALIDATION_ERROR');
+
+This will add your string to javascript object, what you can use later.
+And in javascript, use:
+
+Joomla.JText._('VALIDATION_ERROR')
+
+Which will give you matching translation in current 
+language. This way you can keep JS and PHP in separate files.
+
+
