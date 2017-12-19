@@ -1,0 +1,23 @@
+
+https://bramp.github.io/js-sequence-diagrams/
+
+js-sequence-diagrams
+Turns text into UML sequence diagrams
+
+Example
+
+We turn
+
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+
+
+https://github.com/bramp/js-sequence-diagrams
+
+
+aligned to web online
+https://www.websequencediagrams.com/
+
+help on syntax
+https://www.websequencediagrams.com/examples.html
