@@ -1,0 +1,21 @@
+
+
+https://dev.w3.org/html5/html-author/charref
+https://www.freeformatter.com/html-entities.html
+https://brajeshwar.github.io/entities/
+
+
+google html entities like &times;
+
+close X -> &times;
+
+You can use &minus; for minimize(−) and  &plus; for maximize(+) like &times; for ×
+
+Well, for minimize, we have pure _ or &#95; and for maximize &square;, if you are expecting a fancy option for minimize, you can also use &boxminus;
+
+
+&times; &#95; &square;
+Above will output × _ □
+
+
+

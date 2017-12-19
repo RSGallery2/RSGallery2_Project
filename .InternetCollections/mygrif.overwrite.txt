@@ -1,0 +1,29 @@
+
+I am trying to add class attribute in the checkboxes.
+
+https://api.joomla.org/cms-3/classes/JHtmlGrid.html
+
+You can't just add class to that. You would have to create your own JHtml* class and override it there. Following is just example, you can rename class and file names if you prefer.
+
+components/your_component/html/mygrid.php
+
+abstract class JHtmlMygrid
+{
+    public static function id($rowNum, $recId, $class = null, $checkedOut = false, $name = 'cid', $stub = 'cb')
+    {
+        return $checkedOut ? '' : '<input type="checkbox" id="' . $stub . $rowNum . '"'.(is_string($class) ? ' class="'.$class.'"' : '').' name="' . $name . '[]" value="' . $recId
+            . '" onclick="Joomla.isChecked(this.checked);" />';
+    }
+}
+Then in your view template, for example myview/tmpl/default.php, add your class to JHtml include paths.
+
+JHtml::addIncludePath(JPATH_COMPONENT.'/html');
+Note: you could add this code to your component main file, then you will be able to use it in every view without repeating this line.
+
+And finaly call it in your template file.
+
+JHtml::_('mygrid.id', $i, $item->id, 'class-name');
+Then Joomla! will automatically call your JHtmlMygrid class method id.
+
+shareimprove this answer
+

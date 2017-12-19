@@ -1,0 +1,10 @@
+
+
+ResponsiveMediaQueries.PerObjects.txt
+
+------------------------------------------------------
+https://blog.kulturbanause.de/2017/06/container-queries-element-queries-im-responsive-web-design/
+
+
+
+

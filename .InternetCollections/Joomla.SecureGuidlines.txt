@@ -1,0 +1,12 @@
+
+https://docs.joomla.org/Security_Checklist
+
+https://docs.joomla.org/Secure_coding_guidelines
+https://docs.joomla.org/Secure_coding_guidelines#Constructing_SQL_queries
+
+
+
+
+
+
+

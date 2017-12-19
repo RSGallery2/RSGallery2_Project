@@ -1,0 +1,87 @@
+
+
+--------------------------------------
+jQuery: Gleiche Höhe für Elemente 
+
+https://blog.kulturbanause.de/2015/04/die-hoehe-von-elementen-mit-jquery-abfragen-und-angleichen/
+
+jQuery: Gleiche Höhe für Elemente 
+Zuletzt aktualisiert am 10. Juli 2016  23 Kommentare  JavaScript, jQuery, Responsive Webdesign 
+
+In flexiblen Web-Layouts kann die Höhe von Elementen eine Herausforderung darstellen. Beispielsweise findet man auf vielen Websites nebeneinander angeordnete Teaser-Elemente mit Text und einem »Weiterlesen«-Button. Redaktionell sollte man natürlich darauf achten, dass die Texte gleich lang sind, aber je nach Breite des Displays brechen die Wörter anders um, was wiederum dazu führt, dass die Buttons nicht immer auf gleicher Höhe sitzen. Mit CSS lässt sich das Problem nur schwer lösen, daher möchte ich in diesem Beitrag ein praktisches jQuery-Snippet archivieren.
+Workshops und Seminare von kulturbanause
+Unsere Seminar-Termine für 2018 sind online!
+Jetzt Tickets sichern!
+
+Inhaltsverzeichnis
+Gleiche Höhe von Elementen mit jQuery erzwingen
+Elemente ansprechen die höher/niedriger als X Pixel sind
+Elemente an der Höhe des höchsten Elements ausrichten
+Alle Elemente neu berechnen, wenn die Größe des Browserfensters verändert wird
+Gleiche Höhe von Elementen mit jQuery erzwingen
+Mit Hilfe einer each-Schleife in jQuery könnt ihr die Höhe von Teasern oder anderen Elementen angleichen. Im folgenden Beispiel erhalten alle Elemente mit dem Selektor .teaser eine Höhe von 300 Pixeln.
+// Suche alle Elemente mit der Klasse ».teaser«.
+$('.teaser').each( function(){
+  // Ändere bei diesen Elementen die Höhe auf 300 Pixel
+  $(this).css('height', '300px');
+});
+Beispiel anschauen
+Elemente ansprechen die höher/niedriger als X Pixel sind
+Im vorherigen Beispiel wurde die Höhe generell auf 300 Pixel erhöht. Im responsive Design und in flexiblem Weblayouts ändert sich jedoch sowohl die Höhe als auch die Breite von Elementen. Erst ab einem bestimmten Punkt tritt i.d.R. ein Darstellungsfehler auf. Mit folgendem Snippet werden alle .teaser angesprochen und grün eingefärbt, die niedriger als 150 Pixel sind.
+$('.teaser').each( function(){
+  if ($(this).height() < 150) { // Prüfe ob die Höhe eines Teasers niedriger als 150 Pixel ist
+    $(this).css('background', 'lime'); // Wenn ja, färbe den Hintergrund grün ein.
+  }
+});
+Beispiel anschauen
+Elemente an der Höhe des höchsten Elements ausrichten
+Wenn alle Elemente automatisch so hoch wie das höchste Element werden sollen, verwendet folgendes Snippet. Hierbei wird die Schleife zwei mal durchlaufen: Im ersten Durchlauf wird in Erfahrung gebracht welcher .teaser am höchsten ist. Im zweiten Durchlauf wird allen Elementen diese Höhe zugewiesen.
+var highest_element = 0;
+
+// Prüfe, welches Element am höchsten ist
+$('.teaser').each(function() {
+  if ($(this).height() > highest_element) {
+    highest_element = $(this).height();
+  }
+});
+
+// Weise diese Höhe allen Elementen zu.
+$('.teaser').each(function() {
+  $(this).height(highest_element);
+});
+Beispiel anschauen
+Alle Elemente neu berechnen, wenn die Größe des Browserfensters verändert wird
+In den oben gezeigten Beispielen wird die Höhe einmalig beim Seitenaufruf berechnet. Wenn sich die Höhe der Elemente jedoch ändern kann – beispielsweise weil das Layout flexibel ist und die Höhe der Elemente von der Breite des Viewports abhängig ist – sollte die Berechnung erneut stattfinden, sobald das Browserfenster verändert wird. Um die Performance etwas zu schonen, wird ein Timeout eingerichtet.
+function kb_equal_height() {
+  var highest_element = 0;
+ 
+  // Lösche die Höhe
+  $('.teaser').each(function() {
+    $(this).removeAttr('style');
+  });
+
+  // Prüfe, welches Element am höchsten ist
+  $('.teaser').each(function() {
+    if ($(this).height() > highest_element) {
+      highest_element = $(this).height();
+    }
+  });
+
+  // Weise diese Höhe allen Elementen zu.
+  $('.teaser').each(function() {
+    $(this).height(highest_element);
+  });
+};
+
+window.onload = kb_equal_height;
+
+var resizeTimer;
+$(window).resize(function() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(kb_equal_height, 100);
+});
+
+
+
+
+
