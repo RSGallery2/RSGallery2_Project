@@ -1,0 +1,84 @@
+
+
+-------------------------------------
+How to add joomla editor in custom component view but without using XML form fields?
+
+https://stackoverflow.com/questions/19064709/how-to-add-joomla-editor-in-custom-component-view-but-without-using-xml-form-fie
+
+
+I know this is an old question but for what it's worth I figured I would show how to get the default editor set in the global settings instead of by user. Often times users don't have a default editor set and the value that will get returned is 'JEditor' which will cause an editor to not load at all. If you wanted to you could combine the two together to first check the user editor and then fall back to the global one if the value is JEditor.
+
+Here's an example:
+// IMPORT EDITOR CLASS
+jimport( 'joomla.html.editor' );
+
+// GET EDITOR SELECTED IN GLOBAL SETTINGS
+$config = JFactory::getConfig();
+$global_editor = $config->get( 'editor' );
+
+// GET USER'S DEFAULT EDITOR
+$user_editor = JFactory::getUser()->getParam("editor");
+
+if($user_editor && $user_editor !== 'JEditor') {
+    $selected_editor = $user_editor;
+} else {
+    $selected_editor = $global_editor;
+}
+
+// INSTANTIATE THE EDITOR
+$editor = JEditor::getInstance($selected_editor);
+
+// SET EDITOR PARAMS
+$params = array( 'smilies'=> '0',
+    'style'  => '1',
+    'layer'  => '0',
+    'table'  => '0',
+    'clear_entities'=>'0'
+);
+
+$params = array( 'smilies'=>'0', 'style'=>'1', 'layer'=>'0', 'table'=>'0', 'clear_entities'=>'0');
+
+
+// DISPLAY THE EDITOR (name, html, width, height, columns, rows, bottom buttons, id, asset, author, params)
+echo $editor->display('email', '', '400', '400', '20', '20', true, null, null, null, $params);
+
+echo $editor->display( 'jform[description]', '', '500', '300', '60', '10', false, $params );
+echo $editor2->display( 'jform[description_long]', '', '500', '300', '60', '10', false, $params );
+
+---------------------------------------------
+
+
+Normally, you would enable showing all of the buttons by supplying true to the buttons parameter, like so:
+$editor = JEditor::getInstance();
+echo $editor->display(
+    'my-editor',
+    'Default value',
+    600,
+    100,
+    10,
+    10,
+    true // Show all buttons
+);
+
+
+See https://api.joomla.org/cms-3/classes/JEditor.html#method_display. According to the API the buttons parameter takes a boolean either being true or false. In practise, however, it is possible to supply an array like this:
+$editor = JEditor::getInstance();
+echo $editor->display(
+    'my-editor',
+    'Default value',
+    600,
+    100,
+    10,
+    10,
+    array( 'article', 'pagebreak' ) // List of buttons that should be hidden
+);
+
+
+I believe the full list of button names that you can hide is:
+•article
+•image
+•pagebreak
+•readmore
+
+
+

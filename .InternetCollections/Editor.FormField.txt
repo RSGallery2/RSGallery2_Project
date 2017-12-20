@@ -1,0 +1,25 @@
+
+---------------------------
+How do you specify to show only certain editors-xtd buttons on the editor form field type?
+
+https://joomla.stackexchange.com/questions/5616/how-do-you-specify-to-show-only-certain-editors-xtd-buttons-on-the-editor-form-f
+
+Try something like this:
+
+buttons = "true" | Show all buttons. hide = "article,image" | An array of the buttons you want to hide.
+<field 
+   name="myeditor" 
+   label ="label text"
+   type="editor"
+   editor="jce"
+   buttons="true"
+   width="450"
+   height="280"
+   hide="article,image"
+   filter="safehtml"
+   description="description text" />
+
+
+
+
+
