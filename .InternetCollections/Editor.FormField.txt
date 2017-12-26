@@ -1,4 +1,9 @@
 
+
+https://api.joomla.org/cms-3/classes/Joomla.CMS.Editor.Editor.html
+
+
+
 ---------------------------
 How do you specify to show only certain editors-xtd buttons on the editor form field type?
 
