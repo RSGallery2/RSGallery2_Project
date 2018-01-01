@@ -1,0 +1,36 @@
+
+On joomla error in ajax call (file upload) there may be some files tranfered and other may bring error -> html answer
+
+a) Divide between answer data and HTML (test too big image)
+b) Mixed answers (error was after some data already collected
+
+----------------------------------------
+Having said that, a simple try/catch will help as a workaround for the erratic behaviour if you don't want to fix it. Ie.
+
+try {
+    if ($.parseJSON(returndata) === false) A;
+} catch(e) {
+    // Treat as HTML here.
+}
+It's not pretty, but that's what you get for having an unpredictable API that isn't pretty to begin with.
+
+----------------------------------------
+
+try this:
+
+data: $('form#unit').serialize() +'&x=test',
+look up about jQuery form serialization
+
+you can see it running here: http://jsfiddle.net/maniator/pfb2c/
+
+
+----------------------------
+
+...
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+http://php.net/manual/de/language.namespaces.basics.php
+
+https://secure.php.net/manual/de/language.namespaces.importing.php
+
+----------------------------------
+The keyword "use" has been recycled for three distinct applications: 
+1- to import/alias classes, traits, constants, etc. in namespaces, 
+2- to insert traits in classes, 
+3- to inherit variables in closures. 
+
+
+
+
