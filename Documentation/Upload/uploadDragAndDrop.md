@@ -45,7 +45,7 @@ Example: Sometimes the bytes are transferred as pure ASCII: So 7 bits are used a
  * Uploading more that 20 Files at once: This may lead to wrong order number as the call to the database is asynchronous and therefore if the system is busy the same order number may generated twice or for several images
  * Filesize: The working file size is not only dependent on the system settings for upload (see point (6)). Also the used library (GD see configuration) may stumble
 
-###
+###     
 
 ![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
 
@@ -56,32 +56,64 @@ After a gallery is selected the dotted border is green. Dropped images do appear
 
 (2) Process bars
 
-For each dropped file a progress bar appears. It is red as long as the file is not completely transferred.  
+For each dropped file a progress bar appears. It is red as long as the file is not completely transferred. In each state it tells the amount of transferred parts of the file.
 
-Attention: Even if the green bar is at 100% telling that the file is transferred the server needs time to create the dependent rsgallery2 images and the process is not finished until the matching image is displayed in the drop area
+Attention: Even if the green bar is at 100% telling that the file is completely transferred the server needs time to create the dependent rsgallery2 images and the process is not finished until the matching image is displayed in the drag and drop area
 
 (3) Add image properties
-A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once. The title or the  description can be entered there.
-This is similar to the second page on upload in previous versions.
+A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once  (batch). The title and the description properties can be edited there.
+This is similar to the second page on upload in previous rsgallery2 versions.
 
-It is not necessary to use this view when no title or description is needed. Info: The title is created from the image name automatically on creation
+It is not necessary to use this view when no title or description is needed.  
 
+Info: On creation of the image data on the server side the title is preset from the image name automatically.
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
 
-##
-(1) .
+## Properties uploaded Files
+This form enables to set the properties title and description for a batch of images at the same time.  
+It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
-(2) .
+(1) Title
 
-(3) .
+The title is preset on creation. It may be edited here. The title may be different to the uploaded image name when the name already existed. Then the next free number is appended.
 
-(4) .
+(2) Gallery
 
-(5) .
+The gallery name may be changed to move the image to a different gallery
 
-(6) .
+~~The gallery name is fixed in some circumstances.~~
+~~* On drag and drop the gallery name must be assigned already in the upload form~~
+~~* Zip or server side uploads may select the gallery before Uploading~~
+~~* On entering from the images list form the gallery may be changed~~
 
-(7) .
+(3) Description
+The description may be changed with the standard editor like in the edit single image form.  
+Sadly this leads to a very high edit block which creates a ugly layout.
 
-(8) .
+(4) Save
+
+Save changes and continue edit on the same images
+
+(5) Save & Close
+
+Save changes and leave the form to the image list
+
+(6) Cancel
+
+Ignore the changes and leave the form
+
+(7) Delete
+
+All or some image can be selected for deleting. (See (8) and (9))
+Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files
+
+(8) Select all
+
+All images will get a set hook in the box below the image (See also (9))
+This can be used to delete selected images.
+
+(9) Select image
+
+The image will get a set hook in the box below the image
+This can be used to delete selected images.
