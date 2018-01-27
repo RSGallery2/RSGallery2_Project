@@ -117,3 +117,13 @@ This can be used to delete selected images.
 
 The image will get a set hook in the box below the image
 This can be used to delete selected images.
+
+## Images: Batch process to add properties
+
+In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.png?raw=true)
+
+(1) Add properties
+
+This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
