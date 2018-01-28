@@ -1,0 +1,630 @@
+
+
+
+Joomla: Using JLayout 'Search Tools' on Joomla 3.x at admin backend for list views
+https://techjoomla.com/joomla-development/joomla-using-jlayouts-search-tools-on-joomla-3-x-at-admin-backend-for-list-views.html
+
+
+The Techjoomla Blog
+Stay updated with all the latest happenings at Techjoomla. From news about the developments in your favourite extensions to Tips & Tricks about the Joomla CMS, Framework & Development.
+
+Font size: + –  Print 
+
+Joomla: Using JLayout 'Search Tools' on Joomla 3.x at admin backend for list views
+ Wednesday, 04 June 2014  Manoj Londhe  
+Joomla Development
+ 55959 Hits  Comments 
+Are you building admin list-view in your Joomla Extension? Do you want to include Search Tools in your Joomla 3.x extension? Here is a quick guide to do so in easy steps.
+First we will check the folder structure needed, and then we will see sample code.
+A. Folder structure and files we will see in action here-
+Folder structure -
+?
+1
+2
+3
+4
+/administrator/components/com_quick2cart/models/
+/administrator/components/com_quick2cart/models/fields/
+/administrator/components/com_quick2cart/models/forms/
+/administrator/components/com_quick2cart/views/
+Files that needs to be added / changed -
+?
+1
+2
+3
+4
+5
+/administrator/components/com_quick2cart/models/forms/filter_regions.xml
+/administrator/components/com_quick2cart/models/fields/countries.php
+/administrator/components/com_quick2cart/models/regions.php
+/administrator/components/com_quick2cart/views/regions/view.html.php
+/administrator/components/com_quick2cart/views/regions/tmpl/default.php
+B. Lets' code!
+1. First of all, create a filter_listview.xml and add fields for all filters you want. We are considering a list view named regions in this example. So I have created a xml file for list view filters and named it as filter_regions.xml. It has a xml structure like any other module parameter options.
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+<?xml version="1.0" encoding="utf-8"?>fields/countries.php
+<form>
+    <fields name="filter">
+        <field
+            name="search"
+            type="text"
+            label="COM_QUICK2CART_FILTER_SEARCH_DESC"
+            hint="JSEARCH_FILTER"
+        />
+ 
+        <field
+            name="country"
+            type="countries"
+            label="COM_QUICK2CART_FILTER_SELECT_COUNTRY"
+            description="COM_QUICK2CART_FILTER_SELECT_COUNTRY_DESC"
+            onchange="this.form.submit();"
+            >
+                <option value="">COM_QUICK2CART_FILTER_SELECT_COUNTRY</option>
+        </field>
+ 
+        <field
+            name="state"
+            type="list"
+            label="COM_CONTENT_FILTER_PUBLISHED"
+            description="COM_CONTENT_FILTER_PUBLISHED_DESC"
+            onchange="this.form.submit();"
+            >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+            <option value="1">COM_QUICK2CART_PUBLISH</option>
+            <option value="0">COM_QUICK2CART_UNPUBLISH</option>
+        </field>
+    </fields>
+ 
+    <fields name="list">
+        <field
+            name="limit"
+            type="limitbox"
+            class="input-mini"
+            default="25"
+            label="COM_CONTENT_LIST_LIMIT"
+            description="COM_CONTENT_LIST_LIMIT_DESC"
+            onchange="this.form.submit();"
+        />
+    </fields>
+</form>
+ The above filter xml has four fields -
+search      - Search text field
+countries - Custom list field (that I have created and put in /administrator/components/com_quick2cart/models/fields/  )
+state         - List field
+limit          - Limitbox field for pagination Limit Box
+ 
+2. Second, we create a custom field named country and put it at location - /administrator/components/com_quick2cart/models/fields/country.php
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+<?php
+/**
+ * @version    SVN: <svn_id>
+ * @package    Tjfields
+ * @copyright  Copyright (c) 2009-2015 TechJoomla. All rights reserved.
+ * @license    GNU General Public License version 2 or later.
+ */
+ 
+// No direct access.
+defined('_JEXEC') or die();
+ 
+JFormHelper::loadFieldClass('list');
+ 
+/**
+ * Supports an HTML select list of categories
+ */
+class JFormFieldCountries extends JFormFieldList
+{
+    /**
+     * The form field type.
+     *
+     * @var     string
+     * @since   1.6
+     */
+    protected $type = 'countries';
+ 
+    /**
+     * Fiedd to decide if options are being loaded externally and from xml
+     *
+     * @var     integer
+     * @since   2.2
+     */
+    protected $loadExternally = 0;
+ 
+    /**
+     * Method to get a list of options for a list input.
+     *
+     * @return  array       An array of JHtml options.
+     *
+     * @since   11.4
+     */
+    protected function getOptions()
+    {
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $client = JFactory::getApplication()->input->get('client', '', 'STRING');
+ 
+        // Select the required fields from the table.
+        $query->select('c.id, c.country, c.country_jtext');
+        $query->from('`#__tj_country` AS c');
+ 
+        if ($client)
+        {
+            $query->where('c.' . $client .' = 1');
+        }
+ 
+        $query->order($db->escape('c.ordering ASC'));
+ 
+        $db->setQuery($query);
+ 
+        // Get all countries.
+        $countries = $db->loadObjectList();
+ 
+        $options = array();
+ 
+        // Load lang file for countries
+        $lang = JFactory::getLanguage();
+        $lang->load('tjgeo.countries', JPATH_SITE, null, false, true);
+ 
+        foreach ($countries as $c)
+        {
+            if ($lang->hasKey(strtoupper($c->country_jtext)))
+            {
+                $c->country = JText::_($c->country_jtext);
+            }
+ 
+            $options[] = JHtml::_('select.option', $c->id, $c->country);
+        }
+ 
+        if (!$this->loadExternally)
+        {
+            // Merge any additional options in the XML definition.
+            $options = array_merge(parent::getOptions(), $options);
+        }
+ 
+        return $options;
+    }
+ 
+    /**
+     * Method to get a list of options for a list input externally and not from xml.
+     *
+     * @return  array       An array of JHtml options.
+     *
+     * @since   2.2
+     */
+    public function getOptionsExternally()
+    {
+        $this->loadExternally = 1;
+ 
+        return $this->getOptions();
+    }
+}
+Note that step 2. code is optional if you are not using any custom form elements.
+3. Then, we need to edit - /administrator/components/com_quick2cart/views/regions/view.html.php
+We need to add following code in the view.html.php file
+?
+1
+2
+$this->filterForm = $this->get('FilterForm');
+$this->activeFilters = $this->get('ActiveFilters');
+So it will look like -
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+class Quick2cartViewRegions extends JViewLegacy
+{
+    // Some code here
+     
+    public function display ($tpl = null)
+    {
+        $this->state = $this->get('State');
+        $this->items = $this->get('Items');
+        $this->pagination = $this->get('Pagination');
+ 
+        // Get filter form.
+        $this->filterForm = $this->get('FilterForm');
+ 
+        // Get active filters.
+        $this->activeFilters = $this->get('ActiveFilters');
+ 
+        // Some code here
+         
+        parent::display($tpl);
+    }
+}
+ 
+4.  Then, we need to edit - /administrator/components/com_quick2cart/views/regions/tmpl/default.php
+We need to add following code to disaply the search filters on the form on the list view - default.php 
+?
+1
+2
+3
+4
+<?php
+    // Search tools bar
+    echo JLayoutHelper::render('joomla.searchtools.default', array('view' => $this));
+?>
+ So it will look like -
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+<form
+    action="<?php echo JRoute::_('index.php?option=com_quick2cart&view=regions'); ?>"
+    method="post" name="adminForm" id="adminForm">
+ 
+    <?php if (!empty( $this->sidebar)) : ?>
+        <div id="j-sidebar-container" class="span2">
+            <?php echo $this->sidebar; ?>
+        </div>
+        <div id="j-main-container" class="span10">
+    <?php else : ?>
+        <div id="j-main-container">
+    <?php endif;?>
+            <?php
+            // Search tools bar
+            echo JLayoutHelper::render('joomla.searchtools.default', array('view' => $this));
+            ?>
+ 
+            <!-- Other code goes here -->
+             
+        </div>
+</form>
+ 
+5.  Finally, we need to edit - /administrator/components/com_quick2cart/models/regions.php 
+Your module must extend module class JModelList to use search filters.
+We need to modify 3 functions in regions.php
+?
+1
+2
+3
+4
+5
+6
+7
+8
+public function __construct($config = array()) 
+// Set filter fields in this function
+ 
+protected function populateState($ordering = null, $direction = null)
+// Get and set current values of filters
+ 
+protected function getListQuery()
+// Use current filter values to modify the the query and hence the output
+ So it will look like -
+?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+class Quick2cartModelRegions extends JModelList
+{
+    public function __construct($config = array())
+    {
+        if (empty($config['filter_fields']))
+        {
+            $config['filter_fields'] = array(
+                'id', 'a.id',
+                'state', 'state',
+                'region', 'a.region',
+                'region_3_code', 'a.region_3_code',
+                'region_code', 'a.region_code',
+                'region_jtext', 'a.region_jtext',
+                'country', 'c.country',
+                'state', 'a.state'
+            );
+        }
+ 
+        parent::__construct($config);
+    }
+ 
+    protected function populateState($ordering = null, $direction = null)
+    {
+        // Initialise variables.
+        $app = JFactory::getApplication('administrator');
+ 
+        // Other code goes here
+ 
+        $country = $app->getUserStateFromRequest($this->context . 'filter.country', 'filter_country', '', 'string');
+        $this->setState('filter.country', $country);
+ 
+        // Other code goes here
+ 
+        // List state information.
+        parent::populateState('a.id', 'asc');
+    }
+ 
+ 
+    protected function getListQuery()
+    {
+        // Create a new query object.
+        $db = $this->getDbo();
+        $query = $db->getQuery(true);
+ 
+        // Other code goes here
+ 
+        // Filter by country
+        $country = $this->getState('filter.country');
+ 
+        if (is_numeric($country))
+        {
+            $query->where('a.country_id = '.(int) $country);
+        }
+ 
+        // Other code goes here
+ 
+        return $query;
+    }
+}
+ 
+6. All done! Let's see the output -
+ 
+I hope this turns out helpful for you all.
+
+ Tweet 
+in
+Share
+
+ 
+ 
+Rate this blog entry:      
+6
+How do you feel about this post? 
+
+Happy (0) 
+
+Love (0) 
+
+Surprised (0) 
+
+Sad (0) 
+
+Angry (0) 
+Tags:
+list-views
+ 
+joomla3x
+ 
+jlayouts
+ 
+search-tools
+ 
+joomla
+
