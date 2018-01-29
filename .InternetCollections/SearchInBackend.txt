@@ -1,5 +1,15 @@
 
 
+Build an Ajax Search Module for Joomla 
+https://www.ostraining.com/blog/joomla/search-ajax/
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
 
 Joomla: Using JLayout 'Search Tools' on Joomla 3.x at admin backend for list views
 https://techjoomla.com/joomla-development/joomla-using-jlayouts-search-tools-on-joomla-3-x-at-admin-backend-for-list-views.html
