@@ -1,0 +1,29 @@
+
+The Image Package
+-----------------------------
+ - resize method
+ - crop method
+ - createThumbs
+ - cropResize
+ -  filter
+ 
+ Resize Methods
+
+The resize, createThumbs and generateThumbs methods take an optional parameter that defines what method to use when scaling an image. This parameter can be one of the following:
+•JImage::SCALE_FILL - Gives you a thumbnail of the exact size, stretched or squished to fit the parameters.
+•JImage::SCALE_INSIDE - Fits your thumbnail within your given parameters. It will not be any taller or wider than the size passed, whichever is larger.
+•JImage::SCALE_OUTSIDE - Fits your thumbnail to the given parameters. It will be as tall or as wide as the size passed, whichever is smaller.
+•JImage::CROP - Gives you a 
+
+
+
+
+
+Gist: for thumbs
+https://gist.github.com/joomlapro/3286700
+
+
+
+
+
+

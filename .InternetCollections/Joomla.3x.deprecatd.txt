@@ -1,5 +1,0 @@
-
-
-https://api.joomla.org/cms-3/deprecated.html
-
-
