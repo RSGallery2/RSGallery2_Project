@@ -5,7 +5,7 @@ The Image Package
  - crop method
  - createThumbs
  - cropResize
- -  filter
+ - filter
  
  Resize Methods
 
