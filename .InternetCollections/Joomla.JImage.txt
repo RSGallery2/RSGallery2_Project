@@ -15,6 +15,18 @@ The resize, createThumbs and generateThumbs methods take an optional parameter t
 •JImage::SCALE_OUTSIDE - Fits your thumbnail to the given parameters. It will be as tall or as wide as the size passed, whichever is smaller.
 •JImage::CROP - Gives you a 
 
+const SCALE_FILL = 1;
+const SCALE_INSIDE = 2;
+const SCALE_OUTSIDE = 3;
+const CROP = 4;
+const CROP_RESIZE = 5;
+const SCALE_FIT = 6;
+
+const ORIENTATION_LANDSCAPE = 'landscape';
+const ORIENTATION_PORTRAIT = 'portrait';
+const ORIENTATION_SQUARE = 'square';
+
+
 
 
 
