@@ -1,0 +1,10 @@
+
+
+https://phinx.org/
+
+Why use Phinx?
+
+Super easy to install
+Most database migration tools are framework dependent, complicated, confusing to install/configure and a pain in the ass to write migrations for. In less than 5 minutes you can install Phinx, create and execute your first migration. 
+
+
