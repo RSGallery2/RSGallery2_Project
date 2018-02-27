@@ -1,0 +1,163 @@
+google How to save component parameters to database programmatically 
+
+
+-------------------------------------------------------------------
+write parameters
+https://joomla.stackexchange.com/questions/9345/how-to-set-a-components-param-dynamically
+
+// Load the current component params.
+$params = JComponentHelper::getParams('com_content');
+// Set new value of param(s)
+$params->set('show_title', 1);
+
+// Save the parameters
+$componentid = JComponentHelper::getComponent('com_content')->id;
+$table = JTable::getInstance('extension');
+$table->load($componentid);
+$table->bind(array('params' => $params->toString()));
+
+====>>>> replace in Joomla 2.5++ the check and store with save()
+
+// check for error
+if (!$table->check()) {
+    echo $table->getError();
+    return false;
+}
+// Save to database
+if (!$table->store()) {
+    echo $table->getError();
+    return false;
+}
+
+
+
+
+-------------------------------------------------------------------
+write parameters
+http://www.webtechriser.com/tutorials/joomla-3-0/how-to-save-component-parameters-to-database-programmatically
+
+
+How to save component parameters to database programmatically 
+
+
+
+in
+Share
+
+
+
+Almost every component in Joomla! ships with a set of parameters (or, params). Using "Options" button, we can easily alter the params values of a component. What if we want to change values of some parameters programmatically, i.e., using Joomla! codes.
+ 
+Let's do it step by step.
+1. Load component params.
+$comparams = JComponentHelper::getParams('com_news');
+2. Set new value to one or more params.
+$comparams->set('lastcreatedate', $data['created']);
+We have just set a new value to a parameter named "lastcreateddate". To test if it's set proporly, use var_dump to view it.
+var_dump($comparams);
+You should see this output:
+object(Joomla\Registry\Registry)#151 (1) { ["data":protected]=> object(stdClass)#10 (1) { ["lastcreatedate"]=> string(10) "2014-08-15" } }
+3. Now it's time to save the whole component params with our new values back to database. Now, we shall find our component's ID from '#__extensions" table. The following piece of code will return the component ID of "com_news" component from '#__extensions" table:
+$componentid = JComponentHelper::getComponent('com_news')->id;
+4. To save our data, we shall take an instance of "#__extension" table using JTable class and load component data by component ID, ie., $componentid variable.
+$table = JTable::getInstance('extension');
+$table->load($componentid);
+5. We shall bind "params" field with new values:
+$table->bind(array('params' => $comparams->toString()));
+6. Well, we have binded "params" field of "#__extensions" table with new values. Next, we shall push the data to the database after a regular check for error (if any).
+
+====>>>> replace in Joomla 2.5+ the check and store with save()
+// check for error
+if (!$table->check()) {
+    $this->setError('lastcreatedate: check: ' . $table->getError());
+    return false;
+}
+7. Finally, save to database:
+// Save to database
+if (!$table->store()) {
+    $this->setError('lastcreatedate: store: ' . $table->getError());
+    return false;
+}
+If everything goes right, components new parameters should save to database successfully. Is it really? Let's examine it loading the params and running the var_dump function again.
+$comparams = JComponentHelper::getParams('com_news');
+var_dump($comparams);
+You should now see the new value in the output on screen.
+I have applied this technique in my component development. It may not be the 'best practice', but it works. Hope this will work in your case too.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------
+write parameters
+
+
+The safest way to do this would be to include com_config/models/component.php and use it to validate and save the params. However, if you can somehow validate the data params yourself I would stick with the following (much more simple solution):
+// Get the params and set the new values
+$params = JComponentHelper::getParams('com_mycomponent');
+$params->set('myvar', $the_value);
+
+// Get a new database query instance
+$db = JFactory::getDBO();
+$query = $db->getQuery(true);
+
+// Build the query
+$query->update('#__extensions AS a');
+$query->set('a.params = ' . $db->quote((string)$params));
+$query->where('a.element = "com_mycomponent"');
+
+// Execute the query
+$db->setQuery($query);
+$db->query();
+Notice how I cast the params to a string (when building the query), it will convert the JRegistry object to a JSON formatted string.
+If you get any caching problems, you might want to run the following after editing the params:
+From a model:
+ $this->cleanCache('_system');
+Or, else where:
+$conf = JFactory::getConfig();
+
+$options = array(
+    'defaultgroup' => '_system',
+    'cachebase' => $conf->get('cache_path', JPATH_SITE . '/cache')
+);
+
+$cache = JCache::getInstance('callback', $options);
+$cache->clean();
+
+-------------------------------------------------------------------
+write parameters
+https://stackoverflow.com/questions/45085312/joomla-3-x-component-update-config-to-database
+
+Extension config data is stored in the #__extensions table under the params column as json.
+Looking through the joomla source in my IDE there doesn't seem to be a wrapper for updating extension params so a query like below will have to do.
+$query = $db->getQuery(true)
+    ->update('#__extensions')
+    ->set('params= ' . json_encode($params))
+    ->where('element= ' . $extensionName)
+;
+
+$db->setQuery($query);
+
+$result = $db->execute();
+
+-------------------------------------------------------------------
+How to save component parameters to database programmatically 
+
+
+
+
+
+
+
+
+

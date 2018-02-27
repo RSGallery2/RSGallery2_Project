@@ -1,0 +1,82 @@
+
+SQL Table params
+
+
+CREATE TABLE IF NOT EXISTS `#__rsgallery2_files` (
+...
+
+  `userid` int(10) NOT NULL,
+  `params` text NOT NULL,
+  `asset_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'FK to the #__assets table.',
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `UK_name` (`name`),
+  KEY `id` (`id`)
+)ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+------------------------------------------------------------
+
+		Jtable .....
+	
+	/**
+	 * Overloaded bind function
+	 *
+	 * @param       array           named array
+	 * @return      null|string     null is operation was satisfactory, otherwise returns an error
+	 * @see JTable:bind
+	 * @since 1.5
+	 */
+	public function bind($array, $ignore = '')
+	{
+		if (isset($array['params']) && is_array($array['params']))
+		{
+			// Convert the params field to a string.
+			$parameter = new JRegistry;
+			$parameter->loadArray($array['params']);
+			$array['params'] = (string)$parameter;
+		}
+		return parent::bind($array, $ignore);
+	}
+	
+
+
+
+---------------------------------------------------------------------------
+https://stackoverflow.com/questions/23359075/save-form-field-in-component-params-joomla
+parts
+
+??????
+
+        // Convert the params field to a string.
+        $parameter = new JRegistry;
+        $parameter->loadArray($array['params']);
+        $array['params'] = (string)$parameter;
+
+        $params = new JRegistry;
+        $params->loadJSON($this->params);
+        $this->params = $params;
+
+            $registry = new JRegistry();
+            $registry->loadArray($this->params);
+            $this->params = (string)$registry;
+
+		
+		
+--------------------------------------------------------------------
+				// Load the JSON string
+				$params = new JRegistry;
+				$params->loadString($this->item->params, 'JSON');
+				$this->item->params = $params;
+
+				// Merge global params with item params
+				$params = clone $this->getState('params');
+				$params->merge($this->item->params);
+				$this->item->params = $params;
+				
+				
+				
+				
+				
+				
+				
+				

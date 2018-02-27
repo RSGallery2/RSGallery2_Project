@@ -1,0 +1,15 @@
+
+ how to get value from configuration file
+
+
+The documentation on how to do it is slightly outdated:
+
+http://docs.joomla.org/JFactory/getConfig
+
+But if you check the code they actually drop the ampersand function:
+
+https://github.com/joomla/joomla-cms/blob/staging/components/com_users/models/registration.php
+
+$config = JFactory::getConfig();
+$fromname = $config->get('fromname');
+
