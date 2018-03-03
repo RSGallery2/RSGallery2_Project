@@ -1,6 +1,52 @@
 
 
 
+---------------------------------------------------
+
+---------------------------------------------------
+
+---------------------------------------------------
+if (property_exists($item, 'params'))
+      {
+         $registry = new JRegistry;
+         $registry->loadString($item->params);
+         $item->params = $registry->toArray();
+      }
+---------------------------------------------------
+
+Now to answer your question, Joomla no longer uses JParameter - it uses JRegistry instead. So something like:
+
+$jparameter = new JParameter('param1');
+Should be changed to:
+
+$jregistry= new JRegistry();
+$jparameter = $jregistry->get('param1'); 
+
+--------------------------------------------------
+Get Module Parameter from template's index.php file:
+
+$module = JModuleHelper::getModule('mod_headlineticker');
+$headLineParams = new JRegistry($module->params);
+$tickercount = (int) $headLineParams['count'];
+
+------------------------------------------------
+
+As JParameter was using JRegistry, here is a work around:
+
+$params = new JRegistry();
+$params->loadString($module->params);
+
+$params->get('param_name');
+
+-------------------------------------------------
+
+A little late, but for everyone else who stumbles upon this:
+
+Use:
+
+json_decode($plugin->params);
+
+------------------------------------------------
 
 
 schon erledigt. ich hab mir die Daten mit: 
