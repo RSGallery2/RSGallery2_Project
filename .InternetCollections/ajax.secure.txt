@@ -1,0 +1,25 @@
+
+PHP
+// Drag and Drop installation scripts security after ajax. ToDo: Finish check
+$token  = JSession::getFormToken();
+
+
+<input id="installer-token" name="installer-token" type="hidden" value="<?php echo $token; ?>" />
+
+
+JS
+    var token = $('#installer-token').val();
+	
+	// for function reserveDbImageId
+	var data = new FormData();
+	// data.append('upload_file', files[idx]);
+	data.append('upload_file', files[idx].name);
+	data.append('dropListIdx', dropListIdx);
+
+	data.append(token, "1");
+	
+PHP
+	    JSession::checkToken() or jexit(JText::_('JINVALID_TOKEN'));
+
+
+	
