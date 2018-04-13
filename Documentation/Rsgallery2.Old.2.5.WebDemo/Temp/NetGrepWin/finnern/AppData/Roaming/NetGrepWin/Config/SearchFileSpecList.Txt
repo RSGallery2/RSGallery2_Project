@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clsFileSpecificationToken xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CfgVersion>0.001</CfgVersion>
+    <TokenList>
+        <string>*.php</string>
+        <string>*.sql</string>
+        <string>*.php *.js</string>
+        <string>*.xml</string>
+        <string>*.ini</string>
+        <string>*.*</string>
+        <string>*.ini *.php</string>
+        <string>*</string>
+        <string />
+        <string>*.js</string>
+        <string>Use backup folder</string>
+        <string>rsgall*.xml</string>
+        <string>*.php *.html</string>
+        <string>*.cs</string>
+        <string>*.bas *.cls *.ctl *.frm</string>
+        <string>*.def *.lib *.c *.h *.txt</string>
+        <string>clsResultsOfOneSearch.cs</string>
+        <string>*.wrp</string>
+        <string>*.ncs</string>
+    </TokenList>
+    <FixedTokenList />
+    <PreFixedTokenNumber>7</PreFixedTokenNumber>
+    <FirstFixedTokenNumber>10</FirstFixedTokenNumber>
+    <MaxTokenNumber>25</MaxTokenNumber>
+    <MaxFixedNumber>15</MaxFixedNumber>
+</clsFileSpecificationToken>

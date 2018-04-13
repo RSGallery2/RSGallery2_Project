@@ -1,0 +1,3 @@
+Logfile NetGrepWin: 20161102_213708
+System.Text.SBCSCodePageEncoding
+- Standard initialisation 

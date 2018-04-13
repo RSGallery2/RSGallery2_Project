@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clsSearchStringToken xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CfgVersion>0.001</CfgVersion>
+    <TokenList>
+        <string>bind</string>
+        <string>jform.*bind</string>
+        <string>JHtml::_('bootstrap.tooltip',</string>
+        <string>bootstrap.tooltip</string>
+        <string>tooltip.*img</string>
+        <string>JHtml::tooltip</string>
+        <string>JPATH_THUMB</string>
+        <string>getNextOrder</string>
+        <string>`checked_out_</string>
+        <string>`checked_out`</string>
+        <string>require_once</string>
+        <string>authorise</string>
+        <string>Joomla.check</string>
+        <string>checkAll</string>
+        <string>addOption</string>
+        <string>listItemTask</string>
+        <string>onclick=</string>
+        <string>Joomla.submitform</string>
+        <string>Path</string>
+        <string>path</string>
+        <string>@copyright</string>
+        <string>rsgallery2.net</string>
+        <string>jimport</string>
+        <string>watermark</string>
+        <string>class </string>
+    </TokenList>
+    <FixedTokenList />
+    <PreFixedTokenNumber>7</PreFixedTokenNumber>
+    <FirstFixedTokenNumber>10</FirstFixedTokenNumber>
+    <MaxTokenNumber>25</MaxTokenNumber>
+    <MaxFixedNumber>15</MaxFixedNumber>
+</clsSearchStringToken>
