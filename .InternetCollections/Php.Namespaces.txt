@@ -10,6 +10,42 @@ The keyword "use" has been recycled for three distinct applications:
 2- to insert traits in classes, 
 3- to inherit variables in closures. 
 
+-----------------------------------
+Elisa Foltyn
+Kann mir jemand sagen ob man das in Joomla 4 auch noch so macht: 
+jimport('joomla.form.formfield');
+JFormHelperloadFieldClass('text');
+class JFormFieldTravel extends JFormFieldText {
+
+
+usw... oder muss ich da irgendsoein Namespace zeug machen von dem ich nichts kapiere...
+
+-----------------------------------------------
+
+
+
+David Neukirchen shared a link 
+zb hier: https://github.com/joomla/joomla-cms/blob/4.0-dev/administrator/components/com_content/Field/AssocField.php
+joomla/joomla-cms
+
+joomla-cms - Home of the Joomla! Content Management System
+
+
+Guido De Gobbis
+8:32 PM
+Also wenn die Pfade übernommen werden, dann
+use Joomla\CMS\Form\FormFieldHelper ;
+
+Dann kannst du FormFieldHelperloadFieldClass(...) verwenden
+
+
+
+
+
+
+
+
+
 
 
 

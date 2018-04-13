@@ -1,0 +1,13 @@
+The Open Graph protocol enables any web page to become a rich object in a social graph.
+
+Object Types
+In order for your object to be represented within the graph, you need to specify its type. This is done using the og:type property:
+<meta property="og:type" content="website" />
+When the community agrees on the schema for a type, it is added to the list of global types. All other objects in the type system are CURIEs of the form
+<head prefix="my_namespace: http://example.com/ns#">
+<meta property="og:type" content="my_namespace:my_type" />
+The global types are grouped into verticals. Each vertical has its own namespace. The og:type values for a namespace are always prefixed with the namespace and then a period. This is to reduce confusion with user-defined namespaced types which always have colons in them.
+
+.....
+
+
