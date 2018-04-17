@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clsLastOpenedFiles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CfgVersion>0.001</CfgVersion>
+    <TokenList>
+        <string>C:\Users\finnern\AppData\Roaming\NetGrepWin\Config\SearchResult.Res</string>
+        <string>C:\Users\finnern\AppData\Roaming\NetGrepWin\ConfigOpenSearchResult_0.res</string>
+        <string>C:\Users\finnern\AppData\Roaming\NetGrepWin\ConfigOpenSearchResult_1.res</string>
+    </TokenList>
+    <MaxTokenNumber>25</MaxTokenNumber>
+</clsLastOpenedFiles>

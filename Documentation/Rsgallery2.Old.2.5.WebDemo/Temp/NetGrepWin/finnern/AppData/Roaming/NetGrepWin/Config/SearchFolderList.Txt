@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clsSearchFoldersToken xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CfgVersion>0.001</CfgVersion>
+    <TokenList>
+        <string>d:\xampp\htdocs\Joomla3x\administrator\components\</string>
+        <string>d:\xampp\htdocs\Joomla3x\</string>
+        <string>d:\xampp\htdocs\Joomla3x\administrator\components\com_rsgallery2</string>
+        <string>d:\Entwickl\Entwickl.2015\rsgallery2.Source </string>
+        <string>d:\Entwickl\Entwickl.2016\_GitHub\RSGallery2_Component\admin</string>
+        <string>d:\Entwickl\Entwickl.2016\_GitHub\RSGallery2_Component</string>
+        <string>d:\Entwickl\Entwickl.2015\GitHubRepository\Fith\RSG2_Component_NextGeneration\admin</string>
+        <string>d:\Entwickl\Entwickl.2015\GitHubRepository\RSG2\RSGallery2_Component</string>
+        <string>d:\Entwickl\Entwickl.2015\GitHubRepository\RSG2\</string>
+        <string>d:\xampp\htdocs\Joomla3x\administrator\components\com_rsg2</string>
+        <string>d:\xampp\htdocs\Joomla3x\administrator\</string>
+        <string>d:\xampp\htdocs\Joomla3x\libraries</string>
+        <string>d:\xampp\htdocs\Joomla3xEmpty\administrator\components\com_rsgallery2</string>
+        <string>d:\xampp\htdocs\Joomla3xEmpty\administrator\components\com_rsgallery2 </string>
+        <string>d:\Entwickl\Entwickl.2015\GitHubRepository\RSG2\RSGallery2_Module_LatestImages</string>
+        <string>d:\Entwickl\Entwickl.2015\GitHubRepository\RSG2\RSGallery2_Plugin_DisplayGallery</string>
+        <string>d:\Entwickl\Entwickl.2015\GitHubRepository\RSG2\RSGallery2_Plugin_DisplayImage</string>
+        <string>d:\Entwickl\Entwickl.2015\rsgallery2.TowardsJ3</string>
+        <string> d:\xampp\htdocs\Joomla3xEmpty\administrator\components\com_rsgallery2</string>
+        <string>d:\Entwickl\Entwickl.2015\rsgallery2.J25</string>
+        <string>d:\Entwickl\Entwickl.2015\rsgallery2.TowardsJ3.150101\</string>
+        <string>D:\Entwickl\Entwickl.2014\rsgallery2.Source.TowardsJ3\</string>
+        <string>D:\Entwickl\Entwickl.2014\rsgallery2.TowardsJ3\</string>
+        <string>D:\Entwickl\Entwickl.2015\rsgallery2.TowardsJ3\</string>
+        <string>D:\Entwickl\Entwickl.2015\rsgallery2.Source.TowardsJ3\</string>
+    </TokenList>
+    <FixedTokenList />
+    <PreFixedTokenNumber>7</PreFixedTokenNumber>
+    <FirstFixedTokenNumber>10</FirstFixedTokenNumber>
+    <MaxTokenNumber>25</MaxTokenNumber>
+    <MaxFixedNumber>15</MaxFixedNumber>
+</clsSearchFoldersToken>
