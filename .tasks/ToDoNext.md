@@ -1,6 +1,11 @@
 ## To do or checks for RSGallery2
 
 - [ ] Config like J!3x::
+  - [ ] .Button new to old
+  - [ ] .Button old to new
+  - [X] .Button to file for new/old to compare
+  - [ ] .Button to empty old config data -> so old things dont work any more
+  - [ ] Check extensions plugins / models with empty old config
   - [ ] .
   - [ ] .
   - [ ] .
