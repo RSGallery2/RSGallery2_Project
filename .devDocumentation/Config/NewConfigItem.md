@@ -1,8 +1,3 @@
-ToDo: May be moved to a different place
-
-New Gallery:
-On save the date , user old and ... are added to the data. The ordering is set to "1" so the latest entry has the lowest order number and appears as first entry in lists
-
 New config item
 - Create variable with value in file ...\com_rsgallery2\includes\config.class.php
 - Add list/radio/ int ... to file config.xml  ...\com_rsgallery2\models\forms\config.xml 

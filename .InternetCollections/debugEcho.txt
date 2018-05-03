@@ -1,0 +1,5 @@
+
+
+echo "#<div style='text-align:left;font_size:1.2em;'><pre>";
+print_r($this);
+echo "</pre></div>#";
