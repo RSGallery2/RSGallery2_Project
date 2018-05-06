@@ -1,0 +1,42 @@
+
+
+
+If you ever need to write a Joomla extension that handles image uploads, you might want to rotate the image to the correct rotation if the image has been taken on a phone.
+Sometimes the image will be rotated at incorrect angles because the browser don't support or ignores the orintation information from the image's EXIF data.
+You can solve this problem by using this simple script in your Joomla extension.
+
+
+// Path to an image containing exif data
+$imagePath = "/images/taken-with-an-iphone.jpg";
+
+// new JImage object from image path
+$image = new JImage($imagePath);  // .../image
+
+// Read the exif data from the image
+$exif = exif_read_data($imagePath);
+$rotate = 0;
+
+// Get the angle to rotate the image based on the orientation
+if (!empty($exif['Orientation'])) {
+
+    // Based on the orientation of time image, assign the rotation angle.
+    switch ($exif['Orientation']) {
+        case 8:
+            $rotate = 270;
+        break;
+        case 3:
+            $rotate = 180;
+            break;
+        case 6:
+            $rotate = 90;
+            break;
+    }
+
+    // Rotate the image appropriately
+    $newImage = $image->rotate($rotate);  //, false);
+
+    // Overwrite the old image with new image
+    if (!$newImage->toFile($imagePath)) {
+        die("Failed to overwrite file: " . $imagePath);
+    }
+}
