@@ -1,0 +1,30 @@
+
+
+
+Joomla: Load JForm post data with JInput 
+
+
+// Required objects 
+$input = JFactory::getApplication()->input; 
+
+// Get the form data 
+$formData = new JRegistry($input->get('jform', '', 'array')); 
+
+// Get any data being able to use default values 
+$id = $formData->get('id', 0); 
+$name = $formData->get('name', null); 
+$email = $formData->get('email', null);
+Or even better to be able to get sanitized values use a JInput object:
+// Required objects 
+$input = JFactory::getApplication()->input; 
+
+// Get the form data 
+$formData = new JInput($input->get('jform', '', 'array')); 
+
+// Get any data being able to use default values 
+$id = $formData->getInt('id', 0); 
+$name = $formData->getWord('name'); 
+$email = $formData->getString('email');
+That way we will use the ability of JInput to get sanitized values directly through JFilterInput. You can see all the filters available here. JInput uses the magic method __call to use them transparently. So if you want to use filter 'BASE64' you can direcly use $formData->getBase64(), $formData->getAlnum() for 'ALNUM' filter and so....
+In this second example I have removed also the default null values because null is applied by default when no value is passed.
+
