@@ -1,23 +1,25 @@
 # Upload
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.start.png?raw=true)
-Above is the start view when selecting configuration
+
 
 There are three tabs to choose
- * (1) Single images
- * (2) Upload from Zip file (PC)
- * (3) Upload from folder (server)
+* (1) Upload by drag and drop
+* (2) Upload from Zip file (PC)
+* (3) Upload from folder (server)
 
-## Single images
-On "Upload single images" a form opens where the properties of a image to be uploaded can be edited. This includes the origin of the image as properties like name, assigned gallery and more.
+## Upload by drag and drop
+On "Upload by drag and drop" a form opens where the properties of a image to be uploaded can be edited. This includes the origin of the image as properties like name, assigned gallery and more.
 
 More images can be added in that form.
 
-![Single images](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.singleImages.png?raw=true)
+![Drag and Drop](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.01.png?raw=true)
 
-(1) Jumps to single images upload view
+(1) A gallery selection is needed to enable drag and drop
+(2) .....
 
-See form "Single images upload" view below.
+
+
 
 ## Upload from Zip file (PC)
 A zip file containing several images can be uploaded to the server, unzipped and the images assigned to a gallery.
