@@ -11,7 +11,7 @@ The first tab of the new download form looks like following Image. It shows the 
 
 (1) Specify gallery
 
-First select an existing gallery
+First select an existing gallery This will enable drag and drop ands display the drop area in green
 
 (2) Drag and drop area
 
@@ -34,7 +34,7 @@ Tip:  This functionality can also be reached from the image list view. Select th
 
 (5) Upload single images (Legacy)
 This button leads to the old "legacy" version of single image upload.  
-When the drag and drop function has enough experience and no user complains then it is faster and this function will be removed
+When the drag and drop function has enough experience and no user complains then drag and drop is faster and this function will be removed
 
 (6) Upload file size
 On the bottom is shown the setting of some php variables from the system (from php.ini file) related to the upload process. Even if the file itself complies with all limits the upload itself may fail.
@@ -42,14 +42,11 @@ Example: Sometimes the bytes are transferred as pure ASCII: So 7 bits are used a
 
 #### Restrictions
 
- * Uploading more that 20 Files at once: This may lead to wrong order number as the call to the database is asynchronous and therefore if the system is busy the same order number may generated twice or for several images
- * Filesize: The working file size is not only dependent on the system settings for upload (see point (6)). Also the used library (GD see configuration) may stumble
+  * File size: The upload may hang if the file size is too big. The working file size is not only dependent on the system settings for upload (see point (6)). Also the used library (GD see configuration) may stumble
 
-###     
+### Upload files using drag and drop: View after some uploads
 
 ![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
-
-### Upload files using drag and drop: Page after some uploads
 
 (1) Drag and drop area (filled)
 After a gallery is selected the dotted border is green. Dropped images do appear in this area after the transfer process is completed.
@@ -64,7 +61,7 @@ Attention: Even if the green bar is at 100% telling that the file is completely 
 A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once  (batch). The title and the description properties can be edited there.
 This is similar to the second page on upload in previous rsgallery2 versions.
 
-It is not necessary to use this view when no title or description is needed.  
+It is not necessary to use this view when no title or description editing is needed.  
 
 Info: On creation of the image data on the server side the title is preset from the image name automatically.
 
