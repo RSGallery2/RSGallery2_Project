@@ -79,19 +79,22 @@ A zip file containing several images can be uploaded to the server, unzipped and
 
 Attention: The size of all files within the zip file has to be smaller than the server settings (php.ini) upload_max_filesize and post_max_size. These values are displayed in red below this input.
 
-(2) One gallery for all Images
-
-On yes the selected gallery is used for all images. Otherwise for each image the gallery may be assigned in the next form.
-
-(3) Specify gallery
+(2) Specify gallery
 
 The list on the right contains all gallery names. The top most gallery is the last one created.
 
-(4) Upload from Zip file
+(3) Upload Zip file
 
 Does upload the zip file to the server, unzip the images and jumps to properties "uploaded images view". There the images are displayed and the properties can be assigned.
 
-See form "Images batch upload" view below
+See section "Properties uploaded Files" view below ??? Link
+
+(4) Upload Zip file (legacy)
+
+This button leads to the old "legacy" version of zip file upload.  
+When the new function has enough experience and no user complains then this function will be removed.
+
+
 
 ## Upload from folder (server)
 
