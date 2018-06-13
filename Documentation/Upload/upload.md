@@ -63,6 +63,7 @@ On the bottom is shown the setting of some php variables from the system (from p
  Attention: Even if the green bar is at 100% telling that the file is completely transferred the server needs time to create the dependent rsgallery2 images and the process is not finished until the matching image is displayed in the drag and drop area
 
  (3) Add image properties
+
  A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once  (batch). The title and the description properties can be edited there.
  This is similar to the second page on upload in previous rsgallery2 versions.
 
@@ -87,14 +88,12 @@ The list on the right contains all gallery names. The top most gallery is the la
 
 Does upload the zip file to the server, unzip the images and jumps to properties "uploaded images view". There the images are displayed and the properties can be assigned.
 
-See section "Properties uploaded Files" view below ??? Link
+See section "Properties uploaded Files" view below ToDo: Link
 
 (4) Upload Zip file (legacy)
 
 This button leads to the old "legacy" version of zip file upload.  
 When the new function has enough experience and no user complains then this function will be removed.
-
-
 
 ## Upload from folder (server)
 
@@ -109,63 +108,97 @@ The path must start with the base path to Joomla! installation. To make things e
 
 In configuration the standard path can be set so it will be automatically filled in.
 
-(2) One gallery for all Images
-
-On yes the selected gallery is used for all images. Otherwise for each image the gallery may be assigned in the next form
-
-(3) Specify gallery
+(2) Specify gallery
 
 The list on the right contains all gallery names. The top most gallery is the last one created
 
-(4) Upload images
+(3) Upload images
 
 Does copy the files from given folder on the server and jumps to "Images batch upload" view. There the images are displayed and the properties can be assigned.
 
-See form "Images batch upload" view below
+See form "Images batch upload" view below  ToDo: link
 
+(4) Upload Zip file (legacy)
 
-## Form "Images batch upload"
-This form will be reached either by upload from ZIP or upload from server folder.
-It supports an overview of uploaded images as pictures and enables to set image specific attributes
+This button leads to the old "legacy" version of zip file upload.  
+When the new function has enough experience and no user complains then this function will be removed.
 
-![Images batch upload second form](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.FtpZip.SecondForm.png?raw=true)
+## Properties uploaded Files
 
-(1) Delete: If activated (checked) the image will not be used and delted
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
 
-(2) Image preview:  
+This form enables to set the properties title and description for a batch of images at the same time.  
+It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
-(3) Title: Add a text for title displayed with image
+(1) Title
 
-(4) Gallery: If selected in previous upload form the gallery can be selected different for each image. Otherwies the input is grey , not reachabel and tells the previous selected gallery
+The title is preset on creation. It may be edited here. The title may be different to the uploaded image name when the name already existed. Then the next free number is appended.
 
-(5) Description: Add a description which is displayed with the image
+(2) Gallery
 
-(6) Button to finish the upload. The attributes will be assigned to the images ...
+The gallery name can't be changed in this part
 
-## Form "Single images upload"
+(3) Description
 
-![Single images upload second form](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.singleImages.Properties.png?raw=true)
+The description may be changed with the standard editor like in the edit single image form.  
+Sadly this leads to a very high edit block which creates a ugly layout.
 
-(1) Gallery: The gallery can be selected different for each image
+(4) Save
 
-(2) Generic description: It will be used for all following images
+Save changes and continue edit on the same images
 
-(3) Title: Add a text for title displayed with image
+(5) Save & Close
 
-(4) File: Select image to upload
+Save changes and leave the form to the image list
 
-(5) More Files: A click on this item will add inputs for the next image. The area marked green will be duplicated for input of the next images. This may be repeated as often as needed. (Attention: Limit may be the server time for the upload itself)
+(6) Cancel
 
-(6) Button to finish the upload. The attributes will be assigned to the images ...
+Ignore the changes and leave the form
 
-(7) Cancel the process
+(7) Delete
 
+All or some image can be selected for deleting. (See (8) and (9))
+Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files
 
+(8) Rotate left
 
+Rotates selected images 90 degrees against the clock
 
+(9) Rotate right
 
+Rotates selected images 90 degrees with the clock
 
+(10) Rotate 180
 
+Rotates selected images 180 degrees.
+
+(11) Flip horizontal
+
+Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom  
+
+(12) Flip vertical
+
+Flips the selected images vertical. The bits move from bottom to top. The left/right side of the image keeps being the left/right side
+
+(13) Select all
+
+All images will get a set hook in the box below the image (See also (14))
+This can be used to delete, rotate or flip selected images.
+
+(14) Select image
+
+The image will get a set hook in the box below the image
+This can be used to delete, rotate or flip  selected images.
+
+## Images: Batch process to add properties
+
+In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.png?raw=true)
+
+(1) Add properties
+
+This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
 
 #### General folders of rsgallery2
 (2017.07.17) ....
