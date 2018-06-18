@@ -65,9 +65,10 @@ It is not necessary to use this view when no title or description editing is nee
 
 Info: On creation of the image data on the server side the title is preset from the image name automatically.
 
+## Properties uploaded Files
+
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
 
-## Properties uploaded Files
 This form enables to set the properties title and description for a batch of images at the same time.  
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 

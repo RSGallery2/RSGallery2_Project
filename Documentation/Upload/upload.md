@@ -49,9 +49,9 @@ On the bottom is shown the setting of some php variables from the system (from p
 
  * File size: The upload may hang if the file size is too big. The working file size is not only dependent on the system settings for upload (see point (6)). Also the used library (GD see configuration) may stumble
 
- ### Upload files using drag and drop: View after some uploads
+### Upload files using drag and drop: View after some uploads
 
- ![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
+![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
 
  (1) Drag and drop area (filled)
  After a gallery is selected the dotted border is green. Dropped images do appear in this area after the transfer process is completed.
@@ -194,7 +194,7 @@ This can be used to delete, rotate or flip  selected images.
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.upload.png?raw=true)
 
 (1) Add properties
 
@@ -202,8 +202,9 @@ This button leads to the properties form (See above) and will open the selected 
 
 #### General folders of rsgallery2
 (2017.07.17) ....
+
 The images are kept in following folders in .../Joomla/images/rsgallery/tmp
-* original: Users original images if not disabled in configuration
-* display: Resized images (size from configuration)
-* thumbs: Thumbs of images (size and form from configuration)
-* watermarked: When watermark is active then images which were shown to the user get a watermark and are saved here for fast access
+ * original: Users original images if not disabled in configuration
+ * display: Resized images (size from configuration)
+ * thumbs: Thumbs of images (size and form from configuration)
+ * watermarked: When watermark is active then images which were shown to the user get a watermark and are saved here for fast access
