@@ -1,7 +1,15 @@
 # Image List View
 
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.01.png?raw=true)
+
 
 Missing ...: To be continued
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.02.png?raw=true)
+
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.03.png?raw=true)
+
 
 
 
@@ -9,23 +17,23 @@ Missing ...: To be continued
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.ListView.batch.png?raw=true)
 
-(1) Add properties
+(1) Select Gallery
+
+Select a gallery as destination for copy or move of selected images
+
+(2) Add properties
 
 This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
 
-(2) Move to
+(3) Move to
 
 Batch processing: The selected images can be moved to the selected gallery
 
-(3) Copy to
+(4) Copy to
 
 Batch processing: The selected images can be copied to the selected gallery
-
-(4) Select Gallery
-
-Select a gallery as destination for copy or move of selected images
 
 ## Properties uploaded Files
 
