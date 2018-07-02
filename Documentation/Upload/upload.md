@@ -200,10 +200,28 @@ In the images list view images can be selected for batch processing. The followi
 
 This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
 
-#### General folders of rsgallery2
+## How to fix ajax upload errors
+
+In cases where the the upload got stuck you may see a error message and the result looks like
+
+....
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.maintenance.png?raw=true)
+
+image
+....
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
+
+
+In most cases the image data is reserved in the database
+
+1)
+
+
+### General folders of rsgallery2
 (2017.07.17) ....
 
-The images are kept in following folders in .../Joomla/images/rsgallery/tmp
+The images are kept in following folders in .../Joomla/images/rsgallery/__sub_folder__
  * original: Users original images if not disabled in configuration
  * display: Resized images (size from configuration)
  * thumbs: Thumbs of images (size and form from configuration)
