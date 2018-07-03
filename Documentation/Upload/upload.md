@@ -202,24 +202,40 @@ This button leads to the properties form (See above) and will open the selected 
 
 ## How to fix ajax upload errors
 
-In cases where the the upload got stuck you may see a error message and the result looks like
+In cases where the the upload got stuck you may see a error message and the result looks like below
 
 ....
 
+In most cases the image data is reserved in the database but the image is not uploaded.
+
+Then you may upload the image by FTP to the rsgallery2 "original" destination folder and start the creation of the display and thumb images manual by using a maintenance function
+
+##### 1. Check the database reservation / images existence
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.maintenance.png?raw=true)
 
-image
-....
+In "control panel" select Maintenance
+
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
 
+There select in section "Repair zone" the button "Consolidate image database". This will lead to a page where it is checked whether there are database entries for missing images or for images with no database / gallery connection
 
-In most cases the image data is reserved in the database
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
 
-1)
 
+
+##### 2. Upload image
+
+The original images are kept in folder in .../Joomla/images/rsgallery/original. Copy your file into this folder.
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
+
+(1) Use button "Repeat checking" so the image is found <br>
+(2) If the image exists it is marked here <br>
+(3) Select the line with clicking on marker in front<br>
+(4) Use button "Create missing images". <br>If all goes well then the line of this image will disappear in the next display of the page
 
 ### General folders of rsgallery2
-(2017.07.17) ....
+(2018.07.03) ....
 
 The images are kept in following folders in .../Joomla/images/rsgallery/__sub_folder__
  * original: Users original images if not disabled in configuration
