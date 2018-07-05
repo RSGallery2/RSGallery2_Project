@@ -222,7 +222,6 @@ There select in section "Repair zone" the button "Consolidate image database". T
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
 
 
-
 ##### 2. Upload image
 
 The original images are kept in folder in .../Joomla/images/rsgallery/original. Copy your file into this folder.
@@ -234,7 +233,7 @@ The original images are kept in folder in .../Joomla/images/rsgallery/original. 
 (3) Select the line with clicking on marker in front<br>
 (4) Use button "Create missing images". <br>If all goes well then the line of this image will disappear in the next display of the page
 
-### General folders of rsgallery2
+### General folders of RSGallery2 images
 (2018.07.03) ....
 
 The images are kept in following folders in .../Joomla/images/rsgallery/__sub_folder__
