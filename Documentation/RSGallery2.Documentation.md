@@ -11,7 +11,7 @@
 
 [CreateMenuGalleryView](./GetStarted/05.CreateMenuGalleryView.md)
 
-[steps](./GetStarted/06.Next steps.md)
+[steps](./GetStarted/06.NextSteps.md)
 
 [controlPanel](./ControlPanel/controlPanel.md)
 
