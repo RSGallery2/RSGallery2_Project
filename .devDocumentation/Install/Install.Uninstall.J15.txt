@@ -1,0 +1,26 @@
+--------------------------------------
+Installation and upgrade
+
+
+Installation
+RSGallery2 is a webbased gallery system for Joomla!. Joomla! is a Open Source (OS) Content Management System (CMS). To be able to install RSGallery2 on your website, you first need Joomla!. After you are done installing that (information about this can be found on their website), you need to download RSGallery2. 
+
+Download RSGallery2
+This can be done at downloads or by clicking the download button on the horizontal top menu of this website. 
+
+Uploading it to Joomla!
+To do this, go to the backend of your website (yourwebsite.com/administrator) and login as superadministrator. (Following only applies to Joomla! 1.0.x series) In your top menu, select 'Installers → Components'. Click 'Browse' and select the file you just downloaded containing RSGallery2. Click 'Upload file & install' and RSGallery2 will be installed. 
+
+--------------------------------------
+Upgrading
+When you already have RSGallery2 installed, but you want to upgrade to a later version, this is what you should do. 
+
+Create a backup
+Something can always go wrong. So it is advisable to make a backup before upgrading RSGallery2. 
+
+Download the version
+Download the version you want to upgrade to. There are no upgrade patches or anything like that. You can download RSGallery2 at downloads or by clicking the download button on the horizontal top menu of this website. 
+
+Uninstall RSGallery2
+Details about uninstalling can be found in the section: Uninstalling. 
+
