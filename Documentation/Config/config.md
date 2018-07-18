@@ -17,6 +17,7 @@
 * (2) Sections in Tab  
   Each Tab contains sections. A click on a section will open or hide the settings within while the other sections stay open or hidden
 
+---
 ## General
 
  ![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.GeneralSettings.png?raw=true)
@@ -43,6 +44,8 @@
 
   All gallery names and item titles must be unique
 
+
+---
 ## Images
 #### Images: Image Manipulation
 
@@ -68,6 +71,8 @@
 
   This information tells which file types are supported. The types are defined by the component and therefore can't be changed
 
+
+---
 #### Images: Image upload
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.upload.png?raw=true)
@@ -98,6 +103,8 @@
 
   Preselect the 'Latest gallery' name as default selection in upload form
 
+
+---
 #### Images: Graphics Library
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.graphicsLibrary.png?raw=true)
@@ -131,6 +138,8 @@
 
   Videos are actually not supported
 
+
+---
 #### Images: Image Storage
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.storage.png?raw=true)
@@ -152,6 +161,8 @@
 
   .
 
+
+---
 #### Images: Comments
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.comments.png?raw=true)
@@ -198,6 +209,8 @@
 
 * (11) Length of code for alfanumerc CAPTCHA
 
+
+---
 #### Images: Voting
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.voting.png?raw=true)
@@ -210,6 +223,8 @@
 
     -> rsgvoting_
 
+
+---
 ## Display
 
 #### Display: Front Page
@@ -270,6 +285,8 @@
 
 * (14) Display creation date Yes No
 
+
+---
 #### Display: Image Display
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.imageDisplay.png?raw=true)
@@ -292,35 +309,39 @@
 
 * (5) Display Voting Yes No
 
-  .
+  On Yes a rectangle below the single image display is added. It contains a header with title "Comments" and below a field where comments can be inserted.
 
 * (6) Display Comments Yes No
 
-  .
+  On Yes a rectangle below the single image display is added. It contains a header with title "Comments" and below a field where comments can be inserted.
 
+
+---
 #### Display: Image order
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.imageOrder.png?raw=true)
 
 * (1) Order images by
 
-  .
+  The displayed imaged may be ordered by the types "Default", "Date", "Name", "Rating" or "Hits
 
 * (2) Order direction
 
-  .
+  The appearance of order type (see above) can be displayed in ascending or descending order
 
+---
 #### Display: EXIF settings
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.exifSettings.png?raw=true)
 
 * (1) Display EXIF Data Yes No
 
-  .
+  If the image contains EXIF data these may be displayed as info in a rectangle below the image in the single image view
+  It appears beside Description, Voting and Comments in a separate table part
 
 * (2) Select EXIF tags to display
 
-  .
+  Select the information which shall be shown to the user. Multiple selections are supported
 
 * (3) Selected items box
 
@@ -330,6 +351,8 @@
 
   Shows a list of selectable exif properties. Inverted items are selected
 
+
+---
 #### Display: Gallery View
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.galleryView.png?raw=true)
@@ -339,32 +362,34 @@
   "Table", "Float" or "Magic"
    Use float for variable width templates
    sorry "Magic" -> not supported (yet)
+  "Table": The thumb nails are embedded in table elements
+  "Float": The thumb nails are embedded in an unordered list
 
 * (2) Direction (only works for float)
-
-  .
+  Assigns the direction "Left to right" or "Right to left" of the unordered list elements
 
 * (3) Number of Thumbnail Columns (only for table)
 
-  .
+  Number of thumbnails in a row
 
 * (4) Thumbnails per Page
 
-  .
+  Set the maximum thump nails displayed on one page. There will be a page navigation displayed if the gallery contains more images.
 
 * (5) Show image name below thumbnail Yes No
 
-  .
+  On yes the image name will shown below the thumbnail
 
 * (6) Navigation bar display
 
-  .
+  Adds a navigation bar in the single image display of the gallery
+  Possible selections: Top, bottom, both, none
 
 * (7) Display Slideshow in gallery view Yes No
 
-  .
+  Adds a "slideshow" link to the gallery view. It leads to a page displaying the selected type of slideshow
 
-
+---
 #### Display: Image Watermark
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.watermark.image.png?raw=true)
@@ -436,6 +461,7 @@
 
     Define the destination path of the created watermarked files  
 
+---
 ## My Galleries
  My galleries supports the creation of user galleries
 
@@ -459,8 +485,10 @@
 #### Image upload
 * (4) Maximum number of galleries a user can have
 
-  .
+  Restrict the amount of galleries  a user may create
 
 * (5) Max numbers of pictures a user can have
 
-  .
+  Restrict the amount of images a user may upload. It counts number of images over all galleries
+
+---
