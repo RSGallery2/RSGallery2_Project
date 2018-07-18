@@ -293,23 +293,26 @@
 
 * (1) Display Slideshow in item view Yes No
 
-  .
+  Adds a "slideshow" link to the single image view. It leads to a page displaying the selected type of slideshow
 
 * (2) Popup style
+  Defines the method ("No popup", "Normal popup", "Joomla Modal") used for displaying a popup (big image) after a click of the image in single image display.
 
-  .
+  "No popup": A click on the image does not open a popup<br>
+  "Normal popup": After click on the image a popup in ... style<br>
+  "Joomla Modal": After click on the image a popup in ... style<br>
 
 * (3) Display Description Yes No
 
-  .
+  On "Yes" a rectangle below the single image display is added. It contains a header with title "Display" and below a field where the description of the image is displayed.
 
 * (4) Display Hits Yes No
 
-  .
+  On "Yes" a rectangle below the single image display is added. It contains a header with title "Hits" and below a field where the number of "hits" of the images is displayed.
 
 * (5) Display Voting Yes No
 
-  On Yes a rectangle below the single image display is added. It contains a header with title "Comments" and below a field where comments can be inserted.
+  On "Yes" a rectangle below the single image display is added. It contains a header with title "Comments" and below a field where comments can be inserted.
 
 * (6) Display Comments Yes No
 
@@ -362,8 +365,8 @@
   "Table", "Float" or "Magic"
    Use float for variable width templates
    sorry "Magic" -> not supported (yet)
-  "Table": The thumb nails are embedded in table elements
-  "Float": The thumb nails are embedded in an unordered list
+  "Table": The thumb nails are embedded in table elements<br>
+  "Float": The thumb nails are embedded in an unordered list<br>
 
 * (2) Direction (only works for float)
   Assigns the direction "Left to right" or "Right to left" of the unordered list elements
