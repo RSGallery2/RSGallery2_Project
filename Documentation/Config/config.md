@@ -146,12 +146,14 @@
 
 * (1) Keep original image Yes No
 
-  The original image may be deleted after the upload process for server space or hiding purposes.  
-  With an additional created watermarked image (See below) a user may  see the "display" image in a valid quality (resolution) but can't retrieve the original without the watermark
+  On "yes" the original image will be deleted after the upload process for server space or hiding purposes. On a double click of the display sized image the same image (size) appears then in the popup
+
+  Drawback: watermark images not created on upload will use the smaller size "display" image to be build when the user opens the 2original" view"
 
 * (2) Original Image Path
 
-  .
+  Select any folder within the Joomla reachable folder system.
+  You may choose a different folder when you don't show the original images by setting the "Popup style to none" in Configuration -> Tab "display" -> section "Image display". This makes it harder for any user to guess the origin folder to download the original image with big size and good quality .
 
 * (3) Display Image Path
 
@@ -161,6 +163,11 @@
 
   .
 
+##### Future folder structure (2018.07.22)
+
+Actually all images of a certain type are kept in one folder. This limits its use as the amount of files per folder is limited. It may limited to 60000 files on older systems and on around 4 Gbyte files on newer. Anyhow the system catches performance issues after too many files in one.
+
+The development team aims for folder per gallery so other slideshows may benefit from this too.
 
 ---
 #### Images: Comments
@@ -299,8 +306,8 @@
   Defines the method ("No popup", "Normal popup", "Joomla Modal") used for displaying a popup (big image) after a click of the image in single image display.
 
   "No popup": A click on the image does not open a popup<br>
-  "Normal popup": After click on the image a popup in ... style<br>
-  "Joomla Modal": After click on the image a popup in ... style<br>
+  "Normal popup": After click on the image the original image is displayed in a separate browser window style<br>
+  "Joomla Modal": After click on the image a popup in a modal style with [x] to close appear in front of the small image screen
 
 * (3) Display Description Yes No
 
