@@ -12,15 +12,15 @@
   * Images: Image related settings
   * Display: Frontend view relating settings
   * My Galleries: Settings for user galleries
-
+  <BR>
+  <BR>
 
 * (2) Sections in Tab  
   Each Tab contains sections. A click on a section will open or hide the settings within while the other sections stay open or hidden
-
 ---
 ## General
 
- ![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.GeneralSettings.png?raw=true)
+![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.GeneralSettings.png?raw=true)
 
 * (1) Version:
 
@@ -36,14 +36,15 @@
 
   Attention: On Yes to Debug a log file per day will be created in folder '...//joomla root/administrator/log' and notices may appear on top of a form. Please delete log files regularly". In Maintenance will (may be in near future) be a button to achieve this
 
+  Actually (22.07.2018) Using debug on the frontend will create a lot of text in the log files and may get stuck when a lot of users are active. It is best used on the local test web then.
+
 * (4) Develop
 
-  Activates debug functions. Additional 'info' will appear in html pages and more functions appear in maintenance view. The additional function may not work or destroy parts of RSGallery2 ....
+  Activates developer functions. Additional 'info' will appear in HTML pages and more functions appear in maintenance view. The additional function may not work or destroy parts of RSGallery2 ....
 
 * (5) Advanced SEF
 
   All gallery names and item titles must be unique
-
 
 ---
 ## Images
@@ -112,7 +113,10 @@
 
 * (1) Graphics Library
 
-  Three graphics libraries, GD2, ImageMagick and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images   
+  Old: <br>
+    Three graphics libraries, GD2, ImageMagick (and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images   
+
+  Actually only GD2 is used until further notice
 
 * (2) ImageMagick Path
 
@@ -138,7 +142,6 @@
 
   Videos are actually not supported
 
-
 ---
 #### Images: Image Storage
 
@@ -152,25 +155,27 @@
 
 * (2) Original Image Path
 
-  Select any folder within the Joomla reachable folder system.
+  Select any folder within the Joomla! reachable folder system.
   You may choose a different folder when you don't show the original images by setting the "Popup style to none" in Configuration -> Tab "display" -> section "Image display". This makes it harder for any user to guess the origin folder to download the original image with big size and good quality .
 
 * (3) Display Image Path
 
-  .
+  Select any folder within the Joomla! reachable folder system for the resized displayed images.
 
 * (4) Thumb Path
 
-  .
+  Select any folder within the Joomla! reachable folder system for the thumb images.
 
 ##### Future folder structure (2018.07.22)
 
 Actually all images of a certain type are kept in one folder. This limits its use as the amount of files per folder is limited. It may limited to 60000 files on older systems and on around 4 Gbyte files on newer. Anyhow the system catches performance issues after too many files in one.
 
-The development team aims for folder per gallery so other slideshows may benefit from this too.
+The development team aims for folder per gallery so other slide shows may benefit from this too.
 
 ---
 #### Images: Comments
+
+Comments are activated in configuration under Tab "Display -> section "Image display"
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.comments.png?raw=true)
 
@@ -220,16 +225,18 @@ The development team aims for folder per gallery so other slideshows may benefit
 ---
 #### Images: Voting
 
+Voting is activated in configuration under Tab "Display -> section "Image display"
+
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.voting.png?raw=true)
 
 * (1) User can only vote once (cookie based) Yes No
 
-  .
+  Defines if a user can vote multiple times
+  ToDo: ? overwrites old voting or adds further voting
 
 * (2) Cookie prefix
 
-    -> rsgvoting_
-
+  A cooky is used to track the user on voting. Assign a singular prefix only used from your web site
 
 ---
 ## Display
@@ -240,19 +247,19 @@ The development team aims for folder per gallery so other slideshows may benefit
 
 * (1) Display Search Yes No
 
-  .
+  Displays a search rectangle over the gallery display. ToDo Check: The user may search for gallery names, images names,  in the descriptions and in the comments.
 
 * (2) Display Random Yes No
 
-  .
+  On yes an area appears below the standard gallery where Random images are displayed
 
 * (3) Display Latest Yes No
 
-  .
+  On yes an area appears below the standard gallery where Random images are displayed
 
 * (4) Display Branding Yes No
 
-  .
+  
 
 * (5) Display Downloadlink Yes No
 
