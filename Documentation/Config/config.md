@@ -236,7 +236,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 * (2) Cookie prefix
 
-  A cooky is used to track the user on voting. Assign a singular prefix only used from your web site
+  A cookie is used to track the user on voting. Assign a singular prefix only used from your web site
 
 ---
 ## Display
@@ -247,7 +247,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 * (1) Display Search Yes No
 
-  Displays a search rectangle over the gallery display. ToDo Check: The user may search for gallery names, images names,  in the descriptions and in the comments.
+  Displays a search rectangle over the gallery display. The user may search for images where the name or the description matches the search text.
 
 * (2) Display Random Yes No
 
@@ -259,11 +259,11 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 * (4) Display Branding Yes No
 
-  
+   On Yes a text with rsgallery2 information including used version will be shown on the bottom of the single images view
 
 * (5) Display Downloadlink Yes No
 
-  .
+  On yes a small thumb with download text appears below the image in the single image view. When the user clicks on it then the original image (big size) is downloaded
 
 * (6) Display Status Icons Yes No
 
