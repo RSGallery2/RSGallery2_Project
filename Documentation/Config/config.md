@@ -267,7 +267,14 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 * (6) Display Status Icons Yes No
 
-  .
+  On Yes activates icons with the status of a gallery above the gallery thumb when the user is logged in. This helps if "user galleries" are enabled in "MyGallery" configuration to show the states of the actual gallery.
+     ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.galleryStatus.png?raw=true)
+     The icons will indicate
+     * (O) User is the owner of the gallery
+     * (U) User can upload in this gallery
+     * (H) The gallery is hidden and not Published
+
+
 
 * (7) Display gallery limitbox
 
