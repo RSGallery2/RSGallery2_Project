@@ -30,13 +30,15 @@
 
   This text is used as a broad header description of the "root gallery" view. The root gallery (with sub galleries and more) will be displayed when the menu type "RSGallery2 -> View of galleries" is activated and the root gallery is chosen for display
 
-* (3) Debug
+* (3) Debug (Frontend / Backend)
 
   Activates debug functionality. This does write calling parameters and logs some of the used files / classes in a log file.
 
   Attention: On Yes to Debug a log file per day will be created in folder '...//joomla root/administrator/log' and notices may appear on top of a form. Please delete log files regularly". In Maintenance will (may be in near future) be a button to achieve this
 
   Actually (22.07.2018) Using debug on the frontend will create a lot of text in the log files and may get stuck when a lot of users are active. It is best used on the local test web then.
+
+  Therefore in the near future the team will introduce different debug variables for backend and frontend
 
 * (4) Develop
 
@@ -168,7 +170,7 @@
 
 ##### Future folder structure (2018.07.22)
 
-Actually all images of a certain type are kept in one folder. This limits its use as the amount of files per folder is limited. It may limited to 60000 files on older systems and on around 4 Gbyte files on newer. Anyhow the system catches performance issues after too many files in one.
+Actually all images of a certain type are kept in one folder. This limits its use as the amount of files per folder is limited. It may limited to 60000 files on older systems and around 4 GByte files on newer systems. Anyhow the system catches performance issues after too many files in one.
 
 The development team aims for folder per gallery so other slide shows may benefit from this too.
 
@@ -268,44 +270,63 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 * (6) Display Status Icons Yes No
 
   On Yes activates icons with the status of a gallery above the gallery thumb when the user is logged in. This helps if "user galleries" are enabled in "MyGallery" configuration to show the states of the actual gallery.
-     ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.galleryStatus.png?raw=true)
-     The icons will indicate
+
+  ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Config.display.galleryStatus.png?raw=true)
+
+     The icons will indicate     
      * (O) User is the owner of the gallery
      * (U) User can upload in this gallery
      * (H) The gallery is hidden and not Published
-
-
+     <br><br>     
 
 * (7) Display gallery limitbox
 
-  .
+  With a displayed gallery limit box the user can choose the maximal number of galleries shown on the viewed page.
+  So he may overwrite the configuration parameter "Default number of galleries on frontpage" and see more or less galleries to choose from.
+
+  Possible options
+  * Always
+  * If more galleries than limit
+  * Never
+  <br><br>     
+
+  on "If more galleries than limit" this selection box will only appear when there are more galleries to be displayed but limited by parameter "Default number of galleries on frontpage". See below
 
 * (8) Default number of galleries on frontpage
 
-  .
+  This limits the galleries displayed to the user.
+  This can be overwritten by the user with a limit box if the box is enabled. See parameter "Display gallery limitbox" above
 
 * (9) Display Slideshow Yes No
 
-  .
+  On yes a link is displayed beside the gallery thumb nail which displays on click the selected slide show
 
 * (10) Select slideshow
 
-  .
+  Possible options
+  * slideshow_parth
+  * slideshow_pathfusion
+  * slideshowone
+  <br><br>     
+
+  Sadly slideshow_pathfusion is not working actually and slideshowone is not that interesting (2018.07.26). <br>
+  The RSGallery team is working on boostrap and other slide shows in the near future
 
 * (11) Display Owner Information Yes No
 
-  .
+  On Yes the owner information is displayed on the right side of the gallery thumb
 
 * (12) Display number of items in gallery Yes No
 
-  .
+  On Yes the size of the gallery (image count) is is displayed on the right side of the gallery thumb
 
 * (13) Include items in child galleries when displaying number of items in a gallery Yes No
 
-  .
+  Defines the type of images count of the view of previous configuration parameter
 
 * (14) Display creation date Yes No
 
+  On Yes the owner information is displayed on the right side of the gallery thumb
 
 ---
 #### Display: Image Display
@@ -373,11 +394,13 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 * (4) Possible properties list
 
-  Shows a list of selectable exif properties. Inverted items are selected
-
+  Shows a list of selectable EXIF properties. Inverted items are selected
 
 ---
 #### Display: Gallery View
+
+Gallery view appears when the user selected a gallery with a click on the gallery thumbs
+It displays image thumbs with information about the imaged
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.galleryView.png?raw=true)
 
@@ -432,11 +455,11 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
   The watermark may be merged from "text" or from an "image" into the display image
 
 * (3) Font  
-*
+
   Select the font type of the watermark text  
 
 * (4) Watermark text  
-*
+
     Define the text to be displayed in the image  
 
 * (5) Watermark font size  
@@ -494,7 +517,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 #### Settings My Galleries
 * (1) Show My Galleries
 
-  On yes it avtivates this functions
+  On yes it activates this functions
 
 * (2) Show only items owned by the logged in user in My Galleries
 
