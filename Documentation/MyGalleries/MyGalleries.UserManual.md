@@ -187,11 +187,14 @@ At the top of the page "My Gallery" there is a box with User information: The na
 
 ![My Gallery: external standard view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.External.view.png?raw=true)
 
-If the gallery and at least one image is "published" the it appears on the main page below the "My galleries" link and "Search box"
+  If the gallery and at least one image is "published" the it appears on the main page below the "My galleries" link and "Search box"
 
-(1) Information buttons
-* The blue "O" appears if the logged in user "owns" this gallery
+  (1) Information buttons
 
-* The green "U" appears if you have rights to upload into this gallery
+  The icons will indicate
+  * (O) User is the owner of the gallery
+  * (U) User can upload in this gallery
+  * (H) The gallery is hidden and not Published
+  <br><br>     
 
-If you hover over the buttons a text explaining will appear
+  If the mygallery user hovers over the buttons a explaining text will appear as tool tip
