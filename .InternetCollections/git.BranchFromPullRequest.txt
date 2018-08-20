@@ -1,0 +1,14 @@
+
+Das erzeugt einen branch 
+
+> git fetch origin pull/21362/head:local_pr_21362
+
+Robert Deutz
+Wed 8:45 PM
+und dann 
+
+>local_pr_21362 auschecken
+
+Roland Dalmulder
+Das bekomst einen branch ?
+

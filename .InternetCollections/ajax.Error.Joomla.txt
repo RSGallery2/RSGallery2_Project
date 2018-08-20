@@ -1,0 +1,10 @@
+{
+	"success": true,
+	"message": "Standard message in AjaxAll",
+	"messages": {
+		"notice": ["User notice in ajax call"],
+		"warning": ["User warning in ajax call"],
+		"error": ["User error in ajax call"]
+	},
+	"data": ""
+}
