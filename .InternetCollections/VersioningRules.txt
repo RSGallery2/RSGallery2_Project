@@ -1,0 +1,27 @@
+
+https://semver.org/
+
+Semantic Versioning 2.0.0
+
+Summary
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+1.MAJOR version when you make incompatible API changes,
+2.MINOR version when you add functionality in a backwards-compatible manner, and
+3.PATCH version when you make backwards-compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to 
+the MAJOR.MINOR.PATCH format.
+
+* Each element MUST increase numerically. For instance: 1.9.0 -> 1.10.0 -> 1.11.0.
+* 6.Patch version Z (x.y.Z | x > 0) MUST be incremented if only backwards compatible 
+  bug fixes are introduced. A bug fix is defined as an internal change that fixes 
+  incorrect behavior.
+
+* 9.A pre-release version  may ... 
+  Examples: 1.0.0-alpha, 1.0.0-alpha.1, 1.0.0-0.3.7, 1.0.0-x.7.z.92.
+
+* 11 Example: 1.0.0-alpha < 1.0.0-alpha.1 < 1.0.0-alpha.beta < 1.0.0-beta 
+   < 1.0.0-beta.2 < 1.0.0-beta.11 < 1.0.0-rc.1 < 1.0.0.
+
+
