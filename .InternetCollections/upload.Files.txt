@@ -1,0 +1,20 @@
+entschuldige, den Zielordner müsste ich auch vorgeben können
+
+
+BT
+ode to upload restricted file types with media helper ....
+
+Benjamin Trenkle
+2:04 PM
+$mediahelper = new JHelperMedia;
+$params = JComponentHelpergetParams('com_fields');
+
+$params->set('upload_maxsize', 10);
+$params->set('image_extensions', 'jpg,jpeg,png,gif');
+$params->set('restrict_uploads', 1);
+[...]
+
+if (!$mediahelper->canUpload($file, 'com_fields')) { return false; }
+
+Fileupload(..., ...);
+
