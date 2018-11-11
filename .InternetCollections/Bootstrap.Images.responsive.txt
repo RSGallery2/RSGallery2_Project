@@ -1,0 +1,62 @@
+
+http://getbootstrap.com/2.3.2/components.html
+
+--------------------------
+https://blog.kulturbanause.de/2014/09/responsive-images-srcset-sizes-adaptive/
+
+good (german) description 
+
+!!! Benutzt srcset, sizes und <picture> ab sofort!
+
+* Die Anwendungsfälle (Use Cases) für Responsive Images
+* Bilder für unterschiedliche Display-Qualitäten ausgeben
+* Bilder entsprechend der Viewport-Breite austauschen
+* Bilder in flexiblen, mehrspaltigen Layouts
+...
+srcset
+
+<picture>
+  <source media="(min-width: 38em)" srcset="art-direction-horizontal.jpg">
+  <source srcset="art-direction-vertical.jpg">
+  <img src="art-direction-vertical.jpg" alt="">
+</picture>
+
+
+---------
+instead of bootstrap 
+
+img{vertical-align:middle;max-width:100%!important;height: auto;}
+should do better !
+-----------------
+https://stackoverflow.com/questions/27380989/bootstrap-2-responsive-images
+
+
+accepted
+You can add the following styles to the images:
+img {
+  display: block;
+  max-width: 100%; // Set a maximum relative to the parent
+  height: auto;    // Scale the height according to the width, otherwise you get stretching
+}
+Or create an .img-responsive class and add to the images:
+.img-responsive {
+  display: block;
+  max-width: 100%; // Set a maximum relative to the parent
+  height: auto;    // Scale the height according to the width, otherwise you get stretching
+}
+This also works without removing the width and height:
+<img src="text.jpg" alt="blog" width="525" height="379" class="img-responsive">
+
+---------------
+
+I've just realized that these images had a css style that was overriding bootstrap. 
+So they were picking up this:
+max-width:520px;
+Instead of bootstraps:
+max-width:100%;
+It had nothing to do with the inline style as I first thought. 
+
+
+
+
+
