@@ -1,0 +1,6 @@
+
+Je eine Instanz für objected
+
+Factory::getUser
+Factory::getDocument
+Factory::getDBO
