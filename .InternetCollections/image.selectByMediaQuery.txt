@@ -1,0 +1,17 @@
+
+
+/*
+<ul>
+    <li>
+        <a href="download/320" media="min-width: 320px">
+            <img src="files/320.jpg" alt="">
+        </a>
+    </li>
+    <li>
+        <a href="download/1382" media="min-width: 1382px">
+            <img src="files/1382.jpg" alt="">
+        </a>
+    </li>
+</ul>
+/**/
+
