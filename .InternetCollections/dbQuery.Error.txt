@@ -1,0 +1,27 @@
+
+example to handle errors on $db $query
+
+
+function loadProduct($id, $vid){
+  $mainframe = JFactory::getApplication();
+  $option = JRequest::getCmd('option');
+  $db = JFactory::getDBO();
+  $query = $db->getQuery(true);
+  $query->select('id, v_prod_id');
+  $query->from($db->quoteName('#__newtoys_variants'));
+  $query->where($db->quoteName('id')." = ".$db->quote($id), 'AND');
+  $query->where($db->quoteName('v_prod_id')." = ".$db->quote($vid));
+  $db->setQuery($sql);
+
+  if ($rows = $db->loadObjectlist()) {
+    return $rows[0];
+  } else {
+    if ($db->getErrorNum()) {
+      JError::raiseError(500,
+       "Something went horribly wrong, the query returned the error ". $db->getErrorMsg());
+    } else {
+      JError::raiseError(404,
+       "404, Page does not Exists ". $db->getErrorMsg());
+    }
+  }
+}
