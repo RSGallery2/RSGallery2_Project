@@ -1,0 +1,13 @@
+
+Info about installation may be handled like #
+"You have post-installation messages" with "read messages" button 
+in Joomla
+
+so user can read what the main changes are and how to accomplish new features
+and have read button 
+==> Database table may be needed
+
+
+
+
+
