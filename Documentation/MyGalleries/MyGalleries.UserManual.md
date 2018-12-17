@@ -9,12 +9,12 @@
 Attention: The menu name may different and may appear in a horizontal menu inside sub menus
 
 (2) Login with your user name given by owner of website
-The system needs you to be logged in. Otherwise the "My gallery" rights can't be assigned to a user
+The system needs you to be logged in. Otherwise the "My Gallery" rights can't be assigned to a user
 
 (3) Click on "My Gallery" link
-This will lead you to the "My gallery" page where your galleries can be created, images uploaded and edited. This view enables to just see the "owned" galleries and images
+This will lead you to the "My Gallery" page where your galleries can be created, images uploaded and edited. This view enables to just see the "owned" galleries and images
 
-![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
 
 (1) Create gallery tab
 
@@ -25,7 +25,7 @@ If this tab does not appear the user has not enough rights
 #### Create a gallery
 
 ![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.png?raw=true)
-On the My galleries page click the Create Gallery tab. This tab only shows when the user that is logged in has Create permission.
+On the My Galleries page click the Create Gallery tab. This tab only shows when the user that is logged in has Create permission.
 
 (1) Select parent gallery
 To create a new gallery, first choose its parent. Choose "Top gallery" when you want the gallery to have no parent.
@@ -77,7 +77,7 @@ Doing this shows a new window with the gallery details
 #### Image Upload
 
 ![My Gallery: Image upload ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.ImageUpload.png?raw=true)
-On the My galleries page click the Add Image tab. This tab only shows when the user that is logged in has "Create permission" for one or more galleries.
+On the My Galleries page click the Add Image tab. This tab only shows when the user that is logged in has "Create permission" for one or more galleries.
 
 (1) Select parent gallery
 

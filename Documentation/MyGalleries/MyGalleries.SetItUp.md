@@ -27,7 +27,7 @@ A separate user groups helps to assign special rights for "My Gallery" users.
 
 Edit Permission, Edit State Permission (to publish or unpublish an item or gallery), Delete Permission and Create Permission for items and galleries.
 
-A user with none of these permissions can only see the items and galleries, but cannot publish, delete, edit or create items or galleries. That is reflected on the tabs My Images and My galleries by the grey icons for the items and galleries. That user will also not see the Add Image and Create
+A user with none of these permissions can only see the items and galleries, but cannot publish, delete, edit or create items or galleries. That is reflected on the tabs My Images and My Galleries by the grey icons for the items and galleries. That user will also not see the Add Image and Create
 Gallery tabs.
 
 However, when a user has all permissions, the icons are no longer greyed out, and there are two more tabs: Add Image and Create Gallery. A site administrator can choose to give only specific permissions to a user group, e.g. only Edit permission, and only give that permission for a specific gallery. Then the user will see from the icons being grey (and non-functional) or not if they have that permission.

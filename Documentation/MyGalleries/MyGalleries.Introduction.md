@@ -5,7 +5,7 @@ A site administrator can enable My Galleries for users to upload and view their 
 
 View of user created "My Gallery" gallery
 
-The "my galleries" are viewed on the module where the menu with type RSGallery2 is displayed.
+The "My Galleries" are shown on the module where the menu with type RSGallery2 is displayed.
 Above the RSGallery2 "Search box" the user can click on "My galleries" link (3)
 
 ![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
@@ -14,6 +14,6 @@ Above the RSGallery2 "Search box" the user can click on "My galleries" link (3)
 
 Clicking on that link will show a page like
 
-![First my Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
 
 If tab (1) does not appear the user has not enough rights
