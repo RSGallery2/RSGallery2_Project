@@ -1,0 +1,24 @@
+
+
+https://codepen.io/monochromer/pen/mBmWpx/
+
+https://slides.com/robertmittl/es-geht-auch-ohne-js-framework#/
+https://www.youtube.com/watch?v=zF-uJa0kzEU&t=1269s
+
+bootstrap
+https://getbootstrap.com/2.3.2/javascript.html#carousel
+
+
+more general use TS example
+https://git.qapint.com/ewizardjs/ewizardjs/blob/4848d9c041c502e1ac20f9871bda677bb242b3c2/src/modules/linear-flow/SlideIterator.ts
+
+https://gist.github.com/CassDucheseau/ca55511249fe234dcb5ef126235b1ac0
+
+https://stackoverflow.com/questions/27366398/get-current-and-total-slide-with-mupltiple-sliders
+
+
+vue.js-framework#/
+https://bootstrap-vue.js.org/docs/components/carousel/
+
+
+

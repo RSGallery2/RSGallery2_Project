@@ -1,0 +1,24 @@
+
+When the database field is of type date the data must be entered in 2010-07-20 format
+More info here on different options:
+http://linux.about.com/od/commands/l/blcmdl1_date.htm
+
+----------------------------------------
+$date1 = $data->toFormat( '%d-%m-%Y' ); // dd/mm/yyyy style date
+$date2 = $data->toFormat( '%Y-%m-%d' ); // The same as $date->toMySQL();
+There are many other output options. They're the ones available from php's strftime:
+http://www.php.net/strftime
+--------------------------------------------------------
+
+I'm not sure if Joomla has any built in way of getting more control.
+
+This one liner will do the same thing, ie. convert:
+31.07.2010 to 2010-07-31
+CODE: SELECT ALL
+
+$date = implode('-', array_reverse(explode('.', $date)));
+
+
+--------------------------------------------------------
+I prefer to store dates as a unix timestamp that way you can convert to anything you want easily when retreiving it from the db
+
