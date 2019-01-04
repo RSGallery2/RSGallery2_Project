@@ -1,0 +1,18 @@
+
+By robert mittl
+
+https://slides.com/robertmittl/es-geht-auch-ohne-js-framework#/13
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.7 398.2">
+	<title>
+	  Joomla!-Logo
+	</title>
+	<path id="j-green" d="M85.1,213.7l-7.5-7.4c-23.9-23.9-30.8-57.4-22.3-87"
+		class="joomla-logo-1 is-selected" transform="translate(-13.8 -13.3)" />
+	  <path id="j-orange" d="M129.2,17"
+		class="joomla-logo-2" transform="translate(-13.8 -13.3)" />
+	  <path id="j-red" d="M306.2,368.4c-3.2,368.4Z"
+		class="joomla-logo-3" transform="translate(-13.8 -13.3)" />
+	  <path id="j-blue" d="M290.8,257....."
+		class="joomla-logo-4" transform="translate(-13.8 -13.3)" />
+</svg>

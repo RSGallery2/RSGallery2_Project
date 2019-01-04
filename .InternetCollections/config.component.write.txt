@@ -153,9 +153,30 @@ $result = $db->execute();
 -------------------------------------------------------------------
 How to save component parameters to database programmatically 
 
+-------------------------------------------------------------------
 
+Many of our component's parameters depend on external conditions, so we need to periodically change them with some overnight processing. Here's the code we use (adapted for use with com_content).
+// Load the current component params.
+$params = JComponentHelper::getParams('com_content');
+// Set new value of param(s)
+$params->set('show_title', 1);
 
+// Save the parameters
+$componentid = JComponentHelper::getComponent('com_content')->id;
+$table = JTable::getInstance('extension');
+$table->load($componentid);
+$table->bind(array('params' => $params->toString()));
 
+// check for error
+if (!$table->check()) {
+    echo $table->getError();
+    return false;
+}
+// Save to database
+if (!$table->store()) {
+    echo $table->getError();
+    return false;
+}
 
 
 

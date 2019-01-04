@@ -16,6 +16,10 @@ https://gist.github.com/CassDucheseau/ca55511249fe234dcb5ef126235b1ac0
 
 https://stackoverflow.com/questions/27366398/get-current-and-total-slide-with-mupltiple-sliders
 
+https://stackoverflow.com/questions/45453084/bootstrap-carousel-slide-event-not-working
+
+
+
 
 vue.js-framework#/
 https://bootstrap-vue.js.org/docs/components/carousel/
