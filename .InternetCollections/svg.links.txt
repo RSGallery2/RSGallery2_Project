@@ -1,0 +1,27 @@
+
+
+https://www.sitepoint.com/build-svg-icons/
+
+https://www.sitepoint.com/reskinnable-svg-symbols-how-to-make-them-and-why/
+
+https://www.smashingmagazine.com/2014/11/styling-and-animating-svgs-with-css/
+https://www.sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/
+!!! https://www.sarasoueidan.com/blog/svg-coordinate-systems/ !!!
+
+https://css-tricks.com/using-svg/
+
+w3schools 
+
+SVG sprites:
+https://elrumordelaluz.github.io/micro-svg-spreact/
+http://www.grumpicon.com/
+https://iconizr.com/
+
+
+using svg sprites
+
+https://wiki.selfhtml.org/wiki/SVG/Tutorials/Sprites
+https://wiki.selfhtml.org/wiki/SVG/Tutorials/Icons
+
+
+
