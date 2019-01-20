@@ -1,0 +1,7 @@
+
+http://youmightnotneedjquery.com/#ready
+
+du machst 
+var blub = function() { ... };
+ready(blub);
+
