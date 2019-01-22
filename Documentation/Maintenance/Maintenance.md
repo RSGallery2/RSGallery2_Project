@@ -43,9 +43,18 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 (1) Slideshow configuration
 
+Edit and check the configuration parameters of installed slideshows.
+Leads to a separate view for the edit of slideshow parameter.
+<br> See separate maintenance document ""
+
 (2) Comments list
 
+Enters list view of comments
+
 (3) Template manager
+
+Actually not working. (2014-2018)<br>
+In older version it had the function to upload slideshows and templates for the display of the gallery in frontend. These could be edited or deleted also.
 
 
 ## Repair zone
@@ -53,13 +62,27 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 (1) Configuration Raw edit
 
+Lists all variables in alphabetical order. The values can be changed and saved
+
 (2) Consolidate image database
+
+
+
+<br> (See separate maintenance document "")
 
 (3) Check for left over upload files
 
+.
+<br> (See separate maintenance document "")
+
+
 (4) Regenerate display images
 
-(5) Optimnise dataase
+.
+
+(5) Optimize database
+
+.
 
 
 ## Danger zone
@@ -67,7 +90,11 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 (1) Purge tables (data) &delete all images
 
+.
+
 (2) Remove RSGallery2 tables and images
+
+.
 
 
 ## Raw database zone
@@ -77,11 +104,19 @@ The buttons lead to the pure content view of the database lists
 
 (1) Configuration variables
 
+.
+
 (2) Images list
+
+.
 
 (3) Galleries list
 
+.
+
 (4) Comments list
+
+.
 
 
 ## Outdated zone
@@ -94,11 +129,19 @@ the functionality is not granted as this old code is not maintained any more. St
 
 (1) Configuration
 
+.
+
 (2) Mange galleries
+
+.
 
 (3) Manage images
 
+.
+
 (4) Upload single images
+
+.
 
 (5) Consolidated
 
