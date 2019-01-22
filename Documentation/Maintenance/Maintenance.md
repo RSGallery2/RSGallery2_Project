@@ -35,68 +35,74 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 * Upgrade (from 1.x / 2.x) zone
 
-  Helpers after upgrading RSG2 from previous Jx versions
+  Helpers after upgrading RSG2 from previous J!x versions
 
 
 ## Rsgallery2 zone
 ![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.RSGallery2.png?raw=true)
 
-(1)
+(1) Slideshow configuration
 
-(2)
+(2) Comments list
 
-(3)
+(3) Template manager
 
 
 ## Repair zone
 ![zone.repair.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.repair.png?raw=true)
 
-(1)
+(1) Configuration Raw edit
 
-(2)
+(2) Consolidate image database
 
-(3)
+(3) Check for left over upload files
 
-(4)
+(4) Regenerate display images
 
-(5)
+(5) Optimnise dataase
 
 
 ## Danger zone
 ![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.danger.png?raw=true)
 
-(1)
+(1) Purge tables (data) &delete all images
 
-(2)
+(2) Remove RSGallery2 tables and images
 
 
 ## Raw database zone
 ![zone.rawDatabase.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.rawDatabase.png?raw=true)
 
-(1)
+The buttons lead to the pure content view of the database lists
 
-(2)
+(1) Configuration variables
 
-(3)
+(2) Images list
 
-(4)
+(3) Galleries list
+
+(4) Comments list
 
 
 ## Outdated zone
 
 ![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.outDated.png?raw=true)
 
-(1)
+Door to old view of functions like image/galleries lists
+These buttons lead to the previous views of RSG2 around 2013 or beginning of J3x<br>
+the functionality is not granted as this old code is not maintained any more. Still it may be a hint what has improved over this time
 
-(2)
+(1) Configuration
 
-(3)
+(2) Mange galleries
 
-(4)
+(3) Manage images
 
-(5)
+(4) Upload single images
 
+(5) Consolidated
 
+  Don't use. It is only listed for completeness
 
 ## Upgrade (from 1.x / 2.x) zone
 
@@ -104,11 +110,23 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 ![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.Upgrade1x2x.png?raw=true)
 
-(1)
+(1) Database
 
-(2)
+  Repair missing database tables, table columns and ...
+  This function reassigns the actual SQL definitions. Therefore new tables, new columns are added and not supported columns are removed
 
-(3)
+  This is useful when upgrading from a real old version and general list can not be viewed
+
+(2) Create gallery "access" field
+
+   On upgrade from 1.x this table field was missing. Here it it will be created and all values set to one
+
+(3) Delete RSG2 base language files
+
+  ToDo: Wrong name
+  Deletes RSGallery2 languages files in joomla base language folders. The RSG2 base translation files are located in ...\administrator\languages. These may overwrite new RSG2 language items kept in component language folder. <br>
+  Use this function  when an update installation does not overwrite "old" base language files and translations do not appear or appear as old.
+
 
 
 
