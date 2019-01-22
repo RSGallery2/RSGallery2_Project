@@ -1,5 +1,9 @@
 See also Competition.txt
 
+de gobbis ...
+https://github.com/JoomTools/plg_fields_jtgallery
+
+------
 http://www.balbooa.com/joomla-gallery
 
 https://www.joomunited.com/products/droppics (drag&drop, themes)
