@@ -18,12 +18,35 @@ This will lead to a page where it is checked whether there are database entries 
 
 ### Result of checks
 
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.action.png?raw=true)
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.SelectGallery.png?raw=true)
+
+
+
+
+
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.addImage.png?raw=true)
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.cmdButtons.png?raw=true)
+
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.OnlyDb.png?raw=true)
+
+
+
+
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
 
+### Back door assignment of images to existing galleries
 
-##### 2. Upload image
+A indirect way to upload images to RSGallery2 is a copy to the RSGallery2 folder and then use in consolidate images the button "Repair all isues" to create missing files, database links and assign them to a gallery.
 
-The original images are kept in folder in .../Joomla/images/rsgallery/original. Copy your file into this folder.
+##### 1. Upload image
+
+Copy your file per FTP into folder .../Joomla/images/rsgallery/original.
+
+#####  
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
 
@@ -31,7 +54,3 @@ The original images are kept in folder in .../Joomla/images/rsgallery/original. 
 (2) If the image exists it is marked here <br>
 (3) Select the line with clicking on marker in front<br>
 (4) Use button "Create missing images". <br>If all goes well then the line of this image will disappear in the next display of the page
-
-#### Back door assignment of images to existing galleries
-
-You may upload the image by FTP to the rsgallery2 "original" destination folder and start the creation of the display and thumb images manual by using a maintenance function
