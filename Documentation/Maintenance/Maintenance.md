@@ -66,7 +66,7 @@ Lists all variables in alphabetical order. The values can be changed and saved
 
 (2) Consolidate image database
 
-
+The consistence of the database to image files can be checked here. The following view supports the check and repair of image orphans in database or as missing image files.
 
 <br> (See separate maintenance document "")
 
