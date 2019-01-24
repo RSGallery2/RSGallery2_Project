@@ -24,7 +24,7 @@ On opening the form or clicking on "Repeat checking" the system is checked and t
 
 In (1) appears the list of files with "missing parts".
 
-  (2) Area with filename and check box to select images for further actions -> (7)
+(2) Area with filename and check box to select images for further actions -> (7)
 
  (3) Area with state of image. On green the item exists an red it is missing
 
@@ -60,11 +60,6 @@ Similar to the button in the header area these button issue immediate task on th
 
 More detailed description can be found below when the list buttons are explained
 
-#### Assignment of image(s) to parent gallery
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.SelectGallery.png?raw=true)
-
-yyyyyyyy
-
 #### Action buttons for selected images
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.cmdButtons.png?raw=true)
 
@@ -94,6 +89,12 @@ The above buttons can be used for selected file lines
 
 * This button fixes all missing references. It creates database references and missing image files.
 
+#### Assignment of image(s) to parent gallery
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.SelectGallery.png?raw=true)
+
+On the right side above the image list the user can define the parent gallery to be used in image action. The gallery can be assigned with a button "Assign gallery" within the image row or for all selected images with the similar button on top of the page.
+
+If Button "Repair all" is clicked and a gallery is selected this gallery is assigned.
 
 
 ### "Lost" database file references
