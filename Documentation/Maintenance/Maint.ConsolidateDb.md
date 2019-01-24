@@ -1,4 +1,4 @@
-## Maintenance Consolidate image database
+M## Maintenance Consolidate image database
 
 In cases where the upload got stuck you may get an error message but can't tell how far the process got. Here you can check the consistency of image references in database and files found in the images folder of RSGallery2
 
@@ -20,15 +20,52 @@ This will lead to a page where it is checked whether there are database entries 
 
 On opening the form or clicking on "Repeat checking" the system is checked and the result is displayed.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.overview.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.onStart.png?raw=true)
 
-In (2) appears the list of files with "missing parts". The status in the file line tells
+In (1) appears the list of files with "missing parts".
 
+  (2) Area with filename and check box to select images for further actions -> (7)
+
+ (3) Area with state of image. On green the item exists an red it is missing
+
+ (4) Direct action buttons. On click the task is performed on the file of the rows
+
+ (5) The parent gallery of the file in the row is listed and one of the matching images is displayed  
+
+#### Area with state of image.
+ ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
+
+On green the item exists an red it is missing
+(1) Each column indicates a file missing or existing
+
+  For file origin folder see configuration settings
+* Original folder: High resolution file. May be not saved on upload if prohibited in configuration
+* Display folder: File with defined resolution on upload. It will be used in slide shows
+* Thumb folder: Thumb size resolution files used in gallery view.
+* Watermark folder: This column/files will only appear if this feature is activated in the configuration. The filename in the folder may not match the used filename in database or the other image folders
+
+#### Direct action buttons
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.action.png?raw=true)
 
+On click the task is performed on the file of the rows
+Similar to the button in the header area these button issue immediate task on the image references(items) of this row
+
+(1) Create missing images in row
+
+(2) Assign gallery name
+
+(3) Repair all issues in row
+
+(4) Remove items in rows
+
+More detailed description can be found below when the list buttons are explained
+
+#### Assignment of image(s) to parent gallery
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.SelectGallery.png?raw=true)
 
+yyyyyyyy
 
+#### Action buttons for selected images
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.cmdButtons.png?raw=true)
 
 The above buttons can be used for selected file lines
@@ -64,17 +101,13 @@ The above buttons can be used for selected file lines
 If no files exists to a "lost" database item the result looks like following.
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.OnlyDb.png?raw=true)
 
-In this case it is best to select the line and use buttom "Remove items in row" to delete this item in database.
+In this case it is best to select the line and use button "Remove items in row" to delete this item in database.
 
 #### -----
 
+### A
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.addImage.png?raw=true)
 
-
-
-
-
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
 
 
 
