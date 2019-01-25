@@ -81,13 +81,36 @@ Reorganizes the physical storage of the database table data to reduce storage sp
 ## Danger zone
 ![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.danger.png?raw=true)
 
-(1) Purge tables (data) &delete all images
+(1) Purge tables (data) & delete all images
 
-.
+Supports the first step to remove RSGgallery2 completely.
+
+Therefore the content (items) in all RSGaller2 tables are removed. Additionally the image files are deleted. The data structure is kept but is empty.
+
+This can also be used to purge the data and start again empty with new images and new galleries.
+
+
+If afterwards the component is de installed nothing shall be left and remind of RSGallery2
 
 (2) Remove RSGallery2 tables and images
+The previous intention was to support the uninstall that by removing databases tables and image files. The side effect of this function was that Joomla! did start with error and RSGallery2 could not be uninstalled
 
-.
+Instead of using this function  begin with above function 'Purge tables (data)'
+See following instruction for a complete remove
+
+### How to remove RSGALLERY2 completely
+
+(1) Use Maintenance -> Purge tables
+
+This removes the database content and the image files
+
+(2) Prepare the remove of database table structure
+
+Search in admin rsgallery2 folder \administrator\components\com_rsgallery2\sql\ for file uninstall.mysql.utf8.sql. Edit the file and remove the comments in front of the drop commands.
+
+(3) Standard uninstall
+
+Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 
 
 ## Raw database zone
@@ -97,19 +120,19 @@ The buttons lead to the pure content view of the database lists
 
 (1) Configuration variables
 
-.
+Shows a list with actual values of all configuration variables
 
 (2) Images list
 
-.
+Shows a list with the database properties of all images. This contains more columns as the normal image view.
 
 (3) Galleries list
 
-.
+Shows a list with the database properties of all galleries. This contains more columns as the normal image view.
 
 (4) Comments list
 
-.
+Shows a list with the database properties of all comments. This contains more columns as the normal image view.
 
 
 ## Outdated zone
@@ -120,28 +143,28 @@ Door to old view of functions like image/galleries lists
 These buttons lead to the previous views of RSG2 around 2013 or beginning of J3x<br>
 the functionality is not granted as this old code is not maintained any more. Still it may be a hint what has improved over this time
 
+
 (1) Configuration
 
-.
+%
 
 (2) Mange galleries
 
-.
+%
 
 (3) Manage images
 
-.
+%
 
 (4) Upload single images
 
-.
+%
 
-(5) Consolidated
+(5) Consolidate database
 
   Don't use. It is only listed for completeness
 
 ## Upgrade (from 1.x / 2.x) zone
-
 
 
 ![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.Upgrade1x2x.png?raw=true)
@@ -155,11 +178,10 @@ the functionality is not granted as this old code is not maintained any more. St
 
 (2) Create gallery "access" field
 
-   On upgrade from 1.x this table field was missing. Here it it will be created and all values set to one
+   On upgrade from 1.x this table field was missing. Here it will be created and all values set to one
 
 (3) Delete RSG2 base language files
 
-  ToDo: Wrong name
   Deletes RSGallery2 languages files in joomla base language folders. The RSG2 base translation files are located in ...\administrator\languages. These may overwrite new RSG2 language items kept in component language folder. <br>
   Use this function  when an update installation does not overwrite "old" base language files and translations do not appear or appear as old.
 
