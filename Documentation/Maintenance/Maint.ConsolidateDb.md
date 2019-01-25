@@ -1,4 +1,4 @@
-M## Maintenance Consolidate image database
+## Maintenance Consolidate image database
 
 In cases where the upload got stuck you may get an error message but can't tell how far the process got. Here you can check the consistency of image references in database and files found in the images folder of RSGallery2
 
@@ -104,27 +104,23 @@ If no files exists to a "lost" database item the result looks like following.
 
 In this case it is best to select the line and use button "Remove items in row" to delete this item in database.
 
-#### -----
-
-### A
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.addImage.png?raw=true)
-
-
-
-
----
-
 ### Back door assignment of images to existing galleries
 
-A indirect way to upload images to RSGallery2 is a copy to the RSGallery2 folder and then use in consolidate images the button "Repair all isues" to create missing files, database links and assign them to a gallery.
+A indirect way to upload images to RSGallery2 is to copy of the image(s) to the RSGallery2 original folder. Go to "consolidate images" view.
 
-##### 1. Upload image
+#### 1. Upload image
 
 Copy your file per FTP into folder .../Joomla/images/rsgallery/original.
+
+#### 2. Create files and database reference
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
 
 (1) Use button "Repeat checking" so the image is found<br>
 (2) If the image exists it is marked here <br>
-(3) Select the line with clicking on marker in front<br>
-(4) Use button "Repair all issues". <br>If all goes well then the line of this image will disappear in the next display of the page
+(3) If the image exists it is displayed here <br>
+(4) Select the parent gallery<br>
+(5) Select the line(s) with clicking on marker in front<br>
+(6) Use button "Repair all issues"<br>
+
+If all goes well then the line of the selected image(s) will disappear in the next display of the page
