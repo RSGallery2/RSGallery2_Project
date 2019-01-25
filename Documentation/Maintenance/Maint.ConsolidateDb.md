@@ -124,3 +124,5 @@ Copy your file per FTP into folder .../Joomla/images/rsgallery/original.
 (6) Use button "Repair all issues"<br>
 
 If all goes well then the line of the selected image(s) will disappear in the next display of the page
+
+---

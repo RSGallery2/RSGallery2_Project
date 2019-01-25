@@ -60,30 +60,23 @@ In older version it had the function to upload slideshows and templates for the 
 ## Repair zone
 ![zone.repair.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.repair.png?raw=true)
 
-(1) Configuration Raw edit
-
-Lists all variables in alphabetical order. The values can be changed and saved
-
-(2) Consolidate image database
+(1) Consolidate image database
 
 The consistence of the database to image files can be checked here. The following view supports the check and repair of image orphans in database or as missing image files.
 
 <br> (See separate maintenance document "")
 
-(3) Check for left over upload files
+(2) Configuration Raw edit
 
-.
-<br> (See separate maintenance document "")
-
+Edit view of all config variables including internal settings. Prepared for debug and emergency situations. Lists all variables in alphabetical order. The values can be changed and saved.
 
 (4) Regenerate display images
 
-.
+This option will regenerate either thumbnail or display images, based on the current configuration settings of thumbnail dimensions
 
 (5) Optimize database
 
-.
-
+Reorganizes the physical storage of the database table data to reduce storage space and improve speed when accessing the table
 
 ## Danger zone
 ![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.danger.png?raw=true)
