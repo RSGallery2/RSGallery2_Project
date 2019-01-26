@@ -25,6 +25,7 @@ If this tab does not appear the user has not enough rights
 #### Create a gallery
 
 ![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.png?raw=true)
+
 On the My Galleries page click the Create Gallery tab. This tab only shows when the user that is logged in has Create permission.
 
 (1) Select parent gallery
@@ -198,3 +199,6 @@ At the top of the page "My Gallery" there is a box with User information: The na
   <br><br>     
 
   If the mygallery user hovers over the buttons a explaining text will appear as tool tip
+
+
+  ---

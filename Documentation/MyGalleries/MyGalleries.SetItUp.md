@@ -34,3 +34,6 @@ However, when a user has all permissions, the icons are no longer greyed out, an
 
 #### Assign the standard RSGallery2 view to a menu
 This may be done already as it is as simple as assigning the standard view to a menu
+
+---
+

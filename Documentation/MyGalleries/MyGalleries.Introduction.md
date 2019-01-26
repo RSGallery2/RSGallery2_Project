@@ -17,3 +17,5 @@ Clicking on that link will show a page like
 ![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
 
 If tab (1) does not appear the user has not enough rights
+
+---
