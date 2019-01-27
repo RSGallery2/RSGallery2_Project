@@ -4,7 +4,7 @@ Use on site gallery display page
 
 #### Search on site gallery view
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/site.gallery.searchResults.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/site.gallery.search.png?raw=true)
 
 * (1) Search input
 

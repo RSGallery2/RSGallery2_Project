@@ -1,0 +1,99 @@
+
+# RSGallery2 Documentation
+
+Version 2019.01.26
+
+
+
+!INCLUDE "RSGallery2.DocWebIndex.md"
+
+!INCLUDE "GetStarted\01.Installation.md"
+!INCLUDE "GetStarted\02.FirstSteps.md"
+!INCLUDE "GetStarted\03.CreateGallery.md"
+!INCLUDE "GetStarted\04.UploadImages.md"
+!INCLUDE "GetStarted\05.CreateMenuGalleryView.md"
+!INCLUDE "GetStarted\06.NextSteps.md"
+
+!INCLUDE "ControlPanel\controlPanel.md"
+
+!INCLUDE "Upload\upload.md"
+!INCLUDE "Upload\uploadDragAndDrop.md"
+
+!INCLUDE "???Site here ???"
+
+!INCLUDE "GalleryDoc\GalleriesListView.md"
+!INCLUDE "???Edit gallery???"
+
+!INCLUDE "ImageDoc\ImagesListView.md"
+!INCLUDE "???Edit image???"
+
+!INCLUDE "Config\config.md"
+
+!INCLUDE "???watermark???"
+
+!INCLUDE "MyGalleries\MyGalleries.Introduction.md"
+!INCLUDE "MyGalleries\MyGalleries.SetItUp.md"
+!INCLUDE "MyGalleries\MyGalleries.UserManual.md"
+
+!INCLUDE "Maintenance\Maintenance.md"
+!INCLUDE "Maintenance\Maint.ConsolidateDb.md"
+!INCLUDE "Maintenance\Maint.SlideshowConfig.md"
+
+!INCLUDE "???"
+!INCLUDE "???Watermarked files???""
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+
+!INCLUDE ""
+!INCLUDE "???Site???"
+!INCLUDE "Site.GalleryView\SearchResults.md"
+!INCLUDE "Site.SlideshowView\CreateModifyTemplate.md"
+!INCLUDE "Site.SlideshowView\ModifyTemplateParameters.md"
+!INCLUDE ""
+
+!INCLUDE "General\HowToHideImages.md"
+
+!INCLUDE "Uninstall\Uninstall.md"
+!INCLUDE "Uninstall\FinishItForGood.md"
+
+---
+# Left overs ...
+
+[Installation](./GetStarted/01.Installation.md)
+
+[FirstSteps](./GetStarted/02.FirstSteps.md)
+
+[CreateGallery](./GetStarted/03.CreateGallery.md)
+
+[UploadImages](./GetStarted/04.UploadImages.md)
+
+[CreateMenuGalleryView](./GetStarted/05.CreateMenuGalleryView.md)
+
+[steps](./GetStarted/06.NextSteps.md)
+
+[controlPanel](./ControlPanel/controlPanel.md)
+
+[upload](./Upload/upload.md)
+
+[uploadDragAndDrop](./Upload/uploadDragAndDrop.md)
+
+[GalleriesListView](./GalleryDoc/GalleriesListView.md)
+
+[ImagesListView](./ImageDoc/ImagesListView.md)
+
+[config](./Config/config.md)
+
+[Introduction](./MyGalleries/MyGalleries.Introduction.md)
+
+[SetItUp](./MyGalleries/MyGalleries.SetItUp.md)
+
+[UserManual](./MyGalleries/MyGalleries.UserManual.md)
+
+[HowToHideImages](./General/HowToHideImages.md)
+
+
+[Maintenance](./Maintenance/Maintenance.md)
+
+
+[Glossar](./Glossar.md)

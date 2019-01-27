@@ -1,6 +1,6 @@
 ## Maintenance Slideshow configuration
 
-Slidshow parameters can be changed here
+Slideshow parameters can be changed here
 
 Two files living within the slideshow code define the parameters and their values
 
@@ -44,7 +44,7 @@ The values in params.ini file set the actual used values and overwrite the defau
 The parameters may be saved by the buttons in the menu bar (1) or below the parameter area. (3)<br>
 The file area may be saved by the buttons in the menu bar (2) or below the parameter area. (4)
 
-###Tips:
+### Tip:
 #### Reset to default values
 Delete the content of the file params.ini in the below section and save it  (button in below section). Afterwards save the parameters (button in above section). All default settings will appear in file parameter definition area.
 
