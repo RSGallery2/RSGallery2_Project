@@ -1,1 +1,3 @@
 # Galleries List View
+
+#toDo: fill out Galleries List View ...

@@ -1,11 +1,27 @@
 
 # RSGallery2 Documentation
 
-Version 2019.01.26
+Version 2019.01.27
 
+This is just a collection of all written documentation
+for RSGallery2 web page. We are sorry for the ugly style.
+We hope that at least you have it all in one document
+and you don't have to scan through all online documents
+to find what you need.
 
+Sorry also for the fact that some bits and pieces are
+missing or on opposite that there are some not cleaned
+up parts to be found.
+
+This is a work in progress and sometimes we have to decide
+to not publish or publish being incomplete and ugly
+We are more likely to publish than to be styled and polished
+
+On the other side we are grateful for every hand which
+improves this documentation. Join us
 
 ## Table of Contents
+
 
 1. **[Get started](http://www.rsgallery2.org/index.php/documentation/get-started-documentation/ "GetStarted")**<br>
    1. [Installation](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=31&catid=13 "GetStarted -> 01.Installation")<br>
@@ -37,24 +53,9 @@ Version 2019.01.26
 1. [Finish it for good](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=102 "Finish it for good")<br>
 
 
-  
-
----
-
-
--------------------------------------------------------------------------------------------
-
-1. [](http://www.rsgallery2.org/index.php/documentation// "")
-
-   1. [](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=&catid= "")
-
-
-
-1. [Upload (2)](http://www.rsgallery2.org/index.php/documentation/upload/51-upload-documentation "./Upload/upload.md")
-
 ### Installation
 
-1\. Download the main RSGallery2 component  
+#### 1\. Download the main RSGallery2 component
 
 On github look for the newest version (v4.2.0++) [Releases of component](https://github.com/RSGallery2/RSGallery2_Component/releases)
 
@@ -274,8 +275,8 @@ First select an existing gallery This will enable drag and drop ands display the
 
 (2) Drag and drop area
 
-The drag and drop area is marked with a red or green dotted border. The color changes to green when a gallery is selected. An error message appears when a image is dropped while the border is red.  
-When images are dropped then they are transferred to the server and assigned to the gallery. The display-, thumb- and watermarked images are created and on success the image is displayed in the drag and drop area.  
+The drag and drop area is marked with a red or green dotted border. The color changes to green when a gallery is selected. An error message appears when a image is dropped while the border is red.
+When images are dropped then they are transferred to the server and assigned to the gallery. The display-, thumb- and watermarked images are created and on success the image is displayed in the drag and drop area.
 Ass soon as the image is displayed it is secure to assume that the image is stored in the database and assigned to the gallery
 
 (3) Select files
@@ -292,7 +293,7 @@ More below on description of the "Properties uploaded images" view
 Tip:  This functionality can also be reached from the image list view. Select the images to be handled and use button batch and the select "Images Properties" button
 
 (5) Upload single images (Legacy)
-This button leads to the old "legacy" version of single image upload.  
+This button leads to the old "legacy" version of single image upload.
 When the drag and drop function has enough experience and no user complains then drag and drop is faster and this function will be removed
 
 (6) Upload file size
@@ -320,7 +321,7 @@ On the bottom is shown the setting of some php variables from the system (from p
  A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once  (batch). The title and the description properties can be edited there.
  This is similar to the second page on upload in previous rsgallery2 versions.
 
- It is not necessary to use this view when no title or description editing needed.  
+ It is not necessary to use this view when no title or description editing needed.
 
  Info: On creation of the image data on the server side the title is preset from the image name automatically.
 
@@ -345,7 +346,7 @@ See section "Properties uploaded Files" view below ToDo: Link
 
 (4) Upload Zip file (legacy)
 
-This button leads to the old "legacy" version of zip file upload.  
+This button leads to the old "legacy" version of zip file upload.
 When the new function has enough experience and no user complains then this function will be removed.
 
 ## Upload from folder (server)
@@ -373,14 +374,14 @@ See form "Images batch upload" view below  ToDo: link
 
 (4) Upload Zip file (legacy)
 
-This button leads to the old "legacy" version of zip file upload.  
+This button leads to the old "legacy" version of zip file upload.
 When the new function has enough experience and no user complains then this function will be removed.
 
 ## Properties uploaded Files
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
 
-This form enables to set the properties title and description for a batch of images at the same time.  
+This form enables to set the properties title and description for a batch of images at the same time.
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
 (1) Title
@@ -393,7 +394,7 @@ The gallery name can't be changed in this part
 
 (3) Description
 
-The description may be changed with the standard editor like in the edit single image form.  
+The description may be changed with the standard editor like in the edit single image form.
 Sadly this leads to a very high edit block which creates a ugly layout.
 
 (4) Save
@@ -427,7 +428,7 @@ Rotates selected images 180 degrees.
 
 (11) Flip horizontal
 
-Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom  
+Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom
 
 (12) Flip vertical
 
@@ -494,136 +495,11 @@ The images are kept in following folders in .../Joomla/images/rsgallery/__sub_fo
  * display: Resized images (size from configuration)
  * thumbs: Thumbs of images (size and form from configuration)
  * watermarked: When watermark is active then images which were shown to the user get a watermark and are saved here for fast access
-# Upload changes for using Drag and Drop
-
-This document describes the changed use created for drag and drop upload of Images
-
-## Upload files using drag and drop
-
-The first tab of the new download form looks like following Image. It shows the new drag and drop download area with tab set to drag and drop.
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.01.png?raw=true)
-
-### Upload files using drag and drop: Page fresh opened
-
-(1) Specify gallery
-
-First select an existing gallery This will enable drag and drop ands display the drop area in green
-
-(2) Drag and drop area
-
-The drag and drop area is marked with a red or green dotted border. The color changes to green when a gallery is selected. An error message appears when a image is dropped while the border is red.  
-When images are dropped then they are transferred to the server and assigned to the gallery. The display-, thumb- and watermarked images are created and on success the image is displayed in the drag and drop area.  
-Ass soon as the image is displayed it is secure to assume that the image is stored in the database and assigned to the gallery
-
-(3) Select files
-
-This is an other way to select multiple images form a folder on the PC- Press this button and you can move to the image folder and select several images to be downloaded. On exit these files are downloaded
-
-This is especially helpful if your operation system remembers the last selected folder and displays it again for the image upload
-
-(4) Add image properties
-
-After the dropped images appear (are shown) in their area here is provided a batch handling to assign the properties "title" and "description"
-More below on description of the "Properties uploaded images" view
-
-Tip:  This functionality can also be reached from the image list view. Select the images to be handled and use button batch and the select "Images Properties" button
-
-(5) Upload single images (Legacy)
-This button leads to the old "legacy" version of single image upload.  
-When the drag and drop function has enough experience and no user complains then drag and drop is faster and this function will be removed
-
-(6) Upload file size
-On the bottom is shown the setting of some php variables from the system (from php.ini file) related to the upload process. Even if the file itself complies with all limits the upload itself may fail.
-Example: Sometimes the bytes are transferred as pure ASCII: So 7 bits are used and transferred in one Byte. So the "real" size is 'file size / 7 * 8'
-
-#### Restrictions
-
-  * File size: The upload may hang if the file size is too big. The working file size is not only dependent on the system settings for upload (see point (6)). Also the used library (GD see configuration) may stumble
-
-### Upload files using drag and drop: View after some uploads
-
-![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
-
-(1) Drag and drop area (filled)
-After a gallery is selected the dotted border is green. Dropped images do appear in this area after the transfer process is completed.
-
-(2) Process bars
-
-For each dropped file a progress bar appears. It is red as long as the file is not completely transferred. In each state it tells the amount of transferred parts of the file.
-
-Attention: Even if the green bar is at 100% telling that the file is completely transferred the server needs time to create the dependent rsgallery2 images and the process is not finished until the matching image is displayed in the drag and drop area
-
-(3) Add image properties
-A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once  (batch). The title and the description properties can be edited there.
-This is similar to the second page on upload in previous rsgallery2 versions.
-
-It is not necessary to use this view when no title or description editing is needed.  
-
-Info: On creation of the image data on the server side the title is preset from the image name automatically.
-
-## Properties uploaded Files
-
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
-
-This form enables to set the properties title and description for a batch of images at the same time.  
-It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
-
-(1) Title
-
-The title is preset on creation. It may be edited here. The title may be different to the uploaded image name when the name already existed. Then the next free number is appended.
-
-(2) Gallery
-
-The gallery name may be changed to move the image to a different gallery
-
-~~The gallery name is fixed in some circumstances.~~
-~~* On drag and drop the gallery name must be assigned already in the upload form~~
-~~* Zip or server side uploads may select the gallery before Uploading~~
-~~* On entering from the images list form the gallery may be changed~~
-
-(3) Description
-The description may be changed with the standard editor like in the edit single image form.  
-Sadly this leads to a very high edit block which creates a ugly layout.
-
-(4) Save
-
-Save changes and continue edit on the same images
-
-(5) Save & Close
-
-Save changes and leave the form to the image list
-
-(6) Cancel
-
-Ignore the changes and leave the form
-
-(7) Delete
-
-All or some image can be selected for deleting. (See (8) and (9))
-Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files
-
-(8) Select all
-
-All images will get a set hook in the box below the image (See also (9))
-This can be used to delete selected images.
-
-(9) Select image
-
-The image will get a set hook in the box below the image
-This can be used to delete selected images.
-
-## Images: Batch process to add properties
-
-In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
-
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.png?raw=true)
-
-(1) Add properties
-
-This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
 
 
 # Galleries List View
+
+#toDo: fill out Galleries List View ...
 
 # Image List View
 
@@ -666,7 +542,7 @@ Batch processing: The selected images can be copied to the selected gallery
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
 
-This form enables to set the properties title and description for a batch of images at the same time.  
+This form enables to set the properties title and description for a batch of images at the same time.
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
 (1) Title
@@ -679,7 +555,7 @@ The gallery name can't be changed in this part
 
 (3) Description
 
-The description may be changed with the standard editor like in the edit single image form.  
+The description may be changed with the standard editor like in the edit single image form.
 Sadly this leads to a very high edit block which creates a ugly layout.
 
 (4) Save
@@ -713,7 +589,7 @@ Rotates selected images 180 degrees.
 
 (11) Flip horizontal
 
-Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom  
+Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom
 
 (12) Flip vertical
 
@@ -746,7 +622,7 @@ This can be used to delete, rotate or flip  selected images.
   <BR>
   <BR>
 
-* (2) Sections in Tab  
+* (2) Sections in Tab
   Each Tab contains sections. A click on a section will open or hide the settings within while the other sections stay open or hidden
 ---
 ## General
@@ -847,7 +723,7 @@ This can be used to delete, rotate or flip  selected images.
 * (1) Graphics Library
 
   Old: <br>
-    Three graphics libraries, GD2, ImageMagick (and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images   
+    Three graphics libraries, GD2, ImageMagick (and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images
 
   Actually only GD2 is used until further notice
 
@@ -1004,11 +880,11 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
   ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Config.display.galleryStatus.png?raw=true)
 
-     The icons will indicate     
+     The icons will indicate
      * (O) User is the owner of the gallery
      * (U) User can upload in this gallery
      * (H) The gallery is hidden and not Published
-     <br><br>     
+     <br><br>
 
 * (7) Display gallery limitbox
 
@@ -1019,7 +895,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
   * Always
   * If more galleries than limit
   * Never
-  <br><br>     
+  <br><br>
 
   on "If more galleries than limit" this selection box will only appear when there are more galleries to be displayed but limited by parameter "Default number of galleries on frontpage". See below
 
@@ -1038,7 +914,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
   * slideshow_parth
   * slideshow_pathfusion
   * slideshowone
-  <br><br>     
+  <br><br>
 
   Sadly slideshow_pathfusion is not working actually and slideshowone is not that interesting (2018.07.26). <br>
   The RSGallery team is working on boostrap and other slide shows in the near future
@@ -1172,34 +1048,34 @@ It displays image thumbs with information about the imaged
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.watermark.image.png?raw=true)
 
- If you consider using watermarked files see also description "How to hide the original image from the user"  
+ If you consider using watermarked files see also description "How to hide the original image from the user"
 
-* (1) Display watermark  
+* (1) Display watermark
 
-   Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.  
+   Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.
    A watermarked replacement file will be created once when uploading or when viewed the first time.
-   The watermarking will be a text defined in the configuration.   
+   The watermarking will be a text defined in the configuration.
    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
 * (2) Watermark Type
 
   The watermark may be merged from "text" or from an "image" into the display image
 
-* (3) Font  
+* (3) Font
 
-  Select the font type of the watermark text  
+  Select the font type of the watermark text
 
-* (4) Watermark text  
+* (4) Watermark text
 
-    Define the text to be displayed in the image  
+    Define the text to be displayed in the image
 
-* (5) Watermark font size  
+* (5) Watermark font size
 
-    Select the font size of the watermark text  
+    Select the font size of the watermark text
 
-* (6) Watermark text angle  
+* (6) Watermark text angle
 
-    Define the angle of the watermark text  
+    Define the angle of the watermark text
 
 * (7) Watermark image
 
@@ -1209,9 +1085,9 @@ It displays image thumbs with information about the imaged
 
   Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
 
-* (9) Watermark position  
+* (9) Watermark position
 
-  Select the position of the watermark text  
+  Select the position of the watermark text
 
 * (10) Margin from top
 
@@ -1229,15 +1105,15 @@ It displays image thumbs with information about the imaged
 
   -> Not used
 
-* (14) Watermark transparency  
+* (14) Watermark transparency
 
     Define transparency of the text to be displayed in the image.
     A higher value makes the watermark more transparent.
     Transparency of 100% makes the watermark invisible
 
-* (15) Watermark image path  
+* (15) Watermark image path
 
-    Define the destination path of the created watermarked files  
+    Define the destination path of the created watermarked files
 
 ---
 ## My Galleries
@@ -1332,7 +1208,9 @@ This may be done already as it is as simple as assigning the standard view to a 
 
 ---
 
-# User manual
+# User manual My Galleries
+
+My galleries function does enable logged in users to create their own galleries and upload and show their images
 
 ## User view of My Galleries
 
@@ -1530,7 +1408,7 @@ At the top of the page "My Gallery" there is a box with User information: The na
   * (O) User is the owner of the gallery
   * (U) User can upload in this gallery
   * (H) The gallery is hidden and not Published
-  <br><br>     
+  <br><br>
 
   If the mygallery user hovers over the buttons a explaining text will appear as tool tip
 
@@ -1760,7 +1638,7 @@ In (1) appears the list of files with "missing parts".
 
  (4) Direct action buttons. On click the task is performed on the file of the rows
 
- (5) The parent gallery of the file in the row is listed and one of the matching images is displayed  
+ (5) The parent gallery of the file in the row is listed and one of the matching images is displayed
 
 #### Area with state of image.
  ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
@@ -1864,7 +1742,7 @@ Two files living within the slideshow code define the parameters and their value
 
 * templateDetails.xml
 
-   Existing parameter and their default value are defined in section param.<br>  
+   Existing parameter and their default value are defined in section param.<br>
 
 * params.ini
 
@@ -1909,7 +1787,6 @@ Delete the content of the file params.ini in the below section and save it  (but
 ---
 
 !INCLUDE "???Watermarked files???""
-!INCLUDE ""
 !INCLUDE ""
 !INCLUDE ""
 
@@ -2136,7 +2013,7 @@ Configuration -> Tab "display" -> section "Image display"
 
 ### Solution "Automatic remove the original size image file":
 
-Configuration -> Tab "Image" -> section "Image Storage"     
+Configuration -> Tab "Image" -> section "Image Storage"
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.storage.png?raw=true)
 
 * (1) Keep original image Yes / No
@@ -2155,7 +2032,7 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
    2) **Watermark**
    A watermarked replacement file will be created once when uploading or when viewed the first time.
-   The watermarking will be a text defined in the configuration.  
+   The watermarking will be a text defined in the configuration.
    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
    3) **Disguise** watermarked file names
@@ -2166,7 +2043,7 @@ Configuration -> Tab "Image" -> section "Image Storage"
    * The small sized "display" files have no watermark
    * The "display" files can be found with guessing and a knowledge of the RSGallery2 / Joomla structure
    * If you switch on watermarking after uploading the images then the watermarking tries to use the original image. If it doesn't exist then it uses the "display" files with lower resolution.
-   
+
 
 #### Setup watermarked configuration:
 
@@ -2174,52 +2051,52 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.storage.png?raw=true)
 
- In configuration->images->section "Image storage"  
- * (1) activate the "no" selection  
+ In configuration->images->section "Image storage"
+ * (1) activate the "no" selection
 
 2. Check "display" resolution
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.manipulation.png?raw=true)
 
- In configuration->images->section "Image manipulation"  
- * (1) Display picture width defines the maximum size of the displayed image.  
+ In configuration->images->section "Image manipulation"
+ * (1) Display picture width defines the maximum size of the displayed image.
  * (2) You can reduce the quality of the displayed image to your needs
 
 3. Check watermark settings
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.display.watermark.png?raw=true)
 
- In configuration->display->section "Image watermark"  
- * (1) Display watermark  
-    Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.  
+ In configuration->display->section "Image watermark"
+ * (1) Display watermark
+    Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.
     A watermarked replacement file will be created once when uploading or when viewed the first time.
-    The watermarking will be a text defined in the configuration.   
+    The watermarking will be a text defined in the configuration.
     Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
-  * (2) Watermark type  
+  * (2) Watermark type
       A text or an image can be merged into the original image as a watermark
-  * (3) Watermark text  
-      Define the text to be displayed in the image  
- * (4) Font  
-     Select the font type of the watermark text  
- * (5) Watermark font size  
-     Select the font size of the watermark text  
- * (6) Watermark text angle   
-     Define the angle of the watermark text  
- * (7) Watermark image  
+  * (3) Watermark text
+      Define the text to be displayed in the image
+ * (4) Font
+     Select the font type of the watermark text
+ * (5) Watermark font size
+     Select the font size of the watermark text
+ * (6) Watermark text angle
+     Define the angle of the watermark text
+ * (7) Watermark image
       Will be merged into the big display image. Watermark image should be smaller then display image"
- * (8) Scale watermark image   
+ * (8) Scale watermark image
      Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
- * (9) Watermark position  
+ * (9) Watermark position
      Select the position of the watermark text.
- * (10) Margin from top  
- * (11) Margin from right  
- * (12) Margin from bottom  
- * (13) Margin from left  
+ * (10) Margin from top
+ * (11) Margin from right
+ * (12) Margin from bottom
+ * (13) Margin from left
      Margin from the border of the original image. Watermark is placed with distance to the border, if it is not centrally located
- * (14) Watermark transparency  
-     Define transparency of the text to be displayed in the image  
- * (15) Watermark image path  
-     Define the destination path of the created watermarked files  
+ * (14) Watermark transparency
+     Define transparency of the text to be displayed in the image
+ * (15) Watermark image path
+     Define the destination path of the created watermarked files
 
 
 # Uninstall
@@ -2242,43 +2119,37 @@ Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 
 ---
 
+
+
+# Glossar
+
+* Root gallery
+!!! To be improved !!!
+The top level gallery may be selected when for the menu  RSGallery2 -> View of galleries is selected. If displayed the view will show a collection of "sub" galleries, latest images and random images
+
 ---
+
+
+
+---
+
 # Left overs ...
 
 [Installation](./GetStarted/01.Installation.md)
-
 [FirstSteps](./GetStarted/02.FirstSteps.md)
-
 [CreateGallery](./GetStarted/03.CreateGallery.md)
-
 [UploadImages](./GetStarted/04.UploadImages.md)
-
 [CreateMenuGalleryView](./GetStarted/05.CreateMenuGalleryView.md)
-
 [steps](./GetStarted/06.NextSteps.md)
-
 [controlPanel](./ControlPanel/controlPanel.md)
-
 [upload](./Upload/upload.md)
-
 [uploadDragAndDrop](./Upload/uploadDragAndDrop.md)
-
 [GalleriesListView](./GalleryDoc/GalleriesListView.md)
-
 [ImagesListView](./ImageDoc/ImagesListView.md)
-
 [config](./Config/config.md)
-
 [Introduction](./MyGalleries/MyGalleries.Introduction.md)
-
 [SetItUp](./MyGalleries/MyGalleries.SetItUp.md)
-
 [UserManual](./MyGalleries/MyGalleries.UserManual.md)
-
 [HowToHideImages](./General/HowToHideImages.md)
-
-
 [Maintenance](./Maintenance/Maintenance.md)
-
-
 [Glossar](./Glossar.md)

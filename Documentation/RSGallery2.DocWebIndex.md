@@ -29,18 +29,3 @@
    1. [Maintenance Consolidate image database](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=101 "Maintenance Consolidate image database")<br>
 1. [Finish it for good](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=102 "Finish it for good")<br>
 
-
-  
-
----
-
-
--------------------------------------------------------------------------------------------
-
-1. [](http://www.rsgallery2.org/index.php/documentation// "")
-
-   1. [](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=&catid= "")
-
-
-
-1. [Upload (2)](http://www.rsgallery2.org/index.php/documentation/upload/51-upload-documentation "./Upload/upload.md")

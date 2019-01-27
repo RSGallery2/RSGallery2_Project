@@ -1,4 +1,6 @@
-# User manual
+# User manual My Galleries
+
+My galleries function does enable logged in users to create their own galleries and upload and show their images 
 
 ## User view of My Galleries
 

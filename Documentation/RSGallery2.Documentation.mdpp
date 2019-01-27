@@ -1,9 +1,24 @@
 
 # RSGallery2 Documentation
 
-Version 2019.01.26
+Version 2019.01.27
 
+This is just a collection of all written documentation<br>
+for RSGallery2 web page. We are sorry for the ugly style. <br>
+We hope that at least you have it all in one document <br>
+and you don't have to scan through all online documents <br>
+to find what you need.<br>
 
+Sorry also for the fact that some bits and pieces are <br>
+missing or on opposite that there are some not cleaned <br>
+up parts to be found.<br>
+
+This is a work in progress and sometimes we have to decide<br>
+to not publish or publish being incomplete and ugly<br>
+We are more likely to publish than to be styled and polished
+
+On the other side we are grateful for every hand which <br>
+improves this documentation. Join us
 
 !INCLUDE "RSGallery2.DocWebIndex.md"
 
@@ -17,7 +32,6 @@ Version 2019.01.26
 !INCLUDE "ControlPanel\controlPanel.md"
 
 !INCLUDE "Upload\upload.md"
-!INCLUDE "Upload\uploadDragAndDrop.md"
 
 !INCLUDE "???Site here ???"
 
@@ -43,7 +57,6 @@ Version 2019.01.26
 !INCLUDE "???Watermarked files???""
 !INCLUDE ""
 !INCLUDE ""
-!INCLUDE ""
 
 !INCLUDE ""
 !INCLUDE "???Site???"
@@ -52,48 +65,34 @@ Version 2019.01.26
 !INCLUDE "Site.SlideshowView\ModifyTemplateParameters.md"
 !INCLUDE ""
 
+!INCLUDE "???Howtos???"
 !INCLUDE "General\HowToHideImages.md"
 
 !INCLUDE "Uninstall\Uninstall.md"
 !INCLUDE "Uninstall\FinishItForGood.md"
 
+!INCLUDE "Glossar.md"
+
+
 ---
+
 # Left overs ...
 
 [Installation](./GetStarted/01.Installation.md)
-
 [FirstSteps](./GetStarted/02.FirstSteps.md)
-
 [CreateGallery](./GetStarted/03.CreateGallery.md)
-
 [UploadImages](./GetStarted/04.UploadImages.md)
-
 [CreateMenuGalleryView](./GetStarted/05.CreateMenuGalleryView.md)
-
 [steps](./GetStarted/06.NextSteps.md)
-
 [controlPanel](./ControlPanel/controlPanel.md)
-
 [upload](./Upload/upload.md)
-
 [uploadDragAndDrop](./Upload/uploadDragAndDrop.md)
-
 [GalleriesListView](./GalleryDoc/GalleriesListView.md)
-
 [ImagesListView](./ImageDoc/ImagesListView.md)
-
 [config](./Config/config.md)
-
 [Introduction](./MyGalleries/MyGalleries.Introduction.md)
-
 [SetItUp](./MyGalleries/MyGalleries.SetItUp.md)
-
 [UserManual](./MyGalleries/MyGalleries.UserManual.md)
-
 [HowToHideImages](./General/HowToHideImages.md)
-
-
 [Maintenance](./Maintenance/Maintenance.md)
-
-
 [Glossar](./Glossar.md)
