@@ -1,0 +1,31 @@
+
+Now, for useing those symbols as purely presentational icons:
+
+Use role="presentation" on the SVG
+<svg role="presentation">
+    <use xlink:href="sprite.svg#left-arrow"/>
+</svg>
+
+
+Add role="img"
+ Add a title attribute
+ Add a title element with unique id
+ Add aria-labelledby="title-id"
+<svg role="img" title="Back" aria-labelledby="title-back1">
+    <title id="title-back1">Back</title>
+    <use xlink:href="sprite.svg#left-arrow"/>
+</svg>
+
+In firefox (not in ie and chrome :-( 
+	<svg role="presentation">
+		<use xlink:href="symbol-defs.svg#icon-next"/>
+	</svg>
+
+	<svg>
+		<use xlink:href="symbol-defs.svg#icon-previous"/>
+	</svg>
+
+Icomon svg set has script to enable it on other web ..
+
+
+

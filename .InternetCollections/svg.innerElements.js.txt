@@ -1,0 +1,22 @@
+DIRECTLY WITH JQUERY. Phew. Hope you got that. The abridged reason: jQuery only understands the HTML DOM and not the SVG DOM.
+
+However, don’t sweat that. You just want to select your SVG internals. Am I right? We can do it easily with good ol’ JavaScript. To aid understanding, imagine this is the contents of our SVG:
+<svg height="40px" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+	<rect id="svgItem" width="800" height="800" fill="red"></rect>
+	<circle cx="400" cy="400" r="400" fill="blue"></circle>
+</svg>
+
+As you can see, the rectangle is red by default. Let’s change that with JavaScript:
+window.onload=function() {
+	// Get the Object by ID
+	var a = document.getElementById("svgObject");
+	// Get the SVG document inside the Object tag
+	var svgDoc = a.contentDocument;
+	// Get one of the SVG items by ID;
+	var svgItem = svgDoc.getElementById("svgItem");
+	// Set the colour to something else
+	svgItem.setAttribute("fill", "lime");
+};
+
+
+You’ll notice in the above code that the fun stuff has been enclosed in a window.onload function. This simply ensures that the SVG and the main DOM is loaded before we start trying to manipulate it.
