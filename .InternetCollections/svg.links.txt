@@ -25,3 +25,17 @@ https://wiki.selfhtml.org/wiki/SVG/Tutorials/Icons
 
 
 
+
+https://www.mediaevent.de/tutorial/svg-responsive.html
+
+https://www.mediaevent.de/tutorial/svg-viewbox-koordinaten.html
+
+https://www.mediaevent.de/tutorial/svg-pattern.html
+
+ 
+
+ 
+
+http://tutorials.jenkov.com/svg/svg-viewport-view-box.html
+
+ 
