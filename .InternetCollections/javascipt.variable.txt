@@ -1,0 +1,42 @@
+
+
+
+---3.5 neu
+
+After this question was originally answered, Joomla introduced in version 3.5 another way of passing variables to javascript, using the addScriptOptions() method of the Joomla Document class. So I'm just adding this to make other people who are interested in this question aware of this alternative.
+
+In your php file you can write eg:
+
+$phpvars = array('alpha' => 1, 'beta' => 'test', 'gamma' => null);
+$document = JFactory::getDocument();
+$document->addScriptOptions('myvars', $phpvars);
+Then in your javascript you can retrieve the values using:
+
+var jsvars = Joomla.getOptions('myvars');
+console.log(jsvars);
+which will output on the browser console the Javscript Object structure:
+
+{alpha: 1, beta: "test", gamma: null}
+You can obviously use this multiple times in your code, using different keys (the key being 'myvars' in the example above).
+
+
+---vor 3.5 
+
+Javascript have global variables : http://www.w3schools.com/js/js_scope.asp
+
+inside you php file you call: JFactory::getDocument(); and you can now add some javascript at the current page with addScriptDeclaration()
+
+In this example, we declare a myJoomlaVersion variable
+
+    <$php 
+$jdocument = JFactory::getDocument(); 
+$jversion = new JVersion(); 
+$short = $jversion->getShortVersion(); 
+
+// Add Javascript 
+$jdocument->addScriptDeclaration(' var myJoomlaVersion = '.$short ); ?>
+More info about "Inserting inline scripts from within a PHP file" https://docs.joomla.org/J3.x:Adding_JavaScript_and_CSS_to_the_page
+
+Now you can use this variable into your javascript.
+
+
