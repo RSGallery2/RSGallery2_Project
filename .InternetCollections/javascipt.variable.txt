@@ -3,7 +3,11 @@
 
 ---3.5 neu
 
-After this question was originally answered, Joomla introduced in version 3.5 another way of passing variables to javascript, using the addScriptOptions() method of the Joomla Document class. So I'm just adding this to make other people who are interested in this question aware of this alternative.
+After this question was originally answered, Joomla introduced 
+in version 3.5 another way of passing variables to javascript, 
+using the addScriptOptions() method of the Joomla Document class. 
+So I'm just adding this to make other people who are interested 
+in this question aware of this alternative.
 
 In your php file you can write eg:
 
@@ -17,14 +21,16 @@ console.log(jsvars);
 which will output on the browser console the Javscript Object structure:
 
 {alpha: 1, beta: "test", gamma: null}
-You can obviously use this multiple times in your code, using different keys (the key being 'myvars' in the example above).
+You can obviously use this multiple times in your code, using 
+different keys (the key being 'myvars' in the example above).
 
 
 ---vor 3.5 
 
 Javascript have global variables : http://www.w3schools.com/js/js_scope.asp
 
-inside you php file you call: JFactory::getDocument(); and you can now add some javascript at the current page with addScriptDeclaration()
+inside you php file you call: JFactory::getDocument(); and you can 
+now add some javascript at the current page with addScriptDeclaration()
 
 In this example, we declare a myJoomlaVersion variable
 
