@@ -1,0 +1,28 @@
+
+Demo (dokument) your features for the user
+
+screenshot, screencast, gif, video, slides
+
+-----------------------------------------------
+
+* camtasia  ******
+
+	camstudio ?
+	screenstudio ?
+* screencast
+* simple screen recorder
+* snap including recorder
+page builder 
+* snippets ? fulltext table
+* the whykiki
+* 
+Frontend editor
+* Data2site
+* d2 content
+
+	
+
+
+
+
+
