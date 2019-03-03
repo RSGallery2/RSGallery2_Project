@@ -1,4 +1,51 @@
+Best practice? Best practice is to not try to determine screen size, because ultimately it is futile. What will happen when a large screen user changes their browser window size, for example?
 
+Then use CSS3 media queries to hide 3 of them:
+
+@media (max-width: 767px) {
+    .item_2, 
+    .item_3,
+    .item_4 {
+        display: none;
+    }
+}
+
+-----------------------------------------
+jquery and different includes on resize
+https://css-tricks.com/resolution-specific-stylesheets/
+
+#Is jQuery really necessary just for this?
+
+No, but I'm sure you know that's just how I roll in general and it makes it easier. Kevin Hale wrote about dynamic resolution layouts literally five years ago. It's "raw" JavaScript and still works great today.
+
+Also, there is a kick ass polyfill: Respond.js
+
+-------------------------------------------------------------
+Joomla aAPI 
+
+ JApplicationWebClient, 
+ $client = JFactory::getApplication()->client->browser;
+
+---
+client->browser;
+// The detected browser used by the web client (returns an integer)
+
+$client->browserVersion;
+// The detected browser version used by the web client. (string)
+
+$client->mobile;
+// True if the web client is a mobile device (Boolean)
+
+$client->platform;
+// The detected platform on which the web client runs (integer)
+
+$client->userAgent;
+//The web client's user agent string. (string)
+
+$client->robot;
+// True if the web client is a robot (Boolean) 
+ 
+-------------------------------------------------------------
 Adaptive Images - automatische Bildgröße Endgerät 
 
 https://www.jug-friedrichshafen.de/blog-beitraege/seo/adaptive-images?fbclid=IwAR3O3o4G1LHsK59fGMbRONuxwsuofs5DylIfpDht1zvtSCcaLIDQAOSK8ak
