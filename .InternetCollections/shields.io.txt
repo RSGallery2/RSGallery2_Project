@@ -1,0 +1,15 @@
+
+https://shields.io/
+
+https://github.com/badges/shields
+
+https://github.com/badges/shields/blob/master/gh-badges/README.md
+
+## Examples
+
+- code coverage percentage: ![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen.svg?cacheSeconds=2592000)
+- stable release version: ![version](https://img.shields.io/badge/version-1.2.3-blue.svg?cacheSeconds=2592000)
+
+
+https://www.heise.de/ratgeber/Der-erste-Eindruck-zaehlt-README-md-fuer-GitHub-verschoenern-4298666.html
+

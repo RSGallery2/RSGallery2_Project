@@ -5,3 +5,13 @@ google touch images
 Add touch to your site 
 https://developers.google.com/web/fundamentals/design-and-ux/input/touch/#add_event_listeners
 
+
+Deutsch
+https://www.mediaevent.de/javascript/touch-events.html
+
+
+
+
+
+
+
