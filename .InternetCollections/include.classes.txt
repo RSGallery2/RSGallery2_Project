@@ -19,3 +19,11 @@ JLoader::register('JDatabase', '/custom/path/database_driver.php', true);
 For example, "include_once" will not halt the execution of the program if the file is not found, whereas "require_once" will. "jimport" is used when the files being included use our Joomla library naming conventions. This command does some other cool Joomla-specific stuff along the way, like checking for helper class names. So there are generally good reasons to use the different commands.
 
 The "include_once" and "require_once" commands don't load the same file twice. This is really important if your file contains a class declaration and might already have been included. If you try to run a class declaration a second time, you will get a PHP error. On the other hand, with these commands, PHP has to check to see if the file has already been included. On some systems – especially large severs that use storage array networks (SAN's), this can really slow down the performance of Joomla.
+
+>>> how do I know which command to use?
+
+I'm really glad you asked. We really should not be using "require_once" or "include_once" anywhere in Joomla, since they are very slow on some platforms. It turns out that it is much faster if we just keep track of the classes that are loaded in the application instead of asking PHP to keep track of the files that have been loaded.
+
+Most of the time when we are including other files, we are actually loading classes. And we already have a great method for including class files in the file "libraries/loader.php", called JLoader::register. The cool thing about this method is that it uses the PHP "autoloader" feature to load classes into memory only when they are needed. So this method just adds the class file to the list of files that PHP can load automatically if they are called. However, if it turns out we don't need that file, it doesn't get loaded into memory.
+
+This method for loading classes is much faster than using "require_once", at least on some hardware platforms.
