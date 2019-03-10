@@ -1,0 +1,21 @@
+
+? Jloader / require_once /Jimport
+
+For classes use Joomla autoloader. Is better. 
+Instead of require_once
+
+Load classes with autoload instead of require/include have a better performance, because PHP will only read (require access to the disk) and compile (require memory and CPU usage) if you really use your class.
+
+To do the same with require/include you have to be sure to only use if will really use the class.
+
+// Register an adhoc class.
+JLoader::register('AdhocClass', '/the/path/adhoc.php');
+
+// Register a custom class to override as core class.
+// This must be done before the core class is loaded.
+JLoader::register('JDatabase', '/custom/path/database_driver.php', true);
+
+-------------------------
+For example, "include_once" will not halt the execution of the program if the file is not found, whereas "require_once" will. "jimport" is used when the files being included use our Joomla library naming conventions. This command does some other cool Joomla-specific stuff along the way, like checking for helper class names. So there are generally good reasons to use the different commands.
+
+The "include_once" and "require_once" commands don't load the same file twice. This is really important if your file contains a class declaration and might already have been included. If you try to run a class declaration a second time, you will get a PHP error. On the other hand, with these commands, PHP has to check to see if the file has already been included. On some systems – especially large severs that use storage array networks (SAN's), this can really slow down the performance of Joomla.
