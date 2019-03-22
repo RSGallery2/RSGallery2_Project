@@ -1,4 +1,9 @@
 
+google hero-slider -> like banner
+https://codyhouse.co/demo/hero-slider/index.html
+
+
+
 
 https://codepen.io/monochromer/pen/mBmWpx/
 
