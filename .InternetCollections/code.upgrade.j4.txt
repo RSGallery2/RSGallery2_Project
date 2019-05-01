@@ -1,0 +1,39 @@
+
+$db->nameQuote ==> $db->quoteName
+extends JView ==> extends JViewLegacy
+extends JModel ==> extends JModelLegacy
+JModelLegacyAdmin ==> JModelAdmin
+JModelLegacyList ==> JModelList
+extends JController==> extends JControllerLegacy
+JControllerLegacyForm ==> JControllerLegacy
+JControllergetInstance ==> JControllerLegacygetInstance
+$db->getEscaped ==> $db->escape
+class="clr" ==> class="clearfix"
+$registry->loadJSON ==> $registry->loadString
+<input type="hidden" name="<?php echo JUtilitygetToken(); ?>" value="1" />  ==> <?php echo JHtml_('form.token'); ?>
+JUtilitygetToken( ==> JSessiongetFormToken(
+toMySQL( ==> toSql(
+authorisedLevels( => getAuthorisedViewLevels(
+_viewall => viewall
+if (!empty($record->catid)) => if (!empty($record->catid))
+toFormat ==> format
+$controller->execute(JRequestgetCmd('task')); ==>
+$controller->execute(JFactorygetApplication()->input->get('task'))
+$config->getValue('config. ==> $config->get('
+setOffset( ==> setTimezone(
+JRequestgetVar ==> $this->input->get
+JRequestsetVar ==> $this->input->set
+$app = JFactorygetApplication();
+JRequestgetVar('limitstart', 0, '', 'int') ==> $app->input->get('limitstart', 0, 'int')
+JRequestgetVar('id', 0, '', 'int') ==> $app->input->get('id', 0, 'int')
+JEventDispatchergetInstance() ==>
+$this->t['dispatcher']->trigger(' == > \JFactorygetApplication()->triggerEvent('
+JArrayHelper ==> \Joomla\Utilities\ArrayHelper
+JArchive ==> \Joomla\Archive\Archive ==>
+$archive = new \Joomla\Archive\Archive;
+$archive->extract($archivename, $extractdir);
+!is_a($element, 'JXMLElement') ==> !is_a($element, 'SimpleXMLElement')
+JFactorygetURI( ==> \Joomla\CMS\Uri\UrigetInstance(
+JFactorygetEditor( ==> \Joomla\CMS\Editor\EditorgetInstance(
+JHtml_('batch.access') ==> LayoutHelperrender('joomla.html.batch.access', [])
+JHtml_('batch.language') ==> LayoutHelperrender('joomla.html.batch.language', [])

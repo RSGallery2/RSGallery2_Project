@@ -1,0 +1,24 @@
+
+
+
+gif
+
+jpg
+
+svg
+
+jpf: jpeg2000
+    Die Dateiendung jpf kennzeichnet ein Bitmap-Bild im erweiterten 
+	JPEG 2000 Format. Es existieren mehrere Erweiterungen des 
+	JPEG 2000 Standard
+	
+WEBP: 
+    Man muss darauf achten:
+    - dass man auf PHP 7 Server ist (z.B. PHP 5 getimagesize Funktion 
+      erkennt WEBP nicht als Bild)
+    - dass PHP GD Library (wenn man schon Thumbnails machen will) die 
+      Funktionen für WEBP hat (und Ich würde sagen, dass sie auf vielen 
+      Servern überhaupt nicht aktiviert werden - wegen veraltete GD Library )
+
+
+
