@@ -1,3 +1,28 @@
+
+https://docs.joomla.org/J3.x:Adding_custom_fields/Overrides/de
+Anwendung von Eigene Felder / Overrides
+
+
+Wie man Eigene Felder in Overrides verwendet
+
+Joomla doc
+
+
+
+---------------------------------------
+https://www.dev-insider.de/custom-fields-in-joomla-37-a-615010/
+
+Custom Fields in Joomla! 3.7
+
+Der Autor eines Blogs möchte eine Liste der Bücher, die er gerade liest, auf seiner Website darstellen.
+
+
+Neben einer kurzen Rezension des Buches sollen Autor, Erscheinungsdatum, Verlag, ISBN und ein Link zur Website des Autors dargestellt werden. Natürlich ließen sich diese Informationen direkt im Text des Beitrags einfügen, aber eine einheitliche, besondere Formatierung wäre mühselig. Hier kommen die eigenen Felder zur Hilfe.
+
+....
+
+
+---------------------------------------
 https://docs.joomla.org/J3.x:Adding_custom_fields/Implement_into_your_component
 
 
