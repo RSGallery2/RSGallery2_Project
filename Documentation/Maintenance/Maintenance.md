@@ -7,9 +7,9 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 <br>
 
 
-![Base top](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.base.top.png?raw=true)
+![Base top](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.base.top.png?raw=true)
 
-![Base bottom](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.base.bottom.png?raw=true)
+![Base bottom](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.base.bottom.png?raw=true)
 
 ### Zones
 
@@ -39,7 +39,7 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 
 ## Rsgallery2 zone
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.RSGallery2.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.RSGallery2.png?raw=true)
 
 (1) Slideshow configuration
 
@@ -58,7 +58,7 @@ In older version it had the function to upload slideshows and templates for the 
 
 
 ## Repair zone
-![zone.repair.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.repair.png?raw=true)
+![zone.repair.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.repair.png?raw=true)
 
 (1) Consolidate image database
 
@@ -79,7 +79,7 @@ This option will regenerate either thumbnail or display images, based on the cur
 Reorganizes the physical storage of the database table data to reduce storage space and improve speed when accessing the table
 
 ## Danger zone
-![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.danger.png?raw=true)
+![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.danger.png?raw=true)
 
 (1) Purge tables (data) & delete all images
 
@@ -114,7 +114,7 @@ Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 
 
 ## Raw database zone
-![zone.rawDatabase.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.rawDatabase.png?raw=true)
+![zone.rawDatabase.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.rawDatabase.png?raw=true)
 
 The buttons lead to the pure content view of the database lists
 
@@ -137,7 +137,7 @@ Shows a list with the database properties of all comments. This contains more co
 
 ## Outdated zone
 
-![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.outDated.png?raw=true)
+![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.outDated.png?raw=true)
 
 Door to old view of functions like image/galleries lists
 These buttons lead to the previous views of RSG2 around 2013 or beginning of J3x<br>
@@ -167,7 +167,7 @@ the functionality is not granted as this old code is not maintained any more. St
 ## Upgrade (from 1.x / 2.x) zone
 
 
-![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.Upgrade1x2x.png?raw=true)
+![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.Upgrade1x2x.png?raw=true)
 
 (1) Database
 

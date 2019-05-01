@@ -19,7 +19,7 @@ We can't avoid that every image that is shown in the browser the user can downlo
 ### Solution "Popup style to none":
 
 Configuration -> Tab "display" -> section "Image display"
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.imageDisplay.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true)
 
 * (2) Popup style
   Defines the method ("No popup", "Normal popup", "Joomla Modal") used for displaying a popup (big image) after a click of the image in single image display.
@@ -39,7 +39,7 @@ Configuration -> Tab "display" -> section "Image display"
 ### Solution "Automatic remove the original size image file":
 
 Configuration -> Tab "Image" -> section "Image Storage"     
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.storage.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.storage.png?raw=true)
 
 * (1) Keep original image Yes / No
 
@@ -74,14 +74,14 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
 1. Hide (delete) original after upload
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.storage.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true)
 
  In configuration->images->section "Image storage"  
  * (1) activate the "no" selection  
 
 2. Check "display" resolution
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.manipulation.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true)
 
  In configuration->images->section "Image manipulation"  
  * (1) Display picture width defines the maximum size of the displayed image.  
@@ -89,7 +89,7 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
 3. Check watermark settings
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.display.watermark.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true)
 
  In configuration->display->section "Image watermark"  
  * (1) Display watermark  

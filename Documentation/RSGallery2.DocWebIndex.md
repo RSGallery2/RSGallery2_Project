@@ -13,7 +13,7 @@
 1. **[Galleries](http://www.rsgallery2.org/index.php/documentation/galleries/ "galleries")**<br>
    1. [Galleries article](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=78&catid=28 "Galleries article")<br>
    1. [Galleries List view](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=44&catid=28 "Galleries List view<br>")<br>
-1. **[Images](http://www.rsgallery2.org/index.php/documentation/images/ "images")**<br>
+1. **[Images](http://www.rsgallery2.org/index.php/Documentation/ImagesUsedInDoc/ "images")**<br>
    1. [Images list view](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=77&catid=29 "Images article")<br>
 1. **[Configuration](http://www.rsgallery2.org/index.php/documentation/configuration/ "Configuration")**<br>
    1. [Configuration article](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=47&catid=27 "Configuration article")<br>

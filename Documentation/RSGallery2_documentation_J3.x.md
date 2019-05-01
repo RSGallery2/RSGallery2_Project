@@ -36,7 +36,7 @@ improves this documentation. Join us
 1. **[Galleries](http://www.rsgallery2.org/index.php/documentation/galleries/ "galleries")**<br>
    1. [Galleries article](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=78&catid=28 "Galleries article")<br>
    1. [Galleries List view](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=44&catid=28 "Galleries List view<br>")<br>
-1. **[Images](http://www.rsgallery2.org/index.php/documentation/images/ "images")**<br>
+1. **[Images](http://www.rsgallery2.org/index.php/Documentation/ImagesUsedInDoc/ "images")**<br>
    1. [Images list view](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=77&catid=29 "Images article")<br>
 1. **[Configuration](http://www.rsgallery2.org/index.php/documentation/configuration/ "Configuration")**<br>
    1. [Configuration article](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=47&catid=27 "Configuration article")<br>
@@ -65,14 +65,14 @@ Inside the assets you will find a zip file with a name like **RSGallery2_Compone
 
 RSGallery2 is installed like all other Joomla! extensions. Log in to the Administrator section, click on Extensions > Manage ->Install
 
-![Extension install  component view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Joomla.Extensions.Install.png?raw=true)
+![Extension install  component view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Joomla.Extensions.Install.png?raw=true)
 
 (1) Select "upload package file" tab<br>
 (2) Drag and drop the downloaded zip file into the drop area
 
 On successful upload you will get a message similar to
 
-![RSGalllery2 component updated](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Joomla.Extensions.IsInstalled.png?raw=true)
+![RSGalllery2 component updated](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Joomla.Extensions.IsInstalled.png?raw=true)
 
 On upload error try to transfer (?the content of?) the zip file to the server and use "Install from folder". (Some php.ini settings restrict the size of uploaded files)
 
@@ -90,22 +90,22 @@ Three steps are needed to display galleries
 ---
 ### First steps (1) Create a gallery
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.galleries.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.baseButtons.galleries.png?raw=true)
 
  In control panel select "Manage Galleries"
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/galleries.new.getStarted.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.new.getStarted.png?raw=true)
 
 Use new to start a new gallery
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/gallery.Edit.getStarted.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/gallery.Edit.getStarted.png?raw=true)
 
  (1) Add a name<br>
  (2) Create the gallery with click on "Save and Close"
 
 Following gallery list view appears with new gallery on top
 
-![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/galleries.firstGallery.getStarted.png?raw=true)
+![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.firstGallery.getStarted.png?raw=true)
 
 ---
 ### First steps (2) Upload images
@@ -118,11 +118,11 @@ Select Upload in Control panel or in sidebar
 
 Sidebar:
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/galleries.new.sideBar.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.new.sideBar.png?raw=true)
 
 #### Upload files
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragDrop.getStarted.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.DragDrop.getStarted.png?raw=true)
 
 1. Select tab "Upload by  drag and drop"
 2. Select your created gallery
@@ -131,7 +131,7 @@ After some time they will appear in the drag area. Then they are successfully up
 
 Resulting form:
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragDrop.Result.getStarted.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.DragDrop.Result.getStarted.png?raw=true)
 
 4.  If you want to set a title and write a description use button "Add image properties"
 5. Uploaded images have appeared
@@ -140,18 +140,18 @@ Resulting form:
 ---
 ### First steps (3) Create a menu to view galleries
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/menu.add4Gallery.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/menu.add4Gallery.png?raw=true)
 
  (1) Select Menus -> Main menu and use "Add new Menu Item"
 
- ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/menu.add4Gallery.SelectType.01.png?raw=true)
+ ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/menu.add4Gallery.SelectType.01.png?raw=true)
 
  (1) Add menu name<br>
  (2) Click on select button
 
 Following image will appear
 
-![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/menu.add4Gallery.SelectType.02.png?raw=true)
+![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/menu.add4Gallery.SelectType.02.png?raw=true)
 
 (1) Click on Rsgallery2 to open the two possible menu types provided by RSGallery2<br>
 (2) Click on view of galleries to assign a gallery view to the Menu<br>
@@ -159,7 +159,7 @@ Following image will appear
 
 The click leads back to a changed menu item definition
 
-![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/menu.add4Gallery.SelectGallery.png?raw=true)
+![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/menu.add4Gallery.SelectGallery.png?raw=true)
 
 (1) Choose Gallery from (partly hidden) list<br>
    Select either a single gallery or a gallery overview <br>
@@ -172,11 +172,11 @@ The click leads back to a changed menu item definition
 
 Number of shown galleries can be predefined in the configuration
 
-![Control baase buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/menu.add4Gallery.userView.top.png?raw=true)
+![Control baase buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/menu.add4Gallery.userView.top.png?raw=true)
 
 The appearsrance of Random images and latest images can be predefined in the configuration
 
-![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/menu.add4Gallery.userView.bottom.png?raw=true)
+![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/menu.add4Gallery.userView.bottom.png?raw=true)
 
 ##### Hint: Representing gallery image
 
@@ -205,7 +205,7 @@ When images are assigned to a gallery the gallery is represented by a image insi
 
 ## Control Panel
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.complete.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.complete.png?raw=true)
 
 (1) Function buttons
 
@@ -228,7 +228,7 @@ More below
 
 ### Function buttons
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.numbers.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.baseButtons.numbers.png?raw=true)
 
 (1) Configuration
 
@@ -250,11 +250,11 @@ For maintenance exist a "Repair Zone" where content can be checked for consisten
 
 Area where all the contributors to RSGallery2 are listed. See parts in image below.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.credits.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.credits.png?raw=true)
 
 # Upload
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.start.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.start.png?raw=true)
 
 
 There are three tabs to choose
@@ -267,7 +267,7 @@ On "Upload by drag and drop" a form opens where the properties of a image to be 
 
 More images can be added in that form.
 
-![Drag and Drop](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.01.png?raw=true)
+![Drag and Drop](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.DragAndDrop.01.png?raw=true)
 
 (1) Specify gallery
 
@@ -305,7 +305,7 @@ On the bottom is shown the setting of some php variables from the system (from p
 
 ### Upload files using drag and drop: View after some uploads
 
-![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
+![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.DragAndDrop.02.png?raw=true)
 
  (1) Drag and drop area (filled)
  After a gallery is selected the dotted border is green. Dropped images do appear in this area after the transfer process is completed.
@@ -328,7 +328,7 @@ On the bottom is shown the setting of some php variables from the system (from p
 ## Upload from Zip file (PC)
 A zip file containing several images can be uploaded to the server, unzipped and the images assigned to a gallery.
 
-![Upload from Zip file (PC)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.fromZip.png?raw=true)
+![Upload from Zip file (PC)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.fromZip.png?raw=true)
 
 (1) Select the zip file on local pc folder
 
@@ -353,7 +353,7 @@ When the new function has enough experience and no user complains then this func
 
 Images can be uploaded to a folder (Shall be created) within the Joomla! installation. The images will be copied from this folder and will be assigned to the gallery
 
-![Upload from folder (server)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.fromFtpPath.png?raw=true)
+![Upload from folder (server)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.fromFtpPath.png?raw=true)
 
 (1) FTP Path
 Defines the path where RSGallery2 will look for images to "upload"
@@ -379,7 +379,7 @@ When the new function has enough experience and no user complains then this func
 
 ## Properties uploaded Files
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
 This form enables to set the properties title and description for a batch of images at the same time.
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
@@ -448,7 +448,7 @@ This can be used to delete, rotate or flip  selected images.
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.upload.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.batch.upload.png?raw=true)
 
 (1) Add properties
 
@@ -465,22 +465,22 @@ In most cases the image data is reserved in the database but the image is not up
 Then you may upload the image by FTP to the rsgallery2 "original" destination folder and start the creation of the display and thumb images manual by using a maintenance function
 
 ##### 1. Check the database reservation / images existence
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.maintenance.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true)
 
 In "control panel" select Maintenance
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
 
 There select in section "Repair zone" the button "Consolidate image database". This will lead to a page where it is checked whether there are database entries for missing images or for images with no database / gallery connection
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
 
 
 ##### 2. Upload image
 
 The original images are kept in folder in .../Joomla/images/rsgallery/original. Copy your file into this folder.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
 
 (1) Use button "Repeat checking" so the image is found <br>
 (2) If the image exists it is marked here <br>
@@ -503,15 +503,15 @@ The images are kept in following folders in .../Joomla/images/rsgallery/__sub_fo
 
 # Image List View
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
 
 Missing ...: To be continued
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.03.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
 
 
 
@@ -520,7 +520,7 @@ Missing ...: To be continued
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.ListView.batch.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.ListView.batch.png?raw=true)
 
 (1) Select Gallery
 
@@ -540,7 +540,7 @@ Batch processing: The selected images can be copied to the selected gallery
 
 ## Properties uploaded Files
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
 This form enables to set the properties title and description for a batch of images at the same time.
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
@@ -610,7 +610,7 @@ This can be used to delete, rotate or flip  selected images.
 
 # Configuration
 
- ![Config startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.StartView.png?raw=true)
+ ![Config startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.StartView.png?raw=true)
 
  Above is the start view when selecting configuration
 
@@ -627,7 +627,7 @@ This can be used to delete, rotate or flip  selected images.
 ---
 ## General
 
-![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.GeneralSettings.png?raw=true)
+![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.GeneralSettings.png?raw=true)
 
 * (1) Version:
 
@@ -659,7 +659,7 @@ This can be used to delete, rotate or flip  selected images.
 ## Images
 #### Images: Image Manipulation
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.manipulation.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.manipulation.png?raw=true)
 
 * (1) Display Picture Width
 
@@ -685,7 +685,7 @@ This can be used to delete, rotate or flip  selected images.
 ---
 #### Images: Image upload
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.upload.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.upload.png?raw=true)
 
 * (1) FTP Path:
 
@@ -717,7 +717,7 @@ This can be used to delete, rotate or flip  selected images.
 ---
 #### Images: Graphics Library
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.graphicsLibrary.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.graphicsLibrary.png?raw=true)
 
 
 * (1) Graphics Library
@@ -754,7 +754,7 @@ This can be used to delete, rotate or flip  selected images.
 ---
 #### Images: Image Storage
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.storage.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.storage.png?raw=true)
 
 * (1) Keep original image Yes No
 
@@ -786,7 +786,7 @@ The development team aims for folder per gallery so other slide shows may benefi
 
 Comments are activated in configuration under Tab "Display -> section "Image display"
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.comments.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.comments.png?raw=true)
 
 * (1) Use CAPTCHA check, in comment form Yes No
 
@@ -836,7 +836,7 @@ Comments are activated in configuration under Tab "Display -> section "Image dis
 
 Voting is activated in configuration under Tab "Display -> section "Image display"
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.voting.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.voting.png?raw=true)
 
 * (1) User can only vote once (cookie based) Yes No
 
@@ -852,7 +852,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 #### Display: Front Page
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.frontPage.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.frontPage.png?raw=true)
 
 * (1) Display Search Yes No
 
@@ -878,7 +878,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
   On Yes activates icons with the status of a gallery above the gallery thumb when the user is logged in. This helps if "user galleries" are enabled in "MyGallery" configuration to show the states of the actual gallery.
 
-  ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Config.display.galleryStatus.png?raw=true)
+  ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Config.display.galleryStatus.png?raw=true)
 
      The icons will indicate
      * (O) User is the owner of the gallery
@@ -938,7 +938,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 ---
 #### Display: Image Display
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.imageDisplay.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true)
 
 * (1) Display Slideshow in item view Yes No
 
@@ -971,7 +971,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 ---
 #### Display: Image order
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.imageOrder.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageOrder.png?raw=true)
 
 * (1) Order images by
 
@@ -984,7 +984,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 ---
 #### Display: EXIF settings
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.exifSettings.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.exifSettings.png?raw=true)
 
 * (1) Display EXIF Data Yes No
 
@@ -1009,7 +1009,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 Gallery view appears when the user selected a gallery with a click on the gallery thumbs
 It displays image thumbs with information about the imaged
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.galleryView.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.galleryView.png?raw=true)
 
 * (1) Thumbnail Style:
 
@@ -1046,7 +1046,7 @@ It displays image thumbs with information about the imaged
 ---
 #### Display: Image Watermark
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.watermark.image.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.watermark.image.png?raw=true)
 
  If you consider using watermarked files see also description "How to hide the original image from the user"
 
@@ -1119,7 +1119,7 @@ It displays image thumbs with information about the imaged
 ## My Galleries
  My galleries supports the creation of user galleries
 
- ![My Galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
+ ![My Galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.MyGalleries.png?raw=true)
 
 #### Settings My Galleries
 * (1) Show My Galleries
@@ -1151,20 +1151,20 @@ It displays image thumbs with information about the imaged
 ## My Galleries
 A site administrator can enable My Galleries for users to upload and view their own galleries (setting Show My  Galleries, 'no' by default). A extra element will appear on the gallery view when a user has logged in on the front end.
 
-![My Gallery: Standard "My gallery" view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.External.view.png?raw=true)
+![My Gallery: Standard "My gallery" view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.External.view.png?raw=true)
 
 View of user created "My Gallery" gallery
 
 The "My Galleries" are shown on the module where the menu with type RSGallery2 is displayed.
 Above the RSGallery2 "Search box" the user can click on "My galleries" link (3)
 
-![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
+![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.FirstLink.png?raw=true)
 
 (Link must be activated in configuration of RSG2)
 
 Clicking on that link will show a page like
 
-![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.FirstUserView.png?raw=true)
 
 If tab (1) does not appear the user has not enough rights
 
@@ -1176,19 +1176,19 @@ If tab (1) does not appear the user has not enough rights
 1. Assign the standard RSGallery2 view to a menu
 
 #### Configuration of My Galleries
- ![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true)
+ ![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.MyGalleries.png?raw=true)
 
 More description in section configuration
 
 #### Create a user group for "My Galleries" users
 
-![My Galleries New user group](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.png?raw=true)
+![My Galleries New user group](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.NewUserGroup.png?raw=true)
 
 A separate user groups helps to assign special rights for "My Gallery" users.
 
 #### Assign user rights for this "My Galleries" users group
 
-![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.License.png?raw=true)
+![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.NewUserGroup.License.png?raw=true)
 
 (1) Search for RSGallery2 in System->Global configuration
 
@@ -1214,7 +1214,7 @@ My galleries function does enable logged in users to create their own galleries 
 
 ## User view of My Galleries
 
-![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
+![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.FirstLink.png?raw=true)
 
 (1) Select menu where galleries are displayed in web site
 
@@ -1226,7 +1226,7 @@ The system needs you to be logged in. Otherwise the "My Gallery" rights can't be
 (3) Click on "My Gallery" link
 This will lead you to the "My Gallery" page where your galleries can be created, images uploaded and edited. This view enables to just see the "owned" galleries and images
 
-![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.FirstUserView.png?raw=true)
 
 (1) Create gallery tab
 
@@ -1236,7 +1236,7 @@ If this tab does not appear the user has not enough rights
 
 #### Create a gallery
 
-![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.png?raw=true)
+![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.CreateGallery.png?raw=true)
 
 On the My Galleries page click the Create Gallery tab. This tab only shows when the user that is logged in has Create permission.
 
@@ -1256,14 +1256,14 @@ Click the red round button with a white cross inside to clear all fields.
 
 Saving the gallery details returns you to this page and this tab, but with the extra gallery created (note: this gallery is unpublished by default). Unless of course the user already is at its maximum allowed galleries, then the gallery will not be created.
 
-![My Gallery: create gallery done ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.Done.png?raw=true)
+![My Gallery: create gallery done ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.CreateGallery.Done.png?raw=true)
 View after first gallery is created
 
 Attention "Add image" is now available
 
 #### Galleries overview
 
-![My Gallery: Galleries overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Gallery.Overview.png?raw=true)
+![My Gallery: Galleries overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Gallery.Overview.png?raw=true)
 
 (1) Gallery name
 clicking on the name will lead to the editing page of the gallery
@@ -1289,7 +1289,7 @@ Doing this shows a new window with the gallery details
 
 #### Image Upload
 
-![My Gallery: Image upload ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.ImageUpload.png?raw=true)
+![My Gallery: Image upload ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.ImageUpload.png?raw=true)
 On the My Galleries page click the Add Image tab. This tab only shows when the user that is logged in has "Create permission" for one or more galleries.
 
 (1) Select parent gallery
@@ -1321,7 +1321,7 @@ Saving the item returns you to this page and this tab, but with the extra image(
 Note: the newly uploaded image will be unpublished by default). Unless of course the user already is at its maximum allowed item, then the items will not be created.
 
 #### Images overview
-![My Gallery: Images overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Image.Overview.png?raw=true)
+![My Gallery: Images overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Image.Overview.png?raw=true)
 
 (1) Check box for selecting multiple images for batch assignment
 
@@ -1361,7 +1361,7 @@ The selected images can be changed in one go
 
 #### Edit image
 
-![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Image.Edit.png?raw=true)
+![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Image.Edit.png?raw=true)
 The properties to be changed are the same like when uploading the image
 
 (1) The uploaded image is displayed in "edit" view
@@ -1378,7 +1378,7 @@ Both save and cancel will take you back to the My Galleries page.
 
 #### Edit gallery
 
-![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Gallery.Edit.png?raw=true)
+![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Gallery.Edit.png?raw=true)
 The properties to be changed are the same like when creating the gallery
 
 (1) Click on disk button to save the changes
@@ -1392,13 +1392,13 @@ You can cancel your changes by clicking the red round icon with the with the cro
 Both save and cancel will take you back to the My Galleries page.
 
 #### My Gallery user information
-![My Gallery: user information ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.User.Information.png?raw=true)
+![My Gallery: user information ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.User.Information.png?raw=true)
 
 At the top of the page "My Gallery" there is a box with User information: The name of the user who is currently logged in, the number of galleries this user has already created and its allowed maximum (setting Maximum number of galleries a user can have) and the number of items for which the user is the owner and its allowed maximum (setting maximal numbers of pictures a user can have).
 
 #### My Gallery appearing on main view
 
-![My Gallery: external standard view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.External.view.png?raw=true)
+![My Gallery: external standard view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.External.view.png?raw=true)
 
   If the gallery and at least one image is "published" the it appears on the main page below the "My galleries" link and "Search box"
 
@@ -1424,9 +1424,9 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 <br>
 
 
-![Base top](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.base.top.png?raw=true)
+![Base top](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.base.top.png?raw=true)
 
-![Base bottom](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.base.bottom.png?raw=true)
+![Base bottom](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.base.bottom.png?raw=true)
 
 ### Zones
 
@@ -1456,7 +1456,7 @@ Each grey array is a button to click on. In most cases a sub form will open wher
 
 
 ## Rsgallery2 zone
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.RSGallery2.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.RSGallery2.png?raw=true)
 
 (1) Slideshow configuration
 
@@ -1475,7 +1475,7 @@ In older version it had the function to upload slideshows and templates for the 
 
 
 ## Repair zone
-![zone.repair.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.repair.png?raw=true)
+![zone.repair.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.repair.png?raw=true)
 
 (1) Consolidate image database
 
@@ -1496,7 +1496,7 @@ This option will regenerate either thumbnail or display images, based on the cur
 Reorganizes the physical storage of the database table data to reduce storage space and improve speed when accessing the table
 
 ## Danger zone
-![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.danger.png?raw=true)
+![maintenance.zone.danger.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.danger.png?raw=true)
 
 (1) Purge tables (data) & delete all images
 
@@ -1531,7 +1531,7 @@ Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 
 
 ## Raw database zone
-![zone.rawDatabase.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.rawDatabase.png?raw=true)
+![zone.rawDatabase.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.rawDatabase.png?raw=true)
 
 The buttons lead to the pure content view of the database lists
 
@@ -1554,7 +1554,7 @@ Shows a list with the database properties of all comments. This contains more co
 
 ## Outdated zone
 
-![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.outDated.png?raw=true)
+![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.outDated.png?raw=true)
 
 Door to old view of functions like image/galleries lists
 These buttons lead to the previous views of RSG2 around 2013 or beginning of J3x<br>
@@ -1584,7 +1584,7 @@ the functionality is not granted as this old code is not maintained any more. St
 ## Upgrade (from 1.x / 2.x) zone
 
 
-![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.Upgrade1x2x.png?raw=true)
+![maintenance.zone.outDated.png](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.Upgrade1x2x.png?raw=true)
 
 (1) Database
 
@@ -1616,11 +1616,11 @@ This function checks the links of images between image files and database assign
 
 In "control panel" select Maintenance
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.maintenance.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true)
 
 There select in section "Repair zone" the button "Consolidate image database".
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
 
 This will lead to a page where it is checked whether there are database entries for missing images or for images with no database / gallery connection
 
@@ -1628,7 +1628,7 @@ This will lead to a page where it is checked whether there are database entries 
 
 On opening the form or clicking on "Repeat checking" the system is checked and the result is displayed.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.onStart.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.onStart.png?raw=true)
 
 In (1) appears the list of files with "missing parts".
 
@@ -1641,7 +1641,7 @@ In (1) appears the list of files with "missing parts".
  (5) The parent gallery of the file in the row is listed and one of the matching images is displayed
 
 #### Area with state of image.
- ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.onlyDbItem.png?raw=true)
+ ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
 
 On green the item exists an red it is missing
 (1) Each column indicates a file missing or existing
@@ -1653,7 +1653,7 @@ On green the item exists an red it is missing
 * Watermark folder: This column/files will only appear if this feature is activated in the configuration. The filename in the folder may not match the used filename in database or the other image folders
 
 #### Direct action buttons
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.action.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.action.png?raw=true)
 
 On click the task is performed on the file of the rows
 Similar to the button in the header area these button issue immediate task on the image references(items) of this row
@@ -1669,7 +1669,7 @@ Similar to the button in the header area these button issue immediate task on th
 More detailed description can be found below when the list buttons are explained
 
 #### Action buttons for selected images
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.cmdButtons.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.cmdButtons.png?raw=true)
 
 The above buttons can be used for selected file lines
 
@@ -1698,7 +1698,7 @@ The above buttons can be used for selected file lines
 * This button fixes all missing references. It creates database references and missing image files.
 
 #### Assignment of image(s) to parent gallery
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.SelectGallery.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.SelectGallery.png?raw=true)
 
 On the right side above the image list the user can define the parent gallery to be used in image action. The gallery can be assigned with a button "Assign gallery" within the image row or for all selected images with the similar button on top of the page.
 
@@ -1708,7 +1708,7 @@ If Button "Repair all" is clicked and a gallery is selected this gallery is assi
 ### "Lost" database file references
 
 If no files exists to a "lost" database item the result looks like following.
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidateDb.OnlyDb.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.OnlyDb.png?raw=true)
 
 In this case it is best to select the line and use button "Remove items in row" to delete this item in database.
 
@@ -1722,7 +1722,7 @@ Copy your file per FTP into folder .../Joomla/images/rsgallery/original.
 
 #### 2. Create files and database reference
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
 
 (1) Use button "Repeat checking" so the image is found<br>
 (2) If the image exists it is marked here <br>
@@ -1755,11 +1755,11 @@ The slideshow code files reside in path on the server:
 ### Path to edit configuration form
 Goto maintenance -> Use button (1) Slideshow configuration
 
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.RSGallery2.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.RSGallery2.png?raw=true)
 
 ### Slideshow edit configuration form
 
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.slideshow.01.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.slideshow.01.png?raw=true)
 
  (1) Select the slideshow to edit
 
@@ -1775,7 +1775,7 @@ The values in params.ini file set the actual used values and overwrite the defau
 
 #### Save changes
 
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.slideshow.02.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.slideshow.02.png?raw=true)
 
 The parameters may be saved by the buttons in the menu bar (1) or below the parameter area. (3)<br>
 The file area may be saved by the buttons in the menu bar (2) or below the parameter area. (4)
@@ -1797,7 +1797,7 @@ Use on site gallery display page
 
 #### Search on site gallery view
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/site.gallery.search.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.gallery.search.png?raw=true)
 
 * (1) Search input
 
@@ -1805,7 +1805,7 @@ Use on site gallery display page
 
 ##### Search results for search text "2015"
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/site.gallery.searchResults.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.gallery.searchResults.png?raw=true)
 
 The search results display the found texts highlighted.
 If the text is found in the description the complete description is shown beside the thumbnail.
@@ -1994,7 +1994,7 @@ We can't avoid that every image that is shown in the browser the user can downlo
 ### Solution "Popup style to none":
 
 Configuration -> Tab "display" -> section "Image display"
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.display.imageDisplay.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true)
 
 * (2) Popup style
   Defines the method ("No popup", "Normal popup", "Joomla Modal") used for displaying a popup (big image) after a click of the image in single image display.
@@ -2014,7 +2014,7 @@ Configuration -> Tab "display" -> section "Image display"
 ### Solution "Automatic remove the original size image file":
 
 Configuration -> Tab "Image" -> section "Image Storage"
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.image.storage.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.storage.png?raw=true)
 
 * (1) Keep original image Yes / No
 
@@ -2049,14 +2049,14 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
 1. Hide (delete) original after upload
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.storage.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true)
 
  In configuration->images->section "Image storage"
  * (1) activate the "no" selection
 
 2. Check "display" resolution
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.image.manipulation.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true)
 
  In configuration->images->section "Image manipulation"
  * (1) Display picture width defines the maximum size of the displayed image.
@@ -2064,7 +2064,7 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
 3. Check watermark settings
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/watermark.config.display.watermark.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true)
 
  In configuration->display->section "Image watermark"
  * (1) Display watermark

@@ -1,14 +1,14 @@
 # Image List View
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
 
 Missing ...: To be continued
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.listView.03.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
 
 
 
@@ -17,7 +17,7 @@ Missing ...: To be continued
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.ListView.batch.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.ListView.batch.png?raw=true)
 
 (1) Select Gallery
 
@@ -37,7 +37,7 @@ Batch processing: The selected images can be copied to the selected gallery
 
 ## Properties uploaded Files
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
 This form enables to set the properties title and description for a batch of images at the same time.  
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form

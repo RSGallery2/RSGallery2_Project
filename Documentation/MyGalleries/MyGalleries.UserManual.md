@@ -4,7 +4,7 @@ My galleries function does enable logged in users to create their own galleries 
 
 ## User view of My Galleries
 
-![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true)
+![Link to "My Galleries" ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.FirstLink.png?raw=true)
 
 (1) Select menu where galleries are displayed in web site
 
@@ -16,7 +16,7 @@ The system needs you to be logged in. Otherwise the "My Gallery" rights can't be
 (3) Click on "My Gallery" link
 This will lead you to the "My Gallery" page where your galleries can be created, images uploaded and edited. This view enables to just see the "owned" galleries and images
 
-![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true)
+![First My Galleries user view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.FirstUserView.png?raw=true)
 
 (1) Create gallery tab
 
@@ -26,7 +26,7 @@ If this tab does not appear the user has not enough rights
 
 #### Create a gallery
 
-![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.png?raw=true)
+![My Gallery: create gallery ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.CreateGallery.png?raw=true)
 
 On the My Galleries page click the Create Gallery tab. This tab only shows when the user that is logged in has Create permission.
 
@@ -46,14 +46,14 @@ Click the red round button with a white cross inside to clear all fields.
 
 Saving the gallery details returns you to this page and this tab, but with the extra gallery created (note: this gallery is unpublished by default). Unless of course the user already is at its maximum allowed galleries, then the gallery will not be created.
 
-![My Gallery: create gallery done ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.Done.png?raw=true)
+![My Gallery: create gallery done ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.CreateGallery.Done.png?raw=true)
 View after first gallery is created
 
 Attention "Add image" is now available
 
 #### Galleries overview
 
-![My Gallery: Galleries overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Gallery.Overview.png?raw=true)
+![My Gallery: Galleries overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Gallery.Overview.png?raw=true)
 
 (1) Gallery name
 clicking on the name will lead to the editing page of the gallery
@@ -79,7 +79,7 @@ Doing this shows a new window with the gallery details
 
 #### Image Upload
 
-![My Gallery: Image upload ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.ImageUpload.png?raw=true)
+![My Gallery: Image upload ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.ImageUpload.png?raw=true)
 On the My Galleries page click the Add Image tab. This tab only shows when the user that is logged in has "Create permission" for one or more galleries.
 
 (1) Select parent gallery
@@ -111,7 +111,7 @@ Saving the item returns you to this page and this tab, but with the extra image(
 Note: the newly uploaded image will be unpublished by default). Unless of course the user already is at its maximum allowed item, then the items will not be created.
 
 #### Images overview
-![My Gallery: Images overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Image.Overview.png?raw=true)
+![My Gallery: Images overview ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Image.Overview.png?raw=true)
 
 (1) Check box for selecting multiple images for batch assignment
 
@@ -151,7 +151,7 @@ The selected images can be changed in one go
 
 #### Edit image
 
-![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Image.Edit.png?raw=true)
+![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Image.Edit.png?raw=true)
 The properties to be changed are the same like when uploading the image
 
 (1) The uploaded image is displayed in "edit" view
@@ -168,7 +168,7 @@ Both save and cancel will take you back to the My Galleries page.
 
 #### Edit gallery
 
-![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.Gallery.Edit.png?raw=true)
+![My Gallery: Edit image ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.Gallery.Edit.png?raw=true)
 The properties to be changed are the same like when creating the gallery
 
 (1) Click on disk button to save the changes
@@ -182,13 +182,13 @@ You can cancel your changes by clicking the red round icon with the with the cro
 Both save and cancel will take you back to the My Galleries page.
 
 #### My Gallery user information
-![My Gallery: user information ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.User.Information.png?raw=true)
+![My Gallery: user information ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.User.Information.png?raw=true)
 
 At the top of the page "My Gallery" there is a box with User information: The name of the user who is currently logged in, the number of galleries this user has already created and its allowed maximum (setting Maximum number of galleries a user can have) and the number of items for which the user is the owner and its allowed maximum (setting maximal numbers of pictures a user can have).
 
 #### My Gallery appearing on main view
 
-![My Gallery: external standard view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.External.view.png?raw=true)
+![My Gallery: external standard view ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.External.view.png?raw=true)
 
   If the gallery and at least one image is "published" the it appears on the main page below the "My galleries" link and "Search box"
 

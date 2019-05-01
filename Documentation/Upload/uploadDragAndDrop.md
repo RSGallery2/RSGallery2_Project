@@ -5,7 +5,7 @@ This document describes the changed use created for drag and drop upload of Imag
 ## Upload files using drag and drop
 
 The first tab of the new download form looks like following Image. It shows the new drag and drop download area with tab set to drag and drop.
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.01.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.DragAndDrop.01.png?raw=true)
 
 ### Upload files using drag and drop: Page fresh opened
 
@@ -46,7 +46,7 @@ Example: Sometimes the bytes are transferred as pure ASCII: So 7 bits are used a
 
 ### Upload files using drag and drop: View after some uploads
 
-![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.DragAndDrop.02.png?raw=true)
+![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.DragAndDrop.02.png?raw=true)
 
 (1) Drag and drop area (filled)
 After a gallery is selected the dotted border is green. Dropped images do appear in this area after the transfer process is completed.
@@ -67,7 +67,7 @@ Info: On creation of the image data on the server side the title is preset from 
 
 ## Properties uploaded Files
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/Upload.ImageProperties.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
 This form enables to set the properties title and description for a batch of images at the same time.  
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
@@ -120,7 +120,7 @@ This can be used to delete selected images.
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/images.batch.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.batch.png?raw=true)
 
 (1) Add properties
 

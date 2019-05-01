@@ -19,11 +19,11 @@ The slideshow code files reside in path on the server:
 ### Path to edit configuration form
 Goto maintenance -> Use button (1) Slideshow configuration
 
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.zone.RSGallery2.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.RSGallery2.png?raw=true)
 
 ### Slideshow edit configuration form
 
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.slideshow.01.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.slideshow.01.png?raw=true)
 
  (1) Select the slideshow to edit
 
@@ -39,7 +39,7 @@ The values in params.ini file set the actual used values and overwrite the defau
 
 #### Save changes
 
-![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/maintenance.slideshow.02.png?raw=true)
+![zone.RSGallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.slideshow.02.png?raw=true)
 
 The parameters may be saved by the buttons in the menu bar (1) or below the parameter area. (3)<br>
 The file area may be saved by the buttons in the menu bar (2) or below the parameter area. (4)

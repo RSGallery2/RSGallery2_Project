@@ -1,7 +1,7 @@
 
 ## Control Panel
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.complete.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.complete.png?raw=true)
 
 (1) Function buttons
 
@@ -24,7 +24,7 @@ More below
 
 ### Function buttons
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.baseButtons.numbers.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.baseButtons.numbers.png?raw=true)
 
 (1) Configuration
 
@@ -46,4 +46,4 @@ For maintenance exist a "Repair Zone" where content can be checked for consisten
 
 Area where all the contributors to RSGallery2 are listed. See parts in image below.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/controlPanel.credits.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.credits.png?raw=true)
