@@ -1,0 +1,7 @@
+
+use token in URL for JSession::checkToken( 'get' ) or die( 'Invalid Token' );
+
+<?php 
+echo JRoute::_( 'index.php?option=com_example&controller=object1&task=save&'. JSession::getFormToken() .'=1' ); 
+?>
+
