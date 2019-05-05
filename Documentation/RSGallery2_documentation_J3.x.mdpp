@@ -1,24 +1,21 @@
 
 # RSGallery2 Documentation
 
-Version 2019.01.27
+## <center>RSGallery2 Team</center>
 
-This is just a collection of all written documentation<br>
-for RSGallery2 web page. We are sorry for the ugly style. <br>
-We hope that at least you have it all in one document <br>
-and you don't have to scan through all online documents <br>
-to find what you need.<br>
+<center>Version 2019.05.05</center><br>
 
-Sorry also for the fact that some bits and pieces are <br>
-missing or on opposite that there are some not cleaned <br>
-up parts to be found.<br>
+This is just a collection of all written documentation for the RSGallery2 web page. We are sorry for the ugly style. It results from the limitation of writing in fast "Markdown syntax".
+We hope that at least you have all needed information in one document and you don't have to scan through all online documents
+to find what you need.
 
-This is a work in progress and sometimes we have to decide<br>
-to not publish or publish being incomplete and ugly<br>
-We are more likely to publish than to be styled and polished
+This is a work in progress and will be updated regularly.
+Sadly some bits and pieces are missing.
 
-On the other side we are grateful for every hand which <br>
-improves this documentation. Join us
+With each new development we try to update the documentation of this part more or less immediately.
+There are many places where we can continue our work and sometimes we have to decide, develop or document.
+
+Here we are more likely to publish than to be stylish and polished.
 
 !INCLUDE "RSGallery2.DocWebIndex.md"
 

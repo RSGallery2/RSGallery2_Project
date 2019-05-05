@@ -1,24 +1,21 @@
 
 # RSGallery2 Documentation
 
-Version 2019.01.27
+## <center>RSGallery2 Team</center>
 
-This is just a collection of all written documentation<br>
-for RSGallery2 web page. We are sorry for the ugly style. <br>
-We hope that at least you have it all in one document <br>
-and you don't have to scan through all online documents <br>
-to find what you need.<br>
+<center>Version 2019.05.05</center><br>
 
-Sorry also for the fact that some bits and pieces are <br>
-missing or on opposite that there are some not cleaned <br>
-up parts to be found.<br>
+This is just a collection of all written documentation for the RSGallery2 web page. We are sorry for the ugly style. It results from the limitation of writing in fast "Markdown syntax".
+We hope that at least you have all needed information in one document and you don't have to scan through all online documents
+to find what you need.
 
-This is a work in progress and sometimes we have to decide<br>
-to not publish or publish being incomplete and ugly<br>
-We are more likely to publish than to be styled and polished
+This is a work in progress and will be updated regularly.
+Sadly some bits and pieces are missing.
 
-On the other side we are grateful for every hand which <br>
-improves this documentation. Join us
+With each new development we try to update the documentation of this part more or less immediately.
+There are many places where we can continue our work and sometimes we have to decide, develop or document.
+
+Here we are more likely to publish than to be stylish and polished.
 
 ## Table of Contents
 
@@ -274,8 +271,8 @@ First select an existing gallery This will enable drag and drop ands display the
 
 (2) Drag and drop area
 
-The drag and drop area is marked with a red or green dotted border. The color changes to green when a gallery is selected. An error message appears when a image is dropped while the border is red.
-When images are dropped then they are transferred to the server and assigned to the gallery. The display-, thumb- and watermarked images are created and on success the image is displayed in the drag and drop area.
+The drag and drop area is marked with a red or green dotted border. The color changes to green when a gallery is selected. An error message appears when a image is dropped while the border is red.  
+When images are dropped then they are transferred to the server and assigned to the gallery. The display-, thumb- and watermarked images are created and on success the image is displayed in the drag and drop area.  
 Ass soon as the image is displayed it is secure to assume that the image is stored in the database and assigned to the gallery
 
 (3) Select files
@@ -292,7 +289,7 @@ More below on description of the "Properties uploaded images" view
 Tip:  This functionality can also be reached from the image list view. Select the images to be handled and use button batch and the select "Images Properties" button
 
 (5) Upload single images (Legacy)
-This button leads to the old "legacy" version of single image upload.
+This button leads to the old "legacy" version of single image upload.  
 When the drag and drop function has enough experience and no user complains then drag and drop is faster and this function will be removed
 
 (6) Upload file size
@@ -320,7 +317,7 @@ On the bottom is shown the setting of some php variables from the system (from p
  A click on button "Add image properties" will lead to a page where properties can be assigned to all shown images at once  (batch). The title and the description properties can be edited there.
  This is similar to the second page on upload in previous rsgallery2 versions.
 
- It is not necessary to use this view when no title or description editing needed.
+ It is not necessary to use this view when no title or description editing needed.  
 
  Info: On creation of the image data on the server side the title is preset from the image name automatically.
 
@@ -345,7 +342,7 @@ See section "Properties uploaded Files" view below ToDo: Link
 
 (4) Upload Zip file (legacy)
 
-This button leads to the old "legacy" version of zip file upload.
+This button leads to the old "legacy" version of zip file upload.  
 When the new function has enough experience and no user complains then this function will be removed.
 
 ## Upload from folder (server)
@@ -373,14 +370,14 @@ See form "Images batch upload" view below  ToDo: link
 
 (4) Upload Zip file (legacy)
 
-This button leads to the old "legacy" version of zip file upload.
+This button leads to the old "legacy" version of zip file upload.  
 When the new function has enough experience and no user complains then this function will be removed.
 
 ## Properties uploaded Files
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
-This form enables to set the properties title and description for a batch of images at the same time.
+This form enables to set the properties title and description for a batch of images at the same time.  
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
 (1) Title
@@ -393,7 +390,7 @@ The gallery name can't be changed in this part
 
 (3) Description
 
-The description may be changed with the standard editor like in the edit single image form.
+The description may be changed with the standard editor like in the edit single image form.  
 Sadly this leads to a very high edit block which creates a ugly layout.
 
 (4) Save
@@ -427,7 +424,7 @@ Rotates selected images 180 degrees.
 
 (11) Flip horizontal
 
-Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom
+Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom  
 
 (12) Flip vertical
 
@@ -644,7 +641,7 @@ ToDo:
   <BR>
   <BR>
 
-* (2) Sections in Tab
+* (2) Sections in Tab  
   Each Tab contains sections. A click on a section will open or hide the settings within while the other sections stay open or hidden
 ---
 ## General
@@ -745,7 +742,7 @@ ToDo:
 * (1) Graphics Library
 
   Old: <br>
-    Three graphics libraries, GD2, ImageMagick (and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images
+    Three graphics libraries, GD2, ImageMagick (and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images   
 
   Actually only GD2 is used until further notice
 
@@ -902,11 +899,11 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
   ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Config.display.galleryStatus.png?raw=true)
 
-     The icons will indicate
+     The icons will indicate     
      * (O) User is the owner of the gallery
      * (U) User can upload in this gallery
      * (H) The gallery is hidden and not Published
-     <br><br>
+     <br><br>     
 
 * (7) Display gallery limitbox
 
@@ -917,7 +914,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
   * Always
   * If more galleries than limit
   * Never
-  <br><br>
+  <br><br>     
 
   on "If more galleries than limit" this selection box will only appear when there are more galleries to be displayed but limited by parameter "Default number of galleries on frontpage". See below
 
@@ -936,7 +933,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
   * slideshow_parth
   * slideshow_pathfusion
   * slideshowone
-  <br><br>
+  <br><br>     
 
   Sadly slideshow_pathfusion is not working actually and slideshowone is not that interesting (2018.07.26). <br>
   The RSGallery team is working on boostrap and other slide shows in the near future
@@ -1070,34 +1067,34 @@ It displays image thumbs with information about the imaged
 
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.watermark.image.png?raw=true)
 
- If you consider using watermarked files see also description "How to hide the original image from the user"
+ If you consider using watermarked files see also description "How to hide the original image from the user"  
 
-* (1) Display watermark
+* (1) Display watermark  
 
-   Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.
+   Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.  
    A watermarked replacement file will be created once when uploading or when viewed the first time.
-   The watermarking will be a text defined in the configuration.
+   The watermarking will be a text defined in the configuration.   
    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
 * (2) Watermark Type
 
   The watermark may be merged from "text" or from an "image" into the display image
 
-* (3) Font
+* (3) Font  
 
-  Select the font type of the watermark text
+  Select the font type of the watermark text  
 
-* (4) Watermark text
+* (4) Watermark text  
 
-    Define the text to be displayed in the image
+    Define the text to be displayed in the image  
 
-* (5) Watermark font size
+* (5) Watermark font size  
 
-    Select the font size of the watermark text
+    Select the font size of the watermark text  
 
-* (6) Watermark text angle
+* (6) Watermark text angle  
 
-    Define the angle of the watermark text
+    Define the angle of the watermark text  
 
 * (7) Watermark image
 
@@ -1107,9 +1104,9 @@ It displays image thumbs with information about the imaged
 
   Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
 
-* (9) Watermark position
+* (9) Watermark position  
 
-  Select the position of the watermark text
+  Select the position of the watermark text  
 
 * (10) Margin from top
 
@@ -1127,15 +1124,15 @@ It displays image thumbs with information about the imaged
 
   -> Not used
 
-* (14) Watermark transparency
+* (14) Watermark transparency  
 
     Define transparency of the text to be displayed in the image.
     A higher value makes the watermark more transparent.
     Transparency of 100% makes the watermark invisible
 
-* (15) Watermark image path
+* (15) Watermark image path  
 
-    Define the destination path of the created watermarked files
+    Define the destination path of the created watermarked files  
 
 ---
 ## My Galleries
@@ -1232,7 +1229,7 @@ This may be done already as it is as simple as assigning the standard view to a 
 
 # User manual My Galleries
 
-My galleries function does enable logged in users to create their own galleries and upload and show their images
+My galleries function does enable logged in users to create their own galleries and upload and show their images 
 
 ## User view of My Galleries
 
@@ -1430,7 +1427,7 @@ At the top of the page "My Gallery" there is a box with User information: The na
   * (O) User is the owner of the gallery
   * (U) User can upload in this gallery
   * (H) The gallery is hidden and not Published
-  <br><br>
+  <br><br>     
 
   If the mygallery user hovers over the buttons a explaining text will appear as tool tip
 
@@ -1764,7 +1761,7 @@ Two files living within the slideshow code define the parameters and their value
 
 * templateDetails.xml
 
-   Existing parameter and their default value are defined in section param.<br>
+   Existing parameter and their default value are defined in section param.<br>  
 
 * params.ini
 
@@ -1855,7 +1852,7 @@ Configuration -> Tab "display" -> section "Image display"
 
 ### Solution "Automatic remove the original size image file":
 
-Configuration -> Tab "Image" -> section "Image Storage"
+Configuration -> Tab "Image" -> section "Image Storage"     
 ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.storage.png?raw=true)
 
 * (1) Keep original image Yes / No
@@ -1874,7 +1871,7 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
    2) **Watermark**
    A watermarked replacement file will be created once when uploading or when viewed the first time.
-   The watermarking will be a text defined in the configuration.
+   The watermarking will be a text defined in the configuration.  
    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
 
    3) **Disguise** watermarked file names
@@ -1885,7 +1882,7 @@ Configuration -> Tab "Image" -> section "Image Storage"
    * The small sized "display" files have no watermark
    * The "display" files can be found with guessing and a knowledge of the RSGallery2 / Joomla structure
    * If you switch on watermarking after uploading the images then the watermarking tries to use the original image. If it doesn't exist then it uses the "display" files with lower resolution.
-
+   
 
 #### Setup watermarked configuration:
 
@@ -1893,52 +1890,52 @@ Configuration -> Tab "Image" -> section "Image Storage"
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true)
 
- In configuration->images->section "Image storage"
- * (1) activate the "no" selection
+ In configuration->images->section "Image storage"  
+ * (1) activate the "no" selection  
 
 2. Check "display" resolution
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true)
 
- In configuration->images->section "Image manipulation"
- * (1) Display picture width defines the maximum size of the displayed image.
+ In configuration->images->section "Image manipulation"  
+ * (1) Display picture width defines the maximum size of the displayed image.  
  * (2) You can reduce the quality of the displayed image to your needs
 
 3. Check watermark settings
 
  ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true)
 
- In configuration->display->section "Image watermark"
- * (1) Display watermark
-    Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.
+ In configuration->display->section "Image watermark"  
+ * (1) Display watermark  
+    Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.  
     A watermarked replacement file will be created once when uploading or when viewed the first time.
-    The watermarking will be a text defined in the configuration.
+    The watermarking will be a text defined in the configuration.   
     Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
-  * (2) Watermark type
+  * (2) Watermark type  
       A text or an image can be merged into the original image as a watermark
-  * (3) Watermark text
-      Define the text to be displayed in the image
- * (4) Font
-     Select the font type of the watermark text
- * (5) Watermark font size
-     Select the font size of the watermark text
- * (6) Watermark text angle
-     Define the angle of the watermark text
- * (7) Watermark image
+  * (3) Watermark text  
+      Define the text to be displayed in the image  
+ * (4) Font  
+     Select the font type of the watermark text  
+ * (5) Watermark font size  
+     Select the font size of the watermark text  
+ * (6) Watermark text angle   
+     Define the angle of the watermark text  
+ * (7) Watermark image  
       Will be merged into the big display image. Watermark image should be smaller then display image"
- * (8) Scale watermark image
+ * (8) Scale watermark image   
      Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
- * (9) Watermark position
+ * (9) Watermark position  
      Select the position of the watermark text.
- * (10) Margin from top
- * (11) Margin from right
- * (12) Margin from bottom
- * (13) Margin from left
+ * (10) Margin from top  
+ * (11) Margin from right  
+ * (12) Margin from bottom  
+ * (13) Margin from left  
      Margin from the border of the original image. Watermark is placed with distance to the border, if it is not centrally located
- * (14) Watermark transparency
-     Define transparency of the text to be displayed in the image
- * (15) Watermark image path
-     Define the destination path of the created watermarked files
+ * (14) Watermark transparency  
+     Define transparency of the text to be displayed in the image  
+ * (15) Watermark image path  
+     Define the destination path of the created watermarked files  
 
 
 # Uninstall
