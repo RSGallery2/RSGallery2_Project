@@ -34,6 +34,8 @@ improves this documentation. Join us
 !INCLUDE "Upload\upload.md"
 
 !INCLUDE "???Site here ???"
+!INCLUDE "User.GalleryViews\OrderUserViewsRootToImageModal.md"
+
 
 !INCLUDE "GalleryDoc\GalleriesListView.md"
 !INCLUDE "???Edit gallery???"

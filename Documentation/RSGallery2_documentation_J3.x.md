@@ -3,25 +3,24 @@
 
 Version 2019.01.27
 
-This is just a collection of all written documentation
-for RSGallery2 web page. We are sorry for the ugly style.
-We hope that at least you have it all in one document
-and you don't have to scan through all online documents
-to find what you need.
+This is just a collection of all written documentation<br>
+for RSGallery2 web page. We are sorry for the ugly style. <br>
+We hope that at least you have it all in one document <br>
+and you don't have to scan through all online documents <br>
+to find what you need.<br>
 
-Sorry also for the fact that some bits and pieces are
-missing or on opposite that there are some not cleaned
-up parts to be found.
+Sorry also for the fact that some bits and pieces are <br>
+missing or on opposite that there are some not cleaned <br>
+up parts to be found.<br>
 
-This is a work in progress and sometimes we have to decide
-to not publish or publish being incomplete and ugly
+This is a work in progress and sometimes we have to decide<br>
+to not publish or publish being incomplete and ugly<br>
 We are more likely to publish than to be styled and polished
 
-On the other side we are grateful for every hand which
+On the other side we are grateful for every hand which <br>
 improves this documentation. Join us
 
 ## Table of Contents
-
 
 1. **[Get started](http://www.rsgallery2.org/index.php/documentation/get-started-documentation/ "GetStarted")**<br>
    1. [Installation](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=31&catid=13 "GetStarted -> 01.Installation")<br>
@@ -70,7 +69,7 @@ RSGallery2 is installed like all other Joomla! extensions. Log in to the Adminis
 (1) Select "upload package file" tab<br>
 (2) Drag and drop the downloaded zip file into the drop area
 
-On successful upload you will get a message similar to
+On successful upload you will get a message similar to following image
 
 ![RSGalllery2 component updated](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Joomla.Extensions.IsInstalled.png?raw=true)
 
@@ -496,114 +495,137 @@ The images are kept in following folders in .../Joomla/images/rsgallery/__sub_fo
  * thumbs: Thumbs of images (size and form from configuration)
  * watermarked: When watermark is active then images which were shown to the user get a watermark and are saved here for fast access
 
+# Order of user views from root galleries to image in modal view
 
-# Galleries List View
+The following section tells in general about the order of galleries and images and describes the click path through the views for the user from "Root" galleries to a single image in modal view
 
-#toDo: fill out Galleries List View ...
+## Overview of user views
+1. Root galleries<br>
+   Lists the first "parent" galleries
+2. Sub galleries<br>
+   A gallery may contain "Sub" galleries
+3. Single gallery view<br>
+   Thumb images in rows and colums
+4. Single image slide list<br>
+   View containing a centered single image with buttons for next/ previous images
+5. Modal image lightbox<br>
+   Image appears in nearly full size on the screen
 
-# Image List View
+### Click through behaviour
+* A click on a "Root" gallery will lead to a single gallery view (or to a root gallery view of the sub galleries)
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
+* A click on thumb image in a gallery will lead to the view of "Single image slide list"
+
+* A click on the image in the "Single image slide list" will lead to the
+
+* Whenever a link with slideshow is shown it will lead to the slideshow of the gallery
+
+# Example with "semantic" template
+
+To be continued ....
+
+## Root galleries
+
+Topmost view defined in menu definition<br>
+Lists the first "parent" galleries<br>
+May contain block view of "Random" and "Latest" images<br>
+
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.start.rootgalleries.png?raw=true)
+
+(1) N "blocks" of root Galleries
+
+* In the configuration the number and the items of descriptions may be selected or disabled
+
+(2) Pagination: Jump to other page
+
+(3) Local selection of more 'root' galleris displayed on the start form
+
+(4) Images/galleries may be searched by the user
 
 
-Missing ...: To be continued
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.start.randomLatestImages.png?raw=true)
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
+(1) Random images: <br>
+(2) Latest images:
+* Thes "blocks" can be switches off in the configuration. also the amount of images shown can be set there
+
+### Menu selection for root galleries
+
+ToDo: Show image from menu
+
+In the menu definition the 'root' gallery view is selected when no start gallery is selected.
+
+## Sub galleries
+A gallery may contain "Sub" galleries. This can be used to order galleries as each sub gallery may contain further "Sub" gallleries. Every sub gallery has a parent gallery.
+
+## Single gallery view
+Thumb images in rows and colums
+
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.gallerySingle.png?raw=true)
+
+### Menu selection for single galleries
+
+ToDo: Show image from menu
+
+In the menu definition the 'single' gallery view is selected when a start gallery is selected.
+
+The view may be created by menu or with a plugin into an article
+
+## Single image slide list
+
+View containing a centered single image with buttons for next/ previous images
+
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.image.singleImage.withDescription.png?raw=true)
+
+#### Description
+
+The description is saved when the image is edited or after the upload. The edit of 'image properties' can be done on a batch of images at once
+
+#### Voting
+
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.image.singleImage.onlyVoting.png?raw=true)
+
+Image voting can be activated in the configuration. the rating can be apllied by clicking of one of the stars
+
+#### Commenting
+
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.image.singleImage.onlyComments.png?raw=true)
+
+(1) Fill out new comment
+
+(2) Jump to edit part. Useful for long comment lists
+
+(3) User name
+
+(4) Title
+
+(5) Comment
+
+#### Exif data
+
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.image.singleImage.onlyExif.png?raw=true)
+
+Displaying Exif data can be activated in the configuration. Also the displayed properties may be selected there
+
+### Reaching this view
+
+The view may be reached by menu throug a gallery or with a plugin into an article
 
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
+## Modal image
+
+Lightbox view: Image appears in nearly full size on the screen
+
+## Slideshow links
+
+Whenever a link with slideshow is shown it will lead to the slideshow of the gallery
+
+
+ToDo:
+... link to slideshow description
 
 
 
-
-## Images: Batch process to add properties
-
-In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
-
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.ListView.batch.png?raw=true)
-
-(1) Select Gallery
-
-Select a gallery as destination for copy or move of selected images
-
-(2) Add properties
-
-This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
-
-(3) Move to
-
-Batch processing: The selected images can be moved to the selected gallery
-
-(4) Copy to
-
-Batch processing: The selected images can be copied to the selected gallery
-
-## Properties uploaded Files
-
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
-
-This form enables to set the properties title and description for a batch of images at the same time.
-It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
-
-(1) Title
-
-The title is preset on creation. It may be edited here. The title may be different to the uploaded image name when the name already existed. Then the next free number is appended.
-
-(2) Gallery
-
-The gallery name can't be changed in this part
-
-(3) Description
-
-The description may be changed with the standard editor like in the edit single image form.
-Sadly this leads to a very high edit block which creates a ugly layout.
-
-(4) Save
-
-Save changes and continue edit on the same images
-
-(5) Save & Close
-
-Save changes and leave the form to the image list
-
-(6) Cancel
-
-Ignore the changes and leave the form
-
-(7) Delete
-
-All or some image can be selected for deleting. (See (8) and (9))
-Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files
-
-(8) Rotate left
-
-Rotates selected images 90 degrees against the clock
-
-(9) Rotate right
-
-Rotates selected images 90 degrees with the clock
-
-(10) Rotate 180
-
-Rotates selected images 180 degrees.
-
-(11) Flip horizontal
-
-Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom
-
-(12) Flip vertical
-
-Flips the selected images vertical. The bits move from bottom to top. The left/right side of the image keeps being the left/right side
-
-(13) Select all
-
-All images will get a set hook in the box below the image (See also (14))
-This can be used to delete, rotate or flip selected images.
-
-(14) Select image
-
-The image will get a set hook in the box below the image
-This can be used to delete, rotate or flip  selected images.
 
 
 ## -> In processing, parts present (2017.12.08)
@@ -1634,11 +1656,11 @@ In (1) appears the list of files with "missing parts".
 
 (2) Area with filename and check box to select images for further actions -> (7)
 
- (3) Area with state of image. On green the item exists an red it is missing
+(3) Area with state of image. On green the item exists an red it is missing
 
- (4) Direct action buttons. On click the task is performed on the file of the rows
+(4) Direct action buttons. On click the task is performed on the file of the rows
 
- (5) The parent gallery of the file in the row is listed and one of the matching images is displayed
+(5) The parent gallery of the file in the row is listed and one of the matching images is displayed
 
 #### Area with state of image.
  ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
@@ -1791,186 +1813,6 @@ Delete the content of the file params.ini in the below section and save it  (but
 !INCLUDE ""
 
 !INCLUDE ""
-
-Use on site gallery display page
-
-
-#### Search on site gallery view
-
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.gallery.search.png?raw=true)
-
-* (1) Search input
-
-  On top of the galleries is displayed a search box. The user may search for images where the name or the description matches the search text. With enter the search is issued
-
-##### Search results for search text "2015"
-
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/site.gallery.searchResults.png?raw=true)
-
-The search results display the found texts highlighted.
-If the text is found in the description the complete description is shown beside the thumbnail.
-It shows the thumbnail, image name, the gallery name and the owner of the image
-[http://www.forum.rsgallery2.org/index.php?topic=16758.msg43609#msg43609]
-# How to create your own template or modify the Semantic template?
-
-Users often modify the default RSG2 Semantic template. But when RSGallery2 is upgraded, these changes will be lost as an upgrade writes over the files in the RSG2 template Semantic directory.
-
-By creating your own RSG2 template, in its own directory, your changes won't be lost in an upgrade (but of course you have your backup always ready when something does go wrong).
-
-**Notes**
-- These steps are for version 3.0.1, but the idea is the same for version 2.x.
-- Assumption: you know (just) enough PHP, HTML and CSS to understand what is happening in the files mentioned, or are willing to learn this yourself (e.g. with http://docs.joomla.org/ or http://www.php.net/ or by finding answers with your favorite search engine).
-- This is not about creating a template from scratch, but about creating a template from a copy of the Semantic template. With enough PHP/HTML knowlegde, and with the current templates as examples, you should be able to create your own templates from scratch though.
-
-### Basic Information
-
-You can see the available RSGallery2 templates here: Backend > Components > RSGallery2 > Control Panel > Template Manager > Manage.
-Note: Unfortunately, the "install" option does not work (yet) in version 3.x.
-
-In a default installation there is a debug template (not interesting to regular users), the default template Semantic and three template which names start with "Slideshow". These last three are no 'full templates', they are the slideshows that can be choosen to display with slideshow link.
-
-### Creating your own template from the Semantic template
-Let's create a template called MyOwnTemplate starting from the Semantic template.
-
-1) Start by copying the directory /JOOMLAROOT/components/com_rsgallery2/templates/semantic/ to /JOOMLAROOT/components/com_rsgallery2/templates/myowntemplate/ (lowercase letters). Now refresh the list of templates and you'll see two Semantic templates. So we'll have to change the details...
-
-2) Use your favorite editor to find all occurrances of the test "semantic" in all files in the directory /JOOMLAROOT/components/com_rsgallery2/templates/myowntemplate/. My favorite editor is Notepad++ (http://notepad-plus-plus.org/) that allows me to find text in a given directory (Find in Files tab when you press CTRL-F). This give us four files (in this directory)
-
-a) changelog.txt
-
-   Change this file any way you want for your template, it's supposed to be a changelog.
-
-b) display.class.php
-
-   Now here we have to change line 15 where it says
-
-```php
-class rsgDisplay_semantic extends rsgDisplay{
-```
-to Code:
-```php
-class rsgDisplay_myowntemplate extends rsgDisplay{
-(and of course you use your name (lowercase) instead of 'myowntemplate').
-```
-
-c) index.php
-
-Two things to change here:
-line 21
-```php
-$templatePath = JPATH_RSGALLERY2_SITE . DS . 'templates' . DS . 'semantic';
-```
-changes into
-```php
-$templatePath = JPATH_RSGALLERY2_SITE . DS . 'templates' . DS . 'myowntemplate';
-```
-and line 24
-```php
-$rsgDisplay = new rsgDisplay_semantic();
-```
-to
-```php
-$rsgDisplay = new rsgDisplay_myowntemplate();
-```
-
-d) templateDetails.xml
-The details you find in the Template Manager list are in this file. So change (at least)
-
-Code: [Select]
-```php
-<name>Semantic</name>
-```
-to
-
-```php
-Code: [Select]
-```
-<name>MyOwnTemplate</name>
-and you can change several other fields as well. In this file you'll also see a list of all files/directories used in this template, and you can see a 'testParameter' that has once been used as an example.
-
-Now refresh your template list and see the changes you made. The changes in step d are reflected here, the other changes are neccessary to let the template function properly.
-
-The testParameter can be found when you select the template and click Edit: it shows an unused "Color Variation".
-
-### Change CSS styling
-Now, just to show you an example, find in your new template directory the file /css/template.css and add a line "background-color: #f0f0f0;" to "table#rsg2-thumbsList td". Make sure that your new template is the default in the template manager and refresh your frontend RSGallery2 list view of thumbnail images (e.g. click your RSG2 menulink, click a gallery) and you'll see your #f0f0f0 (grey) background.
-
-### Changes in the PHP code...
-Please install JDump (http://extensions.joomla.org/extensions/miscellaneous/development/1509) and we'll do some testing first (see "Note about J!Dump" at the bottom of this post).
-Find the file /html/thumbs_table.php in your new template directory (this file is used when this backend setting is set in the RSG2 Configuration > tab: Display > slider: Gallery View > Thumbnail Style = Table).
-With e.g. Firebug (Firefox addon: http://getfirebug.com/) we can 'inspect elements' on webpages.
-
-On the page where the thumbnails for a gallery are shown in a table (which has by default 3 columns), we can see that the table starts with this HTML code:
-
-Code: [Select]
-```php
-<table id="rsg2-thumbsList" border="0">
-```
-
-This line is found at the top of the thumbs_table.php file at line 16. Now let's do some testing with JDump.
-
-Line 15 is an empty line, let's put this line there:
-
-Code: [Select]
-```php
-TEST<?php dump($this);?><?php echo $this->gallery->id;?>
-```
-
-This way we get the text 'TEST', with the gallery id number and a JDump popup window where we can inspect $this (I am assuming that you read the JDump documentation and know how it works and that the rest of the line is clear to you as well because of some background in PHP and HTML.) I always like to check if I'm making changes in the correct file at the right place, and this is a way to do that. JDump allows me to find out what information/variables are available 'anywhere'.
-
-Right now I'd like a link to the slideshow for this gallery here. That is why $this->gallery->id is already on the line... With Firebug I can tell that on the webpage that shows all galleries with the info there is a div element with class rsg2_details used for the CSS. With Notepad++ the text 'rsg2_details' can be found in two files in the directory for our template, one of which is a css file (...\myowntemplate\css\template.css, the directory myowntemplate was a copy of semantic) and the other a php file (...\myowntemplate\display.class.php). In the latter you can see how the slideshow link is created:
-
-Code: [Select]
-```php
-			if ($slideshow) {
-				?>
-				<a href='<?php echo JRoute::_("index.php?
-
-option=com_rsgallery2&page=slideshow&gid=".$kid->get('id')); ?>'>
-				<?php echo JText::_('COM_RSGALLERY2_SLIDESHOW'); ?></a><br />
-				<?php
-			}
-```
-
-E.g., if the user indicates in the Control Panel that he wants to show the slideshow a link is created, with the proper translatable text. Only here the variable is $kid->get('id'), the gallery id number, but we don't have $kid in our thumbs_table.php file "environment", there we have to use $this->gallery->id. So lets remove our newly added line 15 in thumbs_table.php and copy this piece of code there:
-
-Code: [Select]
-```php
-				<a href='<?php echo JRoute::_("index.php?
-
-option=com_rsgallery2&page=slideshow&gid=".$this->gallery->id); ?>'>
-				<?php echo JText::_('COM_RSGALLERY2_SLIDESHOW'); ?></a><br />
-				<?php
-```
-
-
-Note that the if statement is removed (excercise for the user if you want to use that statement: the value for $slideshow is retrieved from the configuration in the function _showGalleryDetails).
-Now on the page with thumbnails, you'll see a Slideshow link (in your language).
-
-### Final words
-I hope this will show you how to preserve your changes to a template upon upgrading. This may also be a start in adjusting the default templates to your wishes, perhaps at first with tiny changes, but bigger changes with more (coding) experience.
-If you made a beautifull template you can share it on the forum (with a GNU/GPL license) if you'd like that, and when enough users want it in the default RSG2 installation, we'll put it in (with credits of course an a GNU/GPL license).
-
-So have fun tweaking RSG2 to your wishes!
-
-
-Note about J!Dump (added 15 June 2012)
-I had J!Dump version 1.2.0RC/beta2 running on Joomla 1.6/1.7 and now 2.5.When I was looking for the info that this would not only work on Joomla 1.5.x but also 2.5.x (I must have read it once somewhere...) I found this post on the Project Homepage of J!Dump on JoomlaCode (where the dowloadpages are):
-http://joomlacode.org/gf/project/jdump/news/?action=NewsThreadView&id=3235
-JDump now works with Joomla 1.6. Version 1.1.2 will install and function under 1.6, though there are still some bugs to work out. Mathias was kind enough to let me release this version, continuing his great work! (Dated 2010-12-28)Modify message
-
-« Last Edit: June 15, 2012, 12:03:42 PM by mirjam »
-
-unready
-
-3.7.1. Slideshow Parth settings
-Manage template > Edit: takes you to the settings for Slideshow Parth.
-Instructions
-• Go to the frontend and view a slideshow (this creates a params.ini file in the slideshow parth template
-directory, only when this file exists (and is writable) you can save your settings)
-• View settings: Backend > Components > RSGallery2 > Control Panel > Template Manager > Manage
-> select: Slideshow_Parth > click: Edit * Edit settings and click Save
-
 !INCLUDE ""
 
 ## How to hide the original image from the user
@@ -2124,11 +1966,15 @@ Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 # Glossar
 
 * Root gallery
-!!! To be improved !!!
-The top level gallery may be selected when for the menu  RSGallery2 -> View of galleries is selected. If displayed the view will show a collection of "sub" galleries, latest images and random images
+
+   !!! To be improved !!!<br>
+   The top level gallery may be selected when for the menu  RSGallery2 -> View of galleries is selected. If displayed the view will show a collection of "sub" galleries, latest images and random images
+
+* Sub galleries
+
+  ...
 
 ---
-
 
 
 ---
