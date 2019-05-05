@@ -26,11 +26,11 @@ In (1) appears the list of files with "missing parts".
 
 (2) Area with filename and check box to select images for further actions -> (7)
 
- (3) Area with state of image. On green the item exists an red it is missing
+(3) Area with state of image. On green the item exists an red it is missing
 
- (4) Direct action buttons. On click the task is performed on the file of the rows
+(4) Direct action buttons. On click the task is performed on the file of the rows
 
- (5) The parent gallery of the file in the row is listed and one of the matching images is displayed  
+(5) The parent gallery of the file in the row is listed and one of the matching images is displayed
 
 #### Area with state of image.
  ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
