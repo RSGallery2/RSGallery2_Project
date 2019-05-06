@@ -2,13 +2,107 @@
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
+(1) Number in image list
 
-Missing ...: To be continued
+%
+
+(2) Select image
+
+The topmost rectangle selects all images which is useful for batch processing
+The selector beside the image information selects this image
+
+(3) Status
+
+A green 'OK' tell that the image is published. (Otherwise red)
+
+(4) Image title
+
+Title displayed to user in views if enabled.<br>
+The title of the image may be different to the image file name. It will be preset with image name on upload and changes with the propertiy edit or on single image edit.
+
+(5) Image name
+
+Real file name used on the server
+
+(6) Parent gallery name
+
+Each image is assinged to a gallery
+
+(7) Image order
+
+ToDo: Tell about handlng order ...
+yyyyy
+
+.-.
+
+(8) Date and time
+
+The date and time will be assinged on upload with the upload time
+
+(9) Votes
+
+The value will be between 0..5. It is calculated by Rating / Votes
+
+(11) Rating
+
+Summ of all votings
+
+(12) Hits
+
+Count of views / appearances
+
+(13) ID
+
+Internal ID of image for reference or matching in other list
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
+(1) .
+
+.-.
+
+(2) .
+
+.-.
+
+(3) .
+
+.-.
+
+(4) .
+
+.-.
+
+(5) .
+
+.-.
+
+(6) .
+
+.-.
+
+(7) .
+
+.-.
+
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
+
+(1) .
+
+.-.
+
+(2) .
+
+.-.
+
+(3) .
+
+.-.
+
+(4) .
+
+.-.
 
 
 
@@ -39,7 +133,7 @@ Batch processing: The selected images can be copied to the selected gallery
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
-This form enables to set the properties title and description for a batch of images at the same time.  
+This form enables to set the properties title and description for a batch of images at the same time.
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
 (1) Title
@@ -52,7 +146,7 @@ The gallery name can't be changed in this part
 
 (3) Description
 
-The description may be changed with the standard editor like in the edit single image form.  
+The description may be changed with the standard editor like in the edit single image form.
 Sadly this leads to a very high edit block which creates a ugly layout.
 
 (4) Save
@@ -86,7 +180,7 @@ Rotates selected images 180 degrees.
 
 (11) Flip horizontal
 
-Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom  
+Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom
 
 (12) Flip vertical
 
