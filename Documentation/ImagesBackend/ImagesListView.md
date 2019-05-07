@@ -1,5 +1,7 @@
 # Image List View
 
+## Image list colums
+
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
 (1) Number in image list
@@ -63,6 +65,7 @@ Hovering over the image title will show the thumb of the image as tool tip
 
 A click on the image title will lead to the edit view of the image
 
+## Image(s) taskbuttons)
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
@@ -94,12 +97,14 @@ Resets the hits of the selected Images
 
 Add the selected images to the task list and start the batch form
 
-Possible batch tasks:  
-* yyyyy
+Possible batch tasks:
+* Move image(s) to gallery
+* Copy image(s) to gallery
+* Add (change) properties to image(s)
 
+See below
 
-yyyy ToDo: batch form as image plus description
-
+## Image search options
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
 
