@@ -18,7 +18,7 @@ A green 'OK' tell that the image is published. (Otherwise red)
 (4) Image title
 
 Title displayed to user in views if enabled.<br>
-The title of the image may be different to the image file name. It will be preset with image name on upload and changes with the propertiy edit or on single image edit.
+The title of the image may be different to the image file name. It will be preset with image name on upload and changes with the property edit or on single image edit.
 
 (5) Image name
 
@@ -26,7 +26,7 @@ Real file name used on the server
 
 (6) Parent gallery name
 
-Each image is assinged to a gallery
+Each image is assigned to a gallery
 
 (7) Image order
 
@@ -37,7 +37,7 @@ yyyyy
 
 (8) Date and time
 
-The date and time will be assinged on upload with the upload time
+The date and time will be assigned on upload with the upload time
 
 (9) Votes
 
@@ -45,7 +45,7 @@ The value will be between 0..5. It is calculated by Rating / Votes
 
 (11) Rating
 
-Summ of all votings
+Total of all votes
 
 (12) Hits
 
@@ -55,35 +55,50 @@ Count of views / appearances
 
 Internal ID of image for reference or matching in other list
 
+(14a) !!! Hover on image title
+
+Hovering over the image title will show the thumb of the image as tool tip
+
+(14b) !!! Click on image title
+
+A click on the image title will lead to the edit view of the image
+
+
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
-(1) .
+(1) Publish
 
-.-.
+Assign published to the selected images
 
-(2) .
+(2) Unpublish
 
-.-.
+Assign unpublished to the selected images
 
-(3) .
+(3) Edit
 
-.-.
+Leads to edit view of one selected image
 
-(4) .
+(4) Delete
 
-.-.
+Will delete all selected items. On yes of the follow up question the image is deleted. Attention it is deleted immediately and not saved in the trash
 
-(5) .
+(5) Upload
 
-.-.
+Go to the upload, Go directly there. Do not go over the control panel ;-)
 
-(6) .
+(6) Reset Hits
 
-.-.
+Resets the hits of the selected Images
 
-(7) .
+(7) Batch
 
-.-.
+Add the selected images to the task list and start the batch form
+
+Possible batch tasks:  
+* yyyyy
+
+
+yyyy ToDo: batch form as image plus description
 
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
