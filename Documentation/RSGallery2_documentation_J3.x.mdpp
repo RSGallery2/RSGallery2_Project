@@ -33,11 +33,10 @@ Here we are more likely to publish than to be stylish and polished.
 !INCLUDE "???Site here ???"
 !INCLUDE "User.GalleryViews\OrderUserViewsRootToImageModal.md"
 
-
-!INCLUDE "GalleryDoc\GalleriesListView.md"
+!INCLUDE "GalleriesBackend\GalleriesListView.md"
 !INCLUDE "???Edit gallery???"
 
-!INCLUDE "ImageDoc\ImagesListView.md"
+!INCLUDE "ImagesBackend\ImagesListView.md"
 !INCLUDE "???Edit image???"
 
 !INCLUDE "Config\config.md"
