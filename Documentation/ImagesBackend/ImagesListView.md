@@ -1,10 +1,10 @@
 # Image List View
 
-## Image list colums
+## Image list columns
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
-(1) Number in image list
+(1) Number in  list
 
 %
 
@@ -32,10 +32,19 @@ Each image is assigned to a gallery
 
 (7) Image order
 
-ToDo: Tell about handlng order ...
-yyyyy
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.order.png?raw=true)
 
-.-.
+(1) Order number
+
+The order number of the image may be increased or decreased or set manually.
+
+(2) Save Order
+
+On click the order numbers are saved. Any mismatch like double entries will be aligned
+
+Example:
+
+    Exchange numbers: Previous: A:12 B:11 C:13. Write destination numbers and click save into the three controls. Result: A:11 B12: C:13
 
 (8) Date and time
 
@@ -65,7 +74,7 @@ Hovering over the image title will show the thumb of the image as tool tip
 
 A click on the image title will lead to the edit view of the image
 
-## Image(s) taskbuttons)
+## Image(s) task buttons
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
@@ -104,27 +113,25 @@ Possible batch tasks:
 
 See below
 
-## Image search options
+## Image(s) search options
+
+The search options follow the standard search behavior of Joomla!
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true)
 
-(1) .
+(1) Activate search controls
 
-.-.
+(2) Select gallery
 
-(2) .
+Only image of the selected gallery will be shown
 
-.-.
+(3) Columns sorting
 
-(3) .
+Defines the column the list will be sorted by and also the direction
 
-.-.
+(4) Limit per page
 
-(4) .
-
-.-.
-
-
+It defines the count of image which will be shown on one page
 
 
 ## Images: Batch process to add properties
@@ -139,7 +146,7 @@ Select a gallery as destination for copy or move of selected images
 
 (2) Add properties
 
-This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
+This button leads to the properties form (See below) and will open the selected images. The title and description can be changed for a batch of images. also image can be flipped and rotated there.
 
 (3) Move to
 
