@@ -1,8 +1,5 @@
 # Galleries List View
 
-#toDo: fill out Galleries List View ...
-
-
 ## Gallery list columns
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.01.png?raw=true)
@@ -11,40 +8,43 @@
 
 %
 
-(2) Select image
+(2) Select gallery
 
-The topmost rectangle selects all images which is useful for batch processing
-The selector beside the image information selects this image
+The topmost rectangle selects all galleries which is useful for batch processing
+The selector beside the gallery information selects this gallery
 
 (3) Status
 
 A green 'OK' tell that the image is published. (Otherwise red)
 
-(4) Image title
+(4) Gallery name
 
-Title displayed to user in views if enabled.<br>
-The title of the image may be different to the image file name. It will be preset with image name on upload and changes with the property edit or on single image edit.
+A click on the name leads to edit view of the selected gallery
 
-(5) Image name
+(5) images
 
-Real file name used on the server
+Tells the count of images inside the gallery<br>
+The arrow on the right side will open the image list view with the gallery images
 
+(6) Parent ID
 
+A sub gallery does tell about its parent gallery
 
+(7) Access
 
+%
 
+(8) Author
 
+The author logged in when creating the gallery
 
-
-
-
-(7) Gallery order
+(9) Gallery order
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.order.01.png?raw=true)
 
     (1) Order number
 
-    The order number of the image may be increased or decreased or set manually.
+    The order number of the gallery may be increased or decreased or set manually.
 
     (2) Save Order
 
@@ -54,37 +54,70 @@ Real file name used on the server
 
         Exchange numbers: Previous: A:12 B:11 C:13. Write destination numbers and click save into the three controls. Result: A:11 B12: C:13
 
-    (3) Handling sub Galleries
+    (3) Ordering of sub galleries
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.order.02.png?raw=true)
+    The sub gallery order number is dependend on the place (order) of the parent gallery. A sub gallery will always be ordered direct behind the parent gallery.
+
+
+(10) Date & time
+
+Creation Time of gallery
+
+(11) Hits
+
+Count of views / appearances
+
+(12) ID
+
+Internal ID of image for reference or matching in other list
 
 
 ## Gallery(s) task buttons
 
 
-    ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.02.png?raw=true)
 
-    (1) Publish
+  (1) New
 
-    Assign published to the selected images
+Creates a new gallery. Leads to edit view of the new selected image
 
-    (2) Unpublish
+(2) Edit
 
-    Assign unpublished to the selected images
+Leads to edit view of one selected gallery
 
-    (3) Edit
+(3) Delete
 
-    Leads to edit view of one selected image
+Will delete all selected items. On yes of the follow up question the image is deleted. Attention it is deleted immediately and not saved in the trash
 
-    (4) Delete
+(4) Publish
 
-    Will delete all selected items. On yes of the follow up question the image is deleted. Attention it is deleted immediately and not saved in the trash
+Assign published to the selected images
 
+(5) Unpublish
 
-
+Assign unpublished to the selected images
 
 
 ## Galleries search options
 
 
-    ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.03.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/galleries.listView.order.png?raw=true)
+
+(1) Activate search controls
+
+(2) Select author
+
+Only galleries of the selected author will be shown
+
+(3) Select access type
+
+Only galleries of the selected access type will be shown.<br>
+Types: Public, Guest, Registered, Special, Super users
+
+(4) Columns sorting
+
+Defines the column the list will be sorted by and also the direction
+
+(5) Limit per page
+
+It defines the count of image which will be shown on one page
