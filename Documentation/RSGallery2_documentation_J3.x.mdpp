@@ -34,14 +34,14 @@ Here we are more likely to publish than to be stylish and polished.
 !INCLUDE "User.GalleryViews\OrderUserViewsRootToImageModal.md"
 
 !INCLUDE "GalleriesBackend\GalleriesListView.md"
-!INCLUDE "???Edit gallery???"
+!INCLUDE "GalleriesBackend\GalleryEditView.md"
 
 !INCLUDE "ImagesBackend\ImagesListView.md"
-!INCLUDE "???Edit image???"
+!INCLUDE "ImagesBackend\ImageEditView.md"
 
 !INCLUDE "Config\config.md"
 
-!INCLUDE "???watermark???"
+!INCLUDE "Watermarking\watermarked.md"
 
 !INCLUDE "MyGalleries\MyGalleries.Introduction.md"
 !INCLUDE "MyGalleries\MyGalleries.SetItUp.md"
@@ -52,13 +52,17 @@ Here we are more likely to publish than to be stylish and polished.
 !INCLUDE "Maintenance\Maint.SlideshowConfig.md"
 
 !INCLUDE "???"
-!INCLUDE "???Watermarked files???""
+!INCLUDE "???"
 !INCLUDE ""
 !INCLUDE ""
 
 !INCLUDE ""
 !INCLUDE "???Site???"
 !INCLUDE "Site.GalleryView\SearchResults.md"
+!INCLUDE "???"
+!INCLUDE "??? gallery templates"
+!INCLUDE "??? slideshow templates "
+!INCLUDE "???"
 !INCLUDE "Site.SlideshowView\CreateModifyTemplate.md"
 !INCLUDE "Site.SlideshowView\ModifyTemplateParameters.md"
 !INCLUDE ""
