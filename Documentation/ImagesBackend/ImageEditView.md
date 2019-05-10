@@ -4,74 +4,77 @@
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.01.png?raw=true)
 
-(1)
+(1) Title
 
-%
+Is derived from the file name when uploading. May have been changed when it was edited in image property view.
 
-(2)
+(2) Filename
 
+File name of uploaded file on server. May be different from the image name on the PC due to character restrictions in URL or server operating system
 
-(3)
+(3) Gallery
 
+Tell or changes the parent gallery
 
+(4) Description
 
-(4)
+Text which is displayed in the gallery view if enabled in the configuration
 
+(5) Status
 
+Publish or hide the image
 
-(5)
+(6) Ordering
 
+Change appearance order
 
-(6)
+(7) Owner
 
+Tells user who uploaded the image
 
-(7)
+(8) Item Preview
 
+yyy
 
+(9) Display parameters
 
-(8)
+yyy Display parameters: (see description on title of element)
 
+(10) Links to image
 
-
-(9)
-
-
+Tells the path of the image as URL link
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.02.png?raw=true)
 
-(1)
+(1) Save
 
-%
+Saves the changes
 
-(2)
+(2) Save and close
 
+Saves the changes and exits the edit view
 
-(3)
+(3) Save and new
 
+Saves the changes and opens an empty edit view
 
+(4) Cancel
 
-(4)
+Exits the edit view
 
-
-
-(5)
-
-
-(6)
-
-(6) Owner
-
-Tells user who created the gallery
-Tells user who uploaded the image
+(5) Rotate left
 
 
-
-(7)
-
+(6) Rotates right
 
 
-(8)
+(7) Rotate 180
 
 
+(8) Flip horizontal
 
-(9)
+
+(9) Flip vertical
+
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.permission.png?raw=true)
