@@ -6,5 +6,17 @@ ResponsiveMediaQueries.PerObjects.txt
 https://blog.kulturbanause.de/2017/06/container-queries-element-queries-im-responsive-web-design/
 
 
+??????????????????????
+Viele und auch wir machen folgendes. man legt ein srcset an 2500,1920,1280 etc. 
+und benutzt lazyload. Wird jetzt im Frontend das Bild aufgerufen werden erst 
+die srcset URL kryptisch erstellt und an eine URL geleitet die per Plugin 
+abgefangen wird, welche dann das Bild generiert und cached. Beim nächsten 
+Aufruf wird dann der direkte Pfad angezeigt. Das Plugin prüft ob dann das 
+original Bild von der Breite überhaupt alle srcset weiten erstellen kann, 
+und schmeißt die anderen sonst raus. 
+
+--------------------
+Mache mein LazyLoading bislang immer selbst über IntersectionObserver
+
 
 
