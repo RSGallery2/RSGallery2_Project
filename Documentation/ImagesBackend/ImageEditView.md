@@ -34,11 +34,13 @@ Tells user who uploaded the image
 
 (8) Item Preview
 
-yyy
+Shows a medium sized view of the image
 
 (9) Display parameters
 
-yyy Display parameters: (see description on title of element)
+Add parameters used in display of the image to overwrite settings from the configuration for this image. <br>
+Use the form of Name='value', one assignment per line.
+Sadly the name of the item has to be derived from the config control name.
 
 (10) Links to image
 

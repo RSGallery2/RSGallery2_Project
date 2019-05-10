@@ -744,6 +744,78 @@ Defines the column the list will be sorted by and also the direction
 (5) Limit per page
 
 It defines the count of image which will be shown on one page
+# Galleries Edit View
+
+##
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/gallery.edit.01.png?raw=true)
+
+(1) Gallery name
+
+%
+
+(2) Description
+
+Text which is displayed in the gallery view if enabled in the configuration
+
+(3) Status
+
+Publish or hide the gallery
+
+(4) Ordering
+
+Change appearance order
+
+(5) Gallery thumbnail
+
+Select random mode or a image thumb to represent the gallery
+
+(6) Owner
+
+Tells user who created the gallery
+
+(7) Access
+
+Types: Public, Guest, Registered, Special, Super users
+
+(8) Parent gallery
+
+Tells the name of the parent Gallery
+* Top gallery: The gallery has no parent
+
+(9) Display parameters
+
+Add parameters used in display of the gallery to overwrite settings from the configuration for this gallery. <br>
+Use the form of Name='value', one assignment per line.
+Sadly the name of the item has to be derived from the config control name.
+
+(10)
+
+%
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/gallery.edit.02.png?raw=true)
+
+(1) Save
+
+Saves the changes
+
+(2) Save and close
+
+Saves the changes and exits the edit view
+
+(3) Save and new
+
+Saves the changes and opens an empty edit view
+
+(4) Cancel
+
+Exits the edit view
+
+(5) Save & upload
+
+Saves the changes and goto the upload image view
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/gallery.edit.permission.png?raw=true)
 
 # Image List View
 
@@ -969,6 +1041,88 @@ This can be used to delete, rotate or flip selected images.
 
 The image will get a set hook in the box below the image
 This can be used to delete, rotate or flip  selected images.
+# Images Edit View
+
+##
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.01.png?raw=true)
+
+(1) Title
+
+Is derived from the file name when uploading. May have been changed when it was edited in image property view.
+
+(2) Filename
+
+File name of uploaded file on server. May be different from the image name on the PC due to character restrictions in URL or server operating system
+
+(3) Gallery
+
+Tell or changes the parent gallery
+
+(4) Description
+
+Text which is displayed in the gallery view if enabled in the configuration
+
+(5) Status
+
+Publish or hide the image
+
+(6) Ordering
+
+Change appearance order
+
+(7) Owner
+
+Tells user who uploaded the image
+
+(8) Item Preview
+
+Shows a medium sized view of the image
+
+(9) Display parameters
+
+Add parameters used in display of the image to overwrite settings from the configuration for this image. <br>
+Use the form of Name='value', one assignment per line.
+Sadly the name of the item has to be derived from the config control name.
+
+(10) Links to image
+
+Tells the path of the image as URL link
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.02.png?raw=true)
+
+(1) Save
+
+Saves the changes
+
+(2) Save and close
+
+Saves the changes and exits the edit view
+
+(3) Save and new
+
+Saves the changes and opens an empty edit view
+
+(4) Cancel
+
+Exits the edit view
+
+(5) Rotate left
+
+
+(6) Rotates right
+
+
+(7) Rotate 180
+
+
+(8) Flip horizontal
+
+
+(9) Flip vertical
+
+
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.permission.png?raw=true)
 
 
 ## -> In processing, parts present (2017.12.08)
@@ -1512,6 +1666,80 @@ It displays image thumbs with information about the imaged
 
 ---
 
+### Watermarked files
+
+[ ] ToDo: initial description, recheck content
+
+
+   2) **Watermark**
+
+   A watermarked replacement file will be created once when uploading or when viewed the first time.
+   The watermarking will be a text defined in the configuration.
+   Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
+
+   3) **Disguise** watermarked file names
+   
+   Additional the created watermarked files are disguised with a different filename.
+   So users can't immediately guess the URL of the next or previous image. So it is harder to download all your images and remove the watermark with an imaging application
+
+   ##### Drawbacks
+   * The small sized "display" files have no watermark
+   * The "display" files can be found with guessing and a knowledge of the RSGallery2 / Joomla structure
+   * If you switch on watermarking after uploading the images then the watermarking tries to use the original image. If it doesn't exist then it uses the "display" files with lower resolution.
+
+
+#### Setup watermarked configuration:
+
+1. Hide (delete) original after upload
+
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true)
+
+ In configuration->images->section "Image storage"
+ * (1) activate the "no" selection
+
+2. Check "display" resolution
+
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true)
+
+ In configuration->images->section "Image manipulation"
+ * (1) Display picture width defines the maximum size of the displayed image.
+ * (2) You can reduce the quality of the displayed image to your needs
+
+3. Check watermark settings
+
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true)
+
+ In configuration->display->section "Image watermark"
+ * (1) Display watermark
+    Activate if watermarked files should be used on "big size" image view. It will replace the original file which would be displayed otherwise.
+    A watermarked replacement file will be created once when uploading or when viewed the first time.
+    The watermarking will be a text defined in the configuration.
+    Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)
+  * (2) Watermark type
+      A text or an image can be merged into the original image as a watermark
+  * (3) Watermark text
+      Define the text to be displayed in the image
+ * (4) Font
+     Select the font type of the watermark text
+ * (5) Watermark font size
+     Select the font size of the watermark text
+ * (6) Watermark text angle
+     Define the angle of the watermark text
+ * (7) Watermark image
+      Will be merged into the big display image. Watermark image should be smaller then display image"
+ * (8) Scale watermark image
+     Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size
+ * (9) Watermark position
+     Select the position of the watermark text.
+ * (10) Margin from top
+ * (11) Margin from right
+ * (12) Margin from bottom
+ * (13) Margin from left
+     Margin from the border of the original image. Watermark is placed with distance to the border, if it is not centrally located
+ * (14) Watermark transparency
+     Define transparency of the text to be displayed in the image
+ * (15) Watermark image path
+     Define the destination path of the created watermarked files
 
 ## My Galleries
 A site administrator can enable My Galleries for users to upload and view their own galleries (setting Show My  Galleries, 'no' by default). A extra element will appear on the gallery view when a user has logged in on the front end.
@@ -2151,7 +2379,6 @@ Delete the content of the file params.ini in the below section and save it  (but
 
 ---
 
-!INCLUDE "???Watermarked files???""
 !INCLUDE ""
 !INCLUDE ""
 
