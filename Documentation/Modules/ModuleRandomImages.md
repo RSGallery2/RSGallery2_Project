@@ -15,7 +15,7 @@ The RSGallery2 Module RandomImages shows as the name suggests random images from
 	* Gallery display image
 	* Gallery thumb image
 
-##General
+## General
  * User defined count images are selected and shown like in the RSGallery2 gallery view.
  * The images may be aligned in row and columns.
  * The sources to look for the images are all galleries or a defined list of galleries.
@@ -23,7 +23,7 @@ The RSGallery2 Module RandomImages shows as the name suggests random images from
  * The resulting set may be "garnered" with CSS styles set in the backend.
  * Each image may lead to the origin picture or the parent gallery or ...
 
-##Parameter in backend
+## Parameter in backend
 
 * **Number of rows:** Number of vertical images  (Images per column)  
 * **Number of columns:** Number of horizontal images (Images per row)  
