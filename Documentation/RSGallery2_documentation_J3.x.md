@@ -2385,6 +2385,220 @@ Delete the content of the file params.ini in the below section and save it  (but
 !INCLUDE ""
 !INCLUDE ""
 
+# RSGallery2_Module_LatestGalleries
+Module to show latest galleries from RSGallery2
+The RSGallery2 Module LatestGalleries shows as the name suggests the latest created galleries from RSGallery2 galleries.
+
+
+ToDo: fill out like in Latest imaages
+
+* .
+* .
+* .
+* .
+
+##General
+
+* .
+* .
+* .
+* .
+
+##Parameter in back end
+
+* **Number of rows:** Number of vertical images  (Images per column)  
+* **Number of columns:** Number of horizontal images (Images per row)  
+The number of displayed images is the result from Count = row number times column number. Therefore Count image names are fetched from the Database and prepared for the display  
+* **Select galleries to show images from:** e.g. 3,8,42. The used galleries may be restricted to a selection. Please use a comma separated list. Select galleries to show images from where multiple galleries are separated by a comma, e.g. '3,8,42' or '5'. If you want to show images from all galleries enter '0'. The access level of user will be taken into account, so if a user is not allowed to see gallery 2 its images won't show even if you put it here.The gallery id numbers to use can be found here: Backend > Components > RSGallery2 > Galleries, in the column ID  
+...
+# RSG2_Modul_LatestImages
+The RSGallery2 Module LatestImages shows as the name suggests the latest images from RSGallery2 galleries.
+
+* The images are shown in a table view. The number of rows and columns define the the number of shown images.
+* The administrator can specify certain galleries as source for the images to show. Sub galleries may be included.
+* The administrator can select a display type, if the thumb-, the rsgallery2- or the original size of the image shall be used as a source for the display.
+* The display width of the image and the surrounding Div may be set.
+* The name of the gallery and the date of the image may be displayed.
+
+* A click on the image may lead to
+  * The parent gallery
+	* Gallery single image view.
+	* Gallery slideshow view
+	* Original image
+	* Gallery display image
+	* Gallery thumb image
+
+##General
+ * User defined count images are selected and shown like in the RSGallery2 gallery view.
+ * The images may be aligned in row and columns.
+ * The sources to look for the images are all galleries or a defined list of galleries.
+ * The displayed image size may may origin from the thumb-, the orginal- or the rsgallery display size.
+ * The resulting set may be "garnered" with CSS styles set in the backend.
+ * Each image may lead to the origin picture or the parent gallery or ...
+
+##Parameter in backend
+
+* **Number of rows:** Number of vertical images  (Images per column)  
+* **Number of columns:** Number of horizontal images (Images per row)  
+The number of displayed images is the result from Count = row number times column number. Therefore Count image names are fetched from the Database and prepared for the display  
+* **Select galleries to show images from:** e.g. 3,8,42. The used galleries may be restricted to a selection. Please use a comma separated list. Select galleries to show images from where multiple galleries are separated by a comma, e.g. '3,8,42' or '5'. If you want to show images from all galleries enter '0'. The access level of user will be taken into account, so if a user is not allowed to see gallery 2 its images won't show even if you put it here.The gallery id numbers to use can be found here: Backend > Components > RSGallery2 > Galleries, in the column ID  
+* **Include subgalleries:** (No/Yes)  When the range of galleries is limited by user input (see above) the child galleries may be included in the image search  
+* **Display type of image to show:**  RSGallery2 stores the original (depending on settings), a display sized image and a thumbnail sized image. User can select which display type is to be used.
+* **CSS img element height parameter:**  Enter the size of the CSS height attribute of the image to show in pixels. If '0' is entered there won't be a height specified for img element and the actual height of the image will be taken.  
+* **CSS img element width parameter:** Enter the size of the CSS width attribute of the image to show in pixels. If '0' is entered there won't be a width specified for img element and the actual width of the image will be taken  
+CSS width attribute for the img and the div element (0=no attribute)
+Set size of image, use one (!) of height or width to make the image smaller. Set one or both settings for image height and width to 0, this will keep the aspect ratio of the image, if you set a size for both the image will be stretched. Do not set the size larger than the actual image size, e.g. when a thumb size image has a size of 50x50 pixels, don't set either size to larger than 50, rather use the larger display or the original image
+* **CSS div element height parameter:** Set size of div, use this to crop the image. Enter the size of the CSS height attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a height specified for the div element and it will fit the actual height of the image  
+* **CSS div element width parameter:** Set size of div, use this to crop the image. Enter the size of the CSS width attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a width specified for the div element and it will fit the actual width of the image
+* **CSS div element height parameter for name of image:** CSS div element height parameter for name of image. Enter the size of the CSS height attribute of the dive that holds the name of the image, in pixels. If '0' is entered there won't be a height specified for the div element.<br />There is no width parameter to set the width of this div element since the width of the 'CSS div element width parameter' would overrule this   
+* **Display image name:** (No/Yes) Do display image name below the image   
+* **Display date:** (No/Yes) Do display image date below the image
+* **Date format:** Select format type the date should display (for example, d-m-Y | d/m/Y | m-d-Y : G-i). See http://nl3.php.net/date for more info about this.
+* **Link image to view type**  A click on the image shall link to the selected type. Single image/gallery view: The display area will be found in the first joomla menu linking to RSGallery2 galleries
+Possible options  
+   * Don't link image to anything  
+   * Link to standard gallery view  
+   * Link to single image view of gallery  
+   * Link to slideshow view of gallery  
+   * Link to original image (user) size  
+   * Link to display image (RSGallery2) size  
+   * Link to thumb image (RSGallery2) size  
+# RSGallery2_Module_RandomImages
+The RSGallery2 Module RandomImages shows as the name suggests random images from RSGallery2 galleries.
+
+* The images are shown in a table view. The number of rows and columns define the the number of shown images.
+* The administrator can specify certain galleries as source for the images to show. Sub galleries may be included.
+* The administrator can select a display type, if the thumb-, the rsgallery2- or the original size of the image shall be used as a source for the display.
+* The display width of the image and the surrounding Div may be set.
+* The name of the gallery and the date of the image may be displayed.
+
+* A click on the image may lead to
+  * The parent gallery
+	* Gallery single image view.
+	* Gallery slideshow view
+	* Original image
+	* Gallery display image
+	* Gallery thumb image
+
+## General
+ * User defined count images are selected and shown like in the RSGallery2 gallery view.
+ * The images may be aligned in row and columns.
+ * The sources to look for the images are all galleries or a defined list of galleries.
+ * The displayed image size may may origin from the thumb-, the orginal- or the rsgallery display size.
+ * The resulting set may be "garnered" with CSS styles set in the backend.
+ * Each image may lead to the origin picture or the parent gallery or ...
+
+## Parameter in backend
+
+* **Number of rows:** Number of vertical images  (Images per column)  
+* **Number of columns:** Number of horizontal images (Images per row)  
+The number of displayed images is the result from Count = row number times column number. Therefore Count image names are fetched from the Database and prepared for the display  
+* **Select galleries to show images from:** e.g. 3,8,42. The used galleries may be restricted to a selection. Please use a comma separated list. Select galleries to show images from where multiple galleries are separated by a comma, e.g. '3,8,42' or '5'. If you want to show images from all galleries enter '0'. The access level of user will be taken into account, so if a user is not allowed to see gallery 2 its images won't show even if you put it here.The gallery id numbers to use can be found here: Backend > Components > RSGallery2 > Galleries, in the column ID  
+* **Include subgalleries:** (No/Yes)  When the range of galleries is limited by user input (see above) the child galleries may be included in the image search  
+* **Display type of image to show:**  RSGallery2 stores the original (depending on settings), a display sized image and a thumbnail sized image. User can select which display type is to be used.
+* **CSS img element height parameter:**  Enter the size of the CSS height attribute of the image to show in pixels. If '0' is entered there won't be a height specified for img element and the actual height of the image will be taken.  
+* **CSS img element width parameter:** Enter the size of the CSS width attribute of the image to show in pixels. If '0' is entered there won't be a width specified for img element and the actual width of the image will be taken  
+CSS width attribute for the img and the div element (0=no attribute)
+Set size of image, use one (!) of height or width to make the image smaller. Set one or both settings for image height and width to 0, this will keep the aspect ratio of the image, if you set a size for both the image will be stretched. Do not set the size larger than the actual image size, e.g. when a thumb size image has a size of 50x50 pixels, don't set either size to larger than 50, rather use the larger display or the original image
+* **CSS div element height parameter:** Set size of div, use this to crop the image. Enter the size of the CSS height attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a height specified for the div element and it will fit the actual height of the image  
+* **CSS div element width parameter:** Set size of div, use this to crop the image. Enter the size of the CSS width attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a width specified for the div element and it will fit the actual width of the image
+* **CSS div element height parameter for name of image:** CSS div element height parameter for name of image. Enter the size of the CSS height attribute of the dive that holds the name of the image, in pixels. If '0' is entered there won't be a height specified for the div element.<br />There is no width parameter to set the width of this div element since the width of the 'CSS div element width parameter' would overrule this   
+* **Display image name:** (No/Yes) Do display image name below the image   
+* **Display date:** (No/Yes) Do display image date below the image
+* **Date format:** Select format type the date should display (for example, d-m-Y | d/m/Y | m-d-Y : G-i). See http://nl3.php.net/date for more info about this.
+* **Link image to view type**  A click on the image shall link to the selected type. Single image/gallery view: The display area will be found in the first joomla menu linking to RSGallery2 galleries
+Possible options  
+   * Don't link image to anything  
+   * Link to standard gallery view  
+   * Link to single image view of gallery  
+   * Link to slideshow view of gallery  
+   * Link to original image (user) size  
+   * Link to display image (RSGallery2) size  
+   * Link to thumb image (RSGallery2) size  
+[//]: # (!INCLUDE "Modules\ModuleThumbScroller.md")
+
+# RSG2_Plugin_DisplayGallery
+Displays a gallery in an article.
+
+This plugin will replace {rsg2_display: template, GID} or {rsg2_display: template, GID, parameter=value, parameter=value, ...} in an article with the corresponding RSGallery2 gallery using the template specified, with as many parameters as you specify.
+
+* Template: The name of the template you want to use (required; in a default installation 'semantic' will work
+* GID:  Backend > Components > RSGallery2 > Galleries: use the number from the ID column (required)
+* Parameter: (optional, for advanced use only) you can add any configuration parameter, e.g. displaySearch=0, display_thumbs_maxPerPage=4, display_thumbs_colsPerPage=2.
+
+A list of parameters is available when debug is turned on in the RSGallery2 Configuration, then a button 'Config - View' shows up in the Control Panel which will give you a list of parameters and their current setting.
+Note: These are not the slideshow parameters!
+
+When the given template does not exist, or the given gallery does not exist or is unpublished, the plugin will show nothing unless the option Debug is turned on.  
+
+Examples:
+*  {rsg2_display: semantic, 10}
+*  {rsg2_display: slideshow_parth, 6}
+*  {rsg2_display: semantic,10, displaySearch=0,display_thumbs_maxPerPage=4,display_thumbs_colsPerPage=2}
+
+Please do not forget to enable the Plugin in the Plugin Manager!
+
+RSGallery2 Display Image plugin (Single Display)
+This plugin will replace {rsg2_singledisplay: imageid, size, caption, format, clearfloat} in articles with the corresponding RSGallery2 image.
+
+* imageid: Backend > Components > RSGallery2 > Items: use the number from the ID column (required).
+* size: thumb, display or original (optional, default is display).
+* caption: true (use the item desciption as a caption) or false (no caption) (optional, default is false
+* format: text-align style property (optional)
+* clearfloat: both, left, right or false: When not set to false this inserts a div CSS element after the image with clear property both, left or right (optional, default is false)
+
+
+When the given image id does not exist, or the image or gallery is unpublished, the plugin will show nothing unless the option Debug is turned on. When the user is not allowed to access the gallery where the item belongs to, nothing will show unless the options Debug is turned on.
+
+Examples:
+* {rsg2_singledisplay:9999,thumb,true,left;float:left, left}
+* {rsg2_singledisplay:2,display,false,right, float:right, both}
+* {rsg2_singledisplay:42}.
+
+Plugin Options:
+Different 'popup' options are available:
+* no popup, use of Link and Link Text (which are parameters of the item),
+* normal popup,
+* Joomla modal and
+* Highslide.
+
+Important note on the Highslide effect:
+Highslide JS is an image, media and gallery viewer written in JavaScript (see http://highslide.com). The Highslide JS for Joomla plugin (available at http://joomlanook.com) exposes all of the flexibility of Highslide JS through a clear and concise configuration screen.
+To use the Highslide effect with this RSGallery2 Single Image Display plugin you need to have the Highslide JS for Joomla plugin installed and enabled!
+NOTE: If you intend to use Highslide JS on a commercial website you MUST purchase a license from the author of Highslide JS. Please go to http://highslide.com/ for more details.
+
+Links
+* http://www.rsgallery2.org for information on RSGallery2 and this RSGallery2 Single Image Display Plugin.
+* http://highslide.com/ for information on Highslide JS and how to obtain a license for use on commercial websites.
+* http://joomlanook.com/ for information on the Highslide JS for Joomla plugin.
+# RSGallery2_Plugin_GalleryCreator
+RSGallery2 plugin to automatically create a personal gallery for each "new" user that is created.
+For web pages which want to support Rsgallery2 function "My Galleries". 
+
+When a new user registers, this plugin (when enabled) will create a new RSGallery2 gallery for that new user and owned by that new user, based on the settings in the plugin parameters
+
+When my galleries is activated in the RSGallery2 configuration then the user owned galleries will be shown on the site.
+
+The user needs permissions
+* 'edit own' and
+* 'edit 'state own'
+* 'delete own',
+* ('create own'),
+to upload/release and delete images in owned gallery.
+
+'Create own' allows to add more galleries to the owned ones.  
+
+Tip: Create a own user group for "myGallery" user and assign it for new users automatically.
+A new user default group can be selected in  Backend > Users > User Manager > Options > Tab: User Options > Setting: New User Registration Group. Here select the created new user group.  
+
+Install the plugin, *enable the plugin*, check the plugin settings and add a new user (try from frontend and backend).
+
+
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+
 ## How to hide the original image from the user
 #### Intention:
 You want to show your images to the customers but the customer shouldn't be able to download in original resolution.
@@ -2533,6 +2747,11 @@ Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 
 
 
+
+
+
+
+
 # Glossar
 
 * Root gallery
@@ -2547,25 +2766,10 @@ Use finally standard Joomla uninstall to get rid of all parts of RSGallery2
 ---
 
 
----
 
-# Left overs ...
 
-[Installation](./GetStarted/01.Installation.md)
-[FirstSteps](./GetStarted/02.FirstSteps.md)
-[CreateGallery](./GetStarted/03.CreateGallery.md)
-[UploadImages](./GetStarted/04.UploadImages.md)
-[CreateMenuGalleryView](./GetStarted/05.CreateMenuGalleryView.md)
-[steps](./GetStarted/06.NextSteps.md)
-[controlPanel](./ControlPanel/controlPanel.md)
-[upload](./Upload/upload.md)
-[uploadDragAndDrop](./Upload/uploadDragAndDrop.md)
-[GalleriesListView](./GalleryDoc/GalleriesListView.md)
-[ImagesListView](./ImageDoc/ImagesListView.md)
-[config](./Config/config.md)
-[Introduction](./MyGalleries/MyGalleries.Introduction.md)
-[SetItUp](./MyGalleries/MyGalleries.SetItUp.md)
-[UserManual](./MyGalleries/MyGalleries.UserManual.md)
-[HowToHideImages](./General/HowToHideImages.md)
-[Maintenance](./Maintenance/Maintenance.md)
-[Glossar](./Glossar.md)
+
+
+
+
+
