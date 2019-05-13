@@ -67,11 +67,31 @@ Here we are more likely to publish than to be stylish and polished.
 !INCLUDE "Site.SlideshowView\ModifyTemplateParameters.md"
 !INCLUDE ""
 
+!INCLUDE "Modules\ModuleLatestGalleries.md"
+!INCLUDE "Modules\ModuleLatestImages.md"
+!INCLUDE "Modules\ModuleRandomImages.md"
+[//]: # (!INCLUDE "Modules\ModuleThumbScroller.md")
+
+!INCLUDE "Plugin\PluginDisplayGallery.md"
+!INCLUDE "Plugin\PluginDisplayImage.md"
+!INCLUDE "Plugin\PluginGalleryCreator.md"
+
+
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+
 !INCLUDE "???Howtos???"
 !INCLUDE "General\HowToHideImages.md"
 
 !INCLUDE "Uninstall\Uninstall.md"
 !INCLUDE "Uninstall\FinishItForGood.md"
+
+
+
+
+
 
 !INCLUDE "Glossar.md"
 
