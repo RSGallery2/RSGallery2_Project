@@ -7,3 +7,5 @@ In this folder the initialising bootstrap proces will be documented a little. It
 
 This documentation is valid for the version 2.5 and 3.5 until the J3.5 standard view model is used. ? RSG2 4.4 ++ ?
 As writing this it is not clear in which version the site has updated
+
+See also folder SiteJ25
