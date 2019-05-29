@@ -1,0 +1,7 @@
+
+for local PC make 
+
+attention maybe reachable from the outside
+
+chmod -R 666 /var/www
+find /var/www -type d -exec chmod 777 {} \;
