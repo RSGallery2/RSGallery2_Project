@@ -1,4 +1,12 @@
 
+
+? balboa
+
+https://joomla-dev.alexander-korn.de/picwally
+
+
+
+
 tiles: http://unitegallery.net/index.php?page=compact-bottom
 
 https://extstore.com/joomla-extensions/components/advanced-portfolio
@@ -22,26 +30,33 @@ https://www.svenbluege.de/de/joomla-event-gallery...Mehr anzeigen
 Event Gallery - Eine Galerie-Komponente für Joomla!
 svenbluege.de|Von Sven Bluege
 Gefällt mir · Antworten · 31. August um 14:34
+
 Viviana Menzel
 Viviana Menzel IgniteGallery oder Widgetkit
 Gefällt mir · Antworten · 1 · 31. August um 15:50
+
 Thomas Vrisk
 Thomas Vrisk Droppic ist auch eine Joomla Alternative und recht einfach zu bedienen
 Gefällt mir · Antworten · 1 · 31. August um 16:17
+
 Thomas Vrisk
 Thomas Vrisk Mit tollen Effekten
 Gefällt mir · Antworten · 31. August um 16:17
+
 Thomas Finnern
 Schreibe eine Antwort ...
 Björn Jaborek
 Björn Jaborek Ich hab mir nun mal Joomgallery installiert. Schon zum Teil angepasst. Einige Funktionen abgeschaltet. Ist ganz okay soweit.
 Gefällt mir · Antworten · 31. August um 16:21
+
 Holger Kremers
 Holger Kremers Responsive?
 Gefällt mir · Antworten · 31. August um 16:27
+
 Björn Jaborek
 Björn Jaborek Japp
 Gefällt mir · Antworten · 31. August um 16:28
+
 Weitere Antworten anzeigen
 Thomas Finnern
 Schreibe eine Antwort ...
@@ -53,14 +68,17 @@ Balbooa - It's easier than ever!
 Beautiful and Innovative extensions for Joomla CMS that make people's lives easier than ever!
 balbooa.com
 Gefällt mir · Antworten · 1. September um 10:12
+
 Björn Jaborek
 Björn Jaborek Was mich interessieren würde. Hast du dir die Pro Version davon gekauft? Lohnt sich das?
 Gefällt mir · Antworten · 1. September um 10:57
+
 Thomas Finnern
 Schreibe eine Antwort ...
 Björn Jaborek
 Björn Jaborek Schicke Seite Thomas Kutter :-)
 Gefällt mir · Antworten · 1. September um 10:16
+
 Thomas Kutter hat geantwortet · 1 Antwort
 Wolfgang Starrost
 Wolfgang Starrost Hier noch ein paar Ansichten der Ingnite Gallery im Einsatz, falls es noch interessant sein sollte:
