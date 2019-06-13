@@ -1,6 +1,13 @@
 
 
 
+Ausführlich ...
+https://www.impulseadventure.com/photo/exif-orientation.html
+
+
+----------------------------------------------------------------------------
+
+
 If you ever need to write a Joomla extension that handles image uploads, you might want to rotate the image to the correct rotation if the image has been taken on a phone.
 Sometimes the image will be rotated at incorrect angles because the browser don't support or ignores the orintation information from the image's EXIF data.
 You can solve this problem by using this simple script in your Joomla extension.

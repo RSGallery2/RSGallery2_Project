@@ -1,0 +1,63 @@
+
+https://marabesi.com/php/2015/09/30/phing-automate-all-the-things-practical-example.html
+
+
+------
+Jesse book
+https://books.google.de/books?id=FNA3CwAAQBAJ&pg=PT413&lpg=PT413&dq=joomla+%22build.xml%22&source=bl&ots=Am6RYA6nMB&sig=ACfU3U2ATCL4TQrdyZi0CvMoHDUb2CyPRw&hl=de&sa=X&ved=2ahUKEwiH0_fj29ziAhVAwMQBHbYqDm4Q6AEwBnoECAgQAQ#v=onepage&q=joomla%20%22build.xml%22&f=false
+
+----
+
+https://github.com/joomla/40-backend-template/blob/master/build.xml
+
+----
+https://joomla.stackexchange.com/questions/18001/how-to-version-a-joomla-component
+
+Here is my structure of the package folder:
+
+pkg_extension
+  - com_extension
+    - site
+    - language
+    - admin
+    - extension.xml
+    - script.php
+  - plg_someplugin
+  - mod_somemod
+  - pkg_extension.xml
+  - build.xml
+And here is sample of my build.xml looks like
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Extension" default="copyall" basedir=".">
+   <property name="site3" value="d:/xampp/htdocs/joomla/components/com_extension" />
+   <property name="admin3" value="d:/xampp/htdocs/joomla/administrator/components/com_extension" />
+   <property name="sitelang3" value="d:/xampp/htdocs/joomla/language/" />
+   <property name="adminlang3" value="d:/xampp/htdocs/joomla/administrator/language" />
+   <target name="copyall">
+      <copy todir="${site3}"><fileset dir="com_extension/site"><include name="**"/></fileset></copy>
+      <copy todir="${admin3}" ><fileset dir="com_extension/admin"><include name="**" /><exclude name="language/**"/></fileset></copy>
+      <copy todir="${sitelang3}"><fileset dir="com_extension/site/language"><include name="**"/></fileset></copy>
+      <copy todir="${adminlang3}"><fileset dir="com_extension/admin/language"><include name="**"/></fileset></copy>
+   </target>
+</project>
+You need not use the same approach and can write build file in whatever the way you like, this is just an example how you can do it.
+
+
+-----
+
+https://github.com/joomla/jissues/blob/master/build.xml
+
+-----------
+https://github.com/raquelsa/Joomla/blob/master/build.xml
+
+https://entwickler.de/webandphp/automate-all-the-phings-125636.html
+
+https://www.sitepoint.com/deploy-and-release-your-applications-with-phing/
+
+----
+https://github.com/lovett/phing-recipes
+
+
+
+
