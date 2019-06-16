@@ -1,0 +1,16 @@
+
+
+FancyBox
+FluidBox
+LightBox
+LightGallery
+Magnific Popup
+PhotoSwipe
+SwipeBox
+
+
+
+Elisa hat doch ein custom_field mit carousel gemacht?
+
+
+
