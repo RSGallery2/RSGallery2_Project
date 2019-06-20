@@ -1,6 +1,15 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V5.0//EN" "http://docbook.org/xml/5.0/dtd/docbook.dtd">
-<book>
+<book version="5.0" xml:id="chapter-backend"
+         xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+
+>
   <!-- use asciidoctor-fopub to convert https://github.com/asciidoctor/asciidoctor-fopub
 		google: docbook to pdf converter
   -->
@@ -51,8 +60,8 @@
 
     <legalnotice>
       <para>This document is licensed under a Creative Commons
-      Attribution-NonCommercial-ShareAlike 3.0 Unported License [<link
-      xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</link>].</para>
+      Attribution-NonCommercial-ShareAlike 3.0 Unported License [<!--link xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</link-->]
+	  </para>
     </legalnotice>
 
     <authorgroup>
@@ -90,9 +99,10 @@ indicates for some options that a user needs to have Permission.
 There can be more than one way to get to a certain screen, but only one of the ways is mentioned
 throughout this document.
 -->
-
-  <xi:include href="RSGallery2_installation.xml" xpointer="element(/1)" />
-  <xi:include href="RSGallery2_frontend.xml" xpointer="element(/1)" />
-  <xi:include href="RSGallery2_backend.xml" xpointer="element(/1)" />
-  <xi:include href="RSGallery2_misc.xml" xpointer="element(/1)" />
+ <!--
+  <xi:include href="RSGallery2_installation.xml" xpointer="element(/1)" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="RSGallery2_frontend.xml" xpointer="element(/1)" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="RSGallery2_backend.xml" xpointer="element(/1)" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="RSGallery2_misc.xml" xpointer="element(/1)" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  -->
 </book>
