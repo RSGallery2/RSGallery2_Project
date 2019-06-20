@@ -1,0 +1,40 @@
+Actual Version 5.1
+
+Introduction
+https://opensource.com/article/17/9/docbook
+
+https://docbook.org/
+https://tdg.docbook.org/tdg/5.1/
+
+editor
+https://www.xmlmind.com/xmleditor/
+
+https://github.com/docbook
+
+german doc 
+https://www.data2type.de/xml-xslt-xslfo/docbook/
+
+
+https://github.com/docbook/wiki/wiki
+
+
+Welcome to cdn.docbook.org
+https://cdn.docbook.org/
+> 
+DocBook schema
+Online content is here.
+DocBook XSL (for DocBook versions 5+)
+Packages are here. https://cdn.docbook.org/schema/ 
+Online content is here. https://cdn.docbook.org/release/xsl/
+DocBook XSL (for DocBook versions < 5)
+Packages are here. https://github.com/docbook/xslt10-stylesheets/releases
+Online content is here. https://cdn.docbook.org/release/xsl-nons/
+DocBook XSLT 2.0
+Packages are here. https://github.com/docbook/xslt20-stylesheets/releases
+Online content is here . https://cdn.docbook.org/release/xsl20/
+
+
+
+
+
+
