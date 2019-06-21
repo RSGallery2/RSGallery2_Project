@@ -23,6 +23,8 @@ JURI::root() returns string 'http://escope.cz/' at frontend and 'http://escope.
 
 real current URL... JURI::getInstance()->toString();
 
+base(true) / root (true) return relative pathes
+Relative paths are ideal if your site switches between http and https
 
 -------------------------------------------------------
 docs.joomla.org
