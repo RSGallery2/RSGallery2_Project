@@ -2,27 +2,33 @@
 
 # header
 
-link: *.png
-
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/.png?raw=true) 
 
 
 
 ## .
-(1) .
+* (1) .  
+  .
 
-(2) .
+* (2) .  
+  .
 
-(3) .
+* (3) .  
+  .
 
-(4) .
+* (4) .  
+  .
 
-(5) .
+* (5) .  
+  .
 
-(6) .
+* (6) .  
+  .
 
-(7) .
+* (7) .  
+  .
 
-(8) .
-
+* (8) .  
+  .
 
 
