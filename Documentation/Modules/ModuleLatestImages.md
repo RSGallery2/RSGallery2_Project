@@ -86,8 +86,7 @@ The number of displayed images is the result from `Count = row number times colu
   (No/Yes) Do display image date below the image
 
 * (8) Date format:
-
-Select format type the date should display (for example, d-m-Y | d/m/Y | m-d-Y : G-i). See <http://nl3.php.net/date> for more info about this.
+  Select format type the date should display (for example, d-m-Y | d/m/Y | m-d-Y : G-i). See <http://nl3.php.net/date> for more info about this
 
 * (9) Link image to view type
 
@@ -119,6 +118,3 @@ More on "mouse over"
 
 
 (4) Cache Time
-
-
-
