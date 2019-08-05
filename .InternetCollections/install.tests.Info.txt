@@ -1,0 +1,12 @@
+
+Um ein installer script zu testen, 
+muss ich da jedesmal die extension 
+installieren und deinstallieren 
+oder gibt es da eine elegantere Variante?
+
+Christiane Maier-Stadtherr
+
+du brauchst ja nur immer vor dem Test 
+den Satz aus der #__extension löschen. 
+Aber sonst weiss ich auch keine 
+einfachere Möglichkeit
