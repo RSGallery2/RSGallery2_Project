@@ -1,0 +1,117 @@
+
+
+
+
+https://joomla.stackexchange.com/questions/22176/minimal-basic-structure-for-a-frontend-joomla-component-without-using-joomla-mvc
+
+
+1
+
+
+What is a basic/minimal skeleton structure on which to build a component without extending the Joomla MVC classes? The skeleton should install and uninstall, not throw any errors, and be practically usable as a starting point for development. Subquestions include: what J4 changes may effect such a skeleton? & what features does one lose, eg. template overrides.
+
+Warning: You should not take such an approach unless you know what you are doing. This approach is especially not suitable for applications built for distribution. If you are a beginner you are better off following the component tutorial in the docs and then using component creator or some other approach to speed up development and follow best practice etc.
+
+component
+share
+improve this question
+asked Dec 30 '17 at 0:38
+
+jamesgarrett
+2,58411 gold badge55 silver badges1313 bronze badges
+add a comment
+1 Answer
+activeoldestvotes
+
+1
+
+Here is my suggestion which I would install using discovery.
+
+Doesn't include any Joomla access checks
+Doesn't allow any template overrides
+Doesn't allow for non-sef urls
+Doesn't allow for any JHtml built routes
+===================================================
+
+Manifest
+Description: While it works to include the manifest in the frontend, if there is no administation file structure this does cause errors with uninstallion so I include the manifest there with an index.html file just to keep it company
+
+Location: /administator/components/com_minimal/minimal.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.7.0" method="upgrade">
+
+    <name>Minimal</name>
+    <version>0.0.1</version>
+    <description>Testing Only</description>
+    <author>Minimal</author>
+    <creationDate>Dec 2017</creationDate>
+
+    <files folder="site">
+        <filename>minimal.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+    </files>
+
+    <administration>
+        <files folder="admin">
+            <filename>index.html</filename>
+        </files>
+    </administration>
+
+</extension>
+===================================================
+
+Entry File
+Location: /components/com_minimal/minimal.php
+
+Description: Catches up to 5 url segments from the router, presumably one would inject whatever you want from joomla into your own code here
+
+<?php
+defined('_JEXEC') or die;
+
+$max_segments = 5;
+
+$jinput = JFactory::getApplication()->input;
+$segments = [];
+for($i=0;$i<$max_segments;$i++){
+    $segments[] = $jinput->get('segment'.$i,'','CMD');
+}
+
+// load your own custom php application here
+echo "<pre>" . print_r($segments,1) . "</pre>";
+===================================================
+
+Router
+Location: /components/com_minimal/router.php
+
+Description: splits the url segments into input variables starting from the component base menu item , ie. /menu-item/{segment0}/{segment1} etc. The build method is required to exist but is not used.
+
+<?php
+Class MinimalRouter extends JComponentRouterBase
+{
+    public function build(&$query)
+    {
+        return;
+    }
+
+    public function parse(&$segments)
+    {
+        $vars = [];
+        foreach($segments as $i => $s){
+            $vars['segment' . $i] = $s;            
+        }
+        return $vars;
+    }
+}
+===================================================
+
+Default Menu Item
+Location: /components/com_minimal/views/minimal/tmpl/default.xml
+
+Description: Provides a Menu Item Type to point to the component.
+
+<?xml version="1.0" encoding="utf-8"?>
+<metadata><fields name="params"></fields></metadata>
+share
+improve this answer

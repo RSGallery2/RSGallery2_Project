@@ -1,0 +1,58 @@
+People tell that it is needed to copy (keep) the exif data for copyright reasons
+
+Jan Pavelka shared 4 links · 
+3 likes
+1) https://github.com/pel/pel
+2) Daten aus dem Quellbild lesen
+3) Thumbnails erstellen
+4) Daten in Thumbnails schreiben
+
+https://stackoverflow.com/questions/10182890/copy-an-image-and-preserve-its-exif-iptc-data-with-php-imagecreatefromjpeg ==> https://github.com/pel/pel (EXIF) oder (IPTC) https://www.php.net/iptcembed ...
+
+
+
+Das ist kein Quatsch, es ist ähnlich geregelt wie das Verbot den Urheber aus Dateien im Open Source Bereich je nach Lizenz zu entfernen. 
+welche mimetypes unterstützen denn EXIF und IPTC, soweit ich weiß nur JPG
+Ich hab’s mit 24bit png probiert, da waren sie auch dabei
+dann sind aber die ganzen Bild Optimierungstools eigentlich hinfällig, weil man damit ‚illegale‘ Bilder bekommt
+
+Ja, bei Facebook Plugins hast Du auch keine Eingriffsmöglichkeiten... deshalb dürfen wir sie nicht mehr verwenden
+
+Und Tools wie jpgMini löschen zB den Urheber nicht aus den Metadaten, auch nicht aus IPTC
+
+
+
+
+Eigentlich braucht man wirklich nur das Urheberfeld
+
+
+/*
+$fileIn ... original image
+$fileOut ... destination image (e.g. thumbnail)
+*/
+$copyright = array();
+$info = array();
+$data = '';
+$size = getimagesize($fileIn, $info);
+if(isset($info['APP13'])){
+	$iptc = iptcparse($info['APP13']);
+	if(isset($iptc['2#116'][0]) && $iptc['2#116'][0] != ''){
+		$iptcEmbed = array('2#116' => $iptc['2#116'][0]);
+		foreach($iptcEmbed as $tag => $string) {
+			$tag = substr($tag, 2);
+			// iptc_make_tag Funktion kann man hier finden:
+			// https://www.php.net/manual/en/function.iptcembed.php (example 1)
+			$data .= iptc_make_tag(2, $tag, $string);
+		}
+		$content = iptcembed($data, $fileOut);
+		// Man kann hier auch Joomla! JFile Methode benutzen
+		$fw = fopen($fileOut, 'w');
+		fwrite($fw, $content);
+		fclose($fw);
+	}
+}
+
+
+Die Grösse ist dann cca. um  86 Bytes grösser. (ohne Copyright Text,  so cca. 86 Bytes + Copyright Text) 
+
+
