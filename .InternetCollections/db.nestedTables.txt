@@ -1,0 +1,34 @@
+lft rgt in Joomla! nested table verstehen
+
+Das Joomla! Framework bietet an einigen Stellen die Möglichkeit beliebig tief verschachtelte Strukturen zu erzeugen, z.B. bei Kategorien und in Menüs. Solche beleibig tief verschachtelten Strukturen werden häufig auch als Tree bezeichnet. Das Feature der beliebig tiefen Verschachtelung selbst wurde mit Joomla! 1.6 eingeführt und war in Joomla! 1.5 noch nicht vorhanden. Hier gab es im Bereich der "Inhalte" 2 Ebenen (Sektion und Kategorie) und im Bereich der Menüs eine maximale Tiefe von 10 Ebenen.
+
+Es gibt verschiedene Ansätze, wie man Daten in einem Tree sinnvoll in der Datenbank speichern kann. Insbesondere ist es interessant einen Mechanismus zu haben, bei dem abhängige Datensätze innerhalb ihres Kontextes mit wenig Rechnenleistung identifiziert werden können. Joomla! verwendet hierzu sogenannte nested tables. Leider gibt es beim Update von Joomla! 1.5 auf höhere Versionen häufig Probleme mit den nested tables. Dieser Artikel hilft Ihnen nested tables zu verstehen und gegebenenfalls zu reparieren.
+
+Sie erkennen eine "nested table" daran, dass Sie zwei spezielle Felder enthält, das Feld "lft" und das Feld "rgt".
+
+Im Joomla! Core sind dies die Tabellen #_assets, # _categories, #_menu und #_usergroups nested tables. (Ich hoffe ich habe keine übersehen).
+
+Das besondere an nested tables ist, dass nur die Werte in diesen beiden Feldern benötigt werden um, ausgehend von einem beliebigen Datensatz, die vollständige Struktur seines Trees (bzw. des Teils des Trees zu dem der Datensatz gehört) zu erzeugen. Beim Speichern von Datensätzen aus einem Tree wird zusätzlich das Felder "parent_id" und gegebenenfalls das Feld "level" verwendet. Die Werte in lft und rgt haben nichts mit Datensatz Id's zu tun sondern stehen nur in Beziehung zu Werten in anderen lft und rgt Feldern derselben Tabelle.
+Regeln beim Speichern von Datensätzen in nested tables
+
+Enthält ein Datensatz selbst keine Kinder, so stehen in den Feldern lft und rgt zwei benachbarte Zahlen.
+
+Enthält ein Datensatz Kinder, so ist der Wert in lft des Elterndatensatzes um 1 kleiner als der niedrigste lft Wert über alle seine Kinder und der Wert in rgt des Elterndatensatzes um 1 größer als der höchste Wert über alle seine Kinder.
+
+Jede nested table hat einen "Root" Datensatz. Dieser hat in lft den Wert 0 und in rgt eine Zahl, die um 1 größer ist als der höchste Wert in rgt über alle anderen Datensätze der Tabelle. Er umhüllt quasi alle anderen Datensätze.
+
+lft und rgt aller betroffenen Datensätze werden beim Speichern neu geschrieben. Wird ein Element im Tree auf eine andere Ebene geschoben, so können viele Datensätze betroffen sein, weil innerhalb des neuen Elterndatensatz "Platz" geschaffen werden muss, so dass unter Umständen die lft und rgt Werte sehr vieler Datensätze neu gesetzt werden müssen.
+Regeln beim Auslesen von Datensätzen in nested tables
+
+Sucht man Elterndatensätze, so wird zuerst der Wert für lft des Datensatzes dessen Eltern man sucht ermittelt. Anschließend werden alle Datensätze in der Tabelle gesucht, deren Wert für lft kleiner ist als dieser Wert und deren Wert für rgt größer ist. Geht man hierbei rekursiv vor, kann man den ganzen Tree aufbauen.
+Probleme mit nested tables
+
+Da echte Trees erst mit Joomla! 1.6 eingeführt wurden müssen beim Update vorhandener Webseiten von Joomla! 1.5 auf höhere Versionen erhebliche Anpassungen an den Datenbankstrukturen vorgenommen werden und z.B. lft und rgt in nested tables nachträglich eingefügt werden. Dies funktioniert nicht immer ganz reibungslos und kann zu inkonsitenten Daten führen. Eine häufige Folge sind "404 Category not found" und andere 404er Fehler. Bei genauerem Hinsehen stellt sich meist heraus, dass in der betroffenen Tabelle mehrere Datensätze existieren, die denselben lft-Wert haben. Dies lässt sich relativ einfach überprüfen, indem man die Tabelle nach diesem Feld sortiert. (Selbstverständlich benötigen Sie hierzu ein Admin Tool mit dem Sie auf Ihre Datenbank zugreifen und diese bearbeiten können).
+
+Außerdem sollten Sie überprüfen, dass die Werte für lft und rgt im "Root" Datensatz der Tabelle stimmen (siehe oben).
+Fehlerhafte Werte für lft und rgt in nested tables reparieren
+
+Beachtet man die oben beschriebenen Regeln, die beim Speichern von Datensätzen in nested tables angewandt werden, kann man eine fehlerhafte Tabelle durchaus von Hand reparieren. Sie müssen sich nur genau klar machen, wie die Datensätze ineinander verschachelt sind und daran denken, alle Elterndatensätze und gegebenenfalls den Root Datensatz mit zu korrigieren. Wenn hierdurch ein Wert für lft oder rgt, vollständig entfällt, ist das kein Problem. Überprüfen Sie am Ende, zur Sicherheit, dass über die gesamte Tabelle keinen doppelten Werte für lft existieren.
+Source Code
+
+Der Source Code zum Speichern, Ändern und Auslesen von Datensätzen aus nested tables findet sich in libraries/joomla/table/nested.php
