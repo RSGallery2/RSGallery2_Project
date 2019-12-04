@@ -19,4 +19,13 @@ und schmeißt die anderen sonst raus.
 Mache mein LazyLoading bislang immer selbst über IntersectionObserver
 
 
+-----------
+
+Bootstrap breakpoints:
+
+sm: Viewport greater than 576px.
+md: Viewport greater than 768px.
+lg: Viewport greater than 992px.
+xl: Viewport greater than 1200px.
+
 
