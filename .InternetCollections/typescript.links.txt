@@ -1,0 +1,26 @@
+--------------------------
+spec
+https://github.com/microsoft/TypeScript/blob/master/doc/spec.md
+
+--------------------------
+
+https://www.saltycrane.com/cheat-sheets/typescript/latest/
+
+--------------------------
+interface general
+https://github.com/microsoft/TypeScript/blob/v3.7.2/lib/lib.dom.d.ts#L6693
+--------------------------
+
+
+--------------------------
+
+
+--------------------------
+
+
+--------------------------
+
+
+--------------------------
+
+
