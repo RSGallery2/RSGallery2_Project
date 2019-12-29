@@ -1,0 +1,52 @@
+
+
+
+factory:
+https://blog.rsuter.com/how-to-instantiate-a-generic-type-in-typescript/
+
+The best solution I came up with, is to pass the generic type as method argument and add a generic type argument which will be inferred from the method argument and thus must not be declared:
+
+class Person {
+    firstName = 'John';
+    lastName = 'Doe';
+}
+
+class Factory {
+    create<T>(type: (new () => T)): T {
+        return new type();
+    }
+}
+
+let factory = new Factory();
+let person = factory.create(Person);
+
+console.log(JSON.stringify(person));
+As you can see, the special part is the type (new () => T) which describes a type with an empty constructor. The call to create is almost as simple as in the C# example and you can also add constraints to the generic type argument if needed.
+
+
+--------------------
+
+Generic Classes #
+https://www.typescriptlang.org/docs/handbook/generics.html
+A generic class has a similar shape to a generic interface. Generic classes have a generic type parameter list in angle brackets (<>) following the name of the class.
+
+class GenericNumber<T> {
+    zeroValue: T;
+    add: (x: T, y: T) => T;
+}
+
+let myGenericNumber = new GenericNumber<number>();
+myGenericNumber.zeroValue = 0;
+myGenericNumber.add = function(x, y) { return x + y; };
+This is a pretty literal use of the GenericNumber class, but you may have noticed that nothing is restricting it to only use the number type. We could have instead used string or even more complex objects.
+
+let stringNumeric = new GenericNumber<string>();
+stringNumeric.zeroValue = "";
+stringNumeric.add = function(x, y) { return x + y; };
+
+console.log(stringNumeric.add(stringNumeric.zeroValue, "test"));
+Just as with interface, putting the type parameter on the class itself lets us make sure all of the properties of the class are working with the same type.
+
+As we covered in our section on classes, a class has two sides to its type: the static side and the instance side. Generic classes are only generic over their instance side rather than their static side, so when working with classes, static members can not use the class’s type parameter.
+
+

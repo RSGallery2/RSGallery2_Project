@@ -1,0 +1,63 @@
+
+-------------------------------------------
+https://docs.joomla.org/Using_JLog#Basic_Logging_Sample_Code
+
+Global Sytem -> Path to Log folder
+Global Sytem -> Debug system : Yes
+
+Plugins: System - Debug
+ 
+
+--------------------------------------------
+
+https://www.wicked-software.de/debuggen-mit-dem-joomla-logging
+
+<?php  
+
+// Nutze den Namepace des Loggings
+use Joomla\CMS\Log\Log;
+
+..  [] ..
+
+Log::addLogger(
+
+    // Definiert den Namen der Datei, in welche der Logger protokolliert.
+    ['text_file' =>  'mylogfile.php'],  
+    
+    // Welche Typen von Meldungen soll der Logger protokollieren? (INFO, ERROR, ...)
+    Log::ALL,  
+    
+    // Welche Kategorien von Meldungen soll der Logger protokollieren?
+    ['mymessage']
+);
+
+
+Logsätze schreiben 
+Alle Logeinträge vom Typ mymessage werden nun in das neue Logfile gespeichert.
+Das Beispiel zeigt, wie Sätze ins Logfile gebracht werden: 
+<?php  
+use Joomla\CMS\Log\Log;
+
+..  [] ..
+
+$params = JComponentHelper::getParams('com_mycomponent');
+
+if (!empty($params))
+{
+	Log::add(print_r($params, true), LOG::INFO, 'mymessage');
+}
+else
+{
+	Log::add('Parameter nicht vorhanden', LOG::ERROR, 'mymessage');
+}
+
+Performance messen mittels Log 
+Praktischerweise sind die Sätze mit dem exakten Zeitstempel versehen. So sind sie auch hilfreich, um Verarbeitungszeiten zu messen, oder die Zeit, die ein User braucht, um eine Aktion durchzuführen. Dazu muss man nur vor und nach einer Aktion, z.b. einer Datenbankabfrage, einen Logeintrag schreiben oder eine Zeitdifferenz ermitteln und ausgeben. Wer es auf Microsekunden genau wissen will verwendet dafür die microtime. 
+<?php  
+$start_time =  microtime(true);
+
+// do something
+
+$diff = microtime(true) - $start_time;
+
+Log::add($diff . ' = Verbrauchte Zeit für something', LOG::INFO, 'mymessage');

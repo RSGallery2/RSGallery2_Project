@@ -1,0 +1,10 @@
+orinne Meister
+Mon 2:57 PM
+Wie kann ich auf einer View von einer Komponente eine Modulposition einbinden die dort angezeigt werden soll? 
+<jdoc:include type="modules" name="inserate" style="none" /> ... geht nicht 
+
+
+David Jardin · 
+das musst du per hand machen:
+$moduleRenderer = JFactory::getApplication()->getDocument()->loadRenderer('modules');
+echo $moduleRenderer->render('right', array("style" => "html5"));
