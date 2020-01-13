@@ -1,0 +1,17 @@
+Joomla 4 bringt da mehr mit, J3 nicht so viel, aber es gibt erweiterungen, die das können
+
+
+Harald Leithner shared a link 
+Der PR wartet aber noch auf tests und feedback -> https://github.com/joomla/joomla-cms/pull/21452
+[4.0] [GSoC 2018] CLI Update Project by bosunski · Pull Request #21452 · joomla/joomla-cms
+
+Summary of Changes Added Commands for: Checking Updates Installing Extension 
+Removing Extension Listing Extensions with type specification Updating Joomla! core Installing Joomla!
+
+
+Robert Deutz shared a link 
+Toni Gerns schau mal hier https://github.com/joomla-projects/cli-update ist zwar schon älter, müsste aber noch funktionieren
+joomla-projects/cli-update
+
+Proof of concept on how to update/manage Joomla from the command line Parameter: 
+php cli/update.php --core --extension[=ID_OF_THE_EXTENSION] --info --sitename --installpackage=[ARCHIVE_FILE_IN_TMP] --installurl=[ARCHIVE_FILE_URL] --remove=ID_OF_THE_EXTENSION --core: Updates the Joomla!
