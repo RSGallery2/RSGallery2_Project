@@ -1,0 +1,85 @@
+
+https://www.reilldesign.com/tutorials/get-component-module-plugin-template-menu-parameters-in-joomla-3-x.html
+
+Get component, module, plugin, template & menu parameters in Joomla 3.x 
+Access component parameters from inside own component
+To access component params in component itself, I use JFactory::getApplication() like below:
+$app = JFactory::getApplication();
+$params = $app->getParams();
+$param = $params->get('show_create_date');
+To access component parameters from another component:
+$content_params = JComponentHelper::getParams( 'com_content' );
+$show_date = $content_params->get( 'show_create_date' );
+Or even shortcut:
+$show_date = JComponentHelper::getParams('com_content')->get('show_create_date');
+Get module parameters from template's index.php file:
+$module = JModuleHelper::getModule('mod_headlineticker');
+$headLineParams = new JRegistry($module->params);
+$tickercount = (int) $headLineParams['count'];
+Get plugin parameters from inside a plugin
+$param = $this->params->get('paramName', defaultValue);
+Get plugin parameters anywhere inside Joomla
+// Get plugin 'relatedarticles' of type 'content'
+$plugin = JPluginHelper::getPlugin('content', 'relatedarticles');
+// Check if plugin is enabled
+if ($plugin)
+{
+    // Get plugin params
+    $pluginParams = new JRegistry($plugin->params);
+    $catids = $pluginParams->get('catids');
+}
+Access Current Menu parameters:
+$app = JFactory::getApplication();
+// Get active menu
+$currentMenuItem = $app->getMenu()->getActive();
+// Get params for active menu
+$params = $currentMenuItem->params;
+// Access param you want
+$yourParameter = $params->get('yourParameter');
+Access Menu parameters from a known Itemid:
+$app = JFactory::getApplication();
+// Get Itemid from URL
+$input  = JFactory::getApplication()->input;
+$itemId = $input->get->get('Itemid', '0', 'INT');
+// Get menu from Itemid
+$menuItem = $app->getMenu()->getItem($itemId);
+// Get params for menuItem
+$params = $menuItem->params;
+// Access param you want
+$yourParameter = $params->get('yourParameter');
+Template parameters from inside a template
+$param = $this->params->get('paramName', defaultValue);
+Template parameters from outside a template
+$app = JFactory::getApplication('site');
+$template = $app->getTemplate(true);
+$param = $template->params->get('paramName', defaultValue);
+
+-------------------------------------------------------------------
+read parameters
+www.webtechriser.com/tutorials/joomla-3-0/get-component-module-and-plugin-parameters-in-joomla-3
+
+At the time of Joomla! custom component development, we need to get a component params for use in different places like in component itself, modules, plugins.
+
+Access component params from inside own component
+To access component params in component itself, I use JFactory::getApplication() like below:
+
+$app = JFactory::getApplication();
+$params = $app->getParams();
+$param = $params->get('show_create_date');
+
+To access component params from another component:
+$content_params = JComponentHelper::getParams( 'com_content' );
+$show_date = $content_params->get( 'show_create_date' );
+
+Or even shortcut:
+$show_date = JComponentHelper::getParams('com_content')->get('show_create_date');
+Get Module Parameter from template's index.php file:
+
+$module = JModuleHelper::getModule('mod_headlineticker');
+$headLineParams = new JRegistry($module->params);
+$tickercount = (int) $headLineParams['count'];
+
+Get plugin's parameter anywhere inside Joomla
+To access a plugin's parameter (here, it is "relatedarticles" which is a "content" plugin) anywhere inside Joomla 3, load the particular plugin's parameters in a variable named "$plugin" using JPluginHelper::getPlugin function as an array. Later, this array-type variable is boxed in JRegistry class and use "get" function to access each and every parameter of jRegistry class.
+
+

@@ -1,0 +1,67 @@
+
+google
+What size should website images be?
+image size guideline
+media query  image dimensions
+
+statistics
+https://www.w3schools.com/browsers/browsers_display.asp
+Date	Other high	1920x1080	1366x768	1280x1024	1280x800	1024x768
+
+
+https://documentation.thoughtfarmer.com/documentation/105973/image-size-guidelines/
+
+
+
+
+-------------------
+https://sproutsocial.com/insights/social-media-image-sizes-guide/
+
+
+The dimensions of the original image you upload to your site can have a big impact on how it displays. 
+We recommend using images that are between 1500 and 2500 pixels wide. Images smaller than 1500 pixels 
+may appear blurry or pixelated when they stretch to fill container s, such as banners.09.07.2019
+
+The best image resolution for most smartphones is 640 by 320 pixels, although you should ideally 
+maintain the aspect ratio of the original image or the output image will be distorted
+
+
+http://www.typo3manual.com/typo3-basics/image-size-guidelines/
+
+
+---------------------
+https://flothemes.com/flothemes-image-sizes/
+2400x1600px, jpeg, saved for web, and optimized
+
+Inside Content Images
+Horizontal – max width 1500px, jpeg, saved for web, and optimized
+Vertical – max width 1000px, jpeg, saved for web, and optimized
+
+Important considerations:
+
+ if you are preparing images for your slideshow galleries: make sure they are all 
+ the same height recommended 1500px, regardless if they are horizontal or vertical
+ 
+ if you are preparing images to upload inside a blogpost, make sure they are all 
+ the same width, recommended 1500px, regardless if they are horizontal or vertical
+ 
+
+a. Using the Image Size Info Extension
+The first method to find image sizes for your site is by using the Image Size Info 
+extension for Chrome (If you don’t use Chrome on your computer, we highly recommend 
+using it while creating your site). Once you’ve installed the extension, this tool 
+will then allow you to find out the image sizes of every image element on your site.
+
+----------------------------------------------
+
+Default images:
+Profile image	500 x 500	GIF, JPG, PNG
+Group image	500 x 500	GIF, JPG, PNG
+Mobile:
+Mobile intranet icon	180 x 180	GIF, JPG, PNG
+
+300 x 300
+
+
+
+
