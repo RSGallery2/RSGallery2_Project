@@ -1,0 +1,31 @@
+read 4 some bytes -> determnimne 
+
+https://stackoverflow.com/questions/18299806/how-to-check-file-mime-type-with-javascript-before-upload
+
+
+   var blob = file.slice(0, 4); //read the first 4 bytes of the file
+
+							
+Example file signatures of JPEG (first 4 bytes):
+FF D8 FF E0 (SOI + ADD0)
+FF D8 FF E1 (SOI + ADD1)
+FF D8 FF E2 (SOI + ADD2)
+
+switch (header) {
+    case "89504e47":
+        type = "image/png";
+        break;
+    case "47494638":
+        type = "image/gif";
+        break;
+    case "ffd8ffe0":
+    case "ffd8ffe1":
+    case "ffd8ffe2":
+    case "ffd8ffe3":
+    case "ffd8ffe8":
+        type = "image/jpeg";
+        break;
+    default:
+        type = "unknown"; // Or you can use the blob.type as fallback
+        break;
+}
