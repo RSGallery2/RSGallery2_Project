@@ -1,0 +1,6 @@
+
+https://sonarcloud.io/
+
+
+use with azure dev ops => for build
+
