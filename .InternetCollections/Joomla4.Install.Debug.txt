@@ -1,0 +1,13 @@
+
+How to debug own install -> InstallerAdapter.php -> function triggerManifestScript
+
+				case 'preflight' :
+				case 'postflight' :
+
+				case 'install' :
+				case 'uninstall' :
+				case 'update' :
+
+....
+
+
