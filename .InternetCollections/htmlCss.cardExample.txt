@@ -1,0 +1,10 @@
+
+
+card with links from css-tricks.com
+
+https://codepen.io/team/css-tricks/pen/qBdZeNo
+
+
+Bloglayout mit Card-Verlinkung 
+https://www.dr-menzel-it.de/blog/bloglayout-mit-verlinkung
+

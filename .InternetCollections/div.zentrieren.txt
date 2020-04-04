@@ -1,0 +1,4 @@
+
+ div zentrieren geht mit margin: 0 auto;
+ 
+ 
