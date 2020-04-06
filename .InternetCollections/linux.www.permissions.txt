@@ -1,0 +1,25 @@
+
+developer
+
+https://unix.stackexchange.com/questions/85973/how-to-edit-var-www-files-using-phpstorm
+
+Then, change permissions of the /var/www directory as follows:
+
+chown -R :developer /var/www
+Set the group of all files in /var/www to "developer" recursively
+chmod -R o+r /var/www
+Allows everyone (including apache) to read all files in /var/www
+chmod -R g+w /var/www
+Allows group members to write to all files in /var/www
+find /var/www -type d -exec chmod g+s {} \;
+sets new files to retain the group of the directory they are created in
+
+
+
+linux www permissions
+How to setup linux permissions for the WWW folder?
+
+https://serverfault.com/questions/124800/how-to-setup-linux-permissions-for-the-www-folder
+
+
+
