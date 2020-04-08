@@ -1,0 +1,22 @@
+
+http://www.dieuwe.com/blog/xdebug-ubuntu-1604-php7
+
+sudo apt-get install php-xdebug
+
+You should check your PHP modules list and see xdebug in there now. You will also need to restart Apache2 if you are using it.
+
+php -m
+
+sudo service apache2 restart
+
+But, there was a problem, I wasn't getting any stack traces. Adding a call to phpinfo() in my site showed that indeed, stack traces were turned off. So I edited the config file to manually enable traces on errors (just add the snippet to the bottom of the file).
+
+vi /etc/php/7.0/mods-available/xdebug.ini
+xdebug.show_error_trace = 1
+
+After restarting Apache2 once again, everything was back to normal. In my case I also needed SOAP and CURL for a specific site, so I picked those up too with:
+
+sudo apt-get install php-soap php-curl
+
+
+
