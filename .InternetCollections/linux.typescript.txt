@@ -19,4 +19,7 @@ sudo npm install -g typescript@2.9.2
 Update To Latest Version
 sudo npm install -g typescript@latest
 
+--------------------
+npm install -g sass
+
 
