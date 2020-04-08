@@ -1,0 +1,22 @@
+
+sudo apt install npm
+
+https://blog.programster.org/ubuntu-16-04-install-typescript
+
+Ubuntu 16.04 and 18.04 - Native Packages
+sudo apt update && sudo apt install node-typescript -y
+
+sudo apt update 
+sudo apt install node-typescript -y
+
+
+Using Node
+sudo npm install -g typescript
+
+Install Specific Version
+sudo npm install -g typescript@2.9.2
+
+Update To Latest Version
+sudo npm install -g typescript@latest
+
+
