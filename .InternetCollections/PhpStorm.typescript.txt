@@ -1,13 +1,6 @@
 
+phpstorm used tzpescript options 
+ --target "ES2018" 
 
-???
---lib ES2015
+<option name="typeScriptCompilerParams" value="--target &quot;ES2018&quot; " />
 
-???
-ES5
-► ES6
-► ES2015
-► ES7
-► ES2016
-► ES2017
-► ES2018
