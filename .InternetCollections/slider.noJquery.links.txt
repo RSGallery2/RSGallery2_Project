@@ -1,0 +1,17 @@
+
+
+https://www.sitepoint.com/make-a-simple-javascript-slideshow-without-jquery/
+
+slides.com/robertmittl/es-geht-auch-ohne-js-framework
+
+
+google slider no jquery
+
+
+https://glidejs.com/
+
+
+
+
+
+
