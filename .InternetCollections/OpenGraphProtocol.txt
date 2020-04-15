@@ -10,4 +10,5 @@ The global types are grouped into verticals. Each vertical has its own namespace
 
 .....
 
+https://de.ryte.com/magazine/open-graph-tags
 

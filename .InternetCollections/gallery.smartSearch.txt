@@ -1,0 +1,14 @@
+
+ToDo: Implement smart search
+
+Moin, kennt jemand eine Gallery, die Ordner syncronisieren kann und so in Smart Search intergriert ist, dass man nach den Bildnamen suchen kann?
+
+
+Hat die Sige eine Finder Integration? Finde nix 
+
+Schau dir mal die Ignite Gallery an https://www.ignitegallery.com/
+
+
+
+
+
