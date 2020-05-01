@@ -1,0 +1,5 @@
+
+https://developer.joomla.org/news/812-bugs-and-fun-home.html
+
+The sheet with details of the bugs to squash is here:
+https://docs.google.com/spreadsheets/d/1TR_-NqoPDSWnUnysT2MRdINVyXCnkzyJteml8-CfFAc/edit?usp=sharing
