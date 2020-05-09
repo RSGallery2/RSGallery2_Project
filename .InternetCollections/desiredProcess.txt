@@ -1,0 +1,6 @@
+
+Mein Bilder-Plugin-Wunschkandidat wäre zur Zeit: User lädt ein Bild in hoher Auflösung hoch. Bild kann an verschiedenen Stellen zugeordnet werden (Einleitungsbild, Custom fields, oder sogar im Text). Bilder werden automatisch beim ersten Aufruf auf die richtige Größe (ergibt sich aus css-Klasse oder width/height) zugeschnitten. Es kann ein Wasserzeichen eingefügt werden. Großes Bild wird als Modul/Popup beim Klick auf Thumbnail/Intro Image angezeigt. Natürlich auch responsive mit srcset... 
+und das alles automatisch!
+
+
+
