@@ -1,0 +1,7 @@
+
+
+$current = JUri::getInstance()->current();
+$toCompare = new JUri(JRoute(BLABLA))->current();
+
+
+
