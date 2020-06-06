@@ -1,0 +1,17 @@
+
+
+Enable Responsive images ANYWHERE
+https://ttc-freebies.github.io/plugin-responsive-images/#/
+https://ttc-freebies.github.io/plugin-responsive-images/#/code
+https://github.com/ttc-freebies/plugin-responsive-images/
+
+The extra images are placed in /media/cached-resp-images
+
+Which image sizes will be generated?
+320px, 480px, 768px, 992px, 1200px, 1600px, 1920px These sizes refer to the width of each image.
+
+
+
+
+
+
