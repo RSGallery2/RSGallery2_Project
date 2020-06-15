@@ -1,5 +1,12 @@
+How to debug my own installation script: 
 
-How to debug own install -> InstallerAdapter.php -> function triggerManifestScript
+--------
+loading the install script
+ -> InstallerAdapter.php -> function install() line: $this->setupScriptfile();
+
+---------------
+trigger the install function in the script 
+ -> InstallerAdapter.php -> function triggerManifestScript
 
 				case 'preflight' :
 				case 'postflight' :
