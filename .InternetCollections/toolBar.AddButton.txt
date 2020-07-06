@@ -1,0 +1,34 @@
+
+Jan Pavelka
+5:20 PM
+Niels Nübel wrote:
+Wie kann ich den Toolbar ein Button hinzufügen der eine neue Seite öffnet z.B. Dokumentation zu meiner Komponente
+
+z.B:
+$bar = JToolbar::getInstance( 'toolbar' );
+$dhtml = '<a href="https://www.phoca.cz" target="_blank" class="btn btn-small"><i class="icon-home-2" title="Title"></i> Title</a>';
+$bar->appendButton('Custom', $dhtml);
+Niels Nübel
+5:20 PM
+Thx
+Niels Nübel
+Jan Pavelka 
+wie bekomme ich den noch nach hinten
+also rechts
+Niels Nübel
+5:23 PM
+ah
+Jan Pavelka
+5:23 PM
+
+
+
+Rechts ist z.B. Help Button:
+
+#toolbar #toolbar-options, #toolbar #toolbar-help {
+
+   float: right;
+
+}
+
+
