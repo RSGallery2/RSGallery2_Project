@@ -1,0 +1,181 @@
+How_Permissions_Work
+
+https://docs.joomla.org/J3.x:Access_Control_List_Tutorial#How_Permissions_Work
+
+https://docs.joomla.org/J3.x:Access_Control_List_Tutorial/de
+
+
+
+
+This means that Authors can create articles and can edit articles they have created. They may not delete articles, change the published state of articles, or edit articles created by others.
+Editors have the same permissions as Authors with the addition of permission for the Edit action, as shown below.
+ 
+
+So Editors can edit articles written by anyone.
+Publishers can do everything Editors can do plus they have permission for the Edit State action, as shown below.
+ 
+
+So Publishers can change the published state of an article. The possible states include Published, Unpublished, Archived, and Trashed.
+All of these groups have Inherit permission for Configure and Access Component. Remember that Author is a child of the Registered group, and Registered does not have any default permissions except for Login. Since Registered does not have permission for Configure and Access Component, and since Author's permission for these actions is "Inherited", then Author does not have these permissions either. This same permission is passed from Author to Editor and from Editor to Publisher. So, by default, none of these groups are allowed to work with articles in the back end.
+It is important to remember that these permissions are only default settings for categories and articles and for any child groups that are created. So they can be overridden for child groups, for categories, and for specific articles.
+Also, note that there are no Denied permissions for any actions in the default settings. This allows you to add Allowed permissions at any level. Remember, once you have an action set for Denied, this action will be denied at all lower levels in the hierarchy. For example, if you set the Admin Login for Registered to Denied (instead of Inherited), you could not grant Publishers Allowed permissions for this action.
+Article Manager & Actions Diagram
+The diagram below shows how each action in the permissions form relates to the various options on the Article Manager screen.
+
+Configure allows you to view and change the Options for the component.
+Access Component allows you to navigate to the Article Manager. Without this permission, no other actions are possible.
+Create allows you to add new articles.
+Delete allows you to delete trashed articles. Note that the Delete icon only shows in the toolbar when you have the "Select State" filter set to "Trash".
+Edit allows you to edit existing articles.
+Edit State allows to you Publish, Unpublish, Archive, or Trash articles.
+Edit Own is the same as Edit except that it only applies to articles written by you.
+Allowing Guest-Only Access to Menu Items and Modules
+Version 1.6 introduced the ability to create a View Access Level that is only for guests of the site (meaning a user who is not logged in). The example below shows how you can set up this new feature. (N.B. Steps 1 to 3 are not needed for Joomla! 3.x as they exist in the default install)
+Create a new user group called Guest. Make it a child of the Public group as shown below. 
+ 
+
+Create a new access level called Guest and grant only the Guest group access to this level, as shown below. 
+ 
+
+Navigate to User Manager→Options→Component and change the Guest User Group from the default value of "Public" to "Guest", as shown below.
+ 
+
+Now, if we assign a menu item, module, or other object to the Guest access level, only non-logged in users will have access. For example, if we create a new menu item with access level of Guest, as shown below,
+ 
+
+this menu item will only be visible to non-logged-in visitors to the site.
+If required other user groups like Author can be granted access in the Guest access level, this would allow Authors to view articles in the front end for editing.
+N.B. Login/logout in front end (for changing data in session) to see the change.
+Using Permission and Group Levels Together
+As discussed above, it is possible to define groups in a hierarchy, where each child group inherits action permissions (for example, the create permission) from its parent group. Action permissions are also be inherited from the permission level above. For example, a permission in the Article Manager is inherited from the same permission in the Global Configuration, and a permission in a child Category is inherited from the parent Category permission.
+This dual inheritance can be confusing, but it can also be useful. Let's consider an example as follows. We have a school with a group hierarchy of Teachers → History Teachers → Assistant History Teachers. We also have a category hierarchy of Assignments → History Assignments. We want History Teachers and Assistant History Teachers to have the following permissions:
+both groups can create new articles only in the History Assignments category.
+only History Teachers (not Assistant History Teachers) can Publish or otherwise have Edit State permission.
+This ACL scheme is very easy to implement. The diagram below shows how this would be set up for the Create Action.
+
+In the diagram, the Permission Hierarchy is shown down the left side and the Group hierarchy is shown across the top. Permissions are inherited down and to the right, as shown by the arrows. To implement the desired permissions, we leave the Global Configuration blank (Not Set) for all three groups. Similarly, in the Article Manager and Assignments Category, we leave the Create permission to Inherit for all the groups. As shown in the diagram, this means that these groups do not have Create permission for articles in general or for articles in the Assignments group.
+To sum up so far, we have not set any special permissions to get to this point. Now, in the History Assignments category permissions screen, we set the Create permission to Allow for the History Teachers group. This setting overrides the Soft (Implicit) Deny that we had by default and gives members of this group permission to create content (articles and child categories) for this category. This Allow setting also is inherited by the Assistant History Teachers group.
+Next, we need to grant History Teachers the Edit State permission while denying this permission to Assistant History Teachers. This is done as shown in the diagram below.
+
+This configuration is the same as the one above except that this time we set the Edit State permission in the History Assignments category to Deny for the Assistant History Teachers group. This means that Assistant History Teachers will not be able to Publish or Unpublish articles in this category.
+Note that this was accomplished by setting just two permissions in the History Assignments category: Allow for the History Teachers group and Deny for the Assistant History Teachers group.
+ACL Action Permission Examples
+Here are some examples of how you might set up the ACL for some specific situations.
+Back-end Article Administrator
+Problem:
+We want to create a group called "Article Administrator" with back-end permissions only for articles and not for any other back-end menu options. Members of this group should be able to use all of the features of the article manager, including setting article permissions.
+Solution:
+Create a new group called Article Administrator and make its parent group Public, as shown below. 
+ 
+
+Because its parent group is Public, it won't have any permissions by default.
+In Users → Access Levels, edit the Special Access level to add the new group. That way they can get access to the back end menu items and modules (This assumes that the modules for the admin menu and quickicons have the Special Access level assigned to them, which is the default.) 
+ 
+
+By default, the back-end menu items and modules are set to Special access, so if you forget to add the new group to the Special access level, you won't see any modules or menu items when you log in as a user of the new group.
+In Site → Global Configuration → Permissions, click on the Article Administrator group and change the permissions to Allowed for the following actions: Admin Login, Create, Delete, Edit, Edit State, and Edit Own. The screen below shows what will show before you press Save. 
+ 
+
+After you save, the Calculated Permissions should show as shown below. 
+ 
+
+Note that the permission for the Access Component is Inherited, which translates to Not Allowed. This is important. This means that this group will only be able to access components if we give the group "Allowed" permission for Access Component. So we only have to change the one component we want to give them access to and don't have to change any settings for the components where we don't want them to have access. If we had a case where we wanted to give a group access to everything except for one component, we could set the default to Allowed and then set the one component to Denied. Also note that we did not give the group Site Login permission, so users in this group will not be able to log into the front end. (If we wanted to allow that, we would just change the permission to Allowed for Site Login.)
+In Article Manager → Options → Permissions, change permissions to Allowed for this group for the Access Component action, as shown below. 
+ 
+
+All of the other desired permissions are inherited.
+That's all you need to do. Members of this group can login to the back end and do everything in Article Manager but can't do anything else in the back end. For example, the screen below shows what a user in the Article Manager will see when they login to the back end.
+ 
+
+ACL View Access Levels Examples
+A basic concept of using Access Levels is that all items with the same Access will be viewable by the same group of users. In other words, if two items have the same Access, you can't have one viewable by one user and not viewable by another user. On the other hand, it is easy to have one Group view any number of items with different Access levels.
+Similarly, each Group has exactly the same combination of Access levels, but one User can be a member of more than one group. Depending on the situation, you may want to have users only in one Group or you may need to have a User in more than one Group.
+This means that we may need to group our items so that items so that all items in a group have the same level of sensitivity. Here are some examples.
+Hierarchical Example
+In this example, Access levels are hierarchical, for example, like government security clearance codes. Say for example we have the following sets of classified documents: Classified, Secret, and Top Secret. Users have corresponding clearence codes. Users with Classified clearance can only see Classified documents and cannot see Secret or Top Secret. Users with Secret clearance can see Classified and Secret documents but not Top Secret. Users with Top Secret can see all documents.
+In this case, you would create three Access levels: Classified, Secret, and Top Secret and the same three Groups. Users would only be members of one group, as follows:
+User
+Group
+Access Levels
+C1, C2, C3
+Classified
+Classified
+S1, S2, S3
+Secret
+Classified, Secret
+TS1, TS2, TS3
+Top Secret
+Classified, Secret, Top Secret
+In this case, all users are in exactly one group, but some groups have access to more than one Access Level of items. In other words, we have a one-to-one relationship between users and groups, but a one-to-many relationship between Groups and Access Levels.
+Team Security Example
+Another possible use case is a set of non-hierarchical teams. Let's say we have three teams, T1, T2, and T3. Some users are only on one team, but others might be on two or more teams. In this case, we could set up our Access Levels and Groups by team. Documents for each team have the access level for that team, and the Group for the team has only the one access level. When a User is on more than one team, they get added to the group for each team, as follows:
+User
+Description
+Group
+Access Levels
+U1
+Team 1 member
+T1
+T1
+U2
+Team 2 member
+T2
+T2
+U3
+Team 3 member
+T3
+T3
+U1-2
+Member of teams 1 and 2
+T1, T2
+T1, T2
+U1-3
+Member of teams 1 and 3
+T1, T3
+T1, T3
+U1-2-3
+Member of teams 1,2, and 3
+T1,T2, T3
+T1, T2, T3
+
+Hybrid Example
+In a real-world situation, you might have a combination of these two arrangements. Say for example we have Managers and Staff. Staff can only see Staff documents and Managers can see Manager and Staff documents. Both types of users can be assigned to teams as well, in which case they can see all of the documents for that team. In addition, say that Managers can access some, but not all, team documents. Staff can only access team documents if they are members of that team.
+In this example, we could set up the following Access Levels:
+Access Level
+Description
+Groups
+Manager
+Non-team manager documents
+Manager
+Staff
+Non-team staff documents
+Manager, Staff
+Team1
+Sensitive Team1 documents (no access outside team)
+Team1
+Team1-Manager
+Team1 documents that can be accessed by all managers
+Team1, Manager
+Team2
+Sensitive Team2 documents (no access outside team)
+Team2
+Team2-Manager
+Team2 documents that can be accessed by all managers
+Team2, Manager
+Then, users could be assigned to groups as follows:
+User Type
+Group
+Manager on no teams
+Manager
+Staff on no teams
+Staff
+Manager on team 1
+Manager, Team1
+Staff on team 1
+Staff, Team1
+Manager on teams 1 and 2
+Manager, Team1, Team2
+Staff on teams 1 and 2
+Staff, Team1, Team2
+
+

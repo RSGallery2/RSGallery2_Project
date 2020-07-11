@@ -1,0 +1,22 @@
+
+
+Testing Joomla Extensions with Codeception
+https://docs.joomla.org/Testing_Joomla_Extensions_with_Codeception
+
+Why Use Codeception?
+Why use Codeception when we already have Selenium IDE?
+
+Codeception works great with Selenium. But with Codeception you can write your tests in PHP. The main reason is: Selenium IDE tests are tightly bound to XPath locators. If you ever change anything in layout tests will fall. Codeception locators are more stable. You can use names, labels, button names and CSS to match elements on page.
+
+Features
+
+Selenium WebDriver integration
+Elements matched by name, CSS, XPath
+PageObjects and StepObjects included
+Powered by PHPUnit
+Data Cleanup
+Parallel Execution of tests
+BDD-style readable tests
+	
+
+

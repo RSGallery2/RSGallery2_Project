@@ -1,0 +1,54 @@
+
+http://joomla.github.io/joomla-platform/
+
+
+camelcase folder 
+https://forum.joomla.de/thread/6155-eigene-bibliothek/?postID=42259&highlight=registerPrefix#post42259
+
+------------------------------------
+
+JLoader::registerNamespace('Chess', AN_OTHER_PATH . '/chess');
+JLoader::registerPrefix('J', JPATH_PLATFORM . '/cms');
+JLoader::register('AdhocClass', '/the/path/adhoc.php');
+
+
+------------------------------------
+https://github.com/joomla/joomla-cms/issues/13969
+
+Loader::registerNamespace('Example', JPATH_ADMINISTRATOR .'/components/com_rsgallery2');
+
+use Example\aClass;
+
+aClass::getInstance();
+
+class Com_ExampleInstallerScript
+{
+	...
+}
+
+JPATH_ROOT . '/components/com_yourcom' or JPATH_ADMINISTRATOR .
+
+------------------------------------
+https://github.com/asikart/windwalker-template/blob/master/admin/flower.php
+
+<?php
+/**
+ * @package     Joomla.Administrator
+ * @subpackage  com_flower
+ * @copyright   Copyright (C) 2014 Asikart. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+include_once JPATH_LIBRARIES . '/windwalker/Windwalker/init.php';
+
+JLoader::registerPrefix('Flower', JPATH_COMPONENT_ADMINISTRATOR);
+JLoader::registerNamespace('Flower', JPATH_COMPONENT_ADMINISTRATOR . '/src');
+
+use Flower\Component\FlowerComponent;
+
+$component = new FlowerComponent;
+
+echo $component->execute();
+
+
+---------------------------------------------------

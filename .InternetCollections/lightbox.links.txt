@@ -1,3 +1,20 @@
+2020.06.23
+
+Was verwendet man heut zutage als modal/lightbox/bild-video popup ohne jquery?
+
+baguetteBox
+https://github.com/feimosi/baguetteBox.js
+
+GLightbox
+https://github.com/biati-digital/glightbox
+GLightbox, die hat den vorteil auch videos, iframes und inline content anzeigen zu können,
+
+Jooomtools 
+https://github.com/JoomTools/plg_fields_jtgallery/releases/tag/0.0.5-rc
+
+
+---------------------------------------------------
+2019.06...
 
 
 FancyBox
