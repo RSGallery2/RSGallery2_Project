@@ -1,0 +1,13 @@
+
+
+https://github.com/joomla-projects/joomla-browser
+
+INSTALLATION:
+install joomla
+install Joomla removing Installation Folder
+install Joomla Multilingual Site
+ADMINISTRATOR:
+do administrator login
+do administrator logout
+set error reporting to development
+...
