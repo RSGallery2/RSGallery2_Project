@@ -1,0 +1,40 @@
+
+google: joomla develop sanitize strings
+
+https://docs.joomla.org/Securing_Joomla_extensions
+
+Secure your software against direct access
+Secure your software against remote file inclusion
+Secure your software against SQL injections
+Secure your software against XSS scripting
+Secure your software against cross-site request forgery
+Avoid open (0777) file and folder permissions
+Check access privileges of users
+How to achieve raw component output (for pictures, RSS-feeds etc.)
+Various things to be aware of
+What to do if you discover a security issue in your software
+
+--------------------------------------------------------------
+https://stackoverflow.com/questions/18713162/joomla-correct-way-to-sanitize-file-data
+
+
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+
+
+
+--------------------------------------------------------------
+
+
+
