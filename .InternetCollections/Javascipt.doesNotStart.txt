@@ -1,0 +1,29 @@
+
+
+
+Code inside DOMContentLoaded event not working
+
+https://stackoverflow.com/questions/39993676/code-inside-domcontentloaded-event-not-working
+
+if( document.readyState !== 'loading' ) {
+    console.log( 'document is already ready, just execute code here' );
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log( 'document was not ready, place code here' );
+        myInitCode();
+    });
+}
+
+function myInitCode() {}
+
+My clean aproach...
+
+if (document.readyState !== 'loading') init()
+else document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+    console.log("Do it !");
+    ...
+}
+
