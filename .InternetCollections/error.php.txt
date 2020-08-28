@@ -1,0 +1,43 @@
+404 mit error.php
+
+https://forum.joomla.de/thread/12284-404-mit-error-php/?postID=76398#post76398
+
+https://time4joomla.de/joomla-…s/266-fehlerseite-j3.html
+ 
+------------------------------------
+Eine weitere Inspiration von firstlady bzgl. error.php:
+
+https://wicked-software.de/404-error-page-fuer-joomla
+ 
+-----------------------------------------------
+Ich hab das mehr oder weniger wie in der Anleitung von time4mambo gemacht, nur dass ich die Fehlerseite in die error.php reinlade und dort ausgebe.
+
+
+
+Deshalb ist meine error.php auch sehr einfach gehalten:
+
+<?php
+
+// no direct access
+
+defined('_JEXEC') or die('Restricted access');
+
+
+
+$errorCode = $this->error->getCode();
+
+
+
+http_response_code($errorCode);
+
+
+
+echo @file_get_contents('https://example.org/' . $errorCode . '.html');
+
+exit;
+
+
+
+
+
+
