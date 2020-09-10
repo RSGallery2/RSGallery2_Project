@@ -27,5 +27,10 @@
    1. [Maintenance article](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=35 "Maintenance overview")<br>
    1. [Maintenance Slideshow configuration](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=100 "Maintenance Slideshow configuration")<br>
    1. [Maintenance Consolidate image database](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=101 "Maintenance Consolidate image database")<br>
+
+1. **[Modules](http://www.rsgallery2.org/index.php/documentation/modules/ "Modules")**<br>
+1. **[Plugins](http://www.rsgallery2.org/index.php/documentation/plugins/ "Plugins")**<br>
+
 1. [Finish it for good](http://www.rsgallery2.org/index.php?option=com_content&view=article&id=91&catid=102 "Finish it for good")<br>
 
+---

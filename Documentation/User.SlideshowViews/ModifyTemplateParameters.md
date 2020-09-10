@@ -8,3 +8,5 @@ Instructions
 directory, only when this file exists (and is writable) you can save your settings)
 • View settings: Backend > Components > RSGallery2 > Control Panel > Template Manager > Manage
 > select: Slideshow_Parth > click: Edit * Edit settings and click Save
+
+---

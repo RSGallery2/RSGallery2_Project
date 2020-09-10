@@ -1,0 +1,56 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>PluginDisplayImage.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <p>RSGallery2 Display Image plugin (Single Display)
+This plugin will replace {rsg2_singledisplay: imageid, size, caption, format, clearfloat} in articles with the corresponding RSGallery2 image.</p>
+    <ul>
+      <li>imageid: Backend &gt; Components &gt; RSGallery2 &gt; Items: use the number from the ID column (required).</li>
+      <li>size: thumb, display or original (optional, default is display).</li>
+      <li>caption: true (use the item desciption as a caption) or false (no caption) (optional, default is false</li>
+      <li>format: text-align style property (optional)</li>
+      <li>clearfloat: both, left, right or false: When not set to false this inserts a div CSS element after the image with clear property both, left or right (optional, default is false)</li>
+    </ul>
+    <p>When the given image id does not exist, or the image or gallery is unpublished, the plugin will show nothing unless the option Debug is turned on. When the user is not allowed to access the gallery where the item belongs to, nothing will show unless the options Debug is turned on.</p>
+    <p>Examples:</p>
+    <ul>
+      <li>{rsg2_singledisplay:9999,thumb,true,left;float:left, left}</li>
+      <li>{rsg2_singledisplay:2,display,false,right, float:right, both}</li>
+      <li>.</li>
+    </ul>
+    <p>Plugin Options:
+Different 'popup' options are available:</p>
+    <ul>
+      <li>no popup, use of Link and Link Text (which are parameters of the item),</li>
+      <li>normal popup,</li>
+      <li>Joomla modal and</li>
+      <li>Highslide.</li>
+    </ul>
+    <p>Important note on the Highslide effect:
+Highslide JS is an image, media and gallery viewer written in JavaScript (see <a href="http://highslide.com">http://highslide.com</a>). The Highslide JS for Joomla plugin (available at <a href="http://joomlanook.com">http://joomlanook.com</a>) exposes all of the flexibility of Highslide JS through a clear and concise configuration screen.
+To use the Highslide effect with this RSGallery2 Single Image Display plugin you need to have the Highslide JS for Joomla plugin installed and enabled!
+NOTE: If you intend to use Highslide JS on a commercial website you MUST purchase a license from the author of Highslide JS. Please go to <a href="http://highslide.com/">http://highslide.com/</a> for more details.</p>
+    <p>Links</p>
+    <ul>
+      <li>
+        <a href="http://www.rsgallery2.org">http://www.rsgallery2.org</a> for information on RSGallery2 and this RSGallery2 Single Image Display Plugin.</li>
+      <li>
+        <a href="http://highslide.com/">http://highslide.com/</a> for information on Highslide JS and how to obtain a license for use on commercial websites.</li>
+      <li>
+        <a href="http://joomlanook.com/">http://joomlanook.com/</a> for information on the Highslide JS for Joomla plugin.</li>
+    </ul>
+    <hr />
+  </body>
+</html>

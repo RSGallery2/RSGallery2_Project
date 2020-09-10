@@ -121,3 +121,5 @@ Defines the column the list will be sorted by and also the direction
 (5) Limit per page
 
 It defines the count of image which will be shown on one page
+
+---

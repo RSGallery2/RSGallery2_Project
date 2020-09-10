@@ -15,5 +15,4 @@ Not finished, copy of gallery ...
 <p>Sadly this has a side effect. If you try to increase the parent gallery ordering it will not go up through clicking. You may set te value by key which works when leaving the control.</p>
 <p> </p>
 
-
 ---

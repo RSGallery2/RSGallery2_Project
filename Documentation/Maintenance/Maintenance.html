@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>Maintenance.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <h2 id="maintenance-functions">Maintenance functions</h2>
+<p>The maintenance form supports with sub forms several functions to check and repair the rsgallery2 image and database universe.</p>
+<p>Each grey array is a button to click on. In most cases a sub form will open where more info or actions are provided</p>
+<br>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.base.top.png?raw=true" alt="Base top" /></p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.base.bottom.png?raw=true" alt="Base bottom" /></p>
+<h3 id="zones">Zones</h3>
+<ul>
+<li><p>Rsgallery2 zone</p>
+<p>Handles slideshows and templates</p>
+</li>
+<li><p>Repair zone</p>
+<p>The image file system can be checked to match the database. Also the configuration can be checked here.</p>
+</li>
+<li><p>Danger zone</p>
+<p>Delete database entries and database structure</p>
+</li>
+<li><p>Raw database zone</p>
+<p>A window to the pure content of the database (lists)</p>
+</li>
+<li><p>Outdated zone</p>
+<p>Door to old view of functions like image/galleries lists</p>
+</li>
+<li><p>Upgrade (from 1.x / 2.x) zone</p>
+<p>Helpers after upgrading RSG2 from previous J!x versions</p>
+</li>
+</ul>
+<h2 id="rsgallery2-zone">Rsgallery2 zone</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.RSGallery2.png?raw=true" alt="zone.RSGallery2" /></p>
+<p>(1) Slideshow configuration</p>
+<p>Edit and check the configuration parameters of installed slideshows.
+Leads to a separate view for the edit of slideshow parameter.
+<br> See separate maintenance document &quot;&quot;</p>
+<p>(2) Comments list</p>
+<p>Enters list view of comments</p>
+<p>(3) Template manager</p>
+<p>Actually not working. (2014-2018)<br>
+In older version it had the function to upload slideshows and templates for the display of the gallery in frontend. These could be edited or deleted also.</p>
+<h2 id="repair-zone">Repair zone</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.repair.png?raw=true" alt="zone.repair.png" /></p>
+<p>(1) Consolidate image database</p>
+<p>The consistence of the database to image files can be checked here. The following view supports the check and repair of image orphans in database or as missing image files.</p>
+<p><br> (See separate maintenance document &quot;&quot;)</p>
+<p>(2) Configuration Raw edit</p>
+<p>Edit view of all config variables including internal settings. Prepared for debug and emergency situations. Lists all variables in alphabetical order. The values can be changed and saved.</p>
+<p>(4) Regenerate display images</p>
+<p>This option will regenerate either thumbnail or display images, based on the current configuration settings of thumbnail dimensions</p>
+<p>(5) Optimize database</p>
+<p>Reorganizes the physical storage of the database table data to reduce storage space and improve speed when accessing the table</p>
+<h2 id="danger-zone">Danger zone</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.danger.png?raw=true" alt="maintenance.zone.danger.png" /></p>
+<p>(1) Purge tables (data) &amp; delete all images</p>
+<p>Supports the first step to remove RSGgallery2 completely.</p>
+<p>Therefore the content (items) in all RSGaller2 tables are removed. Additionally the image files are deleted. The data structure is kept but is empty.</p>
+<p>This can also be used to purge the data and start again empty with new images and new galleries.</p>
+<p>If afterwards the component is de installed nothing shall be left and remind of RSGallery2</p>
+<p>(2) Remove RSGallery2 tables and images
+The previous intention was to support the uninstall that by removing databases tables and image files. The side effect of this function was that Joomla! did start with error and RSGallery2 could not be uninstalled</p>
+<p>Instead of using this function  begin with above function 'Purge tables (data)'
+See following instruction for a complete remove</p>
+<h3 id="how-to-remove-rsgallery2-completely">How to remove RSGALLERY2 completely</h3>
+<p>(1) Use Maintenance -&gt; Purge tables</p>
+<p>This removes the database content and the image files</p>
+<p>(2) Prepare the remove of database table structure</p>
+<p>Search in admin rsgallery2 folder \administrator\components\com_rsgallery2\sql\ for file uninstall.mysql.utf8.sql. Edit the file and remove the comments in front of the drop commands.</p>
+<p>(3) Standard uninstall</p>
+<p>Use finally standard Joomla uninstall to get rid of all parts of RSGallery2</p>
+<h2 id="raw-database-zone">Raw database zone</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.rawDatabase.png?raw=true" alt="zone.rawDatabase.png" /></p>
+<p>The buttons lead to the pure content view of the database lists</p>
+<p>(1) Configuration variables</p>
+<p>Shows a list with actual values of all configuration variables</p>
+<p>(2) Images list</p>
+<p>Shows a list with the database properties of all images. This contains more columns as the normal image view.</p>
+<p>(3) Galleries list</p>
+<p>Shows a list with the database properties of all galleries. This contains more columns as the normal image view.</p>
+<p>(4) Comments list</p>
+<p>Shows a list with the database properties of all comments. This contains more columns as the normal image view.</p>
+<h2 id="outdated-zone">Outdated zone</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.outDated.png?raw=true" alt="maintenance.zone.outDated.png" /></p>
+<p>Door to old view of functions like image/galleries lists
+These buttons lead to the previous views of RSG2 around 2013 or beginning of J3x<br>
+the functionality is not granted as this old code is not maintained any more. Still it may be a hint what has improved over this time</p>
+<p>(1) Configuration</p>
+<p>%</p>
+<p>(2) Mange galleries</p>
+<p>%</p>
+<p>(3) Manage images</p>
+<p>%</p>
+<p>(4) Upload single images</p>
+<p>%</p>
+<p>(5) Consolidate database</p>
+<p>Don't use. It is only listed for completeness</p>
+<h2 id="upgrade-from-1.x-2.x-zone">Upgrade (from 1.x / 2.x) zone</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.zone.Upgrade1x2x.png?raw=true" alt="maintenance.zone.outDated.png" /></p>
+<p>(1) Database</p>
+<p>Repair missing database tables, table columns and ...
+This function reassigns the actual SQL definitions. Therefore new tables, new columns are added and not supported columns are removed</p>
+<p>This is useful when upgrading from a real old version and general list can not be viewed</p>
+<p>(2) Create gallery &quot;access&quot; field</p>
+<p>On upgrade from 1.x this table field was missing. Here it will be created and all values set to one</p>
+<p>(3) Delete RSG2 base language files</p>
+<p>Deletes RSGallery2 languages files in joomla base language folders. The RSG2 base translation files are located in ...\administrator\languages. These may overwrite new RSG2 language items kept in component language folder. <br>
+Use this function  when an update installation does not overwrite &quot;old&quot; base language files and translations do not appear or appear as old.</p>
+<hr />
+
+    </body>
+</html>
+            

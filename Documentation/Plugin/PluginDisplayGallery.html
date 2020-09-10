@@ -1,0 +1,37 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>PluginDisplayGallery.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="rsg2_plugin_displaygallery">RSG2_Plugin_DisplayGallery</h1>
+    <p>Displays a gallery in an article.</p>
+    <p>This plugin will replace {rsg2_display: template, GID} or {rsg2_display: template, GID, parameter=value, parameter=value, ...} in an article with the corresponding RSGallery2 gallery using the template specified, with as many parameters as you specify.</p>
+    <ul>
+      <li>Template: The name of the template you want to use (required; in a default installation 'semantic' will work</li>
+      <li>GID:  Backend &gt; Components &gt; RSGallery2 &gt; Galleries: use the number from the ID column (required)</li>
+      <li>Parameter: (optional, for advanced use only) you can add any configuration parameter, e.g. displaySearch=0, display_thumbs_maxPerPage=4, display_thumbs_colsPerPage=2.</li>
+    </ul>
+    <p>A list of parameters is available when debug is turned on in the RSGallery2 Configuration, then a button 'Config - View' shows up in the Control Panel which will give you a list of parameters and their current setting.
+Note: These are not the slideshow parameters!</p>
+    <p>When the given template does not exist, or the given gallery does not exist or is unpublished, the plugin will show nothing unless the option Debug is turned on.</p>
+    <p>Examples:</p>
+    <ul>
+      <li>{rsg2_display: semantic, 10}</li>
+      <li>{rsg2_display: slideshow_parth, 6}</li>
+      <li>{rsg2_display: semantic,10, displaySearch=0,display_thumbs_maxPerPage=4,display_thumbs_colsPerPage=2}</li>
+    </ul>
+    <p>Please do not forget to enable the Plugin in the Plugin Manager!</p>
+    <hr />
+  </body>
+</html>

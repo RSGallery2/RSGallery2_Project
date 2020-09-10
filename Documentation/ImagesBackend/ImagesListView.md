@@ -4,14 +4,13 @@
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
-(1) Number in  list
+(1) Number in list
 
 %
 
 (2) Select image
 
-The topmost rectangle selects all images which is useful for batch processing
-The selector beside the image information selects this image
+The topmost rectangle selects all images which is useful for batch processing The selector beside the image information selects this image
 
 (3) Status
 
@@ -44,7 +43,9 @@ On click the order numbers are saved. Any mismatch like double entries will be a
 
 Example:
 
-    Exchange numbers: Previous: A:12 B:11 C:13. Write destination numbers and click save into the three controls. Result: A:11 B12: C:13
+```
+Exchange numbers: Previous: A:12 B:11 C:13\. Write destination numbers and click save into the three controls. Result: A:11 B12: C:13
+```
 
 (8) Date and time
 
@@ -52,7 +53,7 @@ The date and time will be assigned on upload with the upload time
 
 (9) Votes
 
-The value will be between 0..5. It is calculated by Rating / Votes
+The value will be between 0..5\. It is calculated by Rating / Votes
 
 (11) Rating
 
@@ -107,9 +108,10 @@ Resets the hits of the selected Images
 Add the selected images to the task list and start the batch form
 
 Possible batch tasks:
-* Move image(s) to gallery
-* Copy image(s) to gallery
-* Add (change) properties to image(s)
+
+- Move image(s) to gallery
+- Copy image(s) to gallery
+- Add (change) properties to image(s)
 
 See below
 
@@ -132,7 +134,6 @@ Defines the column the list will be sorted by and also the direction
 (4) Limit per page
 
 It defines the count of image which will be shown on one page
-
 
 ## Images: Batch process to add properties
 
@@ -160,8 +161,7 @@ Batch processing: The selected images can be copied to the selected gallery
 
 ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
-This form enables to set the properties title and description for a batch of images at the same time.
-It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
+This form enables to set the properties title and description for a batch of images at the same time. It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 
 (1) Title
 
@@ -173,8 +173,7 @@ The gallery name can't be changed in this part
 
 (3) Description
 
-The description may be changed with the standard editor like in the edit single image form.
-Sadly this leads to a very high edit block which creates a ugly layout.
+The description may be changed with the standard editor like in the edit single image form. Sadly this leads to a very high edit block which creates a ugly layout.
 
 (4) Save
 
@@ -190,8 +189,7 @@ Ignore the changes and leave the form
 
 (7) Delete
 
-All or some image can be selected for deleting. (See (8) and (9))
-Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files
+All or some image can be selected for deleting. (See (8) and (9)) Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files
 
 (8) Rotate left
 
@@ -215,10 +213,10 @@ Flips the selected images vertical. The bits move from bottom to top. The left/r
 
 (13) Select all
 
-All images will get a set hook in the box below the image (See also (14))
-This can be used to delete, rotate or flip selected images.
+All images will get a set hook in the box below the image (See also (14)) This can be used to delete, rotate or flip selected images.
 
 (14) Select image
 
-The image will get a set hook in the box below the image
-This can be used to delete, rotate or flip  selected images.
+The image will get a set hook in the box below the image This can be used to delete, rotate or flip selected images.
+
+--------------------------------------------------------------------------------

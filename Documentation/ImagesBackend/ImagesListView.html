@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>ImagesListView.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <h1 id="image-list-view">Images list view</h1>
+<h2 id="image-list-columns">Image list columns</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.01.png?raw=true" alt="Image List view batch processing " /></p>
+<p>(1) Number in  list</p>
+<p>%</p>
+<p>(2) Select image</p>
+<p>The topmost rectangle selects all images which is useful for batch processing
+The selector beside the image information selects this image</p>
+<p>(3) Status</p>
+<p>A green 'OK' tell that the image is published. (Otherwise red)</p>
+<p>(4) Image title</p>
+<p>Title displayed to user in views if enabled.<br>
+The title of the image may be different to the image file name. It will be preset with image name on upload and changes with the property edit or on single image edit.</p>
+<p>(5) Image name</p>
+<p>Real file name used on the server</p>
+<p>(6) Parent gallery name</p>
+<p>Each image is assigned to a gallery</p>
+<p>(7) Image order</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.order.png?raw=true" alt="Image List view batch processing " /></p>
+<p>(1) Order number</p>
+<p>The order number of the image may be increased or decreased or set manually.</p>
+<p>(2) Save Order</p>
+<p>On click the order numbers are saved. Any mismatch like double entries will be aligned</p>
+<p>Example:</p>
+<pre><code>Exchange numbers: Previous: A:12 B:11 C:13. Write destination numbers and click save into the three controls. Result: A:11 B12: C:13
+</code></pre>
+<p>(8) Date and time</p>
+<p>The date and time will be assigned on upload with the upload time</p>
+<p>(9) Votes</p>
+<p>The value will be between 0..5. It is calculated by Rating / Votes</p>
+<p>(11) Rating</p>
+<p>Total of all votes</p>
+<p>(12) Hits</p>
+<p>Count of views / appearances</p>
+<p>(13) ID</p>
+<p>Internal ID of image for reference or matching in other list</p>
+<p>(14a) !!! Hover on image title</p>
+<p>Hovering over the image title will show the thumb of the image as tool tip</p>
+<p>(14b) !!! Click on image title</p>
+<p>A click on the image title will lead to the edit view of the image</p>
+<h2 id="images-task-buttons">Image(s) task buttons</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.02.png?raw=true" alt="Image List view batch processing " /></p>
+<p>(1) Publish</p>
+<p>Assign published to the selected images</p>
+<p>(2) Unpublish</p>
+<p>Assign unpublished to the selected images</p>
+<p>(3) Edit</p>
+<p>Leads to edit view of one selected image</p>
+<p>(4) Delete</p>
+<p>Will delete all selected items. On yes of the follow up question the image is deleted. Attention it is deleted immediately and not saved in the trash</p>
+<p>(5) Upload</p>
+<p>Go to the upload, Go directly there. Do not go over the control panel ;-)</p>
+<p>(6) Reset Hits</p>
+<p>Resets the hits of the selected Images</p>
+<p>(7) Batch</p>
+<p>Add the selected images to the task list and start the batch form</p>
+<p>Possible batch tasks:</p>
+<ul>
+<li>Move image(s) to gallery</li>
+<li>Copy image(s) to gallery</li>
+<li>Add (change) properties to image(s)</li>
+</ul>
+<p>See below</p>
+<h2 id="images-search-options">Image(s) search options</h2>
+<p>The search options follow the standard search behavior of Joomla!</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.listView.03.png?raw=true" alt="Image List view batch processing " /></p>
+<p>(1) Activate search controls</p>
+<p>(2) Select gallery</p>
+<p>Only image of the selected gallery will be shown</p>
+<p>(3) Columns sorting</p>
+<p>Defines the column the list will be sorted by and also the direction</p>
+<p>(4) Limit per page</p>
+<p>It defines the count of image which will be shown on one page</p>
+<h2 id="images-batch-process-to-add-properties">Images: Batch process to add properties</h2>
+<p>In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/images.ListView.batch.png?raw=true" alt="Image List view batch processing " /></p>
+<p>(1) Select Gallery</p>
+<p>Select a gallery as destination for copy or move of selected images</p>
+<p>(2) Add properties</p>
+<p>This button leads to the properties form (See below) and will open the selected images. The title and description can be changed for a batch of images. also image can be flipped and rotated there.</p>
+<p>(3) Move to</p>
+<p>Batch processing: The selected images can be moved to the selected gallery</p>
+<p>(4) Copy to</p>
+<p>Batch processing: The selected images can be copied to the selected gallery</p>
+<h2 id="properties-uploaded-files">Properties uploaded Files</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true" alt="Upload startview" /></p>
+<p>This form enables to set the properties title and description for a batch of images at the same time.
+It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form</p>
+<p>(1) Title</p>
+<p>The title is preset on creation. It may be edited here. The title may be different to the uploaded image name when the name already existed. Then the next free number is appended.</p>
+<p>(2) Gallery</p>
+<p>The gallery name can't be changed in this part</p>
+<p>(3) Description</p>
+<p>The description may be changed with the standard editor like in the edit single image form.
+Sadly this leads to a very high edit block which creates a ugly layout.</p>
+<p>(4) Save</p>
+<p>Save changes and continue edit on the same images</p>
+<p>(5) Save &amp; Close</p>
+<p>Save changes and leave the form to the image list</p>
+<p>(6) Cancel</p>
+<p>Ignore the changes and leave the form</p>
+<p>(7) Delete</p>
+<p>All or some image can be selected for deleting. (See (8) and (9))
+Clicking on the delete button will delete the selected images from the RSGallery2 database and the created image files</p>
+<p>(8) Rotate left</p>
+<p>Rotates selected images 90 degrees against the clock</p>
+<p>(9) Rotate right</p>
+<p>Rotates selected images 90 degrees with the clock</p>
+<p>(10) Rotate 180</p>
+<p>Rotates selected images 180 degrees.</p>
+<p>(11) Flip horizontal</p>
+<p>Flips the selected images horizontal. The bits move from left to right. The bottom of the image keeps being the bottom</p>
+<p>(12) Flip vertical</p>
+<p>Flips the selected images vertical. The bits move from bottom to top. The left/right side of the image keeps being the left/right side</p>
+<p>(13) Select all</p>
+<p>All images will get a set hook in the box below the image (See also (14))
+This can be used to delete, rotate or flip selected images.</p>
+<p>(14) Select image</p>
+<p>The image will get a set hook in the box below the image
+This can be used to delete, rotate or flip  selected images.</p>
+<hr />
+
+    </body>
+</html>
+            

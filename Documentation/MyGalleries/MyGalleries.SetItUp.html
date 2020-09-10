@@ -1,0 +1,49 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>MyGalleries.SetItUp.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h3 id="my-gallery-set-it-up-get-it-started">My Gallery: Set it up, get it started</h3>
+    <ol>
+      <li>Enable "My Galleries" in RSG2 configuration</li>
+      <li>Create a user group with rights to handle their own galleries and Images</li>
+      <li>Assign user rights for this group on</li>
+      <li>Assign the standard RSGallery2 view to a menu</li>
+    </ol>
+    <h4 id="configuration-of-my-galleries">Configuration of My Galleries</h4>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.MyGalleries.png?raw=true" alt="My Galleries configuration" />
+    </p>
+    <p>More description in section configuration</p>
+    <h4 id="create-a-user-group-for-my-galleries-users">Create a user group for "My Galleries" users</h4>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.NewUserGroup.png?raw=true" alt="My Galleries New user group" />
+    </p>
+    <p>A separate user groups helps to assign special rights for "My Gallery" users.</p>
+    <h4 id="assign-user-rights-for-this-my-galleries-users-group">Assign user rights for this "My Galleries" users group</h4>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/MyGallery.NewUserGroup.License.png?raw=true" alt="My Galleries configuration" />
+    </p>
+    <p>(1) Search for RSGallery2 in System-&gt;Global configuration</p>
+    <p>(2) Select Permissions</p>
+    <p>(3)-(6) Activate the "Create own", "Delete own", "Edit own", "Edit state own" permissions. The "vote" or "comment" permissions enable actions on the images itself. They are not needed for the handling of galleries and images.</p>
+    <p>Edit Permission, Edit State Permission (to publish or unpublish an item or gallery), Delete Permission and Create Permission for items and galleries.</p>
+    <p>A user with none of these permissions can only see the items and galleries, but cannot publish, delete, edit or create items or galleries. That is reflected on the tabs My Images and My Galleries by the grey icons for the items and galleries. That user will also not see the Add Image and Create
+Gallery tabs.</p>
+    <p>However, when a user has all permissions, the icons are no longer greyed out, and there are two more tabs: Add Image and Create Gallery. A site administrator can choose to give only specific permissions to a user group, e.g. only Edit permission, and only give that permission for a specific gallery. Then the user will see from the icons being grey (and non-functional) or not if they have that permission.</p>
+    <h4 id="assign-the-standard-rsgallery2-view-to-a-menu">Assign the standard RSGallery2 view to a menu</h4>
+    <p>This may be done already as it is as simple as assigning the standard view to a menu</p>
+    <hr />
+  </body>
+</html>

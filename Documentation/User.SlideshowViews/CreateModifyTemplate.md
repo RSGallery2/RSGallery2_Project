@@ -148,3 +148,5 @@ http://joomlacode.org/gf/project/jdump/news/?action=NewsThreadView&id=3235
 JDump now works with Joomla 1.6. Version 1.1.2 will install and function under 1.6, though there are still some bugs to work out. Mathias was kind enough to let me release this version, continuing his great work! (Dated 2010-12-28)Modify message
 
 « Last Edit: June 15, 2012, 12:03:42 PM by mirjam »
+
+---

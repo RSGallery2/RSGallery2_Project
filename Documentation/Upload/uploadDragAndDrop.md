@@ -125,3 +125,5 @@ In the images list view images can be selected for batch processing. The followi
 (1) Add properties
 
 This button leads to the properties form (See above) and will open the selected images. So the title and description can be changed for a batch of images
+
+---

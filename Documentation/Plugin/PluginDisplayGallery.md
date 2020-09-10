@@ -18,3 +18,5 @@ Examples:
 *  {rsg2_display: semantic,10, displaySearch=0,display_thumbs_maxPerPage=4,display_thumbs_colsPerPage=2}
 
 Please do not forget to enable the Plugin in the Plugin Manager!
+
+---

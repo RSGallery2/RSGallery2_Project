@@ -19,3 +19,5 @@ Tip: Create a own user group for "myGallery" user and assign it for new users au
 A new user default group can be selected in  Backend > Users > User Manager > Options > Tab: User Options > Setting: New User Registration Group. Here select the created new user group.  
 
 Install the plugin, *enable the plugin*, check the plugin settings and add a new user (try from frontend and backend).
+
+---

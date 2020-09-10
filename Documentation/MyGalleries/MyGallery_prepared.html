@@ -1,0 +1,121 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>new 1</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h2 id="in-processing-parts-present-2">-&gt; In processing, parts present (2)</h2>
+    <h2 id="my-galleries-a-site-administrator-can-enable-my-galleries-for-users-to-upload-and-view-their-own-galleries">My Galleries A site administrator can enable My Galleries for users to upload and view their own galleries</h2>
+    <p>(setting Show My Galleries, 'no' by default). A extra element will appear on the gallery view when a user
+has logged in on the front end. <img src="" alt="My Galleries" /> // Add image of filled gallery The "my galleries" are
+viewed on the modul where the menu with type RSGallery2 is displayed. Above the RSGallery2 search box the
+user can click on "My galleries"
+(3) <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true" alt="Link to &quot;My Galleries&quot; " />
+(Link must be activated in configuration of RSG2) Clicking on that link will show a page like
+<img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true" alt="First my Galleries user view " />
+If tab (1) does not appear the user has not enough rights
+Figure 2.8, “My Galleries page for a user without any permissions” [11] or in
+Figure 2.9, “My Galleries page for a user with all permissions” [12]~~</p>
+    <h3 id="getting-started">Getting Started</h3>
+    <ol>
+      <li>Enable "My Galleries" in RSG2 configuration</li>
+      <li>Create a user group with rights to handle their own galleries and Images</li>
+      <li>Assign user rights for this group on</li>
+      <li>Assign the standard RSGallery2 view to a menu</li>
+    </ol>
+    <h4 id="configuration-of-my-galleries">Configuration of My Galleries</h4>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/config.MyGalleries.png?raw=true" alt="My Galleries config" />
+More description in section configuration</p>
+    <h4 id="create-a-user-group-for-my-galleries-users">Create a user group for "My Galleries" users</h4>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.png?raw=true" alt="My Galleries config" />
+A separate user groups helps to assign special rights for "My Gallery" users.</p>
+    <h4 id="assign-user-rights-for-this-my-galleries-users-group">Assign user rights for this "My Galleries" users group</h4>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.NewUserGroup.License.png?raw=true" alt="My Galleries config" />
+(1) Search for RSGallery2 in System-&gt;Global configuration
+(2) Select Permissions (3)-(6) Activate the "Create own", "Delete own", "Edit own", "Edit state own" permissions.
+The "vote" or "comment" permissions enable actions on the images itself. They are not needed for the handling of galleries and images.
+Edit Permission, Edit State Permission (to publish or unpublish an item or gallery),
+Delete Permission and Create Permission for items and galleries.
+A user with none of these permissions can only see the items and galleries,
+but cannot publish, delete, edit or create items or galleries.
+That is reflected on the tabs My Images and My galleries by the grey icons for the items and galleries.
+That user will also not see the Add Image and Create Gallery tabs.
+However, when a user has all permissions, the icons are no longer greyed out, and there are two more tabs: Add Image and Create Gallery.
+A site administrator can choose to give only specific permissions to a user group, e.g. only Edit permission, and only give that permission for a specific gallery.
+Then the user will see from the icons being grey (and non-functional) or not if they have that permission.</p>
+    <h4 id="assign-the-standard-rsgallery2-view-to-a-menu-this-may-be-done-already-as-it-is-as-simple-as-assigning-the-standard-view-to-a-menu">Assign the standard RSGallery2 view to a menu This may be done already as it is as simple as assigning the standard view to a menu</h4>
+    <hr />
+    <p>Frontend 12: We will assume for the following sections that the user has all permissions for all galleries and items and that My Galleries are enabled.
+Figure 2.9. My Galleries page for a user with all permissions~~</p>
+    <h3 id="galleries-go-to-my-galleries-via-the-menu-item-photos-and-then-my-galleries.you-are-now-on-the-my-galleries-page">2.5.1. Galleries <del>Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries page.</del></h3>
+    <h4 id="create-a-gallery-on-the-my-galleries-page-click-the-create-gallery-tab">2.5.1.1. Create a gallery ~~On the My galleries page click the Create Gallery tab.</h4>
+    <p>This tab only shows when the user that is logged in has Create permission.
+To create a new gallery, first choose its parent (choose Top gallery when you want the gallery to be on the same 'level' as e.g. the gallery Cakes,
+or choose an existing gallery, like gallery Cakes, for that to be the parent.
+Then give the a name and a description and click the little disk button at the top right of the Create Gallery tab.
+See Figure 2.10, “My Galleries: tab Create Gallery”~~ ~~
+[13]. Next to the disk button is a red round button with a white cross inside: this is the cancel button that will clear all fields.
+Saving the gallery details returns you to this page and this tab, but with the extra gallery created (note: this gallery is unpublished by default).
+Unless of course the user already is at its maximum allowed galleries, then the gallery will not be created.
+Frontend 13 Figure 2.10. My Galleries: tab Create Gallery~~</p>
+    <h4 id="change-the-state-of-a-gallery-published-or-unpublished-on-the-my-galleries-page-click-the-my-galleries-tab">2.5.1.2. Change the state of a gallery: published or unpublished ~~On the My galleries page click the My galleries tab</h4>
+    <p>( Figure 2.11, “My galleries: tab My galleries” [13 ]). This shows a list of galleries.
+In the Published column the user can tell by the icon if the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot inside).
+When the user is not allowed to change the state, the icons are grey, but with either the checkmark or the dot.
+A click on the icon toggles the state from unpublished to published and vice versa. Figure 2.11. My galleries: tab My galleries~~</p>
+    <h4 id="edit-a-gallery-the-details-like-the-name-and-description-of-the-gallery-can-be-edited-and-a-different-parent-gallery-can-be-chosen">2.5.1.3. Edit a gallery ~~The details like the name and description of the gallery can be edited and a different parent gallery can be chosen.</h4>
+    <p>The gallery can be edited by either clicking on the gallery name or on its Edit icon (see Figure 2.11, “My galleries: tab My galleries” [13 ]).
+Doing this shows a new window with the Frontend 14 gallery details ( Figure 2.12, “My galleries: Edit gallery” [14]).
+You can save your changes by clicking the disk icon on the top right, or you can cancel your changes by clicking the red round icon with the with the cross inside.
+Both save and cancel will take you back to the My Galleries page. Figure 2.12. My galleries: Edit gallery~~</p>
+    <h4 id="delete-a-gallery-a-gallery-can-be-deleted-by-clicking-on-the-delete-icon-see-figure-2.11-my-galleries-tab-my-galleries-13">2.5.1.4. Delete a gallery ~~A gallery can be deleted by clicking on the Delete icon (see Figure 2.11, “My galleries: tab My galleries” [13 ]).</h4>
+    <p>You will be asked to confirm the deletion of the gallery. Images still in the gallery will be deleted as well.~~</p>
+    <h4 id="items-images-go-to-my-galleries-via-the-menu-item-photos-and-then-my-galleries.you-are-now-on-the-my-galleries-page">2.5.2. Items (images) <del>Go to My Galleries via the menu item Photos and then My galleries. You are now on the My galleries page.</del></h4>
+    <h4 id="create-an-item-e.g.upload-one-or-more-images-on-the-my-galleries-page-click-the-add-image-tab">2.5.2.1. Create an item (e.g. upload one or more images) ~~On the My galleries page click the Add Image tab.</h4>
+    <p>This tab only shows when the user that is logged in has Create permission for one or more galleries.
+You can either add a single image, or a set of images in a zipfile. To add your image(s), first choose the gallery that will hold the image(s).
+Browse to the file to select it and give the item a title and a description. In case of multiple images in a zipfile, this title and description will be used for each image.
+To upload your image(s) and save the details, click the disk button at the top right of the Create Gallery tab. See Figure 2.13, “My galleries: Add images”
+[15]. Next to the disk button is a red round button with a white cross inside: this is the cancel button that will clear all fields.
+Saving the item returns you to this page and this tab, but with the extra image(s) created (note: the newly uploaded image will be unpublished by default).
+Unless of course the user already is at its maximum allowed item, then the items will not be created. Frontend 15 Figure 2.13. My galleries: Add images~~</p>
+    <h4 id="change-the-state-of-a-item-published-or-unpublished-on-the-my-galleries-page-click-the-my-images-tab-figure-2.14-my-galleries-my-images-15">2.5.2.2. Change the state of a item: published or unpublished ~~On the My galleries page click the My Images tab ( Figure 2.14, “My galleries: My Images” [15]).</h4>
+    <p>This shows a list of galleries. In the Published column the user can tell by the icon if the gallery is published (green icon with white checkmark) or unpublished (red icon with white dot inside).
+When the user is not allowed to change the state, the icons are grey, but with either the checkmark or the dot. A click on the icon toggles the state from unpublished to published and vice versa.
+Figure 2.14. My galleries: My Images~~</p>
+    <h4 id="edit-an-item-the-details-like-the-title-and-description-of-the-image-can-be-edited-and-a-different-gallery-to-which-the-item-belongs-to-can-be-chosen">2.5.2.3. Edit an item ~~The details like the title and description of the image can be edited and a different gallery to which the item belongs to can be chosen.</h4>
+    <p>The item can be edited by clicking on its Edit icon (see Figure 2.14, “My galleries: My Images” [15 ]).
+Doing this shows a new window with the item details ( Figure 2.15, “My galleries: edit image” [16]).
+You can save your changes by clicking the disk icon on the top Frontend 16 right, or you can cancel your changes by clicking the red round icon with the whit the cross inside.
+Both save and cancel will take you back to the My Galleries page. Figure 2.15. My galleries: edit image~~</p>
+    <h4 id="delete-an-item-an-item-can-be-deleted-by-clicking-on-the-delete-icon-see-figure-2.14-my-galleries-my-images-15">2.5.2.4. Delete an item ~~An item can be deleted by clicking on the Delete icon (see Figure 2.14, “My galleries: My Images” [15]).</h4>
+    <p>You will be asked to confirm the deletion of the item.~~</p>
+    <h2 id="user-view-of-my-galleries-link-to-my-galleries">User view of My Galleries <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstLink.png?raw=true" alt="Link to &quot;My Galleries&quot; " /></h2>
+    <p>(1) Select menu where galleries are displayed in web site
+(2) Login with your username given by owner of website
+(3) Click on "My Gallery" link
+<img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.FirstUserView.png?raw=true" alt="First my Galleries user view " />
+(1) Create gallery tab This is where the fun begins .... If this tab does not appear the user has not enough rights At the top of the page there is a box with User information:
+the user name of the user who is currently logged in, the number of galleries this user has already created and its allowed maximum (setting Maximum number of galleries a user can have)
+and the number of items for which the user is the owner and its allowed maximum (setting Max numbers of pictures a user can have).
+<img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/Images/MyGallery.CreateGallery.png?raw=true" alt="My Gallery: create gallery " />
+(1) Select parent gallery Top Gallery is a virtual gallery which means no parent
+(2) Assign a name
+(3) Fill out a description (May be empty)
+(4) Save (create) gallery with entered settings
+(5) Cancel creation ---</p>
+  </body>
+</html>
