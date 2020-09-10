@@ -1,4 +1,13 @@
  
+ 
+Factory::getUser
+und wollte nicht jetzt noch Factory::getSession machen
+Guido De Gobbis
+$this->app->setUserState( ...
+$this->app->getUserState( ...
+
+ 
+ 
 		$app = JFactory::getApplication();
 		$app->setUserState('com_users.reset.user', $user->id);
 		$userId = $app->getUserState('com_users.reset.user');

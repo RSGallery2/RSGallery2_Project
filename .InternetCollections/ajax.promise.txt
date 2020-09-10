@@ -1,0 +1,41 @@
+
+https://stackoverflow.com/questions/24662289/when-is-thensuccess-fail-considered-an-antipattern-for-promises/24663315#24663315
+
+see ajax.promise.png
+
+Using then() and catch() helps chain success and failure handler 
+on the promise.catch() works on promise returned by then(). It handles,
+
+If promise was rejected. See #3 in the picture
+If error occurred in success handler of then(), 
+between line numbers 4 to 7 below. See #2.a in 
+the picture (Failure callback on then() does 
+not handle this.)
+If error occurred in failure handler of then(), 
+line number 8 below. See #3.b in the picture.
+
+ 1.  let promiseRef: Promise = this. aTimetakingTask (false);
+ 2.  promiseRef
+ 3.      .then( 
+ 4.      (result) => {
+ 5.         /* successfully, resolved promise.
+ 6.            Work on data here */ 
+ 7.      },
+ 8.      (error) => console.log(error)
+ 9.      )
+ 10.     .catch( (e) => {
+ 11.         /* successfully, resolved promise.
+ 12.            Work on data here */ 
+ 13.      });
+ 
+ 
+ 
+ Note: Many times, failure handler might not be defined 
+ if catch() is written already. EDIT: reject() result 
+ in invoking catch() only if the error handler in then() 
+ is not defined. Notice #3 in the picture to the catch(). 
+ It is invoked when handler in line# 8 and 9 are not defined.
+
+It makes sense because promise returned by then() does 
+not have an error if a callback is taking care of it.
+
