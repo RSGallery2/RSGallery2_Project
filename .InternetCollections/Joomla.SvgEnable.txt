@@ -1,0 +1,50 @@
+
+
+m media manager die erlaubten dateiendungen, dazu noch die erlaubten dateiendungen für bilder und auch nocht die erlaubten mime-types, also 3 stellen, wo man svg ergänzen muss
+uch glaube das media-field nutz auch diese einstellungen, oder?
+dateitypen, also den mime type musst du noch einbauen
+
+
+Legal Extensions (File Types): svg hinzufügen
+Legal MIME Types: application/svg+xml,image/svg+xml hinzufügen
+
+In:
+administrator\components\com_media\models\list.php
+
+Zeile: 165
+
+Von:
+
+switch ($ext)
+					{
+						// Image
+						case 'jpg':
+						case 'png':
+						case 'gif':
+						case 'xcf':
+						case 'odg':
+						case 'bmp':
+						case 'jpeg':
+						case 'ico':
+
+
+zu:
+
+switch ($ext)
+					{
+						// Image
+						case 'jpg':
+						case 'png':
+						case 'gif':
+						case 'xcf':
+						case 'odg':
+						case 'bmp':
+						case 'jpeg':
+						case 'ico':
+						case 'svg':
+						
+						
+						
+
+
+

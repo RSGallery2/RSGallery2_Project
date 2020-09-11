@@ -1,0 +1,11 @@
+
+kennt jemand eine einfache Möglichkeit, das kopieren und abspeichern von Bildern per Rechtsklick zu unterbinden?
+
+ dem Besucher den Spaß am Herunterladen verderben, z.B. durch ein Wasserzeichen quer übers Bild;
+ 
+ Wenn es einzig allein um die rechte Maustaste geht, dann ein transparentes Rechteck über das Bild legen. Mit dem Rechtsklick wird dann das Rechteck heruntergeladen. Mehr bringt das allerdings auch nicht.
+ 
+ Ich verwende die Gallerie von Balbooa. Da ist so was möglich..und noch einiges mehr. https://www.balbooa.com/joomla-gallery
+ 
+ 
+
