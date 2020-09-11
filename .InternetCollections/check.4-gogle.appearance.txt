@@ -1,0 +1,6 @@
+
+
+Checks how google will display your site in the search results
+https://app.sistrix.com/de/serp-snippet-generator
+
+

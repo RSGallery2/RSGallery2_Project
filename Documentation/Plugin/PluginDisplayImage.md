@@ -32,3 +32,5 @@ Links
 * http://www.rsgallery2.org for information on RSGallery2 and this RSGallery2 Single Image Display Plugin.
 * http://highslide.com/ for information on Highslide JS and how to obtain a license for use on commercial websites.
 * http://joomlanook.com/ for information on the Highslide JS for Joomla plugin.
+
+---

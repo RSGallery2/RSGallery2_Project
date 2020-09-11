@@ -126,3 +126,5 @@ Whenever a link with slideshow is shown it will lead to the slideshow of the gal
 
 ToDo:
 ... link to slideshow description
+
+---

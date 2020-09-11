@@ -1,0 +1,51 @@
+
+Summary of Changes
+This PR will prevent duplicate code.
+Both layouts/joomla/button/iconclass.php and layouts/joomla/toolbar/iconclass.php are the same.
+Merging both will make our code a bit DRY
+
+Testing Instructions
+Apply the PR and go to Joomla administrator or Joomla frontend and look for icons on buttons or in a toolbar.
+There should be no change visible before or after applying the PR.
+
+Actual result BEFORE applying this Pull Request
+Buttons in the toolbar have icons
+
+Expected result AFTER applying this Pull Request
+Buttons in the toolbar have icons
+
+Documentation Changes Required
+The newly created Layout joomla.icon.iconclass has two parameters
+
+icon => name or className => the icon that should be displayed
+html => true/false to display html output or className only
+Examples
+call for className and as HTML output
+use Joomla\CMS\Layout\LayoutHelper;
+
+echo LayoutHelper::render('joomla.icon.iconclass', ['icon' => 'fa-folder-open', 'html' => true]);
+this will render
+
+<span class="fas fa-folder-open" aria-hidden="true"></span>
+call for className and className output
+use Joomla\CMS\Layout\LayoutHelper;
+
+echo LayoutHelper::render('joomla.icon.iconclass', ['icon' => 'fa-folder-open']);
+this will render
+
+fas fa-folder-open
+call for stateName and as HTML output
+use Joomla\CMS\Layout\LayoutHelper;
+
+echo LayoutHelper::render('joomla.icon.iconclass', ['icon' => 'published', 'html' => true ]);
+this will render
+
+<span class="fas fa-check" aria-hidden="true"></span>
+call for stateName and as className output
+use Joomla\CMS\Layout\LayoutHelper;
+
+echo LayoutHelper::render('joomla.icon.iconclass', ['icon' => 'published' ]);
+this will render
+
+fas fa-check
+

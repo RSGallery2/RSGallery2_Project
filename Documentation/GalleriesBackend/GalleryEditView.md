@@ -70,3 +70,5 @@ Exits the edit view
 Saves the changes and goto the upload image view
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/gallery.edit.permission.png?raw=true)
+
+---

@@ -1,0 +1,143 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>ModuleRandomImages.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="rsgallery2-module-randomimages">RSGallery2 Module RandomImages</h1>
+    <p>The RSGallery2 Module <em>RandomImages</em> shows as the name suggests some random images from RSGallery2 galleries.</p>
+    <ul>
+      <li>The images are shown in a table view. The number of rows and columns define the the number of images displayed.</li>
+      <li>The administrator can specify certain galleries as source for the images to show. Sub galleries may be included.</li>
+      <li>The administrator can select a display type, if the thumb-, the rsgallery2- or the original size of the image shall be used as a source for the display.</li>
+      <li>The display width of the image and the surrounding <code>div</code> may be set.</li>
+      <li>The name of the gallery and the date of the image may be displayed.</li>
+      <li>A click on the image may lead to
+<ul><li>The parent gallery</li><li>Gallery single image view
+<ul><li>Gallery slideshow view</li><li>Original image</li><li>Gallery display image</li><li>Gallery thumb image</li></ul></li></ul></li>
+    </ul>
+    <h2 id="general">General</h2>
+    <ul>
+      <li>User defined number of images are selected and shown like in the RSGallery2 gallery view.</li>
+      <li>The images may be aligned in row and columns.</li>
+      <li>The sources to look for the images are all galleries or a defined list of galleries.</li>
+      <li>The displayed image size may may origin from the thumb-, the orginal- or the rsgallery display size.</li>
+      <li>The resulting set may be "garnered" with CSS styles set in the backend.</li>
+      <li>Each image may lead to the origin picture or the parent gallery or ...</li>
+    </ul>
+    <h2 id="parameter-in-backend">Parameter in backend</h2>
+    <h3 id="tab-modul">Tab Modul</h3>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleRandomImages.backend.01.png?raw=true" alt="" />
+    </p>
+    <ul>
+      <li>
+        <p>(1) Number of rows</p>
+        <p>Number of vertical images  (Images per column)</p>
+      </li>
+      <li>
+        <p>(2) Number of columns</p>
+        <p>Number of horizontal images (Images per row)
+The number of displayed images is the result from <code>Count = row number times column number</code>. Therefore <code>Count</code> image names are fetched from the Database and prepared for the display</p>
+      </li>
+      <li>
+        <p>(3) Select galleries to show images from</p>
+        <p>e.g. 3,8,42. The used galleries may be restricted to a selection. Please use a comma separated list. Select galleries to show images from. Multiple galleries are comma separated, e.g. '3,8,42' or '5'. If you want to show images from all galleries enter '0'. The access level of user will be taken into account, so if a user is not allowed to view gallery 2 its images won't show even if you put it here.The gallery id numbers to use can be found here: Backend &gt; Components &gt; RSGallery2 &gt; Galleries, in the column ID.</p>
+      </li>
+      <li>
+        <p>(4) Include sub galleries: (No/Yes)</p>
+        <p>When the range of galleries is limited by user input (see above) the child galleries may be included in the image search</p>
+      </li>
+      <li>
+        <p>(5) Display type of image to show</p>
+        <p>RSGallery2 stores the original (depending on settings), a display sized image and a thumbnail sized image. User can select which display type is to be used.</p>
+      </li>
+    </ul>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleRandomImages.backend.02.png?raw=true" alt="" />
+    </p>
+    <ul>
+      <li>
+        <p>(1) CSS img element height parameter:</p>
+        <p>Enter the size of the CSS height attribute of the image to show in pixels. If '0' is entered there won't be a height specified for img element and the actual height of the image will be taken.</p>
+      </li>
+      <li>
+        <p>(2) CSS img element width parameter:</p>
+        <p>Enter the size of the CSS width attribute of the image to show in pixels. If '0' is entered there won't be a width specified for img element and the actual width of the image will be taken
+CSS width attribute for the img and the div element (0=no attribute)
+Set size of image, use one (!) of height or width to make the image smaller. Set one or both settings for image height and width to 0, this will keep the aspect ratio of the image, if you set a size for both the image will be stretched. Do not set the size larger than the actual image size, e.g. when a thumb size image has a size of 50x50 pixels, don't set either size to larger than 50, rather use the larger display or the original image</p>
+      </li>
+      <li>
+        <p>(3) CSS div element height parameter:</p>
+        <p>Set size of div, use this to crop the image. Enter the size of the CSS height attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a height specified for the div element and it will fit the actual height of the image</p>
+      </li>
+      <li>
+        <p>(4)  CSS div element width parameter:</p>
+        <p>Set size of div, use this to crop the image. Enter the size of the CSS width attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a width specified for the div element and it will fit the actual width of the image</p>
+      </li>
+      <li>
+        <p>(5) CSS div element height parameter for name of image:</p>
+        <p>CSS div element height parameter for name of image. Enter the size of the CSS height attribute of the dive that holds the name of the image, in pixels. If '0' is entered there won't be a height specified for the div element.
+There is no width parameter to set the width of this div element since the width of the 'CSS div element width parameter' would overrule this</p>
+      </li>
+      <li>
+        <p>(6) Display image name:</p>
+        <p>(No/Yes) Do display image name below the image</p>
+      </li>
+      <li>
+        <p>(7) Display date:</p>
+        <p>(No/Yes) Do display image date below the image</p>
+      </li>
+      <li>
+        <p>(8) Date format:</p>
+        <p>Select format type the date should display (for example, d-m-Y | d/m/Y | m-d-Y : G-i). See <a href="http://nl3.php.net/date">http://nl3.php.net/date</a> for more info about this.</p>
+      </li>
+      <li>
+        <p>(9) Link image to view type</p>
+        <p>A click on the image shall link to the selected type. Single image/gallery view: The display area will be found in the first joomla menu linking to RSGallery2 galleries
+Possible options</p>
+        <ul>
+          <li>Don't link image to anything</li>
+          <li>Link to standard gallery view</li>
+          <li>Link to single image view of gallery</li>
+          <li>Link to slideshow view of gallery</li>
+          <li>Link to original image (user) size</li>
+          <li>Link to display image (RSGallery2) size</li>
+          <li>Link to thumb image (RSGallery2) size</li>
+        </ul>
+      </li>
+    </ul>
+    <h3 id="tab-advanced">Tab Advanced</h3>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleRandomImages.backend.03.png?raw=true" alt="" />
+    </p>
+    <p>Support of standard joomla! function (May be prepared but not implemented)</p>
+    <!-- Todo: find Joomla description for this -->
+    <p>More on "mouse over"</p>
+    <ul>
+      <li>
+        <p>(1) Layout</p>
+      </li>
+      <li>
+        <p>(2) Module Class Suffix</p>
+      </li>
+      <li>
+        <p>(3) Caching</p>
+      </li>
+      <li>
+        <p>(4) Cache Time</p>
+      </li>
+    </ul>
+    <hr />
+  </body>
+</html>

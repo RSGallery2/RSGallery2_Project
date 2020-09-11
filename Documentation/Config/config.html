@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>config.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <h2 id="in-processing-parts-present-2017.12.08">-&gt; In processing, parts present (2017.12.08)</h2>
+<h1 id="configuration">Configuration</h1>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.StartView.png?raw=true" alt="Config startview" /></p>
+<p>Above is the start view when selecting configuration</p>
+<ul>
+<li><p>(1) There are four tabs to choose</p>
+<ul>
+<li>General: Debugging and SEF</li>
+<li>Images: Image related settings</li>
+<li>Display: Frontend view relating settings</li>
+<li>My Galleries: Settings for user galleries
+<BR>
+<BR></li>
+</ul>
+</li>
+<li><p>(2) Sections in Tab<br />
+Each Tab contains sections. A click on a section will open or hide the settings within while the other sections stay open or hidden</p>
+</li>
+</ul>
+<hr />
+<h2 id="general">General</h2>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.GeneralSettings.png?raw=true" alt="General settings" /></p>
+<ul>
+<li><p>(1) Version:</p>
+<p>Tells the actual uploaded RSG2 version.</p>
+</li>
+<li><p>(2) Introduction Text</p>
+<p>This text is used as a broad header description of the &quot;root gallery&quot; view. The root gallery (with sub galleries and more) will be displayed when the menu type &quot;RSGallery2 -&gt; View of galleries&quot; is activated and the root gallery is chosen for display</p>
+</li>
+<li><p>(3) Debug (Frontend / Backend)</p>
+<p>Activates debug functionality. This does write calling parameters and logs some of the used files / classes in a log file.</p>
+<p>Attention: On Yes to Debug a log file per day will be created in folder '...//joomla root/administrator/log' and notices may appear on top of a form. Please delete log files regularly&quot;. In Maintenance will (may be in near future) be a button to achieve this</p>
+<p>Actually (22.07.2018) Using debug on the frontend will create a lot of text in the log files and may get stuck when a lot of users are active. It is best used on the local test web then.</p>
+<p>Therefore in the near future the team will introduce different debug variables for backend and frontend</p>
+</li>
+<li><p>(4) Develop</p>
+<p>Activates developer functions. Additional 'info' will appear in HTML pages and more functions appear in maintenance view. The additional function may not work or destroy parts of RSGallery2 ....</p>
+</li>
+<li><p>(5) Advanced SEF</p>
+<p>All gallery names and item titles must be unique</p>
+</li>
+</ul>
+<hr />
+<h2 id="images">Images</h2>
+<h4 id="images-image-manipulation">Images: Image Manipulation</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.manipulation.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Display Picture Width</p>
+<p>Standard size of displayed image. The downloaded file will be resized to this width for the standard display of the image. The original image is still kept for modal display when clicking on a gallery image</p>
+</li>
+<li><p>(2) Thumbnail Width</p>
+<p>Defines the with of the small images (thumbs) in gallery tile view</p>
+</li>
+<li><p>(3) Thumbnail Style</p>
+<p>The thumbnail may be sized (styled) for &quot;Square&quot; or &quot;Proportional&quot; dimensions. In &quot;Square&quot; Style the height of the thumbnail is the same as the width. In &quot;Proportional&quot; Style the height is calculated according the width/height proportions of the original image.</p>
+</li>
+<li><p>(4) JPEG Quality Percentage</p>
+<p>Defines the quality factor will be used by the resizing from original image to the displayed image</p>
+</li>
+<li><p>(5) Allowed file types</p>
+<p>This information tells which file types are supported. The types are defined by the component and therefore can't be changed</p>
+</li>
+</ul>
+<hr />
+<h4 id="images-image-upload">Images: Image upload</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.upload.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) FTP Path:</p>
+<p>Used as initial value in upload (ftp tab) form. Used for uploading images from folder path on remote server. Path must start with base path to the joomla! installation</p>
+</li>
+<li><p>(2) Use IPTC information Yes No</p>
+<p>If set to yes: If a file has IPTC information in the fields title (2#005) and description (2#120), then this information will be used upon import of an image in RSGallery2, unless the  title and description fields shown in the import steps are used.<p>If set to no: IPTC information will not be used.</p>
+</li>
+<li><p>(3) Default state for uploaded images</p>
+<p>Select between &quot;Published&quot;, &quot;Unpublished&quot;, &quot;Archived&quot; or &quot;Trashed&quot;</p>
+<p>If a user has either Edit State permission or Edit State Own permission and he uploads an item in a gallery he owns (e.g. the user is allowed to change the state from Published to Unpublished and vice versa for images in the selected gallery), then this value indicates whether the uploaded images will be (un)published by default. This setting applies to Frontend as well as Backend, and for single file and batch upload.</p>
+<p>For users without Edit State permission the default state is Unpublished.</p>
+</li>
+<li><p>(4) Preselect 'One gallery for all images', Default Yes No</p>
+<p>Preselect state for upload form.
+Yes: Use selected gallery for all images.
+No: select images in second step</p>
+</li>
+<li><p>(5) Preselect latest gallery Yes No</p>
+<p>Preselect the 'Latest gallery' name as default selection in upload form</p>
+</li>
+</ul>
+<hr />
+<h4 id="images-graphics-library">Images: Graphics Library</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.graphicsLibrary.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Graphics Library</p>
+<p>Old: <br>
+Three graphics libraries, GD2, ImageMagick (and Netpbm, are supported if they exist on the server. They are used to make display and thumb-nail images on upload of images</p>
+<p>Actually only GD2 is used until further notice</p>
+</li>
+<li><p>(2) ImageMagick Path</p>
+<p>Path to the ImageMagick library on the server</p>
+</li>
+<li><p>(3) Netpbm Path</p>
+<p>Path to the Netpbm library on the server</p>
+</li>
+<li><p>(4) Video converter path</p>
+<p>Videos are actually not supported</p>
+</li>
+<li><p>(5) Video converter parameters</p>
+<p>Videos are actually not supported</p>
+</li>
+<li><p>(6) Thumbnail extraction parameters</p>
+<p>Video Thumbnail are actually not supported</p>
+</li>
+<li><p>(7) Video output type</p>
+<p>Videos are actually not supported</p>
+</li>
+</ul>
+<hr />
+<h4 id="images-image-storage">Images: Image Storage</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.storage.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Keep original image Yes No</p>
+<p>On &quot;yes&quot; the original image will be deleted after the upload process for server space or hiding purposes. On a double click of the display sized image the same image (size) appears then in the popup</p>
+<p>Drawback: watermark images not created on upload will use the smaller size &quot;display&quot; image to be build when the user opens the 2original&quot; view&quot;</p>
+</li>
+<li><p>(2) Original Image Path</p>
+<p>Select any folder within the Joomla! reachable folder system.
+You may choose a different folder when you don't show the original images by setting the &quot;Popup style to none&quot; in Configuration -&gt; Tab &quot;display&quot; -&gt; section &quot;Image display&quot;. This makes it harder for any user to guess the origin folder to download the original image with big size and good quality .</p>
+</li>
+<li><p>(3) Display Image Path</p>
+<p>Select any folder within the Joomla! reachable folder system for the resized displayed images.</p>
+</li>
+<li><p>(4) Thumb Path</p>
+<p>Select any folder within the Joomla! reachable folder system for the thumb images.</p>
+</li>
+</ul>
+<h5 id="future-folder-structure-2018.07.22">Future folder structure (2018.07.22)</h5>
+<p>Actually all images of a certain type are kept in one folder. This limits its use as the amount of files per folder is limited. It may limited to 60000 files on older systems and around 4 GByte files on newer systems. Anyhow the system catches performance issues after too many files in one.</p>
+<p>The development team aims for folder per gallery so other slide shows may benefit from this too.</p>
+<hr />
+<h4 id="images-comments">Images: Comments</h4>
+<p>Comments are activated in configuration under Tab &quot;Display -&gt; section &quot;Image display&quot;</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.comments.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Use CAPTCHA check, in comment form Yes No</p>
+<p>.</p>
+</li>
+<li><p>(2) CAPTCHA type</p>
+<p>.</p>
+</li>
+<li><p>(3) CAPTCHA image height in px (width is 2.7*height)</p>
+<p>.</p>
+</li>
+<li><p>(4) CAPTCHA perturbation (1.0 is high, the higher the more distorted; 0.75 is fine)</p>
+<p>.</p>
+</li>
+<li><p>(5) Number of lines to distort the CAPTCHA image with</p>
+<p>.</p>
+</li>
+<li><p>(6) CAPTCHA background color (hexadecimal code, e.g. #0099CC)</p>
+<p>.</p>
+</li>
+<li><p>(7) Textcolor (hexadecimal code, e.g. #EAEAEA)</p>
+<p>.</p>
+</li>
+<li><p>(8) Color of lines (hexadecimal code, e.g. #0000CC)</p>
+<p>.</p>
+</li>
+<li><p>(9) Alfanumeric CAPTCHA is case sensitive recommended setting: No) Yes No</p>
+<p>.</p>
+</li>
+<li><p>(10) Characters to use for alfanumeric CAPTCHA</p>
+<p>.</p>
+</li>
+<li><p>(11) Length of code for alfanumerc CAPTCHA</p>
+</li>
+</ul>
+<hr />
+<h4 id="images-voting">Images: Voting</h4>
+<p>Voting is activated in configuration under Tab &quot;Display -&gt; section &quot;Image display&quot;</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.voting.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) User can only vote once (cookie based) Yes No</p>
+<p>Defines if a user can vote multiple times
+ToDo: ? overwrites old voting or adds further voting</p>
+</li>
+<li><p>(2) Cookie prefix</p>
+<p>A cookie is used to track the user on voting. Assign a singular prefix only used from your web site</p>
+</li>
+</ul>
+<hr />
+<h2 id="display">Display</h2>
+<h4 id="display-front-page">Display: Front Page</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.frontPage.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Display Search Yes No</p>
+<p>Displays a search rectangle over the gallery display. The user may search for images where the name or the description matches the search text.</p>
+</li>
+<li><p>(2) Display Random Yes No</p>
+<p>On yes an area appears below the standard gallery where Random images are displayed</p>
+</li>
+<li><p>(3) Display Latest Yes No</p>
+<p>On yes an area appears below the standard gallery where Random images are displayed</p>
+</li>
+<li><p>(4) Display Branding Yes No</p>
+<p>On Yes a text with rsgallery2 information including used version will be shown on the bottom of the single images view</p>
+</li>
+<li><p>(5) Display Downloadlink Yes No</p>
+<p>On yes a small thumb with download text appears below the image in the single image view. When the user clicks on it then the original image (big size) is downloaded</p>
+</li>
+<li><p>(6) Display Status Icons Yes No</p>
+<p>On Yes activates icons with the status of a gallery above the gallery thumb when the user is logged in. This helps if &quot;user galleries&quot; are enabled in &quot;MyGallery&quot; configuration to show the states of the actual gallery.</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Config.display.galleryStatus.png?raw=true" alt="Gallery status" /></p>
+<p>The icons will indicate</p>
+<ul>
+<li>(O) User is the owner of the gallery</li>
+<li>(U) User can upload in this gallery</li>
+<li>(H) The gallery is hidden and not Published
+<br><br></li>
+</ul>
+</li>
+<li><p>(7) Display gallery limitbox</p>
+<p>With a displayed gallery limit box the user can choose the maximal number of galleries shown on the viewed page.
+So he may overwrite the configuration parameter &quot;Default number of galleries on frontpage&quot; and see more or less galleries to choose from.</p>
+<p>Possible options</p>
+<ul>
+<li>Always</li>
+<li>If more galleries than limit</li>
+<li>Never
+<br><br></li>
+</ul>
+<p>on &quot;If more galleries than limit&quot; this selection box will only appear when there are more galleries to be displayed but limited by parameter &quot;Default number of galleries on frontpage&quot;. See below</p>
+</li>
+<li><p>(8) Default number of galleries on frontpage</p>
+<p>This limits the galleries displayed to the user.
+This can be overwritten by the user with a limit box if the box is enabled. See parameter &quot;Display gallery limitbox&quot; above</p>
+</li>
+<li><p>(9) Display Slideshow Yes No</p>
+<p>On yes a link is displayed beside the gallery thumb nail which displays on click the selected slide show</p>
+</li>
+<li><p>(10) Select slideshow</p>
+<p>Possible options</p>
+<ul>
+<li>slideshow_parth</li>
+<li>slideshow_pathfusion</li>
+<li>slideshowone
+<br><br></li>
+</ul>
+<p>Sadly slideshow_pathfusion is not working actually and slideshowone is not that interesting (2018.07.26). <br>
+The RSGallery team is working on boostrap and other slide shows in the near future</p>
+</li>
+<li><p>(11) Display Owner Information Yes No</p>
+<p>On Yes the owner information is displayed on the right side of the gallery thumb</p>
+</li>
+<li><p>(12) Display number of items in gallery Yes No</p>
+<p>On Yes the size of the gallery (image count) is is displayed on the right side of the gallery thumb</p>
+</li>
+<li><p>(13) Include items in child galleries when displaying number of items in a gallery Yes No</p>
+<p>Defines the type of images count of the view of previous configuration parameter</p>
+</li>
+<li><p>(14) Display creation date Yes No</p>
+<p>On Yes the owner information is displayed on the right side of the gallery thumb</p>
+</li>
+</ul>
+<hr />
+<h4 id="display-image-display">Display: Image Display</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true" alt="Image manipulation" /></p>
+<ul class="contains-task-list">
+<li><p>(1) Display Slideshow in item view Yes No</p>
+<p>Adds a &quot;slideshow&quot; link to the single image view. It leads to a page displaying the selected type of slideshow</p>
+</li>
+<li class="task-list-item"><p>(2) Popup style
+Defines the method (&quot;No popup&quot;, &quot;Normal popup&quot;, &quot;Joomla Modal&quot;) used for displaying a popup (big image) after a click of the image in single image display.</p>
+<p>&quot;No popup&quot;: A click on the image does not open a popup<br>
+&quot;Normal popup&quot;: After click on the image the original image is displayed in a separate browser window style<br>
+&quot;Joomla Modal&quot;: After click on the image a popup in a modal style with <input disabled="disabled" type="checkbox" checked="checked" /> to close appear in front of the small image screen</p>
+</li>
+<li><p>(3) Display Description Yes No</p>
+<p>On &quot;Yes&quot; a rectangle below the single image display is added. It contains a header with title &quot;Display&quot; and below a field where the description of the image is displayed.</p>
+</li>
+<li><p>(4) Display Hits Yes No</p>
+<p>On &quot;Yes&quot; a rectangle below the single image display is added. It contains a header with title &quot;Hits&quot; and below a field where the number of &quot;hits&quot; of the images is displayed.</p>
+</li>
+<li><p>(5) Display Voting Yes No</p>
+<p>On &quot;Yes&quot; a rectangle below the single image display is added. It contains a header with title &quot;Comments&quot; and below a field where comments can be inserted.</p>
+</li>
+<li><p>(6) Display Comments Yes No</p>
+<p>On Yes a rectangle below the single image display is added. It contains a header with title &quot;Comments&quot; and below a field where comments can be inserted.</p>
+</li>
+</ul>
+<hr />
+<h4 id="display-image-order">Display: Image order</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageOrder.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Order images by</p>
+<p>The displayed imaged may be ordered by the types &quot;Default&quot;, &quot;Date&quot;, &quot;Name&quot;, &quot;Rating&quot; or &quot;Hits</p>
+</li>
+<li><p>(2) Order direction</p>
+<p>The appearance of order type (see above) can be displayed in ascending or descending order</p>
+</li>
+</ul>
+<hr />
+<h4 id="display-exif-settings">Display: EXIF settings</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.exifSettings.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Display EXIF Data Yes No</p>
+<p>If the image contains EXIF data these may be displayed as info in a rectangle below the image in the single image view
+It appears beside Description, Voting and Comments in a separate table part</p>
+</li>
+<li><p>(2) Select EXIF tags to display</p>
+<p>Select the information which shall be shown to the user. Multiple selections are supported</p>
+</li>
+<li><p>(3) Selected items box</p>
+<p>A items listed here are selected for display</p>
+</li>
+<li><p>(4) Possible properties list</p>
+<p>Shows a list of selectable EXIF properties. Inverted items are selected</p>
+</li>
+</ul>
+<hr />
+<h4 id="display-gallery-view">Display: Gallery View</h4>
+<p>Gallery view appears when the user selected a gallery with a click on the gallery thumbs
+It displays image thumbs with information about the imaged</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.galleryView.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Thumbnail Style:</p>
+<p>&quot;Table&quot;, &quot;Float&quot; or &quot;Magic&quot;
+Use float for variable width templates
+sorry &quot;Magic&quot; -&gt; not supported (yet)
+&quot;Table&quot;: The thumb nails are embedded in table elements<br>
+&quot;Float&quot;: The thumb nails are embedded in an unordered list<br></p>
+</li>
+<li><p>(2) Direction (only works for float)
+Assigns the direction &quot;Left to right&quot; or &quot;Right to left&quot; of the unordered list elements</p>
+</li>
+<li><p>(3) Number of Thumbnail Columns (only for table)</p>
+<p>Number of thumbnails in a row</p>
+</li>
+<li><p>(4) Thumbnails per Page</p>
+<p>Set the maximum thump nails displayed on one page. There will be a page navigation displayed if the gallery contains more images.</p>
+</li>
+<li><p>(5) Show image name below thumbnail Yes No</p>
+<p>On yes the image name will shown below the thumbnail</p>
+</li>
+<li><p>(6) Navigation bar display</p>
+<p>Adds a navigation bar in the single image display of the gallery
+Possible selections: Top, bottom, both, none</p>
+</li>
+<li><p>(7) Display Slideshow in gallery view Yes No</p>
+<p>Adds a &quot;slideshow&quot; link to the gallery view. It leads to a page displaying the selected type of slideshow</p>
+</li>
+</ul>
+<hr />
+<h4 id="display-image-watermark">Display: Image Watermark</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.watermark.image.png?raw=true" alt="Image manipulation" /></p>
+<p>If you consider using watermarked files see also description &quot;How to hide the original image from the user&quot;</p>
+<ul>
+<li><p>(1) Display watermark</p>
+<p>Activate if watermarked files should be used on &quot;big size&quot; image view. It will replace the original file which would be displayed otherwise.<br />
+A watermarked replacement file will be created once when uploading or when viewed the first time.
+The watermarking will be a text defined in the configuration.<br />
+Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)</p>
+</li>
+<li><p>(2) Watermark Type</p>
+<p>The watermark may be merged from &quot;text&quot; or from an &quot;image&quot; into the display image</p>
+</li>
+<li><p>(3) Font</p>
+<p>Select the font type of the watermark text</p>
+</li>
+<li><p>(4) Watermark text</p>
+<p>Define the text to be displayed in the image</p>
+</li>
+<li><p>(5) Watermark font size</p>
+<p>Select the font size of the watermark text</p>
+</li>
+<li><p>(6) Watermark text angle</p>
+<p>Define the angle of the watermark text</p>
+</li>
+<li><p>(7) Watermark image</p>
+<p>Will be merged into the big display image. Watermark image should be smaller then display image</p>
+</li>
+<li><p>(8) Scale watermark image</p>
+<p>Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size</p>
+</li>
+<li><p>(9) Watermark position</p>
+<p>Select the position of the watermark text</p>
+</li>
+<li><p>(10) Margin from top</p>
+<p>-&gt; Not used</p>
+</li>
+<li><p>(11) Margin from right</p>
+<p>-&gt; Not used</p>
+</li>
+<li><p>(12) Margin from bottom</p>
+<p>-&gt; Not used</p>
+</li>
+<li><p>(13) Margin from left</p>
+<p>-&gt; Not used</p>
+</li>
+<li><p>(14) Watermark transparency</p>
+<p>Define transparency of the text to be displayed in the image.
+A higher value makes the watermark more transparent.
+Transparency of 100% makes the watermark invisible</p>
+</li>
+<li><p>(15) Watermark image path</p>
+<p>Define the destination path of the created watermarked files</p>
+</li>
+</ul>
+<hr />
+<h2 id="my-galleries">My Galleries</h2>
+<p>My galleries supports the creation of user galleries</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.MyGalleries.png?raw=true" alt="My Galleries" /></p>
+<h4 id="settings-my-galleries">Settings My Galleries</h4>
+<ul>
+<li><p>(1) Show My Galleries</p>
+<p>On yes it activates this functions</p>
+</li>
+<li><p>(2) Show only items owned by the logged in user in My Galleries</p>
+<p>Restricts the shown images on front end to users who own the image and who are logged in.</p>
+<p>??? The images of the user may be in several galleries owned by other people. ???</p>
+</li>
+<li><p>(3) Show only galleries owned by the logged in user in My Galleries Yes No</p>
+<p>Restricts the shown galleries on front end to user who own the gallery and who are logged in.</p>
+</li>
+</ul>
+<h4 id="image-upload">Image upload</h4>
+<ul>
+<li><p>(4) Maximum number of galleries a user can have</p>
+<p>Restrict the amount of galleries  a user may create</p>
+</li>
+<li><p>(5) Max numbers of pictures a user can have</p>
+<p>Restrict the amount of images a user may upload. It counts number of images over all galleries</p>
+</li>
+</ul>
+<hr />
+
+    </body>
+</html>
+            

@@ -1,0 +1,27 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>FinishItForGood.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h2 id="finish-it-for-good">Finish it for good</h2>
+    <h3 id="how-to-remove-rsgallery2-completely">How to remove RSGALLERY2 completely</h3>
+    <p>(1) Use Maintenance -&gt; Purge tables</p>
+    <p>This removes the database content and the image files</p>
+    <p>(2) Prepare the remove of database table structure</p>
+    <p>Search in admin rsgallery2 folder \administrator\components\com_rsgallery2\sql\ for file uninstall.mysql.utf8.sql. Edit the file and remove the comments in front of the drop commands.</p>
+    <p>(3) Standard uninstall</p>
+    <p>Use finally standard Joomla uninstall to get rid of all parts of RSGallery2</p>
+    <hr />
+  </body>
+</html>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>Maint.ConsolidateDb.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <h2 id="maintenance-consolidate-image-database">Maintenance Consolidate image database</h2>
+<p>In cases where the upload got stuck you may get an error message but can't tell how far the process got. Here you can check the consistency of image references in database and files found in the images folder of RSGallery2</p>
+<p>This function checks the links of images between image files and database assignments. It finds left over items like orphaned files or database image reference with missing file</p>
+<h5 id="how-to-get-there">How to get there</h5>
+<p>In &quot;control panel&quot; select Maintenance</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true" alt="Upload startview" /></p>
+<p>There select in section &quot;Repair zone&quot; the button &quot;Consolidate image database&quot;.</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true" alt="Upload startview" /></p>
+<p>This will lead to a page where it is checked whether there are database entries for missing images or for images with no database / gallery connection</p>
+<h3 id="result-of-checks">Result of checks</h3>
+<p>On opening the form or clicking on &quot;Repeat checking&quot; the system is checked and the result is displayed.</p>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.onStart.png?raw=true" alt="Upload startview" /></p>
+<p>In (1) appears the list of files with &quot;missing parts&quot;.</p>
+<p>(2) Area with filename and check box to select images for further actions -&gt; (7)</p>
+<p>(3) Area with state of image. On green the item exists an red it is missing</p>
+<p>(4) Direct action buttons. On click the task is performed on the file of the rows</p>
+<p>(5) The parent gallery of the file in the row is listed and one of the matching images is displayed</p>
+<h4 id="area-with-state-of-image">Area with state of image.</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true" alt="Upload startview" /></p>
+<p>On green the item exists an red it is missing
+(1) Each column indicates a file missing or existing</p>
+<p>For file origin folder see configuration settings</p>
+<ul>
+<li>Original folder: High resolution file. May be not saved on upload if prohibited in configuration</li>
+<li>Display folder: File with defined resolution on upload. It will be used in slide shows</li>
+<li>Thumb folder: Thumb size resolution files used in gallery view.</li>
+<li>Watermark folder: This column/files will only appear if this feature is activated in the configuration. The filename in the folder may not match the used filename in database or the other image folders</li>
+</ul>
+<h4 id="direct-action-buttons">Direct action buttons</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.action.png?raw=true" alt="Upload startview" /></p>
+<p>On click the task is performed on the file of the rows
+Similar to the button in the header area these button issue immediate task on the image references(items) of this row</p>
+<p>(1) Create missing images in row</p>
+<p>(2) Assign gallery name</p>
+<p>(3) Repair all issues in row</p>
+<p>(4) Remove items in rows</p>
+<p>More detailed description can be found below when the list buttons are explained</p>
+<h4 id="action-buttons-for-selected-images">Action buttons for selected images</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.cmdButtons.png?raw=true" alt="Upload startview" /></p>
+<p>The above buttons can be used for selected file lines</p>
+<p>(1) Create database entries</p>
+<ul>
+<li>Adds database references to the selected files</li>
+</ul>
+<p>(2) Create missing images</p>
+<ul>
+<li>Used the original or display image to create the missing ones. If only the thumbnail is given it is used also but the result may not be very bright.</li>
+</ul>
+<p>(3) Create missing watermarks</p>
+<ul>
+<li>If watermark is selected in the configuration watermarked files are created for the selected files</li>
+</ul>
+<p>(4) Assign gallery</p>
+<ul>
+<li>Above the file list on the right side a gallery can be selected. On clicking this button the selected files will be bound to the gallery</li>
+</ul>
+<p>(5) Remove items in rows</p>
+<ul>
+<li>Does delete all existing connected items of the selected files. Deletes the references in the database and the existing files. Here all obsolete data may be cleaned.</li>
+</ul>
+<p>(6) Repair all issues</p>
+<ul>
+<li>This button fixes all missing references. It creates database references and missing image files.</li>
+</ul>
+<h4 id="assignment-of-images-to-parent-gallery">Assignment of image(s) to parent gallery</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.SelectGallery.png?raw=true" alt="Upload startview" /></p>
+<p>On the right side above the image list the user can define the parent gallery to be used in image action. The gallery can be assigned with a button &quot;Assign gallery&quot; within the image row or for all selected images with the similar button on top of the page.</p>
+<p>If Button &quot;Repair all&quot; is clicked and a gallery is selected this gallery is assigned.</p>
+<h3 id="lost-database-file-references">&quot;Lost&quot; database file references</h3>
+<p>If no files exists to a &quot;lost&quot; database item the result looks like following.
+<img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidateDb.OnlyDb.png?raw=true" alt="Upload startview" /></p>
+<p>In this case it is best to select the line and use button &quot;Remove items in row&quot; to delete this item in database.</p>
+<h3 id="back-door-assignment-of-images-to-existing-galleries">Back door assignment of images to existing galleries</h3>
+<p>A indirect way to upload images to RSGallery2 is to copy of the image(s) to the RSGallery2 original folder. Go to &quot;consolidate images&quot; view.</p>
+<h4 id="upload-image">1. Upload image</h4>
+<p>Copy your file per FTP into folder .../Joomla/images/rsgallery/original.</p>
+<h4 id="create-files-and-database-reference">2. Create files and database reference</h4>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true" alt="Upload startview" /></p>
+<p>(1) Use button &quot;Repeat checking&quot; so the image is found<br>
+(2) If the image exists it is marked here <br>
+(3) If the image exists it is displayed here <br>
+(4) Select the parent gallery<br>
+(5) Select the line(s) with clicking on marker in front<br>
+(6) Use button &quot;Repair all issues&quot;<br></p>
+<p>If all goes well then the line of the selected image(s) will disappear in the next display of the page</p>
+<hr />
+
+    </body>
+</html>
+            

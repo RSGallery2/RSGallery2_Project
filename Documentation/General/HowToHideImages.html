@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MarkdownViewer++" />
+        <title>HowToHideImages.md</title>
+        <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+      </head>
+    <body>
+        <h2 id="how-to-hide-the-original-image-from-the-user">How to hide the original image from the user</h2>
+<h4 id="intention">Intention:</h4>
+<p>You want to show your images to the customers but the customer shouldn't be able to download in original resolution.
+The RSGallery2 supports this with some small drawbacks.</p>
+<p>We can't avoid that every image that is shown in the browser the user can download which is not what you want.</p>
+<h4 id="solutions">Solutions:</h4>
+<ul>
+<li>Prevent showing the original image on double click on the image</li>
+<li>Automatic remove the original size image file after upload</li>
+<li>Display a watermarked file instead of the original image</li>
+</ul>
+<h4 id="display-types-in-rsgallery2">Display types in RSGallery2</h4>
+<ul>
+<li>&quot;Thumbs&quot;: Shown in gallery overview ==&gt; No need for watermarking</li>
+<li>&quot;Display&quot;: Single image view in slideshow and similar views ==&gt; Expected to be resized into lesser quality and therefore no watermark.</li>
+<li>&quot;Original&quot;: A double click on a &quot;display&quot; image leads to a full screen &quot;lightbox&quot; image of the original file.</li>
+</ul>
+<h3 id="solution-popup-style-to-none">Solution &quot;Popup style to none&quot;:</h3>
+<p>Configuration -&gt; Tab &quot;display&quot; -&gt; section &quot;Image display&quot;
+<img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(2) Popup style
+Defines the method (&quot;No popup&quot;, &quot;Normal popup&quot;, &quot;Joomla Modal&quot;) used for displaying a popup (big image) after a click of the image in single image display.</p>
+<p>Possible selections:<br></p>
+<ul class="contains-task-list">
+<li>&quot;No popup&quot;: A click on the image does not open a popup or display the &quot;original&quot; image in a separate window<br></li>
+<li>&quot;Normal popup&quot;: After click on the image the original image is displayed in a separate browser window style<br></li>
+<li class="task-list-item">&quot;Joomla Modal&quot;: After click on the image a popup in a modal style with <input disabled="disabled" type="checkbox" checked="checked" /> to close appear in front of the small image screen
+<br><br></li>
+</ul>
+<p>Choose &quot;No popup&quot; to avoid the download of the original size image. Then the user will only see the small sized &quot;display&quot; image.</p>
+<h5 id="drawback">Drawback</h5>
+<ul>
+<li>The &quot;original&quot; files can be found and opened in the browser with guessing if a knowledge of the RSGallery2 / Joomla structure exists.<br>
+This can be disguised using a different folder for originals (see configuration image below)</li>
+</ul>
+</li>
+</ul>
+<h3 id="solution-automatic-remove-the-original-size-image-file">Solution &quot;Automatic remove the original size image file&quot;:</h3>
+<p>Configuration -&gt; Tab &quot;Image&quot; -&gt; section &quot;Image Storage&quot;<br />
+<img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/config.image.storage.png?raw=true" alt="Image manipulation" /></p>
+<ul>
+<li><p>(1) Keep original image Yes / No</p>
+<p>On &quot;yes&quot; the original image will be deleted after the upload process for server space or hiding purposes. On a double click of the display sized image the same image (size) appears then in the popup</p>
+<h5 id="drawback-1">Drawback:</h5>
+<p>Watermark images not created on upload will use the smaller size &quot;display&quot; image to be build when the user opens the 2original&quot; view&quot;</p>
+</li>
+</ul>
+<h3 id="solution-watermarked-files">Solution &quot;Watermarked files&quot;:</h3>
+<ol>
+<li><p><strong>Resized</strong> display image (to bad quality)
+On upload the original image it is resized to display size defined in configuration.
+This reduces &quot;interest&quot; of your user to download with this bad quality</p>
+</li>
+<li><p><strong>Watermark</strong>
+A watermarked replacement file will be created once when uploading or when viewed the first time.
+The watermarking will be a text defined in the configuration.<br />
+Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)</p>
+</li>
+<li><p><strong>Disguise</strong> watermarked file names
+Additional the created watermarked files are disguised with a different filename.
+So users can't immediately guess the URL of the next or previous image. So it is harder to download all your images and remove the watermark with an imaging application</p>
+</li>
+</ol>
+<h5 id="drawbacks">Drawbacks</h5>
+<ul>
+<li>The small sized &quot;display&quot; files have no watermark</li>
+<li>The &quot;display&quot; files can be found with guessing and a knowledge of the RSGallery2 / Joomla structure</li>
+<li>If you switch on watermarking after uploading the images then the watermarking tries to use the original image. If it doesn't exist then it uses the &quot;display&quot; files with lower resolution.</li>
+</ul>
+<h4 id="setup-watermarked-configuration">Setup watermarked configuration:</h4>
+<ol>
+<li>Hide (delete) original after upload</li>
+</ol>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true" alt="Image manipulation" /></p>
+<p>In configuration-&gt;images-&gt;section &quot;Image storage&quot;</p>
+<ul>
+<li>(1) activate the &quot;no&quot; selection</li>
+</ul>
+<ol start="2">
+<li>Check &quot;display&quot; resolution</li>
+</ol>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true" alt="Image manipulation" /></p>
+<p>In configuration-&gt;images-&gt;section &quot;Image manipulation&quot;</p>
+<ul>
+<li>(1) Display picture width defines the maximum size of the displayed image.</li>
+<li>(2) You can reduce the quality of the displayed image to your needs</li>
+</ul>
+<ol start="3">
+<li>Check watermark settings</li>
+</ol>
+<p><img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true" alt="Image manipulation" /></p>
+<p>In configuration-&gt;display-&gt;section &quot;Image watermark&quot;</p>
+<ul>
+<li>(1) Display watermark<br />
+Activate if watermarked files should be used on &quot;big size&quot; image view. It will replace the original file which would be displayed otherwise.<br />
+A watermarked replacement file will be created once when uploading or when viewed the first time.
+The watermarking will be a text defined in the configuration.<br />
+Optional: Add icon or other image as watermark. (This has to be developed. It can be done in short time. Send us an email if you need it and we will care for it)</li>
+<li>(2) Watermark type<br />
+A text or an image can be merged into the original image as a watermark</li>
+<li>(3) Watermark text<br />
+Define the text to be displayed in the image</li>
+<li>(4) Font<br />
+Select the font type of the watermark text</li>
+<li>(5) Watermark font size<br />
+Select the font size of the watermark text</li>
+<li>(6) Watermark text angle<br />
+Define the angle of the watermark text</li>
+<li>(7) Watermark image<br />
+Will be merged into the big display image. Watermark image should be smaller then display image&quot;</li>
+<li>(8) Scale watermark image<br />
+Enter a factor to enlarge the watermark image. 1.0 will use the original. Smaller values will reduce the watermark image size</li>
+<li>(9) Watermark position<br />
+Select the position of the watermark text.</li>
+<li>(10) Margin from top</li>
+<li>(11) Margin from right</li>
+<li>(12) Margin from bottom</li>
+<li>(13) Margin from left<br />
+Margin from the border of the original image. Watermark is placed with distance to the border, if it is not centrally located</li>
+<li>(14) Watermark transparency<br />
+Define transparency of the text to be displayed in the image</li>
+<li>(15) Watermark image path<br />
+Define the destination path of the created watermarked files</li>
+</ul>
+<hr />
+
+    </body>
+</html>
+            

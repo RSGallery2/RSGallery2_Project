@@ -72,3 +72,5 @@
      Define transparency of the text to be displayed in the image
  * (15) Watermark image path
      Define the destination path of the created watermarked files
+
+---

@@ -80,3 +80,5 @@ Exits the edit view
 
 
 ![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/image.edit.permission.png?raw=true)
+
+---

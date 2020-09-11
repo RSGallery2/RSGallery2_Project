@@ -1,0 +1,123 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>ModuleLatestGalleries.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h1 id="rsgallery2_module_latestgalleries">RSGallery2_Module_LatestGalleries</h1>
+    <p>The RSGallery2 Module <em>LatestGalleries</em> shows  as the name suggests the latest galleries from RSGallery2</p>
+    <!-- ToDo: fill out like in Latest images -->
+    <ul>
+      <li>A click on the thumb nail may lead to</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </ul>
+    <h2 id="general">General</h2>
+    <ul>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+      <li>.</li>
+    </ul>
+    <h2 id="parameter-in-back-end">Parameter in back end</h2>
+    <h3 id="tab-modul">Tab Modul</h3>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true" alt="" />
+    </p>
+    <ul>
+      <li>
+        <p>(1) Number of rows</p>
+        <p>Number of vertical images  (Images per column)</p>
+      </li>
+      <li>
+        <p>(2) Number of columns</p>
+        <p>Number of horizontal images (Images per row)
+The number of displayed images is the result from Count = row number times column number. Therefore Count image names are fetched from the Database and prepared for the display</p>
+      </li>
+      <li>
+        <p>(3) Select galleries to show images from</p>
+        <p>e.g. 3,8,42. The used galleries may be restricted to a selection. Please use a comma separated list. Select galleries to show images from where multiple galleries are separated by a comma, e.g. '3,8,42' or '5'. If you want to show images from all galleries enter '0'. The access level of user will be taken into account, so if a user is not allowed to see gallery 2 its images won't show even if you put it here.The gallery id numbers to use can be found here: Backend &gt; Components &gt; RSGallery2 &gt; Galleries, in the column ID</p>
+      </li>
+      <li>
+        <p>(4) Include sub galleries: (No/Yes)</p>
+        <p>When the range of galleries is limited by user input (see above) the child galleries may be included in the image search</p>
+      </li>
+      <li>
+        <p>(5) Display type of image to show</p>
+        <p>RSGallery2 stores the original (depending on settings), a display sized image and a thumbnail sized image. User can select which display type is to be used.</p>
+      </li>
+    </ul>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleLatestGalleries.backend.02.png?raw=true" alt="" />
+    </p>
+    <ul>
+      <li>
+        <p>(1) CSS img element height parameter:</p>
+        <p>Enter the size of the CSS height attribute of the image to show in pixels. If '0' is entered there won't be a height specified for img element and the actual height of the image will be taken.</p>
+      </li>
+      <li>
+        <p>(2) CSS img element width parameter:</p>
+        <p>Enter the size of the CSS width attribute of the image to show in pixels. If '0' is entered there won't be a width specified for img element and the actual width of the image will be taken
+CSS width attribute for the img and the div element (0=no attribute)
+Set size of image, use one (!) of height or width to make the image smaller. Set one or both settings for image height and width to 0, this will keep the aspect ratio of the image, if you set a size for both the image will be stretched. Do not set the size larger than the actual image size, e.g. when a thumb size image has a size of 50x50 pixels, don't set either size to larger than 50, rather use the larger display or the original image</p>
+      </li>
+      <li>
+        <p>(3) CSS div element height parameter:</p>
+        <p>Set size of div, use this to crop the image. Enter the size of the CSS height attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a height specified for the div element and it will fit the actual height of the image</p>
+      </li>
+      <li>
+        <p>(4)  CSS div element width parameter:</p>
+        <p>Set size of div, use this to crop the image. Enter the size of the CSS width attribute of the div that holds the image in pixels. This will crop the image. If '0' is entered there won't be a width specified for the div element and it will fit the actual width of the image</p>
+      </li>
+      <li>
+        <p>(5) CSS div element height parameter for name of gallery:</p>
+        <p>CSS div element height parameter for name of gallery. Enter the size of the CSS height attribute of the dive that holds the name of the image, in pixels. If '0' is entered there won't be a height specified for the div element.<br />There is no width parameter to set the width of this div element since the width of the 'CSS div element width parameter' would overrule this</p>
+      </li>
+      <li>
+        <p>(6) Display gallery name:</p>
+        <p>(No/Yes) Do display gallery name below the gallery thumbnail</p>
+      </li>
+      <li>
+        <p>(7) Display date:</p>
+        <p>(No/Yes) Do display gallery date below the gallery thumbnail</p>
+      </li>
+      <li>
+        <p>(8) Date format:</p>
+        <p>Select format type the date should display (for example, d-m-Y | d/m/Y | m-d-Y : G-i). See <a href="http://nl3.php.net/date">http://nl3.php.net/date</a> for more info about this.</p>
+      </li>
+    </ul>
+    <h3 id="tab-advanced">Tab Advanced</h3>
+    <p>
+      <img src="https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true" alt="" />
+    </p>
+    <p>Support of standard joomla! function (May be prepared but not implemented)
+&lt;! Todo: find Joomla description for this --&gt;
+More on "mouse over"</p>
+    <ul>
+      <li>
+        <p>(1) Layout</p>
+      </li>
+      <li>
+        <p>(2) Module Class Suffix</p>
+      </li>
+      <li>
+        <p>(3) Caching</p>
+      </li>
+      <li>
+        <p>(4) Cache Time</p>
+      </li>
+    </ul>
+    <hr />
+  </body>
+</html>

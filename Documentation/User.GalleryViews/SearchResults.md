@@ -17,3 +17,5 @@ Use on site gallery display page
 The search results display the found texts highlighted.
 If the text is found in the description the complete description is shown beside the thumbnail.
 It shows the thumbnail, image name, the gallery name and the owner of the image
+
+---
