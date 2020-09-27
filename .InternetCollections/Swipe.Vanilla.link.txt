@@ -1,0 +1,13 @@
+
+
+
+html recognize swipe gesture
+
+https://css-tricks.com/simple-swipe-with-vanilla-javascript/
+
+https://haensel.pro/javascript/vanilla-javascript-swipe-gesture-detection
+
+
+
+
+

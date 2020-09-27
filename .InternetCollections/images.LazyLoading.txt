@@ -1,4 +1,7 @@
 
+
+google: html late loading / lazy loading
+
 html late loading of images
 
 https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/
@@ -18,8 +21,6 @@ https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/
 
 
 https://web.dev/use-lazysizes-to-lazyload-images/
-
-
 
 
 

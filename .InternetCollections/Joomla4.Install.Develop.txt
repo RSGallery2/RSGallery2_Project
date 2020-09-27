@@ -3,3 +3,12 @@ Einfach so als Zusatzinfo
 
 Bei mir aufm Windows XAMPP gings bisher immer mit "composer install --no-dev --ignore-platform-reqs" (--no-dev da ich die ganzen Tests eh nicht nutze), danach "npm ci --unsafe.perm". Am Schluss noch die Datei /libraries/autoload_psr4.php löschen (wird automatisch neu generiert).
 Aber eben, für normale Tests reicht der Nightly Build auch.
+
+----------------------------
+Christiane Maier-Stadtherr 
+https://wicked-software.de/joomla-v4-0-win10-composer-and-npm
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+http://schema.org/docs/gs.html
+
+--- image -----------------------------------------------
+
+https://schema.org/ImageObject
+
+
+--- rating ----------------------------------------------
+
+3c. Missing/implicit information: use the meta tag with content
+Sometimes, a web page has information that would be valuable to mark up, but the information can't be marked up because of the way it appears on the page. The information may be conveyed in an image (for example, an image used to represent a rating of 4 out of 5) or a Flash object (for example, the duration of a video clip), or it may be implied but not stated explicitly on the page (for example, the currency of a price).
+
+In these cases, use the meta tag along with the content attribute to specify the information. Consider this example—the image shows users a 4 out of 5 star rating:
+
+<div itemscope itemtype="http://schema.org/Offer">
+  <span itemprop="name">Blend-O-Matic</span>
+  <span itemprop="price">$19.95</span>
+  <img src="four-stars.jpg" />
+  Based on 25 user ratings
+</div>
+Here is the example again with the rating information marked up.
+
+<div itemscope itemtype="http://schema.org/Offer">
+  <span itemprop="name">Blend-O-Matic</span>
+  <span itemprop="price">$19.95</span>
+  <div itemprop="reviews" itemscope itemtype="http://schema.org/AggregateRating">
+    <img src="four-stars.jpg" />
+    <meta itemprop="ratingValue" content="4" />
+    <meta itemprop="bestRating" content="5" />
+    Based on <span itemprop="ratingCount">25</span> user ratings
+  </div>
+</div>
+This technique should be used sparingly. Only use meta with content for information that cannot otherwise be marked up.
+
+
+
+ 

@@ -1,0 +1,14 @@
+
+
+https://docs.joomla.org/JSON_Responses_with_JResponseJson
+
+https://docs.joomla.org/Handling_the_server_side_of_Ajax_requests
+ 
+
+Base pages (Not worth looking)
+
+https://docs.joomla.org/AJAX
+
+https://docs.joomla.org/Using_Joomla_Ajax_Interface
+
+ 

@@ -1,0 +1,24 @@
+
+https://designdrizzle.com/best-php-image-manipulation-libraries-which-developers-must-use/
+
+2020
+1. Imagine
+
+2. Php Graphic Works
+
+3. Zebra Image
+
+4. Php5 Image Manipulation
+
+5. Dynamic Dummy Image Generator
+
+6. WideImage
+
+7. Image Cache
+
+8. Image Workshop
+
+9. Asido
+
+10. PhpThumb
+

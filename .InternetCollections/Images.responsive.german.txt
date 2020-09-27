@@ -1,0 +1,37 @@
+See also Bootstrap.Images.responsive.txt
+
+
+
+ 	
+Toni Gerns Thu, Nov 7 12:22 PM
+
+Hallo zusammen. Wie kann ich in einem Picture-Element konform ein Caption setzen? Ist die Verschachtelung in Form von
+
+Wenn es aber "nur" darum geht das selbe Bild in verschiedenen Qualitätsstufen/Auflösungen zu hinterlegen dann würde ich es über ein srcset machen.
+
+--------------------------------------
+wenn dann
+
+<figure> 
+	<picture> 
+		<source> 
+		</source> 
+			<img> 
+	</picture> 
+	<figcaption> 
+<figure>
+
+---------------------------------------
+falsch
+<picture>
+<source>
+<figure>
+  <img>
+  <figcaption>
+</figure>
+</picture>
+
+konform?
+
+---------------------------------------------
+
