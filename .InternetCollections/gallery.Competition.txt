@@ -7,7 +7,8 @@ https://therichcourt.com/joomla/gallery
 
 https://joomla-dev.alexander-korn.de/picwally
 
-
+POWR 
+https://www.powr.io/tutorials/installiere-extension-powr-bildergalerie-auf-deiner-joomla-seite
 
 
 tiles: http://unitegallery.net/index.php?page=compact-bottom

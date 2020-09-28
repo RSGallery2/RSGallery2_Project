@@ -1,0 +1,25 @@
+
+
+* External folders (cloud)
+* autoupdate new images (when to do ? cron ?
+* different folder each gallery(list ?) 
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
