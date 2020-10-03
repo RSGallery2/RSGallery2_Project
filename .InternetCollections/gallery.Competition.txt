@@ -1,4 +1,6 @@
 
+JoomTools/plg_fields_jtgallery https://github.com/JoomTools/plg_fields_jtgallery
+
 
 RC Gallery
 https://therichcourt.com/joomla/gallery
@@ -6,6 +8,10 @@ https://therichcourt.com/joomla/gallery
 ? balboa
 
 https://joomla-dev.alexander-korn.de/picwally
+
+
+Oriel (dynamic gallery) ==> based on the folder structure
+
 
 POWR 
 https://www.powr.io/tutorials/installiere-extension-powr-bildergalerie-auf-deiner-joomla-seite

@@ -1,0 +1,20 @@
+
+
+
+Ich habe auch schon die joomla-script-options genutzt.
+
+
+Beispiel:
+
+PHP
+$doc = JFactory::getDocument();
+$doc->addScriptOptions('mod_itcs_userfolderupload', 
+	array('col_folder'=>$user_folder, 'col_file'=>$csv_column_file, 
+		  'mailcount'=>$mailcount,'mailbreaktime'=>$mailbreaktime ));
+
+In der JS-Datei dann diese Options ausgelesen mit:
+
+JavaScript
+var opt = JSON.parse($('.joomla-script-options').html());
+var col_file = opt.mod_itcs_userfolderupload.col_file.toLowerCase();
+var col_folder = opt.mod_itcs_userfolderupload.col_folder.toLowerCase();

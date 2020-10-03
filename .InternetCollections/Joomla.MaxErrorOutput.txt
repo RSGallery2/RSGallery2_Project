@@ -1,0 +1,26 @@
+
+MaxErrorOutput
+view most of the error
+
+Gehe in die Joomla-Konfiguration.
+- Im Reiter "Server" findest du die Einstellung "Fehler berichten". Setze sie auf "Maximum".
+- Im Reiter "System" findest du die Einstellung "System debuggen". Setze sie auf "JA".
+- Speichere die Joomla-Konfiguration.
+
+Solltest du die Joomla-Konfiguration im Backend nicht bearbeiten/speichern können, weil sich dort der Fehler eingeschlichen hat:
+
+- Bearbeite die Dateie configuration.php im Joomla-Hauptverzeichnis mit einem geeigneten Texteditor (z.B. Notepad++).
+- Ändere darin diese 2 Zeien wie folgt:
+Code
+public $error_reporting = 'maximum';
+public $debug = '1';
+- Unter Joomla 4 änderst du die 2 Zeilen so:
+
+Code
+public $error_reporting = 'maximum';
+public $debug = true;
+
+Da einige Templates blöde sind und auf ihrer Fehlerseite ungenügende Daten anzeigen, ist es empfohlen, die Datei error.php im Templateordner, falls vorhanden, vorübergehend umzubenennen, z.B. zu errorxxxxxx.php. So ist gewährleistet, dass die Fehlerseite von Joomla verwendet wird.
+
+Gehe dann noch mal auf die "tote Seite" und sieh nach, ob sie jetzt mehr anzeigt.
+

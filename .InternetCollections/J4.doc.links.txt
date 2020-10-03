@@ -1,0 +1,18 @@
+
+Finding the issues and PR tagged with Documentation Required is the easy part.
+
+I think the key task needing to be done is for some work to be performed on:
+Looking at every item tagged "Documentation Required"
+Checking if it's been added to/updated in JDocs
+If not - create an appropriate "Red Link" page (something that needs a page, but for which a page doesn't exist yet) to create a placeholder for someone to then write the documentation.
+Log the link to JDocs Red Link back to the GitHub issue to allow someone to follow up and write the article.
+
+
+doc to do ==> use next link
+https://github.com/joomla/joomla-cms/pulls?q=is%3Aopen+is%3Apr+label%3A%22Documentation+Required%22
+
+shows all closed 4.0-dev PR's with label "documentation required"
+ https://github.com/joomla/joomla-cms/pulls?q=is%3Apr+label%3A%22Documentation+Required%22+is%3Aclosed+base%3A4.0-dev
+
+useful in 
+pizza bugs and fun
