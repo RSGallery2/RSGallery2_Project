@@ -2,7 +2,7 @@
 extension from company
 https://www.joomlaxtc.com/support/extension/extension-guides/rs2gallery-image-wall
 
-
+------------------------------------------------------
 RS2Gallery Image Wall
 Description
 Display any image from RSGallery 2 component using custom search criteria in templates with paging and animation capabilities.
@@ -231,3 +231,6 @@ RS Wall Slide Demo
 RS Wall Tool Tip Demo
 RS Wall Lightbox Demo
 RS Wall Featured Demo
+
+-------------------------------------------------------------------------
+
