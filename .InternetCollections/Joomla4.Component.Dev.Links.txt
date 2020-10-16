@@ -1,5 +1,18 @@
 
 
+Kicktemp
+https://github.com/Kicktemp/joomla-boilerplate?fbclid=IwAR3JlddiAPlZ4_-DxvZ-9a3hhQw0VxkJL0bhhQjdZ7sLwOp8s0A0qGtl3_k
+Kicktemp video
+https://www.youtube.com/watch?v=IlwZ_JeBnxM&feature=youtu.be&fbclid=IwAR39sNMt1SYJbsYm8FFyq9HTg4B9fgJNlwKVzFlnApQwDiz-vI7bgFFlt70
+Kicktemp Channel
+https://www.youtube.com/channel/UC3gJvRNKjk7sbPFiuvu5y0Q
+
+official
+https://github.com/joomla-extensions/boilerplate?fbclid=IwAR0l5cKfV5-IRdSMd740cdpifmQxTbbGQVx0UGg6S8CW7oUuckE-IiH8PWw
+
+<<< 2020.10.16 
+-------------------------------------
+
 https://github.com/astridx/boilerplate -> branch tutorial
 
 https://joomla.digital-peak.com/images/blog/JWC17_Prepare_you_extension_for_Joomla_4.pdf

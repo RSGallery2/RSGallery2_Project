@@ -1,0 +1,26 @@
+
+google joomla component layout
+
+Sharing layouts across views or extensions with JLayout
+
+https://docs.joomla.org/J3.x:Sharing_layouts_across_views_or_extensions_with_JLayout
+
+
+Layout Overrides in Joomla
+https://docs.joomla.org/J3.x:Layout_Overrides_in_Joomla
+
+
+
+How to load a layout component or a view in the module
+(Display the component view or layout into a module)
+
+https://joomla.stackexchange.com/questions/28000/display-the-component-view-or-layout-into-a-module
+
+>> Check out a Joomla core module like /modules/mod_articles_latest 
+   to see how it re-uses Joomla's ContentModelArticles.
+
+   In the /tmpl/default.php I would put the html + php to display the 
+   data. As basis I would copy parts of the components html output.
+
+
+
