@@ -6,6 +6,20 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 https://zellwk.com/blog/remember-css-grid-properties/
 
+General ideas what toi do with grid
+https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+
+
+
+
+
+google css grid auto images
+
+
+
+https://www.imarketinx.de/artikel/responsive-image-gallery-with-css-grid.html
+
+
 
 
 

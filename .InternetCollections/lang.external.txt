@@ -1,0 +1,6 @@
+
+gogle joomla params definition include other language
+
+Load extra language files
+
+https://docs.joomla.org/Loading_extra_language_files/en
