@@ -1,5 +1,5 @@
 
-gogle joomla params definition include other language
+google joomla params definition include other language
 
 Load extra language files
 
