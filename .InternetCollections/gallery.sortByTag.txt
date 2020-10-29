@@ -1,0 +1,20 @@
+
+
+ch brauche eine Galerie für Videos und Fotos. 
+Die sollen via Tags sortiert werden können (Es werden alle Tags angezeigt. 
+Auf Klick sieht man dann nur die Inhalte aus diesem Tag). Wenn möglich, 
+sollen sich die Videos und Bilder auf Klick in einem OVerlay öffnen. 
+Hat da jemand von euch einen Tipp für mich?
+
+Florian Bauer shared a link
+ich habe mit Elisas Custom Fields Filter Override mal so etwas gebaut: https://www.bauer-jelinek.at/medienberichte geht das in die Richtung?
+
+Viviana Menzel
+IgniteGallery eventuell
+
+
+
+
+
+
+
