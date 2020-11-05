@@ -1,4 +1,10 @@
 
+
+https://demo.fastw3b.net/fw-gallery/en-en
+Good doc about image layouts
+
+
+
 JoomTools/plg_fields_jtgallery https://github.com/JoomTools/plg_fields_jtgallery
 
 

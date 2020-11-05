@@ -1,0 +1,15 @@
+
+Bootstrap design
+Pinterest design, 
+
+
+Polaroid design,
+Masonry
+
+ 
+Effects
+ => lighter big border 
+ => Black text : on hover black moves up
+ => text on side/ bottom,  grey background
+
+
