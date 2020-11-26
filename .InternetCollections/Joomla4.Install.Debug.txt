@@ -1,6 +1,10 @@
 How to debug my own installation script: 
 
---------
+
+
+---------------
+\libraries\src\Installer\InstallerAdapter.php
+---------------
 loading the install script
  -> InstallerAdapter.php -> function install() line: $this->setupScriptfile();
 

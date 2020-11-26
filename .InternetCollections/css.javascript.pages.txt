@@ -1,0 +1,18 @@
+
+css.javascript.pages.txt
+
+https://www.mediaevent.de/
+
+CSS Gradient • Farbverlauf als Hintergrund
+https://www.mediaevent.de/css/gradient.html
+
+
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+https://css-tricks.com/
+
+

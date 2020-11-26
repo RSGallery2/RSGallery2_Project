@@ -1,0 +1,46 @@
+
+https://mizine.de/html/import-sql-dump-via-terminal/
+https://mariadb.com/kb/en/mysqldump/
+mysqldump -h Your_host_name -u user_name -p password
+ 
+https://mizine.de/html/import-sql-dump-via-terminal/
+ 
+google mysqldum
+ 
+https://mariadb.com/kb/en/library/mysqldump/
+ 
+import mysql.connector #diesen nutzt da ja auch
+from configparser import ConfigParser # persönliche Daten niemals im Code halten! Daher der weg mit dem Configparser
+ 
+config = ConfigParser()
+config.read("learn.ini") #Name der Ini Datei im gleichen Verzeichnis
+section = "MySql" # siehe Docstring -> Aufbau der Ini
+ 
+"""[MySql]
+mysqldriver = mysqlconnector
+mysqluser = Username
+mysqlpw = password
+mysqlhost = localhost
+mysqlport = 3306
+mysqldbname = dbname"""
+ 
+dbconfig = {}
+dbconfig["host"] = config.get(section, "mysqlhost")
+dbconfig["port"] = config.get(section, "mysqlport")
+dbconfig["user"] = config.get(section, "mysqluser")
+dbconfig["password"] = config.get(section, "mysqlpw")
+dbconfig["database"] = config.get(section, "mysqldbname")
+ 
+ 
+conn = mysql.connector.connect(**dbconfig)
+cursor = conn.cursor()
+_SQL = """describe log""" #Gibt die Table Infos wieder
+cursor.execute(_SQL)
+result = cursor.fetchall()
+print(result )
+
+ 
+
+
+
+

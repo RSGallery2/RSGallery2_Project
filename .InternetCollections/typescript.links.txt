@@ -11,6 +11,9 @@ interface general
 https://github.com/microsoft/TypeScript/blob/v3.7.2/lib/lib.dom.d.ts#L6693
 --------------------------
 
+learn in 30 min
+https://tutorialzine.com/2016/07/learn-typescript-in-30-minutes
+
 
 --------------------------
 

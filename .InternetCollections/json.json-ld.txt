@@ -1,0 +1,20 @@
+
+
+https://www.w3.org/TR/json-ld/
+
+Why JSON-LD is better than schema.org?
+https://sitechecker.pro/json-ld-markup/
+See below first screen
+
+
+
+Explained
+https://www.ionos.de/digitalguide/websites/webseiten-erstellen/tutorial-json-ld-nach-schemaorg/
+
+
+
+-------------------------------------------------------------
+{...} Schema Markup Generator (JSON-LD)
+
+https://technicalseo.com/tools/schema-markup-generator/
+

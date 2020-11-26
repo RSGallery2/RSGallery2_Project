@@ -1,0 +1,31 @@
+
+
+
+
+github JonDesign
+
+? Second page
+
+------------------------------
+
+GitHub - a jQuery port of JonDesign's SmoothGallery - GitHub
+https://github.com/mjonuschat/sleekgallery
+
+
+
+optimizezed mootools version
+https://github.com/codatory/optimized-content-gallery/blob/master/scripts/jd.gallery.js.php
+
+
+------------------------------------------------------
+Alternative smooth box / slide
+https://github.com/kthornbloom?tab=repositories
+Lightweight-Image-Gallery-Lightbox-Plugin-Smooth-Gallery.zip
+
+https://github.com/kthornbloom/Smoothslides
+
+----------------------------------------------------------
+
+
+
+

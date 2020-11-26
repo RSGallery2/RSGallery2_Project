@@ -1,4 +1,15 @@
 
+
+
+$table = Table::getInstance('extension');
+$table->load($plugin->id);
+
+$plugin = PluginHelper::getPlugin('system', 'preloadyoothemefonts');
+
+
+
+
+------------------------------
 https://www.reilldesign.com/tutorials/get-component-module-plugin-template-menu-parameters-in-joomla-3-x.html
 
 Get component, module, plugin, template & menu parameters in Joomla 3.x 

@@ -1,5 +1,19 @@
 
+See more in *slider* ...
+
+
+JoomSpirit Slider -> Options are interesting
+https://www.joomspirit.com/free-extension-joomla/js-responsive-slideshow/features
+
+
+
+tiny-slider (Robert Deutz empfohlen)
+https://ganlanyuan.github.io/tiny-slider/
+
+
+
 slick
+https://kenwheeler.github.io/slick/
 
 responsiveSlides
 

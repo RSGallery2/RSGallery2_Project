@@ -11,5 +11,7 @@ Effects
  => lighter big border 
  => Black text : on hover black moves up
  => text on side/ bottom,  grey background
+ => on hover move into picture
+ => ...
 
 
