@@ -1,0 +1,141 @@
+
+
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+How to return a value from phing ad-hoc task?
+<adhoc-task name="appversion" ><![CDATA[
+    class AppversionTask extends Task {
+
+        function main() {
+            $manifest = file_get_contents("manifest.json");
+            $manifest_json = json_decode($manifest);
+            $version = $manifest_json->version;
+            $this->log("App version: " . $version);
+            $this->project->setProperty('version', $version);
+        }
+    }
+]]></adhoc-task>
+<appversion />
+<!-- The version property should
+----------------------------------------------------------------
+Phing override property in child task
+----------------------------------------------------------------
+How to collect output of a custom phing task in a phing property?
+
+You can improve your solution doing this
+
+private $outputProperty;
+
+public function setOutputProperty($str)
+{
+    $this->outputProperty = $str;
+}
+and then, when you catch the output
+
+$this->getProject()->setNewProperty($this->outputProperty, "hello world");
+
+----------------------------------------------------------------
+How to collect output of a custom phing task in a phing property?
+
+Oh it is simple. We can set a property within the custom task class like this -
+
+$this->getProject()->setNewProperty('output', "hello world");
+and it can be accessed in the build xml, after the task call, like this -
+
+<addedfiles message="Hello World" />
+<echo>See ${output}</echo>
+
+
+
+----------------------------------------------------------------
+Even with the great help of #phing IRC I couldn't solve the problem. I decided to write a custom task to account for data passing between targets:
+
+<?php
+
+require_once "phing/Task.php";
+
+class rvGlobalTask extends Task {
+
+    private static $bOk = 1;
+    private $sMode = null;
+    private $bValue = null;
+    private $outputProperty = null;
+
+    public function setSMode( $sMode ) {
+        $this->sMode = $sMode;
+    }
+    public function setBValue( $bValue ) {
+        $this->bValue = $bValue;
+    }
+    public function setOutputProperty( $outputProperty ) {
+        $this->outputProperty = $outputProperty;
+    }
+
+    public function main() {
+        if ( $this->sMode == "set" ) {
+            rvGlobalTask::$bOk = $this->bValue;
+        } else {
+            $this->project->setProperty(
+                $this->outputProperty,
+                rvGlobalTask::$bOk
+            );
+        }
+    }
+}
+?>
+----------------------------------------------------------------
+This is the way I managed to have targets which behave like functions:
+
+<target name="-console-cmd-return-property" hidden="true">
+    <exec command="${command}" checkreturn="${checkreturn}" logoutput="${logoutput}" outputProperty="${outputProperty}"/>
+</target>
+It gets invoked like this:
+
+<phingcall target="--console-return-property">
+    <property name="command" value="ps auxwww"/>
+    <property name="checkreturn" value="true"/>
+    <property name="logoutput" value="false"/>
+    <property name="outputProperty" value="ps_output"/>
+</phingcall>
+Of course it works because it relies on existing exec, and it is not generic...
+----------------------------------------------------------------
+<target name="init_configuration">
+    <echo msg="Define initial configuration for the deployment..." />
+    <if>
+        <not>
+            <isset property="host" />
+        </not>
+        <then>
+            <property name="host" value="dev" override="true" />
+            <echo message="The value of hostname has been set to ${host}" />
+        </then>
+        <else>
+            <echo message="The value of hostname is ${host}" />
+        </else>
+    </if>
+    <if>
+        <not>
+            <isset property="version" />
+        </not>
+        <then>
+            <property name="version" value="1.0.0" override="true" />
+            <echo message="The value of version has been set to ${version}" />
+        </then>
+        <else>
+            <echo message="The value of version is ${version}" />
+        </else>
+    </if>
+
+    <property name="host_credital_file" value="config/hosts/${host}.properties" />
+    <property file="${host_credital_file}" />
+    <available file="${host_credital_file}" property="hostfilefound" value="true"/>
+    <fail unless="hostfilefound" message="Missing Hostfile configuration file (${host_credital_file})!" />
+
+    <echo msg="Configuration is done" />
+</target>
+----------------------------------------------------------------

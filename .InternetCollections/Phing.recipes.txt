@@ -2,7 +2,7 @@
 
 
 https://github.com/compojoom/CUpdater/blob/master/builds/plugin.xml
-
+https://github.com/compojoom/CUpdater/tree/master/builds/phingext
 
 
 https://github.com/mrook/phing-examples
