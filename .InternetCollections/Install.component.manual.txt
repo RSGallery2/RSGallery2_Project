@@ -1,0 +1,11 @@
+
+Install component manually for debug 
+
+1) copy sources to joomla 
+	* Admin component
+	* site component* media files 
+	* ....
+
+2) Joomla -> System -> [Install] -> discover
+
+
