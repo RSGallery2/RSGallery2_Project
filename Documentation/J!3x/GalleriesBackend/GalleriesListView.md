@@ -2,7 +2,7 @@
 
 ## Gallery list columns
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/galleries.listView.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/galleries.listView.01.png?raw=true)
 
 (1) Number in  list
 
@@ -40,7 +40,7 @@ The author logged in when creating the gallery
 
 (9) Gallery order
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/galleries.listView.order.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/galleries.listView.order.01.png?raw=true)
 
     (1) Order number
 
@@ -75,7 +75,7 @@ Internal ID of image for reference or matching in other list
 ## Gallery(s) task buttons
 
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/galleries.listView.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/galleries.listView.02.png?raw=true)
 
   (1) New
 
@@ -101,7 +101,7 @@ Assign unpublished to the selected images
 ## Galleries search options
 
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/galleries.listView.order.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/galleries.listView.order.png?raw=true)
 
 (1) Activate search controls
 

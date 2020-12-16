@@ -8,11 +8,11 @@ This function checks the links of images between image files and database assign
 
 In "control panel" select Maintenance
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true)
 
 There select in section "Repair zone" the button "Consolidate image database".
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
 
 This will lead to a page where it is checked whether there are database entries for missing images or for images with no database / gallery connection
 
@@ -20,7 +20,7 @@ This will lead to a page where it is checked whether there are database entries 
 
 On opening the form or clicking on "Repeat checking" the system is checked and the result is displayed.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidateDb.onStart.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidateDb.onStart.png?raw=true)
 
 In (1) appears the list of files with "missing parts".
 
@@ -33,7 +33,7 @@ In (1) appears the list of files with "missing parts".
 (5) The parent gallery of the file in the row is listed and one of the matching images is displayed
 
 #### Area with state of image.
- ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
+ ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
 
 On green the item exists an red it is missing
 (1) Each column indicates a file missing or existing
@@ -45,7 +45,7 @@ On green the item exists an red it is missing
 * Watermark folder: This column/files will only appear if this feature is activated in the configuration. The filename in the folder may not match the used filename in database or the other image folders
 
 #### Direct action buttons
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidateDb.action.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidateDb.action.png?raw=true)
 
 On click the task is performed on the file of the rows
 Similar to the button in the header area these button issue immediate task on the image references(items) of this row
@@ -61,7 +61,7 @@ Similar to the button in the header area these button issue immediate task on th
 More detailed description can be found below when the list buttons are explained
 
 #### Action buttons for selected images
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidateDb.cmdButtons.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidateDb.cmdButtons.png?raw=true)
 
 The above buttons can be used for selected file lines
 
@@ -90,7 +90,7 @@ The above buttons can be used for selected file lines
 * This button fixes all missing references. It creates database references and missing image files.
 
 #### Assignment of image(s) to parent gallery
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidateDb.SelectGallery.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidateDb.SelectGallery.png?raw=true)
 
 On the right side above the image list the user can define the parent gallery to be used in image action. The gallery can be assigned with a button "Assign gallery" within the image row or for all selected images with the similar button on top of the page.
 
@@ -100,7 +100,7 @@ If Button "Repair all" is clicked and a gallery is selected this gallery is assi
 ### "Lost" database file references
 
 If no files exists to a "lost" database item the result looks like following.
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidateDb.OnlyDb.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidateDb.OnlyDb.png?raw=true)
 
 In this case it is best to select the line and use button "Remove items in row" to delete this item in database.
 
@@ -114,7 +114,7 @@ Copy your file per FTP into folder .../Joomla/images/rsgallery/original.
 
 #### 2. Create files and database reference
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
 
 (1) Use button "Repeat checking" so the image is found<br>
 (2) If the image exists it is marked here <br>

@@ -33,7 +33,7 @@ Topmost view defined in menu definition<br>
 Lists the first "parent" galleries<br>
 May contain block view of "Random" and "Latest" images<br>
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.start.rootgalleries.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.start.rootgalleries.png?raw=true)
 
 (1) N "blocks" of root Galleries
 
@@ -46,7 +46,7 @@ May contain block view of "Random" and "Latest" images<br>
 (4) Images/galleries may be searched by the user
 
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.start.randomLatestImages.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.start.randomLatestImages.png?raw=true)
 
 (1) Random images: <br>
 (2) Latest images:
@@ -64,7 +64,7 @@ A gallery may contain "Sub" galleries. This can be used to order galleries as ea
 ## Single gallery view
 Thumb images in rows and colums
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.gallerySingle.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.gallerySingle.png?raw=true)
 
 ### Menu selection for single galleries
 
@@ -78,7 +78,7 @@ The view may be created by menu or with a plugin into an article
 
 View containing a centered single image with buttons for next/ previous images
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.image.singleImage.withDescription.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.image.singleImage.withDescription.png?raw=true)
 
 #### Description
 
@@ -86,13 +86,13 @@ The description is saved when the image is edited or after the upload. The edit 
 
 #### Voting
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.image.singleImage.onlyVoting.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.image.singleImage.onlyVoting.png?raw=true)
 
 Image voting can be activated in the configuration. the rating can be apllied by clicking of one of the stars
 
 #### Commenting
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.image.singleImage.onlyComments.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.image.singleImage.onlyComments.png?raw=true)
 
 (1) Fill out new comment
 
@@ -106,7 +106,7 @@ Image voting can be activated in the configuration. the rating can be apllied by
 
 #### Exif data
 
-![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.image.singleImage.onlyExif.png?raw=true)
+![Start page: root galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.image.singleImage.onlyExif.png?raw=true)
 
 Displaying Exif data can be activated in the configuration. Also the displayed properties may be selected there
 

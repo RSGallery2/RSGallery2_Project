@@ -1,6 +1,6 @@
 # Upload
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.start.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.start.png?raw=true)
 
 There are three tabs to choose
 
@@ -14,7 +14,7 @@ On "Upload by drag and drop" a form opens where the properties of a image to be 
 
 More images can be added in that form.
 
-![Drag and Drop](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.DragAndDrop.01.png?raw=true)
+![Drag and Drop](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.DragAndDrop.01.png?raw=true)
 
 (1) Specify gallery
 
@@ -49,7 +49,7 @@ When the drag and drop function has enough experience and no user complains then
 
 ### Upload files using drag and drop: View after some uploads
 
-![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.DragAndDrop.02.png?raw=true)
+![Upload start view](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.DragAndDrop.02.png?raw=true)
 
 (1) Drag and drop area (filled) After a gallery is selected the dotted border is green. Dropped images do appear in this area after the transfer process is completed.
 
@@ -71,7 +71,7 @@ Info: On creation of the image data on the server side the title is preset from 
 
 A zip file containing several images can be uploaded to the server, unzipped and the images assigned to a gallery.
 
-![Upload from Zip file (PC)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.fromZip.png?raw=true)
+![Upload from Zip file (PC)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.fromZip.png?raw=true)
 
 (1) Select the zip file on local pc folder
 
@@ -96,7 +96,7 @@ When the new function has enough experience and no user complains then this func
 
 Images can be uploaded to a folder (Shall be created) within the Joomla! installation. The images will be copied from this folder and will be assigned to the gallery
 
-![Upload from folder (server)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.fromFtpPath.png?raw=true)
+![Upload from folder (server)](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.fromFtpPath.png?raw=true)
 
 (1) FTP Path Defines the path where RSGallery2 will look for images to "upload" The path may be any otherwise empty folder which is accessible (has rights) from within the Joomla! installation. Recommended is a folder TransferImages in images The path must start with the base path to Joomla! installation. To make things easier the standard path is given in small font below the input.
 
@@ -119,7 +119,7 @@ When the new function has enough experience and no user complains then this func
 
 ## Properties uploaded Files
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
 This form enables to set the properties title and description for a batch of images at the same time.<br>
 It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
@@ -185,7 +185,7 @@ The image will get a set hook in the box below the image This can be used to del
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/images.batch.upload.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/images.batch.upload.png?raw=true)
 
 (1) Add properties
 
@@ -203,21 +203,21 @@ Then you may upload the image by FTP to the rsgallery2 "original" destination fo
 
 ### 1\. Check the database reservation / images existence
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/controlPanel.baseButtons.maintenance.png?raw=true)
 
 In "control panel" select Maintenance
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Maintenance.Repair.ConsolidateImageDB.Button.png?raw=true)
 
 There select in section "Repair zone" the button "Consolidate image database". This will lead to a page where it is checked whether there are database entries for missing images or for images with no database / gallery connection
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidate.onlyDbItem.png?raw=true)
 
 ### 2\. Upload image
 
 The original images are kept in folder in .../Joomla/images/rsgallery/original. Copy your file into this folder.
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/maintenance.consolidate.DbAndOriginalImg.png?raw=true)
 
 (1) Use button "Repeat checking" so the image is found<br>
 (2) If the image exists it is marked here<br>

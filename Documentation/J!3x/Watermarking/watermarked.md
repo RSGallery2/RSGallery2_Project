@@ -24,14 +24,14 @@
 
 1. Hide (delete) original after upload
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/watermark.config.image.storage.png?raw=true)
 
  In configuration->images->section "Image storage"
  * (1) activate the "no" selection
 
 2. Check "display" resolution
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/watermark.config.image.manipulation.png?raw=true)
 
  In configuration->images->section "Image manipulation"
  * (1) Display picture width defines the maximum size of the displayed image.
@@ -39,7 +39,7 @@
 
 3. Check watermark settings
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/watermark.config.display.watermark.png?raw=true)
 
  In configuration->display->section "Image watermark"
  * (1) Display watermark

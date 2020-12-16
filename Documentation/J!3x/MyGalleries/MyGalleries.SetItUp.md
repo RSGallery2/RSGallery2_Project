@@ -5,19 +5,19 @@
 1. Assign the standard RSGallery2 view to a menu
 
 #### Configuration of My Galleries
- ![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.MyGalleries.png?raw=true)
+ ![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.MyGalleries.png?raw=true)
 
 More description in section configuration
 
 #### Create a user group for "My Galleries" users
 
-![My Galleries New user group](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/MyGallery.NewUserGroup.png?raw=true)
+![My Galleries New user group](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/MyGallery.NewUserGroup.png?raw=true)
 
 A separate user groups helps to assign special rights for "My Gallery" users.
 
 #### Assign user rights for this "My Galleries" users group
 
-![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/MyGallery.NewUserGroup.License.png?raw=true)
+![My Galleries configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/MyGallery.NewUserGroup.License.png?raw=true)
 
 (1) Search for RSGallery2 in System->Global configuration
 

@@ -28,7 +28,7 @@ The RSGallery2 Module *RandomImages* shows as the name suggests some random imag
 
 ###  Tab Modul
 
-![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/moduleRandomImages.backend.01.png?raw=true)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/moduleRandomImages.backend.01.png?raw=true)
 
 * (1) Number of rows
 
@@ -52,7 +52,7 @@ The number of displayed images is the result from `Count = row number times colu
   RSGallery2 stores the original (depending on settings), a display sized image and a thumbnail sized image. User can select which display type is to be used.
 
 
-![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/moduleRandomImages.backend.02.png?raw=true)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/moduleRandomImages.backend.02.png?raw=true)
 
 * (1) CSS img element height parameter:
 
@@ -103,7 +103,7 @@ The number of displayed images is the result from `Count = row number times colu
 
 ###  Tab Advanced
 
-![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/moduleRandomImages.backend.03.png?raw=true)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/moduleRandomImages.backend.03.png?raw=true)
 
 Support of standard joomla! function (May be prepared but not implemented)
 <!-- Todo: find Joomla description for this -->

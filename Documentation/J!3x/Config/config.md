@@ -3,7 +3,7 @@
 
 # Configuration
 
- ![Config startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.StartView.png?raw=true)
+ ![Config startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.StartView.png?raw=true)
 
  Above is the start view when selecting configuration
 
@@ -20,7 +20,7 @@
 ---
 ## General
 
-![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.GeneralSettings.png?raw=true)
+![General settings](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.GeneralSettings.png?raw=true)
 
 * (1) Version:
 
@@ -52,7 +52,7 @@
 ## Images
 #### Images: Image Manipulation
 
- ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.image.manipulation.png?raw=true)
+ ![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.image.manipulation.png?raw=true)
 
 * (1) Display Picture Width
 
@@ -78,7 +78,7 @@
 ---
 #### Images: Image upload
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.image.upload.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.image.upload.png?raw=true)
 
 * (1) FTP Path:
 
@@ -110,7 +110,7 @@
 ---
 #### Images: Graphics Library
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.image.graphicsLibrary.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.image.graphicsLibrary.png?raw=true)
 
 
 * (1) Graphics Library
@@ -147,7 +147,7 @@
 ---
 #### Images: Image Storage
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.image.storage.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.image.storage.png?raw=true)
 
 * (1) Keep original image Yes No
 
@@ -179,7 +179,7 @@ The development team aims for folder per gallery so other slide shows may benefi
 
 Comments are activated in configuration under Tab "Display -> section "Image display"
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.image.comments.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.image.comments.png?raw=true)
 
 * (1) Use CAPTCHA check, in comment form Yes No
 
@@ -229,7 +229,7 @@ Comments are activated in configuration under Tab "Display -> section "Image dis
 
 Voting is activated in configuration under Tab "Display -> section "Image display"
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.image.voting.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.image.voting.png?raw=true)
 
 * (1) User can only vote once (cookie based) Yes No
 
@@ -245,7 +245,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
 #### Display: Front Page
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.display.frontPage.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.display.frontPage.png?raw=true)
 
 * (1) Display Search Yes No
 
@@ -271,7 +271,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 
   On Yes activates icons with the status of a gallery above the gallery thumb when the user is logged in. This helps if "user galleries" are enabled in "MyGallery" configuration to show the states of the actual gallery.
 
-  ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Config.display.galleryStatus.png?raw=true)
+  ![Gallery status](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Config.display.galleryStatus.png?raw=true)
 
      The icons will indicate     
      * (O) User is the owner of the gallery
@@ -331,7 +331,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 ---
 #### Display: Image Display
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.display.imageDisplay.png?raw=true)
 
 * (1) Display Slideshow in item view Yes No
 
@@ -364,7 +364,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 ---
 #### Display: Image order
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.display.imageOrder.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.display.imageOrder.png?raw=true)
 
 * (1) Order images by
 
@@ -377,7 +377,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 ---
 #### Display: EXIF settings
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.display.exifSettings.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.display.exifSettings.png?raw=true)
 
 * (1) Display EXIF Data Yes No
 
@@ -402,7 +402,7 @@ Voting is activated in configuration under Tab "Display -> section "Image displa
 Gallery view appears when the user selected a gallery with a click on the gallery thumbs
 It displays image thumbs with information about the imaged
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.display.galleryView.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.display.galleryView.png?raw=true)
 
 * (1) Thumbnail Style:
 
@@ -439,7 +439,7 @@ It displays image thumbs with information about the imaged
 ---
 #### Display: Image Watermark
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.display.watermark.image.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.display.watermark.image.png?raw=true)
 
  If you consider using watermarked files see also description "How to hide the original image from the user"  
 
@@ -512,7 +512,7 @@ It displays image thumbs with information about the imaged
 ## My Galleries
  My galleries supports the creation of user galleries
 
- ![My Galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/config.MyGalleries.png?raw=true)
+ ![My Galleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/config.MyGalleries.png?raw=true)
 
 #### Settings My Galleries
 * (1) Show My Galleries

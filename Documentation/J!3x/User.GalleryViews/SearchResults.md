@@ -4,7 +4,7 @@ Use on site gallery display page
 
 #### Search on site gallery view
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.gallery.search.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.gallery.search.png?raw=true)
 
 * (1) Search input
 
@@ -12,7 +12,7 @@ Use on site gallery display page
 
 ##### Search results for search text "2015"
 
-![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/site.gallery.searchResults.png?raw=true)
+![Image manipulation](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/site.gallery.searchResults.png?raw=true)
 
 The search results display the found texts highlighted.
 If the text is found in the description the complete description is shown beside the thumbnail.

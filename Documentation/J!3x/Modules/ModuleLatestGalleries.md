@@ -21,7 +21,7 @@ The RSGallery2 Module *LatestGalleries* shows  as the name suggests the latest g
 
 ###  Tab Modul
 
-![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true)
 
 * (1) Number of rows
 
@@ -45,7 +45,7 @@ The RSGallery2 Module *LatestGalleries* shows  as the name suggests the latest g
   RSGallery2 stores the original (depending on settings), a display sized image and a thumbnail sized image. User can select which display type is to be used.
 
 
-![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/moduleLatestGalleries.backend.02.png?raw=true)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/moduleLatestGalleries.backend.02.png?raw=true)
 
 * (1) CSS img element height parameter:
 
@@ -85,7 +85,7 @@ The RSGallery2 Module *LatestGalleries* shows  as the name suggests the latest g
 
 ###  Tab Advanced
 
-![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true)
+![](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/moduleLatestGalleries.backend.01.png?raw=true)
 
 Support of standard joomla! function (May be prepared but not implemented)
 <! Todo: find Joomla description for this -->

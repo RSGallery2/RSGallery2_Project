@@ -2,7 +2,7 @@
 
 ##
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/gallery.edit.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/gallery.edit.01.png?raw=true)
 
 (1) Gallery name
 
@@ -47,7 +47,7 @@ Sadly the name of the item has to be derived from the config control name.
 
 %
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/gallery.edit.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/gallery.edit.02.png?raw=true)
 
 (1) Save
 
@@ -69,6 +69,6 @@ Exits the edit view
 
 Saves the changes and goto the upload image view
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/gallery.edit.permission.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/gallery.edit.permission.png?raw=true)
 
 ---

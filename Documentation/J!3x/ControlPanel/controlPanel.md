@@ -1,6 +1,6 @@
 # Control Panel
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/controlPanel.complete.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/controlPanel.complete.png?raw=true)
 
 (1) Function buttons
 
@@ -19,7 +19,7 @@ A click on credits opens an area where all the contributors to RSGallery2 are me
 
 ## Function buttons
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/controlPanel.baseButtons.numbers.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/controlPanel.baseButtons.numbers.png?raw=true)
 
 (1) Configuration
 
@@ -37,6 +37,6 @@ Enables the configuration of Image settings, Display settings and MyGallery sett
 
 Area where all the contributors to RSGallery2 are listed. See parts in image below.
 
-# ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/controlPanel.credits.png?raw=true)
+# ![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/controlPanel.credits.png?raw=true)
 
 --------------------------------------------------------------------------------

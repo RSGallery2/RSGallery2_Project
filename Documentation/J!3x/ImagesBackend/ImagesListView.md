@@ -2,7 +2,7 @@
 
 ## Image list columns
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/images.listView.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/images.listView.01.png?raw=true)
 
 (1) Number in list
 
@@ -31,7 +31,7 @@ Each image is assigned to a gallery
 
 (7) Image order
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/images.listView.order.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/images.listView.order.png?raw=true)
 
 (1) Order number
 
@@ -77,7 +77,7 @@ A click on the image title will lead to the edit view of the image
 
 ## Image(s) task buttons
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/images.listView.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/images.listView.02.png?raw=true)
 
 (1) Publish
 
@@ -119,7 +119,7 @@ See below
 
 The search options follow the standard search behavior of Joomla!
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/images.listView.03.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/images.listView.03.png?raw=true)
 
 (1) Activate search controls
 
@@ -139,7 +139,7 @@ It defines the count of image which will be shown on one page
 
 In the images list view images can be selected for batch processing. The following image shows the possible selections which appear after clicking the batch button
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/images.ListView.batch.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/images.ListView.batch.png?raw=true)
 
 (1) Select Gallery
 
@@ -159,7 +159,7 @@ Batch processing: The selected images can be copied to the selected gallery
 
 ## Properties uploaded Files
 
-![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
+![Upload startview](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/Upload.ImageProperties.png?raw=true)
 
 This form enables to set the properties title and description for a batch of images at the same time. It is normally reached over the upload form. It can also be reached with selected images over the batch button in the images list form
 

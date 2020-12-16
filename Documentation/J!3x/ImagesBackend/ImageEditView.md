@@ -2,7 +2,7 @@
 
 ##
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/image.edit.01.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/image.edit.01.png?raw=true)
 
 (1) Title
 
@@ -46,7 +46,7 @@ Sadly the name of the item has to be derived from the config control name.
 
 Tells the path of the image as URL link
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/image.edit.02.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/image.edit.02.png?raw=true)
 
 (1) Save
 
@@ -79,6 +79,6 @@ Exits the edit view
 (9) Flip vertical
 
 
-![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J3x/ImagesUsedInDoc/image.edit.permission.png?raw=true)
+![Image List view batch processing ](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/image.edit.permission.png?raw=true)
 
 ---
