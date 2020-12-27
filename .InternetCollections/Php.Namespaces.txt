@@ -1,4 +1,8 @@
 
+J4x : ...\libraries\classmap.php 
+
+
+======================================================================================
 
 Grundlagen deutsch
 http://php.net/manual/de/language.namespaces.basics.php

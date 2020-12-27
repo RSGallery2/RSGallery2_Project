@@ -1,25 +1,20 @@
 
-
-google c:\xampp\htdocs\Joomla3x\libraries\classmap.php 
-
-
 // Namespace to classes
-c:\xampp\htdocs\Joomla3x\libraries\classmap.php 
+J3x/J4x : ...\libraries\classmap.php 
+
+---------------------------------
 
 
+stubs Datei & libraries/cms.php
+use joomla\CMS mappt auf libraries/src/
+
+joomla-cms / build / stubGenerator.php
+
+joomla using stubGenerator.php
+https://groups.google.com/forum/#!topic/joomla-dev-general/el58Gh_6wUg 
+(https://github.com/joomla/joomla-cms/issues/18014)
 
 
-======================================================================================
-
-http://php.net/manual/de/language.namespaces.basics.php
-
-https://secure.php.net/manual/de/language.namespaces.importing.php
-
-----------------------------------
-The keyword "use" has been recycled for three distinct applications: 
-1- to import/alias classes, traits, constants, etc. in namespaces, 
-2- to insert traits in classes, 
-3- to inherit variables in closures. 
 
 -----------------------------------
 Elisa Foltyn
