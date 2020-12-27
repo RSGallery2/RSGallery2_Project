@@ -1,0 +1,41 @@
+
+
+Blocks, Elements and Modifiers
+http://getbem.com/
+
+
+
+-------------------------------
+Block
+
+	.block
+
+	<div class="block">...</div>
+
+	.block { color: #042; }
+
+-------------------------------
+Element:  __
+
+	.block__elem
+
+	<span class="block__elem"></span>
+
+	.block__elem { color: #042; }
+
+-------------------------------
+Modifiers: ---
+
+	dashes: .block--mod or .block__elem--mod and .block--color-black with .block--color-red.
+	
+	<div class="block block--size-big
+		block--shadow-yes">...</div>
+		
+	.block--hidden { }	
+	.block--mod .block__elem { }
+	.block__elem--mod { }
+	
+	
+	
+	
+	
