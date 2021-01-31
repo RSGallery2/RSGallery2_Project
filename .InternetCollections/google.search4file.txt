@@ -1,0 +1,5 @@
+
+example
+
+intext:"search text" filetype:txt
+
