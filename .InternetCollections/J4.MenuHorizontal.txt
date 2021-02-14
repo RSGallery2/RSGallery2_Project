@@ -1,0 +1,9 @@
+
+Wenn es nur über Parameter gehen soll muss man layout "dropdown" UND das menu-horizontal verwenden. Das ist nicht selbsterklärend - ihr könnt ein issue dazu aufmachen.
+
+
+? menu class -> "menu-horizontal"
+
+Layout -> Dropdown
+
+

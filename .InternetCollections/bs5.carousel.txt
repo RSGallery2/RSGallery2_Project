@@ -1,0 +1,6 @@
+
+
+loading Bs5 javascript example
+https://github.com/dgrammatiko/bs5/blob/main/test_component/site/tmpl/carousel/default.php#L16
+
+andere https://github.com/dgrammatiko/bs5/tree/main/test_component/site/tmpl
