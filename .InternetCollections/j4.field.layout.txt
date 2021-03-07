@@ -1,0 +1,16 @@
+
+
+[4.0] Field layout utility classes
+
+https://github.com/joomla/joomla-cms/pull/32422
+
+
+<field
+	name="article_layout"
+	type="componentlayout"
+	label="JFIELD_ALT_LAYOUT_LABEL"
+	class="form-select  span-4 stack"
+	useglobal="true"
+	extension="com_content"
+	view="article"
+/>
