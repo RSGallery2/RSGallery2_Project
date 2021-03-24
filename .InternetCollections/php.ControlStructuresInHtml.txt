@@ -1,0 +1,22 @@
+
+
+Alternative syntax for control structures
+PHP offers another notation for control structures. 
+This is especially useful when you output larger 
+blocks of HTML directly - without using echo. 
+Use these in template files. So they stay clear.
+
+<?php foreach ($this->items as $i => $item) : ?>
+	?php echo $item->name; ?>
+	</br>
+<?php endforeach; ?>
+
+instead of 
+
+foreach ($this->items as $i => $item) {
+	echo $item->name;
+	echo '</br>';
+}
+
+In this way, a single line is self-contained 
+and the HTML code is still clearly structured. 
