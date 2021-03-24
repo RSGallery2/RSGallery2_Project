@@ -1,0 +1,15 @@
+
+
+Override Challenge: Submit your contribution in the frontend
+
+https://www.dr-menzel-it.de/blog/override-challenge-beitrag-einreichen-im-frontend
+
+
+Override Challenge: Beitrag einreichen im Frontend
+2021/02/24
+Geschätzte Lesezeit: 5 - 9 Minuten (1628 Wörter)
+Meistens ist man als Super User im Backend einer Joomla Seite unterwegs und kennt da alle Felder und Checkboxen, die man braucht um einen Beitrag zu erstellen und zu veröffentlichen.
+
+Joomla bietet auch die Möglichkeit Beiträge über das Frontend zu editieren oder einzureichen. In einer Standard Joomla Installation haben Benutzer, die der "Author" Benutzergruppe zugeordnet sind, das Recht Beiträge zu erstellen oder eigene Inhalte zu editieren. Das heißt, die Person, die einen Beitrag erstellen will / soll, muss sich erst mal im Frontend anmelden.
+
+Bevor man das Frontend Editieren anbietet, soll man einige Einstellungen im Backend vornehmen. Diese Einstellungen beeinflussen das Formular, was auf der Website für das Erstellen / Editieren von Beiträgen angezeigt wird. Wichtig ist zu wissen, welche Personengruppe wird das Einreichen übers Frontend gestattet sein: Sind es erfahrene Joomla Benutzer? Od
