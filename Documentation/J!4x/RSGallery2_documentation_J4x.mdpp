@@ -1,21 +1,17 @@
 
-# RSGallery2 Documentation
+# <center>RSGallery2 Documentation</center>
+## **<center>RSG2 5.x.x for Joomla! 4x</center>**
 
 ## <center>RSGallery2 Team</center>
 
 <center>Version 2021.03.27</center><br>
 
-This is just a collection of all written documentation for the RSGallery2 web page. We are sorry for ugly parts of the style. It results from the limitation of writing in fast "Markdown syntax".
-We hope that at least you have all needed information in one document and you don't have to scan through all online documents
-to find what you need.
+2021.03.27: The sources and installation lives aktually in github repository RSGallery2 / RSGallery2_J4
 
-This is a work in progress and will be updated regularly.
-Sadly some bits and pieces are missing.
+This documenttion is a work in progress and will be updated regularly. It is the collection of all markdown pieces from github RSGallery2 repository RSGallery2_Project. There in folder /Documentation/J!4x/ may be an updated version as we may update this oncew in a while and of course on new features. Also on out web page rsgallery2.org new updated docs and new feature description may find their way to articles there. 
 
-With each new development we try to update the documentation of this part more or less immediately.
-There are many places where we can continue our work and sometimes we have to decide, develop or document.
-
-Here we are more likely to publish than to be stylish and polished.
+We are sorry for "some" ugly parts of the style. This results from the limitation of writing in fast "Markdown syntax".
+Lets get started
 
 !INCLUDE "tableOfContent.md"
 
@@ -68,6 +64,10 @@ Here we are more likely to publish than to be stylish and polished.
 !INCLUDE "Site.SlideshowView\ModifyTemplateParameters.md"
 !INCLUDE ""
 
+--- modules and plugins ----
+[ ] ToDo:  package installation a) doc b9 what is included what is seperate ...
+
+
 !INCLUDE "Modules\ModuleLatestGalleries.md"
 !INCLUDE "Modules\ModuleLatestImages.md"
 !INCLUDE "Modules\ModuleRandomImages.md"
@@ -89,6 +89,7 @@ Here we are more likely to publish than to be stylish and polished.
 !INCLUDE "Uninstall\Uninstall.md"
 !INCLUDE "Uninstall\FinishItForGood.md"
 
+[ ] ToDo: How to get help -> github issues (No furum) 
 
 !INCLUDE "Glossar.md"
 
