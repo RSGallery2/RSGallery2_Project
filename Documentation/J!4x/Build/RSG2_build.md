@@ -6,7 +6,7 @@ Clone this repository and the "sister" repository RSGallery2_J4_Dev to a folder 
 
 ### Github fetch
 
-![github.fetch](github.fetch.png)
+![github.fetch](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/github.fetch.png?raw=true)
 
 Updates your local repository but does not change the code you are working on
 
@@ -14,7 +14,7 @@ Updates your local repository but does not change the code you are working on
 
 ### Github pull
 
-![github.pull](github.pull.png)
+![github.pull](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/github.pull.png?raw=true)
 
 Updates your local repository and merge new code with old work
 
@@ -28,7 +28,7 @@ Phing : [Phing web page](https://www.phing.info/)
 
 ### Start Build
 
-![Build01.create](Build.01.create.png)
+![Build01.create](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Build.01.create.png?raw=true)
 
 (1) Open the directory RSGallery2_J4_Dev/.build
 
@@ -36,7 +36,7 @@ Phing : [Phing web page](https://www.phing.info/)
 
 ## Build result
 
-![Build02.result](Build.02.result.png)
+![Build02.result](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Build.02.result.png?raw=true)
 
 (1) Open the directory RSGallery2_J4_Dev/.packages
 
