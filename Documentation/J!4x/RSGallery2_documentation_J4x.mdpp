@@ -1,0 +1,102 @@
+
+# RSGallery2 Documentation
+
+## <center>RSGallery2 Team</center>
+
+<center>Version 2021.03.27</center><br>
+
+This is just a collection of all written documentation for the RSGallery2 web page. We are sorry for ugly parts of the style. It results from the limitation of writing in fast "Markdown syntax".
+We hope that at least you have all needed information in one document and you don't have to scan through all online documents
+to find what you need.
+
+This is a work in progress and will be updated regularly.
+Sadly some bits and pieces are missing.
+
+With each new development we try to update the documentation of this part more or less immediately.
+There are many places where we can continue our work and sometimes we have to decide, develop or document.
+
+Here we are more likely to publish than to be stylish and polished.
+
+!INCLUDE "tableOfContent.md"
+
+!INCLUDE "getStarted\01.Installation.md"
+!INCLUDE "getStarted\02.FirstSteps.md"
+!INCLUDE "getStarted\03.CreateGallery.md"
+!INCLUDE "getStarted\04.UploadImages.md"
+!INCLUDE "getStarted\05.CreateMenuGalleryView.md"
+!INCLUDE "getStarted\06.NextSteps.md"
+
+!INCLUDE "controlPanel\ControlPanel.md"
+
+!INCLUDE "upload\Upload.md"
+
+!INCLUDE "???Site here ???"
+!INCLUDE "ToDo: User.GalleryViews\OrderUserViewsRootToImageModal.md"
+
+!INCLUDE "galleriesBackend\GalleriesListView.md"
+!INCLUDE "galleriesBackend\GalleryEditView.md"
+
+!INCLUDE "imagesBackend\ImagesListView.md"
+!INCLUDE "imagesBackend\Images_properties.md"
+!INCLUDE "imagesBackend\ImageEditView.md"
+
+!INCLUDE "Config\Config.md"
+
+!INCLUDE "Watermarking\watermarked.md"
+
+!INCLUDE "MyGalleries\MyGalleries.Introduction.md"
+!INCLUDE "MyGalleries\MyGalleries.Se	tItUp.md"
+!INCLUDE "MyGalleries\MyGalleries.UserManual.md"
+
+!INCLUDE "Maintenance\Maintenance.md"
+!INCLUDE "Maintenance\Maint.ConsolidateDb.md"
+!INCLUDE "Maintenance\Maint.SlideshowConfig.md"
+
+!INCLUDE "???"
+!INCLUDE "???"
+!INCLUDE ""
+!INCLUDE ""
+
+!INCLUDE ""
+!INCLUDE "???Site???"
+!INCLUDE "Site.GalleryView\SearchResults.md"
+!INCLUDE "???"
+!INCLUDE "??? gallery templates"
+!INCLUDE "??? slideshow templates "
+!INCLUDE "???"
+!INCLUDE "Site.SlideshowView\CreateModifyTemplate.md"
+!INCLUDE "Site.SlideshowView\ModifyTemplateParameters.md"
+!INCLUDE ""
+
+!INCLUDE "Modules\ModuleLatestGalleries.md"
+!INCLUDE "Modules\ModuleLatestImages.md"
+!INCLUDE "Modules\ModuleRandomImages.md"
+[//]: # (!INCLUDE "Modules\ModuleThumbScroller.md")
+
+!INCLUDE "Plugin\PluginDisplayGallery.md"
+!INCLUDE "Plugin\PluginDisplayImage.md"
+!INCLUDE "Plugin\PluginGalleryCreator.md"
+
+
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+!INCLUDE ""
+
+!INCLUDE "???Howtos???"
+!INCLUDE "General\HowToHideImages.md"
+
+!INCLUDE "Uninstall\Uninstall.md"
+!INCLUDE "Uninstall\FinishItForGood.md"
+
+
+!INCLUDE "Glossar.md"
+
+
+
+
+
+
+
+
+
