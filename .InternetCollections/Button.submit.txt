@@ -1,0 +1,25 @@
+
+
+
+onclick="Joomla.submitbutton('myform.submit')"
+
+... in different controllers based on the value of the 
+HTTP parameter task. This parameter is set by Joomla 
+core javascript based on the submit button, eg in 
+the example below:
+
+onclick="Joomla.submitbutton('myform.submit')"
+
+The task parameter is in this example set to "myform.submit". 
+In general the task parameter is of the 
+form "firstpart.secondpart" and for a component 
+called "com_example" Joomla will try to run an 
+instance method called secondpart() of a controller 
+class ExampleControllerFirstpart in a file 
+firstpart.php in the controllers directory.
+
+If the task parameter is not set then Joomla will 
+try to run the display() method of the 
+ExampleController class which it will expect 
+to find in controller.php.
+
