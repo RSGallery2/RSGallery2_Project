@@ -3,6 +3,20 @@
 
 onclick="Joomla.submitbutton('myform.submit')"
 
+https://forum.joomla.org/viewtopic.php?t=980966
+following did the trick:
+
+HTMLHelper::_('behavior.core');
+
+<button type="button" class="btn btn-secondary" onclick="Joomla.submitbutton('imagesProperties.PropertiesView')">
+	<span class="icon-undo" aria-hidden="true"></span>
+	<?php echo Text::_('COM_MYCOMPONENT_RETURN'); ?>
+</button>
+
+
+
+
+
 ... in different controllers based on the value of the 
 HTTP parameter task. This parameter is set by Joomla 
 core javascript based on the submit button, eg in 
