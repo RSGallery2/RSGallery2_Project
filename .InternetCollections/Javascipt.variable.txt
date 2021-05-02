@@ -1,5 +1,29 @@
 
 
+Jan Pavelka
+3:47 PM
+
+Sven Schultschik wrote:
+Ich hab ein JS file, welches ich einfach in die Seite einbinde (document addScript). In diesem JS brauch ich aber eine Variable, welche ich per PHP erst definiere. Ich hätte jetzt eine JS variable per document addScriptDeclaration mit dem per PHP definierten Inhalt gesetzt, welche ich in dem fixen js file verwende. Gibt es dafür eine elegantere Lösung?
+
+PHP Datei:
+
+JFactory::getDocument()->addScriptOptions(
+   'KeyVariable',
+       array(
+         'Variable1' => 'WertVonVarible1',
+          'Variable2' => 'WertVonVariable2'
+      )
+);
+
+JS Datei:
+
+function meineFunktion() {
+   var KeyVariable= Joomla.getOptions('KeyVariable');
+   var Variable1 = KeyVariable['Variable1'];
+   ...
+
+-------------------------------------------------------
 
 ---3.5 neu
 
