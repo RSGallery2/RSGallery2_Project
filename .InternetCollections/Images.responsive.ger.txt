@@ -7,9 +7,21 @@ Lesezeit 8 Minuten
 Responsive Bilder in Joomla – Was kann man machen?
 Dr. Viviana Menzel am 12. Mai 2020
 Lesezeit 8 Minuten
-Responsives Webdesign ist für die meisten schon ein Begriff. Er wurde von Ethan Marcotte 2010 zum ersten Mal verwendet (https://alistapart.com/article/responsive-web-design/) und bezieht sich auf ein Webdesign, wo sich die Elemente flexibel verhalten und sich an die Größe des Displays anpassen, z.B. mit Hilfe von „media queries“. Bei Bildern beschränkt sich die Flexibilität auf Größenangaben in Prozent. Das Problem dabei ist, dass man große Bilder für große Displays braucht und diese Bilder werden genauso in mobilen Geräten geladen, nur visuell verkleinert. Das kann bei Benutzern mit schlechter Datenübertragung oder Volumenbegrenzungen zu Schwierigkeiten führen.
+Responsives Webdesign ist für die meisten schon ein Begriff. 
+Er wurde von Ethan Marcotte 2010 zum ersten Mal verwendet 
+(https://alistapart.com/article/responsive-web-design/) 
+und bezieht sich auf ein Webdesign, wo sich die Elemente 
+flexibel verhalten und sich an die Größe des Displays 
+anpassen, z.B. mit Hilfe von „media queries“. Bei Bildern 
+beschränkt sich die Flexibilität auf Größenangaben in Prozent. 
+Das Problem dabei ist, dass man große Bilder für große 
+Displays braucht und diese Bilder werden genauso in mobilen 
+Geräten geladen, nur visuell verkleinert. Das kann bei 
+Benutzern mit schlechter Datenübertragung oder 
+Volumenbegrenzungen zu Schwierigkeiten führen.
 
-Es gibt aber viele Methoden, um Bilder zu optimieren und für verschiedene Geräte richtig darzustellen.
+Es gibt aber viele Methoden, um Bilder zu optimieren 
+und für verschiedene Geräte richtig darzustellen.
 
 Kleiner Exkurs – Bildformate
 PNG
@@ -65,7 +77,10 @@ oder als Hintergrundbild eines anderen Elements:
 background-image: url('backgroundimage.jpg');
 }
 
-Die übliche Variante, um diese Bilder responsive zu machen, ist, dass man mit der Breite (width) arbeitet: Sie wird auf 100% gesetzt und die Höhe (height) auf „auto“. Dann skaliert das Bild je nach vorhandenem Platz:
+Die übliche Variante, um diese Bilder responsive zu machen, ist, 
+dass man mit der Breite (width) arbeitet: Sie wird auf 100% gesetzt 
+und die Höhe (height) auf „auto“. 
+Dann skaliert das Bild je nach vorhandenem Platz:
 
 img {
 width: 100%;
@@ -74,9 +89,12 @@ height: auto;
 
 
 
-Das Bild ist 640px breit, wird aber durch die Anweisung width: 100% die volle Breite des vorhandenen Platzes annehmen.
+Das Bild ist 640px breit, wird aber durch die Anweisung 
+width: 100% die volle Breite des vorhandenen Platzes annehmen.
 
-Man kann auch die maximale Breite (max-width) definieren, damit das Bild nach unten skaliert, aber nicht größer als die originale Größe werden kann:
+Man kann auch die maximale Breite (max-width) definieren, 
+damit das Bild nach unten skaliert, aber nicht größer als 
+die originale Größe werden kann:
 
 img {
 max-width: 100%;
@@ -87,9 +105,12 @@ Abbildung - Responsive Bilder in Joomla - Max-Width 100%
 
 Das Bild ist immer noch 640px breit und wird nicht breiter werden.
 
-Hintergrundbilder können mit der Eigenschaft „background-size“ auch skalieren. Es gibt zwei Varianten: „contain“ und „cover“.
+Hintergrundbilder können mit der Eigenschaft „background-size“ 
+auch skalieren. Es gibt zwei Varianten: „contain“ und „cover“.
 
-contain: Das Bild wird skalieren und versuchen, sich an den vorhandenen Platz anzupassen. Es wird dabei das Seitenverhältnis beibehalten.
+contain: Das Bild wird skalieren und versuchen, sich an den 
+vorhandenen Platz anzupassen. Es wird dabei das Seitenverhältnis 
+beibehalten.
 
 div {
 width: 100%;
@@ -102,13 +123,20 @@ border: 3px solid #fc0;
 
 Abbildung - Responsive Bilder in Joomla - Background-Size contain
 
-Das Bild ist 640px breit und der es umgebende Container 400px hoch. Das Bild nimmt eine Höhe von 400px ein und passt die Breite dementsprechend an.
+Das Bild ist 640px breit und der es umgebende Container 400px hoch. 
+Das Bild nimmt eine Höhe von 400px ein und passt die Breite 
+dementsprechend an.
 
-Wenn wir die Seite in einem kleineren Display anschauen, ist die Höhe des Containers immer noch 400px. Das Bild passt sich wieder an, um den Platz zu nutzen, ohne die Seitenverhältnisse zu ändern.
+Wenn wir die Seite in einem kleineren Display anschauen, ist die 
+Höhe des Containers immer noch 400px. Das Bild passt sich 
+wieder an, um den Platz zu nutzen, ohne die Seitenverhältnisse 
+zu ändern.
 
 Abbildung - Responsive Bilder in Joomla - Background-Size contain;
 
-cover: Das Bild wird skalieren, um den kompletten Platz zu bedecken. Das Seitenverhältnis wird auch beibehalten, so dass einige Teile des Bildes ausgeschnitten werden.
+cover: Das Bild wird skalieren, um den kompletten Platz zu bedecken. 
+Das Seitenverhältnis wird auch beibehalten, so dass einige Teile 
+des Bildes ausgeschnitten werden.
 
 div {
 width: 100%;
@@ -120,21 +148,28 @@ border: 3px solid #fc0;
 
 Abbildung - Responsive Bilder in Joomla - background-size: cover;
 
-Hier sehen wir dasselbe Bild mit der Anweisung „cover“. Der Container ist immer noch 400px hoch. Das Bild nimmt den ganzen Platz an und verliert dabei an Details.
+Hier sehen wir dasselbe Bild mit der Anweisung „cover“. Der Container 
+ist immer noch 400px hoch. Das Bild nimmt den ganzen Platz an und 
+verliert dabei an Details.
 
-Mit der Eigenschaft „background-position“ können wir definieren, welche Teile des Bildes angezeigt werden sollen.
+Mit der Eigenschaft „background-position“ können wir definieren, 
+welche Teile des Bildes angezeigt werden sollen.
 
-Abbildung - Responsive Bilder in Joomla - background-size: cover; background-position:center center;
+Abbildung - Responsive Bilder in Joomla - background-size: cover; 
+background-position:center center;
 
 Dasselbe Bild aber zentriert zeigt andere Details.
 
-Wenn wir hier auch die Displaygröße ändern, sehen wir, wie sich das Bild anpasst:
+Wenn wir hier auch die Displaygröße ändern, sehen wir, 
+wie sich das Bild anpasst:
 
 Abbildung - background-size:cover;
 
 Abbildung - background-size: cover; background-position: center center
 
-Andere Möglichkeit, das Hintergrundbild an die Größe des Geräts anzupassen, ist die Bereitstellung von verschiedenen Bildern mit Hilfe von „media queries“:
+Andere Möglichkeit, das Hintergrundbild an die Größe des 
+Geräts anzupassen, ist die Bereitstellung von verschiedenen 
+Bildern mit Hilfe von „media queries“:
 
 /* Für Breiten kleiner als 400px: */
 
@@ -157,12 +192,22 @@ Dabei wird das Bild geladen, das zu der Größe des Displays passt.
  
 
 Alternative Bildgrößen mit srcset und sizes
-Die Attribute srcset und sizes stellen eine grundlegende Technik für responsive Bilder dar. Verschiedene Bilder werden je nach Fenstergröße hinterlegt und der Browser sucht sich das passende. Der Browser Support ist sehr gut (außer Internet Explorer).
+Die Attribute srcset und sizes stellen eine grundlegende Technik 
+für responsive Bilder dar. Verschiedene Bilder werden je nach 
+Fenstergröße hinterlegt und der Browser sucht sich das passende. 
+Der Browser Support ist sehr gut (außer Internet Explorer).
 
 Implementierung srcset (x)
-Die Auflösung eines Monitors PPI (Pixel pro Inch) wird in Pixeln für die Breite und die Höhe angegeben. Desktop-Monitore stellen ein Bild mit 72, 96 oder 120 Pixeln pro Zoll dar. Moderne Retina-Monitore können Auflösungen von 300 bis 400 Pixeln pro Zoll erreichen. Von daher können kleine Monitore eine größere Auflösung haben als große Monitore.
+Die Auflösung eines Monitors PPI (Pixel pro Inch) wird in Pixeln 
+für die Breite und die Höhe angegeben. Desktop-Monitore stellen 
+ein Bild mit 72, 96 oder 120 Pixeln pro Zoll dar. Moderne 
+Retina-Monitore können Auflösungen von 300 bis 400 Pixeln pro 
+Zoll erreichen. Von daher können kleine Monitore eine größere 
+Auflösung haben als große Monitore.
 
-Retina-Displays können einen Pixel durch vier oder mehr umsetzen und erzielen somit schärfere Bilder. Mit einem speziellen Wert im srcset Attribut kann das img-Tag die volle Leistung nutzen.
+Retina-Displays können einen Pixel durch vier oder mehr umsetzen 
+und erzielen somit schärfere Bilder. Mit einem speziellen Wert im 
+srcset Attribut kann das img-Tag die volle Leistung nutzen.
 
 <img srcset="
 source.jpg 1x,
@@ -170,7 +215,11 @@ source_x2.jpg 2x"
 src="source.jpg"
 alt="Descriptive Alt-Text" />
 
-Mit dieser Definition werden zwei Bildergrößen zur Verfügung gestellt. Der Browser entscheidet, welches Bild am besten zur Auflösung des Monitors passt. 1x und 2x stehen für das Verhältnis zwischen Anzahl der Pixel in der Breite zu Breite in Zoll, auch bekannt als Device Pixel Ratio.
+Mit dieser Definition werden zwei Bildergrößen zur Verfügung gestellt. 
+Der Browser entscheidet, welches Bild am besten zur Auflösung des 
+Monitors passt. 1x und 2x stehen für das Verhältnis zwischen Anzahl 
+der Pixel in der Breite zu Breite in Zoll, auch bekannt als 
+Device Pixel Ratio.
 
 – 1x für Monitore mit einer Auflösung von 72 bis 100 Pixeln pro Zoll,
 
@@ -190,7 +239,9 @@ source_big.jpg 1400w" // Viewport bis zu 1400
 src="source_big.jpg"
 alt="Descriptive Alt-Text" />
 
-Mit diesem Ansatz werden die Bilder je nach Breite des Viewports geladen. Es liefert aber keine guten Ergebnisse. Eine bessere Lösung ist die Kombination mit dem Attribut sizes.
+Mit diesem Ansatz werden die Bilder je nach Breite des Viewports geladen. 
+Es liefert aber keine guten Ergebnisse. Eine bessere Lösung ist die 
+Kombination mit dem Attribut sizes.
 
  
 
@@ -203,14 +254,18 @@ sizes="(min-width: 768px) 33.3vw, 100vw" // Ab 768px Viewport-Breite wird das Bi
 src="source_big.jpg"
 alt="Descriptive Alt-Text" />
 
-Sizes ist kein Stylen des Bildes, sondern eine Info für den Browser, welches Bild für welche Auflösung / Größe angezeigt werden soll.
+Sizes ist kein Stylen des Bildes, sondern eine Info für den Browser, 
+welches Bild für welche Auflösung / Größe angezeigt werden soll.
 
 Beispiel: https://codepen.io/ljardin/pen/gOYGmME
 
 Implementierung picture + srcset
-In HTML5 gibt es analog zu <video> oder <audio> auch das Element <picture>, womit man auch mehrere Bilderquellen definieren kann.
+In HTML5 gibt es analog zu <video> oder <audio> auch das Element <picture>, 
+womit man auch mehrere Bilderquellen definieren kann.
 
-Bei den Definitionen ist die Reihenfolge entscheidend: Der Browser nimmt das erste Bild, das passt, von groß nach klein. img dient als Fallback für Browser, die kein <picture> unterstützen.
+Bei den Definitionen ist die Reihenfolge entscheidend: Der Browser nimmt 
+das erste Bild, das passt, von groß nach klein. img dient als Fallback 
+für Browser, die kein <picture> unterstützen.
 
 <picture>
 <source media="(min-width: 80em)" srcset="image--big.jpg">
@@ -219,7 +274,10 @@ Bei den Definitionen ist die Reihenfolge entscheidend: Der Browser nimmt das ers
 <img src="image--small.jpg" alt="Text">
 </picture>
 
-Das <picture> Element ist geeignet, wenn man in Richtung Art Direction gehen will. Dabei wird das Bild sichtbar ausgetauscht, also ein anderes Motiv geladen, wie z.B. einen anderen Bildausschnitt oder das Bild mit einem anderen Seitenverhältnis (horizontal bzw. vertikal).
+Das <picture> Element ist geeignet, wenn man in Richtung Art Direction gehen 
+will. Dabei wird das Bild sichtbar ausgetauscht, also ein anderes Motiv 
+geladen, wie z.B. einen anderen Bildausschnitt oder das Bild mit einem 
+anderen Seitenverhältnis (horizontal bzw. vertikal).
 
 Beispiel: https://codepen.io/ljardin/pen/wvwqadP
 
@@ -228,9 +286,16 @@ Mit <picture> ist es auch möglich, verschiedene Dateiformate zu definieren.
 https://caniuse.com/#search=picture
 https://caniuse.com/#feat=srcset
 Implementierung in Joomla
-Wie kann man jetzt diese Möglichkeiten in einer Joomla-Seite nutzen? Leider ist der Standard-Editor TinyMCE nicht dafür geeignet. Natürlich besteht die Möglichkeit, in der Code-Ansicht die Tags und Elemente selbst einzutippen, aber bei einer bild-lastigen Seite wäre das sehr mühselig und fehleranfällig.
+Wie kann man jetzt diese Möglichkeiten in einer Joomla-Seite nutzen? 
+Leider ist der Standard-Editor TinyMCE nicht dafür geeignet. Natürlich 
+besteht die Möglichkeit, in der Code-Ansicht die Tags und Elemente selbst 
+einzutippen, aber bei einer bild-lastigen Seite wäre das sehr mühselig 
+und fehleranfällig.
 
-Der bekannte und beliebte Editor JCE kommt in der Pro Version mit einem Image Manager Extended, der die Möglichkeit bietet, Bilder mit srcset einzubinden. Man kann mehrere Sources definieren und entweder das Device Pixel Ratio (x) oder die Viewport-Breite (w) angeben.
+Der bekannte und beliebte Editor JCE kommt in der Pro Version mit einem 
+Image Manager Extended, der die Möglichkeit bietet, Bilder mit srcset 
+einzubinden. Man kann mehrere Sources definieren und entweder das 
+Device Pixel Ratio (x) oder die Viewport-Breite (w) angeben.
 
 Abbildung - Erweiterter Bildmanager
 
@@ -240,7 +305,9 @@ Der Code, der generiert wird, sieht dann so aus:
 
 <img src="images/blog/autor-introbild-intro.png" srcset="images/blog/autor-introbild-intro-2x.png 2x,images/blog/autor-introbild-intro.png 1x" alt="autor introbild intro" />
 
-Die verschiedenen Bilder können vorher in einem Grafikprogramm erstellt werden oder direkt beim Upload in JCE erzeugt werden. Dadurch wird die Arbeit mit responsiven Bildern sehr erleichtert.
+Die verschiedenen Bilder können vorher in einem Grafikprogramm erstellt werden 
+oder direkt beim Upload in JCE erzeugt werden. Dadurch wird die Arbeit mit 
+responsiven Bildern sehr erleichtert.
 
 Abbildung - Bilder hochladen
 
