@@ -10,7 +10,7 @@ General ideas what toi do with grid
 https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
 
 
-
+https://css-tricks.com/a-grid-of-logos-in-squares/
 
 
 google css grid auto images

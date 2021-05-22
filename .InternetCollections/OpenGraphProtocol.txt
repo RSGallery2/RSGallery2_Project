@@ -10,5 +10,6 @@ The global types are grouped into verticals. Each vertical has its own namespace
 
 .....
 
+Open Graph Tags – praktische Tipps für Deine Website
 https://de.ryte.com/magazine/open-graph-tags
 
