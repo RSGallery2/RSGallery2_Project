@@ -1,0 +1,184 @@
+
+ wenn z.b. 4.0.0 oder 4.0.0-beta-sonstwie, dann empfehle ich, 
+ die Datei nach dem Schema 4.0.0-2021-06-02.sql zu benennen
+ 
+und wenn es keine früheren versionen gab, kannst du da 
+das gleiche SQL reinbauen wie in deinem installations-skript
+
+Toni Gerns
+Wed, 12:15 PM
+
+
+
+
+Richard Fath hab alles 1:1 so umgesetzt wie in der Anleitung. 
+Aktuell also auch bei Version 0.0.7 (so habe ich auch meine 
+sql-Dateien genannt, also 0.0.7.sql). In der Anleitung wird 
+nur aufgeführt oben welche Dateien erstellt werden müssen, 
+hierbei wurde dann die entsprechende Update-Datei vergessen, 
+oder man hätte den Update-Bereich in der .xml-Datei 
+weglassen müssen  
+
+ansonsten kann es passieren, insbesondere dir beim entwickeln, 
+dass wenn du die komponente installierst und da sind noch 
+sachen auf dem dateisystem von vorherigen installationen der 
+komponente da, dann läuft der extensions installer vom core 
+in den update-task rein und nicht den neuinstallations-task
+
+mit der datei kannst du das umgehen. und wenn du gleich das 
+richtige namensschema nimmst kannst du dann zukünftige 
+update sql dazu legen
+das mit dem datum bräuchtest du nur, wenn du innerhalb 
+einer patch-version mehrere davon hättest, 
+was du aber vermeiden kannst
+
+
+Richard Fath
+Wed, 12:27 PM
+
+
+
+
+Das SQL für die Neuinstallation beinhaltet immer alles, um die DB-Struktur und Inhalte dieser Version 0.0.7 komplett neu anzulegen
+
+Richard Fath
+Wed, 12:27 PM
+
+
+
+
+also alle CREATE TABLE
+
+Richard Fath
+Wed, 12:27 PM
+
+
+
+
+wenn du jetzt bei version 0.0.8 eine spalte änderst, z.B. einen "NOT NULL" dazu baust, dann änderst du das in dem sql für die neuinstallation
+
+Richard Fath
+Wed, 12:27 PM
+
+
+
+
+und für das update machst du ein 0.0.8.sql
+
+Richard Fath
+Wed, 12:28 PM
+
+
+
+
+mit dem nötigen "ALTER TABLE gaga MODIFY gedöns int NOT NULL;"
+
+Richard Fath
+Wed, 12:29 PM
+
+
+
+
+wenn du also mit den versionen 0.0.8, 0.0.9 oder so keine datenbankänderungen hast, dann braucht es auch die update scripte dazu nicht
+
+Richard Fath
+Wed, 12:30 PM
+
+
+
+
+und wenn dann mit 0.1.0 eine datenbankänderung kommt, dann wie gesagt, im installations sql ändern und ein 0.1.0.sql mit den änderungs-statemenets
+
+Richard Fath
+Wed, 12:30 PM
+
+
+
+
+und dann sieht der updater beim update, dass er das 0.1.0.sql laufen lassen muss, egal ob er von 0.0.1, 0.0.2 oder so updated
+
+Richard Fath
+Wed, 12:32 PM
+
+
+
+
+das mit dem gleichen Inhalt wie meine "install.mysql.utf8.sql" und meine "sql/0.0.7.sql" ist dann ok, wenn es keine version kleiner als 0.0.7 gibt, die upgedated werden könnte.
+
+Richard Fath
+Wed, 12:33 PM
+
+
+
+
+aber ab da ist es dann wie gesagt so, dass "install.mysql.utf8.sql" immer komplett alles macht, und z.B. ein 0.0.8.sql nur die Änderung.
+
+Richard Fath
+Wed, 12:33 PM
+
+
+
+
+man kann sich das beim cms abschauen
+
+Richard Fath
+Wed, 12:34 PM
+
+
+
+
+z.B. wenn du bei einer Neuinstallation im SQL 3 Menuitems per insert in die menu-tabelle einfügst, nur mal so als beispiel
+
+Richard Fath
+Wed, 12:34 PM
+
+
+
+
+und jetzt machst du eine 0.0.8 und da sind es vier menuitems
+
+
+Richard Fath
+Wed, 12:34 PM
+
+
+
+
+dann sind alle 4 inserts dazu in dem "install.mysql.utf8.sql"
+
+Richard Fath
+Wed, 12:35 PM
+
+
+
+
+und in dem 0.0.8.sql ist nur der eine insert für das eine, das dazu gekommen ist
+
+Richard Fath
+Wed, 12:36 PM
+
+
+
+
+sprich die update-sql-skripte können strukturänderungen (CREATE TABLE, ALTER TABLE, DROP TABLE, CREATE INDEX, DROP INDEX) aber auch datenänderunggen (INSERT, UPDATE, DELETE) enthalten.
+
+Toni Gerns
+Wed, 12:37 PM
+
+
+
+
+Verstanden. Ich dank dir für die Erklärung :)  
+
+
+
+
+
+
+
+
+
+
+
+
+
