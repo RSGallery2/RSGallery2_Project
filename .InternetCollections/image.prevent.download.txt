@@ -1,0 +1,27 @@
+
+prevent download
+
+jQuery(document).ready(function($){
+
+    jQuery('.pswp__container').bind('contextmenu', function(e){
+        return false;
+    });
+
+
+    jQuery('img').bind('contextmenu', function(e){
+        return false;
+    });
+
+
+});
+
+Message afterwards. Don't forget to indicate owner ...
+
+<script>
+	document.getElementsByTagName('body')[0];
+	function show_alert() {
+		xdialog.alert('Bitte vergessen Sie nicht, den gerade kopierten Text in vorgeschlagener Form zu belegen und mit Quellenangabe zu versehen! Vielen Dank!',{style:'width:300px;',effect: 'fade_in_and_scale'}); 
+	}	
+	document.oncopy = show_alert;
+</script>
+
