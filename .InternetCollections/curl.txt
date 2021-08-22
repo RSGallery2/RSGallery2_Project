@@ -1,0 +1,23 @@
+
+
+
+Moin zusammen. Hat hier jemand schon mal über PHP auf eine REST-API zugegriffen und kann eine kleine Hilfestellung geben? Wäre über CURL wahrscheinlich am einfachsten, oder?
+
+CURL für einfache Sachen, guzzle wenn’s komplexer wird, jhttp im Joomla Kontext
+
+
+cUrl mit file_get_contents() als Fallback.
+
+RestApi Lunchgate
+
+wenn's im Joomla Kontext läuft ist es in der Regel mit
+
+$httpClient = Joomla\CMS\Http\HttpFactory::getHttp();
+$httpClient->get($url);
+
+getan
+
+Nutzt unter der haube dann in der regel auch CURL, aber ohne das rumgehampel mit setopt und co
+
+
+
