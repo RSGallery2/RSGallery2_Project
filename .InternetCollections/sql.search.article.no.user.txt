@@ -1,0 +1,10 @@
+
+
+SELECT 
+	c.id, c.title, c.created_by
+from 
+	#__content AS c LEFT JOIN #__users AS u ON c.created_by = u.id
+WHERE 
+	u.username is NULL
+	
+	
