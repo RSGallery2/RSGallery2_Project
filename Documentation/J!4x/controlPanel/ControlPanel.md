@@ -1,8 +1,7 @@
 # Control Panel RSGallery2
 
-![controlpanelRSgall](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_j4x.png?raw=true)
-
-[ ] ToDo: Control_Panel_j4x.png "altes" bild ersetzen. (2) sollte aufgeklappt sein, (3) sollte auch bilder haben
+![controlpanelRSgallery2]
+(https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_j4x.png?raw=true)
 
 (1) Function buttons
 
@@ -20,9 +19,13 @@ A click on changelog tells about the last fixes and improvements of the RSG2 sou
 
 A click on credits opens an area where all the **contributors** to RSGallery2 are mentioned. More below
 
+(6) External licenses
+
+A click on external licenses tells about the used external components.
+
 ## Function buttons
 
-![Function buttons](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/function_buttons.png?raw=true)
+![Function buttons](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_panel_function_buttons.png?raw=true)
 
 (1) **Configuration**
 
@@ -40,29 +43,39 @@ View images list , create new images, edit image, publish ...
 
 (5) **Maintenance**
 
-For maintenance exist a "Repair Zone" where content can be checked for consistency, a "Danger zone" to remove the component and a Raw database zone" to see more content of gallery and images list.
+In maintenance exist a "Repair Zone" where content can be checked for consistency, a "Danger zone" to remove the component and a Raw database zone" to see more content of gallery and images list.
 
 (6) **External licenses**
 
 Used external components
 
-## RSGallery2 overview
+## RSGallery2 info
 
-[ ] ToDo: bild (wenig bis kein text)
+![Info area](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_info.png?raw=true)
+
+Displays general state of RSGallery2 installation and links to to associated web sites
 
 ## Changelog
 
-[ ] ToDo: Image of changelog area
+![changelog](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_changelog.png?raw=true)
 
+ToDo: Remove/change when ready
 This display above is just an example how it will look in the future (No changes before first release)
 
 [ ] ToDo: Thomas: Description of special elements
 
 - bugs
-- - improvements
+- improvements
 
 ## Credits
 
-[ ] ToDo: bild mit start der credits
+![Credits](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_credits.png?raw=true)
 
 Area where all the contributors to RSGallery2 are listed. See parts in image below.
+
+
+## External licenses
+![external_components](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_panel_external_components.png?raw=true)
+
+
+Used external components
