@@ -1,7 +1,6 @@
 # Control Panel RSGallery2
 
-![controlpanelRSgallery2]
-(https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_j4x.png?raw=true)
+![controlpanelRSgallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_j4x.png?raw=true)
 
 (1) Function buttons
 
