@@ -4,7 +4,7 @@
 
 [ ] ToDo: thomas: check and compare with J3x version (same folder) and images ...
 
-![Gallerylistcolumns](GalleriesListView.png)     
+![Gallerylistcolumns](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleriesListView.png?raw=true)
 
 (1) Select Gallery
 
@@ -48,7 +48,7 @@ ascending
 
 # Gallery (s) task buttons
 
-![Gallery_task_buttons](galleryTask.png)
+![Gallery_task_buttons](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/galleryTask.png?raw=true)
 
 (1) New
 
@@ -97,7 +97,7 @@ See below
 
 # Galleries search options
 
-![Galleries search options](GalleriesSearch.png)
+![Galleries search options](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleriesSearch.png?raw=true)
 
 (1) Search
 
@@ -106,7 +106,7 @@ search for existing Gallery
 (2) Select Status
 
 Only galleries of the select status type will be shown.
-Types: Trashed, Unpublished, Published, Archived, ALL       
+Types: Trashed, Unpublished, Published, Archived, ALL
 
 (3) Select access Types
 
@@ -133,7 +133,7 @@ It defines the count of galleries which will be shown on one page
 
 
 
-![GalleriesTrash_2](GalleryTrash_2.png)  
+![GalleriesTrash_2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleryTrash_2.png?raw=true)
 
 (1) Select status
 
@@ -143,9 +143,9 @@ All galleries will be shown
 
 (3) choose Trash from the ListBox
 
-![delete](GalleryDelete.png)
+![delete](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleryDelete.png?raw=true)
 
-(1) Select trashed  
+(1) Select trashed
 
 (2) choose galleries
 
@@ -155,7 +155,7 @@ All galleries will be shown
 
 ## How to restore trashed Galleries
 
-![RebornGalleries](GalleryReborn.png)
+![RebornGalleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleryReborn.png?raw=true) 
 
 
 (1)  Select trashed gallery

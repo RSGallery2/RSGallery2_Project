@@ -2,7 +2,7 @@
 
 [ ] ToDo: thomas: check to be used
 
-![Add_images](Images_properties.png)
+![Add_images](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Images_properties.png?raw=true) 
 
 This form enables to the properties title and description for a batch of images at the same time. It is reached normally over the upload form. It can also be reached with selected images over the batch button in the images list form.
 
@@ -20,7 +20,7 @@ The description may be changed with the standard editor like in the edit single 
 
 ## (4) Actions
 
-![Action](Actions.png)
+![Action](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Actions.png?raw=true)
 
 **Save and close** Save changes and continue edit on the same images.
 

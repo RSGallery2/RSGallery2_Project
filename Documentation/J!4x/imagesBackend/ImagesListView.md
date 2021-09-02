@@ -5,7 +5,7 @@ manage_images
 [ ] ToDo: thomas: check and compare with J3x version (same folder) and images ...
 
 
-![image_manage](manage_images.png)
+![image_manage](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images.png?raw=true) 
 
 (1) The topmost rectangle selects all images which is useful for batch processing.
 The selector beside the image information selects this image.
@@ -50,6 +50,7 @@ Creation Time of gallery
 (9) Hits
 
 Count on views / appearances
+![Imageslistcolumns](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/ImagesesListView.png?raw=true)
 
 
 (10) ID
@@ -59,7 +60,7 @@ Internal ID of image for reference or matching in other list
 ## Image(s) task buttons
 
 
-![manage_action](manage_images_actions.png)
+![manage_action](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images_actions.png?raw=true)
 
 Click on the DropDown_Button Action
 
@@ -98,7 +99,7 @@ Possible batch tasks:
 ## Image(s) search options
 
 
-![image_search](manage_images_search.png)
+![image_search](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images_search.png?raw=true)
 
 
 (1) Filter Options
@@ -122,7 +123,7 @@ It defines the count of images which will be shown on one page
 ## Images: Batch process to add properties
 
 
-![image_batch](manage_images_batch.png)
+![image_batch](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images_batch.png?raw=true)
 
 (1) Select a gallery as destination for copy or move of selected images
 
