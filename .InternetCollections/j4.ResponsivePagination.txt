@@ -1,0 +1,12 @@
+
+Make pagination responsive for J4x
+
+custom.css):
+
+
+@media only screen and (max-width:500px) {
+	ul.pagination {
+		flex-wrap: wrap;
+	}
+}
+
