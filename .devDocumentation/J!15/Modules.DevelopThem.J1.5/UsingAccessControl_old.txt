@@ -1,0 +1,28 @@
+Using Access Control in a Module 
+ 
+ 
+ 
+Written by Ronald Smit    
+Sunday, 28 January 2007 
+In order to use Access Control in a module, some basic understanding of ACL is needed. If you haven't read the introduction on ACL , please do so now. If you did read it, continue. 
+cord blood bank 
+How to check if a user is permitted to perform an action? 
+The general statement to perform a check is: 
+$rsgAccess->checkGallery($action, $gallery_id ); 
+You need to feed two variables to the checkGallery function to operate as intended. The first one is $action. This determines which action you are checking. There are 5 possible actions to check for: 
+'view',               //View gallery from frontend
+'up_mod_img',         //Upload and modify images to gallery
+'del_img',            //Delete images from gallery
+'create_mod_gal',     //Create and modify galleries
+'del_gal'             //Delete galleries 
+The second one is $gallery_id. This one is the id from the gallery, retrieved from the #__rsgallery2_galleries table. 
+The function returns true or false, depending on the setting in the backend for that specific gallery.  
+Example 
+Say for instance I would like to check if the logged in user is able to view a specific gallery, with id = 13.
+The code for such a check would look like this: 
+if ( $rsgAccess->checkGallery('view', 13) )  {
+    //Check returns True, do some stuff here 
+} else {
+    //Check returns False, do some stuff here
+} 
+Last Updated ( Wednesday, 06 August 2008 ) 

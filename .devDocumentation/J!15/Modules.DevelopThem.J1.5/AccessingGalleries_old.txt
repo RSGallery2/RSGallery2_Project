@@ -1,0 +1,27 @@
+Accessing Galleries 
+ 
+ 
+ 
+Written by Jonah Braun    
+Friday, 26 January 2007 
+Learn to access and use galleries represented by rsgGallery objects with the rsgGalleryManager. 
+rsgGalleryManager's public functions check with rsgAccess to ensure only information allowed is shown to a user. 
+The most used function of rsgGalleryManager is get() which retrieves a gallery represented by an rsgGallery object: 
+$gallery = rsgGalleryManager::get( $galleryID );  
+The following example retreives shows a list of of all galleries in the top level.  It prints the name and the thumbnail image linking to the gallery: 
+$top = rsgGalleryManager::get( 0 );
+
+foreach( $top->kids() as $kid ){
+    echo <<<EOD
+    <br />
+    {$kid->get('name')}
+    <a xhref='{$kid->url}'>
+    {$kid->thumbHTML}
+    </a>
+EOD;
+}
+  
+  
+Please see the API Documentation on class rsgGallery for more information.  Note that rsgGallery is not considered stable yet and might change in future versions. 
+  
+Last Updated ( Saturday, 27 January 2007 ) 

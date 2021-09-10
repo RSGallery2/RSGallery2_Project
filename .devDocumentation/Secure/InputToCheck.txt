@@ -1,9 +1,0 @@
-
-
-space in gallerynames
-
-SQL injection in title and description 
-* gallerynames
-* images
-
-

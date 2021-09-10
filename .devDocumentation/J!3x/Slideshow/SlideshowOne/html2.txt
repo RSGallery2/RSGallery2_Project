@@ -1,0 +1,42 @@
+
+
+
+<tr>
+	<td align="center">
+		<a onclick="startSS()" href="javascript:;">
+			<img width="30" height="32" alt="" src="/images/js/toolplay.gif" border="0">
+		</a>
+		<a onclick="stopSS()" href="javascript:;">
+			<img width="30" height="32" alt="" src="/images/js/toolstop.gif" border="0">
+		</a>
+		<img width="5" height="32" alt="" src="/images/js/toolsep.gif" border="0">
+		<a onclick="prevSS()" href="javascript:;">
+			<img width="30" height="32" alt="" src="/images/js/toolprev.gif" border="0">
+		</a>
+		<a onclick="nextSS()" href="javascript:;">
+			<img width="30" height="32" alt="" src="/images/js/toolnext.gif" border="0">
+		</a>
+		<img width="5" height="32" alt="" src="/images/js/toolsep.gif" border="0">
+		<a onclick="zoom(zW, zH)" href="javascript:;">
+			<img width="30" height="32" alt="" src="/images/js/toolin.gif" border="0">
+		</a>
+		<a onclick="zoom(-zW, -zH)" href="javascript:;">
+		<img width="30" height="32" alt="" src="/images/js/toolout.gif" border="0">
+		</a>
+		<img width="5" height="32" alt="" src="/images/js/toolsep.gif" border="0">
+		<a onclick="zoom('')" href="javascript:;">
+			<img width="30" height="32" alt="" src="/images/js/toolreset.gif" border="0">
+		</a>
+		<select name="wichIm" style="width: 100%; font-size: 10px;" onchange="selected(this.options[this.selectedIndex].value)">
+			<option value="0">Office</option>
+			<option value="1">Front left</option>
+			<option value="2">Back left</option>
+			<option value="3">Sign</option>
+			<option value="4">Front left close up</option>
+			<option value="5">Office color board</option>
+			<option value="6">Back right</option>
+			<option value="7">Back middle</option>
+		</select>
+	</td>
+</tr>
+
