@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>RSGallery2 component package update</name>
+		<description>Update for component rsgallery2 v4.0.8</description>
+		<element>???Pkg??com_rsgallery2</element>
+		<type>??package</type>
+		<version>???4.0.9</version>
+		<infourl title="??Search Extension Package??? rsgallery2.org">??? github release page  https://github.com/joomla-extensions/search/releases/tag/4.0.1-dev??</infourl>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">???https://github.com/RSGallery2/RSGallery2_Component/releases/download/Version_4_0_9/RSGallery2_Component-Version_4_0_9.zip???</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>team@rsgallery2.org</maintainer>
+		<maintainerurl>rsgallery2.org</maintainerurl>
+		<targetplatform name="joomla" version="4.0"/>
+		<client>???site???</client>
+	</update>
+</updates>
