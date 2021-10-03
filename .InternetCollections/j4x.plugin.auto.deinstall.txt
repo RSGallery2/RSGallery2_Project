@@ -1,0 +1,25 @@
+
+See 
+
+https://github.com/RSGallery2/RSGallery2_Component/issues
+
+m core mach das administrator/components/com_admin/script.php mit dem ein oder anderen plugin
+da kann man sich das abschauen
+
+du brauchst dann auch ein installationsscript dieser art, oft auch script.php genannt, das gibst du im xml an, aber frag mich jetzt nicht wie der wert heisst
+
+Das krieg ich raus. Danke
+
+Richard Fath
+
+irgendeine routine mit sprechendem name, die das eos plugin deinstalliert
+
+
+Im Installations-Manifest-XML folgendes:
+Siehe Bild unten, Glip erlaubt das nicht als Text...
+
+Dann ein entsprechendes script.php welches idealerweise "InstallerScript" extended. Die wichtigste Methode für diesen Fall ist vermutlich "update".
+
+Siehe https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Adding_an_install-uninstall-update_script_file (ist noch J3 aber funktioniert grundsätzlich gleich)
+
+<scriptfile>script.php</scriptfile>
