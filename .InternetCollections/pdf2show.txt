@@ -1,6 +1,9 @@
 
 Show PDFs in joomla
 
+PDF Embed von techjoomla: https://techjoomla.com/pdf-embed
+
+
 
 flipping book
 https://www.extensionbase.com/joomla-flip-book.html

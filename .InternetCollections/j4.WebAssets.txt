@@ -1,0 +1,7 @@
+
+https://docs.joomla.org/J4.x:Web_Assets
+
+$wa->registerAndUseScript('bar', 'com_foobar/bar.js', [], [], []);
+
+
+
