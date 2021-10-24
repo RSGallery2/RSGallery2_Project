@@ -1,0 +1,15 @@
+
+
+Changes to Update Process that you need to be aware of
+
+htaccess 
+https://www.joomla.org/announcements/release-news/5850-changes-to-update-process-that-you-need-to-be-aware-of.html
+
+
+## Joomla! Update (core feature) — Joomla versions 4.0.4 and later
+RewriteRule ^administrator\/components\/com_joomlaupdate\/extract\.php$ - [L]
+
+
+
+https://www.joomla.de/news/joomla/756-wichtiger-hinweis-aenderungen-im-aktualisierungsprozess-bei-joomla-4
+

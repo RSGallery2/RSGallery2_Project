@@ -1,0 +1,11 @@
+
+
+clean cache from wrong definition. It will rebuild itself
+
+ Try deleting the file /administrator/cache/autoload_psr4.php and then reloading the page 
+ 
+im cache ordner findest du eine entsprechede Datei welche 
+z.B. beim installieren einer erweiterung zurückgesetzt wird.
+Datei: autoload_psr4.php
+
+ 

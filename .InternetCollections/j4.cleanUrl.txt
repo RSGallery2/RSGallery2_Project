@@ -1,0 +1,36 @@
+
+
+... URL
+
+HTMLHelper::_('cleanUrl', ...).
+
+Auch nur der Vollständigkeit halber. So ist richtig:
+
+Code
+```
+\defined('_JEXEC') or die;
+use Joomla\CMS\HTML\HTMLHelper;
+
+$pfad = 'image/blubb/marple.jpg#test';
+
+$pfad = HTMLHelper::_('cleanImageURL', $pfad);
+
+echo ' DEBUG <pre>' . print_r($pfad, true) . '</pre>';exit;
+```
+
+
+Crux (für mich): Man bekommt ein Objekt zurück, nicht einfach den gesäuberten Pfad. Und wichtiger: [url] enthält nach wie vor das '#'.
+
+Code
+```
+stdClass Object
+(
+    [attributes] => Array
+        (
+            [width] => 0
+            [height] => 0
+        )
+
+    [url] => image/blubb/marple.jpg#test
+)
+```
