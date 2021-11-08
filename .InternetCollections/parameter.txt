@@ -1,6 +1,15 @@
 
+Parameter in component view
 
+Merge of config of component and menu parameters:
 
+Model::populateState(..) ==> $this->setState('params', $app->getParams());
+
+Htmlview::display ==> 
+	$this->State = $this->get('State');
+	$this->params = $state->get('params');
+	
+	
 ---------------------------------------------------
 
 ---------------------------------------------------
