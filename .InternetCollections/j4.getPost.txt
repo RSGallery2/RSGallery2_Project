@@ -1,0 +1,15 @@
+
+
+welches an einen externen Serverdienst eine Get-Abfrage sendet. 
+Als Antwort gibt dieser Serverdienst dann eine JSON-Antwort 
+zurück (vorhandene API).
+
+
+use Joomla\CMS\Http\HttpFactory;
+
+$http = HttpFactory::getHttp();
+$getresult = $http->get($link, $headers);
+$postresult = $http->post($link, $body, $headers);
+
+
+

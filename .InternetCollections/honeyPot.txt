@@ -1,0 +1,15 @@
+
+
+
+Add a hidden input with name 'firstname'
+
+$honeypot = $_POST['firstname'];
+
+//check if the honeypot field is filled out. If not, send a mail.
+if($honeypot){
+  header("Location: https://google.com");
+  exit;
+} else {
+...
+}
+
