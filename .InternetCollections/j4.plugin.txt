@@ -1,0 +1,10 @@
+
+plugin should extend from CMSPlugin  
+and define variables 
+protected $app
+protected $db
+
+then these are assigned by joomla before 
+
+jplugin is deprecated
+

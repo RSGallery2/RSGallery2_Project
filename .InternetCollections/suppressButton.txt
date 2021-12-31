@@ -1,0 +1,38 @@
+
+
+JS for deactivate send button for some time
+
+
+<script type="text/javascript">
+    window.onload=function() {
+​
+        var btn = document.getElementById('submitButton');
+        btn.prop('disabled', true);
+​
+        setTimeout(function(){
+            btn.prop('disabled', false);
+​
+        }, 20000);
+    }
+​
+    var countdownNum = 20;
+    window.onload=function() {
+        incTimer();
+    }
+​
+    function incTimer(){
+        setTimeout (function(){
+            if(countdownNum != 0){
+                countdownNum--;
+                document.getElementById('timeLeft').innerHTML = 'Bitte ' + countdownNum + ' Sekunden warten.';
+                incTimer();
+            } else {
+                document.getElementById('submitButton').disabled = null;
+                document.getElementById('timeLeft').innerHTML = 'Jetzt senden';
+            }
+        },1000);
+    }
+</script>
+
+
+

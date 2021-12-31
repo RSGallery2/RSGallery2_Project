@@ -1,0 +1,20 @@
+
+
+
+Ich finde, das ist aufgabe des Entwicklers der Erweiterung 
+dafür zu sorgen, dass das nicht indexiert wird...
+
+
+// Don't run this plugin when the content is being indexed
+if ($context == 'com_finder.indexer') {
+   return true;
+}
+
+wrong ?
+
+Hier müsste statt return true, tausche meinen Aufruf duch LEER aus drin stehen
+
+
+Hier müsste statt return true, tausche meinen Aufruf duch LEER aus drin stehen
+
+
