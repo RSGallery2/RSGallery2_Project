@@ -12,6 +12,34 @@ Htmlview::display ==>
 	
 ---------------------------------------------------
 
+merge parameter using global parameters 
+
+menu field (or ite field)
+			<field
+				name="show_name"
+				type="list"
+				label="COM_FOOS_FIELD_PARAMS_NAME_LABEL"
+				description="COM_FOOS_FIELD_PARAMS_NAME_LABEL_DESC" >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+attention: option value="" for JGLOBAL_USE_GLOBAL
+
+in the component config use the similar field without option global
+
+
+Merge: 
+
+1) Access indirect 
+
+$isShowName = $menu->params->get('show_name', $this->params->get('show_name','globalparamdefault'));
+==> $this->params component config
+2) Merge 
+$actualParams = clone $this->params;
+$actualParams->merge($menu->params);
+
+
 ---------------------------------------------------
 
 ---------------------------------------------------
