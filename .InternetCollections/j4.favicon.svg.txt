@@ -6,7 +6,7 @@ J4x uses a svg file for the favicon
 
 in template folder add images as svg
 
-
+???>>>
 administrator
 ...\administrator\templates\atum\images\joomla-favicon.svg
 ...\administrator\templates\atum\images\favicon.ico
@@ -17,10 +17,24 @@ site
 ...\templates\cassiopeia\images\favicon.ico 
 ...\templates\cassiopeia\images\joomla-favicon-pinned.svg
 
+>>>???
 
 Programm in template (your own if needed)
 $this->addHeadLink(HTMLHelper::_('image', 'joomla-favicon.svg', '', [], true, 1), 'icon', 'rel', ['type' => 'image/svg+xml']);
 $this->addHeadLink(HTMLHelper::_('image', 'favicon.ico', '', [], true, 1), 'alternate icon', 'rel', ['type' => 'image/vnd.microsoft.icon']);
 $this->addHeadLink(HTMLHelper::_('image', 'joomla-favicon-pinned.svg', '', [], true, 1), 'mask-icon', 'rel', ['color' => '#000']);
 
+
+Neuerdings sucht Joomla 4 das favicon hier: media/system/images/favicon.ico.
+In diesem Ordner gibt es auch noch joomla-favicon.svg und joomla-favicon-pinned.svg.
+Favicons im Format *.svg scheinen Vorrang vor dem Format *.ico zu haben.
+Erst nachdem ich diese beiden *.svg Dateien gelöscht hatte, wurde mein eigenes favicon angezeigt.
+
+Als Ergebnis erscheinen im HTML-Quellcode folgende Einträge. Der HTML-Quellcode ist das Dokument, welches an den Browser übergeben wird.
+
+...
+<link href="/j4dev/media/system/images/joomla-favicon.svg" rel="icon" type="image/svg+xml">
+<link href="/j4dev/media/system/images/favicon.ico" rel="alternate icon" type="image/vnd.microsoft.icon">
+<link href="/j4dev/media/system/images/joomla-favicon-pinned.svg" rel="mask-icon" color="#000">
+...
 
