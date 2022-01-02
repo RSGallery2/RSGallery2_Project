@@ -1,3 +1,7 @@
+
+
+
+
 # alias -> slug
 
 item id and alias bound by ":" build the slug
@@ -22,7 +26,8 @@ Beispiel für das Routing
 
 # Router for J3x
 
-[Joomla documantation: J3x Supporting SEF URLs in your component](https://docs.joomla.org/J3.x:Supporting_SEF_URLs_in_your_component)
+[J3x New Routing System](https://connect.garmin.com/modern/course/73513213)
+[J3x Supporting SEF URLs in your component](https://docs.joomla.org/J3.x:Supporting_SEF_URLs_in_your_component)
 
 item id and alias bound by ?":"? build the slug .../6:lost-gallery/213:lost-image-15
 
