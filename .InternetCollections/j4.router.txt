@@ -1,0 +1,24 @@
+
+
+https://blog.astrid-guenther.de/joomla-einen-service-hinzufuegen-routing/
+https://blog.astrid-guenther.de/en/joomla-einen-service-hinzufuegen-routing/
+
+
+
+
+Not finihed:
+
+Seo 
+
+
+
+
+slug and router
+
+<a href="<?php echo Route::_(RouteHelper::getCategoryRoute($item->id, $item->language)); ?>">
+	<?php echo $this->escape($item->title); ?>
+</a>
+
+
+$path[] = array('title' => $category->title, 'link' => RouteHelper::getCategoryRoute($category->id, $category->language));
+
