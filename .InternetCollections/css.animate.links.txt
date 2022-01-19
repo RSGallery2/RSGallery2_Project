@@ -1,0 +1,10 @@
+
+
+* https://animate.style/
+	shows animatet text and lets copy result to cipbboard
+	
+	hback in down: animate__backInDown
+	
+	needs  animate.css
+	 
+
