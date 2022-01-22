@@ -1,0 +1,37 @@
+
+use Joomla\CMS\HTML\HTMLHelper;
+HTMLHelper::_('bootstrap.carousel', '.selector');
+
+Carousel
+Assuming you have the HTML part already in your Layout, you will also need to include the interactivity (the javascript part):
+
+\Joomla\CMS\HTML\HTMLHelper::_('bootstrap.carousel', '.selector', []);
+The .selector refers to the CSS selector for the carousel. You can call this function multiple times with different CSS selectors
+The third argument refers to the options available for carousel
+Options for the carousel can be:
+
+interval, number, default:5000, The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
+keyboard, boolean, default:true Whether the carousel should react to keyboard events.
+pause, string|boolean, hover Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
+slide, string|boolean, default:false Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.
+
+
+----------------------------------------------------
+Coders
+Load what you need per case! There are helper functions to set up individual components with appropriate arguments.
+See the list of Bootstrap Interactive Components.
+
+
+
+
+
+
+https://docs.joomla.org/J4.x:Using_Bootstrap_Components_in_Joomla_4
+
+
+PLEASE DO NOT DO THAT! Don't use HTMLHelper::_('bootstrap.framework');!
+
+
+
+
+
