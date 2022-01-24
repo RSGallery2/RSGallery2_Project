@@ -1,0 +1,3 @@
+table#articleList.table > :not(caption) > * > * {
+padding: 1rem 0.25rem;
+}
