@@ -1,7 +1,28 @@
 
+** general
+https://docs.joomla.org/J3.x:New_Routing_System/de
+
+
+** Supporting SEF URLs in your component
+https://docs.joomla.org/J3.x:Supporting_SEF_URLs_in_your_component
+
+
 
 https://blog.astrid-guenther.de/joomla-einen-service-hinzufuegen-routing/
 https://blog.astrid-guenther.de/en/joomla-einen-service-hinzufuegen-routing/
+
+
+
+--------------------------------
+
+modrewrite : remove index.php   ? needs .htaccess file ?
+
+
+example articles:
+??? J3x Set URL Routing to "Modern".
+Set Remove IDs from URLs to "Yes". ==> separate option for articles 
+
+
 
 
 
