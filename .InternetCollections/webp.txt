@@ -1,3 +1,15 @@
+**webp images**
+
+https://www.ionos.de/digitalguide/websites/webdesign/webp-format/
+
+PHP
+imagecreatefromwebp: Creates an internal format image from webp file (URL)
+imagewebp:  Output a WebP image to browser or file
+
+imqagemagick
+Specific webp calls in PHP
+https://stackoverflow.com/questions/37711492/imagemagick-specific-webp-calls-in-php
+
 
 
 

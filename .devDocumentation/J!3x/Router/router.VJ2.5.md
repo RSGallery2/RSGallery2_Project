@@ -1,6 +1,13 @@
 # SEF: Router found in RSG2 for J2.5 (J3.x)
 
-Date 2019.08.10
+Date 2022.02.08
+
+1) Link with no sef
+2) Link with JOOMLA sef
+3) ? LINK with RSG2 Advanced SEF ?
+
+SEF uses number of item and alias
+
 
 ## Overview
 
@@ -34,26 +41,24 @@ Date 2019.08.10
 
     - -> (Start image) id value "-" image alias
 
-# Examples (?complete?)
-
-SEF uses number of item and alias
+# Link examples (?complete?)
 
 ## Root galleries:
 
 Image link see image single gallery
 
 - Gallery thumb:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&gid=8]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-overview/gallery/8]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-overview/8-missing-thumb-imnage]()
 
 - Slideshow:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=slideshow&gid=2]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-overview/gallery/6/asSlideshow]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-overview/6-landschaft-33?page=slideshow]()
 
 - Subgallery:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&gid=5]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-overview/gallery/5]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-overview/5-landaschaft-22]()
 
@@ -64,46 +69,50 @@ See root galleries and single gallery
 ## Single gallery
 
 - Image:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=inline&id=83]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-by-parent/item/83/asInline]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-single-gallery/1-love-locks/158-dsc-5504]()
 
-## Image as in line
+## Image as 'inline'
 
 Image link see single gallery
 
 - Image as full screen:
-
   - [http://127.0.0.1/joomla3x//images/rsgallery/original/00074.jpg]()
 
 - Single image as inline:
-
+  - []()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-by-parent/gallery/6/itemPage/1/asInline]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-single-gallery/1-love-locks/158-dsc-5504]()
 
 - Download:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&task=downloadfile&id=83]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-galleries-by-parent/item/83?task=downloadfile]()
 
-- Next image set: Attention: tab is selected too
-
-  - [http://127.0.0.1/joomla3x/index.php/component/rsgallery2/gallery/6/itemPage/1/asInline?tab=vote]()
-  - []()
+- Next/previous image set: Attention: tab is selected too
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=inline&gid=6&limitstart=20]()
+  - [???http://127.0.0.1/joomla3x/index.php/component/rsgallery2/gallery/6/itemPage/1/asInline?tab=vote]()
+  - [???]()
 
 - First image set / Last image set:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=inline&gid=6&limitstart=0]()
   - [http://127.0.0.1/joomla3x/index.php/component/rsgallery2/gallery/6/itemPage/0/asInline]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-single-gallery/1-love-locks/157-dsc-5503]()
 
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=inline&gid=6&limitstart=72]()
+  - [http://127.0.0.1/joomla3x/index.php/component/rsgallery2/gallery/6/itemPage/72/asInline]()
+  - []()
+  - []()
+ 
 ## Slideshow as inline
 
 - Back to gallery:
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=slideshow&gid=6]()
   - [http://127.0.0.1/joomla3x/index.php/component/rsgallery2/gallery/6/asSlideshow#]()
   - [http://127.0.0.1/joomla3x/index.php/j3x-single-gallery/1-love-locks#]()
 
 - Open image: Leads to image as inline
-
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&page=inline&id=84]()
   - [http://127.0.0.1/joomla3x/index.php/component/rsgallery2/item/95/asInline?Itemid=]()
   - [http://127.0.0.1/joomla3x/index.php/rsg2-slideshow/6-landschaft-33/112-00045]()
 
@@ -111,10 +120,6 @@ Image link see single gallery
 
 Open Image link see single gallery (Leads to image as in line)
 
-- x:
-
-  - []()
-  - []()
 
 ## Changes on not advanced SEF
 
