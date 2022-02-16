@@ -1,0 +1,11 @@
+
+
+access params
+
+$menu = $app->getMenu()->getActive();
+$params = $menu->getParams();
+
+
+
+
+
