@@ -1,0 +1,7 @@
+
+media/templates/site/cassiopeia/css/user.css
+
+in J4.1 the path to the “template media folders” (css, images, js and scss) 
+changed to media/templates/site/cassiopeia/
+
+
