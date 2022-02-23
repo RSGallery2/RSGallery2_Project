@@ -1,7 +1,10 @@
 # RSGallery2_Project
+Support files for RSGallery2 component 
+
+* Update server files 
+* Documentation for user and developer J3x, J4x
+* Zip build scripts for RSGallery2 component 
 
 * Leftovers which are not a component, module or plug in 
-* Documentation for user and developer
-* Preparation files for the update server
 * ...
  
