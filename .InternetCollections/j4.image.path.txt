@@ -1,0 +1,20 @@
+
+image path in joomla PHP may have additional 
+
+
+$images = json_decode($this->item->images);
+echo ' DEBUG $images: <pre>' . print_r($images, true) . '</pre>';exit;
+
+stdClass Object
+(
+    [image_intro] => images/headers/maple.jpg#joomlaImage://local-images/headers/maple.jpg?width=700&height=180
+...
+    [image_fulltext] => images/headers/maple.jpg#joomlaImage://local-images/headers/maple.jpg?width=700&height=180
+...
+)
+
+
+
+
+
+
