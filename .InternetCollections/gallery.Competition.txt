@@ -1,4 +1,6 @@
 
+https://www.firecoders.com/joomla-extensions/showtime-image-gallery
+
 
 https://demo.fastw3b.net/fw-gallery/en-en
 Good doc about image layouts
