@@ -1,5 +1,6 @@
 
 https://www.firecoders.com/joomla-extensions/showtime-image-gallery
+https://github.com/ganlanyuan/tiny-slider
 
 
 https://demo.fastw3b.net/fw-gallery/en-en
