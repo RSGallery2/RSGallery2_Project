@@ -1,0 +1,33 @@
+
+WebAssetManager
+
+Wie kann ich in einem Joomla 4 Modul ein Javascript-file via AssetManager in den head bereich einfügen?
+
+Ich habe folgenden code ausprobiert, jedoch landet die entsprechende referenz zum script nicht im html code:
+$wa =  Factory: :getApplication()->getDocument()->getWebAssetManager();
+$wa->registerAndUseScript('myscript', 'mod_mymodule/js/myscript.js');
+
+Ist diese Anweisung so richtig? Habe ich was übersehen?
+
+Harald Leithner
+Yesterday, 10:23 AM
+
+
+
+
+
+das /js muss weg glaube ich
+
+Guido De Gobbis
+Guest
+Yesterday, 10:24 AM
+
+
+
+
+
+was Harald sagt und das Script muss dann in /media/mod_mymodule/js/myscript.js
+
+
+
+
