@@ -1,4 +1,18 @@
  call a model from anywhere inside Joomla you can use this method
+
+J4x
+--------------
+From model load different model
+
+//$modelWatermark = $this->getModel('ImgWaterMark'); 
+$modelWatermark = $this->getInstance('imgwatermark', 'RSGallery2Model'); 
+
+
+
+
+
+J3x:
+------------
 //Load the Joomla Model framework
 jimport('joomla.application.component.model');
 
