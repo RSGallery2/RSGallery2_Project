@@ -1,4 +1,13 @@
+J4x
+-------------------
 
+JPATH_ADMINISTRATOR . '/components/'
+
+deprecated: JPATH_COMPONENT_ADMINISTRATOR
+
+
+J3x:
+-------------------
 File Pathes in Joomla (For URL paths, try using JURI::base())
 
 JPATH_COMPONENT_ADMINISTRATOR
