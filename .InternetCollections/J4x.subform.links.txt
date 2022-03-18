@@ -1,0 +1,13 @@
+
+subforms -> multiple (repeateable)
+
+https://docs.joomla.org/Subform_form_field_type
+
+https://techjoomla.com/developers-blogs/using-sub-forms-to-create-repeatable-fields
+
+
+https://www.techfry.com/joomla/joomla-subform-form-field-type
+
+https://www.1joomla.org/2016/11/create-repeatable-fields-using-joomla-3.html
+
+https://joomla.stackexchange.com/questions/28358/how-to-add-default-values-to-joomla-subform-fields
