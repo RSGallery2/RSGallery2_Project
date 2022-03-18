@@ -1,0 +1,5 @@
+
+LoadJsCSS Field class for the Allrounder Template to load custom Javascript and CSS
+
+https://github.com/Bakual/Allrounder/blob/master/fields/loadjscss.php
+

@@ -5,6 +5,9 @@ screenshot, screencast, gif, video, slides
 
 -----------------------------------------------
 
+ScreenToGif for short introduction videos
+https://screencast-o-matic.com/ I
+
 * camtasia  ******
 
 https://obsproject.com/ free video ...
