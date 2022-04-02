@@ -1,0 +1,2 @@
+BaseDatabaseModel::addIncludePath(JPATH_SITE . '/components/com_dpcalendar/models', 'DPCalendarModel');
+$model = $app->bootComponent('dpcalendar')->getMVCFactory()->createModel('Event', 'DPCalendarModel');

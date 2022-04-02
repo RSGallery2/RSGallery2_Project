@@ -1,0 +1,19 @@
+
+save Databases or reinstall of XAMPP
+https://ourcodeworld.com/articles/read/746/how-to-recover-innodb-mysql-files-using-xampp-on-windows 
+und https://quick-adviser.com/where-are-mysql-files-stored-in-xampp/
+
+https://quick-adviser.com/where-are-mysql-files-stored-in-xampp/
+
+If mysql still runs:
+
+save all dbs in xampp (change path accordingly)
+C:\mamp\bin\mysql\bin\mysqldump --routines --all-databases -u root -proot >d:\daten\workspace\databases.sql
+
+write back 
+C:\mamp\bin\mysql\bin\mysql -u root -proot <d:\daten\workspace\databases.sql
+
+-------------
+
+Ich hab xampp neu installiert und aus mysql/data meine Datenbankordner 
+und die Datei ibdata1 kopiert. 

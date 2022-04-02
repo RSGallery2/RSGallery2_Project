@@ -1,0 +1,20 @@
+joomla 4 und weitgehend auch in 3 ist "utf8mb4_unicode_ci" der standard und das empfehle ich auch zu verwenden
+
+
+
+???>>>>
+recommended setting in datbase (2022.04.01)
+DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+[client]
+default-character-set=utf8mb4
+
+[mysql]
+default-character-set=utf8mb4
+
+[mysqld]
+character_set_server=utf8mb4
+collation_server=utf8mb4_unicode_ci
+<<<<????
+
