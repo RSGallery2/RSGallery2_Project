@@ -1,0 +1,13 @@
+
+
+Create line numbers on displeyed text 
+
+Liks: 
+https://stackoverflow.com/questions/40842277/create-line-numbers-on-pre-with-css-only
+
+https://stackoverflow.com/questions/41306797/html-how-to-add-line-numbers-to-a-source-code-block
+
+
+
+
+
