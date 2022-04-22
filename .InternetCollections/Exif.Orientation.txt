@@ -1,0 +1,9 @@
+
+
+
+EXIF Orientation-flag example images
+
+https://github.com/recurser/exif-orientation-examples
+
+
+
