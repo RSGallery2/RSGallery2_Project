@@ -1,4 +1,7 @@
 
+https://docs.joomla.org/J3.x:Adding_custom_fields/Implement_into_your_component/de
+https://docs.joomla.org/J3.x:Adding_custom_fields/Implement_into_your_component
+
 https://docs.joomla.org/J3.x:Adding_custom_fields/Overrides/de
 Anwendung von Eigene Felder / Overrides
 
@@ -36,3 +39,4 @@ Note! In the example code we will use for your component the name com_example.
 
 
 .....
+

@@ -1,0 +1,9 @@
+How are Joomla checkboxes saved in the database ?
+
+
+type="checkboxes" ==> comma separated in DB 
+
+will be checked automatically then
+
+
+

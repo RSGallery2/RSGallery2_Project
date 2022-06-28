@@ -1,0 +1,15 @@
+
+
+
+The "version" property is obsolet  J4 and may be removed (not used)
+
+The traget platform is the important part. Tells about possible joomla versions
+<targetplatform name="joomla" version="(4|3\.([89]|10))\b" />
+
+The version inside has the form of a regex
+
+
+Manifest / update file needs a separate section for joomla
+
+
+ 

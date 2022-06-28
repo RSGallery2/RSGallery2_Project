@@ -1,4 +1,11 @@
 
 Für den Patchtester gibts übrigens ne nette Shorturl: http://joom.la/patchtester
 
+Troy Hall
+
+shared a link
+It can be daunting @ times.  Perhaps my video series on patch testing will help.  
+This is part #2 https://youtu.be/Tqj-BAmPGLA?t=385
+or 
+https://youtu.be/Tqj-BAmPGLA
 
