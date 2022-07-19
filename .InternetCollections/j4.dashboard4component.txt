@@ -6,6 +6,13 @@ Joomla 4 - Dashboard - Komponenten hinzufügen
  
 https://blog.astrid-guenther.de/joomla-dashboard-fuer-deine-erweiterung/
 
+---
+
+https://docs.joomla.org/Manifest_files#Dashboards
+
+----
+Doesn't help
+https://magazine.joomla.org/all-issues/april-2021/joomla-4-customising-admin-dashboards
 
 
 
