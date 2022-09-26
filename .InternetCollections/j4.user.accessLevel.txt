@@ -1,0 +1,31 @@
+user groups <-> access level
+
+
+Benutzerguppen bestimmen, was der User machen darf, 
+
+Zugriffsebenen bestimmen, was der User sehen darf. 
+das ist auf den ersten blick verwirrend, weil beide 
+by default gleich heißen, aber eigentlich gar nix 
+miteinander zu tun haben
+
+in der zugriffsebene "registered" ist ja zb viel 
+mehr drin als nur "registered", was ja auch Sinn 
+macht, weil du sonst zb als Super admin diese 
+Beiträge gar nicht sehen kannst also lass dich 
+nicht von den Zugriffsebenen-Namen täuschen. 
+Du musst eine eigene Ebene dafür anlegen und 
+die Benutzergruppe(n) dort zuordnen
+Dann kannst du diese beim Menüpunkt oder beim 
+Artikel (oder Komponente, Modul,....) usw 
+zuordnen und nur User, die in einer Benutzergruppe 
+sind, die dieser Zugriffsebene zueordnet sind, sehen das
+
+----------------------------------------------
+https://www.tutorialgarage.com/joomla/zugriffsebenen
+
+Zugriffsebenen – entscheiden in Joomla, wer was sehen darf
+Zugriffsebenen bestimmen wer was, auf unserer Seite, zu Gesicht bekommt. 
+Diese Funktion wird in Joomla von Einsteigern gerne 
+vernachlässigt, ist jedoch ein sehr mächtiges Werkzeug.
+
+....

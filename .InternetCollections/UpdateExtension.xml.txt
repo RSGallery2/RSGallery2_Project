@@ -2,6 +2,23 @@
 for joomla 4.1 see 
 https://raw.githubusercontent.com/joomla-extensions/weblinks/master/manifest.xml
 
+or better 
+
+xml von der update site should definiert keine stability ("tag" element): 
+https://github.com/joomla-extensions/search/blob/main/manifest.xml
+
+
+tag 
+		<tags>
+			<tag>rc</tag>
+		</tags>
+		
+				<tags>
+			<tag>stable</tag>
+		</tags>
+
+
+
 >> tagretplatform
 
 <?xml version="1.0" encoding="utf-8"?>

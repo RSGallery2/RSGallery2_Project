@@ -1,0 +1,13 @@
+
+instead of htaccess use HTTP header plugin and
+address security in backend direct
+
+https://magazine.joomla.org/all-issues/may-2022/joomla-new-http-headers-plugin-for-j4
+
+speech from Tobias Zulauf: 
+https://www.youtube.com/watch?v=7I1v6Cq3CyE
+
+german
+https://www.jug-zueri.ch/artikel/das-http-headers-plugin-in-joomla-4
+
+https://securityheaders.com/ 
