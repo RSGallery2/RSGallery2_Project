@@ -6,12 +6,17 @@
 
 <center>Version 2021.03.27</center><br>
 
-2021.03.27: The sources and installation lives aktually in github repository RSGallery2 / RSGallery2_J4
+2021.03.27: The sources and installation lives actually in github repository RSGallery2 / RSGallery2_J4
 
-This documenttion is a work in progress and will be updated regularly. It is the collection of all markdown pieces from github RSGallery2 repository RSGallery2_Project. There in folder /Documentation/J!4x/ may be an updated version as we may update this oncew in a while and of course on new features. Also on out web page rsgallery2.org new updated docs and new feature description may find their way to articles there. 
+This documentation is a work in progress and will be updated regularly. 
+It is the collection of all markdown files from github 
+[Project documentation Repository](https://github.com/RSGallery2/RSGallery2_Project/tree/master/Documentation/J!4x). 
+There may be an updated version of this document. 
+We may update it once in a while on new features. 
 
 We are sorry for "some" ugly parts of the style. This results from the limitation of writing in fast "Markdown syntax".
-Lets get started
+
+**Lets get started**
 
 
 ## Table of content
@@ -32,14 +37,15 @@ Lets get started
 
 ## 1\. Download the main RSGallery2 component
 
-[ ] ToDo: thomas names and path are different (depends on release J4 or component)
 On github look for the newest version (v4.2.0++) [Releases of component](https://github.com/RSGallery2/RSGallery2_Component/releases)
+Attention: Actually (2021.09.01) the repository for the J4x version is on https://github.com/RSGallery2/RSGallery2_J4
+[ ] ToDo: Update when merged 
 
-Inside the assets you will find a zip file with a name like **RSGallery2_Component_4_2_0.zip**. Download and install the newest zip file matching this name and a newer version number
+Inside the assets you will find a zip file with a name like **RSGallery2_Component_5_x_x.zip**. Download and install the newest zip file matching this name and a newer version number
 
 ## **2\. Install RSGallery2 component**
 
-![Build.03a.install](Build.03a.install.png)
+![Build.03a.install](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/build.03a.install.png?raw=true)
 
 RSGallery2 is installed like all other Joomla! extensions. Log in to the Administrator section then follow:
 
@@ -49,7 +55,8 @@ RSGallery2 is installed like all other Joomla! extensions. Log in to the Adminis
 
 ## 3\. Upload Package file by using drag and drop
 
-![Build.03b.install](Build.03d.install.png)
+![Build.03d.install](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/build.03d.install.png?raw=true)
+
 
 The drag and drop area is marked with dotted border
 
@@ -59,7 +66,7 @@ The drag and drop area is marked with dotted border
 
 ## 4\. Result after component installation
 
-![Build.04.install](Build.04.install.png)
+![Build.04.install](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/build.04.install.png?raw=true)
 
 After click on the **Control panel** button the Control Panel of the RSGallery2 appears
 ### First steps
@@ -72,9 +79,6 @@ Three steps are needed to display galleries
 
 ---
 ### First steps 1\. Create a gallery
-
-[ ] ToDo: fill out see: RSGallery2_Project\Documentation\J!3x\getStarted\03.CreateGallery.md Hier müssen nur die Bilder ersetzt werden
-
 
  ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/controlPanel.baseButtons.galleries.png?raw=true)
 
@@ -129,7 +133,7 @@ Resulting form:
 ---
 ### First steps 3\. Create a menu to view galleries
 
-[ ] ToDo: fill out see: RSGallery2_Project\Documentation\J!3x\getStarted\05.CreateMenuGalleryView.md (Needs completion of menu views first)
+[ ] ToDo: Update front end images when ready
 
  ![Control base buttons. galleries marked](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!3x/ImagesUsedInDoc/menu.add4Gallery.png?raw=true)
 
@@ -176,7 +180,8 @@ When images are assigned to a gallery the gallery is represented by a image insi
 ---
 # Next steps:
 
-[ ] ToDo: thomas different type of links, fill out see: RSGallery2_Project\Documentation\J!3x\getStarted\06.NextSteps.md (Needs completion first)
+[ ] ToDo: different type of links, fill out see: RSGallery2_Project\Documentation\J!3x\getStarted\06.NextSteps.md (Needs completion first)
+[ ] ToDo: Update when front end ready
 
 - You may familiarize yourself with the configuration settings (See button on control panel)
 - You may look up and install following plugins to include a single gallery / image into an article
@@ -201,9 +206,7 @@ When images are assigned to a gallery the gallery is represented by a image insi
 
 # Control Panel RSGallery2
 
-![controlpanelRSgall](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_j4x.png?raw=true)
-
-[ ] ToDo: Control_Panel_j4x.png "altes" bild ersetzen. (2) sollte aufgeklappt sein, (3) sollte auch bilder haben
+![controlpanelRSgallery2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_j4x.png?raw=true)
 
 (1) Function buttons
 
@@ -221,9 +224,13 @@ A click on changelog tells about the last fixes and improvements of the RSG2 sou
 
 A click on credits opens an area where all the **contributors** to RSGallery2 are mentioned. More below
 
+(6) External licenses
+
+A click on external licenses tells about the used external components.
+
 ## Function buttons
 
-![Function buttons](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/function_buttons.png?raw=true)
+![Function buttons](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_panel_function_buttons.png?raw=true)
 
 (1) **Configuration**
 
@@ -241,32 +248,42 @@ View images list , create new images, edit image, publish ...
 
 (5) **Maintenance**
 
-For maintenance exist a "Repair Zone" where content can be checked for consistency, a "Danger zone" to remove the component and a Raw database zone" to see more content of gallery and images list.
+In maintenance exist a "Repair Zone" where content can be checked for consistency, a "Danger zone" to remove the component and a Raw database zone" to see more content of gallery and images list.
 
 (6) **External licenses**
 
 Used external components
 
-## RSGallery2 overview
+## RSGallery2 info
 
-[ ] ToDo: bild (wenig bis kein text)
+![Info area](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_info.png?raw=true)
+
+Displays general state of RSGallery2 installation and links to to associated web sites
 
 ## Changelog
 
-[ ] ToDo: Image of changelog area
+![changelog](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_changelog.png?raw=true)
 
+ToDo: Remove/change when ready
 This display above is just an example how it will look in the future (No changes before first release)
 
 [ ] ToDo: Thomas: Description of special elements
 
 - bugs
-- - improvements
+- improvements
 
 ## Credits
 
-[ ] ToDo: bild mit start der credits
+![Credits](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_Panel_credits.png?raw=true)
 
 Area where all the contributors to RSGallery2 are listed. See parts in image below.
+
+
+## External licenses
+![external_components](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Control_panel_external_components.png?raw=true)
+
+
+Used external components
 
 # Upload
 
@@ -517,7 +534,7 @@ The images are kept in following folders in .../Joomla/images/rsgallery/**sub_fo
 
 [ ] ToDo: thomas: check and compare with J3x version (same folder) and images ...
 
-![Gallerylistcolumns](GalleriesListView.png)     
+![Gallerylistcolumns](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleriesListView.png?raw=true)
 
 (1) Select Gallery
 
@@ -561,7 +578,7 @@ ascending
 
 # Gallery (s) task buttons
 
-![Gallery_task_buttons](galleryTask.png)
+![Gallery_task_buttons](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/galleryTask.png?raw=true)
 
 (1) New
 
@@ -610,7 +627,7 @@ See below
 
 # Galleries search options
 
-![Galleries search options](GalleriesSearch.png)
+![Galleries search options](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleriesSearch.png?raw=true)
 
 (1) Search
 
@@ -619,7 +636,7 @@ search for existing Gallery
 (2) Select Status
 
 Only galleries of the select status type will be shown.
-Types: Trashed, Unpublished, Published, Archived, ALL       
+Types: Trashed, Unpublished, Published, Archived, ALL
 
 (3) Select access Types
 
@@ -646,7 +663,7 @@ It defines the count of galleries which will be shown on one page
 
 
 
-![GalleriesTrash_2](GalleryTrash_2.png)  
+![GalleriesTrash_2](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleryTrash_2.png?raw=true)
 
 (1) Select status
 
@@ -656,9 +673,9 @@ All galleries will be shown
 
 (3) choose Trash from the ListBox
 
-![delete](GalleryDelete.png)
+![delete](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleryDelete.png?raw=true)
 
-(1) Select trashed  
+(1) Select trashed
 
 (2) choose galleries
 
@@ -668,7 +685,7 @@ All galleries will be shown
 
 ## How to restore trashed Galleries
 
-![RebornGalleries](GalleryReborn.png)
+![RebornGalleries](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/GalleryReborn.png?raw=true) 
 
 
 (1)  Select trashed gallery
@@ -757,7 +774,7 @@ manage_images
 [ ] ToDo: thomas: check and compare with J3x version (same folder) and images ...
 
 
-![image_manage](manage_images.png)
+![image_manage](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images.png?raw=true) 
 
 (1) The topmost rectangle selects all images which is useful for batch processing.
 The selector beside the image information selects this image.
@@ -802,6 +819,7 @@ Creation Time of gallery
 (9) Hits
 
 Count on views / appearances
+![Imageslistcolumns](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/ImagesesListView.png?raw=true)
 
 
 (10) ID
@@ -811,7 +829,7 @@ Internal ID of image for reference or matching in other list
 ## Image(s) task buttons
 
 
-![manage_action](manage_images_actions.png)
+![manage_action](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images_actions.png?raw=true)
 
 Click on the DropDown_Button Action
 
@@ -850,7 +868,7 @@ Possible batch tasks:
 ## Image(s) search options
 
 
-![image_search](manage_images_search.png)
+![image_search](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images_search.png?raw=true)
 
 
 (1) Filter Options
@@ -874,7 +892,7 @@ It defines the count of images which will be shown on one page
 ## Images: Batch process to add properties
 
 
-![image_batch](manage_images_batch.png)
+![image_batch](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/manage_images_batch.png?raw=true)
 
 (1) Select a gallery as destination for copy or move of selected images
 
@@ -896,7 +914,7 @@ Batch processing: The selected images can be copy to the selected gallery.
 
 [ ] ToDo: thomas: check to be used
 
-![Add_images](Images_properties.png)
+![Add_images](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Images_properties.png?raw=true) 
 
 This form enables to the properties title and description for a batch of images at the same time. It is reached normally over the upload form. It can also be reached with selected images over the batch button in the images list form.
 
@@ -914,7 +932,7 @@ The description may be changed with the standard editor like in the edit single 
 
 ## (4) Actions
 
-![Action](Actions.png)
+![Action](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/Actions.png?raw=true)
 
 **Save and close** Save changes and continue edit on the same images.
 
