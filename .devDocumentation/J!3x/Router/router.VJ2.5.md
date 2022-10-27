@@ -1,4 +1,4 @@
-# SEF: Router found in RSG2 for J2.5 (J3.x)
+  # SEF: Router found in RSG2 for J2.5 (J3.x)
 
 Date 2022.02.08
 
@@ -44,6 +44,9 @@ SEF uses number of item and alias
 # Link examples (?complete?)
 
 ## Root galleries:
+
+- Root gallery view ? ToDo: check and add here
+  - []()
 
 Image link see image single gallery
 
@@ -103,7 +106,7 @@ Image link see single gallery
   - [http://127.0.0.1/joomla3x/index.php/component/rsgallery2/gallery/6/itemPage/72/asInline]()
   - []()
   - []()
- 
+
 ## Slideshow as inline
 
 - Back to gallery:
