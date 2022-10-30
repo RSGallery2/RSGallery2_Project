@@ -45,8 +45,8 @@ SEF uses number of item and alias
 
 ## Root galleries:
 
-- Root gallery view ? ToDo: check and add here
-  - []()
+- Root gallery view
+  - [http://127.0.0.1/joomla3x/index.php?option=com_rsgallery2&view=gallery&gid=0]()
 
 Image link see image single gallery
 

@@ -16,7 +16,7 @@ Example: view:gallery => key:gid=14
 * item id and alias bound by ":" build the slug
 
 
-## examples
+## Examples
 
 [Astrid Günther: Einen Service hinzufügen - Routing](https://blog.astrid-guenther.de/joomla-einen-service-hinzufuegen-routing/)
 
@@ -48,12 +48,18 @@ Joomla!'s core components take a mixed approach, separating responsibilities in 
 
 # Link examples J4x (?complete?)
 
-## Root galleries:
+## J3x style (for compatibility)
+
+### J3x Root galleries:
 
 - Root gallery J3x style
-[http://127.0.0.1/Joomla4x/index.php?option=com_rsgallery2&view=rootgalleriesJ3x&gid=0]()
-[http://127.0.0.1/Joomla4x/index.php/rsg2-j3x-legacy/j3x-root-gallery-overview?]()
+  - [http://127.0.0.1/Joomla4x/index.php?option=com_rsgallery2&view=rootgalleriesJ3x&gid=0]()
+  - [http://127.0.0.1/Joomla4x/index.php/rsg2-j3x-legacy/j3x-root-gallery-overview?]()
 
+
+## J4x style (new may not be ready)
+
+### J4x Root galleries:
 
 
 - []()
