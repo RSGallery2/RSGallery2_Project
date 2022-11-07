@@ -1,0 +1,6 @@
+what is the route (URI) to actual menu 
+
+The Joomla Uri::base method will get the base site URL. 
+Factory::getApplication()->getMenu()->getActive()->route 
+will give you the menu item subpath
+

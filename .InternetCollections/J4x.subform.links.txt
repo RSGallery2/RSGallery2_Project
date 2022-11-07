@@ -1,7 +1,15 @@
-
 subforms -> multiple (repeateable)
+------------------------------
 
+google joomla fields repeatable get values
+
+Links
 https://docs.joomla.org/Subform_form_field_type
+
+
+How to Get Values
+https://www.techfry.com/joomla/joomla-subform-form-field-type
+
 
 https://techjoomla.com/developers-blogs/using-sub-forms-to-create-repeatable-fields
 
@@ -11,3 +19,33 @@ https://www.techfry.com/joomla/joomla-subform-form-field-type
 https://www.1joomla.org/2016/11/create-repeatable-fields-using-joomla-3.html
 
 https://joomla.stackexchange.com/questions/28358/how-to-add-default-values-to-joomla-subform-fields
+
+------------------------------
+
+google joomla fields repeatable get values
+
+Links
+https://docs.joomla.org/Subform_form_field_type
+
+
+How to Get Values
+https://www.techfry.com/joomla/joomla-subform-form-field-type
+
+How to Get Values
+The values are stored as object. For example, if subform field (with name sub-form) contains two fields - alpha and beta.
+
+$sub-form = $this->params->get('sub-form');
+$arr = (array) $sub-form;
+foreach ($arr as $value)
+{
+echo $value->alpha;
+echo $value->beta;
+}
+
+manually php output the repeating part 
+	* foreach ... LayoutHelper::render
+	
+
+
+
+
