@@ -16,7 +16,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl>
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -34,7 +34,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -52,7 +52,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -70,7 +70,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -124,7 +124,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -142,7 +142,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -160,6 +160,6 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<client>1</client>
-		<infourl>rsgallery2.org</infourl> 		
+		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 </updates>
