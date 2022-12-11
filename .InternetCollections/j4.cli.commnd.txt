@@ -1,0 +1,12 @@
+Joomla 4x CLI commands
+run "php ./cli/joomla.php" in your Joomla root, 
+without the double quotes, and the available 
+commands will be shown
+
+
+
+
+
+
+
+

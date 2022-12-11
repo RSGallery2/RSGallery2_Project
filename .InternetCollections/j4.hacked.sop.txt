@@ -1,0 +1,23 @@
+
+Peter Martin:
+https://magazine.joomla.org/all-issues/november-2022/how-my-new-joomla-4-website-got-hacked
+
+
+Standard Operating Procedure (SOP)
+Let’s get my “Website hacked SOP” for situations when :
+
+Neutralize the hack
+Secure hacker trails
+Website files
+Website database
+Website log files
+Prevent future hacks
+Analyze how website was hacked
+Restore backup
+Inform data subjects
+...
+
+
+
+
+

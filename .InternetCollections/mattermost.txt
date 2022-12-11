@@ -1,0 +1,55 @@
+
+
+https://www.joomla.org/announcements/release-news/5874-sunset-on-glip-as-joomla-welcomes-mattermost.html
+
+-----
+
+Da dein Mattermost Account an identity.joomla.org gebunden ist, 
+kannst du dich dort mehrfach anmelden, wenn du willst...
+
+D-A-CH Yootheme, D-A-CH Ankündigungen
+
+
+-----
+
+
+Why do we need to move?
+Glip has served us as a great software partner for many years, in recent years Glip has taken a different route to Joomla which means it no longer fits our needs. As an Open Source Project, with many members, we don't distinguish between guests and organisation members. Glip does and this has become a problem as people find they cannot access some areas as easily as others. We also want to follow our path of more openness and transparency which is no longer possible with Glip.
+
+We're proud to announce that Joomla has acquired a partnership with another great open-source project. This project is a closer fit with our needs and mindset as a free, open software project. We proudly present our shiny new cloud-based solution: Mattermost.
+
+With Mattermost we’re able to open up the channels, which means that all channels which don’t include security or privacy-related information will be publicly accessible with a few exceptions.
+
+We are able to manage many aspects of the service ourselves but of course, we still won't have access to private chats. We will be able to recover lost channels, manage teams, can use Kanban-like boards, and have Playbooks and many other features provided by Mattermost.
+
+This is really a great step forward.
+
+How can you join?
+This is very easy now, no invitation is needed, you just need an account on our Identity portal (which is our single-sign-on instance) identity.joomla.org to login into Mattermost. If you don’t have an account yet you can register a free account with any of your email addresses.
+
+But let’s go step by step:
+
+Our instance of the Mattermost platform can be found at:
+
+https://joomlacommunity.cloud.mattermost.com
+
+Short url: https://joom.la/chat
+
+Login to Mattermost by clicking on the button “Joomla! Identity Portal” using the mentioned account. This account is also used for the Volunteers Portal and for future services around the Joomla community.
+
+The first time you log into Mattermost you have to give consent and will then be redirected to our chat system. Now you can either walk through the explanation tour or start joining channels by clicking the plus icon at the top in the left column and selecting “Browse Channels”.
+
+Anything you should know?
+We have some drawbacks to the move, as we are losing all the chat history from your existing Glip channels. We have to make this sacrifice for privacy reasons and are unable to export them. So if you want to keep any shared files or links, please download them before Glip starts to shut down.
+
+What is the Timeline?
+Starting on 7 November 2022 we will start to move members to the new platform. This will continue until the end of November when we aim to have all members on the new system. We encourage all members to move as soon as possible to Mattermost. Announcements will only happen in Mattermost from that day.
+
+
+After a grace period, we will shut down Glip so it should lie dormant between the end of November and the end of the Year. Anyone with chat logs that they want to save has a month to do this manually.
+
+Thank you
+Finally, the Joomla Project wants to thank RingCentral for the many years of help and service. Also, a big thank you to Luca Marzo who organised the sponsorship with Mattermost. Last but not least we want to thank Mattermost for becoming our new Chat system Sponsor. Hopefully, it will be a lasting partnership!
+
+
+
