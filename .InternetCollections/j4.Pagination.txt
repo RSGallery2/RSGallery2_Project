@@ -1,0 +1,3 @@
+
+joomla pagination Um den Fehler "call to undefined method getData
+
