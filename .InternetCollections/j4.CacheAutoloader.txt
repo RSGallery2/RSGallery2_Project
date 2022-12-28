@@ -8,4 +8,5 @@ im cache ordner findest du eine entsprechede Datei welche
 z.B. beim installieren einer erweiterung zurückgesetzt wird.
 Datei: autoload_psr4.php
 
- 
+After major (?interface?) changes install new or delete
+file autoload_psr4.php in administrator/cache 

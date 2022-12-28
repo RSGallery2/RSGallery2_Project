@@ -1,4 +1,12 @@
 
+
+Joomla update server XML 
+https://blog.astrid-guenther.de/joomla-update-und-change-logeinrichten/
+
+Download Key 
+Beim ersten Öffnen siehst du den Hinweis The Download Key is missing, 
+weil du das Element dlid im Manifest eingetragen hast.
+
 for joomla 4.1 see 
 https://raw.githubusercontent.com/joomla-extensions/weblinks/master/manifest.xml
 

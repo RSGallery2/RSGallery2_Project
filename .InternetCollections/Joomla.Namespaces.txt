@@ -1,4 +1,12 @@
 
+Namespace Conventions In Joomla
+https://docs.joomla.org/J4.x:Namespace_Conventions_In_Joomla
+
+Attention 'site/administrator' as last segment
+
+---------------------------------------------------
+
+
 // Namespace to classes
 J3x/J4x : ...\libraries\classmap.php 
 
