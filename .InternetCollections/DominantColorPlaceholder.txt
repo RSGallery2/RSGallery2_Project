@@ -1,0 +1,16 @@
+The acronym is LQIP (low quality image placeholder)
+Dominant color placeholder
+
+display a solid colour before the page completes loading
+It shows a coloured block in place of the image until it is rendered
+ 
+FOUC: https://en.wikipedia.org/wiki/Flash_of_unstyled_content
+
+PHP thing called blurhash which is similar. 
+https://github.com/kornrunner/php-blurhash
+
+
+
+
+
+

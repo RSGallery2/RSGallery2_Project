@@ -1,0 +1,2 @@
+
+ls -l --color=always | less -r

@@ -1,4 +1,14 @@
+Using bootstrap.carousel
 
+depends on how you want to use carousel. If you use it with default 
+options value, use webasset would be better. But if you want to 
+pass custom value for carousel options, use HTMLHelper would be 
+better because it saves you from having to write many codes to 
+pass these options to the carousel script 
+
+https://github.com/joomla/joomla-cms/blob/4.2-dev/libraries/src/HTML/Helpers/Bootstrap.php#L142-L152
+
+----------------------------------------
 use Joomla\CMS\HTML\HTMLHelper;
 HTMLHelper::_('bootstrap.carousel', '.selector');
 

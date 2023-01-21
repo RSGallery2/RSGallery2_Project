@@ -1,0 +1,22 @@
+
+The missing Joomla™ reference for extension developers
+https://www.dionysopoulos.me/book.html
+
+Marco Leichsenring20:48
+https://github.com/JoomGalleryfriends/JG4-dev/pulls
+Manuel Häusler21:48
+https://www.dionysopoulos.me/book.html
+Alwin22:07
+https://www.joomgalleryfriends.net/support.html
+Sulibrat z Grodu Szczota22:15
+Sorry guys, I have to go, it become late. See you while testing on Github!
+
+-------------------------
+Genaral web pages
+https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Upgrading_to_Joomla4
+
+
+https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Upgrading_to_Joomla4
+
+
+https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Upgrading_to_Joomla4

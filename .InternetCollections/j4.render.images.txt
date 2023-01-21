@@ -1,0 +1,45 @@
+Use images
+
+A new JLayout[^gist.github.com/dgrammatiko/a20236039586a2fbc5c77caadffc3de8] as of Joomla 4.0.5 allows developers to output HTML image tags easily:
+
+ 
+
+So instead of writing something like this:
+
+ 
+
+``PHP
+
+ 
+
+'; ?>
+
+The recommended way is to use the JLayout:
+
+``PHP
+
+<?php
+
+echo LayoutHelper::render('joomla.html.image', ['src' => imageURL, 'alt' => $imageAlt]);
+
+?>
+
+Advantages:
+
+ 
+
+The URL and the alt attribute are escaped correctly.
+
+The developer does not have to worry about the "#" at the end of the URL.
+
+The image tag gets a loading="lazy" attribute if the image has the width and height attributes defined.
+
+The alt attribute is ignored if the value passed is false.
+
+All other attributes are rendered correctly, pass them as in the array (for example 'class' => 'my-class').
+
+Dates
+
+ 
+
+ 

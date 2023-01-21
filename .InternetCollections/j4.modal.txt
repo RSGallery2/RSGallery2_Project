@@ -1,0 +1,39 @@
+
+
+  $html = '<button'
+    . ' class="btn bg-light"'
+    . ' id="1"'
+    . ' data-bs-toggle="modal"'
+    . ' type="button"'
+    . ' data-bs-target="#modal_id_1">'
+    . 'click to open modal'
+    . '</button>';
+
+    $html .= '</div>';
+
+
+
+    $html .= HTMLHelper::_(
+        'bootstrap.renderModal',
+        'modal_id_1',
+        array(
+        
+            //'backdrop'    => 'static',
+            'keyboard'    => false,
+            'closeButton' => false,
+            'url'         => 'theurlyouwanttoopenintothemodal',
+            'height'      => '400px',
+            'width'       => '800px',
+            'bodyHeight'  => 70,
+            'modalWidth'  => 80,
+            'footer'     => '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">'
+                    . Text::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</button>'
+        )
+    );
+
+
+
+  return $html;
+  
+  
+  
