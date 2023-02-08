@@ -1,4 +1,12 @@
 
+
+sharky
+joomla-plugin-build-script 
+use as inspiration 
+https://github.com/SharkyKZ/joomla-plugin-build-script
+
+
+
 Google: test driven development
 
 good with github:

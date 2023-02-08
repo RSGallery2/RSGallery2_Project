@@ -1,0 +1,23 @@
+
+
+$db    = $this->getDbo();
+has been replaced by 
+$this->getDatabase(); // in a model
+and
+$db     = Factory::getContainer()->get('DatabaseDriver'); //outside of a model
+
+	
+Mark Fleeson
+5:54 PM
+
+
+
+Thanks George, so to get it to work I just used:
+$db = (new DatabaseFactory)->getDriver('mysqli', self::$db_options);
+
+and added 
+
+use Joomla\Database\DatabaseFactory; 
+
+to the top of the page
+
