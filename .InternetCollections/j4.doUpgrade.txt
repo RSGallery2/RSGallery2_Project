@@ -1,0 +1,10 @@
+
+https://docs.joomla.org/Potential_backward_compatibility_issues_in_Joomla_4
+
+
+-------------------------------
+Step by step
+https://docs.joomla.org/Joomla_3.x_to_4.x_Step_by_Step_Migration/de
+
+Protostar wird bei der Migration auf Joomla 4.x entfernt.
+
