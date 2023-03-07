@@ -1,0 +1,86 @@
+
+Reverse Text Color Based on Background Color Automatically in CSS
+https://css-tricks.com/reverse-text-color-mix-blend-mode/
+
+markup first
+<div class="wrapper">
+  <div class="bg">
+    <div class="text"></div>
+  </div>
+</div>
+
+ set up our variables and style the .bg element:
+
+$loadingTime: 10s;
+$color: rgb(255, 0, 0);
+
+.bg {
+  background-color: $color;
+  animation: loading $loadingTime linear infinite;
+}
+With the loading animation we’ll be changing the width of the element, like so:
+
+@keyframes loading {
+  0% {
+    width: 0;
+  } 100% {
+    width: 100%;
+  }
+}
+
+To update the content of the .text element with the correct percentage value we have to be a little dastardly and use a mix of pseudo elements and animations. First we’ll keep the <div> empty set the content of its after pseudo element to 0% before defining an animation:
+
+.text {
+  color: $color;
+  width: 200px;
+  border: 1px solid $color;
+
+  &:after {
+    padding-left: 20px;
+    content: "0%";
+    display: block;
+    text-align: center;
+    animation: percentage $loadingTime linear infinite;
+  }
+}
+So what we want to do with the percentage animation above is update our content property with each value from 1 to 100, like this:
+
+@keyframes percentage {
+  0% {
+    content: "0%";
+  }
+  1% {
+    content: "1%"; 
+  }
+  /* ... */
+  100% {
+    content: "100%";
+  }
+}
+But instead of making all those @keyframe selectors by hand we can familiarise ourselves with the @for loop syntax in Sass:
+
+@keyframes percentage { 
+  @for $i from 1 through 100 {
+    $value: $i + "%";
+    #{$value} {
+      content: $value;
+    }
+  }
+}
+If this looks a little scary then not to worry! On the third line we add whichever number is currently in the loop (which we call $i) and make that a string by appending % to it and assigning it to a variable. Then we can use interpolation to make each @keyframe selector update the content property to the right value.
+
+The Color Swap
+Finally, all we have to do is set the color and the mix-blend-mode of our pseudo element and there we go; a pure CSS loader where the background color influences the foreground text:
+
+.text:after {
+    /* This value is the OPPOSITE color of our background */
+    color: rgb(0, 255, 255); 
+    mix-blend-mode: difference;
+}
+
+With the difference blend mode we have to set the text element’s color value to the opposite of the background. So if our background is rgb(0, 0, 0) we’ll need to set the text pseudo element to rgb(255, 255, 255).
+
+I think this little demo helps us recognise how useful the mix-blend-mode property can be. There are going to be all sorts of instances like this in the future where interfaces can reveal information in ways we’d never have thought possible before.
+
+
+

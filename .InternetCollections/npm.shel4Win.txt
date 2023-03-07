@@ -1,0 +1,190 @@
+
+Betreff:
+https://stackoverflow.com/questions/23243353/how-to-set-shell-for-npm-run-scripts-in-windows
+Von:
+Finnern Thomas <thomas.finnern@walter-machines.de>
+Datum:
+02.03.2023, 15:02
+An:
+Finnern Thomas Tübingen (tom@tomfinnern.de) <tom@tomfinnern.de>
+Return-Path:
+<thomas.finnern@walter-machines.de>
+Authentication-Results:
+kundenserver.de; dkim=pass header.i=@unitedgrindinggroup.onmicrosoft.com
+Received:
+from mailout11.rmx.de ([94.199.88.76]) by mx.kundenserver.de (mxeue012 [212.227.15.41]) with ESMTPS (Nemesis) id 1MYMz4-1q38Rp0qdm-00VSGx for <tom@tomfinnern.de>; Thu, 02 Mar 2023 15:03:03 +0100
+Received:
+from kdin02.retarus.com (kdin02.dmz1.retloc [172.19.17.49]) (using TLSv1.2 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by mailout11.rmx.de (Postfix) with ESMTPS id 4PSCVX2qh7z40Cr for <tom@tomfinnern.de>; Thu, 2 Mar 2023 15:03:00 +0100 (CET)
+Received:
+from mail.grinding.ch (unknown [193.8.248.6]) (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits)) (No client certificate requested) by kdin02.retarus.com (Postfix) with ESMTPS id 4PSCVX1YCJz2TT8N for <tom@tomfinnern.de>; Thu, 2 Mar 2023 15:03:00 +0100 (CET)
+Received:
+from SRVCO0020001.corp.int (10.151.2.23) by SRVCO0020001.corp.int (10.151.2.23) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2507.17; Thu, 2 Mar 2023 15:02:58 +0100
+Received:
+from EUR03-DBA-obe.outbound.protection.outlook.com (10.10.1.186) by SRVCO0020001.corp.int (10.151.2.23) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.2507.17 via Frontend Transport; Thu, 2 Mar 2023 15:02:57 +0100
+ARC-Seal:
+i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; b=mR9gZ8UOKK8+C0PCSJUG1hdACjbn+L+wLuxoghVQVNwi4P2m8gcrbFyyHphT8Xhx0MOPylKhn+AbMPGoHJcMOqDFCaBkCV84qkWdIBJmZhpDV7rwF6lXvyu7IMG01KcEAdZvaOHMNByd+hx3OaZURkNqYNqU2GdT/tXQNhplvfK9BMPDFy5lGcK8h8Gr/ZZenB7qtGNQ+3+fnGM9CS7Ld5QPslReBYjLZd5glW0dGotAE4Q7GXU8A///6/cOUds+HyFRnt+wsX/uQ3TSwXJdVf50inJB5MgN9VYTkrRGIQbZ8Kr0728VWQE0Bl1WVFCM9MAL/TdbF16vE735elhcXw==
+ARC-Message-Signature:
+i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector9901; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1; bh=+mOqowmFMA7jTpu3mVzGJcyiInYFq5qvsoqM+COyu3o=; b=YnFkWsiNTuU4y/6XfU3hggIRb8K4QDcR6GyIvugtRbsknHy2WEokkpwPNO5GUo8ckNiE5mmXvwbd4KWCeNmVty2Z3QIA1KBdH9SvPaPtorQ81PjLawNvV4TUeD32Hp0EQIBEu7KpgCq54jYedkbDNMV0EydrOvr9eJubN3OSu3Y+ipGFHogOhR3hiKImz7lpsufo5JUsoehueylM8lF0BcP5mhmmBNvA4W+xbHGZ90V+eWYXuRMzjmoByF8cOCRLA0rF2pcj1T6r4ONQsZcBeV5BCs4StMkRORQtqn9nyvrky/5UPfc0pF0977unhDBUabSFxzyt0u7o8UBLSmBJDA==
+ARC-Authentication-Results:
+i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=walter-machines.de; dmarc=pass action=none header.from=walter-machines.de; dkim=pass header.d=walter-machines.de; arc=none
+DKIM-Signature:
+v=1; a=rsa-sha256; c=relaxed/relaxed; d=unitedgrindinggroup.onmicrosoft.com; s=selector2-unitedgrindinggroup-onmicrosoft-com; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck; bh=+mOqowmFMA7jTpu3mVzGJcyiInYFq5qvsoqM+COyu3o=; b=Q0mpqI8sMvLv5ce94nH46yK6CBbMlzydTfnT8f27o+7gXeSMhfxJLSfs7iTxHAwSiR5OUy0aJy9iIde6JrMJbDHuf+9NOGVN9FCoV6TgY1WjmaO9ECm4x8ZlG+UrJZeJc4dVOpQ8f6mpVoTKUwQuhl7/pxImk6PbVXm2hSinBy8=
+Received:
+from GV2P189MB2405.EURP189.PROD.OUTLOOK.COM (2603:10a6:150:db::22) by AM7P189MB0614.EURP189.PROD.OUTLOOK.COM (2603:10a6:20b:119::20) with Microsoft SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6156.19; Thu, 2 Mar 2023 14:02:55 +0000
+Received:
+from GV2P189MB2405.EURP189.PROD.OUTLOOK.COM ([fe80::7d75:8739:d143:c5b3]) by GV2P189MB2405.EURP189.PROD.OUTLOOK.COM ([fe80::7d75:8739:d143:c5b3%4]) with mapi id 15.20.6156.017; Thu, 2 Mar 2023 14:02:55 +0000
+Thread-Topic:
+https://stackoverflow.com/questions/23243353/how-to-set-shell-for-npm-run-scripts-in-windows
+Thread-Index:
+AdlND6I3XLmRj74JRxmgSeh0nlwXnQ==
+Nachricht-ID:
+<GV2P189MB240569DAB69A1D74D73AC8E8A3B29@GV2P189MB2405.EURP189.PROD.OUTLOOK.COM>
+Accept-Language:
+de-DE, en-US
+Content-Language:
+de-DE
+X-MS-Has-Attach:
+yes
+x-ms-publictraffictype:
+Email
+x-ms-traffictypediagnostic:
+GV2P189MB2405:EE_|AM7P189MB0614:EE_
+x-ms-office365-filtering-correlation-id:
+b39c310f-4a77-4ca5-4e3a-08db1b26d20a
+x-ms-exchange-senderadcheck:
+1
+x-ms-exchange-antispam-relay:
+0
+x-microsoft-antispam:
+BCL:0;
+x-microsoft-antispam-message-info:
+DvA/x9MF7f/IIEFm0+rwMEi7MAM7rdN2W/7m4h94PdNJNAUfkbj+8fHWUFwPJ3krlBFswqhXXQhEWWJhK1xH+iEcmWN+8uGeIDTkq/2vDuRpml4S+5DBu0T6iLkcotV8WCuUhSz1BjLD1huWuh30xf0WXH5+xxtSmxZqmA4jQzkOuOwoXp4GcmjIlcvwtShFbSdXsN5Ckbl8djCzPrK/8BcSfL+sKrTgEtxb8bd/ScZbZ8aCSB6UHz/8f43IhW0w0HaPkTjR+w53Yk2Q5z2A22MEp62dUnk/qr8xYkXLGawH2QVeg8bd+EkLvGavXvG0Vhk5DEepWAftw5wWtp9NhphDTuvRCa6VAjwPvdR1D9DVnD33Tz6pEuyEVUOqxF1JFBJsYau+y1Ou8NcSghhxYxBNFv1IE6iGw95YvGygqxF0Zam6TXfSWHizVUU6yiPSjqG0xJVcFNrV6oYnrIlr2iKV/RnPP0xdswdRj4Ij0iouS/9Sy6cHPUj+lN17nA9waHggsMkkXktaB6EPsBa5xgwABAfoifiDhFjN/VMEP8F886Y1luLDb9bM6ZF2WruInt0H2wVvDkhoPGh+KWdNnuQ3+/eTlUKnWTKWsuM4JVQqlz8+Y92v0/3u/hlwNIJmh6EjgjJtnhch5de4YZeb4OFJ43viV38vQ/O5MU6mloMMi5DYTaBXfLQpVnnt0C9qhGfcs8UEXaQC4ER6fWeWyB08Mx8gUlB7mcv7c3fC2f7dUaXUvgvjtXK9JjhFhrYU
+x-forefront-antispam-report:
+CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:GV2P189MB2405.EURP189.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(13230025)(4636009)(376002)(396003)(346002)(366004)(136003)(39840400004)(451199018)(66574015)(6506007)(186003)(9686003)(26005)(6916009)(316002)(41300700001)(19627235002)(66556008)(66476007)(66946007)(66446008)(7696005)(8676002)(2906002)(76116006)(64756008)(71200400001)(99936003)(8936002)(52536014)(478600001)(5660300002)(122000001)(38100700002)(55016003)(33656002)(15974865002)(38070700005)(166002)(86362001)(83380400001)(460985005);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount:
+1
+x-ms-exchange-antispam-messagedata-0:
+kgGLBTLo3SySRrNZwIrhkPJ/Lify7Vm0ABmL5DpJtD1CYj1NR06FMgtRckkcO5T7+hYl0C23SOy1Dp0lHRllj1SYF7OnBbpD1tpP4dO4bCfGHa9xd1d7SGrfRdul+8xIwxvUdsJzbuGx74UyX6CXe0cKFsPyQU1F8O/MMetbZFz91wnf3zeA55suc9MNytihELxfW5mxr2lkhpVGVgFwBuesHP4pY804TIAdutHNvPXOiYkNP5ToXxeqnms0CZ18qfz4rj+xIIsvLalG6fGn+ZooObF/ylZA+bN9ISu7iFELPZhBLAmvJTKCLlBHKt1fsykgW0CBi9teZSIFEBpqGOXfs7qpg8R87Jz2X1zt24gdHvA8G5yX7qz1oWHL4MIMa2AaIcQIo724m9P9voOIDPfn/ZvbUaG95Aj0u/xSi0Jj5TkQrwC4XgkoDPj4rAmPIB0BszeRBWBlH2foqKMYnzhNsO3hIRIWZxFo5ZHtzsfEomRlQRVh3Es7u6ZfyabPApx967mLJpmQpo2nNTTHYAjKFHLgNZtUhjJV6CIaqQoyfBe1D2ye5SE0k841v4ZkwoizNr0udvo/Mg7+BuRkcq2fJGUln7nMkx1lKu/vxkELkDu+I1zfktmez4Q5wy1vBiUaoddHnUDDtTvbMpLYssadv8nQJgRD9U5JJXyYZT9nbralMeDQp2xwrNxnkPdyjjK56p/YOgxLxbeLSdBuIn6W1liIsOn/iSMHaEzF8f1jBoY3LetMCJ3I/rvCXg1pxpSO4FblJBQSrcZ03EPaRjjsL8LQZJECu2+JQNvrcje/3qXFXhEUj+OKjFoamiA7bLPo5+gjKtzvFt8etefnFp8Om2EhvQEATDARMt+4P2XKf/VweJqhFJLwZ+UbixXHlQPhbSACAzqirZuOIYMZpICgixLK6+yfaWUKdn+p8TVOUkaBtzEyORjMVnfKtosE28m4YC3L6eb0Xr7yNLLRZtMk/qtytbzyUgAQg/OfeCddNqc/4vXZTPcfrOcgqlOhLPfS3tKkPjNUxYG0IAfz7WVSU5xcqzuzlLmOlVvdJ4TNR3NdrbCCGJT6bJbjMWpYFHXUDKtQvrxGfv0dSp8TU71ukcCPfpGtsPSIT7GOovUQ0VxH1dikFobi5z0km17jlj158zeSloQPiyd3fPBBGiFVcjziwuMdoPbQ7cZaXbPLTsPkLTC8nEigNbhi6mb+fwJuy2JIszSZPjH5TcEyaiJTabh0PQlUAsKKNK8xmO209fMnzpKf7l2EaW5F87cXdQXrYWHNZhJsoQDBJbVnZXGg9XyzaKWlI9EjZyn/PxINyXdXl38R2F2XONvLs2x4Ioao9q7uW045JMlXBLoHz+sIlkCR7u3zipCaY+pQiFFdRULxO2TN9aOGVcev6GdqmEsz6v4DePe1UpjSOh3MHFOF5IuAxFx9W2cXWNjVbxBF2EdMLunJyksjkvWqyRUta+JZ6RCSHV/13CW96/7MbH/5J99izJ5Hoa6RNvvr0L4p3ObiIfLF6x2KoaA3oy47CtYGsNXzElXdOF2QTkIOvvckekHEbkGYlORJgDbXqeiNGAFwCYrx2A2nmuSpzr/sY2CUykJ9C6KNbad2yyEfKQ==
+Content-Type:
+multipart/related; boundary="_008_GV2P189MB240569DAB69A1D74D73AC8E8A3B29GV2P189MB2405EURP_"; type="multipart/alternative"
+MIME-Version:
+1.0
+X-MS-Exchange-CrossTenant-AuthAs:
+Internal
+X-MS-Exchange-CrossTenant-AuthSource:
+GV2P189MB2405.EURP189.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+b39c310f-4a77-4ca5-4e3a-08db1b26d20a
+X-MS-Exchange-CrossTenant-originalarrivaltime:
+02 Mar 2023 14:02:54.9186 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader:
+Hosted
+X-MS-Exchange-CrossTenant-id:
+1f716dbd-2c87-4e3b-b76e-299b060114c3
+X-MS-Exchange-CrossTenant-mailboxtype:
+HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname:
+sNUnpJn9ho5elNA1h9Xh1VyIidjw5q7cn4R4pMMIHSmCpral0+P+DzbQs5jlYwihhf3qkIC4pVq7XJccZMuIj4y/cb4PeXjPhDEXt7AJri03/Aoz1xOosNBadu8nm75w
+X-MS-Exchange-Transport-CrossTenantHeadersStamped:
+AM7P189MB0614
+X-OriginatorOrg:
+walter-machines.de
+X-TM-AS-Product-Ver:
+SMEX-14.0.0.3092-9.0.1002-27480.000
+X-TM-AS-Result:
+No-10--10.880800-8.000000
+X-TMASE-MatchedRID:
+4lgKwWfF5n/VnF05Xf3Nhjw3I6lJccK5G/SzhBz85r3Icj2m+H71b2xE CKQhFZXnvS9DL2VkU296bMYbioM9qYWlMdNJztTrCZa9cSpBObn+RaR64jcCBSYTWWrcXNI0zIO 4dXAjcKoJKoJfwgWhzRiyB/THwOkQBe3KRVyu+k37YiXdeggqycEtZeAflEc+QHfbKe/4YJI6Ld rv0DTQbCmfkKd1ns/ag3R/Ek2GPE4JSXM6sKcpdxC26qzoFs8npoygB1fuSQ2J36cbtgb3SUZA4 LsIYX43Om31Wjb3kc1//2guIJ+U2J10bFzFUNG3/JPfc9Zp1vECm5kX26CBR3LM2R9NW5DWlXE4 HbFBLM75E1q17Q/UfzLqNtoK78dg+S6p3361v+rBlPdI+u7Q6KlVRHRK9i1KjNLxrcxKViWsFJe HnIHZi6V1zKcF4A+srmRHEvCSQi1SAphtkUXoaEhMRy+qNwXgt2pskOlEt2qM1cDjR5aQui7L53 atdQGSm1VV4pT+kKvwgxb12RZmMmHki4hrFM75ohrMq0nEhQeFTK6KCpk+DPtN2vjEPERN4CY7p OSMb6UzTyUi8ercFx1nPvLV7jiP4ou+VJXT6vahHrZE2+S869kY+KIbxMxzdXXYCBSZPZZKkAU1 7gNQnhxO8fnEdmIqkn6lEyW8qkIiPTMUjkOgkooxrw8IqAD95tjf9hIBwmoc3ovV4KGuUfgbQ2J qKj6WE2yqYorPKyBFjpXQ5j+XENnSJPS2wlpIbTTV38+ofmABRiJ9rIvOj2ULGsUmVy58XBzNLT XAYnwKG+EWh8W45/BpaT0Fx7hn69i2MLNuhDBpW5tu9cAJIpEDZGdrke8kEzQnFLEeMUleqSmMX 0XSKQZqyWM6o1VFMEvZfGWieH+pAlwsszzuk4Gh9SYKzkjuGjFMngtLLWiSrt/NCI71G40gDlKK cvDAitEIHoQMARo5TgV+xRjBqi2xfFWOse0cGdPSDKhN6IB69Iq0PAE+V35Wp24SnAmQNurx2qQ tE1YX+grhkRpRVg==
+X-TM-AS-User-Approved-Sender:
+No
+X-TM-AS-User-Blocked-Sender:
+No
+X-TMASE-Result:
+10--10.880800-8.000000
+X-TMASE-Version:
+SMEX-14.0.0.3092-9.0.1002-27480.000
+X-TM-SNTS-SMTP:
+3F051CF6F6C9FED47B0833AEF55443637D7F67F7F16F5527644857A74329788D2000:9
+X-RMX-ID:
+20230302-150300-RxKnpWrmKJsm-0@out02.hq
+X-RMX-SOURCE:
+193.8.248.6
+Envelope-To:
+<tom@tomfinnern.de>
+X-Spam-Flag:
+NO
+UI-InboundReport:
+notjunk:1;M01:P0:N6ppSFYL3D8=;xBkYq8bspNPDBl+YxQU9YRU4ame/ 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
+
+How to set shell for npm run-scripts in Windows - Stack Overflow
+
+ 
+7 Answers
+
+Sorted by:
+
+                                                                        
+
+308
+
++250
+
+Since npm 5.1
+
+npm config set script-shell "C:\\Program Files (x86)\\git\\bin\\bash.exe" 
+
+or (64bit installation)
+
+npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
+
+Note that you need to have git for windows installed.
+You can revert it by running:
+
+npm config delete script-shell
+
+ 
+
+ 
+
+ 
+
+powershell - How can I make npm projects with Bash shell commands work on Windows? - Stack Overflow
+
+ 
+
+·         Run your npm scripts from Bash via WSL and use the existing Bash commands typically contained in package.json files, such as in your case.
+
+·         Alternatively, with Git for Windows installed, configure npm to use bash.exe as the shell for invoking commands - see this answer [npm v5.1+].
+
+·         Install PowerShell (Core) on all your platforms (including Windows), and define the commands as PowerShell commands (see below) [npm v5.1+].
+
+Note the npm version version requirement (version 5.1 or higher) where noted, due to the configuration option to use a specific shell (script-shell) not being available in earlier versions. Run npm -v to get the installed version, and
+npm install -g npm to update, if possible.
+
+ 
+
+Freundliche Grüße / Best regards
+
+Thomas Finnern
+Softwareentwickler / Software Development
+
+Walter_Mail_Signatur
+
+
+Walter Maschinenbau GmbH
+Jopestrasse 5 - 72072 Tübingen - Germany
+Tel. +49 7071 9393 925 - Fax +49 7071 9393 657
+thomas.finnern@walter-machines.de - www.walter-machines.de
+
+linkedin  xing  youtube
+
+UGG_CORE_UXAward_Mailsignature_en
+
+E-Mail: info@walter-machines.com | Internet: www.walter-machines.com |  
+Geschäftsführer: Harri Rein (Vorsitz) | Mathieu Jouan | Gerhard Riester | Achim Schurius  
+Sitz der Gesellschaft: Tübingen | Handelsregister: Amtsgericht Stuttgart HRB 38 25 54 |  
+Deutsche Bank AG, Reutlingen | Konto-Nr. 1 510 015 | Bankleitzahl 640 700 85 |  
+SWIFT: DEUTDESS640 | IBAN: DE89 6407 0085 0151 0015 00
+
+
+

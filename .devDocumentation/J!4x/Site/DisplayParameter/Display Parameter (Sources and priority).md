@@ -15,7 +15,7 @@ See also the user documentation (for example templates/slideshows)
 
 ## Sources and Order
 
-Sources written in genaral order
+Sources written in general order
 Last setting wins
 
 * Configuration
