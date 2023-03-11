@@ -1,14 +1,9 @@
 
 The missing Joomla™ reference for extension developers
 https://www.dionysopoulos.me/book.html
-https://www.dionysopoulos.me/book.html
+https://github.com/nikosdion/joomla_extensions_development
 
 -------------------------
 Genaral web pages
 https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Upgrading_to_Joomla4
 
-
-https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Upgrading_to_Joomla4
-
-
-https://docs.joomla.org/J3.x:Developing_an_MVC_Component/Upgrading_to_Joomla4
