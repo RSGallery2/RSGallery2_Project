@@ -1,0 +1,144 @@
+
+JoomGallery definition:
+
+My conclusion here:
+
+Autor and owner
+
+The Autor ... English See more below
+
+ist
+
+    eine Person, die einen oder mehrere literarische oder wissenschaftliche Texte verfasst hat oder
+    ein Urheber eines Werks der Musik, des Films, der Kunst oder der Fotografie oder
+    eine Person, die etwas bewirkt oder den Anlass zu etwas gibt.
+
+In unserem Fall ist dies der Fotograf des Bildes. Das könnte auch der Benutzer des Systems sein, muss aber nicht.
+Ein Eingabefeld ohne Verbindung zur Benutzer-Tabelle nimmt den Namen des Autors auf.
+Diese Werte können automatisch aus den EXIF- oder IPTC/IIM-Daten (? Oder auch XMP-Daten ?) der Bilddatei entnommen werden.
+Siehe auch:
+https://de.wikipedia.org/wiki/Exchangeable_Image_File_Format
+https://de.wikipedia.org/wiki/IPTC-IIM-Standard
+
+Alle Metadaten werden in der JoomGallery als XMP-Format gespeichert (Liege ich da richtig?).
+https://de.wikipedia.org/wiki/Extensible_Metadata_Platform
+
+The Owner .....
+
+Der Inhaber
+
+ist der Benutzer, welcher im Tab Veröffentlichung festgehalten wird. Der Benutzer hat eine Verbindung zur Benutzer-Tabelle. Der interne System-Name ist "Created By".
+Dieser dient der Kontrolle, ob entsprechende Berechtigungen zur Datenänderung vorliegen.
+Der Abgleich erfolgt mit
+
+    Categorie gemäß Tab Berechtigungen
+    Images gemäß Tab Berechtigungen
+    Tags ?? - Kein Tab dieser Art hier vorhanden. Wer darf Tags anlegen, zuordnen, löschen, umbenennen?
+
+Author and Owner
+
+The Author
+
+is
+— a Person who has written one or more literary or scientific texts
+— the Creator of a work of music, film, art, or photography
+— a Person who causes something or gives the cause for something
+
+In our case, it is the photographer of the picture.
+This could also be the user, but does not have to be.
+The input field has no connection to the user table.
+The value can be taken automatically from the EXIF ​​or IPTC/IIM data (? Or XMP data ?).
+See also:
+https://en.wikipedia.org/wiki/Exif
+https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model
+The XMP format is stored by JG4 as metadata (am I correct there?).
+https://en.wikipedia.org/wiki/Extensible_Metadata_Platform
+
+The Owner
+
+Saved in Publishing tab. The internal system name is “Created By”.
+User to which the table entry for Tag, Category, Images belongs.
+Used to control permissions
+— Category according to the Permissions tab
+— Images according to the Permissions tab
+— tags ?? — Who is allowed to create, assign, delete, rename tags?
+
+Augenblicklicher Stand 12.03.2023
+DE Images, Bilder, Übersicht - Autor und Inhaber korrekt
+DE Images, Bilder, Bild bearbeiten, Tab Bilder - Autor korrekt
+DE Images, Bilder, Bild bearbeiten, Tab Veröffentlichung - Autor hier nicht korrekt, das ist der Inhaber
+
+DE Kategorien, Kategorien, Kategorie bearbeiten, Tab Veröffentlichung - Autor hier nicht korrekt, das ist der Inhaber
+
+DE Tags, Markierungen/Tags, Tag bearbeiten, Tab Veröffentlichung - Autor hier nicht korrekt, das ist der Inhaber
+Tab Berechtigungen ist nicht vorhanden
+
+EN Tags, Tags, Edit Tag, Tab Publishing - Created By must be changes to Owner
+EN Categories, Categories, Overview List - Owner Column correct
+EN Categories, Categories, Edit Categorie, Tab Publishing - Created By must be changes to Owner
+
+EN Images, Images, Overview List - Owner and Author Columns correct
+EN Images, Images, Edit Image - Tab Publishing - Created By must be changes to Owner
+EN Images, Images, Edit Image - Tab Images - Author correct
+
+Currently in the Admin Navigation I have diffenent screens - Screenshots below
+1 - EN
+2 - DE
+3 - DE Lang Debug on
+
+EN-Screenshot 2023-03-12 214107
+DE-Screenshot 2023-03-12 214231
+DE-Lang-Debug-ON-Screenshot 2023-03-12 214537
+
+DE:
+Hinsichtlich der Beschreibung für Autor und Inhaber/Besitzer gebe ich dir recht.
+Aus Sicht des Systems ist es recht einfach:
+Das Author-Feld ist ein einfaches Textfeld in dem 'beliebiger' Text eingetragen werden kann.
+Der Inhaber/Besitzer kann nur ein vorhandener Joomla-User sein.
+
+EN:
+I agree with you about the description for author and owner.
+From the system's point of view, it's quite simple:
+The Author field is a simple text field in which 'any' text can be entered.
+The owner can only be an existing Joomla user.
+
+    Tags ?? - Kein Tab dieser Art hier vorhanden. Wer darf Tags anlegen, zuordnen, löschen, umbenennen?
+
+Da muss man unterscheiden:
+Tags einem Bild zuordnen darf derjenige der die Berechtigung zum editieren von Bildern hat.
+Die Pflege der Tags erfolgt in einer eigenen Tabelle. Wer die Berechtigung zum erstellen, ändern und löschen von Tags hat müsste dort festgelegt werden.
+Aber du hast Recht: Aktuell gibt es keinen Permissions Tab für die Tags, ist das noch geplant @Elfangor93 ?
+
+    — tags ?? — Who is allowed to create, assign, delete, rename tags?
+
+A distinction must be made:
+Tags may be assigned to an image by those who have the right to edit images.
+Tags are maintained in a separate table. Whoever has the right to create, change and delete Tags would have to be defined there.
+But you are right: Currently there is no permissions tab for the Tags, is that still planned @Elfangor93 ?
+
+    Alle Metadaten werden in der JoomGallery als XMP-Format gespeichert (Liege ich da richtig?).
+
+Metadaten im XMP-Format sind in der Bilddatei gespeichert. Die JoomGallery speichert ihre Daten in der Datenbank-Tabelle nicht in der Bilddatei.
+Die JoomGallery kann derzeit nur Metadadaten im Exif- und IPTC-Format lesen und in die Datenbank übernehmen, aber nicht aus XMP.
+
+    The XMP format is stored by JG4 as metadata (am I correct there?).
+
+Metadata in XMP format is stored in the image file. The JoomGallery stores its data in the database table not in the image file.
+The JoomGallery can currently only read metadata in Exif and IPTC format and transfer it to the database, not from XMP.
+
+    What's going on here. I am confused.
+    Includes this Pull Request all changes from eumel1602?
+
+DE:
+Nein, ein PR enthält überhaupt keine deutschen Sprachdateien.
+Die deutschen Sprachdateien müssen separat installiert werden.
+Die aktualisierung der deutschen Sprachdateien ist ein separater Schritt der kann/sollte erst dann erfolgen nachdem der PR in den Main-Branch gemergt wurde.
+Deshalb macht es meiner Meinung nach nur Sinn einen PR mit den englischen Sprachdateien zu testen.
+
+EN:
+No, a PR does not contain any German language files at all.
+The German language files must be installed separately.
+Updating the German language files is a separate step that can/should only be done after the PR has been merged into the main branch.
+Therefore, in my opinion, it only makes sense to test a PR with the English language files.
+
+

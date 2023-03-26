@@ -3,6 +3,28 @@ joomla4x:
 
 J4x uses a svg file for the favicon
 
+--------------------------------------------
+https://kevinsguides.com/guides/webdev/joomla4/joomla-4-templates/cassiopeiafavicon
+
+Option 2: Place Favicon In System Images Folder
+Simply take your favicon file, name it favicon.ico, and overrite the old image at: yoursite/media/system/images
+
+So it should be... yoursite/media/system/images/favicon.ico
+
+You will have to do this through FTP or your web host's file manager, as you cannot get to the template folder from Joomla's built in media manager. You could also change your media manager to point to the root directory, but I wouldn't recommend this for security reasons.
+
+That will get the favicon displaying properly. However, if you want to fully change the favicon, there are a few more steps you need to take.
+
+3 Favicon Files
+Ideally, your source favicon.ico file should be an SVG (vector) file. The way Cassiopeia is currently set up, it actually links to three different favicon files.
+
+favicon.ico
+joomla-favicon.svg
+joomla-favicon-pinned.svg
+Initially, it pulls these images from yoursite/media/system/images. If you place the same files under yoursite/media/templates/site/cassiopeia/images, the files under the templates directory are used in lieu of the system directory.
+
+So if you want to fully replace all 3 files, you need to place your favicon.ico under yoursite/media/system/images as discussed before. You must also create SVG versions of your favicon and place them under yoursite/media/system/images with the filenames joomla-favicon.svg and joomla-favicon-pinned.svg
+--------------------------------------------
 
 in template folder add images as svg
 

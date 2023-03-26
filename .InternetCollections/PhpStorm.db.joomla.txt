@@ -1,0 +1,11 @@
+
+
+// assign joomla db
+
+[+] -> import from sources 
+    ==> settings from joomla configurations file
+     MY SQL did work 
+
+https://rolandd.com/blog/phpstorm/setting-up-data-source-using-the-joomla-configuration
+
+

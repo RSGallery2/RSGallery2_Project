@@ -1,7 +1,16 @@
 
+https://kevinsguides.com/guides/webdev/joomla4/ref/j4webassetmanager
+https://www.dionysopoulos.me/book/concepts-webassetmanager.html
+
 https://docs.joomla.org/J4.x:Web_Assets
 
 $wa->registerAndUseScript('bar', 'com_foobar/bar.js', [], [], []);
+
+
+On plugins
+$doc = Factory::getApplication()->getDocument();
+$wa = $doc->getWebAssetManager();
+$wa->getRegistry()->addExtensionRegistryFile('plg_content_contentplugdemo');
 
 
 

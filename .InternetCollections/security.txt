@@ -1,0 +1,34 @@
+
+security.txt
+file in folder /.well-known/security.txt
+
+
+
+https://de.wikipedia.org/wiki/Security.txt
+
+security.txt is a proposed standard for websites' 
+security information that is meant to allow security 
+researchers to easily report security vulnerabilities.[1][2] 
+The standard prescribes a text file called "security.txt" 
+in the well known location, similar in syntax to robots.txt 
+but intended to be machine- and human-readable, for those 
+wishing to contact a website's owner about security 
+issues.[3] security.txt files have been adopted by 
+Google, GitHub, LinkedIn, and Facebook.[4]
+
+
+security.txt files can be served under 
+the /.well-known/ directory (i.e. /.well-known/security.txt) 
+or the top-level directory (i.e. /security.txt) of a website. 
+The file must be served over HTTPS and in plaintext format.[10]
+
+
+
+Example google
+
+Contact: https://g.co/vulnz
+Contact: mailto:security@google.com
+Encryption: https://services.google.com/corporate/publickey.txt
+Acknowledgements: https://bughunters.google.com/
+Policy: https://g.co/vrp
+Hiring: https://g.co/SecurityPrivacyEngJobs

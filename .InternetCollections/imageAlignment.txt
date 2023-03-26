@@ -1,0 +1,38 @@
+
+max width, max height .. ==> auto
+Viviana Menzel
+
+[4.2] - Admin login - set max width on image by travisrisner · Pull Request #39766 · joomla/joomla-cms · GitHub
+
+
+max-width solves the problem for images that are too wide 
+for the login module. If your logo is portrait or square 
+and maybe not so wide then the max-width has no effect, 
+but the max-height and the image looks distorted. Normally 
+it should be max-width:100% in combination with height:auto 
+or width: auto and max-height: 4.4rem to allow the image 
+to resize correctly.
+
+
+I think, in the case of the logo for the login module, 
+the height of the image is more important than the width. 
+Imagine if someone puts a 800px high image, the login will 
+looks very weird and you will need to scroll to be able to 
+enter your credentials.
+IMHO is max-height: 4.4rem and width: auto the better 
+solution... but that should be tested with different 
+kind of logos. 
+
+Not sure if object-fit would help here somehow.
+
+I was thinking about that too, but in this case you want 
+to display the full logo, object-fit will crop the image...
+
+Fix works, but can I suggest a slightly different 
+approach? 4.4em is tiny for a lot of logos.
+
+What about something like:
+
+max-height: 15rem;
+max-width: 100%;
+object-fit: contain;

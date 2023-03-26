@@ -1,0 +1,37 @@
+
+https://dev.to/sp90/5-tips-to-become-better-at-css-3d24
+
+
+//-----------------------------------------------
+// fixed outer width
+* {
+  box-sizing: border-box;
+}
+
+//-----------------------------------------------
+// Single row content ==> flex 
+
+
+// Markup
+<nav>
+  <img src="http://placekitten.com/50/50" alt="">
+
+  <h3>Some title</h3>
+
+  <button>menu</button>
+</nav>
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+nav img {
+  height: 100%;
+}
+
+//-----------------------------------------------
+

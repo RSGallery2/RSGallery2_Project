@@ -1,4 +1,8 @@
 
+// good design / joomla website itself ...
+https://imageshack.com/i/eyAUodLsj
+
+
 https://www.firecoders.com/joomla-extensions/showtime-image-gallery
 https://github.com/ganlanyuan/tiny-slider
 
