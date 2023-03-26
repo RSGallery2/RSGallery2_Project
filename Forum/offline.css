@@ -1,0 +1,19 @@
+
+div {
+    background-image: url(fallback.png);
+    background-image: url(your.svg), none;
+}
+
+
+.logo {
+/*    max-width: 500px; /**/
+    max-width: 500px; /**/
+    margin: auto;
+    widh: 300px;
+}
+
+.content {
+    max-width: 450px; /**/
+/*    max-width: 960px; /**/
+    margin: auto;
+}
