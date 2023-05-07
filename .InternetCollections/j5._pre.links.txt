@@ -1,0 +1,8 @@
+
+	
+brianteeman
+if you search hard then you will find the following two articles about joomla 5. An updated or living document version of this really should be prominently available on the dev site. Would save so much time and would allow those who are not privileged to "work behind the scenes" to know where to help contrbute. 
+https://www.joomla.org/announcements/release-news/5863-joomla-5-0-bold-in-one-year-but-can-we-do-it.html
+https://www.joomla.org/announcements/release-news/5868-joomla-5-panta-rhei-the-follow-up.html
+
+

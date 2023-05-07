@@ -1,0 +1,4 @@
+
+
+try deleting the autoloader file in administrator/cache
+

@@ -1,0 +1,19 @@
+
+jorobo doesn't create components,
+ it's for packaging and maintaining the component, 
+ dgrammatiko project creates a component
+
+Jrobo
+https://github.com/joomla-projects/jorobo
+
+	
+dgrammatiko
+
+So I published something on npm that might be useful:
+Scaffold any component/plugin/module/template/library with essentially one command.
+navigate your terminal inside an empty folder then run
+
+npm create @dgrammatiko/joomla-extension
+Then install the npm pkgs: npm install
+Then initialise the dev environment with npm run init
+link the subfolder www to your server (symbolic link) and voila 
