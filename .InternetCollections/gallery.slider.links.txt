@@ -1,4 +1,9 @@
 
+owl slide bootstrap for J4 coolcat elisa foltyn
+https://coolcat-creations.com/blog/tutorial-erstelle-ein-eigenes-custom-field-plugin
+https://github.com/coolcat-creations/plg_fields_owlimg
+
+
 google hero-slider -> like banner
 https://codyhouse.co/demo/hero-slider/index.html
 

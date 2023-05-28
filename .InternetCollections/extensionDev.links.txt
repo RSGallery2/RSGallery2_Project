@@ -1,0 +1,37 @@
+
+joomla extension developer links
+
+
+In preparation for our meeting on the 23rd I have made a few tutorials so that we can get more focused conversations. Please review and give feedback as needed. Enjoy!!! (Don’t forget to like my tutorials)
+
+3:21 PM
+
+https://youtu.be/mGFGGQWGl60
+
+YouTube - Dependency Injection Simplified
+youtube video thumbnail
+3:22 PM
+
+https://youtu.be/F35UMZRJ_S4
+
+YouTube - Introduction to Super Powers
+youtube video thumbnail
+3:22 PM
+
+https://youtu.be/HspBu8Ql-yM
+
+YouTube - Setup Your own Super Power Repository
+youtube video thumbnail
+3:22 PM
+
+
+
+
+
+
+
+
+https://youtu.be/y8vjGW1vpJw
+
+YouTube - Deep dive into the new super power search
+
