@@ -1,4 +1,12 @@
 
+Getting the most out of Mattermost
+https://magazine.joomla.org/all-issues/november-2022/getting-the-most-out-of-mattermost
+
+Our channels are prefixed with the department they belong to:;
+
+PD - Production Department
+OD - Operations Department
+OR - Outreach Department
 
 https://www.joomla.org/announcements/release-news/5874-sunset-on-glip-as-joomla-welcomes-mattermost.html
 
