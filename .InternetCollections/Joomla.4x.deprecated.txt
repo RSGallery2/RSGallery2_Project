@@ -1,0 +1,10 @@
+
+As we want to get rid of static function calls in Joomla. We added a bunch of replacement functions in 4.4.
+
+Factory::getUser() -> $this->getCurrentUser() https://github.com/joomla/joomla-cms/pull/40422
+Factory::getDocument() -> $this->getDocument() https://github.com/joomla/joomla-cms/pull/40662
+Factory::getLanguage() -> $this->getLanguage() https://github.com/joomla/joomla-cms/pull/40614
+Text::_() -> $this->text() https://github.com/joomla/joomla-cms/pull/41063
+Sometimes you have to add an aware interface and trait to the class when the base class is not implementing it.
+
+

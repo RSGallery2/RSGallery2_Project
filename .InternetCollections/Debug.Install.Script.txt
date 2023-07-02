@@ -1,0 +1,10 @@
+Manuel
+
+Is there a way to debug the scriptfile of a custom 
+component via xdebug on install and update?
+
+Guido - JoomTools
+yes
+make the install from local ../tmp/installfolder
+then you can set the breakpoints in your scriptfile
+
