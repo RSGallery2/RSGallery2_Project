@@ -10,9 +10,12 @@ https://www.firecoders.com/joomla-extensions/showtime-image-gallery
 https://github.com/ganlanyuan/tiny-slider
 
 
-https://demo.fastw3b.net/fw-gallery/en-en
+https://hunyadi.info.hu/levente/en/sigplus
+sigplus, weil eine bestehende Bildergalerie komplett per FTP 
+administriert werden kann (Bilder hinzufügen oder löschen, 
+Bildunterschriften ändern).
+??? not there anymore ?? https://demo.fastw3b.net/fw-gasigplusllery/en-en
 Good doc about image layouts
-
 
 
 JoomTools/plg_fields_jtgallery https://github.com/JoomTools/plg_fields_jtgallery
