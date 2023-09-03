@@ -1,0 +1,26 @@
+
+--------------------------
+ Joomla boilerplate
+
+--------------------------
+the books of Astrid Günther and Nicholas Dionysopoulos.You learn the most from that.
+  AstridX
+
+--------------------------
+https://github.com/dgrammatiko/create-joomla-extension
+
+	
+--------------------------
+Harald Leithner
+I have something similar (bit more further developed), 
+on the other side we have jorobo which is the 
+"offical" joomla robo.li tool kit to package extensions,
+ @Hannes Papenberg would like to extend it so it can create 
+ extensions like your tool (and my tool and 10 other tools) 
+ are already doing. combine this energy could make sense... 
+ 
+
+--------------------------
+herman-peeren
+https://github.com/HermanPeeren/Extengen
+

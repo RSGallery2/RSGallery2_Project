@@ -1,0 +1,24 @@
+$headers['x-crawler'] = 'my-crawler';
+
+$curlConfig = [
+            CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
+            CURLOPT_SSL_VERIFYPEER => 2,
+            CURLOPT_SSL_VERIFYHOST => 2
+];
+
+
+$options = [
+                'follow_location' => true,
+                'timeout'         => $this->appConfig->getInt('crawlerRequestTimeout'),
+                'userAgent'       => $this->appConfig->get('crawlerUserAgent'),
+                'headers'         => $headers,
+                'transport'       => [
+                    'curl' => $curlConfig
+                ]
+            ];
+
+$httpClient = HttpFactory::getHttp(
+            new Registry(
+                $options
+            )
+        );

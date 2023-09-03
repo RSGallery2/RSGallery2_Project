@@ -1,0 +1,13 @@
+
+https://docs.joomla.org/Testing_Joomla!_patches
+
+The top part and the linked docs there are a bit outdated, 
+but at the bottom is a section which describes testing with 
+pre-built packages. This is also good for J4 and J5: 
+https://docs.joomla.org/Testing_Joomla!_patches#Prebuild_packages
+
+
+finnern:
+See also piza bug and fun links .txt
+
+

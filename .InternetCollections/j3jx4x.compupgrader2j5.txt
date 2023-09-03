@@ -1,0 +1,16 @@
+
+	
+Allon Moritz
+With the help of 
+https://github.com/nikosdion/joomla_com_upgrader 
+it goes very fast, automatically. Before you ask, 
+some extension still have the old MVC structure, 
+so that means that the same codebase works on 
+Joomla 3, 4 and 5 now. As these classes are 
+namespaced since Joomla 3.8, you can safely 
+make the switch now. 
+
+I saw in this channel earlier that @Mark Fleeson took over and made some improvements: 
+https://github.com/mfleeson/joomla_com_upgrader but I h
+
+

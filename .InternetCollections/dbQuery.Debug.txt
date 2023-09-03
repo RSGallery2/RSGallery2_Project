@@ -1,0 +1,8 @@
+
+// debug echo to display the SQL request
+echo $db->replacePrefix($query)); 
+
+echo $query->__toString() 
+
+echo $query->dump();
+

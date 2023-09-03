@@ -1,0 +1,161 @@
+
+See Tags Router in Joomla 4.3
+
+class Router extends RouterView
+{
+    /**
+
+ * Content Component router constructor
+ *
+ * @param   SiteApplication           $app              The application object
+ * @param   AbstractMenu              $menu             The menu object to work with
+ * @param   CategoryFactoryInterface  $categoryFactory  The category object
+ * @param   DatabaseInterface         $db               The database object
+ */
+public function __construct(SiteApplication $app, AbstractMenu $menu)
+{
+    $seminars = new RouterViewConfiguration('seminars');
+    $this->registerView($seminars);
+    $seminar= new RouterViewConfiguration('seminar');
+    $seminar->setKey('id')->setParent($seminars);
+    $this->registerView($seminar);
+    $form = new RouterViewConfiguration('form');
+    $form->setKey('id');
+    $this->registerView($form);
+
+    parent::__construct($app, $menu);
+
+    $this->attachRule(new MenuRules($this));
+    $this->attachRule(new StandardRules($this));
+    $this->attachRule(new NomenuRules($this));
+}
+}
+
+
+Second variant 
+
+class Router extends RouterView
+{
+
+
+    public function __construct(SiteApplication $app, AbstractMenu $menu)
+    {
+        $views = ['seminars', 'seminar', 'form'];
+
+        foreach($views as $view)
+        {
+            $route = new RouterViewConfiguration($view);
+            if(in_array($view, array('seminar', 'form')))
+            {
+                $route->setKey('id');
+            }
+            $this->registerView($route);
+        }
+
+        parent::__construct($app, $menu);
+
+        $this->attachRule(new MenuRules($this));
+        $this->attachRule(new StandardRules($this));
+        $this->attachRule(new NomenuRules($this));
+    }
+
+
+    /**
+     * Build the route for the com_banners component
+     *
+     * @param   array  $query  An array of URL arguments
+     *
+     * @return  array  The URL arguments to use to assemble the subsequent URL.
+     *
+     * @since   3.3
+     */
+    public function build(&$query)
+    {
+        $segments = array();
+
+        if (isset($query['view']))
+        {
+            if($query['view'] !== 'seminars')
+            {
+                $segments[] = $query['view'];
+            }
+
+            unset($query['view']);
+        }
+
+        if (isset($query['id']))
+        {
+            $segments[] = $query['id'];
+            unset($query['id']);
+        }
+
+        return $segments;
+    }
+
+    /**
+     * Parse method for URLs
+     * This method is meant to transform the human readable URL back into
+     * query parameters. It is only executed when SEF mode is switched on.
+     *
+     * @param   array  &$segments  The segments of the URL to parse.
+     *
+     * @return  array  The URL attributes to be used by the application.
+     *
+     * @since   3.3
+     */
+    public function parse(&$segments)
+    {
+        $vars = array();
+
+        if($segments[0] !== 'seminars')
+        {
+            $vars['view'] = $segments[0];
+            $vars['id'] = (int) $segments[1];
+        }
+
+        $segments = [];
+
+        return $vars;
+    }
+
+}
+
+
+? improved ?
+class Router extends RouterView
+{
+
+
+    public function __construct(SiteApplication $app, AbstractMenu $menu)
+    {
+        $seminars = new RouterViewConfiguration('seminars');
+        $this->registerView($seminars);
+        $seminar= new RouterViewConfiguration('seminar');
+        $seminar->setKey('id')->setParent($seminars);
+        $this->registerView($seminar);
+        $form = new RouterViewConfiguration('form');
+        $form->setKey('id');
+        $this->registerView($form);
+
+        parent::__construct($app, $menu);
+
+        $this->attachRule(new MenuRules($this));
+        $this->attachRule(new StandardRules($this));
+        $this->attachRule(new NomenuRules($this));
+    }
+    
+}
+
+Sorry, dann musst du noch das hier einbauen:
+    public function getSeminarSegment($id, $query)
+    {
+        return [(int) $id => $id];
+    }
+    public function getSeminarId($segment, $query)
+    {
+        return (int) $segment;
+    }
+
+10:29 AM
+und das nochmal für Form.
+
