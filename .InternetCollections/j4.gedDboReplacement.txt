@@ -19,5 +19,18 @@ and added
 
 use Joomla\Database\DatabaseFactory; 
 
-to the top of the page
+-------------------------------------------------------------------------------
+
+use Joomla\Database\DatabaseInterface;
+$db = Factory::getContainer()->get(DatabaseInterface::class);
+
+or 
+
+// in a model
+$this->getDatabase(); 
+
+
+
+
+
 

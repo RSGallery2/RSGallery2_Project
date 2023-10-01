@@ -1,0 +1,12 @@
+
+
+The prompt was: "I need a joomla 4 plugin to set the creation date of an 
+article to the start date jform_com_fields_startdatum if it exists" - it 
+worked immediately in the backend but not in the frontend. Then chat GPT 
+sent me some debug possibilities and I figured out it was because the 
+context in frontend is different and "we" changed to code to work on 
+frontend too. From this point I would add language files and a setting 
+in the xml myself. Sometimes in future in case more people would need it.
+
+
+

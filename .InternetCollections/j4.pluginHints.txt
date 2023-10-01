@@ -1,0 +1,13 @@
+
+
+please never add logic to getEventListners(); even if it looks 
+like a good idea it isn't supposed to used like that.
+remove the $allowLegacyListeners = true convert everyone to 
+event subscriber. Didn't know till now that it exists. Please 
+be consistent with current techniques on refactoring or 
+creating new extensions.
+The plugin has a $app which should be injected in the provider.
+New plugins return always void and use $event->setResult(); 
+or $event->setArgument(); to set values
+about the problem it self, can you please add stacktraces to 
+each variant in the called event.

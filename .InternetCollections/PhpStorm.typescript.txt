@@ -1,6 +1,7 @@
 
-phpstorm used tzpescript options 
+phpstorm used typescript options 
  --target "ES2018" 
-
+ --target ES2020
+ 
 <option name="typeScriptCompilerParams" value="--target &quot;ES2018&quot; " />
 
