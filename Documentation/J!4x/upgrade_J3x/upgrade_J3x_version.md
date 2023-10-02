@@ -6,6 +6,28 @@
 - Install J4x
 - Install RSG2 J4x version
 
+### Clean up J3x version
+
+ToDo: ? Ceck if newer plugin can be installed before removing so parameters may be kept or new plugins react to old {rsg..} syntax ?
+
+#### remove old plugins* RSGallery2 Single Image Display -> ...
+*   RSGallery2 Single Image Display
+*   RSGallery2 Gallery Display
+*   ...
+
+![Remove old plugins](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade.remove_plugins.png?raw=true)
+
+This prevents following error
+![Remove old plugins](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade.remove_plugins.error.png?raw=true)
+
+
+
+ToDo:
+Plugin replacements
+RSGallery2 Single Image Display -> ...
+RSGallery2 Gallery Display -> ...
+...
+
 ## Transfer Upgrade Path
 
 - Install J4x fresh
