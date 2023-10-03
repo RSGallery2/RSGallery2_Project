@@ -1,0 +1,104 @@
+
+Does anyone have experience with implementing frontend drag and drop reordering?
+I have setup a frontend list view and set the $saveOrderingUrl and added HTMLHelper::_('draggablelist.draggable');
+I can pickup a row in the table but cannot drop it on another position. When I try to drop the row into its new position, I see in the console the the following error: 
+
+
+2:49 PM
+
+I have no clue what goes wrong. But because of the error the saveOrderAjax isn't called. 
+
+
+dgrammatiko
+2:59 PM
+Extremely important that the tbody element has all the data that the draggula needs, check: https://github.com/joomla/joomla-cms/blob/5cdef837c9763a711cecdf5a8929622dc4c4b8e4/administrator/components/com_content/tmpl/articles/default.php#L150C31-L152C41
+
+GitHub
+joomla-cms/administrator/components/com_content/tmpl/articles/default.php at 5cdef837c9763a711cecdf5a8929622dc4c4b8e4 · joomla/joomla-cms
+Home of the Joomla! Content Management System. Contribute to joomla/joomla-cms development by creating an account on GitHub.
+
+joomla-cms/administrator/components/com_content/tmpl/articles/default.php at 5cdef837c9763a711cecdf5a8929622dc4c4b8e4 · joomla/joomla-cms
+
+René Kreijveld
+3:01 PM
+Yes, tbody has that:
+
+3:02 PM
+<tbody class="js-draggable" data-url="index.php?option=com_cglegent&task=fdgroups.saveOrderAjax&tmpl=component&fcaa800b1e2523cf233fe90c43cc44ad=1" data-direction="asc"> 
+
+
+dgrammatiko
+3:03 PM
+\= ??
+
+3:04 PM
+can you enable debug so the stack could be more readable and repost the error stack?
+
+
+René Kreijveld
+3:05 PM
+Enable javascript debug you mean?
+
+
+dgrammatiko
+3:07 PM
+no, enable the debug in the Joomla global settings, then try to recreate the error again in the url that fails and capture a screen shot of the error stack 
+
+
+René Kreijveld
+3:07 PM
+I will try that
+
+3:09 PM
+When I select a row to drag I can drag the row, but not drop it into a new position. No error is displayed in the debug module at the bottom. Only error I see is in the Javascript console.
+
+
+dgrammatiko
+3:13 PM
+You also need a group id on each < tr> element: https://github.com/joomla/joomla-cms/blob/5cdef837c9763a711cecdf5a8929622dc4c4b8e4/administrator/components/com_content/tmpl/articles/default.php#L170
+
+GitHub
+joomla-cms/administrator/components/com_content/tmpl/articles/default.php at 5cdef837c9763a711cecdf5a8929622dc4c4b8e4 · joomla/joomla-cms
+Home of the Joomla! Content Management System. Contribute to joomla/joomla-cms development by creating an account on GitHub.
+
+joomla-cms/administrator/components/com_content/tmpl/articles/default.php at 5cdef837c9763a711cecdf5a8929622dc4c4b8e4 · joomla/joomla-cms
+
+René Kreijveld
+3:14 PM
+Yes I have that
+
+3:19 PM
+The error occurs in draggable.js. There is a const getOrderData, that has an argument inputRows and this inputRows is empty.
+
+3:21 PM
+
+
+dgrammatiko
+3:23 PM
+The inputRows are the checkboxes: [name="cid[]"]. Are you using the Grid class to render the check box: https://github.com/joomla/joomla-cms/blob/5cdef837c9763a711cecdf5a8929622dc4c4b8e4/administrator/components/com_content/tmpl/articles/default.php#L174
+
+GitHub
+joomla-cms/administrator/components/com_content/tmpl/articles/default.php at 5cdef837c9763a711cecdf5a8929622dc4c4b8e4 · joomla/joomla-cms
+Home of the Joomla! Content Management System. Contribute to joomla/joomla-cms development by creating an account on GitHub.
+
+joomla-cms/administrator/components/com_content/tmpl/articles/default.php at 5cdef837c9763a711cecdf5a8929622dc4c4b8e4 · joomla/joomla-cms
+
+René Kreijveld
+3:25 PM
+Hah! That was it!
+
+3:25 PM
+I thought I didn't need this checkbox in the frontend ... Duh ...
+
+
+René Kreijveld
+3:45 PM
+
+
+
+
+
+
+
+All solved now Dimitris, many thanks for giving me the hints to resolve this :slightly_smiling_face:
+
