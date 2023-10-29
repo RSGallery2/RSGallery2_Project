@@ -1,4 +1,25 @@
 
+J4x
+
+https://www.techfry.com/joomla/how-to-create-router-for-joomla-component
+
+https://groups.google.com/g/joomla-dev-general/c/YnILNx_Lmeg
+
+https://joomla.stackexchange.com/questions/32327/joomla-correct-way-of-routing
+
+https://blog.astrid-guenther.de/joomla/componente/75joomla-einen-service-hinzufuegen-routing/
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
 ** general
 https://docs.joomla.org/J3.x:New_Routing_System/de
 

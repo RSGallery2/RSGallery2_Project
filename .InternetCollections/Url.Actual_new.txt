@@ -1,3 +1,11 @@
+J4: JUri was only an alias for the real class name. 
+see here: https://github.com/joomla/joomla-cms/blob/3.10-dev/libraries/classmap.php#L274
+
+use "Joomla\CMS\Uri\Uri"
+
+example
+"Joomla\CMS\Uri\Uri::delVar('testvar')"
+
 
 
 $current = JUri::getInstance()->current();

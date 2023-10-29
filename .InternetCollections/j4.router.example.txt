@@ -1,5 +1,5 @@
 
-See Tags Router in Joomla 4.3
+// See Tags Router in Joomla 4.3
 
 class Router extends RouterView
 {

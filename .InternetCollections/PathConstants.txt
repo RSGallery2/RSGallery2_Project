@@ -6,6 +6,17 @@ JPATH_ADMINISTRATOR . '/components/'
 deprecated: JPATH_COMPONENT_ADMINISTRATOR
 
 
+J4: JUri was only an alias for the real class name. 
+see here: https://github.com/joomla/joomla-cms/blob/3.10-dev/libraries/classmap.php#L274
+
+use "Joomla\CMS\Uri\Uri"
+
+example
+"Joomla\CMS\Uri\Uri::delVar('testvar')"
+
+
+
+
 J3x:
 -------------------
 File Pathes in Joomla (For URL paths, try using JURI::base())
