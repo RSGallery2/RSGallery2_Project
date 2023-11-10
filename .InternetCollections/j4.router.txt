@@ -10,10 +10,21 @@ https://joomla.stackexchange.com/questions/32327/joomla-correct-way-of-routing
 https://blog.astrid-guenther.de/joomla/componente/75joomla-einen-service-hinzufuegen-routing/
 
 
+-----------------------------------
 
+$app = Factory::getContainer()->get(SiteApplication::class);
+$router = $app->getRouter();
 
+$siteUrl = Route::link('site', $url);
 
+-----------------------
 
+         $router = \Joomla\CMS\Router\Route::link('site', $url);
+Route::link('site', $url);
+returns a string 
+
+  return Route::link('site', $url);
+  
 
 
 
