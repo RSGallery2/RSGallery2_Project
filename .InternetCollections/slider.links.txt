@@ -1,4 +1,11 @@
 
+
+tiny-slider
+https://github.com/ganlanyuan/tiny-slider
+https://codepen.io/jordelca/pen/wvvKJNQ
+
+
+
 See more in *slider* ...
 
 

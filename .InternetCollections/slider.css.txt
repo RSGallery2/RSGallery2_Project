@@ -1,0 +1,280 @@
+https://codeconvey.com/pure-css-image-slider/
+
+Pure CSS Image Slider without Javascript
+
+
+
+For those who don’t have knowledge of Javascript or jQuery and trying to create a pure CSS Image slider then this script going to help you to accomplish your goal. In this simple tutorial, I am going to build an image slider without touching Javascript.
+
+This slideshow has a few amazing features such as you can add multiple text or links over each photo. Additionally, the slider has a navigation system that allows you to move the slide.
+
+
+It also has a caption feature where you can add multiple text or links over each sliding photo. Moreover, you can easily customize it to make it fit according to your site design. I am sure, you are going to love this CSS Image slideshow because it’s designed to full fill customer needs.
+
+
+Furthermore, you can easily make it into a fullscreen or fullwidth image slider to use as a background by just removing the container element. Another great feature about this CSS-only Carousel is to allows you to add unlimited images by customizing the CSS and HTML code a little bit. I will give you a step-by-step guideline to make it by using CSS3 and HTML5 techniques.
+
+How to Create Pure CSS Image Slider
+Because it is pure CSS so this photo Slideshow didn’t use any Js code. Let’s load the stylesheet which is componenet.css into your HTML document.
+
+You need to add the file just before the closing </head>
+
+<link rel="stylesheet" type="text/css" href="css/component.css" >
+Next, We will create an HTML structure for a photo slideshow. The markup isn’t too much complicated. All we have to wrap all the HTML code inside the main container.
+
+Our container defines as an HTML5 attribute called article which has an ID cc-slider. Inside that, We have set five input types of radio buttons. A child div with an ID cc-slides will hold each sliding image and HTML content. Lastly, We have put five label elements inside a div with ID controls.
+
+Here we have complete HTML source code:
+
+<article id="cc-slider">
+  <input checked="checked" name="cc-slider" id="slide1" type="radio">
+  <input name="cc-slider" id="slide2" type="radio">
+  <input name="cc-slider" id="slide3" type="radio">
+  <input name="cc-slider" id="slide4" type="radio">
+  <input name="cc-slider" id="slide5" type="radio">
+  <div id="cc-slides">
+    <div id="overflow">
+      <div class="inner">
+        <article>
+          <div class="cctooltip">
+            <h3>Amazing / Photoshop / Photography</h3>
+            <h4>By <a href="#">codeconvey</a></h4>
+          </div>
+          <img src="images/slide-1.jpg"> 
+        </article>
+        <article>
+          <div class="cctooltip">
+            <h3>Abstract Retro Photography</h3>
+            <h4>By <a href="#">codeconvey</a></h4>
+          </div>
+          <img src="images/slide-2.jpg"> </article>
+        <article>
+          <div class="cctooltip">
+            <h3>Street Photography</h3>
+            <h4>By <a href="#">codeconvey</a></h4>
+          </div>
+          <img src="images/slide-3.jpg"> 
+        </article>
+        <article>
+          <div class="cctooltip">
+            <h3>Portrait / Woman / Photography</h3>
+            <h4>By <a href="#">codeconvey</a></h4>
+          </div>
+          <img src="images/slide-4.jpg"> 
+        </article>
+        <article>
+          <div class="cctooltip">
+            <h3>Fashion / Sport / Photography</h3>
+            <h4>By <a href="#">codeconvey</a></h4>
+          </div>
+          <img src="images/slide-5.jpg"> 
+        </article>
+      </div>
+    </div>
+  </div>
+  <div id="controls">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+    <label for="slide4"></label>
+    <label for="slide5"></label>
+  </div>
+</article>
+Writing CSS Style for Image Slider
+Let’s start by creating a basic layout of our slider. To do that we will set the margin and add the max-width to the slider container. Give them a relative position as well.
+
+We don’t want to show the radio button so we will hide them and will handle them through the label element in our next step.
+
+#cc-slider {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 850px;
+    position:relative;
+}
+#cc-slider input {
+    display: none;
+}
+Now we will actually slide the images while clicking on the arrow button. We make each image width 100% so it will auto-scale inside the main container.
+
+As we have five images in the image slider so we will set the width 500% for the inner element but make the overflow element is hidden with 100% width.
+
+
+Each article an element that is inside the inner will have a 20% width. And then we will use the selectors (~) which make the slider change on click.
+
+Each image move with left-margin: -100%. The first image of the CSS slider should stay visible so we did set the margin-left:0
+
+
+When a radio button is checked the sibling selectors (~) allows us to change the slider image.
+
+#cc-slides article img {
+    width: 100%;
+}
+#cc-slides .inner {
+   width: 500%;
+   line-height: 0;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#cc-slides article {
+   width: 20%;
+   float: left;
+}
+#slide1:checked ~ #cc-slides .inner { margin-left:0; }
+#slide2:checked ~ #cc-slides .inner { margin-left:-100%; }
+#slide3:checked ~ #cc-slides .inner { margin-left:-200%; }
+#slide4:checked ~ #cc-slides .inner { margin-left:-300%; }
+#slide5:checked ~ #cc-slides .inner { margin-left:-400%; }
+Apply CSS for Arrow Navigation
+To style the Next/Previous arrow buttons, we will apply some width, height, and margin to align them bottom right. We will also add some nice pink background color on the arrow buttons and on hover, we will reduce the opacity to 0.8
+
+#controls {
+   margin: -8% 0 0 84%;
+   width: 15%;
+   height: 50px;
+}
+#controls label, a {
+   color: #ef023f;
+   cursor: pointer;
+   text-decoration: none;
+}
+#controls label { 
+   display: none;
+   width: 50px;
+   height: 50px;
+}
+#controls label:hover {
+    color: #ff0042 !important;
+}
+#controls label:hover {
+   opacity: 0.8;
+}
+#active {
+   margin: 23% 0 0;
+   text-align: center;
+}
+#active label {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   background: #f89e67;
+}
+#active label:hover {
+    background: #ccc;
+    border-color: #777 !important;
+}
+We will add next/prev icons as background and we will use nth-child from CSS3 property.
+
+#slide1:checked ~ #controls label:nth-child(2), 
+#slide2:checked ~ #controls label:nth-child(3), 
+#slide3:checked ~ #controls label:nth-child(4), 
+#slide4:checked ~ #controls label:nth-child(5), 
+#slide5:checked ~ #controls label:nth-child(1) {
+	background: url('../images/next.png') no-repeat;
+	float: right;
+	display: block;
+	background-color:#ef023f;
+}
+#slide1:checked ~ #controls label:nth-child(5),
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2),
+#slide4:checked ~ #controls label:nth-child(3),
+#slide5:checked ~ #controls label:nth-child(4) {
+	background: url('../images/prev.png') no-repeat;
+	float: left;
+	display: block;
+	background-color:#ef023f;
+}
+CSS Image Caption Styling
+Now it’s time to add an image caption/Tooltip box to appear on each image slide. We will create this by using CSS3 styles and animation.
+
+To make it look awesome and attractive, we will apply a different combination of font color, background color, padding, margin, and font style.
+
+
+We also add a little flavor of animation too to make it more creative and stunning.
+
+.cctooltip {
+    color: #FFFFFF;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 250px;
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+     -o-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+}
+.cctooltip h3 {
+	color: #FFFFFF;
+	margin: 0 0 5px;
+	font-weight: normal;
+	font-size: 16px;
+	font-style: normal;
+	background: none repeat scroll 0 0 #222222;
+	padding: 5px;
+}
+.cctooltip h4 {
+	color: #FFFFFF;
+	margin: 0 0 5px;
+	font-weight: normal;
+	font-size: 14px;
+	font-style: normal;
+	background: none repeat scroll 0 0 #222222;
+	padding: 5px;
+	text-align:right;
+	width:160px;
+}
+CSS3 Slide Image Transitions Effects
+Without CSS transition the slider didn’t look good and animated. The animation is also an important factor because it appeals to the user and forces the user to view more images in a slideshow. We are going to take advantage of CSS3 animations and use the properties like transform and transition.
+
+So let’s start creating the slider transitions for pure CSS image slideshow.
+
+#cc-slides .inner {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+	
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	-o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); 
+	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+}
+#cc-slider {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#controls label{
+	-webkit-transform: translateZ(0);
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
+}
+#slide1:checked ~ #cc-slides article:nth-child(1) .cctooltip,
+#slide2:checked ~ #cc-slides article:nth-child(2) .cctooltip,
+#slide3:checked ~ #cc-slides article:nth-child(3) .cctooltip,
+#slide4:checked ~ #cc-slides article:nth-child(4) .cctooltip,
+#slide5:checked ~ #cc-slides article:nth-child(5) .cctooltip {
+	opacity: 1;
+	-webkit-transition: all 1s ease-out 0.6s;
+	-moz-transition: all 1s ease-out 0.6s;
+	-o-transition: all 1s ease-out 0.6s;
+	transition: all 1s ease-out 0.6s;
+}
+That’s it and we are done with the pure CSS image slider. How’s that carousel for arranging images? Let us know in the comment box.
+
+

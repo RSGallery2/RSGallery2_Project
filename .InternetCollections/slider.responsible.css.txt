@@ -1,0 +1,96 @@
+
+https://codeconvey.com/responsive-automatic-image-slider-css/
+
+An image slideshow is the best solution to represent multiple photos on a webpage. It can be used to highlights features, a showcase of work or to display general purpose photos. On a webpage, an auto-playing image slider has its own value. So, in this tutorial, we are going to create a simple responsive automatic image slider using pure CSS.
+
+Generally, an image slider can be created using a jQuery plugin or Vanilla JavaScript. But, it’s hard to find a slideshow plugin that fits your needs. Some of the plugins or multifunctional and come with multiple configuration options. In the case of simple slideshow, we really don’t need any JavaScript. Yes! we can do it with CSS only.
+
+
+Before getting started with coding, let’s discuss what we are going to build. Did you browse the demo page? if yes then it’s cool. (Check demo page if you didn’t check yet) OK! the slider is really simple. As you’ve seen on the demo page, each image is sliding automatically with a sliding indicator. All we have done using CSS animations.
+
+HTML for Responsive Automatic Image Slider
+The HTML for the automatic image slider is very simple. First of all, create a section tag with the class name “auto-slider” and place other child elements in it. Group your slider images in figure tag and wrap it into a div element (with id “slider”). At the end of the figure tag, place a div element with the class name “indicator”.
+
+<section class="auto-slider">
+            <div id="slider">
+                <figure>
+                    <img src="img/image-1.jpg" alt="Image">
+                    <img src="img/image-2.jpg" alt="Image">
+                    <img src="img/image-3.png" alt="Image">
+                    <img src="img/image-4.jpg" alt="Image">
+                    <img src="img/image-5.jpg" alt="Image">
+                </figure>
+                <div class="indicator"></div>
+    </div>
+</section>
+
+You can add any extra HTML element inside the slider section (i.e text for image captions or links to other pages) according to your needs.
+
+The CSS Styles
+Let’s start with the basic styles for the main container (auto-slider outer). The following CSS defines the styles (according to the demo image slider) if you want to customize its size (max-width), background, and shadow then pass the custom values in the following code block.
+
+.auto-slider{
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 10px 10px 20px;
+    background: #fff;
+    max-width: 720px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+ 
+}
+
+Now, add the following CSS into your project to make slider images responsive. If you want to add more than 5 images in the slider, then simply update the width value (that is 500%). Similarly, update the animation duration that is 25 seconds for 5 images, each image taking 5 seconds. You can also set the custom animation duration to increase/decrease slider speed.
+
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 25s sliding ease infinite; 
+}
+
+The following are some styles for the sliding indicator. If you want to customize it, you can update the value of the background-color (for custom color) and height for the thickness of the bar.
+
+/* Slider indicator */
+.indicator{
+    width: 100%;
+    max-width: 720px;
+    height: 6px;
+    background: #e41b17;
+    position: absolute;
+    bottom: 0;
+    
+    animation: indicating 5s ease infinite; 
+    
+}
+
+Finally, add the CSS animations that automatically play the slider. Keep in mind, if you added more images in the slider, also update the values of sliding keyframes.
+
+@keyframes sliding{
+            0%{left: 0%; }
+            20%{left: -100%;}
+            40%{left: -200%;}
+            60%{left: -300%;}
+            80%{left: -400%;}
+            100%{left: 0%;}
+        }        
+        
+@keyframes indicating{
+            from{
+                left: -100%;
+            }
+            to{
+                left: 0;
+            }
+}  
+
+You have done! let me know by comment below if you have any questions or suggestions related to this CSS based responsive automatic image slider.
