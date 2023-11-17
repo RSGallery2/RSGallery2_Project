@@ -23,17 +23,27 @@ These parameters must be merged
 ## Used parameter
 
 ### images_column_arrangement
-	0: 
-	1: 
+	0: Auto
+	1: Column count
+	2: ToDo: row count
+	3: ToDo: max thumbs count as second 
 
-images_column_arrangement:1
 #### max_columns_in_images_view
+	n: User tells the max columns per page
+
+### images_row_arrangement
+	0: Auto: All images are displayed ToDo: Rename to ALL ?
+	1: Row count 
+	2: Max thumbs count. '0' for all images ToDO: rename config / menu / gallery user text
+
+### max_thumbs_in_images_view
+	n: User tells the max thumbs per page
+
+### max_rows_in_images_view
+	n: User tells the max rows per page
 
 
-images_column_arrangement
-
-
-
+##### example field
 ```
 			<field
 					name="images_column_arrangement"
@@ -49,9 +59,16 @@ images_column_arrangement
 ```
 
 
-## Merged With J3x
+## Merged from J3x
 
-? config transferred by installation / manually 
+Config parameters are transferred by installation or manually over: 
+* [Upgrade zone] (J!3x)] "DB: Copy old J3x configuration"
+* [Developer zone] "Default config params"
 
+### Parameters merged
 
+* display_thumbs_style <=> images_column_arrangement_j3x
+* display_thumbs_colsPerPage <=> max_columns_in_images_view_j3x
+* display_thumbs_maxPerPage <=> max_thumbs_in_images_view_j3x
+* manual: images_column_arrangement => 1
 

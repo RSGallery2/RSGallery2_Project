@@ -52,35 +52,101 @@ In general: On the maintenance page there is an area "Upgrade zone (J!3.x)" with
 
 1) **DB Galleries:** The installation may handle the transfer of the database items for galleries from table #**rsgallery2_galleries to the new table #**rsg2_galleries Then this line has disappeared. Otherwise use button "DB: Transfer J3x galleries" in maintenance to transfer the data.
 
-![J3x DB Galleries upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Galleries.png?raw=true)
+   ![J3x DB Galleries upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Galleries.png?raw=true)
 
-This is necessary. Otherwise gallery names will not be listed in gallery overview
+   This is necessary. Otherwise gallery names will not be listed in gallery overview
 
 2) **DB Images:** To prevent failure due to large lists of images in the database these items are not transfered automatically from table **'rsgallery2_files'** to **'rsg2_images'**. Please use button "DB: Transfer J3x images" in maintenance to transfer the data. This will open a form where a set of images can be selected and the transfer can be issued. Please select the images batch wise as still the transfer of too many items at once may need longer than server time allows.
 
-![J3x DB Images upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Images.png?raw=true)
+   ![J3x DB Images upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Images.png?raw=true)
 
-This is necessary. Otherwise image names will not be listed in gallery overview
+   This is necessary. Otherwise image names will not be listed in gallery overview
 
-3) **Image files:** Move Image files to the new structure. ?do not need to?
+3) **Image files:** Move Image files to the new structure
 
-The function to move images is useful to apply for the new display functions but ? is not needed immediately ?. The call will also create several sizes of images by settings in the configuration.
+   This is intended for further use
 
-Please use button "Move J3x images" in maintenance to move the files. This will open a form where a set of images can be selected and the move to new RSG2 images folder (images/rsgallery2) can be issued. This must be done in batches (per gallery) as execution time may exceed allowed server time.
+   2023.11.12: Actually this can be ignored. Ignoring is recommended. You may come back later to finish this task.
 
-Each image (original/display/thumb) is moved and other copies will be created for different screen sizes. So it is best to check the configuration before so the expected useful sizes are set in front of the transition
-
-? It is still valid to upload new images to the old structure.?
-
-In general it would be best to take the time and transfer all images to the new structure. (2021.09.10: Developer: It may still become mandatory)
-
-![J3x Image files upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_move_Images.png?raw=true)
+   >>>>----------------------------------------------------------------------------
+   The function to move images is useful to apply for the new display functions  but ? is not needed immediately ?. The call will also create several sizes of  images by settings in the configuration.
+ 
+   Please use button "Move J3x images" in maintenance to move the files. This will  open a form where a set of images can be selected and the move to new RSG2  images folder (images/rsgallery2) can be issued. This must be done in batches  (per gallery) as execution time may exceed allowed server time.
+ 
+   Each image (original/display/thumb) is moved and other copies will be created  for different screen sizes. So it is best to check the configuration before so  the expected useful sizes are set in front of the transition
+ 
+   ? It is still valid to upload new images to the old structure.?
+ 
+   In general it would be best to take the time and transfer all images to the new  structure. (2021.09.10: Developer: It may still become mandatory)
+ 
+   ![J3x Image files upgrade action needed](https://github.com/RSGallery2/ RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/ J3x_upgrade_move_Images.png?raw=true)
+ 
+   <<<<----------------------------------------------------------------------------
 
 4) DB Configuration The configuration is taken on installation from j3x data (table `#__rsgallery2_config`). They are copies/transfered to standard component options and have no own table any more The result can be checked or reinitialized over button "DB: Copy old J3x configuration" in maintenance. This will open a form with a table where the original J3x and matching destination J4x values can compared and copied again.
 
-The values may still be in use as long as the J3x display methods are used.
+   The values may still be in use as long as the J3x display methods are used.
 
-![J3x upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.png?raw=true)
+   ![J3x upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.png?raw=true)
+
+
+## Menu changes
+
+Legacy menu items are marked with [J3x] in front of the text.
+
+The gallery view is separated into two menues. 
+* (root-)galleries with optional latest / random images section displayed
+* single galley image thumbs
+
+
+In J3x version a gallery number of "0" told to display root galleries  
+This root gallery display has now its own menu type named **"[J3x} Root galleries overview (latest/random images)"**
+You must change the type of your menu if you want to display the root gallery view.
+
+
+### [J3x] Root galleries overview (latest/random images) 
+In J3x version a gallery number of "0" told to display root galleries view. 
+Also when a "parent" gallery was selected this type of view was used
+
+This root gallery display has now its own menu type. Name see Title
+
+**Root views have to be created anew**
+
+We did expect that most web sites only one root display exists and all 
+other displaying single galleries 
+
+### [J3x] Standard gallery images
+
+This view displays a set of images
+
+### [J3x] slideshow
+
+Actually in creation
+
+
+## Configuration
+
+It is not defined yet which parameters will live in J4x
+
+Actually there are two sections. 
+Defined parameters will have the same value like before.
+
+There may be additionally new parameters.
+
+### J3x root galleries
+
+* Root galleries displayed: Number of galleries thumbs displayed per page on root galleries view. '0' for all thumbs
+
+
+### J3x gallery images
+
+* New column / count parameter
+
+
+
+
+
+
 
 ## Biggest hurdle yet / to be developed
 
