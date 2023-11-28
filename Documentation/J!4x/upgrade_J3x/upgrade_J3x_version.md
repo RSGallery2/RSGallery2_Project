@@ -30,11 +30,17 @@ RSGallery2 Gallery Display -> ...
 
 ## Transfer Upgrade Path
 
+- Deinstall RSG2 J3x version: Component, modules and plugins.
+   Do not select r"remove data" in maintenace. Then all galleries, images and configuration are kept
 - Install J4x fresh
-- import j3x data tables and images
+- In RSG2 Control panel further action is indicated on top
+   Buttons can be used to accomplish following 
+   * [1] DB: Transfer J3x galleries
+   * [2] DB: Transfer J3x images
+   * [3] Move J3x images => not recommended (19.11.2023)
+ 
+ See below
 
-  - copy all images with sub folders from ..\images\rsgallery to same sub folder
-  - dump tables `#__rsgallery2_galleries` `#__rsgallery2_files` `#__rsgallery2_comments` `#__rsgallery2_config` `#__rsgallery2_acl`
 
 PS: Don't know what will happen with the user rights then (2021.06.20: comments may not be handled in the first versions)
 
@@ -83,11 +89,11 @@ In general: On the maintenance page there is an area "Upgrade zone (J!3.x)" with
  
    <<<<----------------------------------------------------------------------------
 
-4) DB Configuration The configuration is taken on installation from j3x data (table `#__rsgallery2_config`). They are copies/transfered to standard component options and have no own table any more The result can be checked or reinitialized over button "DB: Copy old J3x configuration" in maintenance. This will open a form with a table where the original J3x and matching destination J4x values can compared and copied again.
+4) DB Configuration The configuration parameters are copied on installation from j3x data (table `#__rsgallery2_config`). They are copied/transfered to standard component options and have no own table any more. The result can be checked or reinitialized over button "DB: Copy old J3x configuration" in maintenance. This will open a form with a table where the original J3x and matching destination J4x values can compared and copied again.
 
    The values may still be in use as long as the J3x display methods are used.
 
-   ![J3x upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.png?raw=true)
+   ![DB Configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.png?raw=true)
 
 
 ## Menu changes
