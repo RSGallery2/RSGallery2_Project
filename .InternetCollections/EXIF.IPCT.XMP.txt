@@ -3,4 +3,25 @@
 
 http://www.myphotocentral.com/articles/exif-iptc-xmp-metadata/
 
+php - how to get Description metadata of an image? - Stack Overflow
+https://stackoverflow.com/questions/72871758/how-to-get-description-metadata-of-an-image
+
+----------------------------------------------------
+Exif (Exchangeable image file format)
+https://en.wikipedia.org/wiki/Exif
+
+IPTC (International Press Telecommunications Council):
+https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model
+
+XMP (Extensible_Metadata_Platform):
+https://en.wikipedia.org/wiki/Extensible_Metadata_Platform
+
+RIFF (Resource Interchange File Format):
+https://en.wikipedia.org/wiki/Resource_Interchange_File_Format#Use_of_the_INFO_chunk
+https://exiftool.org/TagNames/RIFF.html#Info
+
+QTFF (QuickTime File Format):
+https://en.wikipedia.org/wiki/QuickTime_File_Format
+
+
 

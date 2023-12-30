@@ -1,0 +1,10 @@
+
+Obsolete Joomla! class matrix
+
+j4 / j5
+
+https://github.com/nikosdion/joomlatypehints/blob/main/JoomlaObsoleteClasses.md
+
+
+
+
