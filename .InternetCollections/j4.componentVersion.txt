@@ -1,0 +1,9 @@
+
+use Joomla\CMS\Extension\ExtensionHelper;
+
+
+$version = json_decode(ExtensionHelper::getExtensionRecord('com_componentname', 'component')
+              ->manifest_cache)->version;
+
+
+
