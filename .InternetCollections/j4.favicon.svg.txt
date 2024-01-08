@@ -3,6 +3,10 @@ joomla4x:
 
 J4x uses a svg file for the favicon
 
+es gibt kein favicon.ico ... du brauchst 2 Files: 
+joomla-favicon.svg und joomla-favicon-pinned.svg, 
+die packst du unter media/templates/site/cassiopeia/images
+
 --------------------------------------------
 https://kevinsguides.com/guides/webdev/joomla4/joomla-4-templates/cassiopeiafavicon
 

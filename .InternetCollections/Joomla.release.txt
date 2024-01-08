@@ -1,0 +1,62 @@
+
+CMS Release Checksheet
+
+https://docs.google.com/spreadsheets/d/1ciTeoBmzcNJLvFkxIeOsjmUeZbKj1tHREZfQrm3X1-I/edit#gid=1154167118
+
+
+URL_ patchtester 
+https://github.com/joomla-extensions/patchtester/releases
+
+zum direkt installieren: Link adresse in releases github kopieren und eintragen
+
+
+Patchtester component authentifizieren 
+github profil settings => develop -> Tokens (classic)
+
+Personal access token:
+
+generate new token: Name example Patch-tester-joomla expiration days longer
+
+select settings:
+
+Note: ID / Info 
+Expiration exend 
+[x] repo status
+[x} public_repo
+
+generate token
+
+gnaz wichtig nicht weg klicken 
+
+token nur einmal sichtbar
+
+token in patchtester eintragen
+
+--------------------------------------------
+
+select test
+
+click first button -> pull request view
+
+1) repeat error
+
+
+2) apply patch
+
+
+3) check error fixed
+
+
+4) patch entfernen
+
+
+5) -> go to issue tracker (pull request)
+Einloggen ? Vorgang hält lange
+==> submit result
+
+--------------------------------------
+
+neuere version der branches ==> einfachere Themen
+ältere -> bug fixes , kann komplex sein
+
+
