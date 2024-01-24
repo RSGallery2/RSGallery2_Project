@@ -1,0 +1,11 @@
+
+? linux ? 
+
+If you want to work on Joomla itself, 
+checkout the branch of our repo 
+into a subfolder of httpdocs, 
+run composer i and 
+afterwards npm i and 
+again open localhost/<subfolder> in your browser.
+
+
