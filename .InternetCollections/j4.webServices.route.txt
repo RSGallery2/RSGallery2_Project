@@ -1,0 +1,197 @@
+
+https://joomla.stackexchange.com/questions/32218/joomla-4-api-question
+
+Academic explanation of J! 4 webservices route mapping
+This is an explanation of how Joomla 4 (hereafter referred to as J! 4) webservices route resolution and method finding works.
+
+Disclaimer What follows is an explanation only. I'm attempting to educate you as to what J! 4 is trying to make you do. It is not an endorsement. I do NOT recommend jumping down "The Joomla 4 Way" (hereafter referred to as The J! 4 way) rabbit hole, because as you will shortly find out, the abstraction tree is both deep, wide & you'll end up being forced to write a very specific J! 4 dialect of PHP as well as jump between multiple files in order to persuade the architecture to get things done. In my original answer on this question I attempt to liberate developers coming from other paradigms from getting caught in the J! 4 class hierarchy trap. Neither am I against OOP, I'm a fan of classes, when used in moderation. J! 4 is not an architecture of OOP moderation, it is OOP taken to some rather extensive lengths. That's great for the ivory tower or if you have years to invest in the architecture, most daily programmers do not have such luxurious time outlay to get entangled in this architecture.
+Let's do this! Get yourself a powerful caffeinated beverage, buckle your seatbelts and here we go...
+
+Where the webservices route lifecycle starts
+In your webservices plugin (where routing and our request lifecycle starts) The innocent looking code which registers a route "The J! 4 Way" is as follows:
+
+    /**
+     * Registers com_users's API's routes in the application
+     *
+     * @param   ApiRouter  &$router  The API Routing object
+     *
+     * @return  void
+     *
+     * @since   4.0.0
+     */
+    public function onBeforeApiRoute(&$router)
+    {
+        $router->createCRUDRoutes(
+            'v1/users',
+            'users',
+            ['component' => 'com_users']
+        );
+In order to understand what's happening here we are forced to go read:
+
+[siteroot]/libraries/src/Router/ApiRouter.php
+
+In that file (the ApiRouter class) you'll find a method called createCRUDRoutes which is responsible for the actual mapping of your arbitrary route string (the v1/users string in the plugin's route declaration above) to a controller, and its methods.
+
+First the code in the ApiRouter class:
+
+    public function createCRUDRoutes($baseName, $controller, $defaults = [], $publicGets = false)
+    {
+        $getDefaults = array_merge(['public' => $publicGets], $defaults);
+
+        $routes = [
+            new Route(['GET'], $baseName, $controller . '.displayList', [], $getDefaults),
+            new Route(['GET'], $baseName . '/:id', $controller . '.displayItem', ['id' => '(\d+)'], $getDefaults),
+            new Route(['POST'], $baseName, $controller . '.add', [], $defaults),
+            new Route(['PATCH'], $baseName . '/:id', $controller . '.edit', ['id' => '(\d+)'], $defaults),
+            new Route(['DELETE'], $baseName . '/:id', $controller . '.delete', ['id' => '(\d+)'], $defaults),
+        ];
+
+        $this->addRoutes($routes);
+    }
+Here $baseName is the arbitrary route string you defined in the webservices plugin i.e. v1/users in our example.
+$controller is the class name of the controller that J! 4 will look for in the following folder:
+
+[siteroot]/api/components/com_users/Controllers/UsersController.php
+
+Finally, there is no useful difference between $getDefaults and $defaults, essentially this should boil down (array_merge) to a single associative array that looks like:
+['public' => false, 'component' => 'com_<yourComponentName>']
+In fact, you could just structure a single associative array as shown and you'd be perfectly fine (in the granular un-joomla case shown in my other answer, else for the J! 4 way, just set ['component' => 'com_<yourComponentName>'] like the handful of J! 4 examples show.
+
+Notice also that in createCRUDRoutes we see concatenation of the controller string with suffixes like:
+.displayList, .displayItem, .add, .edit, and .delete this naturally leads one to think that the controller thus mapped might contain those methods (because they're essentially forcing you to conduct business using those precise names) which is indeed what J! 4 expects. With a twist of OOP abstraction the core both satisfies this expectation of J! 4 AND hides that clarity from YOU, the developer.
+
+Let's take a look at the core [siteroot]/api/components/com_users/Controllers/UsersController.php as shipped in the api folder i.e. A webservice controller...
+
+
+/**
+ * The users controller
+ * @since  4.0.0
+ */
+class UsersController extends ApiController
+{
+    /**
+     * The content type of the item.
+     * @var    string
+     * @since  4.0.0
+     */
+    protected $contentType = 'users';
+
+    /**
+     * The default view for the display method.
+     * @var    string
+     * @since  4.0.0
+     */
+    protected $default_view = 'users';
+
+    /**
+     * Method to allow extended classes to manipulate the data to be saved for an extension.
+     * @param   array  $data  An array of input data.
+     * @return  array
+     * @since   4.0.0
+     */
+    protected function preprocessSaveData(array $data): array
+    {
+        ...
+    }
+
+    /**
+     * User list view with filtering of data
+     * @return  static  A BaseController object to support chaining.
+     * @since   4.0.0
+     * @throws  InvalidParameterException
+     */
+    public function displayList()
+    {
+        $apiFilterInfo = $this->input->get('filter', [], 'array');
+        $filter        = InputFilter::getInstance();
+
+        if (\array_key_exists('state', $apiFilterInfo))
+        {
+            $this->modelState->set('filter.state', $filter->clean($apiFilterInfo['state'], 'INT'));
+        }
+
+        if (\array_key_exists('active', $apiFilterInfo))
+        {
+            $this->modelState->set('filter.active', $filter->clean($apiFilterInfo['active'], 'INT'));
+        }
+
+        if (\array_key_exists('groupid', $apiFilterInfo))
+        {
+            $this->modelState->set('filter.group_id', $filter->clean($apiFilterInfo['groupid'], 'INT'));
+        }
+
+        if (\array_key_exists('search', $apiFilterInfo))
+        {
+            $this->modelState->set('filter.search', $filter->clean($apiFilterInfo['search'], 'STRING'));
+        }
+
+        /*
+        * What's happenning here is that the above code is populating a bunch of data on the instance property called
+        * $modelState (defined in ApiController.php which is the base class of UsersController.php in the api folder).
+        * Then at the end (the line below) a static call to the base class's (the parent:: call) displayList() method happens
+        * This basically executes that method using the updated $modelState object details to populate the model in one go.
+        * What it's doing is looking at your REST request and seeing if you specified any of the filter keys `state`, `active` etc
+        * then it's setting those filtration config options.
+        * 
+        */
+        return parent::displayList();
+    }
+}
+I commented on the indirection happenning in the displayList() method above.
+You might naturally be wondering "Where are the rest of the method names we saw hard-coded in createCRUDRoutes"??
+Ah, those are all inherited from ApiController.php!
+
+So we read [siteroot]/libraries/src/MVC/Controller/ApiController.php
+and indeed there they are, we also see references to the model like the snippet below (interspersed all over ApiController.php)
+
+        /** @var \Joomla\CMS\MVC\Model\AdminModel $model */
+        $model = $this->getModel(Inflector::singularize($this->contentType));
+So that's telling us that the model is dynamically picked from the singularization (plural to singular) of the value set in $contentType in our api controller UsersController.php, nowehere does the code comment on this.
+
+So you might wonder "Ok, well which model (site-side or admin-side)?" which is a perfectly natural question to ask.
+The only clue is from the @var annotation which indicates: \Joomla\CMS\MVC\Model\AdminModel $model
+The model is always taken from the admin side.
+
+Next steps:
+
+You now need to (if you're not a seasoned J! 4 developer) determine which method names you need to implement in your admin model in order for ApiController.php or J! 4 not to throw exceptions at you, silently fail, or otherwise meltdown.
+You do this by highlighting the $model variable throughout all the methods in the ApiController class and observing the calls to specific methods that are made, YOU need to make sure your admin model's methods are named the same names AND return the same shapes of data.
+You'll also need to update the fields you wish to see displayed by editing the JsonapiView.php file under the View/<ControllerName> folder. These are all the relationships you'll need to stay mindful of (under production time constraints mind you) as you strive to bring a single endpoint online.
+Files you need to touch in order to bring one REST endpoint online:
+[siteroot]/plugins/webservices/<yourWebservicesPluginName>/<yourWebservicesPluginName>.php
+[siteroot]/api/components/com_<ComponentName>/src/Controllers/<ControllerName>Controller.php
+[siteroot]/api/components/com_<ComponentName>/src/View/<ControllerName>/JsonapiView.php
+[siteroot]/administrator/components/com_<ComponentName>/src/Models/<ModelName>Model.php
+Summary:
+As you can see from our little dive into the request and class inheritance lifecycle (specifically the way it has been done in J! 4), there is no documented (to say nothing of official let alone simple) way to implement 'webservices' in J! 4 which are not completely marching in lockstep with all the conventions and expected object shapes of Joomla (which if you're not a seasoned J! developer, you'll need to log out to everything.php via print_r($objectInQuestion, true) all those shapes in order to get a grasp of how all the J! 4 methods expect to have responses.
+
+For every arbitrarily defined endpoint you wish to bring online, (even though J! 4 tries to mulitply that by 5x for all of its CRRUD routes (read list & read single item for 2x R's)) you now have 4 files to intricately contend with across a relatively disparate folder structure within the 'same' component (but only because J! 4 is trying to glue all these parts together behind the scenes)
+
+This is "The Joomla 4 way" of webservices.
+
+I hope this sheds light upon your quandary and I also hope this makes it easier to understand why a professional developer might not wish to engage in this song and dance just to reap the benefits of J! 4's ecosystem, user management, token generation and other extant capabilities. You don't have to give up on Joomla to use it efficiently (in terms of time invested times complexity and technical debt accrued for capability output delivered). I mean you can subject yourself to it if you want to, but then you'll have to be subject to all of the aforementioned constraints and mutliple failure points when a particular object isn't "just so" from the expectation of some other architectural piece.
+
+In my other answer I take the Un-Joomla path which only asks that you add your granular routes (like most other frameworks you're probably already used to) in the webservices plugin file, and then simply write your request handling and response logic in a public method which will live in your controller (as specified in the webservices route plugin php file) residing at [siteroot]/api/components/com_<ComponentName>/src/Controllers/<ControllerName>Controller.php
+
+That's two files!, One for the routes list, easily granularly accomplished one route per line and the other is the actual file that does the work. Done. Period. End of sentence.
+
+At the end of the day one needs to assess the effects of technology choice and prescribed architectural adherence on developer velocity. Most of the time we're getting paid to do this and "The Joomla way" makes for a much slower pace of progress i.e. developer velocity than the pace of progress afforded by something like express. The beautiful insight to be gleaned here is that we can "Have our Joomla cake and eat it too", and that is what my "joomla-tools" repo listed on my github in my other answer is all about.
+
+I hope you learned something.
+
+Share
+Improve this answer
+Follow
+edited Jul 28, 2022 at 0:49
+answered Jul 27, 2022 at 23:22
+Joe Hacobian's user avatar
+Joe Hacobian
+10188 bronze badges
+2
+Beautifully explained. Thanks for the deep dive. I am still figuring out my own implementation to see if I can get this going properly. At the moment I have built my own REST API that shares a database with J!4 and implements the Joomla framework for interaction with the database. So far it is working really well. – 
+Terry Carter
+♦
+ Jul 31, 2022 at 11:50
+@Joe Hacobian Thank you so much for this awesome text. This absolutely saved my day! – 
+cappu
+ Sep 22, 2023 at 17:51

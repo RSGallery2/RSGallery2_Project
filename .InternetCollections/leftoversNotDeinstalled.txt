@@ -1,0 +1,66 @@
+
+Elisa
+Ich hätte eine Frage zu Erweiterungen die sich nichtmehr deinstallieren lassen. 
+
+Wo finde ich diese überall?
+
+Datenbanken:
+
+Ordner
+Extension Tabelle
+Menu Tabelle
+Tabellen der Erweiterung selbst
+
+administrator/manifests
+---
+
+Ich hatte das Problem auch mal Elisa @Elisa Foltyn. 
+Ich bin in die Datenbank, unter "Exstensions" habe ich 
+bei protected und enabled eine "0" gesetzt. Dann zurück 
+ins Backend und dann ging dass mit dem deinstallieren.
+---
+
+Jan
+11:15 AM
+Wenn sie richtig geschrieben sind, können ihre Dateien 
+beispielsweise in diesen Ordnern liegen (natürlich mit 
+Ausnahmen, bei denen die Dateien auch woanders liegen).
+
+modules/mod_extension
+administrator/modules/mod_extension
+plugins/[type]/plg_extension
+components/com_extension
+administrator/components/com_extension
+language/[lang]/xx-XX.xxx_extension.ini|xx-XX.xxx_extension.sys.ini|xxx_extension.ini|xxx_extension.sys.ini
+administrator/language/[lang]/xx-XX.xxx_extension.ini|xx-XX.xxx_extension.sys.ini|xxx_extension.ini|xxx_extension.sys.ini
+media/[type]_extension
+api/[type]/[type]_extension
+libraries/vendor/[library]
+
+Sorry Jan, das meinte ich nicht. Ordner habe ich generell 
+ja schon aufgelistet aber die Datenbank? Muss ich noch in 
+assets suchen zb?
+-----------------------
+jan
+Sometimes it happens, that Joomla! system does not remove all the component data from system while uninstalling component. In such case, you can do it manually in your database. E.g. in phpMyAdmin. Before doing this, be sure you understand basic features of SQL and you know what you are doing, see following example for Phoca PDF:
+ 
+-- Experts only
+-- Run these queries in your phpMyAdmin
+
+-- Manual removal of Phoca PDF component from Joomla! database
+-- Change the #__ to your Joomla! prefix, e.g. #__extensions to jos_extensions
+
+DELETE FROM `jos_schemas` WHERE `extension_id` = (SELECT `extension_id` FROM `jos_extensions` WHERE `type` = 'component' AND `name` = 'com_phocapdf');
+DELETE FROM `jos_extensions` WHERE `name` = 'com_phocapdf';
+DELETE FROM `jos_assets` WHERE `name` = 'com_phocapdf';
+DELETE FROM `jos_menu` WHERE `type` = 'component' AND `title` LIKE '%com_phocapdf%';
+DELETE FROM `jos_session` WHERE  `data` LIKE '%com_phocapdf%';
+ 
+Sometimes happens, that component menu links are not displayed in Joomla! administration, try to run these SQL queries:
+ 
+-- Manual publishing of Phoca PDF component menu items in Joomla! administration
+-- Change the #__ to your Joomla! prefix, e.g. #__extensions to jos_extensions
+UPDATE `jos_menu` SET `published` = '1' WHERE `type` = 'component' AND `title` LIKE '%com_phocapdf%';
+UPDATE `jos_menu` SET `component_id` = (SELECT `extension_id` FROM `jos_extensions` WHERE `type` = 'component' AND `name` = 'com_phocapdf') WHERE `type` = 'component' AND `title` LIKE '%com_phocapdf%';
+ 
+If you are removing the component manually, it is possible that files and folders of this component will remain on your server. Then connect to your server with FTP client (or use Phoca Commander) and delete the folders of the extensions which you want to remove (be aware: do not remove all other needed parts of the system, you should have Joomla! filesystem knowledge to remove files from Joomla! filesystem)

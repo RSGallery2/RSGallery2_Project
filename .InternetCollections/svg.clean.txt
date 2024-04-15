@@ -1,0 +1,10 @@
+
+
+svg omg laufen das filtert dann Kommentare und unnötiges raus 
+
+https://jakearchibald.github.io/svgomg/
+
+https://iconly.io/tools/svg-cleaner
+
+https://www.svgminify.com/de.html
+

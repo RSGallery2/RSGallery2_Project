@@ -1,0 +1,57 @@
+Column 'checked_out' cannnot be null
+
+Datenbank reparieren schon gemacht?
+
+	
+Niels - Kicktemp
+3:37 PM
+RElativ simple das ding. 
+
+Eventuell musst du folgendes machen.
+
+ALTER TABLE #__###### CHANGE checked_out checked_out int(10) unsigned DEFAULT NULL,
+CHANGE checked_out_time checked_out_time datetime DEFAULT NULL;
+
+Weil der DEFAULT Value falsch ist.
+
+genau das gleiche dann bei note vielleicht steht dort nur NOT NULL, 
+note varchar(255) NOT NULL DEFAULT '',
+
+
+--------------------
+<< localhost geholt und genau das gleiche Spiel.
+bei 90.3 Prozent stockt es und dann kommt 504 Bad Gateway
+
+>>
+Faustregel zum Ablauf:
+
+Noch kein Progressbar zu sehen? Dann wird das Paket noch runtergeladen
+Progressbar bewegt sich? Die dateien werden gerade entpackt, 
+sieht man im netzwerk tab ganz gut weil die anfragen gegen 
+die restore bzw. restoration.php gehen, nicht gegen die index.php
+bar bewegt sich nicht mehr, reqeust geht gegen task=update.finalise? 
+Dann laufen die migrationen
+
+
+max_execution_time = 360000
+max_file_uploads=20
+
+Also muss ich das hier wahrscheinlich irgendwo einstellen?
+
+proxy_connect_timeout       36000;
+proxy_send_timeout          36000;
+proxy_read_timeout          36000;
+send_timeout                36000;
+
+ keepalive_timeout 1200; # 20 minutes
+ proxy_connect_timeout 1200;
+ proxy_send_timeout 1200;
+ proxy_read_timeout 1200;
+ send_timeout 1200;
+ client_header_timeout 1200;
+ client_body_timeout 1200;
+ fastcgi_read_timeout 1200;
+ 
+ 
+
+

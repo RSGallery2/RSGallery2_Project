@@ -1,0 +1,44 @@
+
+https://github.com/joomla/joomla-cms/pull/37592/files
+
+
+So if an extension wants to access a method of another extension, 
+it should create the model of this class to do so? 
+That seems awfully complex and unnecessary
+
+>>
+	public static function getLogContentTypeParams($context)
+	{
+		/* instead of 
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+			->select('a.*')
+			->from($db->quoteName('#__action_log_config', 'a'))
+			->where($db->quoteName('a.type_alias') . ' = :context')
+			->bind(':context', $context);
+
+		$db->setQuery($query);
+
+		return $db->loadObject();
+		/**/
+
+		// better
+		return Factory::getApplication()->bootComponent('actionlogs')->getMVCFactory()
+			->createModel('ActionlogConfig', 'Administrator')->getLogContentTypeParams($context);
+	}
+	
+
+
+-----
+
+or 
+
+Guido - JoomTools
+1:43 PM
+Try to use the Trait use DatabaseAwareTrait; 
+and than $db = $this->getDatabase();
+
+Query ...
+
+
+
