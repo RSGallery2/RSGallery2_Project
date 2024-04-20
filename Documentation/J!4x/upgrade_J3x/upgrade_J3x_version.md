@@ -12,8 +12,8 @@ Text will be improved in the next next week(s) regularly
 - install J3.10.... newest
   - Use PHP 8.0
   - Check database version (4.x may need a higher version ...)
-  - [ToDo: link to J4x Standard upgrade documentation ]()
-- Clean up RSG2 J3x version (see also below)
+  - [Joomla 3x to 4x standard upgrade documentation](https://docs.joomla.org/Joomla_3.x_to_4.x_Step_by_Step_Migration)
+- Clean up RSG2 J3x parts (see also below)
   - Remove RSG2 plugins and modules
 - Install J4x
 - Install RSG2 J4x version
