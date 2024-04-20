@@ -1,7 +1,7 @@
 # Upgrade RSG2 J3x Version to J4x
 RSG2: Short for RSGallery2
 
-**Work in progress 20. April 2024**
+**Work in progress 20. April 2024 II**
 
 Text will be improved in the next next week(s) regularly
 
@@ -21,11 +21,18 @@ Text will be improved in the next next week(s) regularly
 - Plugins/Modules:
   - Inquire the matching replacements (see also below)
 
-### Clean up RSG2 J3x version
+### 0) recommendations
 
-#### Remove old plugins* RSGallery2 Single Image Display -> ...
+* backup before
+* try on a test site (for example locally)
+* J3.x latest is installed
+* * ...
 
-In the matching form use serach for "RSG" and all installed plugins shall apper in the list
+### 1) Remove old plugins and modules
+
+This may be done when PHP is still on Version 7.4
+
+Menu "extensions"->Manage->Manage
 
 for example
 *   RSGallery2 Single Image Display
@@ -34,17 +41,65 @@ for example
 
 ![Remove old plugins](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade.remove_plugins.png?raw=true)
 
-This prevents following error
-![Remove old plugins](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade.remove_plugins.error.png?raw=true)
+(1) In the search form use "RSG" to show all installed RSG2 software
+
+(2) Select all RSG plugins and modules
+
+  - You may even uninstall RSGallery2 component as the data will still be kept
+
+(3) Use button uninstall
+
+### 2) Upgrade php and database versions
+
+Sometime it is needed to export th DB and imnport it into a newer versions
+
+### 3) Upgrade Joomla to 4.x
+
+### 4a) Download RSGallery2 for j4x
+
+Version in preparation
+[link to release on github will follow, not ready yet]()
+
+### 4b) Upgrade RSGallery2 for j4x
+
+Version in preparation
+
+If RSGallery2 was not deintgalled you may find a update notice
+
+
+### 5) Steps to transfer the J3x data to j4x
+
+
+ToDo: image:
+
+* DB: Copy old J3x configuration
+
+* DB: Transfer J3x galleries
+
+* DB: Transfer J3x images
+
+* Increase gallery ID in Menues
+
+* //Copy/move J3x images// new folder ..
 
 
 
-ToDo:
-Plugin replacements
-RSGallery2 Single Image Display -> ...
-RSGallery2 Gallery Display -> ...
-...
 
+
+## Differences J3x / j4x
+
+* Config variables are also in menu
+* .
+* [J3x] Menues supported actually
+* .
+* .
+*
+
+
+
+-------------------------------------------------------
+
+-> old text not updated and checked fromhere on
 ## Transfer Upgrade Path
 
 - Deinstall RSG2 J3x version: Component, modules and plugins.
