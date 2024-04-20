@@ -1,16 +1,33 @@
-# Upgrade J3x Version to J4x
+# Upgrade RSG2 J3x Version to J4x
+RSG2: Short for RSGallery2
+
+**Work in progress 20. April 2024**
+
+Text will be improved in the next next week(s) regularly
 
 ## Normal Upgrade Path
 
+**TL;DR short version:**
+
 - install J3.10.... newest
+  - Use PHP 8.0
+  - Check database version (4.x may need a higher version ...)
+  - [ToDo: link to J4x Standard upgrade documentation ]()
+- Clean up RSG2 J3x version (see also below)
+  - Remove RSG2 plugins and modules
 - Install J4x
 - Install RSG2 J4x version
+- In RSG2 control panel use button 1-4 to transfer RSG J3x data to new version
+- Plugins/Modules:
+  - Inquire the matching replacements (see also below)
 
-### Clean up J3x version
-
-ToDo: ? Ceck if newer plugin can be installed before removing so parameters may be kept or new plugins react to old {rsg..} syntax ?
+### Clean up RSG2 J3x version
 
 #### Remove old plugins* RSGallery2 Single Image Display -> ...
+
+In the matching form use serach for "RSG" and all installed plugins shall apper in the list
+
+for example
 *   RSGallery2 Single Image Display
 *   RSGallery2 Gallery Display
 *   ...
@@ -34,11 +51,11 @@ RSGallery2 Gallery Display -> ...
    Do not select r"remove data" in maintenace. Then all galleries, images and configuration are kept
 - Install J4x fresh
 - In RSG2 Control panel further action is indicated on top
-   Buttons can be used to accomplish following 
+   Buttons can be used to accomplish following
    * [1] DB: Transfer J3x galleries
    * [2] DB: Transfer J3x images
    * [3] Move J3x images => not recommended (19.11.2023)
- 
+
  See below
 
 
@@ -76,17 +93,17 @@ In general: On the maintenance page there is an area "Upgrade zone (J!3.x)" with
 
    >>>>----------------------------------------------------------------------------
    The function to move images is useful to apply for the new display functions  but ? is not needed immediately ?. The call will also create several sizes of  images by settings in the configuration.
- 
+
    Please use button "Move J3x images" in maintenance to move the files. This will  open a form where a set of images can be selected and the move to new RSG2  images folder (images/rsgallery2) can be issued. This must be done in batches  (per gallery) as execution time may exceed allowed server time.
- 
+
    Each image (original/display/thumb) is moved and other copies will be created  for different screen sizes. So it is best to check the configuration before so  the expected useful sizes are set in front of the transition
- 
+
    ? It is still valid to upload new images to the old structure.?
- 
+
    In general it would be best to take the time and transfer all images to the new  structure. (2021.09.10: Developer: It may still become mandatory)
- 
+
    ![J3x Image files upgrade action needed](https://github.com/RSGallery2/ RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/ J3x_upgrade_move_Images.png?raw=true)
- 
+
    <<<<----------------------------------------------------------------------------
 
 4) DB Configuration The configuration parameters are copied on installation from j3x data (table `#__rsgallery2_config`). They are copied/transfered to standard component options and have no own table any more. The result can be checked or reinitialized over button "DB: Copy old J3x configuration" in maintenance. This will open a form with a table where the original J3x and matching destination J4x values can compared and copied again.
@@ -100,26 +117,26 @@ In general: On the maintenance page there is an area "Upgrade zone (J!3.x)" with
 
 Legacy menu items are marked with [J3x] in front of the text.
 
-The gallery view is separated into two menues. 
+The gallery view is separated into two menues.
 * (root-)galleries with optional latest / random images section displayed
 * single galley image thumbs
 
 
-In J3x version a gallery number of "0" told to display root galleries  
+In J3x version a gallery number of "0" told to display root galleries
 This root gallery display has now its own menu type named **"[J3x} Root galleries overview (latest/random images)"**
 You must change the type of your menu if you want to display the root gallery view.
 
 
-### [J3x] Root galleries overview (latest/random images) 
-In J3x version a gallery number of "0" told to display root galleries view. 
+### [J3x] Root galleries overview (latest/random images)
+In J3x version a gallery number of "0" told to display root galleries view.
 Also when a "parent" gallery was selected this type of view was used
 
 This root gallery display has now its own menu type. Name see Title
 
 **Root views have to be created anew**
 
-We did expect that most web sites only one root display exists and all 
-other displaying single galleries 
+We did expect that most web sites only one root display exists and all
+other displaying single galleries
 
 ### [J3x] Standard gallery images
 
@@ -134,7 +151,7 @@ Actually in creation
 
 It is not defined yet which parameters will live in J4x
 
-Actually there are two sections. 
+Actually there are two sections.
 Defined parameters will have the same value like before.
 
 There may be additionally new parameters.
@@ -166,3 +183,10 @@ There may be additionally new parameters.
 ## Failure to upgrade
 
 What users can do on failure or missing features a) Add issues on Github (ToDo: link) b) Mail to developer upgrade@rsgallery2.org
+
+<hr>
+## leftover text to checked for use or be used
+
+**ignore** dummy text from this point on
+
+ToDo: ? Ceck if newer plugin can be installed before removing so parameters may be kept or new plugins react to old {rsg..} syntax ?
