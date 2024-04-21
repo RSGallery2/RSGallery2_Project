@@ -1,11 +1,14 @@
+<div class="page-header">
 # Upgrade RSG2 J3x Version to J4x
+</div>
+
 RSG2: Short for RSGallery2
 
 **Work in progress 20. April 2024 II**
 
 Text will be improved in the next next week(s) regularly
 
-## Normal Upgrade Path
+### Normal Upgrade Path
 
 **TL;DR short version:**
 
@@ -21,14 +24,14 @@ Text will be improved in the next next week(s) regularly
 - Plugins/Modules:
   - Inquire the matching replacements (see also below)
 
-### 0) recommendations
+#### 0) recommendations
 
 * backup before
 * try on a test site (for example locally)
 * J3.x latest is installed
 * * ...
 
-### 1) Remove old plugins and modules
+#### 1) Remove old plugins and modules
 
 This may be done when PHP is still on Version 7.4
 
@@ -49,26 +52,32 @@ for example
 
 (3) Use button uninstall
 
-### 2) Upgrade php and database versions
+#### 2) Upgrade php and database versions
 
 Sometime it is needed to export th DB and imnport it into a newer versions
 
-### 3) Upgrade Joomla to 4.x
+#### 3) Upgrade Joomla to 4.x
 
-### 4a) Download RSGallery2 for j4x
+
+#### 4a) Download RSGallery2 for j4x
 
 Version in preparation
 [link to release on github will follow, not ready yet]()
 
-### 4b) Upgrade RSGallery2 for j4x
+#### 4b) Upgrade RSGallery2 for j4x
 
 Version in preparation
 
 If RSGallery2 was not deintgalled you may find a update notice
 
 
-### 5) Steps to transfer the J3x data to j4x
+#### 5) Steps to transfer the J3x data to j4x
 
+- In RSG2 Control panel further action is indicated on top
+   Buttons can be used to accomplish following
+   * [1] DB: Transfer J3x galleries
+   * [2] DB: Transfer J3x images
+   * [3] Move J3x images => not recommended (19.11.2023)
 
 ToDo: image:
 
@@ -86,16 +95,16 @@ ToDo: image:
 
 
 
-## Differences J3x / j4x
+### Differences J3x / j4x
 
 * Config variables are also in menu
 * .
 * [J3x] Menues supported actually
 * .
-* .
+* image path organisation
 *
 
-
+? different document ?
 
 -------------------------------------------------------
 
@@ -116,11 +125,11 @@ ToDo: image:
 
 PS: Don't know what will happen with the user rights then (2021.06.20: comments may not be handled in the first versions)
 
-# Display of galleries / slide shows ...
+## Display of galleries / slide shows ...
 
 Several libraries of the displays are outdated (from Joomla 1.5/2.5) therefore we had to replace them. The display styles may not match, the functionality of slide shows may be different. (2021.06.20: Most display functions are not created actually so this information may change a bit in the future)
 
-## Post-processing
+### Post-processing
 
 In the control panel a "image" like below will appear if there is work to do after installing.
 
@@ -168,7 +177,7 @@ In general: On the maintenance page there is an area "Upgrade zone (J!3.x)" with
    ![DB Configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.png?raw=true)
 
 
-## Menu changes
+### Menu changes
 
 Legacy menu items are marked with [J3x] in front of the text.
 
@@ -202,7 +211,7 @@ This view displays a set of images
 Actually in creation
 
 
-## Configuration
+### Configuration
 
 It is not defined yet which parameters will live in J4x
 
@@ -211,12 +220,12 @@ Defined parameters will have the same value like before.
 
 There may be additionally new parameters.
 
-### J3x root galleries
+#### J3x root galleries
 
 * Root galleries displayed: Number of galleries thumbs displayed per page on root galleries view. '0' for all thumbs
 
 
-### J3x gallery images
+#### J3x gallery images
 
 * New column / count parameter
 
@@ -226,7 +235,7 @@ There may be additionally new parameters.
 
 
 
-## Biggest hurdle yet / to be developed
+### Biggest hurdle yet / to be developed
 
 2021.06.20:
 
@@ -235,12 +244,12 @@ There may be additionally new parameters.
 - The router has to be replaced by a new one matching J4x routers
 - User ids -
 
-## Failure to upgrade
+### Failure to upgrade
 
 What users can do on failure or missing features a) Add issues on Github (ToDo: link) b) Mail to developer upgrade@rsgallery2.org
 
 <hr>
-## leftover text to checked for use or be used
+### leftover text to checked for use or be used
 
 **ignore** dummy text from this point on
 
