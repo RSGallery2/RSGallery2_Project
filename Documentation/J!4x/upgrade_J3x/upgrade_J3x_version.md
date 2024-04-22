@@ -24,12 +24,12 @@ Text will be improved in the next next week(s) regularly
 
 #### Recommendations
 
-* backup before
-* try on a test site (for example locally)
-* J3.x latest is installed
-* * ...
+* Backup before
+* Test try on a test site (for example locally)
+*
+* ...
 
-### Actions
+### Upgrade tasks RSG2
 
 #### 1) Remove old plugins and modules
 
@@ -108,12 +108,12 @@ They are copied/transfered to standard component options and have no own table a
 
 #### 4)  Increase gallery ID in Menues
 
+The new database structure forces the gallery ID to be incresed by one. Therefore on all menu items referencing a gallery the id must be increased. This is automated here.  
 
 
+#### 5)  <s>Copy/move J3x images to new folder structure</s>
 
-#### 5)  //Copy/move J3x images// new folder ..
-
-3) **Image files:** Move Image files to the new structure
+**Image files:** Move Image files to the new structure
 
    Not ready, intended forlater use
 
