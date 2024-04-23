@@ -2,7 +2,7 @@
 
 RSG2: Short for RSGallery2
 
-**Work in progress 21. April 2024**
+**Work in progress 23. April 2024**
 
 Text will be improved in the next next week(s) regularly
 
@@ -14,6 +14,7 @@ Text will be improved in the next next week(s) regularly
   - Use PHP 8.0
   - Check database version (4.x may need a higher version ...)
   - [Joomla 3x to 4x standard upgrade documentation](https://docs.joomla.org/Joomla_3.x_to_4.x_Step_by_Step_Migration)
+
 - Clean up RSG2 J3x parts (see also below)
   - Remove RSG2 plugins and modules
 - Install J4x
@@ -85,13 +86,19 @@ ToDo: -------------------------------------------------------------
 
 They are copied/transfered to standard component options and have no own table any more. The result can be checked or reinitialized over button "DB: Copy old J3x configuration" in maintenance. This will open a form with a table where the original J3x and matching destination J4x values can compared and copied again.
 
-   The values may still be in use as long as the J3x display methods are used.
+The values may still be in use as long as the J3x display methods are used.
+
+   ![DB Configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.form.png?raw=true)
+
+Plan B in maintenance
 
    ![DB Configuration](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Config.png?raw=true)
 
 
 #### 2)  DB: Transfer J3x galleries
 **DB Galleries:** The installation may handle the transfer of the database items for galleries from table #**rsgallery2_galleries to the new table #**rsg2_galleries Then this line has disappeared. Otherwise use button "DB: Transfer J3x galleries" in maintenance to transfer the data.
+
+  ![J3x DB Galleries upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Galleries.form.png?raw=true)
 
   ![J3x DB Galleries upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Galleries.png?raw=true)
 
@@ -101,19 +108,25 @@ They are copied/transfered to standard component options and have no own table a
 #### 3)  DB: Transfer J3x images
 2) **DB Images:** To prevent failure due to large lists of images in the database these items are not transfered automatically from table **'rsgallery2_files'** to **'rsg2_images'**. Please use button "DB: Transfer J3x images" in maintenance to transfer the data. This will open a form where a set of images can be selected and the transfer can be issued. Please select the images batch wise as still the transfer of too many items at once may need longer than server time allows.
 
+   ![J3x DB Images upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Images.form.png?raw=true)
+
    ![J3x DB Images upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Images.png?raw=true)
 
    This is necessary. Otherwise image names will not be listed in gallery overview
 
 
-#### 4)  Increase gallery ID in Menues
+#### 4) Increase gallery ID in Menues
 
 The new database structure forces the gallery ID to be incresed by one. Therefore on all menu items referencing a gallery the id must be increased. This is automated here.  
+
+   ![J3x Increase gallery ID in Menues](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_.MenuGid.Form.png?raw=true)
 
 
 #### 5)  <s>Copy/move J3x images to new folder structure</s>
 
 **Image files:** Move Image files to the new structure
+
+   ![Copy/move J3x images to new folder structure](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_move_Images.form.png?raw=true)
 
    Not ready, intended forlater use
 
