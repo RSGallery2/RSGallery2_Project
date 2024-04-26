@@ -2,7 +2,7 @@
 
 RSG2: Short for RSGallery2
 
-**Work in progress 23. April 2024**
+**Work in progress 26. April 2024**
 
 Text will be improved in the next next week(s) regularly
 
@@ -59,6 +59,9 @@ Sometime it is needed to export th DB and imnport it into a newer versions
 
 #### 3) Upgrade Joomla to 4.x
 
+Follow standard joomla steps 
+
+#### 4) Install / upgrade RSGallery2 for J4x 
 
 #### 4a) Download RSGallery2 for j4x
 
@@ -69,17 +72,20 @@ Sometime it is needed to export th DB and imnport it into a newer versions
 
 If RSGallery2 was not deinstalled you may find a update notice when the first alfa version is ready
 
+---
+
 ### Post processing steps to transfer J3x data to j4x
 
-- In RSG2 Control panel further action is indicated on top. Use buttons in orde 1-4 transfer the data. These buttons opens seperate forms where the action can be reviewed and started
+- In RSG2 Control panel further action is indicated on top. Use buttons in order 1-4 transfer the data. These buttons opens seperate forms where the action can be reviewed and started
+
+![J3x upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_UpgradeActionNeeded.png?raw=true)
+
 Attention: Step 5 "Move J3x images" is striked trough and for later use when RSG2 is ready for it. The actual software still uses the J3x file place
 
 * RSG2 for j4x has new database tables. So the old data has to be copied
 * The RSG2 for j4x has prepared a new file structure for more parallel image resolutions and one folder per gallery.
 
-![J3x upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_UpgradeActionNeeded.png?raw=true)
-
-
+The individual steps are explained separately below
 
 #### 1) DB: Copy old J3x configuration
 The button will lead you to a form where you can issue the copy with button (1) (2)
@@ -98,17 +104,20 @@ Single config variables may be later checked and copied in maintenance. Use foll
 
 #### 2) DB: Transfer J3x galleries
 
-**DB Galleries:** live in a new table with more parameters. Therefore they have to be transferred
+**DB Galleries:** got a new table with more parameters. Therefore they have to be transferred
 
 The button will lead you to a form where you can issue transfer of galleries  with button (1) (2)
 
   ![J3x DB Galleries upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Galleries.form.png?raw=true)
 
-* For some 100 Galleries the transfer may be done in one batch: Use Transfer all J3x ... button
+* With around 70 Galleries the transfer may be done in one batch: Use the "Transfer all J3x ..." button
 * For large amount of galleries it is recommended to transfer a batch of say 50 to keep execution time within limits. Then select a batch of galleries and use (3) DB: Transfer single galleries
 
 
 ToDo: Check single gallery transfer in batches should have been programmed alsready -----------------------------------------------------
+ToDo: Button in header / below shorter as similar to images .... -----------------------------------------------------
+ToDo: test buttton DB ... single for galleries and images ? seperate form ? -----------------------------------------------------
+
 
 Single galleries may be later checked and copied in maintenance. Use following button there
 
@@ -121,12 +130,23 @@ ToDo: valid up to here ---------------------------------------------------------
 
 #### 3)  DB: Transfer J3x images
 
-The button will lead you to a form where you can issue ... with button (1) (2)
+**DB Images:** got a new table with more parameters. Therefore they have to be transferred
 
-
-2) **DB Images:** To prevent failure due to large lists of images in the database these items are not transfered automatically from table **'rsgallery2_files'** to **'rsg2_images'**. Please use button "DB: Transfer J3x images" in maintenance to transfer the data. This will open a form where a set of images can be selected and the transfer can be issued. Please select the images batch wise as still the transfer of too many items at once may need longer than server time allows.
+The button will lead you to a form where you can transfer images database data with button (1) (2)
 
    ![J3x DB Images upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Images.form.png?raw=true)
+
+* With around 70 Images the transfer may be done in one batch: Use the "Transfer all J3x ..." button
+* For large amount of images it is recommended to transfer a batch of say 50 to keep execution time within limits. This will open a form where a set of images can be selected and the transfer can be issued. Please select the images batch wise as still the transfer of too many items at once may need longer than server time allows.
+
+
+
+ToDo: Button in header should be called transfer see galleries above .... -----------------------------------------------------
+
+
+
+
+2)  To prevent failure due to large lists of images in the database these items are not transfered automatically from table **'rsgallery2_files'** to **'rsg2_images'**. Please use button "DB: Transfer J3x images" in maintenance to transfer the data. This will open a form where a set of images can be selected and the transfer can be issued. Please select the images batch wise as still the transfer of too many items at once may need longer than server time allows.
 
    ![J3x DB Images upgrade action needed](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_DB_Images.png?raw=true)
 
@@ -142,7 +162,7 @@ The new database structure forces the gallery ID to be incresed by one. Therefor
    ![J3x Increase gallery ID in Menues](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/J3x_upgrade_.MenuGid.Form.png?raw=true)
 
 
-#### 5)  <s>Copy/move J3x images to new folder structure</s>
+#### 5) <s>Copy/move J3x images to new folder structure</s>
 
 The button will lead you to a form where you can issue ... with button (1) (2)
 
@@ -175,12 +195,16 @@ The button will lead you to a form where you can issue ... with button (1) (2)
 
 ### Differences J3x / j4x
 
-* Config variables are also in menu
+* Config variables are also in menu / module definitions
 * .
-* [J3x] Menues supported actually
+* [J3x] Menues only actually supported 
 * .
-* image path organisation
-*
+* image path organisation per gallery ID
+* .
+* Sizes per gallery ?
+* 
+* .
+* .
 
 ? different document ?
 
