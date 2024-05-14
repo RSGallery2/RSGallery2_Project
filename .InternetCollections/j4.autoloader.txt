@@ -2,3 +2,4 @@
 
 try deleting the autoloader file in administrator/cache
 
+administrator/cache/autoload_psr4.php 

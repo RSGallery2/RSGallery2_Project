@@ -1,0 +1,12 @@
+
+Xampp replacements
+
+Wamp server
+
+
+https://www.uwamp.com/en/
+	http://goestathomas.de/?Blog&UwAmp-lokaler-Apache-Webserver-im-Test&act=view&bID=52
+	
+https://laragon.org/docs/
+
+

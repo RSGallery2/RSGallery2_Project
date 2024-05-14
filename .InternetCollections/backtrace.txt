@@ -1,0 +1,7 @@
+
+
+   static $local = 0;
+    
+    if ($local++ > 10) { debug_print_backtrace(); die(); }
+	
+	
