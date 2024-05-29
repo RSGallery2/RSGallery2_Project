@@ -1,5 +1,8 @@
 
 
+highslide
+http://www.highslide.com/#licence
+
 tiny-slider
 https://github.com/ganlanyuan/tiny-slider
 https://codepen.io/jordelca/pen/wvvKJNQ
