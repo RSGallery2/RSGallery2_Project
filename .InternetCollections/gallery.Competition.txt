@@ -1,5 +1,8 @@
 see also GalleriesLinks2Other.txt and GallerySurvey.txt
 
+// good design / joomla website itself ...
+Showtime Image Gallery for Joomla
+https://www.firecoders.com/joomla-extensions/showtime-image-gallery
 
 
 // good design / joomla website itself ...
