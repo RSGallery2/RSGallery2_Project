@@ -1,0 +1,26 @@
+
+bembelimen
+10:16 PM
+
+$adapter->currentExtensionId;
+
+10:16 PM
+:man-shrugging:  alles da
+
+bembelimen
+10:21 PM
+$adapter->extension enthält wahrscheinlich was du brauchst
+
+	
+Sven Schultschik
+10:24 PM
+
+$adapter->currentExtensionId;
+ok da war ich irgendwie blind
+
+10:24 PM
+$adapter->extension ist im preflight leer 
+
+10:25 PM
+und im update() hat es die version des installierten updates
+
