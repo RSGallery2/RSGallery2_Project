@@ -1,0 +1,9 @@
+How would i delete all items in a table with sql joomla style ?
+
+Jan
+
+$db    = $this->getDatabase();// depends on where you are
+$query = $db->getQuery(true)
+    ->delete($db->quoteName('#__some_table'))
+$db->setQuery($query);
+$db->execute();
