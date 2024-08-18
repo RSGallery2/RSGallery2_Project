@@ -1,0 +1,20 @@
+sql name and names quoting and sting and string quoting
+
+A simple rule for us to remember what to use in which case:
+
+[S]ingle quotes are for [S]trings Literals (date literals are also strings);
+[D]ouble quotes are for [D]atabase Identifiers;
+Examples:
+
+INSERT INTO "USERS" ("LOGIN", "PASSWORD", "DT_BIRTH") VALUES ('EDUARDO', '12345678', '1980-09-06');
+
+In MySQL and MariaDB, the ` (backtick) symbol is the same as the " symbol. 
+
+---------------------------------
+
+I use this mnemonic:
+
+Single quotes are for strings (one thing)
+Double quotes are for tables names and column names (two things)
+This is not 100% correct according to the specs, but this mnemonic helps me (human being).
+

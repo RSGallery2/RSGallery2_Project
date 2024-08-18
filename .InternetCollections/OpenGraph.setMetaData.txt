@@ -1,0 +1,23 @@
+
+//og Open Graph / Facebook
+$doc->setMetaData('og:type', 'website', $attribute = 'property' );
+$doc->setMetaData('og:url', URI::current(), $attribute = 'property' );
+$doc->setMetaData('og:title', $doc->getTitle(),  $attribute = 'property' );
+$doc->setMetaData('og:locale', 'en_gb',  $attribute = 'property');
+$doc->setMetaData('og:image', $ogimage, $attribute = 'property' );
+$doc->setMetaData('og:image:width', "1200", $attribute = "property");
+$doc->setMetaData('og:image:height', "628", $attribute = "property");
+if (!isset($this->_metaTags['property']['og:description'])) {
+    $doc->setMetaData('og:description', $doc->getDescription(), $attribute = 'property' );
+}
+
+//meta Twitter
+$doc->setMetaData('twitter:card', 'summary_large_image', $attribute = 'property' );
+$doc->setMetaData('twitter:url', URI::current(), $attribute = 'property' );
+$doc->setMetaData('twitter:title', $doc->getTitle(),  $attribute = 'property' );
+$doc->setMetaData('twitter:image', $ogimage, $attribute = 'property' );
+if (!isset($this->_metaTags['property']['twitter:description'])) {
+    $doc->setMetaData('twitter:description', $doc->getDescription(), $attribute = 'property' );
+}
+
+

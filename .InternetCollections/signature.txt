@@ -1,0 +1,2 @@
+// wonderworld 'good bye' icons finnern
+echo '<br><h4>&oplus;&infin;&omega;</h4><br>';

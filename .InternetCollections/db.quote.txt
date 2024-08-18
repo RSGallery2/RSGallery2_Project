@@ -1,0 +1,55 @@
+
+quoteName(): Table names and table column names
+quote(): Field values and use type 
+
+--------------------------
+Joomla's PHP Coding Standards say:
+
+Table names and table column names should always 
+be enclosed in the quoteName() method to escape 
+the table name and table columns. Field values 
+checked in a query should always be enclosed in 
+the quote() method to escape the value before 
+passing it to the database. Integer field values 
+checked in a query should also be type cast to (int).
+
+-------------------------------------------
+Toeing this line too often results in ugly 
+and bloated code, while unnecessarily calling 
+quoting methods.
+
+Because none of the table or column names 
+actually need quoting, and you should cast 
+integer variables as integer type before 
+writing them into the query, this is what 
+I would recommend...
+
+*note value is a MySQL keyword, but not a 
+Reserved Keyword, so it doesn't require 
+backticking. 
+https://dev.mysql.com/doc/refman/5.5/en/keywords.html#keywords-5-5-detailed-V
+
+$db = JFactory::getDbo();
+$query = $db->getQuery(true)
+    ->select("value")
+    ->from("#__rsticketspro_custom_fields_values")
+    ->where([
+        "ticket_id = " . (int)$item->id,
+        "custom_field_id = 4"
+    ]);
+$db->setQuery($query);
+$result = $db->loadResult();
+
+* the WHERE clause is happy to receive an array 
+of conditions
+
+* method chaining can start from the getQuery() 
+  method to avoid writing $query at the start of each line
+
+* there is no point in quoting or casting the 
+  static value 4
+
+
+
+
+
