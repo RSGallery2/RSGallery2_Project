@@ -1,0 +1,5 @@
+
+
+As for the & and  &amp;: within cdata you can use  &, otherwise you should use &amp; in XML.
+
+

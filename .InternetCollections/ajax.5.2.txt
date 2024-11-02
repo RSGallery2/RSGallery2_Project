@@ -1,0 +1,32 @@
+
+You have to add the HelperFactory in your provider.php
+
+$container->registerServiceProvider(new HelperFactory('\\YourName\\Module\\YourModule\\Administrator\\Helper'));
+Additionally your Dispatcher has to implement the HelperFactoryAwareInterface
+
+class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareInterface
+{
+    use HelperFactoryAwareTrait;
+}
+And then add a method to your helper class and name it something like yourTaskAjax().
+
+class YourModuleHelper
+{
+      yourTaskAjax() {
+           return 'Hello World';
+      }
+}
+With that you can add the following url to your ajax call:
+index.php?option=com_ajax&module=yourModule&method=yourTask&format=json
+and com_ajax should handle the rest for you. 
+
+----
+
+If you want to use the Helper inside getLayoutData() you can access the helper by doing
+
+$helper = $this->getHelperFactory()->getHelper('YourModuleHelper'); 	 	
+
+
+If you want to use the Helper inside getLayoutData() you can access the helper by doing
+
+$helper = $this->getHelperFactory()->getHelper('YourModuleHelper');

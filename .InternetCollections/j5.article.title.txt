@@ -1,0 +1,9 @@
+
+Die neue Reihenfolge, wie der <titel> vergeben wird ist: 
+1) Article > Tab "Options" > Section "Options" > Browser Page Title
+2) Menu Item > Tab "Page Display" > Browser Page Title
+
+3) Article Title
+4) Menu Title (only for Blogs)
+
+
