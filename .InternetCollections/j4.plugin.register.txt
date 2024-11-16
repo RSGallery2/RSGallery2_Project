@@ -1,0 +1,52 @@
+
+
+provider.php
+`return new class () implements ServiceProviderInterface{
+
+        public function register(Container $container):void{
+            $app = Factory::getApplication();
+
+        if($app->isClient('administrator')){
+            $this->registerAdmin($container);
+            return;
+        }
+
+        $this->registerSite($container);
+    }
+
+    private function registerAdmin(Container $container):void{}
+
+    private function registerSite(Container $container):void{
+        $app = Factory::getApplication();
+        $matomoPlugin = (array)PluginHelper::getPlugin('system','matomo');
+        $params = new Registry($matomoPlugin['params']);
+
+        $matomoLib = new MatomoLib($params->get('site_id'),$params->get('api_endpoint'),$params->get('auth_token'));
+        $container->set('matomo',$matomoLib);
+
+        //Init Matomo Tracker Plugin
+        if((bool)$params['disable_tracking'] === false && (bool)$params['use_tracker'] === true){
+            
+            //Plugins
+            if((bool)$params->get('tracker_plugin_session_id',false) === true){
+                $matomoLib::registerTrackerPlugin('SessionId',\MaxDau\Matomo\Lib\Matomo\Tracker\Plugin\SessionIdPlugin::class);
+            }
+
+            if((bool)$params->get('tracker_plugin_cloudflare',false) === true){
+                $matomoLib::registerTrackerPlugin('Cloudflare',\MaxDau\Matomo\Lib\Matomo\Tracker\Plugin\CloudflarePlugin::class);
+            }
+
+            if((bool)$params->get('tracker_plugin_user',false) === true){
+                $matomoLib::registerTrackerPlugin('User',\MaxDau\Matomo\Lib\Matomo\Tracker\Plugin\UserPlugin::class);
+            }
+            
+            $container->set(PluginInterface::class,function(Container $container) use ($matomoPlugin,$matomoLib){
+                $tracker = new Tracker($container->get(DispatcherInterface::class),$matomoPlugin);
+                $tracker->setMatomo($matomoLib);
+                return $tracker;
+            });
+        }
+    }
+};`
+
+
