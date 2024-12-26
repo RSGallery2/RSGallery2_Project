@@ -1,6 +1,8 @@
 
 
-developer.joomla.org uses https://github.com/joomla/developer.joomla.org/tree/master/components/com_ghmarkdowndisplay for displaying github content
+developer.joomla.org uses 
+https://github.com/joomla/developer.joomla.org/tree/master/components/com_ghmarkdowndisplay 
+for displaying github content
 
 CommonMark content plugin
 https://obix.nl/en/joomla/joomla-extensions-by-obix/commonmark-content-plugin
