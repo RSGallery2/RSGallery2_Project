@@ -1,0 +1,4 @@
+
+$app = Factory::getApplication();
+$app->logout();
+$app->redirect('index.php');
