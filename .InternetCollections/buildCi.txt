@@ -1,0 +1,9 @@
+
+
+? 
+experience using a raspberry pi as git/ci/build server with docker
+
+use my raspberry pi 4 in combination with forgejo and forgejo respectively github actions and an docker action-runner for build and ci. 
+he forgejo server runs on a vps and only the actions runner runs here locally on my raspberry
+
+

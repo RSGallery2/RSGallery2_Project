@@ -1,0 +1,13 @@
+
+
+------------------------------------
+Communicate with the Joomla 4.x Web Services API
+https://manual.joomla.org/docs/general-concepts/webservices/#using-the-php-curl-functions
+
+-------------------------------------
+Joomla Core APIs
+https://docs.joomla.org/J4.x:Joomla_Core_APIs
+
+
+
+
