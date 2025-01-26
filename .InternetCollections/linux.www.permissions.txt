@@ -23,3 +23,19 @@ https://serverfault.com/questions/124800/how-to-setup-linux-permissions-for-the-
 
 
 
+-------------------------------------------------------------
+Jan Phoca
+
+When I install LAMP on Linux to avoid these problems (when the PHP script has a 
+different user than me working with the files):
+
+1) I immediately set rights and ownership for the server root folder:
+sudo chown jan:jan /var/www/ -R
+
+2) and in the configuration (directly for the server or fpm) I set the 
+same group and user, e.g. if fpm is used, then in this file: /etc/php/8.3/fpm/pool.d/www.conf
+
+Then the PHP script has the same group and user, which is the same as who 
+is working with the files (if it wasn't localhost, then e.g. via FTP) 
+https://www.phoca.cz/blog/1302-running-multiple-php-instances-with-lamp-stack-on-ubuntu-kubuntu-linux 
+
