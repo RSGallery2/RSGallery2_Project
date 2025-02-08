@@ -1,5 +1,16 @@
 
-So, if anyone is looking for a way to have multiple PHP versions on their localhost for development and is on Ubuntu/Kubuntu and is having Docker issues like me, here's a tutorial for a clean LAMP install: https://www.phoca.cz/blog/1302-running-multiple-php-instances-with-lamp-stack-on-ubuntu-kubuntu-linux
+
+------------------------------------------------------
+Local Hosting on Linux jdocmanual.org
+https://jdocmanual.org/en/jdocmanual?article=user/hosting/local-hosting-on-linux
+
+
+--------------------------------------
+phoca
+So, if anyone is looking for a way to have multiple PHP versions on their 
+localhost for development and is on Ubuntu/Kubuntu and is having Docker 
+issues like me, here's a tutorial for a clean LAMP install: 
+https://www.phoca.cz/blog/1302-running-multiple-php-instances-with-lamp-stack-on-ubuntu-kubuntu-linux
 
 Sometimes it surprises you how seemingly complicated things are actually very simple.
 

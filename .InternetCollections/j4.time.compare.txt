@@ -1,0 +1,123 @@
+
+
+
+
+Joomla 4 Tips and Tricks: Check two dates
+
+https://docs.joomla.org/J4.x:Joomla_4_Tips_and_Tricks:_Check_two_dates
+
+Aus Joomla! Documentation
+ads via Carbon
+AI-first pull request reviewer with context-aware line-by-line feedback, and real-time chat.
+ads via Carbon
+
+Inhaltsverzeichnis
+1 Introduction
+2 The Form XML File
+3 The edit.php Template File
+3.1 Load the JavaScript File
+3.2 Add Some JavaScript Language Translations
+3.3 Validate the Form
+4 The joomla.asset.json File
+5 The JavaScript file
+6 Parent Links
+Introduction[Bearbeiten]
+This code was created for an application that has events with start and end dates that must be less than 30 days apart. The code is for the Administrator data entry form.
+
+For the sake of argument, in this example the events are described as camps. They could be festivals, horse races, conferences or anything else that has defined start and end dates.
+
+The Form XML File[Bearbeiten]
+The dates are required calendar fields. Note that validation is passed as a custom class starting with validate-.
+
+		... other elements ...
+		<field
+			name="date_start"
+			type="calendar"
+			label="COM_THINGY_CAMP_DATE_START_LABEL"
+			description="COM_THINGY_CAMP_DATE_START_DESC"
+			class="w-25 validate-date_start"
+			required="required"
+			>
+		</field>
+
+		<field
+			name="date_end"
+			type="calendar"
+			label="COM_THINGY_CAMP_DATE_END_LABEL"
+			description="COM_THINGY_CAMP_DATE_END_DESC"
+			class="w-25 validate-date_end"
+			required="required"
+			>
+		</field>
+		... other elements ...
+The edit.php Template File[Bearbeiten]
+Load the JavaScript File[Bearbeiten]
+The form template file is typically edit.php. This seems to be the best/recognised place to make sure the required scripts are loaded. For example, after the use statements, insert:
+
+$wa = $this->document->getWebAssetManager();
+$wa->useScript('keepalive')
+	->useScript('form.validate')
+	->useScript('com_thingy.camp');
+For this to work you need to set up the installation so that the JavaScript and CSS assets go into the site media folder with a joomla.asset.json file. You can look up how to do that elsewhere. In this case the loaded JavaScript file is media/com_thingy/js/camp.js.
+
+Add Some JavaScript Language Translations[Bearbeiten]
+The validation script contains a couple of alert messages apart from the default messages that appear for invalid fields. The alert message translations go next in the edit.php file:
+
+Text::script('COM_THINGY_JS_ERROR_DATES_WRONG_ORDER', true);
+Text::script('COM_THINGY_JS_ERROR_DATES_TOO_FAR_APART', true);
+These lines create inline script statements containing the key and translation pairs. The actual translations go in your language ini file along with all of your other string translations.
+
+Validate the Form[Bearbeiten]
+The form needs class="form-validate":
+
+<form action="<?php echo Route::_('index.php?option=com_thingy&view=camp&layout=edit&id=' . (int) $this->item->id); ?>"
+	class="form-validate" method="post" name="adminForm" id="adminForm">
+The joomla.asset.json File[Bearbeiten]
+This file is located in the root of the component media file (media/com_thingy/joomla.asset.json) and amongst other things contains the following:
+
+    ,{
+      "name": "com_thingy.camp",
+      "type": "script",
+      "uri": "com_thingy/camp.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    }
+The JavaScript file[Bearbeiten]
+In this example the events must be less than 30 days apart. That ought to be a configurable value but here it is hard-coded.
+
+// ===== validation =====
+
+document.addEventListener('DOMContentLoaded', (event) => {
+
+	document.formvalidator.setHandler('date_start', function(value) {
+		const regex = /^\d{4}-\d{2}-\d{2}$/;
+		return regex.test(value);
+	});
+
+	document.formvalidator.setHandler('date_end', function(value) {
+		const regex = /^\d{4}-\d{2}-\d{2}$/;
+		if (!regex.test(value)) {
+			return false;
+		}
+		let date_start = document.getElementById('jform_date_start').value;
+		if (value <= date_start) {
+			alert (Joomla.Text._('COM_THINGY_JS_ERROR_DATES_WRONG_ORDER'));
+			return false;
+		}
+		date_start = date_start.split('-');
+		date_start = new Date(date_start[0], date_start[1] - 1, date_start[2]); // milliseconds
+		let date_end = value.split('-');
+		date_end = new Date(date_end[0], date_end[1] - 1, date_end[2]); // milliseconds
+		let diff = (date_end - date_start)/(1000*60*60*24);
+		if (diff > 30) {
+			alert (Joomla.Text._('COM_THINGY_JS_ERROR_DATES_TOO_FAR_APART'));
+			return false;
+		}
+		return true;
+	});
+	... more validation rules ...
+});
