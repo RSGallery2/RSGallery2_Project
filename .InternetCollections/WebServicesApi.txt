@@ -1,13 +1,38 @@
 
+---------------------------------------
+How to use APIs in your Joomla website - Peter Martin
+https://petermartin.nl/en/presentations/joomla/how-to-use-apis-in-your-joomla-website
 
 ------------------------------------
 Communicate with the Joomla 4.x Web Services API
+https://manual.joomla.org/docs/general-concepts/webservices/
 https://manual.joomla.org/docs/general-concepts/webservices/#using-the-php-curl-functions
 
 -------------------------------------
 Joomla Core APIs
 https://docs.joomla.org/J4.x:Joomla_Core_APIs
 
+---------------------------------------
+Playing with the Joomla Web Services (API)
+https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-1
+https://magazine.joomla.org/all-issues/april-2023/playing-with-the-joomla-api-part-2
 
 
+----------------------------------------------
+Joomla 4 API Introduction – Manage Articles via Joomla API
+https://www.joomdev.com/joomla-4-api-introduction/
+
+
+--------------------------------------------------
+postman
+https://documenter.getpostman.com/view/9617873/Szzj9yJy
+
+----------------------------------------------------
+Introduction to the Joomla API with Marc Dechèvre
+https://www.youtube.com/watch?v=ZH3a4MHB718
+
+
+-------------------------------------------------------
+Import Joomla! Articles Using Web Services API
+https://joomlafry.com/documentation/import-joomla-articles-using-web-services-api
 

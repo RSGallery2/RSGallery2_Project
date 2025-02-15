@@ -1,0 +1,9 @@
+
+Postman collections -> PhpSTorm 
+For those who use webservices and did not know yet: it is possible to import Postman collections in PhpSTorm to be used with its HTTP Client
+https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html#import-postman-collections
+
+
+Pe7er 9:09 AM
+Thanks, I didn't know. I recently switched to Bruno: https://www.usebruno.com/ and imported Postman collections there.
+
