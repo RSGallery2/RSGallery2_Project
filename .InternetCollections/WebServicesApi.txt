@@ -16,7 +16,9 @@ https://docs.joomla.org/J4.x:Joomla_Core_APIs
 Playing with the Joomla Web Services (API)
 https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-1
 https://magazine.joomla.org/all-issues/april-2023/playing-with-the-joomla-api-part-2
-
+https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-3
+https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-4
+https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-5
 
 ----------------------------------------------
 Joomla 4 API Introduction – Manage Articles via Joomla API
