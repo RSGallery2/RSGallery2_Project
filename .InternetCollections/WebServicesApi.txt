@@ -1,4 +1,10 @@
 
+------------------------------------------------
+Marc Dechèvre: https://www.woluweb.be
+Playing with the Joomla Web Services (API) in Joomla 4 or 5 or 6
+https://slides.woluweb.be/api/
+
+
 ---------------------------------------
 How to use APIs in your Joomla website - Peter Martin
 https://petermartin.nl/en/presentations/joomla/how-to-use-apis-in-your-joomla-website
