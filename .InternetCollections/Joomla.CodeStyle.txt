@@ -1,6 +1,6 @@
 
-
-https://manual.joomla.org/docs/get-started/codestyle
+https://developer.joomla.org/coding-standards/xml.html
+old: ? https://manual.joomla.org/docs/get-started/codestyle
 
 Coding Style Guide | Joomla! Programmers Documentation
 Since Joomla version 4.2, Joomla uses the PSR-12 coding standard. 
