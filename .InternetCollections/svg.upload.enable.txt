@@ -1,0 +1,11 @@
+
+Sowohl in "Allowed Extensions" als auch in 
+"Legal Image Extensions (File Types)" muss "svg" 
+dabei sein (komma-separierte Liste ohne Leerzeichen).
+
+Außerdem muss "image/svg+xml" in "Legal MIME Types" dabei sein.
+
+Siehe auch https://docs.joomla.org/J4.x:Media:_Uploading_SVG_files
+
+ "Legal Image Extensions (File Types)"?
+ 
