@@ -1,0 +1,42 @@
+
+3pm UTC -> 4pm german
+	
+Philip Walton
+5:50 PM
+Thank you all for your help with PBF,
+Joomla 6 is approaching and there are a 
+growing number of prs to test.
+I wrote this article some years back
+
+https://magazine.joomla.org/all-issues/november-2021/work4joomla-apply-within
+
+and I am proposing to spend every Friday 
+afternoon from 3pm UTC to 5pm UTC to 
+devote to weekly patch testing.
+I will be in a chat room to go though the 
+J6 patches and with your help we can test 
+and comment back to the authors if there 
+is an issue, or test and if its passed and 
+in line with J6 I will merge it there and 
+then !!!!! OMG actual merging.
+
+So please, do make a little time if you can 
+this Friday and many Fridays to come and look 
+out for the room and links 
+
+https://joomlacommunity.cloud.mattermost.com/main/channels/work4joomla
+
+To get something into Joomla, we need someone 
+to write the patch, two people to test the patch 
+and one of two to merge the patch.
+It is the testers we need.
+To anyone wanting to add a PR to Joomla 6, not 
+everything will make it, we need to refine, 
+refactor and make sure it's something the 
+majority will use. 
+
+Please, Please, Please make sure you have added 
+any documentation to manual.joomla.org and write 
+good instructions, with good instructions you w
+ill get good tests. Poor instructions will leave 
+the pr untested. 
