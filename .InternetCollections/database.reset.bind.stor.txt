@@ -1,8 +1,0 @@
-
-	
-Hannes Papenberg
-database query 
-You should ALWAYS reset the object after use.
-
-9:37 AM
-->reset(), then ->bind(), then ->store(), not ->save()

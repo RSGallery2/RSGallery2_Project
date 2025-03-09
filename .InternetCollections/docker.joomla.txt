@@ -1,0 +1,54 @@
+
+
+https://git.vdm.dev/octoleo/octojoom
+https://github.com/muhme/joomla-branches-tester
+https://github.com/degobbis/docker-lamp/tree/3.0.0
+
+
+Proposal: Joomla Extension Development Containers with Xdebug
+We are working on a new set of Docker containers specifically designed for Joomla extension developers. These containers will include Xdebug and other tools to streamline the debugging and development process within a containerized environment.
+
+Why a New Set of Containers?
+Joomla currently maintains two sets of official Docker containers:
+
+Internal Testing Containers – Used by the Joomla core maintainers to test CMS functionality.
+Public-Facing Official Containers – Designed for users who want to run Joomla in a containerized environment.
+Our new extension development containers will be part of the public-facing set but tailored specifically for extension developers. These containers will allow developers to easily spin up a Joomla instance with their extension and debug it efficiently using simple global variables and configuration options.
+
+Project & Collaboration: OctoJoom
+The project is being discussed and developed under OctoJoom, an easy deployment script for Joomla containers. OctoJoom provides a simple Bash-based selection interface, allowing developers to:
+
+Quickly spin up Joomla containers with debugging tools.
+Run multiple Joomla instances simultaneously in a local development environment.
+Work with current Joomla versions, as well as beta and alpha versions as they are released.
+Cross-Platform Support
+Ubuntu & macOS: Fully supported.
+Windows: Not fully implemented yet, but progress has been made. Running OctoJoom inside a Ubuntu virtual machine on Windows is currently the best workaround. If you're interested in helping make it fully Windows-compatible, we’d love your input!
+How to Get Involved
+If you have experience integrating Xdebug into containers or have ideas for additional tools and functionality that would benefit extension developers, we encourage you to join the discussion. Our goal is to create an optimized development environment that simplifies debugging and extension testing outside of Joomla’s core testing infrastructure.
+
+If you need assistance getting started with OctoJoom, feel free to reach out. We look forward to your feedback and contributions! 
+
+Show less
+
+Harald Leithner
+10:26 AM
+doesn't this already exists by @Allon Moritz called dp-docker?
+
+
+<<ewe>>yn
+10:26 AM
+I will check it out
+
+
+brianteeman
+10:28 AM
+
+
+
+
+
+
+
+there also is https://github.com/muhme/joomla-branches-tester
+
