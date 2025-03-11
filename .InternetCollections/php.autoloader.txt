@@ -1,0 +1,24 @@
+
+
+https://opensource.com/article/23/4/autoloading-namespaces-php
+https://www.daggerhartlab.com/autoloading-namespaces-in-php/
+
+----------------------
+
+
+https://www.php.net/manual/en/function.spl-autoload-call.php
+
+https://www.php-fig.org/psr/psr-4/
+
+https://www.php-fig.org/psr/psr-4/examples/
+
+
+https://stackoverflow.com/questions/22494980/php-namespacing-and-spl-autoload-register
+https://stackoverflow.com/questions/67901706/using-namespaces-with-spl-autoload-register
+https://stackoverflow.com/questions/48723309/default-spl-autoload-register-namespace-behavior-with-index-php-outside-root
+
+----------------------------------------
+
+composer autoloading-namespaces-in-php/
+
+https://www.marcosimbuerger.ch/tech-blog/composer-verstehen-teil-5-autoloading.html
