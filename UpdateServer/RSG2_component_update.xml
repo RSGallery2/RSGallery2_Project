@@ -15,7 +15,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl>
 	</update>
 	<update>
@@ -33,7 +33,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -51,7 +51,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -69,7 +69,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -87,7 +87,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -105,7 +105,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -123,7 +123,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -141,7 +141,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -159,7 +159,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -177,7 +177,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<update>
@@ -195,7 +195,7 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update>
 	<!---update>
@@ -214,7 +214,7 @@
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="4.*"/>
 		<php_minimum>8.0.0</php_minimum>
-		<client>1</client>
+		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_Component/releases</infourl> 		
 	</update-->
 </updates>
