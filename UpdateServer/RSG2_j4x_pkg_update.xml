@@ -16,6 +16,6 @@
 		<maintainer>team@rsgallery2.org</maintainer>
 		<maintainerurl>rsgallery2.org</maintainerurl>
 		<targetplatform name="joomla" version="4.0"/>
-		<client>???site???</client>
+		<client>administrator</client>
 	</update>
 </updates>
