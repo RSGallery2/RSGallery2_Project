@@ -13,7 +13,7 @@
 		<maintainerurl>rsgallery2.nl</maintainerurl>
 		<targetplatform name="joomla" version="3.*"/>
 		<folder>user</folder> 
-		<client>0</client>
+		<client>site</client>
 		<infourl>rsgallery2.nl</infourl> 		
 	</update>
 </updates>
