@@ -18,15 +18,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -43,15 +43,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -68,15 +68,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -93,15 +93,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -118,15 +118,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -143,15 +143,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -168,15 +168,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -193,15 +193,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -218,15 +218,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -243,15 +243,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -268,15 +268,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -293,15 +293,15 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-				<ars-phpcompat version="7.1"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+		<ars-phpcompat version="7.1"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -318,14 +318,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -342,14 +342,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -366,14 +366,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -390,14 +390,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -414,14 +414,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -438,14 +438,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -462,14 +462,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -486,14 +486,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -510,14 +510,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -534,14 +534,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -558,14 +558,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -582,14 +582,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -606,14 +606,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -630,14 +630,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -654,14 +654,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -678,14 +678,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -702,14 +702,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -726,14 +726,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -750,14 +750,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -774,14 +774,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -798,14 +798,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -822,14 +822,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -846,14 +846,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -870,14 +870,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -894,14 +894,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -918,14 +918,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -942,14 +942,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -966,14 +966,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -990,14 +990,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1014,14 +1014,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1038,14 +1038,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1062,14 +1062,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1086,14 +1086,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1110,14 +1110,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1134,14 +1134,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1158,14 +1158,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.6"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1182,14 +1182,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1206,14 +1206,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1230,14 +1230,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1254,14 +1254,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.3"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1278,14 +1278,14 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.4"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-		<update>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+	<update>
 		<name><![CDATA[Akeeba Backup Core package]]></name>
 		<description><![CDATA[Akeeba Backup Core package]]></description>
 		<element>pkg_akeeba</element>
@@ -1302,11 +1302,11 @@
 		<maintainerurl>https://www.akeebabackup.com/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="3.5"/>
-					<client>0</client>
-				<folder/>
-						<ars-phpcompat version="5.4"/>
-				<ars-phpcompat version="5.5"/>
-				<ars-phpcompat version="5.6"/>
-				<ars-phpcompat version="7.0"/>
-					</update>
-	</updates>
+		<client>site</client>
+		<folder/>
+		<ars-phpcompat version="5.4"/>
+		<ars-phpcompat version="5.5"/>
+		<ars-phpcompat version="5.6"/>
+		<ars-phpcompat version="7.0"/>
+	</update>
+</updates>
