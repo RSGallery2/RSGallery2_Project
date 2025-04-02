@@ -1,0 +1,13 @@
+joomla.bug.txt
+
+A Dummies Guide to Joomla Bug Testing
+https://brian.teeman.net/joomla/873-a-dummies-guide-to-joomla-bug-testing
+
+Did they fix it yet?
+https://magazine.joomla.org/all-issues/september-2015/did-they-fix-it-yet
+
+How do you report a bug?
+https://docs.joomla.org/How_do_you_report_a_bug%3F
+
+
+
