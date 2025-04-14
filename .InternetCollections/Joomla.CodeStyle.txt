@@ -9,12 +9,15 @@ if you're not following the coding standard or use an auto fix, too.
 
 
 Install code style checker
-TODO
+! TODO: ! 
 Copy from https://docs.joomla.org/Joomla_CodeSniffer and update to the new version
 
+2025.04.12
+>> The rule to follow is the configuration of php-cs-fixer and phpcs in the joomla repo
+   If you want to have a config for your project, you can use the joomla-projects/jorobo 
+   dependency, which contains the example config for both.
 
-
-
-
-
+>> Harald Leithner
+	btw. joomla is not 100% psr-12 for example we "don't" have a line length limit
+	and we actually  do PER Coding Style
 
