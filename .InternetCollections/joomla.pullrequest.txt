@@ -1,0 +1,5 @@
+joomla.pullrequest.txt
+pull request
+
+https://docs.joomla.org/Working_with_git_and_github
+
