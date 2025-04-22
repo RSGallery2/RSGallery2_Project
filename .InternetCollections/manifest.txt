@@ -11,5 +11,16 @@ The version inside has the form of a regex
 
 Manifest / update file needs a separate section for joomla
 
+---------------------------------------------
 
- 
+plugins can be enabled/disabled in the manifest file by definition
+
+XML Form:
+
+<plugins>
+	<plugin group="system" plugin="joomgallery"  enable="true" />  
+	<plugin group="system" plugin="joomgallery"  disabled="true" /> 
+.....
+
+	
+	 
