@@ -1,0 +1,11 @@
+Wampserver  keeps files php.ini and phpForApache.ini 
+in each php version folder (folder like php8.2.26). 
+On version change the link 
+\wamp64\bin\apache\apache2.4.62.1\bin\php.ini 
+points to the file phpForApache.ini in the folder 
+of php version chosen.
+
+Xamp needs debug instead of deveop for phpstorm
+
+;xdebug.mode allowed are: off develop coverage debug gcstats profile trace
+xdebug.mode=debug

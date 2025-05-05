@@ -1,0 +1,7 @@
+
+Wampserver still shows unchanged php version number
+When i changed the PHP version wamp server did follow but the title was still the old settings. Also on restarting the still the previous version started.
+
+Reason: File wamp64\logs\xdebug.log size was too large. I looked into the php_error.log file and there the information about exhausted memeory on line (sorry message already deleted) following it up it got clear that wamp server reads this file complete. So large files could not be read without exception.
+
+After deleting the large file all runs smooth
