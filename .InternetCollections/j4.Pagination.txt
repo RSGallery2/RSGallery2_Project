@@ -1,3 +1,27 @@
 
+
+URL is created by request variables 
+If variable like 'gid'  should be used it may be possible to add it to the list
+
+   protected $paramsFromRequest = [
+        'format'        => 'CMD',
+        'option'        => 'CMD',
+        'controller'    => 'CMD',
+        'view'          => 'CMD',
+        'layout'        => 'STRING',
+        'task'          => 'CMD',
+        'template'      => 'CMD',
+        'templateStyle' => 'INT',
+        'tmpl'          => 'CMD',
+        'tpl'           => 'CMD',
+        'id'            => 'STRING',
+        'Itemid'        => 'INT',
+    ];
+
+Otherwise itemId is expected as the parent id of the list 
+where parts are displayed list_start ... list_end 
+
+
+??? 
 joomla pagination Um den Fehler "call to undefined method getData
 
