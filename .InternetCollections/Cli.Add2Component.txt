@@ -1,0 +1,13 @@
+
+https://www.dionysopoulos.me/book/com-cli.html
+
+https://manual.joomla.org/docs/building-extensions/plugins/plugin-examples/basic-console-plugin-helloworld/
+
+https://symfony.com/doc/current/console/style.html
+
+https://docs.joomla.org/J4.x:Writing_A_CLI_Application
+
+
+https://docs.joomla.org/J4.x:CLI_example_-_Onoffbydate
+
+
