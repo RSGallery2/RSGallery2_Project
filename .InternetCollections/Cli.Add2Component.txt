@@ -9,5 +9,5 @@ https://docs.joomla.org/J4.x:Writing_A_CLI_Application
 
 
 https://docs.joomla.org/J4.x:CLI_example_-_Onoffbydate
-
+https://github.com/joomla/jissues/blob/master/Documentation/Development/CLI-application.md
 

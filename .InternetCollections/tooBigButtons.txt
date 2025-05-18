@@ -1,0 +1,13 @@
+/* Not for backend as such: may be inserted somewhere 
+Editing file "/media/templates/administrator/atum/css/template.css" in template "atum".
+at the end
+*/
+/* zoom the pages. It has too big buttons */
+
+@media (min-width:992px) {
+  html {
+    zoom: 80%;
+  }
+}
+
+

@@ -1,0 +1,9 @@
+I want to clear the state of a model. I am quite sure I am missing something, but I don't see how to do that.
+Don't clear an existing model's state, but create a new model with the MVCFactory of the component with ['ignore_request' => true]as third parameter.
+
+So, if $factory is your MVCFactory:
+
+$factory = $app->bootComponent('com_yourcomponent')->getMVCFactory();
+then create the new model:
+
+$yourModel = $factory->createModel('ModelName', $client, ['ignore_request' => true]);

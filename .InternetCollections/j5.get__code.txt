@@ -1,0 +1,116 @@
+Model / view :  what methods are available by  the traits that are part of the parent classes? 
+
+In the MVCFactory dependent objects are injected into the MVC-objects 
+(mostly via setter-injection), for instance the database that is used 
+can be set via setDatabase(). The availability of methods has nothing 
+to do with injection.
+
+Methods that are available in the MVC-objects are not injected, but 
+inherited from its parent class. What you are referring to is: what 
+methods are available by the traits that are part of the parent classes? 
+
+For instance: the getDatabase() and setDatabase() methods are 
+available in the \Joomla\Database\DatabaseAwareTrait which is for 
+instance used in the \Joomla\CMS\MVC\Model\BaseDatabaseModel class. 
+And the getCurrentUser() and setCurrentUser() methods are available 
+in the \Joomla\CMS\User\CurrentUserTrait which is for instance also 
+used in the \Joomla\CMS\MVC\Model\BaseDatabaseModel class.
+
+A general getter in the View, that served as a proxy for getters in 
+the model, is deprecated. That is another story, nothing to do with 
+injection, inheritance or traits. Mainly boils down to: don't use 
+$this->get('Blabla') anymore in your view, but directly use 
+$model->getBlabla(). 
+
+Model Classes:
+$this->getDatabase(); instead if $this->getDBO()
+$this->getCurrentUser(); instead of $Factory::getUser();
+$this->getDocument(); instead of Factory::getApplication->getDocument();
+$this->getApplication(); instead of Factory::getApplication()
+
+View Classes can use the above and
+$this->getModel();
+
+so in HTMLView.php it's now expected for us to use:
+
+$model               = $this->getModel();
+$this->state         = $model->getState();
+$this->items         = $model->getItems();
+$this->pagination    = $model->getPagination();
+$this->filterForm    = $model->getFilterForm();
+$this->activeFilters = $model->getActiveFilters();
+
+$this->getTotal() but check the class that the model is inheriting from: 
+https://github.com/joomla/joomla-cms/blob/5.3-dev/libraries/src/MVC/Model/ListModel.php
+As well as the component's own list class (same goes for form, item, 
+etc basically the whole MVC)
+
+Also about non model classes they do have their own getters 
++ any getters from the class they do inherit from (if they do)
+
+--------------------------------------------------------
+
+Traits and available methods, used in models
+\Joomla\CMS\MVC\Model\BaseModel
+
+\Joomla\CMS\MVC\Model\StateBehaviorTrait
+getState()
+setState()
+populateState()
+deprecated, will be removed in some future version (so don't use the methods from those traits anymore):
+LegacyModelLoaderTrait
+LegacyErrorHandlingTrait
+LegacyPropertyManagementTrait
+
+Traits to use
+\Joomla\CMS\MVC\Model\BaseDatabaseModel extends BaseModel
+
+\Joomla\Database\DatabaseAwareTrait
+getDatabase()
+setDatabase()
+\Joomla\CMS\MVC\Factory\MVCFactoryAwareTrait
+getMVCFactory()
+setMVCFactory()
+\Joomla\Event\DispatcherAwareTrait
+getDispatcher()
+setDispatcher()
+\Joomla\CMS\User\CurrentUserTrait
+getCurrentUser()
+setCurrentUser()
+\Joomla\CMS\Cache\CacheControllerFactoryAwareTrait
+getCacheControllerFactory()
+setCacheControllerFactory()
+\Joomla\CMS\MVC\Model\FormModel and \Joomla\CMS\MVC\Model\ListModelextends BaseDatabaseModel  
+
+\Joomla\CMS\MVC\Model\FormBehaviorTrait
+protected function loadForm($name, $source = null, $options = [], $clear = false, $xpath = null)
+protected function loadFormData()
+protected function preprocessData($context, &$data, $group = 'content')
+protected function preprocessForm(Form $form, $data, $group = 'content')
+abstract public function getFormFactory(): FormFactoryInterface
+\Joomla\CMS\Form\FormFactoryAwareTrait
+getFormFactory()
+setFormFactory()
+There are other traits that you can use in a specific model, for instance:
+
+\Joomla\CMS\MVC\Model\WorkflowBehaviorTrait, which is used in core models like \Joomla\Component\Content\Administrator\Model\ArticleModel. See https://github.com/joomla/joomla-cms/blob/5.3-dev/libraries/src/MVC/Model/WorkflowBehaviorTrait.php
+\Joomla\CMS\Versioning\VersionableModelTrait, which is used in core models like \Joomla\Component\Content\Administrator\Model\ArticleModel. See https://github.com/joomla/joomla-cms/blob/5.3-dev/libraries/src/Versioning/VersionableModelTrait.php
+public function loadHistory($versionId, Table $table)
+As you can see, those XxxAwareTraits are mainly a getter and setter for an Xxx-object-interface.
+Mind you, that often, but not always, the traits from the framework are used instead of the specific ones from the CMS.
+
+getDocument() and setDocument() are available in \Joomla\CMS\MVC\View\AbstractView.
+
+getApplication()is only implemented in some high level classes, where the application object is injected, like in the \Joomla\CMS\Dispatcher\Dispatcher class. 
+That global application object should not "trickle down" to more specific classes, like the MVC-classes. If you need the application object anywhere else, you'll have to use Factory::getApplication(). But needing the application object, often is an indication of a software architectural mistake. Conjuring up such a global object in your code is in fact the opposite of dependency injection. It is sometimes necessary (even used in core code), but should be avoided if possible. 
+
+
+!!!
+Can traits be added to a helper class to access $this->getDatabase etc or is it that the helper class is just a set of functions rather than an object they do not work?
+that will not work, it is not enough to add the trait you have to set the object and this happens when class is instantiated
+
+In general: helper classes are often a procedural implementation of something that should better be implemented with proper object oriented programming (OOP). So first thing to do with them is have a look if they can be implemented as part of an object. If you need database-access, that is often an indication that we are dealing with something that belongs in a Model class.
+
+
+
+
