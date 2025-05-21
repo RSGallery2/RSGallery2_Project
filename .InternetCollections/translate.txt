@@ -1,0 +1,13 @@
+
+        <?php if ($this->params->get('show_pagination_limit')) : ?>
+            <div class="com-contact-featured__pagination btn-group float-end">
+                <label for="limit" class="visually-hidden">
+                    <?php echo Text::_('JGLOBAL_DISPLAY_NUM'); ?>
+                </label>
+                <?php echo $this->pagination->getLimitBox(); ?>
+            </div>
+        <?php endif; ?>
+
+
+
+
