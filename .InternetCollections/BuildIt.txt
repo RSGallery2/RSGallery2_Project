@@ -1,0 +1,20 @@
+
+
+documentation about how to create build scripts for joomla extensions?
+
+Jrobo phpstan phpcs phpcpd phpmd
+
+Look at https://github.com/joomla-extensions/weblinks/
+
+
+Jrobo https://github.com/joomla-projects/jorobo
+
+phpstan https://phpstan.org/
+
+phpcs https://github.com/squizlabs/PHP_CodeSniffer
+
+phpcpd https://github.com/sebastianbergmann/phpcpd/blob/main/phpcpd 
+
+phpmd https://github.com/phpmd/phpmd
+
+sonarqube https://www.sonarsource.com/products/sonarqube/

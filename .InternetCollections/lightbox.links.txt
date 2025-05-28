@@ -1,4 +1,12 @@
 
+
+https://biati-digital.github.io/glightbox/
+
+Jglightbox_plugin_joomla
+https://github.com/Jumbo125/Jglightbox_plugin_joomla/tree/main
+
+
+
 2023.12.30
 https://photoswipe.com/ 
 https://github.com/dimsemenov/photoswipe
