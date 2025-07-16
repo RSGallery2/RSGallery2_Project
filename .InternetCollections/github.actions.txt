@@ -19,6 +19,13 @@ https://github.com/sdras/awesome-actions
 https://github.com/marketplace/actions/lighthouse-ci-action
 
 
+===================================
 
+Hannes Papenberg
+For the framework we have this here: https://github.com/joomla-framework/.github
+For the CMS we don't have such a a thing. There it is just the workflow in the CMS repo.
+
+action typos:
+https://github.com/joomla/joomla-cms/pull/45705
 
 

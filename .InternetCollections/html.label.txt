@@ -1,0 +1,22 @@
+
+
+
+How to pair a label and an input
+
+https://css-tricks.com/html-inputs-and-labels-a-love-story/
+
+
+There are two ways to pair a label and an input. One is by wrapping the input in a label (implicit), and the other is by adding a for attribute to the label and an id to the input (explicit).
+
+Think of an implicit label as hugging an input, and an explicit label as standing next to an input and holding its hand.
+
+<label> 
+  Name:
+  <input type="text" name="name" />
+</label>
+An explicit label’s for attribute value must match its input’s id value. For example, if for has a value of name, then id should also have a value of name.
+
+<label for="name">Name: </label>
+<input type="text" id="name" name="name" />
+
+

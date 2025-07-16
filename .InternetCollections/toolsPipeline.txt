@@ -1,0 +1,12 @@
+
+Wenn du composer benutzt, kannst du dir im Build-Script anzeigen lassen, 
+dass deine Dependencies aus sicherheitsgründen aktualisiert werden müssten. 
+Wenn du dann auch noch git verwendest, kannst du Renovatebot verwenden 
+um dich sogar pro-aktiv auf Sicherheitsupdates aufmerksam machen zu 
+lassen. Verwendest du Github, kriegst du dependabot sogar automatisiert 
+dazu geschenkt. All das heisst noch nicht, dass dir Code aufgezwungen 
+wird. Du entscheidest immer noch selber, welche Updates du wie fährst. 
+Aber du weisst überhaupt erstmal über das Problem bescheid, statt dass 
+du eine 6 Jahre alte Version mit Sicherheitslücken benutzt und meinst, 
+alles wäre total super.
+

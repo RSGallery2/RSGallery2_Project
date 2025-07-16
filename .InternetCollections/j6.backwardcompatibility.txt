@@ -1,0 +1,7 @@
+
+
+
+https://manual.joomla.org/migrations/54-60/new-deprecations/
+
+https://manual.joomla.org/migrations/54-60/removed-backward-incompatibility/#dispatchevent-proxy-functions-removed-in-view-and-model
+

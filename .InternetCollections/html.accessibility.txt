@@ -1,0 +1,45 @@
+
+Recomended by Christiane Maier-Stadtherr (german) 
+https://bik-fuer-alle.de/
+
+
+Wie "Can I Use" aber für Barrierefreiheit
+https://gomakethings.com/can-i-use-for-accessibility/
+https://a11ysupport.io/
+
+https://tool.caneveryoneuse.com/
+https://github.com/caneveryoneusetemp 
+
+
+++ ----------------------------------------------------------------
+HTML elements: roles and possible accessible names
+https://russmaxdesign.github.io/html-elements-names/
+matching:
+https://intopia.github.io/accessibility-presentations/
+
+
+----------------------------------
+Viviana
+Und weiter geht es mit Barrierefreiheit:
+https://netzpolitik.org/2025/barrierefreiheit-der-oeffentlichen-stellen-geprueft-und-durchgefallen/
+https://barrieren-gutachten.de/index.html
+
+
+Weil gerade das Thema Barrierefreiheit / BFSG die Runde macht und wir im JoomlaDay Meeting darüber gesprochen haben, 2 interessante Links zu Marktüberwachungstelle:
+Übergangsseite: https://ms.sachsen-anhalt.de/themen/menschen-mit-behinderungen/aktuelles/marktueberwachungsstelle-der-laender-fuer-die-barrierefreiheit-von-produkten-und-dienstleistungen
+Warum es noch nicht fertig ist:
+https://www.linkedin.com/posts/nina-gerling_bayerischer-landtag-activity-7340825517874372608-tXco
+
+----------------------------------
+icons:
+https://magazine.joomla.org/all-issues/november-2024/icons
+
+
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------
+
+----------------------------------

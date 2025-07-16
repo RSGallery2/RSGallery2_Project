@@ -1,4 +1,10 @@
 
+ Mein Benutzer zur www-data eingefügt und chown benutzer:www-data für var/www/html 
+sudo chmod 775 /var/www/html
+
+der apache läuft als www-data und darf die dateien nicht bearbeiten
+
+
 developer
 
 https://unix.stackexchange.com/questions/85973/how-to-edit-var-www-files-using-phpstorm

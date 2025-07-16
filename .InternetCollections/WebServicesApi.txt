@@ -37,6 +37,7 @@ https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-pa
 https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-4
 https://magazine.joomla.org/all-issues/march-2023/playing-with-the-joomla-api-part-5
 
+https://magazine.joomla.org/all-issues/august-2020/joomla-web-services-api-101-tokens,-testing-and-a-taste-test
 ----------------------------------------------
 Joomla 4 API Introduction – Manage Articles via Joomla API
 https://www.joomdev.com/joomla-4-api-introduction/
@@ -55,3 +56,7 @@ https://www.youtube.com/watch?v=ZH3a4MHB718
 Import Joomla! Articles Using Web Services API
 https://joomlafry.com/documentation/import-joomla-articles-using-web-services-api
 
+
+--------------------------------------------------------
+JAB20 – Develop your Mobile app with Flutter and Joomla
+https://www.youtube.com/watch?v=iMdjTnf8gcs

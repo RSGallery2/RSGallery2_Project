@@ -1,0 +1,10 @@
+
+Bits and  pieces to deprecated 
+
+
+2025.06.04
+$lang = JFactory::getLanguage(); -> Factory::getApplication()->getLanguage()
+
+$db = Factory::getDbo(); -> $db = Factory::getContainer()->get('DatabaseDriver');
+Meistens hast du die Datenbank über $this->getDatabase() verfügbar
+

@@ -1,0 +1,15 @@
+
+2025.06.04
+
+jx doc will be restarted ...
+
+old:
+
+https://manual.joomla.org/
+https://jdocmanual.org/en/jdocmanual?article=developer/getting-started/developer-required-software
+
+
+really old 
+https://docs.joomla.org/Main_Page
+
+

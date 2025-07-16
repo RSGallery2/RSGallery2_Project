@@ -1,0 +1,16 @@
+
+Move main to previous commit, keep actual sources in abranch 
+
+
+create branch b_reset_... without checkout
+git checkout -b b_reset....
+
+git checkout main     ?master?
+git reset --hard <old_commit_id>
+
+git push -f origin main
+
+
+
+
+
