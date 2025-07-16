@@ -2,6 +2,24 @@
 <updates>
 	<update>
 		<name>RSGallery2 component update</name>
+		<description>Update for component rsgallery2 j4x v5.0.12</description>
+		<element>com_rsgallery2</element>
+		<type>component</type>
+		<version>5.1.0</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_J4/releases/download/v5.1.0/rsgallery2.5.1.0_20250716.zip</downloadurl>			
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>team@rsgallery2.org</maintainer>
+		<maintainerurl>rsgallery2.org</maintainerurl>
+		<targetplatform name="joomla" version="4.*|5.*"/>
+		<client>administrator</client>
+		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.1.0</infourl>
+	</update>
+	<update>
+		<name>RSGallery2 component update</name>
 		<description>Update for component rsgallery2 v4.0.8</description>
 		<element>com_rsgallery2</element>
 		<type>component</type>
