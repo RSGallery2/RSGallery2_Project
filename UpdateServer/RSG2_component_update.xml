@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
-	<update>
+	<!--update>
 		<name>RSGallery2 component update</name>
 		<description>Update for component rsgallery2 j4x v5.0.12</description>
 		<element>com_rsgallery2</element>
@@ -18,7 +18,7 @@
 		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.1.0</infourl>
 		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
-	</update>
+	</update-->
 	<update>
 		<name>RSGallery2 component update</name>
 		<description>Update for component rsgallery2 v4.0.8</description>

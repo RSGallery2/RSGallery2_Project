@@ -1,0 +1,8 @@
+
+workflow 
+https://docs.joomla.org/J4.x:Workflow
+
+https://www.hosteurope.de/blog/workflow-in-joomla-v4-der-workflow-fuer-strukturierte-prozesse/
+
+https://docs.joomla.org/J4.x:Workflow/de?fbclid=IwY2xjawLwgqRleHRuA2FlbQIxMAABHh9epFrkAvtel9UpHhLWayhvyrgfkOXQl5mFC9Qut5KUvecgRFIF-JKpmkBm_aem_GtPJ2xiBsyQxOx_JY7ECQg
+

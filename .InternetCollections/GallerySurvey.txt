@@ -1,5 +1,11 @@
 
+the gallery is a custom field. Very easy to use
+https://www.tassos.gr/joomla-extensions/advanced-custom-fields
 
+
+
+SP Easy Image Gallery - Free Photo Gallery Joomla Extension JoomShaper
+https://www.joomshaper.com/joomla-extensions/sp-easyimagegallery
 
 
 droppics

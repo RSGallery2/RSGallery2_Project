@@ -1,0 +1,8 @@
+
+memory_limit. expected at upgrade 
+
+Das ist definitiv zu wenig. 256M sollten reichen, bei kleineren Seiten 
+reicht auch schon 128M, mit 512M wärst Du auf der sicheren Seite.
+
+72M ist ein ungewöhnlicher Wert. Üblich sind Werte wie 32, 64, 128, 256, 1024, also die Zweierpotenzen.
+

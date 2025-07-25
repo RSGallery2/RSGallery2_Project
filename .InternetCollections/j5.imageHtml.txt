@@ -1,0 +1,20 @@
+
+What do we prefer
+
+A) -- <?php echo LayoutHelper::render('joomla.html.image',
+or
+B) ++ <?php echo HTMLHelper::_('image', 
+
+using the Helper I can add whatever I want... can't do that with JLayout
+@benbelimen... just did... sizes, srcset, class 
+and more specific for my case... custom data-atttributes
+how to add any attribute to layout?
+aha... all what is inside displayData... 
+
+
+2) if you want to have your images overridable, you use the HTMLHelper otherwise you can use the layout
+
+3) This <?= LayoutHelper::render('joomla.html.image',
+The HTMLHelper is doing a lot more work and unless you're doing some image stored in the media folder it should be avoided!\
+
+
