@@ -1,0 +1,13 @@
+Manuel
+
+Before I go crazy...
+Is it possible to reset certain things of a query using the Joomla Query object?
+I would like to reset the select statement in a list query of a Model extending Joomla\CMS\MVC\Model\ListModel by doing something like:
+
+$listQuery = $this->getListQuery();
+$listQuery->select(null);   // reset select in query
+$listQuery->select($db->quoteName('a.id', 'id'));   // set a new select statement
+The idea is to not rewrite the whole query but to use one which already does all the correct filtering and sorting, but to return only the item id's instead of what ever is defined in the getListQuery() method of the model. 
+
+Robert Deutz
+maybe query->clear('select')
