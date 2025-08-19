@@ -1,0 +1,12 @@
+https://www.redhat.com/en/blog/beginners-guide-redirects-htaccess
+
+Common uses of .htaccess file
+The .htaccess file has several use cases. The most common examples include:
+
+Redirections for certain URLs
+Load custom error pages, like 404 pages
+Force your website to HTTPS instead of HTTP
+Allow or deny specific IP addresses access to your website
+Password-protect certain directories on your server
+
+...
