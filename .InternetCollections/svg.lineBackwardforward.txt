@@ -1,0 +1,156 @@
+CodePen Home
+Basic Example of SVG Line Drawing, Backward and Forward
+Brian Teeman
+
+https://codepen.io/brianteeman/pen/OJywwKz
+
+-------------------------------
+html
+ <div class="box">
+   <svg width="100%" height="100%" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+  <path fill="none" class="startb" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M47.581,199.474C51.796,192.926 56.82,202.626 60.339,207.472C74.409,226.852 83.802,248.099 94.981,269.149"/>
+  <path fill="none" class="curveb" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M25.353,196.383C40.334,185.284 55.49,170.24 73.342,163.705C77.137,162.316 85.938,159.365 89.632,163.214C96.144,169.999 83.022,194.495 77.996,199.604C75.018,202.631 71.805,204.878 68.189,207.031C66.958,207.764 63.128,209.241 64.558,209.337C81.22,210.447 98.297,206.192 114.952,205.902C122.685,205.768 132.344,206.913 134.572,215.824C137.561,227.778 129.586,238.425 123.048,247.707C111.37,264.285 96.044,277.863 74.372,272.829"/>
+  <path fill="none" class="r" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M154.746,215.912C156.12,218.512 157.408,221.16 158.868,223.713C160.53,226.619 166.609,230.59 163.824,232.447C161.085,234.273 155.683,229.116 154.01,227.687C147.137,221.821 143.826,209.928 150.281,202.516C158.388,193.209 173.959,190.181 183.942,182.841"/>
+  <path fill="none" class="i" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M191.842,196.923C191.051,195.089 189.112,189.461 190.125,191.182C194.383,198.421 193.701,213.823 202.294,218.12"/>
+  <path fill="none" class="doti" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M185.61,156.1C188.059,148.754 177.514,138.391 169.614,141.036C157.951,144.941 147.892,173.047 159.967,179.801C164.152,182.142 170.764,178.337 174.03,175.922C181.359,170.504 190.091,162.263 192.431,153.008C195.113,142.402 186.688,134.317 176.042,136.179C170.69,137.115 171.091,137.219 166.228,139.221"/>
+  <path fill="none" class="an" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M232.127,179.308C229.75,177.273 223.278,171.602 220.792,170.035C204.565,159.802 199.83,205.498 215.034,205.267C228.223,205.067 234.928,189.038 235.219,177.983C235.324,173.972 232.466,167.298 233.943,163.607C234.44,162.364 235.805,165.572 236.445,166.747C238.279,170.115 239.945,173.269 242.579,176.119C247.888,181.862 255.397,182.772 262.403,179.014C273.098,173.275 266.213,152.072 272.265,149.672C275.882,148.238 281.838,154.75 284.974,155.952C291.761,158.555 299.537,156.815 306.123,154.579C324.19,148.444 334.783,123.582 354.848,122.293"/>
+<!--   <path fill="none" class="bottomt" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M164.756,326.605C163.29,325.226 159.55,320.605 160.389,322.435C173.237,350.466 193.721,384.503 197.387,415.268"/>
+  <path fill="none" class="topt" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M80.751,410.214C78.818,394.399 102.646,379.237 112.793,369.146C142.774,339.329 171.813,307.522 199.938,275.969"/>
+  <path fill="none" class="eeman" stroke="#020202" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" d="M224.62,374.052C242.306,367.008 249.11,360.513 256.318,342.257C258.689,336.253 260.498,324.245 251.657,322.386C245.382,321.066 240.822,326.792 237.596,331.036C227.973,343.695 228.31,366.347 247.584,368.851C276.538,372.613 306.207,323.431 287.762,302.053C278.675,291.52 264.8,318.586 274.964,326.654C294.909,342.487 312.742,298.256 317.752,286.812C319.004,283.953 320.716,275.665 323.738,273.859C327.288,271.737 330.216,292.251 338.41,290.885C344.796,289.821 351.312,274.479 355.24,269.983C362.56,261.604 372.897,263.141 380.69,255.348C385.182,250.856 393.202,225.726 395.722,219.444C396.452,217.624 394.242,223.135 394.053,225.087C393.801,227.695 394.411,230.319 395.472,232.695C398.221,238.852 407.635,235.731 411.963,234.115C439.304,223.907 459.293,199.869 485.419,187.355C508.07,176.506 519.703,187.541 540.719,164.833"/> -->
+</svg>
+</div>
+
+---------------------------------------------------
+
+path {
+/*   stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards; */
+}
+svg path{
+  stroke: blue;
+}
+
+.startb {
+  stroke-dasharray:90;
+  animation: startb 1.5s 1 linear;
+  stroke: red!important;
+}
+.curveb {
+  stroke-dasharray: 300;
+  animation: curveb 3s 1 linear;
+  stroke: red!important;
+}
+.r {
+  stroke-dasharray: 100;
+  animation: curveb 1.5s 1 linear;
+  stroke: red!important;
+}
+.i {
+  stroke-dasharray: 40;
+  animation: i .5s 1 linear;
+  stroke: red!important;
+}
+.doti {
+  stroke-dasharray: 150;
+    animation: doti 1.5s 1 linear;
+  stroke: red!important;
+}
+.an {
+  stroke-dasharray: 280;
+    animation: an 2s 1 linear;
+  stroke: red!important;
+}
+.bottomt {
+  stroke-dasharray: 100;
+   animation: bottomt 1s 1 linear;
+  stroke: red!important;
+}
+.topt {
+  stroke-dasharray: 180;
+  animation: topt 1.8s 1 linear;
+  stroke: red!important;}
+.eeman {
+  stroke-dasharray: 650;
+    animation: eeman 3s 1 linear;
+  stroke: red!important;}
+
+
+@keyframes startb {
+  0% {
+    stroke-dashoffset: 90;
+  }
+  10% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes curveb {
+  0%, 10% {
+    stroke-dashoffset: 300;
+  }
+  25% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes r {
+  0, 40% {
+    stroke-dashoffset: 100;
+  }
+  40% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes i {
+  0%,41% {
+    stroke-dashoffset: 40;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes doti {
+  0%,52% {
+    stroke-dashoffset: 150;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes an {
+  0% {
+    stroke-dashoffset: 280;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes topt {
+  0% {
+    stroke-dashoffset: 180;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes bottomt {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes eeman {
+  0% {
+    stroke-dashoffset: 650;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+

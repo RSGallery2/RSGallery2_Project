@@ -1,0 +1,10 @@
+
+auto joomla updates
+https://www.joomla.de/news/joomla/automatische-joomla-updates-ab-version-5-4-und-6-0
+
+Check:
+https://github.com/joomlagerman/joomla/releases
+https://github.com/joomla/joomla-cms/issues/45540
+https://github.com/joomla-projects/Automated-Updates-Server
+https://github.com/joomla-projects/Automated-Updates-Server
+
