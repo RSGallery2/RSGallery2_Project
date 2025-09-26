@@ -1,4 +1,4 @@
-ponsive screenshot of web pages
+Responsive screenshot of web pages
 
 http://ami.responsivedesign.is/
 

@@ -1,4 +1,5 @@
-
+Read again: 
+https://manual.joomla.org/docs/next/web-services-api/json-response-format/
 
 special examples:
 
@@ -27,6 +28,7 @@ https://petermartin.nl/en/presentations/joomla/how-to-use-apis-in-your-joomla-we
 Communicate with the Joomla 4.x Web Services API
 https://manual.joomla.org/docs/general-concepts/webservices/
 https://manual.joomla.org/docs/general-concepts/webservices/#using-the-php-curl-functions
+https://manual.joomla.org/docs/next/web-services-api/json-response-format/
 https://manual.joomla.org/docs/next/web-services-api/json-response-format/#xml-manifest---api-section
 
 -------------------------------------

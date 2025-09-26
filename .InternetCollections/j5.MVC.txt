@@ -1,0 +1,29 @@
+
+
+Herman Peeren
+last week
+The objects in the MVC triad belong together: they form a cluster, a unit. The task of the Controller is to get the information from outside this component (the request), determine which Models and View are needed to process the request, display the next View, and orchestrate the whole. Ideal is that such a cluster of objects only has one entrance, one "interface": the Controller. Comparable with an "aggregate root" in Domain Driven Design: everything within the cluster should be opaque for the outside world. Then, from the outside you can treat the whole cluster as one object. That reduces complexity. The opposite is "spaghetti code", where everything is connected with everything. 
+
+If a Model or a View need something from the Input, it is the Controller which should provide that. A principle is to be as "frugal" as possible what information is pushed into a Model or a View: not just hand over the whole Input to those objects, but only give them what they need. Moreover, it is not necessarily the input from the HTTP request, but can also be some "internal" input, for instance from another component (like in HMVC).
+
+In Joomla ordering and filtering is part of the state of a Model. That is why I would expect the Controller to set that state in the Model. Now it is done by getting the Input from the Application that is conjured up with Factory::getApplication(), a.o. in the ListModel and AdminModel. 
+
+When those state, filtering, ordering or pagination variables are needed in a View, for instance in a ListView, then they are retrieved from the Model. In that case it is not necessary to explicitly put them in the view (by the Controller?) and have the View set them in the Model.  A Model is in essence a thing with state (hence BaseModel implements StatefulModelInterface) and the View retrieves such variables from a Model if they need it. 
+
+I know I describe some ideal, and even the core code doesn't live up to that ideal. Still I think it is good to try to implement some improvements to come closer to this ideal in Joomla 6, so we can deprecate some  old spaghetti in Joomla 8. I want to spend time on that.
+
+The above story of having the Controller as "aggregate root", as the sole interface with the outside world,  would also mean that we should not just use a Model of another component everywhere. For this we have to build some "internal interface" for components. And here the ideal would be that that interface makes components easier "composable". It is a challenge... and an opportunity. I'm a dreamer.  :innocent:  
+
+-----------------------------
+
+Without an explicit task, the controller executes the display task.  The code of a controller would be almost the same for all different MVC triads when you have the triad execute that (default) 'display' task. That's why we use a DisplayController as a general controller for a display task. To avoid duplicate code. That one controller can be used in different MVC triads, when the display task is used. This general controller finds the right model and view to form a triad.
+
+To complete the picture of having one entrance in a component: there is one more, mostly hidden, controller (in disguise) in a Joomla component. Do you remember how we had a main controller in Joomla 3? It was used to select a specific controller (which could then further instantiate the corresponding view(s) and model(s). Since Joomla 4 you don't see that main controller anymore... but we stilll have it! It has been given the confusing name of the Dispatcher. Confusing, because we already had an event-dispatcher (mostly shortly named: the dispatcher); so, the same name for a completely different thing. Naming things is one of the hardest problems in coding  :thinking_face: .
+
+History
+To name the main controller the Dispatcher had its origin in Nooku Framework (later called Joomlatools Framework), where they called that main controller the Dispatcher. In that codebase you can still see it was derived from a controller (https://github.com/joomlatools/joomlatools-framework/blob/master/code/libraries/joomlatools/library/dispatcher/abstract.php#L16). In 2010/2011 Nicholas Dionysopoulos enthusiastically used Nooku Framework in his extensions, but later came back on that decision. For unpleasant details see https://www.dionysopoulos.me/why-i-m-not-using-the-nooku-framework-any-more.html (October 2011). But Nic had seen some nice things too in Nooku and used some concepts in his Framework On Framework (FOF), of which some version was even shipped with the core of Joomla 3.  That is how "Behaviors" came in FOF, but also... tadaa:  the main controller that was called 'Dispatcher'. Nic was one of the architects of Joomla 4, et voilà, that's how we got that Dispatcher in Joomla.
+
+The current Dispatcher in Joomla CMS is no longer derived from a controller class, so you might not see it as a controller.  But look at the dispatch() method in the ComponentDispatcher (https://github.com/joomla/joomla-cms/blob/5.3-dev/libraries/src/Dispatcher/ComponentDispatcher.php#L113-L145) and you see it is splitting the 'viewname.taskname' string in the 'task' input variable into a controller name and a task name and instantiates that specific controller. If there was no task in the input, the DisplayController is called.
+
+If you have nothing specific for your component in the Dispatcher, you don't have to explictly code one. and Joomla will fall back on the default ComponentDispatcher. This is the principle of 'convention over code'. It has advantages (less code) and disadvantages (some 'magic' invisibly happening in the background, and you have to know the conventions to correctly name your classes)
+

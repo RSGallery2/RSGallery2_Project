@@ -1,0 +1,51 @@
+
+
+https://reasonunderpressure.com/blog/posts/your-images-are-probably-oversized?utm_source=tldrwebdev
+
+see "To Each Their Own" and following
+also read final "Cheat Sheet"
+
+
+<img
+  src="/hero-image.jpg"
+  alt="Moutains"
+  class="relative w-screen h-screen object-cover"
+  width="3600"
+  height="3400"
+  srcset="
+    /hero-image-425.jpg  425w,
+    /hero-image-800.jpg  800w,
+    /hero-image.jpg     3600w
+  "
+  sizes="50vw"
+  />
+
+<img
+  src="/hero-image.jpg"
+  alt="Moutains"
+  class="
+    relative object-cover 
+    w-[200px] min-[400px]:w-[400px] 
+    min-[800px]:w-[600px]
+  "
+  width="3600"
+  height="3400"
+  srcset="
+    /hero-image-425.jpg  425w,
+    /hero-image-800.jpg  800w,
+    /hero-image.jpg     3600w
+  "
+  sizes="
+    (width < 400px) 200px,
+    (400px <= width < 800px) 400px,
+    (800px <= width) 600px
+  "
+/>
+
+(loading="eager") and lazy loading (loading="lazy").
+
+<img
+  loading="lazy"
+/>
+
+

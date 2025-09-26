@@ -1,0 +1,43 @@
+
+changelog example
+
+<changelogs>
+	<changelog>
+		<element>mod_resethits</element>
+		<type>module</type>
+		<version>5.0.0</version>
+		<addition>
+			<item>
+				<![CDATA[ 404 redirects reset functionality ]]>
+			</item>
+		</addition>
+		<change>
+			<item>
+				<![CDATA[ Rebuild to new Joomla module structure ]]></item>
+			<item>
+				<![CDATA[ XML file ]]></item>
+			<item>
+				<![CDATA[ Reformat Code ]]></item>
+		</change>
+		<fix>
+			<item>
+				<![CDATA[ Minor HTML inconsistencies ]]>
+			</item>
+			<item>
+				<![CDATA[ Ensure stricter type checking for parameter retrievals ]]>
+			</item>
+		</fix>
+		<language>
+			<item>
+				<![CDATA[ FREE version alert ]]></item>
+		</language>
+		<note>
+			<item>
+				<![CDATA[ <p>(Joomla 4) (Joomla 5) (Joomla 6)</p> ]]>
+			</item>
+		</note>
+	</changelog>
+
+....
+
+</changelogs>
