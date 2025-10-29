@@ -1,0 +1,9 @@
+
+
+The <output> element represents the result of a calculation performed 
+by the application, or the result of a user action
+It’s mapped to role="status". This may have to be added as some 
+screen readers does not support it yet. 
+
+https://denodell.com/blog/html-best-kept-secret-output-tag
+

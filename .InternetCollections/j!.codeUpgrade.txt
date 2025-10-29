@@ -1,0 +1,5 @@
+
+https://manual.joomla.org/migrations
+
+Joomla 5.4 to 6.0 Upgrade Notes
+https://manual.joomla.org/migrations/54-60/

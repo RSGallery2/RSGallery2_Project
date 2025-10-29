@@ -18,6 +18,6 @@ Copy from https://docs.joomla.org/Joomla_CodeSniffer and update to the new versi
    dependency, which contains the example config for both.
 
 >> Harald Leithner
-	btw. joomla is not 100% psr-12 for example we "don't" have a line length limit
+	btw. joomla is not 100% psr-12 a for example we "don't" have line length limit
 	and we actually  do PER Coding Style
 

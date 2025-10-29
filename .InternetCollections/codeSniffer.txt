@@ -1,0 +1,16 @@
+
+
+Joomla uses 
+https://github.com/squizlabs/PHP_CodeSniffer ? old
+
+https://github.com/PHPCSStandards/PHP_CodeSniffer/ 
+
+Joomla config file
+https://github.com/joomla/joomla-cms/blob/5.4-dev/.php-cs-fixer.dist.php
+
+
+========================
+
+https://github.com/joomla/joomla-cms/blob/6.1-dev/.php-cs-fixer.dist.php
+
+
