@@ -1,0 +1,21 @@
+
+# for user documentation 
+https://docs-core.sandbox.joomla.org/ (will be relocated).
+
+How to contribute is explained here: 
+https://docs-core.sandbox.joomla.org/contributors
+Important for new users: The documentation uses Joomla 
+as a platform, so anyone with Joomla knowledge can 
+create an article via the frontend and submit it for
+ publication.
+
+https://magazine.joomla.org/all-issues/september-2025/documentation-that-helps-your-clients-and-joomla
+
+Our new system for user documentation is indeed easy. It is called... Joomla. We use frontend editing. Login with the Joomla Community Portal (like for Mattermost). Easypeasy. Also see https://magazine.joomla.org/all-issues/june-2025/how-to-contribute-to-user-documentation.
+
+===============================================
+ programmers documentation
+ https://manual.joomla.org/
+
+
+

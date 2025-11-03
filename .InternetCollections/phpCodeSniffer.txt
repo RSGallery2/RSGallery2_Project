@@ -1,0 +1,11 @@
+
+
+https://github.com/PHPCSStandards/PHP_CodeSniffer/
+
+phpcs /path/to/code/myfile.php
+phpcs --standard=PEAR /path/to/code-directory
+
+fix it 
+phpcbf ....
+
+
