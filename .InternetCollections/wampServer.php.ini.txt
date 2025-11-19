@@ -5,7 +5,7 @@ On version change the link
 points to the file phpForApache.ini in the folder 
 of php version chosen.
 
-Xamp needs debug instead of deveop for phpstorm
+xdebug needs debug instead of develop for phpstorm
 
 ;xdebug.mode allowed are: off develop coverage debug gcstats profile trace
 xdebug.mode=debug

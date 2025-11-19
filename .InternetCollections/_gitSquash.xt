@@ -1,0 +1,39 @@
+
+89
+
+This is the way I generally follow to combine multiple Commits into a single commit before I push the code.
+
+To achieve this, I suggest you use 'squash' concept provided by GIT.
+
+Follow the below steps.
+
+1) git rebase -i master (instead of master you can also use a specific commit)
+
+open the rebase interactive editor, where it will show all your commits. Basically where you need to identify the commits which you want to merge into a single commit.
+
+Imagine these are your commits and shown something like this in the editor.
+
+pick f7f3f6d changed my name a bit    
+pick 310154e updated README formatting and added blame   
+pick a5f4a0d added cat-file  
+It's important to note that these commits are listed in the opposite order than you normally see them using the log command. Means, the older commit will be shown first.
+
+2) Change 'pick' to 'squash' for last committed changes. something like shown below. Doing that so, your last 2 commits will be merged with the first one.
+
+pick f7f3f6d changed my name a bit         
+squash 310154e updated README formatting and added blame   
+squash a5f4a0d added cat-file
+You can also use short form if you have lot of commits to combine:
+
+p f7f3f6d changed my name a bit         
+s 310154e updated README formatting and added blame   
+s a5f4a0d added cat-file
+for editing use 'i', it will enable the editor for insertion. Keep in mind top most(oldest) commit cannot be squashed as there is no previous commit to combine with. So it has to be picked or 'p'. Use 'Esc' to exit insert mode.
+
+3) Now, save the editor with the following command. :wq
+
+When you save that, you have a single commit that introduces the changes of all three previous commits.
+
+Hope this will help you.
+
+
