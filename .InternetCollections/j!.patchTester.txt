@@ -1,0 +1,33 @@
+
+
+https://github.com/joomla/joomla-cms/pulls
+
+
+-----------------------------------------------
+Testing Joomla! patches
+https://docs.joomla.org/Testing_Joomla!_patches
+
+
+--------------------------------------
+hier Test bestätigen
+https://issues.joomla.org/
+
+--------------------------------------
+It may be necessary to git checkout 
+
+-------------------------------------------
+Nightly builds
+https://developer.joomla.org/nightly-builds.html
+
+--------------------------------------------
+Für den Patchtester gibts übrigens ne nette Shorturl: 
+http://joom.la/patchtester
+https://github.com/joomla-extensions/patchtester/releases
+
+--------------------------------------------
+JBT Jooomla branch tester als docker
+https://github.com/muhme/joomla-branches-tester
+youtube
+https://www.joomla.de/wissen/joomla-event-videos/joomla-day-deutschland/jd24dach-joomla-branches-tester
+
+

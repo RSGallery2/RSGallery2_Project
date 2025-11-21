@@ -1,4 +1,7 @@
 
+Joomla patch tester before relese of version
+
+
 CMS Release Checksheet
 
 https://docs.google.com/spreadsheets/d/1ciTeoBmzcNJLvFkxIeOsjmUeZbKj1tHREZfQrm3X1-I/edit#gid=1154167118

@@ -1,3 +1,45 @@
+# Analysis of the use of Joomla parameters in components
+
+[ ] ToDo: insert extracts from .InternetCollections\config.getParam.txt
+
+
+
+
+
+## J! Config
+
+
+
+
+
+## Component item
+
+
+
+
+## Menu/form view parameters
+
+? 
+
+? comming from link not over menu 
+
+
+
+## Layout parameters
+
+## 
+
+## 
+
+
+## Merge 
+
+
+
+
+========================================================
+old
+========================================================
 
 Parameter in component view
 
@@ -14,7 +56,7 @@ Htmlview::display ==>
 
 merge parameter using global parameters 
 
-menu field (or ite field)
+menu field (or item field)
 			<field
 				name="show_name"
 				type="list"

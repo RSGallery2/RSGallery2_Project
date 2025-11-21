@@ -1,0 +1,95 @@
+
+
+New J5++
+
+-----------------------------------------------
+Variante für Joomla 5 Cassiopeia Posten, 
+Ein «Eigenes Modul» (custom) erstellen und auf Position «Fehler-404» publizieren. Das war's.
+Das geht aber nur, wenn das Template eine Position "Fehler-404" hat.
+
+```
+<table style="width: 500px;">
+<tbody>
+<tr>
+<td><img style="display: block; margin-left: auto; margin-right: auto;" src="images/stories/Walter.20180615_10_32_09_ProB.jpg" alt="" width="220" height="390"></td>
+</tr>
+<tr>
+<td>
+<p> </p>
+<p style="text-align: center;"><span style="font-size: 18pt;"> Sorry, i also don't know<br>how you got here</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;">Now back to the home page, don't .... ;-)</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><span style="font-size: 14pt;"><a class="btn btn-success" href="index.php">Homepage</a></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+```
+
+
+============================================================================
+old:  up to J4
+
+404 mit error.php
+
+At the beginning after use
+
+
+/**/
+// fith
+if (($this->error->getCode()) == '404') {
+    header('Location: /index.php?option=com_content&view=article&id=74');
+    exit;
+}
+/**/
+
+-----------------------------------------------
+https://docs.joomla.org/Custom_error_pages
+
+-----------------------------------------------
+https://manual.joomla.org/docs/building-extensions/templates/custom-errorpages/
+
+-----------------------------------------------
+https://magazine.joomla.org/all-issues/november-2025/the-404-that-could-why-your-joomla-site-deserves-a-brilliant-error-page
+
+
+
+
+https://forum.joomla.de/thread/12284-404-mit-error-php/?postID=76398#post76398
+
+------------------------------------
+Eine weitere Inspiration von firstlady bzgl. error.php:
+
+https://wicked-software.de/404-error-page-fuer-joomla
+ 
+-----------------------------------------------
+Ich hab das mehr oder weniger wie in der Anleitung von time4mambo gemacht, nur dass ich die Fehlerseite in die error.php reinlade und dort ausgebe.
+
+
+
+Deshalb ist meine error.php auch sehr einfach gehalten:
+
+<?php
+
+// no direct access
+
+defined('_JEXEC') or die('Restricted access');
+
+
+
+$errorCode = $this->error->getCode();
+
+
+
+http_response_code($errorCode);
+
+
+
+echo @file_get_contents('https://example.org/' . $errorCode . '.html');
+
+exit;
+
+
+
+
+
+

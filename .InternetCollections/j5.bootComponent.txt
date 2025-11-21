@@ -1,0 +1,39 @@
+
+bootComponent method of the application!
+
+$contentExtension = \Joomla\CMS\Factory::getApplication()
+  ->bootComponent('com_content');
+$articleModel = $contentExtension
+  ->getMVCFactory()
+  ->createModel('Article', 'Administrator');
+  
+ ===========================================================
+ 
+ Dependency Injection Container (DIC)
+ 
+ Well, it turns out that you can get access to your component's DIC anywhere, anytime. You just need to add the following handy code to your extension's class:
+
+protected static $dic;
+
+public function boot(ContainerInterface $container)
+{
+  self::$dic = $container;
+}
+
+public static function getContainer()
+{
+  if (empty(self::$dic))
+  {
+    Factory::getApplication()
+      ->bootComponent('com_example');
+  }
+
+  return self::$dic;
+}
+            
+This code is very simple. We declare a protected static variable holding our component's DIC. This is initialised by the boot method which is called whenever the component is booted. The static method getContainer returns the component's DIC; if the DIC was undefined at this point it boots the component first.
+
+So now you can simply do:
+
+$exampleDIC = \Acme\Component\Example\Administrator\Extension\ExampleComponent::getContainer();
+The component's DIC gives you access to all of the application's services and your component's service. Using the MVCFactory to get an MVC object you can be sure that it will work as intended.

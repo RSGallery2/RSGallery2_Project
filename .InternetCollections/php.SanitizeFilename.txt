@@ -1,0 +1,7 @@
+
+
+Joomla plugin with good readme.md
+https://github.com/hans2103/plg_media-action_sanitizefilename
+
+
+
