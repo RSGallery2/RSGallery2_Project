@@ -1,0 +1,42 @@
+
+-> install global 
+npm i -g cypress
+cypress open
+
+-------------------------------
+
+support package that helps in writing end-to-end tests for the Joomla CMS 
+https://github.com/joomla-projects/joomla-cypress
+
+-------------------------------
+End-to-end testing with Joomla! and Cypress - My First Steps and thoughts
+https://magazine.joomla.org/all-issues/june/end-to-end-testing-with-joomla-and-cypress
+
+-------------------------------
+https://docs.cypress.io/app/get-started/why-cypress
+
+
+----------------------------------------------
+npx cypress open
+
+it's much easier and clearer to add Cypress commands to the scripts field in your package.json file.
+
+{
+  "scripts": {
+    "cy:open": "cypress open"
+  }
+}
+
+Now you can invoke the command from your project root like so:
+
+npm run cy:open
+
+...and Cypress will open right up for you.
+
+
+
+
+https://www.lambdatest.com/blog/cypress-testing-library/
+Writing maintainable tests for web user interfaces
+
+

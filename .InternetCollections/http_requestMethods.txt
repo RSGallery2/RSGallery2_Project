@@ -1,0 +1,72 @@
+
+
+get,put,ptch .... explained
+
+
+https://stackoverflow.com/questions/12005790/how-to-receive-a-file-via-http-put-with-php
+
+HTTP 1.1, the form of the protocol that is almost exclusively in use today is built on top of HTTP 1.0 and was designed to be backwards compatible with HTTP 1.0 implementations. It was standardised in 1999 with RFC 2616. If you are a developer working with HTTP, get to know this document - it is your bible. Understanding it fully will give you a considerable advantage over your peers who do not.
+
+Get to the point already
+
+HTTP works on a request-response architecture - the client sends a request message to the server, the server returns a response message to the client.
+
+A request message includes a METHOD, a URI and optionally, a number of HEADERS. The request METHOD is what this question relates to, so it is what I will cover in the most depth here - but first it is important to understand exactly what we mean when we talk about the request URI.
+
+The URI is the location on the server of the resource we are requesting. In general, this consists of a path component, and optionally a query string. There are circumstances where other components may be present as well, but for the purposes of simplicity we shall ignore them for now.
+
+Let's imagine you type http://server.domain.tld/path/to/document.ext?key=value into the address bar of your browser. The browser dismantles this string, and determines that it needs to connect to an HTTP server at server.domain.tld, and ask for the document at /path/to/document.ext?key=value.
+
+The generated HTTP 1.1 request will look (at a minimum) like this:
+
+GET /path/to/document.ext?key=value HTTP/1.1
+Host: server.domain.tld
+The first part of the request is the word GET - this is the request METHOD. The next part is the path to the file we are requesting - this is the request URI. At the end of this first line is an identifier indicating the protocol version in use. On the following line you can see a header in MIME format, called Host. HTTP 1.1 mandates that the Host: header be included with every request. This is the only header of which this is true.
+
+The request URI is broken into two parts - everything to the left of the question mark ? is the path, everything to the right of it is the query string.
+
+**Request Methods**
+
+RFC 2616 (HTTP/1.1) defines 8 request methods.
+
+**OPTIONS**
+
+The OPTIONS method is rarely used. It is intended as a mechanism for determining what kind of functionality the server supports before attempting to consume a service the server may provide.
+
+Off the top of my head, the only place in fairly common usage that I can think of where this is used is when opening documents in Microsoft office directly over HTTP from Internet Explorer - Office will send an OPTIONS request to the server to determine if it supports the PUT method for the specific URI, and if it does it will open the document in a way that allows the user to save their changes to the document directly back to the remote server. This functionality is tightly integrated within these specific Microsoft applications.
+
+**GET**
+
+This is by far and away the most common method in every day usage. Every time you load a regular document in your web browser it will be a GET request.
+
+The GET method requests that the server return a specific document. The only data that should be transmitted to the server is information that the server requires to determine which document should be returned. This can include information that the server can use to dynamically generate the document, which is sent in the form of headers and/or query string in the request URI. While we're on the subject - Cookies are sent in the request headers.
+
+**HEAD**
+
+This method is identical to the GET method, with one difference - the server will not return the requested document, if will only return the headers that would be included in the response. This is useful for determining, for example, if a particular document exists without having to transfer and process the entire document.
+
+**POST**
+
+This is the second most commonly used method, and arguably the most complex. POST method requests are almost exclusively used to invoke some actions on the server that may change its state.
+
+A POST request, unlike GET and HEAD, can (and usually does) include some data in the body of the request message. This data can be in any format, but most commonly it is a query string (in the same format as it would appear in the request URI) or a multipart message that can communicate key/value pairs along with file attachments.
+
+Many HTML forms use the POST method. In order to upload files from a browser, you would need to use the POST method for your form.
+
+The POST method is semantically incompatible with RESTful APIs because it is not idempotent. That is to say, a second identical POST request may result in a further change to the state of the server. This contradicts the "stateless" constraint of REST.
+
+**PUT**
+
+This directly complements GET. Where a GET requests indicates that the server should return the document at the location specified by the request URI in the response body, the PUT method indicates that the server should store the data in the request body at the location specified by the request URI.
+
+**DELETE**
+
+This indicates that the server should destroy the document at the location indicated by the request URI. Very few internet facing HTTP server implementations will perform any action when they receive a DELETE request, for fairly obvious reasons.
+
+**TRACE**
+
+This provides an application-layer level mechanism to allow clients to inspect the request it has sent as it looks by the time it reaches the destination server. This is mostly useful for determining the effect that any proxy servers between the client and the destination server may be having on the request message.
+
+**CONNECT**
+
+HTTP 1.1 reserves the name for a CONNECT method, but does not define its usage, or even its purpose. Some proxy server implementations have since used the CONNECT method to facilitate HTTP tunnelling.

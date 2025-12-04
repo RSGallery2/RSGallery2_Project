@@ -1,0 +1,33 @@
+
+
+for security reasons a client stores audio and pdf files one level above the public_html. Users who are logged in in the frontend can download the files via a special link.
+
+but normally you don't need a folder outside public_html if you are using a download extension. The extension protects the folder with an .htaccess ...
+
+David had a solution without extension: https://www.djumla.de/insights/geschuetzte-downloads-in-joomla
+
+Teil 1: das PHP-Skript
+Der erste Teil unserer Lösung ist ein simples PHP-Skript, dass:
+
+das Joomla-Framework lädt
+prüft, ob der Nutzer eingeloggt ist
+die entsprechende Datei aus der URL ausliest
+die Datei an den Browser ausgibt
+Ist der Nutzer hingegen nicht eingeloggt, so wird ein 403 zurückgegeben.
+
+Den Code des Skripts findet ihr bei Github! Es gibt eine Skript-Version für Joomla 3 und eine Skript-Version für Joomla 4
+```
+https://gist.github.com/SniperSister/3cbc2055282c08ed43d4682e4fd36498
+https://gist.github.com/SniperSister/5a31e989da962099b517bf14fb978336
+```
+
+
+Teil 2: .htaccess Magie
+Wie aber biegt man nun die Aufrufe auf unser Skript um? Hier kommen .htaccess Rewrite Rules ins Spiel! Mit diesen Regeln können wir alle Aufrufe auf einen bestimmten Ordner, im Beispiel /images/downloads auf das PHP-Skript readmedia.php weiterleiten:
+
+```
+RewriteRule ^images\/downloads\/.*$ readmedia.php [L]
+```
+Der Webserver übernimmt für uns hier also die harte Arbeit und unsere Joomla-Installation kann unverändert bleiben.```
+
+

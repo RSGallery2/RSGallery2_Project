@@ -1,0 +1,18 @@
+
+
+
+
+kept playing and came up with this straightforward way to get the token 
+from the plugin, no hacks.
+
+$profile = UserHelper::getProfile(Factory::getApplication()->getIdentity()->id);
+$api_token = $profile->joomlatoken['token'];
+
+I found getProfile() triggers the plugin in the right context to call 
+getTokenForDisplay() and the token and its enabled state are returned. 
+
+-------------------------------------------
+We have com_ajax for when your auth'd to the UI of Joomla. 
+The core api auth token's aren't suitable for use case within the UI. 
+It was decided that it was too complicated for the average developer 
+in the ecosystem. Hence we stuck with com_ajax which already existed

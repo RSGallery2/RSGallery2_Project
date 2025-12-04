@@ -1,0 +1,66 @@
+
+
+https://github.com/alexandreelise/j4x-api-collection
+
+
+v1/media/files
+
+GET {{base_path}}/api/index.php/v1/media/adapters
+GET {{base_path}}/api/index.php/v1/media/adapters/{id}
+GET {{base_path}}/api/index.php/v1/media/files/{path}
+POST {{base_path}}/api/index.php/v1/media/files
+PATCH {{base_path}}/api/index.php/v1/media/files/{path}
+DELETE {{base_path}}/api/index.php/v1/media/files/{path} 
+
+
+https://github.com/joomla/joomla-cms/blob/e74c6ac86acb0082a0fd936ab3df0681fc6c5ef3/tests/System/integration/api/com_media/Files.cy.js
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/12667797/using-curl-to-upload-post-data-with-files
+
+
+if you are uploading binary file such as csv, use below format to upload file
+
+bash
+curl -X POST \
+    'http://localhost:8080/workers' \
+    -H 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6ImFjY2VzcyIsInR5cGUiOiJhY2Nlc3MifQ.eyJ1c2VySWQiOjEsImFjY291bnRJZCI6MSwiaWF0IjoxNTExMzMwMzg5LCJleHAiOjE1MTM5MjIzODksImF1ZCI6Imh0dHBzOi8veW91cmRvbWFpbi5jb20iLCJpc3MiOiJmZWF0aGVycyIsInN1YiI6ImFub255bW91cyJ9.HWk7qJ0uK6SEi8qSeeB6-TGslDlZOTpG51U6kVi8nYc' \
+    -H 'content-type: application/x-www-form-urlencoded' \
+    --data-binary '@/home/limitless/Downloads/iRoute Masters - Workers.csv'
+	
+	
+	
+16
+
+After a lot of tries this command worked for me:
+
+bash
+curl -v -F filename=image.jpg -F upload=@image.jpg http://localhost:8080/api/upload
+
+-----------------------------------
+
+bash
+curl -X POST -F 'key1=value1' -F 'key2=value2' -F 'file1=@/path/to/file1.txt' -F 'file2=@/path/to/file2.txt' http://example.com/upload
+Let me break down this command for you:
+
+-X POST: Specifies that the HTTP request method is POST.
+
+-F 'key1=value1' -F 'key2=value2': Adds form fields key1 and key2 with corresponding values value1 and value2.
+
+-F 'file1=@/path/to/file1.txt' -F 'file2=@/path/to/file2.txt': Uploads files file1.txt and file2.txt located at /path/to/ directory.
+
+http://example.com/upload: Specifies the URL where the data will be posted.
+
+Make sure to replace http://example.com/upload with the actual endpoint you want to upload the data to, and replace key1, value1, key2, value2, file1.txt, file2.txt, /path/to/ with the appropriate field names, values, file names, and paths respectively.
+
+
+
+
+	
+
