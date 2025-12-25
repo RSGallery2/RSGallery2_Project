@@ -1,0 +1,16 @@
+
+
+getPath was private
+so use a extended class and make it public
+
+if ($renderLayout = $displayData['field']->getAttribute('renderLayout', null)) {
+    $fileLayout = new class($renderLayout) extends \Joomla\CMS\Layout\FileLayout {
+        public function getPath() {
+            return parent::getPath();
+        }
+    };
+    $layoutPath = $fileLayout->getPath();
+
+    include $layoutPath;
+    return;
+}

@@ -1,0 +1,13 @@
+
+When Joomla initialises it sets up (in libraries/loader.php setup()) a number of autoloaders using, for example:
+spl_autoload_register(['JLoader', 'loadByPsr']);
+
+You may use it in the install script to address zunloaded classes 
+
+or 
+
+JLoader::register
+
+
+
+
