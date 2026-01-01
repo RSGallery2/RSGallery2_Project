@@ -1,0 +1,5 @@
+
+
+Lines of code and PHP Features
+https://github.com/tomasVotruba/lines#2-php-feature-counter
+

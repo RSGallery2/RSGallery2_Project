@@ -1,0 +1,9 @@
+
+
+in toolbar icomoon icons are used
+if you want to use font awesome icons you may use "none fa  fa-beer" insrtad
+
+
+
+
+
