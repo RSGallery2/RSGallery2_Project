@@ -1,5 +1,5 @@
 
-
+100+ Endpoints Joomla Web Services Collection For Postman
 https://github.com/alexandreelise/j4x-api-collection
 
 
@@ -18,8 +18,9 @@ https://github.com/joomla/joomla-cms/blob/e74c6ac86acb0082a0fd936ab3df0681fc6c5e
 
 
 
-
-
+herman perren tempoary
+https://www.openapiviewer.com/view/2026-01-19T13-25-05-146Z--76dca30b198e56b609880f7649763a166a76d26378b495d7e89d14f565e93984--joomla-api-json#?route=get-/api/index.php/v1/config/-component_name-
+here also videos
 
 
 https://stackoverflow.com/questions/12667797/using-curl-to-upload-post-data-with-files
