@@ -108,7 +108,7 @@ Possible batch tasks:
 
 (2) Select gallery
 
-Only image of selected  gallery will be shown
+Images of selected  gallery will be shown
 
 
 
