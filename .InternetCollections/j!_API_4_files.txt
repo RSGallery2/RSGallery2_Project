@@ -35,10 +35,6 @@ curl -X POST \
     -H 'content-type: application/x-www-form-urlencoded' \
     --data-binary '@/home/limitless/Downloads/iRoute Masters - Workers.csv'
 	
-	
-	
-16
-
 After a lot of tries this command worked for me:
 
 bash
@@ -51,9 +47,7 @@ curl -X POST -F 'key1=value1' -F 'key2=value2' -F 'file1=@/path/to/file1.txt' -F
 Let me break down this command for you:
 
 -X POST: Specifies that the HTTP request method is POST.
-
 -F 'key1=value1' -F 'key2=value2': Adds form fields key1 and key2 with corresponding values value1 and value2.
-
 -F 'file1=@/path/to/file1.txt' -F 'file2=@/path/to/file2.txt': Uploads files file1.txt and file2.txt located at /path/to/ directory.
 
 http://example.com/upload: Specifies the URL where the data will be posted.

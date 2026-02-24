@@ -1,0 +1,13 @@
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/blend-mode
+
+https://cloudfour.com/thinks/the-power-of-css-blend-modes/
+
+You can overlay/overlap elements on top of one another using a negative margin. Example:
+#b{
+    margin-left:-10px;
+}
+
+
+

@@ -1,0 +1,6 @@
+Keep 'remote' on conflicts otherwise update
+
+A similar alternative is the --strategy-option (short form -X) option, which accepts theirs. For example:
+
+git merge -X theirs branchB
+

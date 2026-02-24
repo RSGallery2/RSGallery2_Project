@@ -1,0 +1,5 @@
+if you run php stan on your extension, deprecated stuff will be marked, 
+but that's mentioned above. But this should help you. I think all the 
+deprecation things are cleanly defined in joomla via the method or class comment.
+php ./libraries/vendor/bin/phpstan just check the options to specify a folder so check
+

@@ -1,0 +1,13 @@
+Base64 encoding will work up to a certain image file size. For large image you prabably need to use another approach for the uploading process.
+
+Strategies that come in my mind are FTP, SSH or a specific implementation of HTTP like the https://tus.io/ upload protocol.
+
+tus - resumable file uploads
+https://tus.io/
+
+tus is the open protocol standard for resumable and reliable file uploads across the web, facilitating efficient and seamless file transfer experiences.
+
+tus - resumable file uploads
+
+
+@Thomas Finnern You can look at the JoomGallery component on how we use TUS there for stable file uploads. 

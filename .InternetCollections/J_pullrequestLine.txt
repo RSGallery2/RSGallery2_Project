@@ -1,0 +1,16 @@
+
+Possible test URLs on GitHub
+
+is:pr is:open draft:PR -label:"Updates Requested" -label:RTC
+
+is:pr is:open -label:"Updates Requested" 
+
+is:pr is:open base:6.0-dev draft:PR -label:"Updates Requested"
+
+is:pr is:open base:6.0-dev draft:PR -label:"Updates Requested" -label:RTC
+
+------------------------------------------------
+issue tracker
+
+PRs waiting for a second test
+https://issues.joomla.org/tracker/joomla-cms/?state=open&sort=issue&direction=desc&tests=1&stools-active=1
