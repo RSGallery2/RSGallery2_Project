@@ -10,5 +10,8 @@
 [Get started: 3\. Create a menu to view galleries](#First-steps-3\.-Create-a-menu-to-view-galleries)
 [Get started: Next steps](#Next-steps)
 
+[plugin: rsg2_gallery](#J!4x\plugins\rsg2_gallery.md) 
+
+
 [ ] ToDo: add more
 
