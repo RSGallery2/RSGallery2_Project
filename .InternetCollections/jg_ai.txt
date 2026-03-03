@@ -1,0 +1,6 @@
+
+
+https://ai.joomgalleryfriends.net/api/v1
+
+https://ai.joomgalleryfriends.net/api/v1/docs
+
