@@ -33,6 +33,7 @@ Each parameter in the plugin definition can be overwritten
 **Plugin parameter**
 ![Gallery parameters](https://github.com/RSGallery2/RSGallery2_Project/blob/master/Documentation/J!4x/images4Doc/plg_rsg2_gallery.gal_param.png?raw=true)
 
+
 (1) Select gallery
 
 Images of selected  gallery will be shown

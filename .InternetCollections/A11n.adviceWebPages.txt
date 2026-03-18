@@ -1,0 +1,32 @@
+Cindy S.
+Senior Accessibility Specialist, Consultant & Auditor: DHS Trusted...
+
+As a screen reader user, here are five pet peeve coding practices that really 
+frustrate me and decrease the user experience:
+
+** Skip links that land on a large <div> container instead of a meaningful 
+landmark or heading. If I activate "Skip to main content," I should land 
+somewhere structured and useful — not inside a generic container with no 
+context.
+
+** Misuse of ARIA or structural roles on <div> elements.
+ARIA doesn't fix poor structure. Incorrect roles on non-semantic elements 
+often make the experience worse. Native HTML, used properly, is still the 
+gold standard.
+
+** Overuse of the <title> attribute for tooltips.
+<title> is not a substitute for an accessible name. It's inconsistently 
+announced and often inaccessible on touch devices. Tooltips are not labels.
+
+** Two focus stops for one control.
+If a combo box and its chevron icon both receive focus, that's redundant. 
+One interactive component should equal one focus stop.
+
+** Menus or select controls that don't collapse with the Escape key.
+If it opens, there needs to be a predictable keyboard method to close it. 
+Escape is a standard interaction pattern. These aren't edge cases. They're 
+common implementation choices that directly impact usability.
+If you build components, test them with a keyboard. Test them with a 
+screen reader. Don't just check whether something announces — make sure 
+it behaves predictably.
+
