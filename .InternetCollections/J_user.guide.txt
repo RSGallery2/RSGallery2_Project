@@ -1,0 +1,6 @@
+guide.joomla.org
+Link is guide.joomla.org/contributors. Login with Joomla identity portal.
+
+The idea of the user documentation is that you don't have to worry where it will be placed. You only provide the information.
+
+

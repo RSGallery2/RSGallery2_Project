@@ -1,4 +1,13 @@
 
+
+Bruno article
+Using Bruno (the API Client) to play a.o. with Joomla Web Services
+https://magazine.joomla.org/all-issues/march-2026/using-bruno-the-api-client-to-play-a-o-with-joomla-web-services
+https://www.usebruno.com/
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Postman collections -> PhpStorm 
 
 For those who use webservices and did not know yet: it is possible to import Postman collections in PhpStorm to be used with its HTTP Client
@@ -7,4 +16,32 @@ https://www.jetbrains.com/help/phpstorm/http-client-in-product-code-editor.html#
 
 Pe7er 9:09 AM
 Thanks, I didn't know. I recently switched to Bruno: https://www.usebruno.com/ and imported Postman collections there.
+
+--------------------------------------------------------------------------------------------------------------------------
+ feature roadmap here: https://developer.joomla.org/features/45-joomla-6-x/50-increase-efficiency/1009-massively-enhance-documentation-for-machines-webservice-documentation.html
+ 
+ 
+Herman Peeren
+Joomla-OpenAPI doc
+https://github.com/HermanPeeren/Joomla-OpenAPI is work in progress, intended to be part of Joomla's documentation.
+https://github.com/HermanPeeren/Joomla-OpenAPI/blob/main/joomla-api.json
+
+
+-------------------------------------------------------------------------------------------------------
+OpenAPI Specification (OAS) is the standard for describing RESTful HTTP APIs 
+in a machine-readable way. It was formerly known as the Swagger Specification 
+and can be used for generating documentation, client SDKs, MCP servers, 
+"collections" for Postman, Bruno, and much more. 
+
+See swagger.io/specification, spec.openapis.org/oas/v3.1.0.html, learn.openapis.org, 
+
+https://swagger.io/specification, 
+https://spec.openapis.org/oas/v3.1.0.html, 
+https://learn.openapis.org, 
+
+and many resources more. A description of a web services API following the OAS 
+is a OpenAPI Description (OAD). This is the basis, the fundament, the starting
+ point. The rest is derived from it.
+ 
+The OAD I'm working at was based on the OAD that Alexandre Elisé worked on.
 

@@ -1,0 +1,32 @@
+2026.06.08
+David Jardin
+8:42 AM
+Dear extension devs,
+
+in the light of recent events:
+
+CSRF (checkToken) is not ACL, you always have to implement your own ACL checks, especially in custom controller endpoints https://manual.joomla.org/docs/next/security/csrf-protection/
+com_ajax has no built-in logic for ACL, it's completly on your end to implement proper ACL checks: https://manual.joomla.org/docs/next/building-extensions/components/component-examples/ajaxdemo/#ajax-controller
+if you are re-using backend controllers in the frontend, it's even more important to have proper ACL checks in place, as the generic "user can at least log in into the admin area"-type of check from the applcation level is lost
+Thank you!
+
+CSRF Protection | Joomla! Programmers Documentation
+Cross-Site request forgery is an attack type where an HTML form on an external, attacker-controlled site is used to perform an attack against a target site.
+
+Allon Moritz
+8:50 AM
+Is it somewhere written down with an example how to actually do ACL checks and where?
+
+
+David Jardin
+8:53 AM
+https://manual.joomla.org/docs/next/general-concepts/acl/acl-permissions/#checking-permissions-in-your-extension
+
+Permissions | Joomla! Programmers Documentation
+Joomla has a very sophisticated permissions framework, and if you're not familiar with it you should view some introductory material first. I'd recommend the Access Control List Tutorial and the video Joomla 3 ACL Explained with Randy Carey (between 2 minutes and 32 minutes is the section to watch).[...]
+
+Allon Moritz
+8:56 AM
+The where part can be improved as it is not really clear where to put that code from an extension developer point of view.
+
+

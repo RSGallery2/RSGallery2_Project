@@ -1,0 +1,51 @@
+Herman Peeren
+
+I'm writing Magazine articles as a preparation for what I want to add to the documentation (or, sometimes, to refer to existing documentation). 
+
+About testing your custom extension I wrote 5 articles:
+
+PHPUnit, test an isolated piece of PHP (a “unit”) in a controlled environment.
+Cypress, end-to-end tests, running the extension in a Joomla site.
+PHPStan, static code analysis to check source code on errors.
+Accessibility, avoid barriers to access your extension.
+Security, write secure code.
+I wrote an article about the badly understood but fundamentally important dependency injection (also as preliminary work for the documentation). And an article about accessible tables (because that often goes wrong in list views by developers, and this information is not yet in the documentation).
+
+I'm now working on a series about specific plugins, because those specific things should be documented. Last month about custom  Task plugins, this month will be about Workflow plugins. 
+
+I wrote 9 articles about tools to build a component. Part 3 and 4 are also meant to be added to the documentation (about many-to-many relations and about adding Joomla built-in features to your component). 
+
+That's my strategy to add to the developers manual: first write an article about it and then add it to the documentation. It's about time to do the latter, because I've got quite some material by now. 
+
+From the last comments in this discussion: you can expect an article from me about using Composer (and the specificities of how composer is used in Joomla). Won't manage that this month.
+
+
+https://magazine.joomla.org/all-issues/october-2025/test-your-extension,-part-1-phpunit
+https://magazine.joomla.org/all-issues/november-2025/test-your-extension-part-2-cypress
+https://magazine.joomla.org/all-issues/january-2026/test-your-extension-part-3-phpstan
+https://magazine.joomla.org/all-issues/february-2026/test-your-extension-part-4-accessibility
+https://magazine.joomla.org/issues/2026/march-2026/test-your-extension-part-5-security
+
+
+https://magazine.joomla.org/issues/2025/december-2025/dependency-injection-what-and-why
+https://magazine.joomla.org/issues/2025/november-2025/accessible-tables
+https://magazine.joomla.org/issues/2026/may-2026/custom-plugins-part-2-task-plugin
+https://magazine.joomla.org/issues/2025/may-2025/tools-to-build-a-component-9-overview-and-conclusion
+
+Roland: 
+
+My main gripe with PHPUnit is how to test a piece of my extension which also requires the Joomla codebase
+
+Brian:
+
+Presumably the same problem with cypress
+
+No, that is different: the tests in Cypress run on the Joomla instance in which the extension under test is installed. So the extension just uses a Joomla site that has the whole Joomla codebase. You only test the end result. You script a walk through the browser, giving input where needed, and then look what is displayed on the page (in a virtual browser). 
+
+With Unit testing you test the extension in isolation. If you use other classes from Joomla, you'll have to mock them (make a fake double of them, only giving the output you want them to give when used in your extension). You usually do that in the bootstrap.php file. See for instance in /tests/bootstrap.php in last year's GSoC project for migration between CMSs using the web services API. 
+
+It would be good if we prepare examples of such mocks and stubs, that can be easily reused by other developers. Also avoiding that almost all Joomla classes are mocked and stubbed like in the JA CMS migration project of last year; which is an example of testing if the Joomla classes work as expected; don't do that, only test the functionality that your custom class has added. This year we'll try with some GSoC projects to contribute some more good examples too. 
+
+https://github.com/joomla-projects/JA-Advanced-Migration-Tool
+
+

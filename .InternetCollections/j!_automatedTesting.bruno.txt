@@ -1,0 +1,9 @@
+automatet test with bruno ...
+
+-------------------------------------
+https://github.com/joomla-projects/API-Endpoints/pull/1
+
+trying to improve the API test coverage for our pipeline using Bruno tests and maybe even get the whole thing out of Cypress again
+talking about github/forgejo workflow pipelines
+
+https://www.usebruno.com/

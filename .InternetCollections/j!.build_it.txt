@@ -1,0 +1,42 @@
+
+
+
+# build all
+npm run build -- -a
+
+# build only com_content assets
+npm run build -- -n com_content
+
+# build only admin template
+npm run build -- -n templates/administrator/atum
+
+# build only styles of the admin template
+npm run build -- -n templates/administrator/atum -t css
+
+# watch on asset
+npm run watch -- -n com_content
+
+npm run watch -- -n templates/administrator/atum
+
+# watch on few assets
+npm run watch -- -n com_content,com_categories
+
+--------------------------------------
+
+?? npm run ci ?
+
+----------------------
+
+New builder
+
+Defined list of builders, one per extension/asset,
+Each asset can have own builder or fallback to default
+Each builder have a list of tasks to run (and it can be modified):
+clear remove existing files in folder
+copy copy files to /media
+css compile css/scss files
+js compile js files and modules
+Adding new script builder is still a pain but in different place.
+Read more in /media_source/README.md for more detail.
+https://github.com/Fedik/joomla-cms/blob/0ab21e20a64f3b174ad3cd305677a16e8ee57a17/media_source/README.md
+

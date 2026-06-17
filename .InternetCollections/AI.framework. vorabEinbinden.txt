@@ -1,0 +1,1 @@
+https://github.com/joomla-projects/gsoc25_ai_framework

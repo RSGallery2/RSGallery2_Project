@@ -6,7 +6,7 @@ see other *.txt with boilerplace
 --------------------------
 the books of Astrid Günther and Nicholas Dionysopoulos.You learn the most from that.
   AstridX
-
+  
 --------------------------
 https://github.com/dgrammatiko/create-joomla-extension
 
@@ -24,4 +24,13 @@ on the other side we have jorobo which is the
 --------------------------
 herman-peeren
 https://github.com/HermanPeeren/Extengen
+
+
+--------------------------
+Form inputs to create a basic extension
+Extension Builder: Joomla 4 Komponente, Plugin, ...
+https://webentwickler.tools/extension-boilerplate-joomla-4-komponente
+
+
+
 

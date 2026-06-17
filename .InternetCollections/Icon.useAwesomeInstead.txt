@@ -1,9 +1,20 @@
 
 
-in toolbar icomoon icons are used
-if you want to use font awesome icons you may use "none fa  fa-beer" insrtad
+In toolbar icomoon icons are used
+if you want to use font awesome icons you may use "none fa  fa-beer" instead
+
+In the tool bar 
 
 
+Style 
+
+fa is short for fas is short for fa-solid
+far not available
+
+https://docs.fontawesome.com/web/dig-deeper/styles
 
 
+icon name 
 
+Brands
+fa-brands	fab

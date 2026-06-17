@@ -1,0 +1,8 @@
+web Assets
+
+Web assets: the right way to add Javascript and CSS to Joomla
+https://www.htmlcrusco.it/en/blog/web-assets-the-right-way-to-add-javascript-and-css-to-joomla
+
+
+
+

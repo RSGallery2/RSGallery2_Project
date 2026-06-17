@@ -1,0 +1,30 @@
+
+
+A default CSS structure for projects of any size.
+https://fokus.dev/tools/css-boilerplate/
+
+>>> 
+``` 
+/* Establish the order of layers upfront */
+@layer core, third-party, components, utility;
+@layer core.reset, core.tokens, core.base;
+@layer third-party.imports, third-party.overrides;
+@layer components.base, components.variations;
+
+/* Reset, normalize, etc. */
+@import url('uaplus.css') layer(core.reset);
+
+/* Utility and helper classes */
+@layer utility {
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+```
+

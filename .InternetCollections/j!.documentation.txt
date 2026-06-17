@@ -1,21 +1,36 @@
+=====================================================
+ users documentation
+ https://guide.joomla.org
+ 
 
-# for user documentation 
-https://docs-core.sandbox.joomla.org/ (will be relocated).
+You can easily make a new article by 
+logging in with your Joomla Identity Portal 
 
-How to contribute is explained here: 
-https://docs-core.sandbox.joomla.org/contributors
-Important for new users: The documentation uses Joomla 
-as a platform, so anyone with Joomla knowledge can 
-create an article via the frontend and submit it for
- publication.
+* login here: https://guide.joomla.org/contributors. 
+* You'll then see a "Draft Articles" menu-item where you can just create a new article. 
 
-https://magazine.joomla.org/all-issues/september-2025/documentation-that-helps-your-clients-and-joomla
+Herman Peeren will then look after it that the things you edit will be published in that article. 
+Another possibility is to just add an article with only the changes, 
+or maybe with the list of icons, if you don't want to change anything in the rest of the articles. 
 
-Our new system for user documentation is indeed easy. It is called... Joomla. We use frontend editing. Login with the Joomla Community Portal (like for Mattermost). Easypeasy. Also see https://magazine.joomla.org/all-issues/june-2025/how-to-contribute-to-user-documentation.
+Update Articles
+The easiest way is to just copy the existing article and past it into a new article. 
+The someone will care for it
+
+Become a Knowledge Navigator: Contributions to the new Joomla! documentation are very welcome.
+https://guide.joomla.org/contributors
+
 
 ===============================================
  programmers documentation
- https://manual.joomla.org/
+ https://manual.joomla.org
 
+===============================================
+
+https://magazine.joomla.org/all-issues/september-2025/documentation-that-helps-your-clients-and-joomla
+
+Our new system for user documentation is indeed easy. It is called... Joomla. We use frontend editing. 
+Login with the Joomla Community Portal (like for Mattermost). Easypeasy. 
+Also see https://magazine.joomla.org/all-issues/june-2025/how-to-contribute-to-user-documentation.
 
 

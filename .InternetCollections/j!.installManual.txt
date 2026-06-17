@@ -1,0 +1,35 @@
+https://guide.joomla.org/user-manual/command-line-interface/command-line-interface-joomla-cli-installation
+
+Script-driven automatic installation
+The installation of Joomla is controlled by a joomla.php file located 
+in the installation subfolder after unpacking the Joomla package file. 
+Any programming language that allows calling and executing PHP files 
+allows you to create a script that automates the necessary preparations 
+and the actual installation using custom variables. A list of parameters 
+can be obtained with the following command:
+
+php installation/joomla.php help install
+Here is an example shell script named jinstall.sh placed in the Joomla 
+root folder created for a simple Joomla installation:
+
+#!/bin/bash
+
+php installation/joomla.php install \
+--site-name=SITE-NAME \
+--admin-user=ADMIN-USER \
+--admin-username=ADMIN-USERNAME \
+--admin-password=ADMIN-PASSWORD \
+--admin-email=johndoe@example.com \
+--db-type=mysqli \
+--db-host=localhost \
+--db-user=j51 \
+--db-pass=Garbage1n0ut \
+--db-name=j51 \
+--db-prefix=xyz12_ \
+--db-encryption=0 \
+--public-folder=j51
+With its permissions set to 700 it is a simple matter to call the script from the 
+command line with ./jinstall.sh and Joomla is installed literally in a flash. The 
+script could have been edited to change placeholder values or they could be changed 
+later after Administrator login.
+
