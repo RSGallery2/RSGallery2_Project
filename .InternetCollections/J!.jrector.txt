@@ -1,0 +1,12 @@
+
+https://github.com/joomla-projects/jrector
+
+This repository provides Rector rules to automatically refactor your legacy 
+Joomla code to newer Joomla versions. The rules are categorized by the 
+Joomla version, where the newer code starts working. So when you want to 
+support Joomla 5 and up, you can use all rules in Joomla3, Joomla4 and 
+Joomla5. The set of available rules does not cover all changes in the 
+different Joomla versions, but should take over the most tedious work for you 
+and prepare your code to be properly analysed in phpstan later on.
+....
+
