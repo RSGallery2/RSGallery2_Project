@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <updates>
-<!--	<update>-->
-<!--		<name>RSGallery2 component update</name>-->
-<!--		<description>Update for component rsgallery2 j4x v5.0.12</description>-->
-<!--		<element>com_rsgallery2</element>-->
-<!--		<type>component</type>-->
-<!--		<version>5.3.0</version>-->
-<!--		<downloads>-->
-<!--			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_J4/releases/download/v5.3.0/rsgallery2.5.3.0_20260712.zip</downloadurl>-->
-<!--		</downloads>-->
-<!--		<tags>-->
-<!--			<tag>stable</tag>-->
-<!--		</tags>-->
-<!--		<maintainer>team@rsgallery2.org</maintainer>-->
-<!--		<maintainerurl>rsgallery2.org</maintainerurl>-->
-<!--		<targetplatform name="joomla" version="4.*|5.*"/>-->
-<!--		<client>administrator</client>-->
-<!--		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.3.0</infourl>-->
-<!--		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/administrator/components/com_rsgallery2/changelog.xml</changelogurl>-->
-<!--	</update>-->
+	<update>
+		<name>RSGallery2 component update</name>
+		<description>Update for component rsgallery2 j4x v5.0.12</description>
+		<element>com_rsgallery2</element>
+		<type>component</type>
+		<version>5.3.0</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_J4/releases/download/v5.3.0/rsgallery2.5.3.0_20260715.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>team@rsgallery2.org</maintainer>
+		<maintainerurl>rsgallery2.org</maintainerurl>
+		<targetplatform name="joomla" version="5.*"/>
+		<client>administrator</client>
+		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.3.0</infourl>
+		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
+	</update>
 	<!--update>
 		<name>RSGallery2 component update</name>
 		<description>Update for component rsgallery2 j4x v5.0.12</description>
