@@ -1,0 +1,11 @@
+
+Attention if 
+
+useglobal="true"
+
+is set the do not use 
+default=xx
+
+as empty filed (-> use globel) is overwriiten after save with default. 
+If you save a second timne default is active
+
