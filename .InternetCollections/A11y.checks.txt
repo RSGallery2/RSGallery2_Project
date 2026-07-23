@@ -1,20 +1,25 @@
 
 
-check the webpage for disability 
+check the webpage for disability
+https://wave.webaim.org/
+wave geht natürlich nicht in die Tiefe.
 
-(https://wave.webaim.org/)
 WAVE Add-on für den Browser zu nutzen
 
+Scgwieriger is
+ https://validator.w3.org/ 
 
 Check contrast
+https://contrastchecker.online/ 
+es gibt zahllose checker für Farben. Versuche immer, 
+Kontraste > 4.5 zu finden
 
-Christiane Maier-Stadtherr
-hat einen Link geteilt
-14:57
-
-
-
-https://contrastchecker.online/ es gibt zahllose checker für Farben. Versuche immer, Kontraste > 4.5 zu finden
+Wenn man eine Website selbst genau unter die Lupe nehmen 
+will ist das Tool hier eine gute Hilfe: 
+https://accessibilityinsights.io/docs/web/overview/
+Führt einen beim Full Assessment Schritt für Schritt durch 
+verschiedene Anforderungen für Level AA und hat immer auch 
+Ressourcen zum Nachlesen für jeden Schritt 
 
 
 
