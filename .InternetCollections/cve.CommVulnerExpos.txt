@@ -1,0 +1,5 @@
+
+Common Vulnerabilities and Exposures
+
+RSG 2 query
+https://www.cve.org/CVERecord/SearchResults?query=rsgallery2
