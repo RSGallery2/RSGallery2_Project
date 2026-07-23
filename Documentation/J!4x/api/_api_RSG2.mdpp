@@ -1,0 +1,25 @@
+
+<center>RSGallery2 API Documentation</center>
+<center>Version 2026.07.21</center><br>
+
+## RSGallery2 API (ready parts)
+
+[//]: # (!INCLUDE "tableOfContent.md")
+[//]: # (---)
+
+!INCLUDE "api_version.md"
+---
+
+!INCLUDE "api_configuration.md"
+---
+
+!INCLUDE "api_galleries_table.md"
+---
+
+!INCLUDE "api_images_table.md"
+---
+
+!INCLUDE "api_latest_gallery.md"
+---
+
+[//]: !INCLUDE "api_upload_image.md"
