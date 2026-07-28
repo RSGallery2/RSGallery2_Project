@@ -1,0 +1,25 @@
+
+
+Guido - JoomTools
+Ich fand es ganz witzig das hier zu testen, war garnicht so schlecht :-D
+https://github.com/OnepointConsultingLtd/joomla-mcp-server
+
+angie
+wie sieht es denn mit unserem MCP Server aus, ist das noch nötig 
+oder kann ich jetzt nicht über  token und webservice einfach meinen Browser verwenden?
+
+Der MCP Server ist weiterhin nötig und deutlich sinnvoller implementiert als das Tool von Joomlart
+
+und gibt es da einen Status?
+
+Gab vor zwei wochen einen Sprint, hat gute Fortschritte gemacht, POC funktioniert und muss nun finalisiert werden
+
+wenns fertig ist :-)
+
+Traumversion 6.2
+
+32 minutes ago
+Ach, Ihr seid super
+
+Sind noch ein paar Wochen bis zur 6.2 Beta 1 
+
