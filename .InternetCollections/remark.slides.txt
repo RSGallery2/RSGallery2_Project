@@ -1,0 +1,48 @@
+
+Sources
+https://github.com/gnab/remark 
+
+Test slider explaining
+https://remarkjs.com => https://remarkjs.com/#1
+
+
+Online test yours
+https://remarkjs.com/remarkise
+
+The documentation
+https://github.com/gnab/remark/wiki 
+
+
+
+----------------------------------------------
+local:
+
+https://github.com/BenStigsen/RemarkPortable
+https://github.com/benstigsen/RemarkPortable/releases
+
+
+https://tjaddison.com/blog/2020/01/remark-slide-starter/
+https://github.com/aedificatorum/remark-slide-starter
+
+
+Tells how to do it
+https://galdebert.github.io/posts/remark-1/
+
+https://github.com/galdebert/blog/tree/master/slides.
+https://github.com/galdebert/blog/blob/master/slides/remark-playground.html
+
+-------------------------------------------
+Examples
+
+https://joshbode.github.io/remark/ansi.html#1
+
+
+
+
+
+======================================================
+other
+
+https://github.com/anderslatif/remarkableslides
+
+

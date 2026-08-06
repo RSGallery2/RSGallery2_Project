@@ -1,0 +1,5 @@
+What is needed to get joomla token ?
+
+You have to save the user once to get an API token and the user needs rights.
+ cnfiguration.php need to have public $secret variable set
+

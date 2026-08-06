@@ -1,4 +1,12 @@
 
+Icon and accessibility desciption 
+ https://magazine.joomla.org/issues/2024/november-2024/icons
+
+
+===========================================================================
+
+Something different
+
 Summary of Changes
 This PR will prevent duplicate code.
 Both layouts/joomla/button/iconclass.php and layouts/joomla/toolbar/iconclass.php are the same.

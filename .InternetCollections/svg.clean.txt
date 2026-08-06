@@ -8,3 +8,5 @@ https://iconly.io/tools/svg-cleaner
 
 https://www.svgminify.com/de.html
 
+https://svgomg.net/
+
