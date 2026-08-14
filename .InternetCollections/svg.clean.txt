@@ -10,3 +10,15 @@ https://www.svgminify.com/de.html
 
 https://svgomg.net/
 
+---------------------------------------------------
+sanitizer 
+online test https://svg.enshrined.co.uk/
+https://github.com/darylldoyle/svg-sanitizer
+
+
+
+--------------------------------------------
+link to joomla doc
+https://guide.joomla.org/user-manual/media/media-media-uploading-svg-files
+
+

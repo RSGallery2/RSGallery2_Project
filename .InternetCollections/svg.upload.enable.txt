@@ -5,7 +5,7 @@ dabei sein (komma-separierte Liste ohne Leerzeichen).
 
 Außerdem muss "image/svg+xml" in "Legal MIME Types" dabei sein.
 
-Siehe auch https://docs.joomla.org/J4.x:Media:_Uploading_SVG_files
+Siehe auch https://guide.joomla.org/user-manual/media/media-media-uploading-svg-files
 
  "Legal Image Extensions (File Types)"?
  

@@ -2,6 +2,10 @@
 Old: Dev https://docus.jdocmanual.org/docs/developing_an_mvc_component/adding-an-api-to-a-joomla-component
 
 
+pe7er
+https://petermartin.nl/en/focus-on/joomla/web-services-api
+
+
 Read again: 
 https://manual.joomla.org/docs/next/web-services-api/json-response-format/
 
