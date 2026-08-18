@@ -2,6 +2,25 @@
 <updates>
 	<update>
 		<name>RSGallery2 component update</name>
+		<description>Update for component rsgallery2 j4x v5.3.0/ or lower</description>
+		<element>com_rsgallery2</element>
+		<type>component</type>
+		<version>5.3.2</version>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">https://github.com/RSGallery2/RSGallery2_J4/releases/download/v5.3.2/rsgallery2.5.3.2_20260818.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>team@rsgallery2.org</maintainer>
+		<maintainerurl>rsgallery2.org</maintainerurl>
+		<targetplatform name="joomla" version="5.*"/>
+		<client>administrator</client>
+		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.3.2</infourl>
+		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/src/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
+	</update>
+	<update>
+		<name>RSGallery2 component update</name>
 		<description>Update for component rsgallery2 j4x v5.0.12</description>
 		<element>com_rsgallery2</element>
 		<type>component</type>
@@ -17,7 +36,7 @@
 		<targetplatform name="joomla" version="5.*"/>
 		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.3.1</infourl>
-		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
+		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/src/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
 	</update>
 	<update>
 		<name>RSGallery2 component update</name>
@@ -36,7 +55,7 @@
 		<targetplatform name="joomla" version="5.*"/>
 		<client>administrator</client>
 		<infourl>https://github.com/RSGallery2/RSGallery2_J4/releases/tag/v5.3.0</infourl>
-		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
+		<changelogurl>https://raw.githubusercontent.com/RSGallery2/RSGallery2_J4/master/src/administrator/components/com_rsgallery2/changelog.xml</changelogurl>
 	</update>
 	<!--update>
 		<name>RSGallery2 component update</name>
