@@ -1,0 +1,40 @@
+
+
+Common Joomla 6 REST API Errors
+While testing the Joomla 6 REST API, you may encounter errors. Understanding the HTTP response can make troubleshooting much easier.
+
+-----------------
+404 Resource Not Found
+A 404 Resource not found response usually means that the URL or API endpoint is incorrect, unavailable, or not registered as expected.
+
+Check your API URL carefully and make sure you are using the correct Joomla API endpoint.
+
+-----------------
+403 Forbidden
+A 403 Forbidden response generally indicates that Joomla understood the request but does not allow the current user to perform the requested operation.
+
+Check the following:
+
+API token
+User permissions
+Access levels
+ACL permissions
+Required API plugins
+Category permissions
+
+-----------------
+401 Unauthorized
+A 401 Unauthorized response normally indicates an authentication problem.
+
+Verify that the Authorization header is present and that the API token is correct.
+
+-----------------
+400 Bad Request
+A 400 Bad Request response can occur when the JSON data is invalid or required article information is missing.
+
+Check your JSON syntax and compare your request with the fields expected by the Joomla API endpoint.
+
+You can also learn more about API testing from the official Postman API Testing guide, which covers testing API endpoints, integrations, and responses.
+
+
+

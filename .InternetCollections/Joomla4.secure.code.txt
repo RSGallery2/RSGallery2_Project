@@ -15,7 +15,6 @@ Various things to be aware of
 What to do if you discover a security issue in your software
 
 --------------------------------------------------------------
-https://stackoverflow.com/questions/18713162/joomla-correct-way-to-sanitize-file-data
 
 
 --------------------------------------------------------------
