@@ -1,0 +1,6 @@
+
+
+
+=================================================
+ClaudeCode - Joomla Development Toolkit for Claude Code
+https://github.com/Irata/claudeCode

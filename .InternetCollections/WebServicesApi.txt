@@ -2,11 +2,11 @@
 Old: Dev https://docus.jdocmanual.org/docs/developing_an_mvc_component/adding-an-api-to-a-joomla-component
 
 
-pe7er
+pe7er Very good overview:
 https://petermartin.nl/en/focus-on/joomla/web-services-api
 
 
-Read again: 
+Mixed "json response" format with Web Services plugin and complicated module parameter code example
 https://manual.joomla.org/docs/next/web-services-api/json-response-format/
 
 special examples:
@@ -17,7 +17,7 @@ https://joomla.stackexchange.com/questions/32218/joomla-4-api-question
 
 https://docs.joomla.org/J4.x:Adding_an_API_to_a_Joomla_Component/de
 
-https://magazine.joomla.org/all-issues/august-2020/joomla-web-services-api-101-tokens,-testing-and-a-taste-test
+https://magazine.joomla.org/issues/2020/august-2020/joomla-web-services-api-101-tokens-testing-and-a-taste-test
 
 
 

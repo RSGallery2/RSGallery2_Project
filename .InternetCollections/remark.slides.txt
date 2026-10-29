@@ -1,6 +1,33 @@
 
+Presentation Slides for Developers
+https://sli.dev/
+
+-------------------------
+
+mkslides
+
+https://github.com/MartenBE/mkslides/
+https://github.com/HoGentTIN/hogent-markdown-slides/
+
+
+--------------------------------------------------
+
+reveal-md recommended from pe7er peter martin
+https://github.com/webpro/reveal-md
+
+reveal-md is no longer in active development.
+
+--------------------------------------------------
+
+sophisticated but difficult with markdown in separate files
+reveal.js
+
+reveal-js/md 
+
+--------------------------------------------------
+
 Sources
-https://github.com/gnab/remark 
+https://github.com/gnab/remark -> holprig
 
 Test slider explaining
 https://remarkjs.com => https://remarkjs.com/#1

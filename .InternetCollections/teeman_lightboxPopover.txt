@@ -1,0 +1,17 @@
+
+
+Responsive Joomla Lightbox & Gallery
+https://brian.teeman.net/900-responsive-joomla-lightbox-gallery
+display images in an attractive way 
+https://github.com/trvswgnr/
+
+------------------------------------------------------------------------------------
+
+A JavaScript-free image lightbox with HTML Popover
+https://brian.teeman.net/joomla/1040-a-javascript-free-image-lightbox-with-html-popover
+
+A JavaScript-free image lightbox with HTML Popover
+isplay a thumbnail image that visitors could click to see the full-size image.
+
+>> ToDo: use in RSGallery2 
+

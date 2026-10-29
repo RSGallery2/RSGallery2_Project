@@ -1,3 +1,29 @@
+
+The ACL tree acts as a precise tool for defining content visibility 
+from the developer side, allowing website administrators to define 
+custom user groups with access rights fitting their needs.
+
+-----------------------------
+Besides 'authorise' 
+
+```php
+$user = Factory::getApplication()->getIdentity();
+$allowed = $user->authorise('core.edit', 'com_content.article.22');
+```
+There is also `getActions` in conjunction with a subsequent `get` function. This is frequently used in the HTML view to determine permissions at a granular level and define what is displayed.
+
+```php
+$canDo = ContentHelper::getActions('com_example');
+if ($canDo->get('core.create')) {  // display New button
+}
+if ($canDo->get('core.delete')) {  // display Delete button
+}
+```
+
+See https://manual.joomla.org/docs/general-concepts/acl/acl-permissions/#checking-permissions-in-your-extension
+
+========================================================================================
+
 2026.06.08
 David Jardin
 8:42 AM

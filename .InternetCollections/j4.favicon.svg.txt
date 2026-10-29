@@ -1,4 +1,9 @@
 
+jooma 6x
+
+https://blog.jlvextension.com/tutorials/adding-a-logo-and-favicon-in-joomla-6/
+
+
 joomla4x:
 
 J4x uses a svg file for the favicon
